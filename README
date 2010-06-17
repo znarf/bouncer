@@ -1,17 +1,17 @@
 Introduction
 ------------
 
-Bouncer is a real time statistics and security engine written in PHP. It use a custom score system to deny access to the bad guys.
+Bouncer is a real time statistics and security engine written in PHP.
 
-It's designed to be run on top of each PHP request. Everything that can be cached is cached, so there should not be any performamce issue. Actually your server is supposed to run faster with it, because it doesn't have to serve junk traffic anymore.
+It's designed to be called when your PHP request starts. Everything that can be cached is cached, so there should not be any performance issue. Actually your server is supposed to run faster with it, because it doesn't have to serve junk traffic anymore.
 
 How does it operate? It first analyse what the agent claim to be, if it's a browser, a bot, which browser, which version. At the same time, it also compute an unique fingerprint based on the User-Agent and several common HTTP headers.
 
-After that, it scores the agent, comparing what it claim to be, with how it's supposed to act. For example, Firefox is supposed to send given HTTP headers, Googlebot is supposed to operate from given IP adresses. It's also compare the agent fingerprint with a local database, filled with thousand fingerprints of known, good, bad and suspicious agents.
+After that, it scores the agent, comparing what it claim to be, with how it's supposed to act. For example, Firefox is supposed to send several HTTP headers, Googlebot is supposed to operate from given IP adresses. It's also compare the agent fingerprint with a local database, filled with thousand fingerprints of known, good, bad and suspicious agents.
 
-Bouncer ship with a nice looking visual dashboard to easily screen current traffic on your server. Test it, this thing is drug!
+Bouncer ship with an addictive visual dashboard to easily screen the traffic currently happening on your server.
 
-This is an early version but Bouncer has been heavily tested in production and we're currently very happy with how it performs.
+Bouncer is currently running in production on several websites and we're very happy with how it performs.
 
 Bouncer is proudly inspirated/derivated from the Bad Behavior and BBClone projects.
 
@@ -21,7 +21,9 @@ http://www.bad-behavior.ioerror.us/
 Requirements
 ------------
 
-There is no dependency, the Bouncer code use basic PHP. EXCEPT, the default backend, which need the Memcache PHP extension and a memcache server running on localhost.
+There is no dependency, the Bouncer code use basic PHP.
+
+EXCEPT, the default backend, which need the Memcache PHP extension and a memcache server running on localhost.
 
 Bouncer is not supposed to be PHP4 compatible.
 
