@@ -1,0 +1,9 @@
+Add the tracking code as soon as you can in your PHP script:
+
+    require_once 'Bouncer/Bouncer.php';
+    Bounce::run(array('namespaces' => array('siteid')));
+
+To read the statistics, add the following code in a PHP file:
+
+    require_once 'Bouncer/Bouncer.php';
+    Bouncer::stats(array('namespace' => 'siteid'));
