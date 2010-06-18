@@ -20,7 +20,7 @@ class Bouncer_Stats
         body { overflow-y:scroll; }
         body, table { font-size:11px; font-family:Arial, sans-serif; }
         body, a { color: #333; }
-        #filter, table { width:100%; margin:auto; max-width:1200px; }
+        #filter, table { width:100%; margin:auto; }
         #filter { display:block; margin-bottom:10px; border:1px solid #ccc; }
         table { border-collapse:collapse; }
         table, td, th { border:1px solid #ccc; }
@@ -131,7 +131,7 @@ class Bouncer_Stats
              $hits = Bouncer::countAgentConnections($id, self::$_namespace);
              $addr = $identity['addr'];
              $host = $identity['host'];
-             $extension = isset($identity['extension']) ? $identity['extension'] : 'numeric';
+             $extension = isset($identity['country']) ? $identity['country'] : (isset($identity['extension']) ? $identity['extension'] : 'numeric');
              $type = $identity['type'];
              $signature = $identity['signature'];
              $agent = $name = $identity['name'];
@@ -142,6 +142,8 @@ class Bouncer_Stats
              $score = isset($last['result']) ? $last['result'][1] : 0;
              $server = isset($last['request']['server']) ? $last['request']['server'] : '';
              $method = isset($last['request']['method']) ? $last['request']['method'] : 'GET';
+             $te = isset($last['request']['headers']['TE']) ? 1 : 0;
+             $via = isset($last['request']['headers']['Via']) ? 1 : 0;
 
              foreach ($filters as $filter) {
                  list($filterKey, $filterValue) = $filter;
@@ -442,7 +444,7 @@ class Bouncer_Stats
                 } else if (in_array($value, Bouncer_Rules_Fingerprint::get('botnet'))) {
                     echo '<td>', 'botnet', '</td>';
                 } else if (in_array($value, Bouncer_Rules_Fingerprint::get('browser'))) {
-                    echo '<td>', 'nice', '</td>';
+                    echo '<td>', 'browser', '</td>';
                 } else {
                     echo '<td>', '', '</td>';
                 }
@@ -450,6 +452,11 @@ class Bouncer_Stats
             } else if ($key == 'host') {
                 echo '<td width="10">', $count, '</td>';
                 echo '<td width="10">', '<a href="?filter=host%3A' . $value . '">', $value, '</a></td>';
+
+            } else if ($key == 'signature') {
+                echo '<td width="10">', $count, '</td>';
+                echo '<td width="10">', '<a href="?filter=signature%3A' . $value . '">', $value, '</a></td>';
+
             } else {
                 echo '<td>', $count, '</td>';
                 echo '<td>', $value, '</td>';
