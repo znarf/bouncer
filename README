@@ -7,7 +7,7 @@ It's designed to be called when your PHP request starts. Everything that can be 
 
 How does it operate? It first analyse what the agent claim to be, if it's a browser, a bot, which browser, which version. At the same time, it also compute an unique fingerprint based on the User-Agent and several common HTTP headers.
 
-After that, it scores the agent, comparing what it claim to be, with how it's supposed to act. For example, Firefox is supposed to send several HTTP headers, Googlebot is supposed to operate from given IP adresses. It's also compare the agent fingerprint with a local database, filled with thousand fingerprints of known, good, bad and suspicious agents.
+After that, it scores the agent, comparing what it claim to be, with how it's supposed to act. For example, Firefox is supposed to send several HTTP headers, Googlebot is supposed to operate from given IP adresses. It also compare the agent fingerprint with a local database, filled with thousand fingerprints of known, good, bad and suspicious agents.
 
 Bouncer ship with an addictive visual dashboard to easily screen the traffic currently happening on your server.
 
@@ -51,3 +51,37 @@ To use additional Rules, load Rules before you run:
     require_once 'Bouncer/Rules/Httpbl.php';
     Bouncer_Rules_Httpbl::load(array('api_key' => 'myapikey'));
     Bounce::run(array('namespaces' => array('siteid')));
+
+Dashboard
+---------
+
+You can type queries in the dashboard search field.
+
+Filter by type:
+
+  type:browser
+  type:robot
+
+Filter by status:
+
+  status:nice
+  status:neutral
+  status:suspicious
+  status:bad
+
+Filter by name:
+
+  name:firefox
+  name:google
+
+Negative filters:
+
+  -name:explorer
+  -status:bad
+
+Advanced queries:
+
+  type:browser -status:bad
+  extension:fr system:macosx name:chrome
+
+You may also try these keys: fingerprint, host, extension, signature, name, version, system, system_version
