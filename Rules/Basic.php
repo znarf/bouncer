@@ -90,6 +90,7 @@ class Bouncer_Rules_Basic
         if (in_array($name, $known_browsers)) {
             if (empty($headers['Accept'])) {
                 $scores[] = array(-5, 'Accept header Missing (Bad Behavior: 17566707)');
+            // FIXME: Ajax Requests send this header
             } else if ($headers['Accept'] == '*/*') {
                 $scores[] = array(-5, '*/* Accept header');
             }
@@ -124,7 +125,9 @@ class Bouncer_Rules_Basic
         // PALC
         if (isset($headers['X-BlueCoat-Via'])) {
             $scores[] = array(5, 'BlueCoat PALC');
-            return $scores;
+        } else if (isset($headers['Via'])) {
+            // Proxy sometimes remove Accept-Encoding header, so we give a bonus
+            $scores[] = array(2.5, 'PALC bonus');
         }
 
         // Identify Explorer derivatives
@@ -163,10 +166,16 @@ class Bouncer_Rules_Basic
 
         $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
 
-        // Legitimate Browsers always send a Connection:Keep-Alive|Close header
         if (in_array($name, $known_browsers)) {
+            // Legitimate Browsers always send a Connection:Keep-Alive|Close header
             if (empty($headers['Connection'])) {
                 $scores[] = array(-2.5, 'Connection Header Missing');
+            }
+            // libWWW used to fake a browser identity
+            if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
+                if ($headers['Connection'] == 'TE, close') {
+                    $scores[] = array(-10, 'libWWW signature detected');
+                }
             }
         }
 
@@ -184,13 +193,6 @@ class Bouncer_Rules_Basic
                 // Only Spambots are identifying as explorer and sending this header
                 if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version="1"')
                     $scores[] = array(-5, 'Cookie2 header with value $Version="1"');
-                // MSIE does NOT send Connection: TE but Akamai does
-                // The latest version of IE for Windows CE also uses Connection: TE
-                if (isset($headers['Connection']) && preg_match('/\bTE\b/i', $headers['Connection'])) {
-                    if (empty($headers['Akamai-Origin-Hop']) && strpos($identity['user_agent'], "IEMobile") === false) {
-                        $scores[] = array(-5, 'Connection: TE detected (Bad Behavior: 2b90f772)');
-                    }
-                }
                 break;
         }
 
