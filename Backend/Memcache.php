@@ -102,6 +102,7 @@ class Bouncer_Backend_Memcache
     public static function indexConnection($key, $agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
+        $countKey = empty($namespace) ? "count" : "count-$namespace";
 
         // Add connection to agent connection index
         $connections = self::get($indexKey);
@@ -113,7 +114,7 @@ class Bouncer_Backend_Memcache
             $connections = $chunks[0];
             // update count
             $identity = self::getIdentity($agent);
-            $identity['count'] = empty($identity['count']) ? count($chunks[1]) : $identity['count'] + count($chunks[1]);
+            $identity[$countKey] = empty($identity[$countKey]) ? count($chunks[1]) : $identity[$countKey] + count($chunks[1]);
             self::setIdentity($agent, $identity);
         }
         array_unshift($connections, $key);
@@ -168,11 +169,12 @@ class Bouncer_Backend_Memcache
     public static function countAgentConnections($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
+        $countKey = empty($namespace) ? "count" : "count-$namespace";
         $identity = self::getIdentity($agent);
         $connections = self::get($indexKey);
         $count = count($connections);
-        if (!empty($identity['count'])) {
-            $count += (int)$identity['count'];
+        if (!empty($identity[$countKey])) {
+            $count += (int)$identity[$countKey];
         }
         return $count;
     }
