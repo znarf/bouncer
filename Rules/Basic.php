@@ -63,6 +63,7 @@ class Bouncer_Rules_Basic
         else if ($os_name == 'windows95') $scores[] = array(-2.5, 'Old OS');
         else if ($os_name == 'windows98') $scores[] = array(-2.5, 'Old OS');
         else if ($os_name == 'windowsnt') $scores[] = array(-2.5, 'Old OS');
+        else if ($os_name == 'macppc')    $scores[] = array(-2.5, 'Old OS');
 
         return $scores;
     }
@@ -84,13 +85,11 @@ class Bouncer_Rules_Basic
             $name = 'explorer';
         }
 
-        $known_browsers = array('explorer','firefox', 'safari', 'chrome', 'opera');
-
         // Legitimates browsers always send this Accept-* header
-        if (in_array($name, $known_browsers)) {
+        if (in_array($name, Bouncer::$known_browsers)) {
             if (empty($headers['Accept'])) {
                 $scores[] = array(-5, 'Accept header Missing (Bad Behavior: 17566707)');
-            // FIXME: Ajax Requests send this header
+            // FIXME: Ajax Requests send this header / also Browser looking for an image (favicon)
             } else if ($headers['Accept'] == '*/*') {
                 $scores[] = array(-5, '*/* Accept header');
             }
@@ -164,9 +163,7 @@ class Bouncer_Rules_Basic
             $scores[] = array(-7.5, 'Content-Type Header with a GET Request');
         }
 
-        $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
-
-        if (in_array($name, $known_browsers)) {
+        if (in_array($name, Bouncer::$known_browsers)) {
             // Legitimate Browsers always send a Connection:Keep-Alive|Close header
             if (empty($headers['Connection'])) {
                 $scores[] = array(-2.5, 'Connection Header Missing');

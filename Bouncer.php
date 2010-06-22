@@ -17,6 +17,8 @@ class Bouncer
     protected static $_backend = 'memcache';
     protected static $_backendInstance = null;
 
+    public static $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
+
     protected static $_rules = array(
         'agent_infos' => array(),
         'ip_infos' => array(),
@@ -68,11 +70,15 @@ class Bouncer
         $addr = $_SERVER['REMOTE_ADDR'];
         $user_agent = $_SERVER['HTTP_USER_AGENT'];
 
-        $id = self::hash($addr . ':' . $user_agent);
+        $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($addr . ':' . $user_agent);
 
-        if ($identity = self::backend()->getIdentity($id)) {
+        $identity = self::backend()->getIdentity($id);
+
+        if (isset($identity) && $identity['user_agent'] == $user_agent) {
             return $identity;
         }
+
+        $id = isset($_COOKIE['bouncer-identity']) ? self::hash($addr . ':' . $user_agent) : $id;
 
         $headers = self::getHeaders(array('User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From'));
         $fingerprint = self::fingerprint($headers);
