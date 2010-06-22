@@ -37,6 +37,8 @@ class Bouncer_Stats
         .windowsvista, .windows7 { background-image:url(http://h6e.net/bouncer/images/os_windowsvista.png) }
         .explorer { background-image:url(http://h6e.net/bouncer/images/browser_explorer.png) }
         .firefox { background-image:url(http://h6e.net/bouncer/images/browser_firefox.png) }
+        .safari { background-image:url(http://h6e.net/bouncer/images/browser_safari.png) }
+        .opera { background-image:url(http://h6e.net/bouncer/images/browser_opera.png) }
         .chrome { background-image:url(http://h6e.net/bouncer/images/browser_chrome.png) }
         .macosx { background-image:url(http://h6e.net/bouncer/images/os_macosx.png) }
         </style>
@@ -144,6 +146,7 @@ class Bouncer_Stats
              $method = isset($last['request']['method']) ? $last['request']['method'] : 'GET';
              $te = isset($last['request']['headers']['TE']) ? 1 : 0;
              $via = isset($last['request']['headers']['Via']) ? 1 : 0;
+             $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : '';
 
              foreach ($filters as $filter) {
                  list($filterKey, $filterValue) = $filter;
@@ -170,7 +173,7 @@ class Bouncer_Stats
              }
 
              $fingerprint = substr($identity['fingerprint'], 0, 6);
-             $fgtype = Bouncer_Rules_Fingerprint::getType($identity['fingerprint']);
+             $fgtype = Bouncer_Rules_Fingerprint::getType($identity);
              if ($linkify) {
                  $fingerprint = '<a href="?filter=fingerprint%3A' . $identity['fingerprint'] . '">' . $fingerprint . '</a>';
              }
@@ -406,6 +409,7 @@ class Bouncer_Stats
     public static function charts()
     {
         $stats = array();
+        $identities = array();
         $agents = Bouncer::getAgentsIndex(self::$_namespace);
         foreach ($agents as $id) {
             $key = $_GET['stats'];
@@ -419,6 +423,12 @@ class Bouncer_Stats
             } else {
                 $stats[$value] ++;
             }
+            if (isset($_GET['aggregate'])) {
+                $stats[$value] += Bouncer::countAgentConnections($id, self::$_namespace) - 1;
+            }
+            if (empty($identities[$value])) {
+                $identities[$value] = $identity;
+            }
         }
 
         ksort($stats);
@@ -426,36 +436,34 @@ class Bouncer_Stats
 
         echo '<table>';
         foreach ($stats as $value => $count) {
+            $identity = $identities[$value];
             echo '<tr>';
             if ($count == 1) {
                 continue;
             }
             if ($key == 'fingerprint') {
-                echo '<td>', $count, '</td>';
-                echo '<td style="background:#' . substr($value, 0, 6) . '">&nbsp;</td>';
-                echo '<td width="10">', '<a href="?filter=fingerprint%3A' . $value . '">', $value, '</a></td>';
-
-                if (in_array($value, Bouncer_Rules_Fingerprint::$suspicious_fingerprints)) {
-                    echo '<td>', 'suspicious', '</td>';
-                } else if (in_array($value, Bouncer_Rules_Fingerprint::$banned_fingerprints)) {
-                    echo '<td>', 'banned', '</td>';
-                } else if (in_array($value, Bouncer_Rules_Fingerprint::$known_fingerprints)) {
-                    echo '<td>', 'known', '</td>';
-                } else if (in_array($value, Bouncer_Rules_Fingerprint::get('botnet'))) {
-                    echo '<td>', 'botnet', '</td>';
-                } else if (in_array($value, Bouncer_Rules_Fingerprint::get('browser'))) {
-                    echo '<td>', 'browser', '</td>';
-                } else {
-                    echo '<td>', '', '</td>';
-                }
+                echo '<td width="20">', $count, '</td>';
+                echo '<td width="20" style="background:#' . substr($value, 0, 6) . '">&nbsp;</td>';
+                echo '<td width="20">', '<a href="?filter=fingerprint%3A' . $value . '">', $value, '</a></td>';
+                echo '<td width="20">', Bouncer_Rules_Fingerprint::getType($identity) , '</td>';
+                echo '<td class="ic ', $identity['name'], '">', '<a href="?filter=name%3A' . $identity['name'] . '">', $identity['name'], '</a> ',
+                    isset($identity['version']) ? $identity['version'] : '', '</td>';
 
             } else if ($key == 'host') {
                 echo '<td width="10">', $count, '</td>';
                 echo '<td width="10">', '<a href="?filter=host%3A' . $value . '">', $value, '</a></td>';
 
+            } else if ($key == 'addr') {
+                echo '<td width="10">', $count, '</td>';
+                echo '<td width="10">', '<a href="?filter=addr%3A' . $value . '">', $value, '</a></td>';
+
             } else if ($key == 'signature') {
                 echo '<td width="10">', $count, '</td>';
                 echo '<td width="10">', '<a href="?filter=signature%3A' . $value . '">', $value, '</a></td>';
+                echo '<td width="10">', Bouncer_Rules_Fingerprint::getType($identity) , '</td>';
+                echo '<td class="ic ', $identity['name'], '">', '<a href="?filter=name%3A' . $identity['name'] . '">', $identity['name'], '</a> ',
+                    isset($identity['version']) ? $identity['version'] : '', '</td>';
+                echo '<td>', isset($identity['headers']['User-Agent']) ? $identity['headers']['User-Agent'] : '' , '</td>';
 
             } else {
                 echo '<td>', $count, '</td>';
