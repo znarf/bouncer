@@ -3,6 +3,8 @@
 class Bouncer_Rules_Basic
 {
 
+    public static $explorer_browsers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser');
+
     public static function load()
     {
 
@@ -80,8 +82,7 @@ class Bouncer_Rules_Basic
         $headers = $identity['headers'];
 
         // Identify Explorer derivatives
-        $explorers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser');
-        if (in_array($name, $explorers)) {
+        if (in_array($name, self::$explorer_browsers)) {
             $name = 'explorer';
         }
 
@@ -91,7 +92,7 @@ class Bouncer_Rules_Basic
                 $scores[] = array(-5, 'Accept header Missing (Bad Behavior: 17566707)');
             // FIXME: Ajax Requests send this header / also Browser looking for an image (favicon)
             } else if ($headers['Accept'] == '*/*') {
-                $scores[] = array(-5, '*/* Accept header');
+                $scores[] = array(-2.5, '*/* Accept header');
             }
             if (empty($headers['Accept-Language'])) {
                 $scores[] = array(-2.5, 'Accept-Language header missing');
@@ -130,8 +131,7 @@ class Bouncer_Rules_Basic
         }
 
         // Identify Explorer derivatives
-        $explorers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser');
-        if (in_array($name, $explorers)) {
+        if (in_array($name, self::$explorer_browsers)) {
             $name = 'explorer';
         }
 
@@ -159,8 +159,9 @@ class Bouncer_Rules_Basic
         }
 
         // Content Type is surely not for GET ... moron!
+        // Well, but some legitimate agents doesn't know that ...
         if (isset($headers['Content-Type']) && $request['method'] == 'GET') {
-            $scores[] = array(-7.5, 'Content-Type Header with a GET Request');
+            $scores[] = array(-2.5, 'Content-Type Header with a GET Request');
         }
 
         if (in_array($name, Bouncer::$known_browsers)) {
@@ -195,7 +196,7 @@ class Bouncer_Rules_Basic
 
         if (!empty($request['headers']['Referer'])) {
             $preferer = parse_url($request['headers']['Referer']);
-            if (strpos($preferer['host'], 'google')) {
+            if (isset($preferer['host']) && strpos($preferer['host'], 'google')) {
                 $scores[] = array(2.5, 'Google as Referer');
             }
         }
@@ -244,7 +245,6 @@ class Bouncer_Rules_Basic
             case 'mediapartners':
                 $score += strpos($host, 'googlebot.com') === false ? -5 : 2.5;
                 $score += $identity['fingerprint'] != '4b8841489bb368a2e0defed8149bf912' ? -5 : 2.5;
-                // $score += empty($headers['From']) ? -5 : 1;
                 break;
             case 'googlemobile':
                 $score += strpos($host, 'googlebot.com') === false ? -5 : 2.5;
@@ -348,12 +348,18 @@ class Bouncer_Rules_Basic
                 $score += $identity['fingerprint'] != 'cdcb44c8464c40d53a6f5635ee66d642' ? -5 : 2.5;
                 $score += $identity['extension'] != 'us' ? -5 : 2.5;
                 break;
+            case 'netcraft':
+                $score += $identity['fingerprint'] != '6fdbdebe4a4e159db61b246974a63efb' ? -5 : 2.5;
+                break;
+            case 'radian6':
+                $score += strpos($addr, '142.166.170.') === false ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;
                 break;
             case 'googlefeeds':
-                $score += strpos($host, 'google.com') === false ? -5 : 1;
+                $score += (strpos($host, 'google.com') === false && strpos($addr, '72.14.') === false && strpos($addr, '74.125.') === false) ? -5 : 1;
                 break;
             case 'bloglines':
                 $score += strpos($host, 'bloglines.com') === false ? -5 : 1;
