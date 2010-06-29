@@ -15,11 +15,14 @@ $banned_fingerprints = array(
 '6135b0ff46c9c6168ef13c221f3528b5', // SN - DTS Agent
 'dcf57bea9a755eea1f8de282f4c3279a', // CN - Indy Library
 '61dc815933fe47026e1cdf0f5dc7ffbc', // CN - Indy Library
-'ea61161ef904102c26654f77fbc1af27', //  * - Larbin 2.6.3
+'ea61161ef904102c26654f77fbc1af27', //  * - larbin 2.6.3
+'e001df5efb3b7e2392430eea763ef765', //  * - binlar 2.6.3
+'bd3ddc784afb3d4c98278e86cd2e38a8', // RU - Casper Bot Search
 // Fake Google
 'a8c59cca16eb7d753659ae07aa6745bb',
 '834f20c97f18fc1fa04ddd63f11ec2e8',
 'b1c0361564c267d2786dd731a346af77',
+'b56beeee346852e3f2928964b2eb97c7',
 // Lib WWW
 'dd2cce743b64f2b797fa3bba306f387a', // libWWW 5.76
 'c67c0196c4ad44c35b1f2f3160a96fcd', // libWWW 5.79
@@ -40,6 +43,7 @@ $banned_fingerprints = array(
 '013c9e2e72d01a71528ea3e5828287f0', // Java/1.4.1_04
 'ecc03938cc08478c23e6fe702ae7b715', // Java/1.6.0_0
 'dcf79fc274f3da000292130426613878', // Java/1.6.0_04
+'c100a6673ba6f6bc15df8ac130939659', // Java/1.6.0_05
 '917375f84c04b9515fee277caa61a1c9', // Java/1.6.0_06
 'aa8ba6fd98fd9085ec08ede5cd67b941', // Java/1.6.0_14
 '5416d4958dd6569e17f2269de5f64f46', // Java/1.6.0_17

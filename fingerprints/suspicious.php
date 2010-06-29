@@ -9,55 +9,45 @@ $suspicious_fingerprints = array(
 'd3c137acd8ada3e23b5d18a7773260ec', // Mozilla/4.0 - Accept:*/*
 'd28f73e67a253fb8503538b92ff5f33f', // Mozilla/3.0 (compatible)
 'a55dbce033e47342f4493b6b8e317a11', // Accept-Encoding:identity
+'b8a1d0f6c953cb9ff2dca95425cf4a67', // Mozilla/4.0 (compatible)
 '4c67cac030adba659c1ad691368db27e', // Mozilla/4.0 (compatible; ICS)
-// Explorer
-'eb0fda75ba20c704925bc4fb8cdb1e70',    //  *  - Windows NT4   - Explorer 5.01
-'3d75028ca889d244929861337827fb0d',    //  *  - Windows NT4   - Explorer 5.01
-'201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0
-'71769c0690c09ac31cc2bd7898a107a5',    //  *  - Windows XP    - Explorer 6.0
-'9887c55fda215fd9fe03e9bab9d51839',    //  *  - Windows XP    - Explorer 6.0
-'6b132ced76c43a575a702ac7917c2991',    // TW  - Windows XP    - Explorer 6.0
-'4d12feadaaa0d2de366391b5f26d9723',    // PE  - Windows XP    - Explorer 6.0
-'a83d11e2c4b78a31f922ac5e6535bd02',    // CN  - Windows XP    - Explorer 6.0
-'407fa0dab1fc4043e1dd5d197b5d3b7c',    //  *  - Windows MC 6  - Explorer 8.0
-'7b9e8b3e15f083ffd4003d6348a862b5',    // OVH - Windows XP    - Explorer 7.0
-'b8d0719eff7b8a004be2d7f5448e925b',    // OVH - Windows 2000  - Explorer 5.01
-'2047328ac27d87da7e4411f1ad2929f1',    // US  - Windows NT4   - Explorer 5.5
-'30f91bc221190f9aa1ae3c357300af11',    // US  - Windows 2000  - Explorer 6.0
-'938331c1534578621896d7be51bc4de3',    // US  - Windows XP    - Explorer 7.0
-'57b72e387d0933fe5633aea57423f26f',    // US  - Windows 98    - Explorer 6.0
-'b7449fcac8672fb618b33bbfe477981a',    // US  - Windows XP    - Explorer 7.0
-'d15670bbecb02aa913a84504cd8d3616',    // CN  - Windows XP    - Explorer 6.0
-'21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0
-'14988d153a79b82f7be01fe79d606cba',    //  *  - Windows XP    - Explorer 6.0
-'867b704a2a13789b9a3a750b4ed43bec',    //  *  - Windows 2000  - Explorer 5.01
-'05828816332f8981aceacd2f34bda8d4',    //  *  - Windows 98    - Explorer 6.0
-'45e08751b9fdccabfdbd9d443d31d1a1',    // HU  - Windows XP    - Explorer 6.0
-'49c58c34941eb8e95db60c61a8428d20',    //  *  - Windows XP    - Explorer 6.0
-'a8d05109ce1452f434c41086c58763e3',    //  *  - Windows XP    - Explorer 6.0
-'f5186afe88cb261c8ec1f312b2a2cbac',    //  *  - Windows Vista - Explorer 7.0
-'73c881e466ab54d19382a9a939c9fab7',    // TH  - Windows XP    - Explorer 7.0
-'71450477e5b03a0c1204902d8fb522e8',    // AMZ - Windows *     - Explorer 7.0 (user-agent in lowercase)
-'2a945eb820e0fb959e0eb42ebcae9c9f',    // US  - Windows XP    - Explorer 8.0
-'314bebd09a5bf6aab9b54fd3fdf9ae80',    // CN  - Windows XP    - Explorer 6.0
-// Firefox
-'2e4572613564df07f322e9d6411afd91',    // CN  - Windows XP    - Firefox 3.0.2
-'ae21b88a5f9d9e0f194d197bf3c1b16a',    // KR  - Unknown       - Firefox 3.0.5
-'91ab232dff0c02f0cf76e32ebbe7ad42',    //  *  - Windows XP    - Firefox 3.5.1
-'eadca6976d78c7a0add477370a5080c1',    //  *  - Windows XP    - Firefox 2.0.0.1
-'a450670526ac41f8280e1c8ec229ab7f',    //  *  - Windows XP    - Firefox 2.0.0.1
-'95fb4f4df53accd38acbe819b75e36ec',    //  *  - Windows XP    - Firefox 2.0.0.11
-'db8a6ab35b03950699e416f7ca192509',    //  *  - Windows Vista - Firefox 3.0.1
-'8310c5852ee8d17f39094a923bf537b8',    //  US - MacOS X 10.5  - Firefox 3.6.3
-'4679192bb2f9d7a8a77c564a80f7dbd8',    //  US - Windows Vista - Firefox 3.5.3
-// Chrome
-'e73fee5fd0fe91662c379982c08acc9e',    //  *  - Windows 7     - Chrome 4.0.221.7
+'e261d653a34451b1db31d6613aace1f7', // Mozilla/5.0 (compatible)
+'e36cf8d82aaacacd2533bf7779f362bd', // Spider - Accept:*/*
+// Programming languages defaults
+'e92acd969162f34aaac2099466e58464', // Ruby/1.8.7
+'023beda1cb2cb7eea339c13a304b8d22', // Python-urllib/2.5
+'db71ede31df67309d22fba536bb786ae', // Python-urllib/2.6
+'790f947b2a7fe78890c8fa9a1ab50749', // PycURL/7.18.2
+'7501eb1d36df266c545527806e540e09', // The Incutio XML-RPC PHP Library
+// Curl
+'7b1b91d32d341e80e89ae21bb8f5554b', // curl/7.19.6 (i386-pc-win32) libcurl/7.19.6 OpenSSL/0.9.8k zlib/1.2.3
 // Bots
-'40fc775be2dcad9d6d0d798276a6177d', // Mozilla 5.0 - static.theplanet.com
-'df67b45c12fea8e8e177b7610ecc5d89', // Picmole
-'1d6f0010eec88a0f3ff5f19375a1069d', // CN - Heritrix
-'3e2a346099d1c651e4df4bb47f158532', // suchmaschinenoptimierung.de
+'40fc775be2dcad9d6d0d798276a6177d', // Mozilla 5.0 (US - static.theplanet.com)
 'd05580236d7563115237363dc740f983', // TREND MICRO
+// Explorer
+'201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
+'21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)  
+'2a945eb820e0fb959e0eb42ebcae9c9f',    // LD  - Windows XP    - Explorer 8.0     (US - Vrtservers)
+'314bebd09a5bf6aab9b54fd3fdf9ae80',    // LD  - Windows XP    - Explorer 6.0     (CN - 58.61.164.*|124.115.1.*|114.80.93.71)
+'71769c0690c09ac31cc2bd7898a107a5',    // BM  - Windows XP    - Explorer 6.0     (US - websitewelcome.com|hostgator.com)
+'c58abcb98a1260e3cb7de50b305b5cd1',    // BM  - Windows XP    - Explorer 6.0     (US - websitewelcome.com|hostgator.com)
+'6b132ced76c43a575a702ac7917c2991',    // BM  - Windows XP    - Explorer 6.0     (TW - dynamic.hinet.net)
+'4d12feadaaa0d2de366391b5f26d9723',    // BM  - Windows XP    - Explorer 6.0     (PERU)
+'a83d11e2c4b78a31f922ac5e6535bd02',    // BM  - Windows XP    - Explorer 6.0     (CN - 61.135.162.*|61.135.169.*)
+'407fa0dab1fc4043e1dd5d197b5d3b7c',    // BM  - Windows MC 6  - Explorer 8.0
+'938331c1534578621896d7be51bc4de3',    // BM  - Windows XP    - Explorer 7.0
+'b7449fcac8672fb618b33bbfe477981a',    // BM  - Windows XP    - Explorer 7.0     (US - 24.39.1.*|nys.biz.rr.com)
+'d15670bbecb02aa913a84504cd8d3616',    // BM  - Windows XP    - Explorer 6.0
+'a8d05109ce1452f434c41086c58763e3',    // BM  - Windows XP    - Explorer 6.0     (US - CALPOP)
+'7b9e8b3e15f083ffd4003d6348a862b5',    // BM  - Windows XP    - Explorer 7.0     (FR - OVH)
+// Firefox
+'8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
+'4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
+'93faf5eb2b3ef9321bb4269ba3f98940',    //  LD - Windows Vista - Firefox 3.5.3    (US - comcastbusiness.net)
+'b64337e5058a34655a36e2c386e38b5a',    //  LD - Gentoo        - Firefox 3.5.6    (US - hostgator.com)
+'6e0b261a641d3f6ad9c53f4f0bcff690',    //  LD - MacOS X       - Firefox 2.0.0.7  (US - amazonaws.com)
+'2e4572613564df07f322e9d6411afd91',    //  BM - Windows XP    - Firefox 3.0.2    (CN - 110.75.169.*)
+'ae21b88a5f9d9e0f194d197bf3c1b16a',    //  BM - Unknown       - Firefox 3.0.5    (KR - 211.43.152.*)
 );
 return $suspicious_fingerprints;
 ?>
