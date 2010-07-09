@@ -5,7 +5,9 @@ $known_fingerprints = array(
 'ddb1e86b32cf145e05a6e0a52e92f174',  // FacebookFeedParser
 '6d7c13b80393caf44744488e477e7e55',  // facebook share (http://facebook.com/sharer.php)
 'afa4788739136af0b8de6d47868ee2f7',  // http://friendfeed.com/about/bot
+'9e717c7cb2cddb32396c2cd53c06080d',  // facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)
 '09f23681d71f4a667432fa11c8465f5c',  // facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+'656fbf00aebce50ee22eb07b115c6395',  // Facebook share follower
 // Google
 '0f90768387e17021566a40bdc5ed4b0c',  //  * - Google Wireless Transcoder
 '46c694c4e4e26cd05657ff74cf9300da',  //  * - Google Wireless Transcoder
@@ -17,6 +19,8 @@ $known_fingerprints = array(
 '7392c65f7872a8be46b2c68c9bc46fb4',  // lookingglass-server
 '962a8dc6b0c4f1f0d67568c50b31da66',  // mapthislink
 '06ca030f40974c9f8a30718e261bdfe5',  // rtweetme
+'86da1e9551b784725ced8434be16755d',  // getfavicon
+'337fb2b23192d6dbdfa9031e1468fb92',  // rtweetme
 // Microsoft Suspicous Crawlers
 '970fa08c4ee995e7dde6b45b69bd9fb9',  // US - Windows Vista - Explorer 7.0
 '0d8c0fe3cbecc12b7c4d416786be82bd',  // US - Windows 2003  - Explorer 6.0
@@ -46,6 +50,7 @@ $known_fingerprints = array(
 '934b30bd6857304ebb8cdbc0e2be3953',  // TweetmemeBot
 '4244fa19396ed9f656d60a0f424abcd5',  // TwengaBot-Discover (http://www.twenga.fr/bot-discover.html)
 'acfb1cd9b01b3c53d5fdbc14cc83d201',  // OneRiot/1.0 (http://www.oneriot.com)
+'c1e39fdc4438cc12d7fd4d1962199e4b',  // OneRiot/1.0 (http://www.oneriot.com)
 'c6ee697b0d3ed706ac974e45fa16221a',  // http://www.ellerdale.com/crawler.html
 'eb69ec8038e09c15dc6c7bf544814076',  // http://www.hpi.uni-potsdam.de/meinel/bross/feedcrawler
 '00bb892963ac734a8eeb681e23d01395',  // Twitterbot/0.1
@@ -53,6 +58,10 @@ $known_fingerprints = array(
 'ba1b1f5bd2fff182d02bebcae1238b62',  // Twitturly / v0.6
 'b02ebc3b48874c4b0a101a709dbdd379',  // acquia-crawler
 'be659eb627ef3c2fd42705e4e5d39044',  // ThingFetcher; (+http://thinglabs.com)
+'2687c1f1bb7f6803a4f1ee2896a2e01e',  // Superfeedr: FeedDiscovery/1.1
+'8ccb889b7d69bb8e0453258c55db3c07',  // SurveyBot/2.3 (DomainTools)
+'2708e9c06a83250e6bcab443f73c71e3',  // http://page-store.com/
+'6afae750923289d89eb638a6a7ae8947',  // librabot/2.0 (+http://academic.research.microsoft.com/)
 // Flash (eg: WP image uploader)
 'd22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
 '4f4c2a419649c56cad7d3cca8dc9eeb6',  // Adobe Flash Player 10
