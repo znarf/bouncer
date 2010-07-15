@@ -74,8 +74,20 @@ class Bouncer
 
         $identity = self::backend()->getIdentity($id);
 
-        if (isset($identity) && $identity['user_agent'] == $user_agent) {
-            return $identity;
+        if (isset($identity)) {
+            // keep identity if agent change or ip change, but not if both change
+            if ($identity['addr'] == $addr || $identity['user_agent'] == $user_agent) {
+                if ($identity['addr'] != $addr) {
+                    $ip = self::getIpInfos($addr);
+                    $identity = array_merge($identity, $ip);
+                    self::backend()->setIdentity($id, $identity);
+                } else if ($identity['user_agent'] != $user_agent) {
+                    $agent = self::getAgentInfos($user_agent);
+                    $identity = array_merge($identity, $agent);
+                    self::backend()->setIdentity($id, $identity);
+                }
+                return $identity;
+            }
         }
 
         $id = isset($_COOKIE['bouncer-identity']) ? self::hash($addr . ':' . $user_agent) : $id;
@@ -265,7 +277,10 @@ class Bouncer
 
         // Consolidate bots IDs
         if ($identity['type'] == self::ROBOT && $result[1] >= 1) {
-            $identity['id'] = $identity['name'];
+            // don't consolidate rss-atom entries
+            if ($identity['id'] != 'rss-atom') {
+                $identity['id'] = $identity['name'];
+            }
         }
 
         // Analysis resulted in a new identity id, we store it
