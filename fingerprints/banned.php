@@ -18,6 +18,7 @@ $banned_fingerprints = array(
 'ea61161ef904102c26654f77fbc1af27', //  * - larbin 2.6.3
 'e001df5efb3b7e2392430eea763ef765', //  * - binlar 2.6.3
 'c3519edceadd1945fdeb626ad9c2a5fe', //  * - larbin 2.6.3
+'1eee5009bfa152ad21b863af9cb134c6', //  * - page_test - larbin 2.6.3
 // Security Exploits
 '1145d630273e73472fb728301b95b362', //  * - dex Bot Search
 'bd3ddc784afb3d4c98278e86cd2e38a8', // RU - Casper Bot Search

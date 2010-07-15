@@ -62,9 +62,11 @@ $known_fingerprints = array(
 '8ccb889b7d69bb8e0453258c55db3c07',  // SurveyBot/2.3 (DomainTools)
 '2708e9c06a83250e6bcab443f73c71e3',  // http://page-store.com/
 '6afae750923289d89eb638a6a7ae8947',  // librabot/2.0 (+http://academic.research.microsoft.com/)
+'9c1bb51b327c07997fe1971925a5149e',  // librabot/2.0 (+http://academic.research.microsoft.com/)
 // Flash (eg: WP image uploader)
 'd22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
 '4f4c2a419649c56cad7d3cca8dc9eeb6',  // Adobe Flash Player 10
+'11ef0d39f0f9d3fb96063c9b867198aa',  // Shockwave Flash
 // Nagios
 'f13c1c8a68a515732ff72cc498f66dc4',
 '5bffca1b20894579bd276a36a6f5ca86',
@@ -84,6 +86,8 @@ $known_fingerprints = array(
 'fdc2442a41e8d683b8583643489f59e4',  // DE - Apple-PubSub 65.19
 '4749f1c7f7346a7f1f5b7f0d0e543467',  // JP - Apple-PubSub 65.19
 '1ab88260c3c9d004408d693c7cd770fb',  // IT - Apple-PubSub 65.19
+'2569e538829f558ef9eafa94ba67718e',  // PT - Apple-PubSub 65.19
+'d25f04999693ba3952141a7ef4c10dc2',  // TH - Apple-PubSub 65.19
 '21f0cb2cdf1f6f93f5a3b10e577df842',  // US - Apple-PubSub 65.12.1
 '34ce75b388f7d016655d3e8f4e9b4dc3',  // FR - Apple-PubSub 65.12.1
 '60248970d4202b916d13bc9634f1c9cf',  // IT - Apple-PubSub 65.12.1
