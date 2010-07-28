@@ -32,7 +32,7 @@ class Bouncer_Rules_Fingerprint
         } else if (in_array($fingerprint, self::get('suspicious'))) {
             $scores[] = array(-5, 'Suspicious Fingerprint');
         } else if (in_array($fingerprint, self::get('botnet'))) {
-            $scores[] = array(-5, 'Botnet Fingerprint');
+            $scores[] = array(-7.5, 'Botnet Fingerprint');
         }
 
         return $scores;
