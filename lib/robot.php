@@ -5877,6 +5877,7 @@ $robot = array(
     )
   ),*/
 // Spam Harvesters
+/* This is not BBClone job to detect that
   "SPAM" => array(
     "icon" => "robot",
     "title" => "SPAM",
@@ -5899,7 +5900,7 @@ $robot = array(
       "^Guestbook Auto Submitter" => "",
       "panscient.com" => "",
     )
-  ),
+  ),*/
 // Catch up for things we don't know by now
   "robot" => array(
     "icon" => "robot",

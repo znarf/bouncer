@@ -1,9 +1,10 @@
 <?php
 $botnet_fingerprints = array(
-// Most Popular
-'cd3ea020baf312a8dc8e12e8ecd524ab',
+// Most Popular (moved to banned)
+// 'cd3ea020baf312a8dc8e12e8ecd524ab',
 // Manual
 'c7db6fed0a12aafd472b904042add77c',
+'d720193a01b67e54f2f20990c9107da1',
 // From 79-182-178-94.pool.ukrtel.net
 '0218b41edd0dc0406375dbeb19163466', // 2
 '4a4d9fb2762a8b2213141af37b2766db', // 1

@@ -1,5 +1,7 @@
 <?php
 $banned_fingerprints = array(
+// Most Popular
+'cd3ea020baf312a8dc8e12e8ecd524ab',
 // Browsers
 '800debb6bf463b5c72336a2ab6c76176', // JP - Windows XP   - Explorer 6.0   (.asianetcom.net),
 'd4a3108acff0dd17752192df5d175333', // KR - MacOS X 10.5 - Firefox 3.0.6
@@ -51,6 +53,7 @@ $banned_fingerprints = array(
 'c100a6673ba6f6bc15df8ac130939659', // Java/1.6.0_05
 '917375f84c04b9515fee277caa61a1c9', // Java/1.6.0_06
 '5aa8fd37461acc8b03fd6c1c59f45671', // Java/1.6.0_07
+'7611f5198af4e6cb85ea0edaa1144c31', // Java/1.6.0_11
 'aa8ba6fd98fd9085ec08ede5cd67b941', // Java/1.6.0_14
 '5416d4958dd6569e17f2269de5f64f46', // Java/1.6.0_17
 'b1844cc5196d7f0642a7f390e2d028f7', // Java/1.6.0_18

@@ -12,6 +12,7 @@ $known_fingerprints = array(
 '0f90768387e17021566a40bdc5ed4b0c',  //  * - Google Wireless Transcoder
 '46c694c4e4e26cd05657ff74cf9300da',  //  * - Google Wireless Transcoder
 '6f82b98fc53efbaca170d51e67469860',  //  * - Google Translate
+'e06615d3118241037d7314f5b9411105',  //  * - Google Desktop
 // App Engine Apps
 'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
 'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha
@@ -22,6 +23,8 @@ $known_fingerprints = array(
 '86da1e9551b784725ced8434be16755d',  // getfavicon
 '337fb2b23192d6dbdfa9031e1468fb92',  // rtweetme
 // Microsoft Suspicous Crawlers
+'34f895d7de2f45b4ee2a57a6ece95518',  // US - Windows 2003  - Explorer 6.0 (search.msn.com)
+'7764c3c0f1922a0a6d1edf498b35bc20',  // US - Windows 2003  - Explorer 6.0 (search.msn.com)
 '970fa08c4ee995e7dde6b45b69bd9fb9',  // US - Windows Vista - Explorer 7.0
 '0d8c0fe3cbecc12b7c4d416786be82bd',  // US - Windows 2003  - Explorer 6.0
 '498aa0376230d5dd29b93242493a47d1',  // US - Windows 2003  - Explorer 6.0
