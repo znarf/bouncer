@@ -19,6 +19,8 @@ class Bouncer
 
     public static $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
 
+    public static $identity_headers = array('User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From');
+
     protected static $_rules = array(
         'agent_infos' => array(),
         'ip_infos' => array(),
@@ -83,7 +85,9 @@ class Bouncer
                     self::backend()->setIdentity($id, $identity);
                 } else if ($identity['user_agent'] != $user_agent) {
                     $agent = self::getAgentInfos($user_agent);
-                    $identity = array_merge($identity, $agent);
+                    $headers = self::getHeaders(self::$identity_headers);
+                    $fingerprint = self::fingerprint($headers);
+                    $identity = array_merge($identity, $agent, compact('headers', 'fingerprint'));
                     self::backend()->setIdentity($id, $identity);
                 }
                 return $identity;
@@ -92,7 +96,7 @@ class Bouncer
 
         $id = isset($_COOKIE['bouncer-identity']) ? self::hash($addr . ':' . $user_agent) : $id;
 
-        $headers = self::getHeaders(array('User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From'));
+        $headers = self::getHeaders(self::$identity_headers);
         $fingerprint = self::fingerprint($headers);
 
         $agent = self::getAgentInfos($user_agent);
@@ -189,7 +193,7 @@ class Bouncer
         }
         $headers = self::getHeaders();
         // Ignore Host + Agent headers
-        $ignore = array('Host', 'User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From');
+        $ignore = array('Host') + self::$identity_headers;
         foreach ($ignore as $key) {
             unset($headers[$key]);
         }
