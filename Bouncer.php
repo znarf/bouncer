@@ -67,10 +67,20 @@ class Bouncer
         }
     }
 
+    protected static function getAddr()
+    {
+         return $_SERVER['REMOTE_ADDR'];
+    }
+
+    protected static function getUserAgent()
+    {
+         return $_SERVER['HTTP_USER_AGENT'];
+    }
+
     protected static function identity()
     {
-        $addr = $_SERVER['REMOTE_ADDR'];
-        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+        $addr = self::getAddr();
+        $user_agent = self::getUserAgent();
 
         $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($addr . ':' . $user_agent);
 
