@@ -70,7 +70,7 @@ class Bouncer_Stats
     }
 
     public static function index()
-    {   
+    {
          require( dirname(__FILE__) . "/lib/browser.php" );
          require( dirname(__FILE__) . "/lib/os.php" );
          require( dirname(__FILE__) . "/lib/robot.php" );
@@ -129,6 +129,7 @@ class Bouncer_Stats
              $status = isset($last['result']) ? $last['result'][0] : 'neutral';
              $user = isset($last['request']['COOKIE']['user']) ? $last['request']['COOKIE']['user'] : '';
              $fingerprint = $identity['fingerprint'];
+             $fgtype = Bouncer_Rules_Fingerprint::getType($identity);
              $time = $last['time'];
              $hits = Bouncer::countAgentConnections($id, self::$_namespace);
              $addr = $identity['addr'];
@@ -148,16 +149,33 @@ class Bouncer_Stats
              $via = isset($last['request']['headers']['Via']) ? 1 : 0;
              $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : '';
 
+             $ref = 0;
+             if (!empty($first['request']['headers']['Referer'])) {
+                 $preferer = @parse_url($first['request']['headers']['Referer']);
+                 if (isset($preferer['host']) && $first['request']['server'] != $preferer['host']) {
+                     $referer = $first['request']['headers']['Referer'];
+                     $ref = 1;
+                 }
+             }
+
              foreach ($filters as $filter) {
                  list($filterKey, $filterValue) = $filter;
                  if (strpos($filterKey, '-') === 0) {
                     $filterKey = substr($filterKey, 1);
-                    if (isset($$filterKey) && $$filterKey == $filterValue) {
-                         continue 2;
+                    if (isset($$filterKey)) {
+                     if ($filterKey == 'addr' || $filterKey == 'host') {
+                         if (strpos($$filterKey, $filterValue) !== false) continue 2;
+                     } else {
+                         if ($$filterKey == $filterValue) continue 2;
                      }
+                    }
                  } else {
-                     if (isset($$filterKey) && $$filterKey != $filterValue) {
-                         continue 2;
+                     if (isset($$filterKey)) {
+                         if ($filterKey == 'addr' || $filterKey == 'host') {
+                             if (strpos($$filterKey, $filterValue) === false) continue 2;
+                         } else {
+                             if ($$filterKey != $filterValue) continue 2;
+                         }
                      }
                  }
              }
@@ -173,7 +191,6 @@ class Bouncer_Stats
              }
 
              $fingerprint = substr($identity['fingerprint'], 0, 6);
-             $fgtype = Bouncer_Rules_Fingerprint::getType($identity);
              if ($linkify) {
                  $fingerprint = '<a href="?filter=fingerprint%3A' . $identity['fingerprint'] . '">' . $fingerprint . '</a>';
              }
@@ -299,16 +316,14 @@ class Bouncer_Stats
 
         echo '<tr>', '<td>', 'Reverse', '</td>', '<td>';
         $rev = preg_replace('/^(\\d+)\.(\\d+)\.(\\d+)\.(\\d+)$/', '$4.$3.$2.$1', $identity['addr']);
-        $ptrs = @dns_get_record("{$rev}.in-addr.arpa.", DNS_PTR);
+        $ptrs = dns_get_record("{$rev}.in-addr.arpa.", DNS_PTR);
         print_r($ptrs);
         echo '</td>', '</tr>';
 
-        if ($identity['addr'] != $identity['host']) {
-            echo '<tr>', '<td>', 'DNS', '</td>', '<td>';
-            $dns = @dns_get_record($identity['host'], DNS_A);
-            print_r($dns);
-            echo '</td>', '</tr>';
-        }
+        echo '<tr>', '<td>', 'DNS', '</td>', '<td>';
+        $dns = dns_get_record($identity['host'], DNS_A);
+        print_r($dns);
+        echo '</td>', '</tr>';
 
         echo '<tr>', '<td>', 'Network', '</td>', '<td>';
         print_r(Bouncer_Rules_Network::doPWLookupBulk(array($identity['addr'])));
@@ -344,6 +359,9 @@ class Bouncer_Stats
         echo '<th>', 'Score', '</th>';
         echo '</tr>';
         foreach ($connections as $id => $connection) {
+            if (empty($connection)) {
+                continue;
+            }
             $request = $connection['request'];
             $status = $connection['result'][0];
             echo '<tr class="', $status, '">';
@@ -437,10 +455,16 @@ class Bouncer_Stats
         echo '<table>';
         foreach ($stats as $value => $count) {
             $identity = $identities[$value];
-            echo '<tr>';
-            if ($count == 1) {
+            if ($count <= 2) {
                 continue;
             }
+            if (isset($_GET['unknown'])) {
+                $type = Bouncer_Rules_Fingerprint::getType($identity);
+                if (!empty($type)) {
+                    continue;
+                }
+            }
+            echo '<tr>';
             if ($key == 'fingerprint') {
                 echo '<td width="20">', $count, '</td>';
                 echo '<td width="20" style="background:#' . substr($value, 0, 6) . '">&nbsp;</td>';
