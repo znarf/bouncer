@@ -83,6 +83,8 @@ $known_fingerprints = array(
 '98382a7339a5175ad37a386a5bf74b89',  // BR - Windows XP - Explorer 6.0
 // RSS
 '5b2361fdf1c6e31b99a55def5adfea6e',  // SimplePie/1.1.1 (Moonmoon)
+'48f48b60e48af65e9fc20bc99971e76d',  // US - Apple-PubSub 65.20
+'7322bf08f0f24445f48613e0c3488610',  // FR - Apple-PubSub 65.20
 '8e756bbd8fd1b053856ce00735d9fe6f',  // US - Apple-PubSub 65.19
 '7ac14d372759acefcf867c15ffeffec0',  // GB - Apple-PubSub 65.19
 '9acfacf72fee443f8ee3c437ed847fac',  // FR - Apple-PubSub 65.19

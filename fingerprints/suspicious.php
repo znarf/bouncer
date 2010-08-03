@@ -41,6 +41,7 @@ $suspicious_fingerprints = array(
 'a8d05109ce1452f434c41086c58763e3',    // BM  - Windows XP    - Explorer 6.0     (US - CALPOP)
 '7b9e8b3e15f083ffd4003d6348a862b5',    // BM  - Windows XP    - Explorer 7.0     (FR - OVH)
 '5a02b5cee84ff465518e063a71662b03',    // LD  - Windows 2000  - Explorer 5.01    (US - wp-signup.php)
+'6ee31a0f6b63c451af5a393eae58ee98',    // BM  - Windows XP    - Netscape 7.2
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
@@ -49,6 +50,20 @@ $suspicious_fingerprints = array(
 '6e0b261a641d3f6ad9c53f4f0bcff690',    //  LD - MacOS X       - Firefox 2.0.0.7  (US - amazonaws.com)
 '2e4572613564df07f322e9d6411afd91',    //  BM - Windows XP    - Firefox 3.0.2    (CN - 110.75.169.*)
 'ae21b88a5f9d9e0f194d197bf3c1b16a',    //  BM - Unknown       - Firefox 3.0.5    (KR - 211.43.152.*)
+// BM - not identified
+'3dfed844dc126275d6d535bd0128a037',    //  BM - Windows XP    - Firefox 3.0.5    (various)
+'9f2c5a729cf256ae7df689a153233397',    //  BM - Windows XP    - Firefox 3.0.10   (various)
+// BM - inferno.name
+'a19471cdfd5262b77d9c2edb6ebc1510', // Windows 2003 - Opera 7.60
+'b6a988533111b50e812790f44de838aa', // Windows XP   - Explorer 6.0
+'c7345ab14c9c39e36737b503b6f11239', // Windows 2000 - Explorer 5.5
+'1f5e448c64308bf6732cc9d2df4eb538', // Windows XP   - Explorer 7.0
+'9da99f80922dc5c710dbc8602ea9ce83', // Windows 2003 - Explorer 6.0
+'870660ecfc39667a3fd987a147c51170', // Windows 2000 - Explorer 5.5
+'19b8d1b99b6dd00dbcb4251b013969d5', // Windows XP   - Explorer 6.0
+// BM - Tor network
+'2c83863b391804263c122cc9c9d23383', // Windows 7    - Chrome 5.0.375.99
+'cd5ba1c2668b1c6e3ad0dd1853b739ae', // Windows XP   - Firefox 3.6.8
 );
 return $suspicious_fingerprints;
 ?>
