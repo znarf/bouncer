@@ -70,6 +70,8 @@ $known_fingerprints = array(
 'a9b11c963519135d4b07c6b6ad36c0de',  // Social Mention/1.0; http://socialmention.com;)
 'a249ad9ab9dcd091a70c9a5cfb61bd03',  // Yahoo Pipes 1.0
 'b54f948e8e5cceb3b8f7d89e341d23c7',  // TwitterFeed 3
+'87d77eade01d9fcc73680ed520ea5e81',  // Netvibes - BM
+'6df8bda832ecbb4ad20ec624d6c86fdb',  // Netvibes - Mozilla/5.0 (compatible)
 // Flash (eg: WP image uploader)
 'd22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
 '4f4c2a419649c56cad7d3cca8dc9eeb6',  // Adobe Flash Player 10

@@ -5,8 +5,10 @@ $suspicious_fingerprints = array(
 // Near empty fingerprints
 'd87a5617df45f58730aa2412008966e9', // Accept:*/*
 'd4ad31d6bbd2b13d7e9683b23b1f6680', // Mozilla/5.0
+'34cc6f29ce8920ec9cc8b983ff7b482d', // Mozilla/4.0
 '8d4e52f445afc04479700fb94f606ea2', // Mozilla/5.0 - Accept:*/*
 'd3c137acd8ada3e23b5d18a7773260ec', // Mozilla/4.0 - Accept:*/*
+'208b39e00387100e0dfde392d73736f6', // Mozilla/4.0 - Accept:*/* - deflate, gzip
 'd28f73e67a253fb8503538b92ff5f33f', // Mozilla/3.0 (compatible)
 'a55dbce033e47342f4493b6b8e317a11', // Accept-Encoding:identity
 'b8a1d0f6c953cb9ff2dca95425cf4a67', // Mozilla/4.0 (compatible)
@@ -41,7 +43,7 @@ $suspicious_fingerprints = array(
 'a8d05109ce1452f434c41086c58763e3',    // BM  - Windows XP    - Explorer 6.0     (US - CALPOP)
 '7b9e8b3e15f083ffd4003d6348a862b5',    // BM  - Windows XP    - Explorer 7.0     (FR - OVH)
 '5a02b5cee84ff465518e063a71662b03',    // LD  - Windows 2000  - Explorer 5.01    (US - wp-signup.php)
-'6ee31a0f6b63c451af5a393eae58ee98',    // BM  - Windows XP    - Netscape 7.2
+'99565980df77d3c44fcf13b7005e3099',    // BM  - Windows 2000  - Explorer 8.0     (US - 207.70.*)
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
@@ -51,10 +53,15 @@ $suspicious_fingerprints = array(
 '2e4572613564df07f322e9d6411afd91',    //  BM - Windows XP    - Firefox 3.0.2    (CN - 110.75.169.*)
 'ae21b88a5f9d9e0f194d197bf3c1b16a',    //  BM - Unknown       - Firefox 3.0.5    (KR - 211.43.152.*)
 'e2bc467bfa309e5ec9e7db02d793c3f4',    //  BM - Windows XP    - Firefox 2.0.0.7  (US - theplanet.com)
+'95fb4f4df53accd38acbe819b75e36ec',    //  BM - Windows XP    - Firefox 2.0.0.11 (US - theplanet.com)
 // BM - not identified
 '3dfed844dc126275d6d535bd0128a037',    //  BM - Windows XP    - Firefox 3.0.5    (various)
 '9f2c5a729cf256ae7df689a153233397',    //  BM - Windows XP    - Firefox 3.0.10   (various)
 'b59e6ad8917389de9fc4ac545affa31c',    //  BM - MacOS PPC     - Netscape 4.7     (RU)
+'6ee31a0f6b63c451af5a393eae58ee98',    //  BM - Windows XP    - Netscape 7.2
+'867b704a2a13789b9a3a750b4ed43bec',    //  BM - Windows 2000  - Explorer 5.01
+'57b72e387d0933fe5633aea57423f26f',    //  BM - Windows 98    - Explorer 6.0
+'6f0e54a31a8f0d3d034a68992c84108f',    //  BM - Windows XP    - Firefox 3.0.6
 // BM - inferno.name
 'a19471cdfd5262b77d9c2edb6ebc1510', // Windows 2003 - Opera 7.60
 'b6a988533111b50e812790f44de838aa', // Windows XP   - Explorer 6.0
