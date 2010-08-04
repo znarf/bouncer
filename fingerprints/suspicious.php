@@ -50,9 +50,11 @@ $suspicious_fingerprints = array(
 '6e0b261a641d3f6ad9c53f4f0bcff690',    //  LD - MacOS X       - Firefox 2.0.0.7  (US - amazonaws.com)
 '2e4572613564df07f322e9d6411afd91',    //  BM - Windows XP    - Firefox 3.0.2    (CN - 110.75.169.*)
 'ae21b88a5f9d9e0f194d197bf3c1b16a',    //  BM - Unknown       - Firefox 3.0.5    (KR - 211.43.152.*)
+'e2bc467bfa309e5ec9e7db02d793c3f4',    //  BM - Windows XP    - Firefox 2.0.0.7  (US - theplanet.com)
 // BM - not identified
 '3dfed844dc126275d6d535bd0128a037',    //  BM - Windows XP    - Firefox 3.0.5    (various)
 '9f2c5a729cf256ae7df689a153233397',    //  BM - Windows XP    - Firefox 3.0.10   (various)
+'b59e6ad8917389de9fc4ac545affa31c',    //  BM - MacOS PPC     - Netscape 4.7     (RU)
 // BM - inferno.name
 'a19471cdfd5262b77d9c2edb6ebc1510', // Windows 2003 - Opera 7.60
 'b6a988533111b50e812790f44de838aa', // Windows XP   - Explorer 6.0
@@ -61,6 +63,7 @@ $suspicious_fingerprints = array(
 '9da99f80922dc5c710dbc8602ea9ce83', // Windows 2003 - Explorer 6.0
 '870660ecfc39667a3fd987a147c51170', // Windows 2000 - Explorer 5.5
 '19b8d1b99b6dd00dbcb4251b013969d5', // Windows XP   - Explorer 6.0
+'7ae7fbc9e52c64fd2fb5883381bce8a9', // Windows      - BrowseX 2.0.0
 );
 return $suspicious_fingerprints;
 ?>

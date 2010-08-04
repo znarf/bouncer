@@ -187,7 +187,7 @@ class Bouncer_Stats
                  $id = substr($id, 0, 10);
              }
 
-             if (isset($user) && $linkify) {
+             if (isset($user) && $user != 'none' && $linkify) {
                  $user = '<a href="http://blogmarks.net/user/' . $user . '">' . $user . '</a>';
              }
 

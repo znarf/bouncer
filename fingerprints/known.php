@@ -66,6 +66,10 @@ $known_fingerprints = array(
 '2708e9c06a83250e6bcab443f73c71e3',  // http://page-store.com/
 '6afae750923289d89eb638a6a7ae8947',  // librabot/2.0 (+http://academic.research.microsoft.com/)
 '9c1bb51b327c07997fe1971925a5149e',  // librabot/2.0 (+http://academic.research.microsoft.com/)
+'62af4df169beb4ff6ffc6ea471fcbdbe',  // Superfeedr: Superparser/1.0 http://superfeedr.com
+'a9b11c963519135d4b07c6b6ad36c0de',  // Social Mention/1.0; http://socialmention.com;)
+'a249ad9ab9dcd091a70c9a5cfb61bd03',  // Yahoo Pipes 1.0
+'b54f948e8e5cceb3b8f7d89e341d23c7',  // TwitterFeed 3
 // Flash (eg: WP image uploader)
 'd22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
 '4f4c2a419649c56cad7d3cca8dc9eeb6',  // Adobe Flash Player 10
