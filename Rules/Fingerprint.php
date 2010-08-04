@@ -59,7 +59,7 @@ class Bouncer_Rules_Fingerprint
             return 'botnet';
         }
 
-        return null;
+        return '';
     }
 
     public static function get($type)

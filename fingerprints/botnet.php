@@ -263,6 +263,12 @@ $botnet_fingerprints = array(
 'e27058ae2f5bef7b1e5599853be4b012', // 5
 'b692da610bdf10bbbaa39d54d062d798', // 3
 'ea487e7fd00a84334e7726a0017bb45b', // 2
+'c5024b0c6a3b70e344d145890d1243ae', // X
+'cd5ba1c2668b1c6e3ad0dd1853b739ae', // X
+'1124c8bb95620745b32892c71ecc32bc', // X
+'7b34dea79ca51e7537172e541d79a360', // X
+'0f4ddccff6fde0e405539f0595f96ea8', // X
+
 );
 return $botnet_fingerprints;
 ?>
