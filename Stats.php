@@ -127,9 +127,10 @@ class Bouncer_Stats
              $first = Bouncer::getFirstAgentConnection($id, self::$_namespace);
 
              $status = isset($last['result']) ? $last['result'][0] : 'neutral';
-             $user = isset($last['request']['COOKIE']['user']) ? $last['request']['COOKIE']['user'] : '';
+             $user = isset($last['request']['COOKIE']['user']) ? $last['request']['COOKIE']['user'] : 'none';
              $fingerprint = $identity['fingerprint'];
              $fgtype = Bouncer_Rules_Fingerprint::getType($identity);
+             $fgtype = empty($fgtype) ? 'none' : $fgtype;
              $time = $last['time'];
              $hits = Bouncer::countAgentConnections($id, self::$_namespace);
              $addr = $identity['addr'];
@@ -244,7 +245,7 @@ class Bouncer_Stats
                  if ($key == 'fingerprint') {
                      echo '<td style="background:#' . substr($identity['fingerprint'], 0, 6) . '">&nbsp;</td>';
                      echo '<td>' . $fingerprint . '</td>';
-                     echo '<td>' . ( isset($fgtype) ? $fgtype : '' ) . '</td>';
+                     echo '<td>' . ( isset($fgtype) && $fgtype != 'none' ? $fgtype : '' ) . '</td>';
                  } else if ($key == 'host') {
                      echo '<td class="ic ' . $extension . '">', $host, '</td>';
                  } else if ($key == 'agent') {
@@ -252,7 +253,7 @@ class Bouncer_Stats
                  } else if ($key == 'system') {
                      echo '<td class="ic ' . $system_name . '">', $system ,'</td>';
                  } else {
-                     if (isset($$key)) {
+                     if (isset($$key) && $$key != 'none') {
                           echo '<td>', $$key ,'</td>';
                      } else {
                          echo '<td>', '&nbsp;' ,'</td>';
@@ -500,6 +501,10 @@ class Bouncer_Stats
 
     public static function extract()
     {
+        require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
+
+        $botnets = Bouncer_Rules_Fingerprint::get('botnet');
+
         $agents = Bouncer::getAgentsIndex(self::$_namespace);
 
         $fingerprints = array();
@@ -509,7 +514,7 @@ class Bouncer_Stats
             $key = $_GET['extract'];
             $identity = Bouncer::getIdentity($id);
             $fg = $identity['fingerprint'];
-            if (strpos($identity['host'],$key) !== false) {
+            if (strpos($identity['host'], $key) !== false) {
                 $fingerprints[] = $fg;
             }
         }
@@ -568,6 +573,9 @@ class Bouncer_Stats
 
         foreach ($fingerprints2 as $value => $count) {
             if (isset($fingerprints3[$value])) {
+                continue;
+            }
+            if (in_array($value, $botnets)) {
                 continue;
             }
             echo "\n'$value', // $count";

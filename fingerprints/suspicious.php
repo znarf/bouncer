@@ -63,7 +63,9 @@ $suspicious_fingerprints = array(
 '19b8d1b99b6dd00dbcb4251b013969d5', // Windows XP   - Explorer 6.0
 // BM - Tor network
 '2c83863b391804263c122cc9c9d23383', // Windows 7    - Chrome 5.0.375.99
+'e27058ae2f5bef7b1e5599853be4b012', // Windows XP   - Chrome 5.0.375.99
 'cd5ba1c2668b1c6e3ad0dd1853b739ae', // Windows XP   - Firefox 3.6.8
+'1124c8bb95620745b32892c71ecc32bc', // Windows 7    - Firefox 3.6.8
 );
 return $suspicious_fingerprints;
 ?>
