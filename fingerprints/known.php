@@ -22,6 +22,7 @@ $known_fingerprints = array(
 '06ca030f40974c9f8a30718e261bdfe5',  // rtweetme
 '86da1e9551b784725ced8434be16755d',  // getfavicon
 '337fb2b23192d6dbdfa9031e1468fb92',  // rtweetme
+'5577bdd018c3f246007dd1bb07f0d81f',  // pubsubhubbub
 // Microsoft Suspicous Crawlers
 '34f895d7de2f45b4ee2a57a6ece95518',  // US - Windows 2003  - Explorer 6.0 (search.msn.com)
 '7764c3c0f1922a0a6d1edf498b35bc20',  // US - Windows 2003  - Explorer 6.0 (search.msn.com)
