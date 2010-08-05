@@ -8,6 +8,7 @@ $browsers_fingerprints = array(
 '1f2528b77682bc1e3f2281963769944f', // en - MacOS X 10.5.8 - Safari 4.0.4
 'cb63a7097b499ec65fe5c69d22ba6ad7', // en - MacOS X 10.5.8 - Safari 4.0.5
 'a60fa663e76920ba5da718848010d225', // en - MacOS X 10.5.8 - Safari 5.0
+'538d86f1d32481b5111895d56629baef', // en - MacOS X 10.5.8 - Safari 5.0.1
 '1d93ebf412b38dcf4ea07fd5fdc04941', // en - MacOS X 10.6 - Safari 4.0.3
 '251cc258f506eb9dae94490593e2ad79', // en - MacOS X 10.6.1 - Safari 4.0.3
 '9ae1d2ba2a48b65d338ffefdda41bcd0', // en - MacOS X 10.6.1 - Safari 4.0.5
@@ -15,10 +16,13 @@ $browsers_fingerprints = array(
 'ba253991634863597b94074458a24b1b', // en - MacOS X 10.6.2 - Safari 4.0.4
 'c89ebe42a2bb8a0259cf29aaae1ab5f2', // en - MacOS X 10.6.2 - Safari 4.0.5
 '67cd3826d9a85a6b2735494ad2c0bf20', // en - MacOS X 10.6.2 - Safari 5.0
+'d6d77a42acc03da4bbfcfe3d7505e17e', // en - MacOS X 10.6.2 - Safari 5.0.1
 '0b155bcda4ee60511ff2abc05b564faa', // en - MacOS X 10.6.3 - Safari 4.0.4
 '8e9ecf999b1eda66b483b56188ae4d59', // en - MacOS X 10.6.3 - Safari 4.0.5
 '39b73481c6a25145eef6e9e5f9ea53a8', // en - MacOS X 10.6.3 - Safari 5.0
+'350259f4eba4e78f34beac7fefa258c2', // en - MacOS X 10.6.3 - Safari 5.0.1
 '857778fa864934da095716e64cf42ee6', // en - MacOS X 10.6.4 - Safari 5.0
+'2c4573a2eb4320238bb37810f7014b9f', // en - MacOS X 10.6.4 - Safari 5.0.1
 '7fc28042463bf0f95abc2bddbac852f7', // en-us - MacOS X 10.4.11 - Safari 4.0.4
 '2d9a54fab4d96b29e5aacda62175d73c', // en-us - MacOS X 10.4.11 - Safari 4.0.5
 'e601cf1a3e25c8973295c7165d1c4e7c', // en-us - MacOS X 10.4.11 - Safari 4.1
@@ -27,6 +31,7 @@ $browsers_fingerprints = array(
 'ac939d668f9cdb65d6cc01753633d64f', // en-us - MacOS X 10.5.8 - Safari 4.0.4
 '070d20378e5fad75a5e16d6ad56f37b1', // en-us - MacOS X 10.5.8 - Safari 4.0.5
 '0f51155ebe9ff5069ddf1ab683ea6e0e', // en-us - MacOS X 10.5.8 - Safari 5.0
+'c0f5b1ab336179083add8fd2eaf767af', // en-us - MacOS X 10.5.8 - Safari 5.0.1
 'c8eba7664024b10c20ebdffeffe1779c', // en-us - MacOS X 10.6 - Safari 4.0.3
 '73befd8518d77163444f0014e6e933a0', // en-us - MacOS X 10.6.1 - Safari 4.0.3
 '5eeb0ff5e5909d3285a1e5f6673029e0', // en-us - MacOS X 10.6.1 - Safari 4.0.5
@@ -34,10 +39,13 @@ $browsers_fingerprints = array(
 '48bb333f3fa59754526880739735fdb9', // en-us - MacOS X 10.6.2 - Safari 4.0.4
 '0ea45b85b6c50409353b01c1a27c95db', // en-us - MacOS X 10.6.2 - Safari 4.0.5
 'a092102db47bd234fdcc9a267e93d41c', // en-us - MacOS X 10.6.2 - Safari 5.0
+'ba59e640d7e8bf5f4b2c9845142006af', // en-us - MacOS X 10.6.2 - Safari 5.0.1
 'e847161f0457419e25f79070e49e0c0f', // en-us - MacOS X 10.6.3 - Safari 4.0.4
 '17801e7f8cc0f8bb6917c599f6642212', // en-us - MacOS X 10.6.3 - Safari 4.0.5
 '5eb1a25c7f7cc0f9400fe8ab7754cfb4', // en-us - MacOS X 10.6.3 - Safari 5.0
+'aa5a7191319c89456da782d916dfe3d0', // en-us - MacOS X 10.6.3 - Safari 5.0.1
 '7f356e9b42975f495c8d81b7b67e38c5', // en-us - MacOS X 10.6.4 - Safari 5.0
+'7964d3b086a0b7cd2ccc202c83ac1bc8', // en-us - MacOS X 10.6.4 - Safari 5.0.1
 '5cd9056de692abf0bf84afebc9576202', // fr-fr - MacOS X 10.4.11 - Safari 4.0.4
 'd46bcae40cdfcb69bc8dcabd8f2578c7', // fr-fr - MacOS X 10.4.11 - Safari 4.0.5
 '1135fd2789b4e074dd7070504403fbcc', // fr-fr - MacOS X 10.4.11 - Safari 4.1
@@ -46,6 +54,7 @@ $browsers_fingerprints = array(
 'a4353cfecb5f78042f575d86b51aa026', // fr-fr - MacOS X 10.5.8 - Safari 4.0.4
 'b231f988e2c1efc4cbfc2a0e93305d0e', // fr-fr - MacOS X 10.5.8 - Safari 4.0.5
 '1704fbbd389ad73b3d935d5baf98b26e', // fr-fr - MacOS X 10.5.8 - Safari 5.0
+'6c0a872ea88543fddd8d2fb06268512d', // fr-fr - MacOS X 10.5.8 - Safari 5.0.1
 'c94c379c2cfed5841c6d6a3b5b07a378', // fr-fr - MacOS X 10.6 - Safari 4.0.3
 'c10c1cb9f84bd89132fa24d03fe241e9', // fr-fr - MacOS X 10.6.1 - Safari 4.0.3
 '1bd12635902bd7d4cd40e578ec906529', // fr-fr - MacOS X 10.6.1 - Safari 4.0.5
@@ -53,10 +62,13 @@ $browsers_fingerprints = array(
 '251e7a90c9447af73eec31a24ab8d7f3', // fr-fr - MacOS X 10.6.2 - Safari 4.0.4
 '0dc68ad05f0002cd20633f57e1010251', // fr-fr - MacOS X 10.6.2 - Safari 4.0.5
 '4bb37257faa57d32ba7c789caef8de45', // fr-fr - MacOS X 10.6.2 - Safari 5.0
+'603fa61bd01a5889e07c8ecc09a24505', // fr-fr - MacOS X 10.6.2 - Safari 5.0.1
 'd02fd5565cc33392aa7ebe785c9a8d02', // fr-fr - MacOS X 10.6.3 - Safari 4.0.4
 '0c5584d0c13af19d293b742320083844', // fr-fr - MacOS X 10.6.3 - Safari 4.0.5
 '678bccdef8b9d5e6d2ed0dccf8217e0a', // fr-fr - MacOS X 10.6.3 - Safari 5.0
+'33ebb13e43d2f99b88013657a501b8b6', // fr-fr - MacOS X 10.6.3 - Safari 5.0.1
 '32f3b16f619fa883bd3ac066077444ac', // fr-fr - MacOS X 10.6.4 - Safari 5.0
+'217c26e6ce6b22d35c4701dee2db5103', // fr-fr - MacOS X 10.6.4 - Safari 5.0.1
 'c596bff7b9e0f992545789a47eeeaf7a', // de-de - MacOS X 10.4.11 - Safari 4.0.4
 'f7eec137ab4f8e59114cb3b7a2820969', // de-de - MacOS X 10.4.11 - Safari 4.0.5
 'e4dc087eb7d554714cdd741f0c9eaf53', // de-de - MacOS X 10.4.11 - Safari 4.1
@@ -65,6 +77,7 @@ $browsers_fingerprints = array(
 'd3346dd09fdc0b1d9787c436b92050af', // de-de - MacOS X 10.5.8 - Safari 4.0.4
 '9901f10191cd6d069e2f4e3e75148f35', // de-de - MacOS X 10.5.8 - Safari 4.0.5
 '148e322478e1e0174c798970fc85d9de', // de-de - MacOS X 10.5.8 - Safari 5.0
+'2762bc5d4d0bd30afd3b5e49c5c12348', // de-de - MacOS X 10.5.8 - Safari 5.0.1
 '439abb52d83910a9da0dd9a0a21a385a', // de-de - MacOS X 10.6 - Safari 4.0.3
 '230f1a06deef32bfda3850138c3712f7', // de-de - MacOS X 10.6.1 - Safari 4.0.3
 '2da674ff8c83c98579d1f06455e77c14', // de-de - MacOS X 10.6.1 - Safari 4.0.5
@@ -72,10 +85,13 @@ $browsers_fingerprints = array(
 '6aa71e22bc17e411735381fb3c1bb8ae', // de-de - MacOS X 10.6.2 - Safari 4.0.4
 'c7e2ff87984d68906fb82846ab59d9ea', // de-de - MacOS X 10.6.2 - Safari 4.0.5
 '65e243fa4340e8cd71d7728c00da4356', // de-de - MacOS X 10.6.2 - Safari 5.0
+'2a73156ae95acc723a5467fd2c38f005', // de-de - MacOS X 10.6.2 - Safari 5.0.1
 'e8b2a7227db0b14e5fef3c9cf595071c', // de-de - MacOS X 10.6.3 - Safari 4.0.4
 'c0c18456cfb62bd3129b93c44de49f18', // de-de - MacOS X 10.6.3 - Safari 4.0.5
 'd5c7c152f1dcda94d517c1c5efc55f64', // de-de - MacOS X 10.6.3 - Safari 5.0
+'3bbd5b50db4fb5f434d282a78027daf0', // de-de - MacOS X 10.6.3 - Safari 5.0.1
 '80f7e367ed401d1ffb65e080d21f6744', // de-de - MacOS X 10.6.4 - Safari 5.0
+'ef439ce490d122379a91b6506233b3c9', // de-de - MacOS X 10.6.4 - Safari 5.0.1
 'e70a31a2ed5d1aaa536ee38b03958aef', // de-ch - MacOS X 10.4.11 - Safari 4.0.4
 '8c01783a2a0f6d16c5163205402af8db', // de-ch - MacOS X 10.4.11 - Safari 4.0.5
 'f4f3fb7d98d462ed9df1df006d7eef6b', // de-ch - MacOS X 10.4.11 - Safari 4.1
@@ -84,6 +100,7 @@ $browsers_fingerprints = array(
 '22184a54a13656617a74f3132a0716a6', // de-ch - MacOS X 10.5.8 - Safari 4.0.4
 'a517699831bb05557be82c0418ba337f', // de-ch - MacOS X 10.5.8 - Safari 4.0.5
 '4905264d990f427bcf4843e38db6f7c3', // de-ch - MacOS X 10.5.8 - Safari 5.0
+'32b53b9cb4f0b4c8c196e92cab4a79ac', // de-ch - MacOS X 10.5.8 - Safari 5.0.1
 '188afdbd05820f69432902ac792e2086', // de-ch - MacOS X 10.6 - Safari 4.0.3
 '72b3dfc80254c0c9e837eda4f2dcf5ab', // de-ch - MacOS X 10.6.1 - Safari 4.0.3
 'bcbfe1b3bd5d6f7fa3131a7e20568b1b', // de-ch - MacOS X 10.6.1 - Safari 4.0.5
@@ -91,10 +108,13 @@ $browsers_fingerprints = array(
 '3809bec1ee4a5d2b3e261b0afea9e576', // de-ch - MacOS X 10.6.2 - Safari 4.0.4
 'f93127a521e8ea3c3794d359645b090c', // de-ch - MacOS X 10.6.2 - Safari 4.0.5
 'b8aa99e35b8b23f9917aa23d0ed0b92c', // de-ch - MacOS X 10.6.2 - Safari 5.0
+'21636540e64c81f98800d04017904494', // de-ch - MacOS X 10.6.2 - Safari 5.0.1
 'bdd5e4fd9330a343822ec19404612206', // de-ch - MacOS X 10.6.3 - Safari 4.0.4
 'f8765149e37401c6a81d31a90755dbf3', // de-ch - MacOS X 10.6.3 - Safari 4.0.5
 '17a963198bad763bbd4cb34406e394a7', // de-ch - MacOS X 10.6.3 - Safari 5.0
+'d63a46f980945b104e58267634962d41', // de-ch - MacOS X 10.6.3 - Safari 5.0.1
 '4632dc5f8a942df02ab91b96a12757fe', // de-ch - MacOS X 10.6.4 - Safari 5.0
+'e57660754e5e5f0ff145555b690b0e5e', // de-ch - MacOS X 10.6.4 - Safari 5.0.1
 '60119ddf8a7f36ff29e61f18690873e3', // pl-pl - MacOS X 10.4.11 - Safari 4.0.4
 'd1c20bdb0f5a142ee923e7231965f31b', // pl-pl - MacOS X 10.4.11 - Safari 4.0.5
 'bffa5a1fff04f2323c64e04129a808c6', // pl-pl - MacOS X 10.4.11 - Safari 4.1
@@ -103,6 +123,7 @@ $browsers_fingerprints = array(
 '603fd4136d410e1ee6e3eb7dcfb60d84', // pl-pl - MacOS X 10.5.8 - Safari 4.0.4
 '4f144c37855631ff66895fe871f31fab', // pl-pl - MacOS X 10.5.8 - Safari 4.0.5
 '71fd647a92c4fbdbffb0d4ac8f4664be', // pl-pl - MacOS X 10.5.8 - Safari 5.0
+'f04302fd906c052ada7969e4b4e779b6', // pl-pl - MacOS X 10.5.8 - Safari 5.0.1
 '1937e75489c6387edd484372cede83c8', // pl-pl - MacOS X 10.6 - Safari 4.0.3
 '35ae904b056eb26134803014ddf66785', // pl-pl - MacOS X 10.6.1 - Safari 4.0.3
 '07f0df125a3d82b4cf98ae3a2f33bc8d', // pl-pl - MacOS X 10.6.1 - Safari 4.0.5
@@ -110,10 +131,13 @@ $browsers_fingerprints = array(
 '4665a63184887efcedc76c5622b252e6', // pl-pl - MacOS X 10.6.2 - Safari 4.0.4
 '00972feeab07a28ed7a656c0f88114c1', // pl-pl - MacOS X 10.6.2 - Safari 4.0.5
 'f88304215655d697b79539437e99a927', // pl-pl - MacOS X 10.6.2 - Safari 5.0
+'5a8726b20ef90d0bc56057ddd2765c5c', // pl-pl - MacOS X 10.6.2 - Safari 5.0.1
 '1be62223d280d76c49d63fdfa4864fd2', // pl-pl - MacOS X 10.6.3 - Safari 4.0.4
 '192788d7ee18be6779e186e311bd6e17', // pl-pl - MacOS X 10.6.3 - Safari 4.0.5
 '9393fc9bdd174eae29617751cd987bca', // pl-pl - MacOS X 10.6.3 - Safari 5.0
+'01ba31bf5bf6fe67127f67bd98353f75', // pl-pl - MacOS X 10.6.3 - Safari 5.0.1
 '07214819fa5d9569176761a6237c478a', // pl-pl - MacOS X 10.6.4 - Safari 5.0
+'83d380f393dc7d017cd4c258fbc25322', // pl-pl - MacOS X 10.6.4 - Safari 5.0.1
 '178d23c52c810ef0ccf4837078a77ae8', // es - MacOS X 10.4.11 - Safari 4.0.4
 '0fb3c34b6d02b8030b914beb7cad924f', // es - MacOS X 10.4.11 - Safari 4.0.5
 '42d48779c31091924626e8164573f44b', // es - MacOS X 10.4.11 - Safari 4.1
@@ -122,6 +146,7 @@ $browsers_fingerprints = array(
 'd8aae14a601242878b361c37a0a69c6c', // es - MacOS X 10.5.8 - Safari 4.0.4
 '0e6fa36540f9b1ed076dade2b6a2066a', // es - MacOS X 10.5.8 - Safari 4.0.5
 'fb615c4dcf97d2bbabd28a8d20ea052a', // es - MacOS X 10.5.8 - Safari 5.0
+'c4f1accd4ccb0d182618a55b3979c061', // es - MacOS X 10.5.8 - Safari 5.0.1
 '4349a068b61f257744719bda49372c86', // es - MacOS X 10.6 - Safari 4.0.3
 'c4873a6e4d8661caa527c000ec185430', // es - MacOS X 10.6.1 - Safari 4.0.3
 '2691f5ab12d2e2e72551d1440f569798', // es - MacOS X 10.6.1 - Safari 4.0.5
@@ -129,10 +154,13 @@ $browsers_fingerprints = array(
 '1587e397d9163b40dd2f5f9f52393d88', // es - MacOS X 10.6.2 - Safari 4.0.4
 '068e5cdb97116f0f00b34fd5c5aaf8a3', // es - MacOS X 10.6.2 - Safari 4.0.5
 'e81d08dd647e6c0abc544faeece8677f', // es - MacOS X 10.6.2 - Safari 5.0
+'d53dde9f6b7ab5dae6644781d46a2e4e', // es - MacOS X 10.6.2 - Safari 5.0.1
 '306123a8d2fbe8ce03881c51321fffd8', // es - MacOS X 10.6.3 - Safari 4.0.4
 '8fa49a8ff3c9caf6e20fd6ed2a9cfe74', // es - MacOS X 10.6.3 - Safari 4.0.5
 '2be3997f96355a3be701a8a4d5025753', // es - MacOS X 10.6.3 - Safari 5.0
+'ec8dc3e4eed4e9b842c6d618f0367585', // es - MacOS X 10.6.3 - Safari 5.0.1
 'ca79a0f21a77bd93d5ed9f905f5b38df', // es - MacOS X 10.6.4 - Safari 5.0
+'55b5bed09a12d7773c52d9c777cc2d36', // es - MacOS X 10.6.4 - Safari 5.0.1
 '26aeaadc4a40220ad31cabb61547337c', // es-es - MacOS X 10.4.11 - Safari 4.0.4
 'bd7e4e67680c06fcac198160a024a64a', // es-es - MacOS X 10.4.11 - Safari 4.0.5
 '4121795ab94868466094222fafd032f9', // es-es - MacOS X 10.4.11 - Safari 4.1
@@ -141,6 +169,7 @@ $browsers_fingerprints = array(
 '504e1771d2d992e77d93f4431af1e393', // es-es - MacOS X 10.5.8 - Safari 4.0.4
 '41a58a568d2b91e2dafeaffa1efc512c', // es-es - MacOS X 10.5.8 - Safari 4.0.5
 '4404750d6553f9500fb5386d0db5b369', // es-es - MacOS X 10.5.8 - Safari 5.0
+'1fc04f7dbdd5a34cb397018030e26229', // es-es - MacOS X 10.5.8 - Safari 5.0.1
 '4bc3112eb198ccaae6cb8a889a0cc366', // es-es - MacOS X 10.6 - Safari 4.0.3
 'fe61264f7507a9d21a3fadd5a60925e8', // es-es - MacOS X 10.6.1 - Safari 4.0.3
 'e8ce1e8a8fc1b30fd0cb24e2c4670592', // es-es - MacOS X 10.6.1 - Safari 4.0.5
@@ -148,10 +177,13 @@ $browsers_fingerprints = array(
 '4f26c48ac5ec6df7123e2c835b52aae8', // es-es - MacOS X 10.6.2 - Safari 4.0.4
 '80ff95adce550659995a0ea67dd5d280', // es-es - MacOS X 10.6.2 - Safari 4.0.5
 '570a21520864b67c98371f3d06b05c98', // es-es - MacOS X 10.6.2 - Safari 5.0
+'195107d2edf140046cd028acd802efa2', // es-es - MacOS X 10.6.2 - Safari 5.0.1
 '0867a62817a9283120ce24168026ae30', // es-es - MacOS X 10.6.3 - Safari 4.0.4
 '0f32c52bd1f6fd54c2e80af0ecda07fc', // es-es - MacOS X 10.6.3 - Safari 4.0.5
 'dace225670a9bf9ec089507da0ef652b', // es-es - MacOS X 10.6.3 - Safari 5.0
+'4e229a1b5c3abbb72d595698a3159e08', // es-es - MacOS X 10.6.3 - Safari 5.0.1
 '83cae75c25156e9f8b4b7d9f720deb17', // es-es - MacOS X 10.6.4 - Safari 5.0
+'254057d27171283ab573f61a261be60e', // es-es - MacOS X 10.6.4 - Safari 5.0.1
 'a34ac3ac3d3db3571b6a269e6e5631d5', // nl-nl - MacOS X 10.4.11 - Safari 4.0.4
 '7b1376d1c1caad127415301817112da5', // nl-nl - MacOS X 10.4.11 - Safari 4.0.5
 'ff849f5086d8c020519b2dd79d488ec5', // nl-nl - MacOS X 10.4.11 - Safari 4.1
@@ -160,6 +192,7 @@ $browsers_fingerprints = array(
 'cee1a7427146462c41702a24495ed626', // nl-nl - MacOS X 10.5.8 - Safari 4.0.4
 '21d1709403c4ab6ad8698de8fd0ee66f', // nl-nl - MacOS X 10.5.8 - Safari 4.0.5
 '8f3979ea82664d465860094e82c605d7', // nl-nl - MacOS X 10.5.8 - Safari 5.0
+'e8369786b3c480bb4de203411280795b', // nl-nl - MacOS X 10.5.8 - Safari 5.0.1
 '34fc87ec86a098c08c1e4d4b72e5f5c7', // nl-nl - MacOS X 10.6 - Safari 4.0.3
 '758de703369a221f98807e3cc0c14cf8', // nl-nl - MacOS X 10.6.1 - Safari 4.0.3
 '56ef78f7972d84f5bfb0e09621cde1d2', // nl-nl - MacOS X 10.6.1 - Safari 4.0.5
@@ -167,10 +200,13 @@ $browsers_fingerprints = array(
 'd6579e4be3454ac7b48d71731d3e35f5', // nl-nl - MacOS X 10.6.2 - Safari 4.0.4
 'fdf24c17551e8d61ef258cc50b89c21f', // nl-nl - MacOS X 10.6.2 - Safari 4.0.5
 'bc2f6fdaa0954638147d6f2e217540da', // nl-nl - MacOS X 10.6.2 - Safari 5.0
+'a1baceb3db608f967b363210d96ea46c', // nl-nl - MacOS X 10.6.2 - Safari 5.0.1
 'bbf6daa177f1e721db9dcaf4d82db44f', // nl-nl - MacOS X 10.6.3 - Safari 4.0.4
 '46b6d40eb5395122549fa5b3a9a394d3', // nl-nl - MacOS X 10.6.3 - Safari 4.0.5
 '8f2bdb2822ab62ad6d74da7e0203338c', // nl-nl - MacOS X 10.6.3 - Safari 5.0
+'dff71456a9f119be9d770e65b50d1ad1', // nl-nl - MacOS X 10.6.3 - Safari 5.0.1
 'c10f156dcdca00ed0c190fd39d7f96ee', // nl-nl - MacOS X 10.6.4 - Safari 5.0
+'24afec7d9f6317a9e9b724e740ba68c5', // nl-nl - MacOS X 10.6.4 - Safari 5.0.1
 'e173067cd1552fae1ce1dbfa7d6be253', // it-it - MacOS X 10.4.11 - Safari 4.0.4
 'aa6010965678bc29ce1a17e68c139a3c', // it-it - MacOS X 10.4.11 - Safari 4.0.5
 '9ca1a7a31e7231d66eaea93e6ba23cd8', // it-it - MacOS X 10.4.11 - Safari 4.1
@@ -179,6 +215,7 @@ $browsers_fingerprints = array(
 '654c7d94d827d0c654314a11fbb3a0d6', // it-it - MacOS X 10.5.8 - Safari 4.0.4
 'd49d904ce1bc3e052872f120099b0e50', // it-it - MacOS X 10.5.8 - Safari 4.0.5
 '20477d69c865d1b44c4ca9957daa1af3', // it-it - MacOS X 10.5.8 - Safari 5.0
+'f6c552a10ee5c22717a7ae600e2f83ec', // it-it - MacOS X 10.5.8 - Safari 5.0.1
 'e3f001cada857333c4ab6737750a3988', // it-it - MacOS X 10.6 - Safari 4.0.3
 'dc4cb457dfebc765d14a779b4bfe6767', // it-it - MacOS X 10.6.1 - Safari 4.0.3
 'b0a4c87c89f72092df14ccfdaca6b8a6', // it-it - MacOS X 10.6.1 - Safari 4.0.5
@@ -186,10 +223,13 @@ $browsers_fingerprints = array(
 'b497a382e0a8e0f616a2f857802385b4', // it-it - MacOS X 10.6.2 - Safari 4.0.4
 '6bbe5974cec722404a34c3e748f41097', // it-it - MacOS X 10.6.2 - Safari 4.0.5
 '38ee844cf8c8702b946a544a7a0c619a', // it-it - MacOS X 10.6.2 - Safari 5.0
+'e4b8cf0b97cd7d4a2940dbc8d6fdbb52', // it-it - MacOS X 10.6.2 - Safari 5.0.1
 '9552576f2d50b718836c04fff4b3b45e', // it-it - MacOS X 10.6.3 - Safari 4.0.4
 'd69e0f67a7bbe60ffdfb351df0ffe272', // it-it - MacOS X 10.6.3 - Safari 4.0.5
 '0cc58c408df7da22a5655c43f32e70ac', // it-it - MacOS X 10.6.3 - Safari 5.0
+'9f7c75825220eec26588167983d9c912', // it-it - MacOS X 10.6.3 - Safari 5.0.1
 'e6666122ceaedb4fa749a16419db98bb', // it-it - MacOS X 10.6.4 - Safari 5.0
+'28fd449fbc9b3f29993d275a881cf05a', // it-it - MacOS X 10.6.4 - Safari 5.0.1
 '270413e17d001ea4ad437b6b7d11a23f', // ko-kr - MacOS X 10.4.11 - Safari 4.0.4
 'e9c61547fdec8c2f81d8829dd0601128', // ko-kr - MacOS X 10.4.11 - Safari 4.0.5
 '74d698ccd1c2d24b1726416261539835', // ko-kr - MacOS X 10.4.11 - Safari 4.1
@@ -198,6 +238,7 @@ $browsers_fingerprints = array(
 '775161ae2e1b1134e211132466af9201', // ko-kr - MacOS X 10.5.8 - Safari 4.0.4
 '38d5229ffb368ad92456fefe0e9bac3c', // ko-kr - MacOS X 10.5.8 - Safari 4.0.5
 '13fc64429f22da9fcfaa78f22a65775d', // ko-kr - MacOS X 10.5.8 - Safari 5.0
+'8ffd29a109a6b6424b945b70b08695d4', // ko-kr - MacOS X 10.5.8 - Safari 5.0.1
 '1435c35250fad77c02445cfaa84967c6', // ko-kr - MacOS X 10.6 - Safari 4.0.3
 '433e94aebdf8462e0d50f25780bceb59', // ko-kr - MacOS X 10.6.1 - Safari 4.0.3
 '2b5cac84d7ca33b618a090fe338ecf3c', // ko-kr - MacOS X 10.6.1 - Safari 4.0.5
@@ -205,10 +246,13 @@ $browsers_fingerprints = array(
 '9875ee7eec76bab21a7d303641258c0c', // ko-kr - MacOS X 10.6.2 - Safari 4.0.4
 '3a4b31e30fb5f3f059934160f732b4a6', // ko-kr - MacOS X 10.6.2 - Safari 4.0.5
 '6451b1c21a51ad619d76a6f00fd6c15c', // ko-kr - MacOS X 10.6.2 - Safari 5.0
+'5c1876b70eec9ecdc17261ed84f1d5b4', // ko-kr - MacOS X 10.6.2 - Safari 5.0.1
 '4cb0b1eac76ddb3bc3af0f862b938722', // ko-kr - MacOS X 10.6.3 - Safari 4.0.4
 'd2a8a0ea4b7667316dd8a2d49f7747e3', // ko-kr - MacOS X 10.6.3 - Safari 4.0.5
 'f1b5598e5f9c83b85195359a21e8dc06', // ko-kr - MacOS X 10.6.3 - Safari 5.0
+'c3219b97742a24d540f4b1c76d588584', // ko-kr - MacOS X 10.6.3 - Safari 5.0.1
 'df9156c2d1b205d5d0834eaa381e2ea5', // ko-kr - MacOS X 10.6.4 - Safari 5.0
+'65c40a9b7ea51bccd7a633697995fde5', // ko-kr - MacOS X 10.6.4 - Safari 5.0.1
 'bf550ee7644105b520cc0d036d4081a2', // zh-tw - MacOS X 10.4.11 - Safari 4.0.4
 '19ef0ffede1822e2969d90ec776218be', // zh-tw - MacOS X 10.4.11 - Safari 4.0.5
 '81c47b6f507a5146c0c82a49262cf830', // zh-tw - MacOS X 10.4.11 - Safari 4.1
@@ -217,6 +261,7 @@ $browsers_fingerprints = array(
 '666c4d759f76b88409507ae674f4ccce', // zh-tw - MacOS X 10.5.8 - Safari 4.0.4
 '366939b1a0265710787d2131815e769f', // zh-tw - MacOS X 10.5.8 - Safari 4.0.5
 'e2b1c819f7b507bbd3857378373ce55e', // zh-tw - MacOS X 10.5.8 - Safari 5.0
+'8aa0655d913f635987956ef860c17f72', // zh-tw - MacOS X 10.5.8 - Safari 5.0.1
 '06d8bda5d7c11a18a1c5dc437d253587', // zh-tw - MacOS X 10.6 - Safari 4.0.3
 'bfa5bdceae46d1ba7ed704e3690bf794', // zh-tw - MacOS X 10.6.1 - Safari 4.0.3
 'e935589714dded596e9c820673d9457d', // zh-tw - MacOS X 10.6.1 - Safari 4.0.5
@@ -224,10 +269,13 @@ $browsers_fingerprints = array(
 '9a8abd0ab1ff25e953400a1fa8616858', // zh-tw - MacOS X 10.6.2 - Safari 4.0.4
 '5c82bf416a05da8e54eae64224bffd8b', // zh-tw - MacOS X 10.6.2 - Safari 4.0.5
 '369361f9085e7af4d5e270eec2285f3f', // zh-tw - MacOS X 10.6.2 - Safari 5.0
+'88922cec47d2039b2d9a1c9ec428d46e', // zh-tw - MacOS X 10.6.2 - Safari 5.0.1
 'd6a954762605114defcc9d55aa07e17b', // zh-tw - MacOS X 10.6.3 - Safari 4.0.4
 '53543f4b9c07333dc0109760f2998455', // zh-tw - MacOS X 10.6.3 - Safari 4.0.5
 'e7be92668b9b878afbdc382c7560542d', // zh-tw - MacOS X 10.6.3 - Safari 5.0
+'f6d8d911f09466dae91a6b3d9b36e554', // zh-tw - MacOS X 10.6.3 - Safari 5.0.1
 'd7e24254f9316a593607f036c7d92310', // zh-tw - MacOS X 10.6.4 - Safari 5.0
+'87a09b469f91378877d11d12518b883c', // zh-tw - MacOS X 10.6.4 - Safari 5.0.1
 'd39e51e213d4e77e8fe2e6905b6ab3fa', // ja-jp - MacOS X 10.4.11 - Safari 4.0.4
 '17d739fb7be1322e8487f8c9347a3ace', // ja-jp - MacOS X 10.4.11 - Safari 4.0.5
 '0e49e657634a5eccf55779fc67e1a10d', // ja-jp - MacOS X 10.4.11 - Safari 4.1
@@ -236,6 +284,7 @@ $browsers_fingerprints = array(
 '02657985ddd33586152ba64065fb3a60', // ja-jp - MacOS X 10.5.8 - Safari 4.0.4
 'c8a2d23b7bc0cc1b3cf11efb8d9b35ac', // ja-jp - MacOS X 10.5.8 - Safari 4.0.5
 '5e0b7478680b61142ed2515753dc6fd3', // ja-jp - MacOS X 10.5.8 - Safari 5.0
+'5bbee9be7023a6a270b079f38f8be5c6', // ja-jp - MacOS X 10.5.8 - Safari 5.0.1
 '57ea4fdc90944c60e5e223b927880b7e', // ja-jp - MacOS X 10.6 - Safari 4.0.3
 '486b971a8775c79f26a0e05d54010870', // ja-jp - MacOS X 10.6.1 - Safari 4.0.3
 '2b412d638a2dee2274e4342146e17a6f', // ja-jp - MacOS X 10.6.1 - Safari 4.0.5
@@ -243,10 +292,13 @@ $browsers_fingerprints = array(
 'dd7b6b3f1e5af600a2233190e3d9b10a', // ja-jp - MacOS X 10.6.2 - Safari 4.0.4
 '5c6902b12e51129c46a1a19a4ec4a01b', // ja-jp - MacOS X 10.6.2 - Safari 4.0.5
 '928e193d859a8e7a8aeb1441648e7ef9', // ja-jp - MacOS X 10.6.2 - Safari 5.0
+'955500a19df9fd64ae3f9ae36578e495', // ja-jp - MacOS X 10.6.2 - Safari 5.0.1
 '0c463bb1dbad7de577005f137d76819b', // ja-jp - MacOS X 10.6.3 - Safari 4.0.4
 '4a68eb1338619c45afb6b4385cd25bd7', // ja-jp - MacOS X 10.6.3 - Safari 4.0.5
 'fff24b9a9c8d57644cc14fcdefed9cda', // ja-jp - MacOS X 10.6.3 - Safari 5.0
+'a77c67201f1eaf2236e92931ae2fbc3a', // ja-jp - MacOS X 10.6.3 - Safari 5.0.1
 '7f4ce9021e4babfdcc4e303d57b4ac96', // ja-jp - MacOS X 10.6.4 - Safari 5.0
+'f0e176f60b699659bfbfe16dcea24733', // ja-jp - MacOS X 10.6.4 - Safari 5.0.1
 'ac6d7c59bfbdaddf08988e02c623ce91', // da-dk - MacOS X 10.4.11 - Safari 4.0.4
 'a6a260116200d237b339c08ca8aea689', // da-dk - MacOS X 10.4.11 - Safari 4.0.5
 '5f604726e05c82c59a73a256b23806db', // da-dk - MacOS X 10.4.11 - Safari 4.1
@@ -255,6 +307,7 @@ $browsers_fingerprints = array(
 'ac4c9e0856da3f2b3d9cb1d3133c9461', // da-dk - MacOS X 10.5.8 - Safari 4.0.4
 '664c55cad33354671c78809b4397f724', // da-dk - MacOS X 10.5.8 - Safari 4.0.5
 '888dcbffcc92dd115c33a96562cf536c', // da-dk - MacOS X 10.5.8 - Safari 5.0
+'e22478f3be2be0d371239c2950a12a83', // da-dk - MacOS X 10.5.8 - Safari 5.0.1
 'eb929d45bcae57bfdd4804ba0d144d96', // da-dk - MacOS X 10.6 - Safari 4.0.3
 '12d59ba0d7e86e6782835574b07b8b1c', // da-dk - MacOS X 10.6.1 - Safari 4.0.3
 '13477bac58995a89c4148ab355b636e7', // da-dk - MacOS X 10.6.1 - Safari 4.0.5
@@ -262,10 +315,13 @@ $browsers_fingerprints = array(
 '3ef9309aad01b0b0b132e4d2b4c26fec', // da-dk - MacOS X 10.6.2 - Safari 4.0.4
 '8e0459b50011bcb42cbeacc616513208', // da-dk - MacOS X 10.6.2 - Safari 4.0.5
 'd75d8e0179b56d9c0ef426c6d1d376d3', // da-dk - MacOS X 10.6.2 - Safari 5.0
+'0c9228fcff7af9d20bcc26623e9f67b2', // da-dk - MacOS X 10.6.2 - Safari 5.0.1
 '3507ff65d3389c95e5cd96de1626e1b2', // da-dk - MacOS X 10.6.3 - Safari 4.0.4
 'bcf55d65c791ac5c1e3c5c726c87c6ab', // da-dk - MacOS X 10.6.3 - Safari 4.0.5
 'f0f84fb26c3ed68cde73ae50607cc249', // da-dk - MacOS X 10.6.3 - Safari 5.0
+'94f0098bee0e609aa5cf8c37251180c2', // da-dk - MacOS X 10.6.3 - Safari 5.0.1
 '3b2ce6ee4a1f4ac874cb0c97015db189', // da-dk - MacOS X 10.6.4 - Safari 5.0
+'77af8585e8dbba2c54ff8b5ee6d2c5bf', // da-dk - MacOS X 10.6.4 - Safari 5.0.1
 'f6f99bca026a5de221eca50aa47bc127', // pt-pt - MacOS X 10.4.11 - Safari 4.0.4
 'bd6977ef9ba5f426e94598e00e6376cb', // pt-pt - MacOS X 10.4.11 - Safari 4.0.5
 '2fbe6d4ca134ff3f3f3a6b749b6dcfab', // pt-pt - MacOS X 10.4.11 - Safari 4.1
@@ -274,6 +330,7 @@ $browsers_fingerprints = array(
 'a8e28f7d5a2c871187ab41969bcaae23', // pt-pt - MacOS X 10.5.8 - Safari 4.0.4
 'e73cbfb82dc68dca3cd68f4eb4ff9f95', // pt-pt - MacOS X 10.5.8 - Safari 4.0.5
 '283694ce3f88bce70cdb041815603b96', // pt-pt - MacOS X 10.5.8 - Safari 5.0
+'8c72395cdbeb88cc95e71a7f54e67863', // pt-pt - MacOS X 10.5.8 - Safari 5.0.1
 '2b5a67e8039e987fe3e92903d42ec4f3', // pt-pt - MacOS X 10.6 - Safari 4.0.3
 '931cb2ffa2bba4ad7d958dc4d20dafdc', // pt-pt - MacOS X 10.6.1 - Safari 4.0.3
 '115e1087b6d5690f40a18588f83410d9', // pt-pt - MacOS X 10.6.1 - Safari 4.0.5
@@ -281,10 +338,13 @@ $browsers_fingerprints = array(
 '70bd157dfbf385e10abdc3f9e1729b1e', // pt-pt - MacOS X 10.6.2 - Safari 4.0.4
 '7271239d8ab3b3c25e5e5ae6ec0a12bc', // pt-pt - MacOS X 10.6.2 - Safari 4.0.5
 'ef11e33bc0174f69a042977face3caa7', // pt-pt - MacOS X 10.6.2 - Safari 5.0
+'4da2de3885fbaa29836cc59d567617f9', // pt-pt - MacOS X 10.6.2 - Safari 5.0.1
 'e6c5047a705906d8ccfd2369a2bdae04', // pt-pt - MacOS X 10.6.3 - Safari 4.0.4
 '9e7c415d178ed29cc6d23bedacf5eaa4', // pt-pt - MacOS X 10.6.3 - Safari 4.0.5
 '11d27ae15e46a3f392d876033bc867c4', // pt-pt - MacOS X 10.6.3 - Safari 5.0
+'27445674e1054435fffa6c9f75a974a8', // pt-pt - MacOS X 10.6.3 - Safari 5.0.1
 'b385f2a73dfea9ec6e0d39dd8deb756e', // pt-pt - MacOS X 10.6.4 - Safari 5.0
+'eca170de438bf6badd56c64483a434ef', // pt-pt - MacOS X 10.6.4 - Safari 5.0.1
 '6feda1962af25bc5a11e2112ff7307c9', // pt-br - MacOS X 10.4.11 - Safari 4.0.4
 '5bdd4510b38d6a34b8503aa309e0bdd3', // pt-br - MacOS X 10.4.11 - Safari 4.0.5
 '8edb63d8990ce48ced5ad2ebde189709', // pt-br - MacOS X 10.4.11 - Safari 4.1
@@ -293,6 +353,7 @@ $browsers_fingerprints = array(
 '603559f7a34bd16430cc8a0273e2e994', // pt-br - MacOS X 10.5.8 - Safari 4.0.4
 '277f0b0dec3a7875c57ee06f598c0161', // pt-br - MacOS X 10.5.8 - Safari 4.0.5
 '034f8d6c61f402057e43ea54bc73bc4f', // pt-br - MacOS X 10.5.8 - Safari 5.0
+'6e6f4c87d31a860454a817282dd2596a', // pt-br - MacOS X 10.5.8 - Safari 5.0.1
 '903f48d62788f275dce3783b2d0743a8', // pt-br - MacOS X 10.6 - Safari 4.0.3
 'c05cd897ddcbe40ddeaf5121478b1952', // pt-br - MacOS X 10.6.1 - Safari 4.0.3
 '7e4aaeeba992030aa5f74577ecbd334a', // pt-br - MacOS X 10.6.1 - Safari 4.0.5
@@ -300,10 +361,13 @@ $browsers_fingerprints = array(
 'f21339ab263a56007c00f52a4a2b73b8', // pt-br - MacOS X 10.6.2 - Safari 4.0.4
 '166db998b60fd74ce9740a4f36fe7dac', // pt-br - MacOS X 10.6.2 - Safari 4.0.5
 '6d4e4fa79a1760e79684e713543fc26e', // pt-br - MacOS X 10.6.2 - Safari 5.0
+'9aaaf20fe077e06b49de5f00021fda29', // pt-br - MacOS X 10.6.2 - Safari 5.0.1
 '620f326f133725e640008d793f209096', // pt-br - MacOS X 10.6.3 - Safari 4.0.4
 '0c8d36536950936efb8ed72d50393412', // pt-br - MacOS X 10.6.3 - Safari 4.0.5
 '896b1f8bd5006b262e443c4570c7abcc', // pt-br - MacOS X 10.6.3 - Safari 5.0
+'90ec7a4db0e388fc92199a81933dc73a', // pt-br - MacOS X 10.6.3 - Safari 5.0.1
 '24d10dfe1fb07020a1b3c836e1608dd3', // pt-br - MacOS X 10.6.4 - Safari 5.0
+'4e2a58f4e2fac120845d8fb0e90530b7', // pt-br - MacOS X 10.6.4 - Safari 5.0.1
 'f9ce22d86a0fc8b97fd289c2ca1460b9', // th-th - MacOS X 10.4.11 - Safari 4.0.4
 '357b91598bfd76d8c18b338653bd8d1c', // th-th - MacOS X 10.4.11 - Safari 4.0.5
 '240298489edee5914a7d5e2dc4b63b2e', // th-th - MacOS X 10.4.11 - Safari 4.1
@@ -312,6 +376,7 @@ $browsers_fingerprints = array(
 '73f884aa039b653e947495c9558a1777', // th-th - MacOS X 10.5.8 - Safari 4.0.4
 '1e6cfceec5bfb704f61db998c59c9d67', // th-th - MacOS X 10.5.8 - Safari 4.0.5
 'b60d0bb35e3c0e6970de1db5701c4992', // th-th - MacOS X 10.5.8 - Safari 5.0
+'d33e25981d6fcf9df3c93087edc20f66', // th-th - MacOS X 10.5.8 - Safari 5.0.1
 'ce5c419959ab4e8bf73a0bf221db3cb7', // th-th - MacOS X 10.6 - Safari 4.0.3
 '95a95044170325d7daa40ddb9a947d78', // th-th - MacOS X 10.6.1 - Safari 4.0.3
 'e862d9dccc6a5b07e965f00038706780', // th-th - MacOS X 10.6.1 - Safari 4.0.5
@@ -319,10 +384,13 @@ $browsers_fingerprints = array(
 'c87e1589c5da9e661ab90338b5581102', // th-th - MacOS X 10.6.2 - Safari 4.0.4
 '48fccc67b39f0255932f3d89a1e4dc7a', // th-th - MacOS X 10.6.2 - Safari 4.0.5
 '4813ba9ba8fff4d8a3a0ca5a7fa96422', // th-th - MacOS X 10.6.2 - Safari 5.0
+'29f50eae59eb21fb4b0ee81eaddd9f2c', // th-th - MacOS X 10.6.2 - Safari 5.0.1
 'cb6eb47dc52fb15f7b6e9117cdefc79b', // th-th - MacOS X 10.6.3 - Safari 4.0.4
 'f1a3f419efcb85c5e9b6c83ddb4ac0b5', // th-th - MacOS X 10.6.3 - Safari 4.0.5
 '9109d09bff6ced91b9f2af6a27edce9c', // th-th - MacOS X 10.6.3 - Safari 5.0
+'4589a0b80cab6e1f81e392fa19a2474e', // th-th - MacOS X 10.6.3 - Safari 5.0.1
 '2fdd1e5a1975025892183a50970ef734', // th-th - MacOS X 10.6.4 - Safari 5.0
+'a9177cfd8181a7e0209928738de3d92a', // th-th - MacOS X 10.6.4 - Safari 5.0.1
 '72f441d23e080ea505380eb2cec1261d', // en - iPhone - iPhone OS 2_2_1 - Safari 3.1.1
 '465feb0c037e428e2fc58df499dfeb2c', // en - iPhone - iPhone OS 3_1_2 - Safari 4.0
 '238b4ac888fb61abf0b7bfbcbe61c125', // en - iPhone - iPhone OS 3_1_3 - Safari 4.0
