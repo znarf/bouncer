@@ -313,7 +313,8 @@ class Bouncer_Rules_Basic
                 $score += $identity['extension'] != 'kr' ? -5 : 1;
                 break;
             case 'soso':
-                $score += $identity['fingerprint'] != '6c722beb9681d0d922b8919606168c43' ? -5 : 1;
+                $score += $identity['fingerprint'] != '6c722beb9681d0d922b8919606168c43' &&
+                    $identity['fingerprint'] != 'e3a7b53bb13161f3706426d28cf06eff' ? -5 : 1;
                 $score += $identity['extension'] != 'cn' ? -5 : 1;
                 break;
             case 'youdao':
