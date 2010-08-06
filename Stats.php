@@ -232,7 +232,7 @@ class Bouncer_Stats
              }
              if (!empty($referer) && isset($preferer['host']) && $first['request']['server'] != $preferer['host']) {
                  if ($linkify) {
-                     $referer = '<a href="' . $referer . '">' . $preferer['host'] . '</a>';
+                     $referer = '<a href="' . htmlspecialchars($referer) . '">' . $preferer['host'] . '</a>';
                  } else {
                      $referer = $preferer['host'];
                  }
@@ -254,7 +254,7 @@ class Bouncer_Stats
                      echo '<td class="ic ' . $system_name . '">', $system ,'</td>';
                  } else {
                      if (isset($$key) && $$key != 'none') {
-                          echo '<td>', htmlspecialchars($$key) ,'</td>';
+                          echo '<td>', $$key ,'</td>';
                      } else {
                          echo '<td>', '&nbsp;' ,'</td>';
                      }
