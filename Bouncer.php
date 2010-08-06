@@ -183,8 +183,10 @@ class Bouncer
         }
         // Filter
         if (!empty($keys)) {
+            $keys = array_map('strtolower', $keys);
             foreach ($headers as $key => $value) {
-                if (!in_array($key, $keys)) {
+                $ikey = strtolower($key);
+                if (!in_array($ikey, $keys)) {
                     unset($headers[$key]);
                 }
             }
