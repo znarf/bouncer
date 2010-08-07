@@ -268,7 +268,7 @@ class Bouncer_Rules_Basic
                 $score += strpos($host, 'yandex.ru') === false ? -5 : 1;
                 break;
             case 'naverbot':
-                $score += strpos($host, 'naver.jp') === false ? -5 : 1;
+                $score += (strpos($host, 'naver.jp') === false && strpos($addr, '61.247.204.') === false) ? -5 : 1;
                 break;
             case 'scoutjet':
                 $score += strpos($host, 'scoutjet.com') === false ? -5 : 2.5;
