@@ -515,7 +515,8 @@ $robot = array(
     "icon" => "baidu",
     "title" => "Baidu",
     "rule" => array(
-      "Baiduspider" => ""
+      "Baiduspider" => "",
+      "BaiduMobaider[/ ]([0-9a-z.]{1,10})" => "\\1"
     )
   ),
   "bananatree" => array(
@@ -4389,6 +4390,13 @@ $robot = array(
     "title" => "SuperBot",
     "rule" => array(
       "SuperBot[ /]([0-9.]{1,10})" => "\\1"
+    )
+  ),
+  "superfeedr" => array(
+    "icon" => "robot",
+    "title" => "Superfeedr",
+    "rule" => array(
+      "^Superfeedr" => ""
     )
   ),
   "surfcontrol" => array(

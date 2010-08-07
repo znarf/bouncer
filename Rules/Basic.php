@@ -364,10 +364,13 @@ class Bouncer_Rules_Basic
                 $score += strpos($host, 'yandex.') === false ? -5 : 2.5;
                 break;
             case 'friendfeed':
-                $score += strpos($host, 'facebook.com') === false ? -5 : 2.5;
+                $score += (strpos($host, 'facebook.com') === false && strpos($addr, '69.63.180.') === false)? -5 : 2.5;
                 break;
             case 'spbot':
                 $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
+                break;
+            case 'superfeedr':
+                $score += $identity['fingerprint'] != 'd2a7ed74ff810af20968752875c06511' ? -5 : 2.5;
                 break;
             // feeds
             case 'netvibes':
