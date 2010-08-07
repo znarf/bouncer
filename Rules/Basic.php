@@ -360,6 +360,9 @@ class Bouncer_Rules_Basic
             case 'socialmention':
                 $score += $identity['fingerprint'] != 'a9b11c963519135d4b07c6b6ad36c0de' ? -5 : 2.5;
                 break;
+            case 'yandex':
+                $score += strpos($host, 'yandex.ru') === false ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;

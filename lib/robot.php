@@ -5607,7 +5607,11 @@ $robot = array(
     "icon" => "yandex",
     "title" => "Yandex",
     "rule" => array(
-      "Yandex[/ ]([0-9.]{1,10})" => "\\1"
+      "Yandex[/ ]([0-9.]{1,10})" => "\\1",
+      "YandexBot[/ ]([0-9.]{1,10})" => "\\1",
+      "YandexImages[/ ]([0-9.]{1,10})" => "\\1",
+      "YandexMedia[/ ]([0-9.]{1,10})" => "\\1",
+      "YandexBlogs[/ ]([0-9.]{1,10})" => "\\1"
     )
   ),
   "yanga" => array(
