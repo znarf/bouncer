@@ -361,7 +361,7 @@ class Bouncer_Rules_Basic
                 $score += $identity['fingerprint'] != 'a9b11c963519135d4b07c6b6ad36c0de' ? -5 : 2.5;
                 break;
             case 'yandex':
-                $score += strpos($host, 'yandex.ru') === false ? -5 : 2.5;
+                $score += strpos($host, 'yandex.') === false ? -5 : 2.5;
                 break;
             case 'friendfeed':
                 $score += strpos($host, 'facebook.com') === false ? -5 : 2.5;
