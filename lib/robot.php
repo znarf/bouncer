@@ -1759,6 +1759,13 @@ $robot = array(
       "www\.friend\.fr" => ""
     )
   ),
+  "friendfeed" => array(
+    "icon" => "robot",
+    "title" => "FriendFeed",
+    "rule" => array(
+      "FriendFeedBot[ /]([0-9.]{1,10})" => "\\1"
+    )
+  ),
   "frontier" => array(
     "icon" => "frontier",
     "title" => "Frontier",
@@ -4279,6 +4286,13 @@ $robot = array(
       "Surphace.+v([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.surphace.com/"
+  ),
+  "spbot" => array(
+    "icon" => "robot",
+    "title" => "SEOprofiler.com",
+    "rule" => array(
+      "spbot[ /]([0-9.]{1,10})" => "\\1"
+    ),
   ),
   "spinn3r" => array(
     "icon" => "robot",

@@ -363,6 +363,12 @@ class Bouncer_Rules_Basic
             case 'yandex':
                 $score += strpos($host, 'yandex.ru') === false ? -5 : 2.5;
                 break;
+            case 'friendfeed':
+                $score += strpos($host, 'facebook.com') === false ? -5 : 2.5;
+                break;
+            case 'spbot':
+                $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;
