@@ -4196,6 +4196,14 @@ $robot = array(
       "^Slider[ /]([0-9.]{1,10})" => "\\1"
     )
   ),
+  "socialmention" => array(
+    "icon" => "robot",
+    "title" => "Social Mention",
+    "rule" => array(
+      "Social Mention[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://socialmention.com"
+  ),
   "soegning" => array(
     "icon" => "soegning",
     "title" => "S&oslash;gning",
