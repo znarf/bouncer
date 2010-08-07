@@ -1927,8 +1927,7 @@ $robot = array(
     "icon" => "goo",
     "title" => "Goo",
     "rule" => array (
-      "(gazz|ichiro|mog(et|imogi))[ /]([0-9.]{1,10})" => "\\3",
-      "DoCoMo[ /]([0-9.]{1,10})" => "\\1"
+      "(gazz|ichiro|mog(et|imogi))[ /]([0-9.]{1,10})" => "\\3"
     )
   ),
 //TODO: Must be before google... sigh
