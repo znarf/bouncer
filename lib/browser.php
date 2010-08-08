@@ -257,7 +257,7 @@ $browser = array(
     "icon" => "chrome",
     "title" => "Chrome",
     "rule" => array(
-      "chrome([ /])?([0-9.]{1,10})?" => "\\2"
+      "chrome([ /])?([0-9.]{1,12})?" => "\\2"
     ),
     "uri" => "http://www.google.com/chrome/"
   ),
@@ -1466,6 +1466,7 @@ $browser = array(
       "Minefield/([0-9.+]{1,10})" => "\\1", // Firefox 3.0 beta
       "Shiretoko/([0-9a-z.+]{1,10})" => "\\1", // Firefox 3.1 alpha
       "Namoroka/([0-9a-z.+]{1,10})" => "\\1", // Firefox 3.6 beta
+      "MozillaDeveloperPreview/([0-9a-z.+]{1,10})" => "\\1", // Firefox 3.7 alpha
       "Firefox" => ""
     ),
     "uri" => "http://www.mozilla.org/projects/firefox/",
