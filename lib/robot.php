@@ -4245,7 +4245,8 @@ $robot = array(
     "icon" => "sogou",
     "title" => "Sogou",
     "rule" => array(
-      "Sogou web spider[ /]([0-9.]{1,10})" => "\\1"
+      "Sogou web spider[ /]([0-9.]{1,10})" => "\\1",
+      "Sogou-Test-Spider[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.sogou.com/docs/help/webmasters.htm#07"
   ),
@@ -4707,6 +4708,13 @@ $robot = array(
     ),
     "uri" => "http://tuezilla.de/t_st-odp-entries-agent.html"
   ),
+  "tumblr" => array(
+    "icon" => "robot",
+    "title" => "Tumblr",
+    "rule" => array(
+      "Tumblr[ /]([0-9.]{1,10})" => "\\1"
+    )
+  ),
   "turnitin" => array(
     "icon" => "turnitin",
     "title" => "Turnitin",
@@ -4737,6 +4745,13 @@ $robot = array(
       "Twingly Recon" => ""
     ),
     "uri" => "http://www.twingly.com/"
+  ),
+  "twitterfeed" => array(
+    "icon" => "robot",
+    "title" => "TwitterFeed",
+    "rule" => array(
+      "^TwitterFeed" => ""
+    )
   ),
   "typepad" => array(
     "icon" => "typepad",
@@ -5624,6 +5639,13 @@ $robot = array(
     ),
     "uri" => "http://www.yahoo.com"
   ),
+  "yahoo-pipes" => array(
+    "icon" => "yahoo",
+    "title" => "Yahoo Pipes",
+    "rule" => array(
+      "^Yahoo Pipes[/ ]([0-9a-z.]{1,10})" => "\\1"
+    )
+  ),
   "yandex" => array(
     "icon" => "yandex",
     "title" => "Yandex",
@@ -5632,7 +5654,8 @@ $robot = array(
       "YandexBot[/ ]([0-9.]{1,10})" => "\\1",
       "YandexImages[/ ]([0-9.]{1,10})" => "\\1",
       "YandexMedia[/ ]([0-9.]{1,10})" => "\\1",
-      "YandexBlogs[/ ]([0-9.]{1,10})" => "\\1"
+      "YandexBlogs[/ ]([0-9.]{1,10})" => "\\1",
+      "YandexSomething[/ ]([0-9.]{1,10})" => "\\1"
     )
   ),
   "yanga" => array(

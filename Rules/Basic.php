@@ -361,7 +361,7 @@ class Bouncer_Rules_Basic
                 $score += $identity['fingerprint'] != 'a9b11c963519135d4b07c6b6ad36c0de' ? -5 : 2.5;
                 break;
             case 'yandex':
-                $score += strpos($host, 'yandex.') === false ? -5 : 2.5;
+                $score += strpos($host, 'yandex') === false ? -5 : 2.5;
                 break;
             case 'friendfeed':
                 $score += (strpos($host, 'facebook.com') === false && strpos($addr, '69.63.180.') === false)? -5 : 2.5;
@@ -371,6 +371,16 @@ class Bouncer_Rules_Basic
                 break;
             case 'superfeedr':
                 $score += $identity['fingerprint'] != 'd2a7ed74ff810af20968752875c06511' ? -5 : 2.5;
+                break;
+            case 'yahoo-pipes':
+                $score += strpos($host, 'yahoo.com') === false ? -5 : 2.5;
+                break;
+            case 'twitterfeed':
+                $score += strpos($addr, '128.242.249.') === false ? -5 : 2.5;
+                break;
+            case 'tumblr':
+                $score += strpos($host, 'theplanet.com') === false ? -2.5 : 1;
+                $score += $identity['fingerprint'] != '58da13cc7b6dbfa72c81d8357f4dda0a' ? -2.5 : 1;
                 break;
             // feeds
             case 'netvibes':
