@@ -1520,7 +1520,7 @@ $robot = array(
     )
   ),
   "explorerrss" => array(
-    "icon" => "robot",
+    "icon" => "rss",
     "title" => "Explorer RSS",
     "rule" => array(
       "^Windows-RSS-Platform[ /]([0-9.]{1,10})" => "\\1"
@@ -2727,7 +2727,7 @@ $robot = array(
     )
   ),
   "magpierss" => array(
-    "icon" => "robot_rss",
+    "icon" => "rss",
     "title" => "MagpieRSS",
     "rule" => array(
       "MagpieRSS" => ""
@@ -3589,7 +3589,7 @@ $robot = array(
     )
   ),
   "postrank" => array(
-    "icon" => "postrank",
+    "icon" => "robot",
     "title" => "PostRank",
     "rule" => array(
       "^PostRank[ /]+([0-9.]{1,10})" => "\\1"
@@ -3784,7 +3784,7 @@ $robot = array(
   ),
   "rss-atom" => array(//ajout prad
     "icon" => "rss",
-    "title" => "RSS / Atom",
+    "title" => "Apple RSS",
     "rule" => array(
       "^Apple-PubSub" => "",
       "^AppleSyndication" => ""
