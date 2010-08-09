@@ -76,6 +76,11 @@ $suspicious_fingerprints = array(
 'b50cca9d908989cd453b12186d86c172',    //  BM - Windows XP    - Explorer 6.0
 '8bc18a42e16e1948417d403c2507b5ce',    //  BM - Windows Vista - Opera 9.64
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
+'c08f1df2c2936d8f931c07ef495ad3c4',    //  BM - Windows 98    - MSN Explorer 2.5
+'e589d8a655a5ba4f71f11128e6aeba8d',    //  BM - Windows 2003  - Firefox 3.0.6
+'894a16a61da0d1d61ffb219d78512f7c',    //  BM - Windows XP    - Explorer 7.0b
+'561440dbfdff525f24210ab3b34202db',    //  BM - Windows Vista - Firefox 3.0.8
+'6046298b97a8fa9cab264f472979790f',    //  BM - Linux i686    - Epiphany 2.14
 // BM - inferno.name
 'a19471cdfd5262b77d9c2edb6ebc1510', // Windows 2003 - Opera 7.60
 'b6a988533111b50e812790f44de838aa', // Windows XP   - Explorer 6.0
@@ -85,6 +90,8 @@ $suspicious_fingerprints = array(
 '870660ecfc39667a3fd987a147c51170', // Windows 2000 - Explorer 5.5
 '19b8d1b99b6dd00dbcb4251b013969d5', // Windows XP   - Explorer 6.0
 '7ae7fbc9e52c64fd2fb5883381bce8a9', // Windows      - BrowseX 2.0.0
+// Web Sniffer
+'3098ff1030d58eb6db388a85cdb63e75',    //  BM - Windows XP    - Explorer 7.0     (US - referer:http://web-sniffer.net/)
 );
 return $suspicious_fingerprints;
 ?>

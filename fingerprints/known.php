@@ -39,7 +39,7 @@ $known_fingerprints = array(
 '2440249824ac5f46c8450483c0f9abba',  // US - Windows XP    - Explorer 6.0
 '98e8461c651f2019cdf8e4f16fc80383',  // US - Windows XP    - Explorer 6.0
 // Crawlers
-'e69ff737f65a3b12adf29016e5ada98d',  // http://www.seoprofiler.com/bot
+// 'e69ff737f65a3b12adf29016e5ada98d',  // http://www.seoprofiler.com/bot
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '16e7bbc8f77ff058af8b2343b3115e72',  // INA
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
@@ -62,17 +62,18 @@ $known_fingerprints = array(
 'ba1b1f5bd2fff182d02bebcae1238b62',  // Twitturly / v0.6
 'b02ebc3b48874c4b0a101a709dbdd379',  // acquia-crawler
 'be659eb627ef3c2fd42705e4e5d39044',  // ThingFetcher; (+http://thinglabs.com)
-'2687c1f1bb7f6803a4f1ee2896a2e01e',  // Superfeedr: FeedDiscovery/1.1
+// '2687c1f1bb7f6803a4f1ee2896a2e01e',  // Superfeedr: FeedDiscovery/1.1
 '8ccb889b7d69bb8e0453258c55db3c07',  // SurveyBot/2.3 (DomainTools)
 '2708e9c06a83250e6bcab443f73c71e3',  // http://page-store.com/
 '6afae750923289d89eb638a6a7ae8947',  // librabot/2.0 (+http://academic.research.microsoft.com/)
 '9c1bb51b327c07997fe1971925a5149e',  // librabot/2.0 (+http://academic.research.microsoft.com/)
-'62af4df169beb4ff6ffc6ea471fcbdbe',  // Superfeedr: Superparser/1.0 http://superfeedr.com
-'a9b11c963519135d4b07c6b6ad36c0de',  // Social Mention/1.0; http://socialmention.com;)
-'a249ad9ab9dcd091a70c9a5cfb61bd03',  // Yahoo Pipes 1.0
-'b54f948e8e5cceb3b8f7d89e341d23c7',  // TwitterFeed 3
+// '62af4df169beb4ff6ffc6ea471fcbdbe',  // Superfeedr: Superparser/1.0 http://superfeedr.com
+// 'a9b11c963519135d4b07c6b6ad36c0de',  // Social Mention/1.0; http://socialmention.com;)
+// 'a249ad9ab9dcd091a70c9a5cfb61bd03',  // Yahoo Pipes 1.0
+// 'b54f948e8e5cceb3b8f7d89e341d23c7',  // TwitterFeed 3
 '87d77eade01d9fcc73680ed520ea5e81',  // Netvibes - BM
 '6df8bda832ecbb4ad20ec624d6c86fdb',  // Netvibes - Mozilla/5.0 (compatible)
+'68c1cbc196603b22c85c48b32a6bbd51',  // Clearbricks Feed Reader/0.2
 // Flash (eg: WP image uploader)
 'd22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
 '4f4c2a419649c56cad7d3cca8dc9eeb6',  // Adobe Flash Player 10
