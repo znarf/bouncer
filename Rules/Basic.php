@@ -264,9 +264,6 @@ class Bouncer_Rules_Basic
             case 'orange':
                 $score += strpos($host, 'fti.net') === false ? -5 : 2.5;
                 break;
-            case 'yandex':
-                $score += strpos($host, 'yandex.ru') === false ? -5 : 1;
-                break;
             case 'naverbot':
                 $score += (strpos($host, 'naver.jp') === false && strpos($addr, '61.247.204.') === false) ? -5 : 1;
                 break;
