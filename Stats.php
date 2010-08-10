@@ -164,7 +164,7 @@ class Bouncer_Stats
                  if (strpos($filterKey, '-') === 0) {
                     $filterKey = substr($filterKey, 1);
                     if (isset($$filterKey)) {
-                     if ($filterKey == 'addr' || $filterKey == 'host') {
+                     if ($filterKey == 'addr' || $filterKey == 'host' || $filterKey == 'referer') {
                          if (strpos($$filterKey, $filterValue) !== false) continue 2;
                      } else {
                          if ($$filterKey == $filterValue) continue 2;
@@ -172,7 +172,7 @@ class Bouncer_Stats
                     }
                  } else {
                      if (isset($$filterKey)) {
-                         if ($filterKey == 'addr' || $filterKey == 'host') {
+                         if ($filterKey == 'addr' || $filterKey == 'host' || $filterKey == 'referer') {
                              if (strpos($$filterKey, $filterValue) === false) continue 2;
                          } else {
                              if ($$filterKey != $filterValue) continue 2;
