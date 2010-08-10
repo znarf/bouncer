@@ -269,7 +269,7 @@ class Bouncer
                 $throttle = rand(500*1000, 2000*1000);
                 usleep($throttle);
             case self::NEUTRAL:
-                if (!empty($identity['robot'])) {
+                if ($identity['type'] == Bouncer::ROBOT) {
                     $throttle = rand(250*1000, 1000*1000);
                     usleep($throttle);
                 }
