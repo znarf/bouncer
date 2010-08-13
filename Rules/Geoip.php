@@ -27,7 +27,7 @@ class Bouncer_Rules_Geoip extends Bouncer
             self::$_gi = geoip_open(dirname(__FILE__) . "/../lib/geoip.dat", GEOIP_STANDARD);
         }
         $code = geoip_country_code_by_addr(self::$_gi, $addr);
-        if (empty($code) || $code == 'AP' || $code == 'A1') {
+        if (empty($code) || $code == 'AP' || $code == 'A1' || $code == 'A2') {
             $code = 'numeric';
         }
         $code = strtolower($code);
