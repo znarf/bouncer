@@ -345,7 +345,8 @@ class Bouncer_Rules_Basic
                 $score += (strpos($addr, '66.219.58.') === false && strpos($addr, '71.41.201.') === false) ? -5 : 2.5;
                 break;
             case 'feedburner':
-                $score += $identity['fingerprint'] != 'cdcb44c8464c40d53a6f5635ee66d642' ? -5 : 2.5;
+                $score += $identity['fingerprint'] != 'cdcb44c8464c40d53a6f5635ee66d642' &&
+                          $identity['fingerprint'] != '84e14e474b5972e7b11fae97d08fff4c' ? -5 : 2.5;
                 $score += $identity['extension'] != 'us' ? -5 : 2.5;
                 break;
             case 'netcraft':
