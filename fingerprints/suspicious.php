@@ -52,6 +52,7 @@ $suspicious_fingerprints = array(
 '22e59e278b28502334751892cff578bb',    // H6E - Windows XP    - Explorer 6.0     (CN)
 '026c8cf2970607f6c96af64ab56d04a7',    // BM  - Windows XP    - Explorer 6.0     (CN)
 'e6742e43e21e965e69f31e5b3cd68fb3',    // BM  - Windows 2000  - Explorer 5.5
+'a4b3022d0d4ff28fad16fd845cb42cd4',    // BM  - Windows 98    - Explorer 5.5
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
@@ -65,6 +66,8 @@ $suspicious_fingerprints = array(
 '4833036355f39be011809cc013aeef78',    //  BM - Windows 7     - Firefox 3.6.8    (US)
 'db8a6ab35b03950699e416f7ca192509',    //  BM - Windows Vista - Firefox 3.0.1    (US - theplanet.com)
 'eb1ba78b8e255f14d22f976c403fdeca',    //  BM - Windows XP    - Firefox 1.5      (FR - EOLAS)
+'dd481608e3b776fbcdaa3aa0e5300593',    //  BM - Windows XP    - Firefox 3.0.10
+'a931efbf109f44739e7e5e8389559bf8',    //  BM - Ubuntu        - Firefox 3.8
 // BM - not identified
 '3dfed844dc126275d6d535bd0128a037',    //  BM - Windows XP    - Firefox 3.0.5    (various)
 '9f2c5a729cf256ae7df689a153233397',    //  BM - Windows XP    - Firefox 3.0.10   (various)

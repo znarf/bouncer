@@ -45,6 +45,7 @@ $known_fingerprints = array(
 '16e7bbc8f77ff058af8b2343b3115e72',  // INA
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
 '8c3c59cf7f249feecf359881ef36576e',  // Mozilla crawl/5.0 (compatible; fairshare.cc +http://fairshare.cc)
+'cf27cfef03e03eb38824956f27590580',  // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1 + FairShare-http://fairshare.cc)
 'eea168b7c9d0d958c6e9b29e1212414b',  // Search17 Web Crawler
 '65a6a88c94f8a9f6dbd11f129271843b',  // SheenBot
 '4244fa19396ed9f656d60a0f424abcd5',  // Twenga
@@ -74,6 +75,7 @@ $known_fingerprints = array(
 // 'b54f948e8e5cceb3b8f7d89e341d23c7',  // TwitterFeed 3
 '87d77eade01d9fcc73680ed520ea5e81',  // Netvibes - BM
 '6df8bda832ecbb4ad20ec624d6c86fdb',  // Netvibes - Mozilla/5.0 (compatible)
+'776e9d435c5a3b3fd4024863e771a7f2',  // Netvibes - Mozilla/5.0 (compatible)
 '68c1cbc196603b22c85c48b32a6bbd51',  // Clearbricks Feed Reader/0.2
 // Flash (eg: WP image uploader)
 'd22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
@@ -92,8 +94,13 @@ $known_fingerprints = array(
 '98382a7339a5175ad37a386a5bf74b89',  // BR - Windows XP - Explorer 6.0
 // RSS
 '5b2361fdf1c6e31b99a55def5adfea6e',  // SimplePie/1.1.1 (Moonmoon)
+'09e5ec4c2fb7c5fcdced58de35f6e289',  // FR - Windows-RSS-Platform/2.0 (MSIE 8.0; Windows NT 5.1)
 '48f48b60e48af65e9fc20bc99971e76d',  // US - Apple-PubSub 65.20
 '7322bf08f0f24445f48613e0c3488610',  // FR - Apple-PubSub 65.20
+'1d50ef3c11cbeb999a8aa3ab5dfbe966',  // EN - Apple-PubSub 65.20
+'29573c121c6b60491cfbf82e021b2f43',  // ES - Apple-PubSub 65.20
+'0ef25273f985d74a4d5268e921fece79',  // JP - Apple-PubSub 65.20
+'49150c78f0d39898e3ddba9cbcac2d4e',  // DE - Apple-PubSub 65.20
 '8e756bbd8fd1b053856ce00735d9fe6f',  // US - Apple-PubSub 65.19
 '7ac14d372759acefcf867c15ffeffec0',  // GB - Apple-PubSub 65.19
 '9acfacf72fee443f8ee3c437ed847fac',  // FR - Apple-PubSub 65.19
@@ -102,6 +109,7 @@ $known_fingerprints = array(
 '1ab88260c3c9d004408d693c7cd770fb',  // IT - Apple-PubSub 65.19
 '2569e538829f558ef9eafa94ba67718e',  // PT - Apple-PubSub 65.19
 'd25f04999693ba3952141a7ef4c10dc2',  // TH - Apple-PubSub 65.19
+'74d290fabe4e2612bff76aeff9228dcd',  // ES - Apple-PubSub 65.19
 '21f0cb2cdf1f6f93f5a3b10e577df842',  // US - Apple-PubSub 65.12.1
 '34ce75b388f7d016655d3e8f4e9b4dc3',  // FR - Apple-PubSub 65.12.1
 '60248970d4202b916d13bc9634f1c9cf',  // IT - Apple-PubSub 65.12.1
@@ -124,6 +132,8 @@ $known_fingerprints = array(
 'b906752d12c59f44cc54f26e090a0c6d',  // FR - AppleSyndication
 '456b14879e2280c76c1c949b805f821d',  // FR - AppleSyndication/56.1
 'f25748fc2c3c617fba53199f337f7131',  // IT - AppleSyndication/56.1
+'741a1e269a2ce4f51bf8f1520c9b288d',  // DE - AppleSyndication/56.1
+'66c3e3add8b34e15cc1d48aea1b7919b',  // US - AppleSyndication/56.1
 );
 return $known_fingerprints;
 ?>
