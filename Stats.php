@@ -148,6 +148,7 @@ class Bouncer_Stats
              $method = isset($last['request']['method']) ? $last['request']['method'] : 'GET';
              $te = isset($last['request']['headers']['TE']) ? 1 : 0;
              $via = isset($last['request']['headers']['Via']) ? 1 : 0;
+             $connection = isset($last['request']['headers']['Connection']) ? 1 : 0;
              $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : '';
 
              $ref = 0;
