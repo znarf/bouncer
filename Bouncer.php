@@ -77,7 +77,6 @@ class Bouncer
                  if (isset($headers['x-forwarded-for'])) {
                      return $headers['x-forwarded-for'];
                  }
-             }
          }
 
          return $_SERVER['REMOTE_ADDR'];
