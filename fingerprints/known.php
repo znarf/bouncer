@@ -39,6 +39,7 @@ $known_fingerprints = array(
 '2440249824ac5f46c8450483c0f9abba',  // US - Windows XP    - Explorer 6.0
 '98e8461c651f2019cdf8e4f16fc80383',  // US - Windows XP    - Explorer 6.0
 'f546324447d3ea14f88b35dc4083454f',  // US - Windows 2003  - Explorer 7.0
+'84c29cf970522cd3727c8627bd01a949',  // US - Windows XP    - Explorer 7.0
 // Crawlers
 // 'e69ff737f65a3b12adf29016e5ada98d',  // http://www.seoprofiler.com/bot
 '2e3e78982b709fcee9558e17726c7638',  // BNF
