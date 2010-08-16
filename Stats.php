@@ -147,15 +147,17 @@ class Bouncer_Stats
              $server = isset($last['request']['server']) ? $last['request']['server'] : '';
              $method = isset($last['request']['method']) ? $last['request']['method'] : 'GET';
 
+             $kb = in_array($name, Bouncer::$known_browsers) ? 1 : 0;
              $te = isset($last['request']['headers']['TE']) ? 1 : 0;
              $via = isset($last['request']['headers']['Via']) ? 1 : 0;
              $cc = isset($last['request']['headers']['Cache-Control']) ? 1 : 0;
              $pragma = isset($last['request']['headers']['Pragma']) ? 1 : 0;
+             $wap = isset($last['request']['headers']['x-wap-profile']) ? 1 : 0;
              $proxy = isset($last['request']['headers']['Via']) || isset($last['request']['headers']['X-BlueCoat-Via']) || isset($last['request']['headers']['X-Forwarded-For']) ? 1 : 0;
              $prefetch = isset($last['request']['headers']['X-Moz']) && $last['request']['headers']['X-Moz'] == 'prefetch' ? 1 : 0;
-             $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
              $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 0;
-             $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : '';
+             $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
+             $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : 'none';
 
              $ref = 0;
              if (!empty($first['request']['headers']['Referer'])) {
