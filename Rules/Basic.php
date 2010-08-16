@@ -403,7 +403,10 @@ class Bouncer_Rules_Basic
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;
                 break;
             case 'googlefeeds':
-                $score += (strpos($host, 'google.com') === false && strpos($addr, '72.14.') === false && strpos($addr, '74.125.') === false) ? -5 : 1;
+                $score += (strpos($host, 'google.com') === false
+                         && strpos($addr, '72.14.')  !== 0
+                         && strpos($addr, '74.125.') !== 0
+                         && strpos($addr, '68.249.') !== 0) ? -5 : 1;
                 break;
             case 'bloglines':
                 $score += strpos($host, 'bloglines.com') === false ? -5 : 1;
