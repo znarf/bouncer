@@ -398,6 +398,9 @@ class Bouncer
         $connection['time'] = $time;
         $connection['result'] = $result;
 
+        // don't store connection details
+        unset($connection['result'][2]);
+
         // Log connection
         $connectionKey = self::backend()->storeConnection($connection);
 
