@@ -71,9 +71,11 @@ class Bouncer
     {
         // Opera Mini
         if (strpos($_SERVER['REMOTE_ADDR'], '64.255')  === 0 ||
+            strpos($_SERVER['REMOTE_ADDR'], '80.239')  === 0 ||
             strpos($_SERVER['REMOTE_ADDR'], '94.246')  === 0 ||
             strpos($_SERVER['REMOTE_ADDR'], '195.189') === 0) {
                  $headers = self::getHeaders();
+                 // TODO: case insensitive, split multiple value
                  if (isset($headers['x-forwarded-for'])) {
                      return $headers['x-forwarded-for'];
                  }
