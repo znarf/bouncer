@@ -167,32 +167,50 @@ class Bouncer_Rules_Basic
         }
 
         if (in_array($name, Bouncer::$known_browsers)) {
-            // Legitimate Browsers always send a Connection:Keep-Alive|Close header
+            // Legitimate Browsers always send a Connection header
             if (empty($headers['Connection'])) {
-                $scores[] = array(-2.5, 'Connection Header Missing');
+                $scores[] = array(-5, 'Connection Header Missing');
+            // And never a Connection:Close header
+            } elseif (stripos($headers['Connection'], 'close') !== false) {
+                $scores[] = array(-2.5, 'Connection Header=Close');
             }
             // libWWW used to fake a browser identity
             if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
-                if ($headers['Connection'] == 'TE, close') {
+                if (isset($headers['Connection']) && $headers['Connection'] == 'TE, close') {
                     $scores[] = array(-10, 'libWWW signature detected');
                 }
             }
+            // Only Firefox is sending this header
+            if (isset($headers['Keep-Alive']) && $name != 'firefox')
+                $scores[] = array(-2.5, 'Unexpected Keep-Alive header');
+            // Only Spambots are sending this header
+            if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version="1"')
+                $scores[] = array(-5, 'Cookie2 header with value $Version="1"');
         }
 
         switch ($name) {
+            case 'firefox':
+                // Real Firefox send this header
+                if (isset($headers['Keep-Alive']) && in_array($headers['Keep-Alive'], array(115, 300))) {
+                    $scores[] = array(2.5, 'Keep-Alive header with expected value');
+                }
+                if (isset($headers['X-Moz']) && in_array($headers['X-Moz'], array('livebookmarks', 'prefetch'))) {
+                    $scores[] = array(2.5, 'X-Moz header with expected value');
+                }
+                break;
             case 'opera':
                 // Real Opera send this header (but sometimes not)
                 if (isset($headers['Cookie2'])) {
                     $scores[] = array(2.5, 'Cookie2 header detected');
+                }
+                if (isset($headers['TE']) && $headers['TE'] == 'deflate, gzip, chunked, identity, trailers') {
+                    $scores[] = array(2.5, 'TE header with expected value');
                 }
                 break;
             case 'explorer':
                 // Only legitimate browsers are setting this header
                 if (isset($headers['UA-CPU']))
                     $scores[] = array(2.5, 'UA-CPU Header Detected');
-                // Only Spambots are identifying as explorer and sending this header
-                if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version="1"')
-                    $scores[] = array(-5, 'Cookie2 header with value $Version="1"');
                 break;
         }
 
