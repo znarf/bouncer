@@ -554,7 +554,7 @@ $os = array(
   ),
   "java" => array(
     "icon" => "java",
-    "title" => "Java Platform Micro Edition",
+    "title" => "Java ME",
     "rule" => array(
       "J2ME/MIDP" => ""
     ),
