@@ -217,7 +217,7 @@ class Bouncer
         }
         $headers = self::getHeaders();
         // Ignore Host + Agent headers
-        $ignore = array('Host') + self::$identity_headers;
+        $ignore = array_merge(array('Host'), self::$identity_headers);
         foreach ($ignore as $key) {
             unset($headers[$key]);
         }
