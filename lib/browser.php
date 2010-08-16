@@ -1492,6 +1492,7 @@ $browser = array(
       "Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1) Gecko/20060918 Firefox/2.0" => "2.0 on Windows XP"
     )
   ),
+  /* Not useful
   "mozilla" => array(
     "icon" => "mozilla",
     "title" => "Mozilla",
@@ -1506,6 +1507,7 @@ $browser = array(
       "Mozilla/5.0 (X11; U; Linux i686; cs-CZ; rv:1.7.12) Gecko/20050929" => "Mozilla 1.7.12 on Gentoo Linux"
     )
   ),
+  */
 // WAP catchup
   "wap" => array(
     "icon" => "question",
