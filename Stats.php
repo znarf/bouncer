@@ -3,7 +3,7 @@
 class Bouncer_Stats
 {
 
-    public static $_keys = array('id', 'fingerprint', 'time', 'hits', 'host', 'system', 'agent', 'referer', 'score');
+    public static $_keys = array('id', 'fingerprint', 'time', 'hits', 'host', 'system', 'agent', 'features', 'referer', 'score');
 
     public static $_namespace = '';
 
@@ -99,6 +99,8 @@ class Bouncer_Stats
              if ($key == 'fingerprint') {
                  echo '<th style="width:14px">', '', '</th>';
                  echo '<th colspan="2">', ucfirst($key), '</th>';
+             } elseif ($key == 'features') {
+                 echo '<th colspan="3">', ucfirst($key), '</th>';
              } else {
                  echo '<th>', ucfirst($key), '</th>';
              }
@@ -262,6 +264,10 @@ class Bouncer_Stats
                      echo '<td style="background:#' . substr($identity['fingerprint'], 0, 6) . '">&nbsp;</td>';
                      echo '<td>' . $fingerprint . '</td>';
                      echo '<td>' . ( isset($fgtype) && $fgtype != 'none' ? $fgtype : '' ) . '</td>';
+                 } elseif ($key == 'features') {
+                      echo '<td>' . $identity['features']['image'] . '</td>';
+                      echo '<td>' . $identity['features']['iframe'] . '</td>';
+                      echo '<td>' . $identity['features']['javascript'] . '</td>';
                  } else if ($key == 'host') {
                      echo '<td class="ic ' . $extension . '">', $host, '</td>';
                  } else if ($key == 'agent') {
