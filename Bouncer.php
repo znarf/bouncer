@@ -249,6 +249,11 @@ class Bouncer
 
     protected static function bounce()
     {
+        if (isset($_GET['bouncer-challenge'])) {
+            self::challenge();
+            return;
+        }
+
         $identity = self::identity();
         if (empty($identity) || empty($identity['id'])) {
             return;
@@ -444,6 +449,68 @@ class Bouncer
     public static function ismd5($string)
     {
         return !empty($string) && preg_match('/^[a-f0-9]{32}$/', $string);
+    }
+
+    // Challenge
+
+    public static function challenge()
+    {
+        if (isset($_GET['bouncer-identity']) && isset($_GET['bouncer-feature'])) {
+            $id = $_GET['bouncer-identity'];
+            $identity = self::backend()->getIdentity($id);
+            if (isset($identity)) {
+                if ($_GET['bouncer-feature'] == 'image') {
+                    $identity['features']['image'] = $identity['features']['image'] + 2;
+                    self::setIdentity($identity['id'], $identity);
+                    echo 'ok';
+                    exit;
+                }
+                if ($_GET['bouncer-feature'] == 'javascript') {
+                    $identity['features']['javascript'] = $identity['features']['javascript'] + 2;
+                    self::setIdentity($identity['id'], $identity);
+                    echo 'ok';
+                    exit;
+                }
+                if ($_GET['bouncer-feature'] == 'iframe') {
+                    $identity['features']['iframe'] = $identity['features']['iframe'] + 2;
+                    self::setIdentity($identity['id'], $identity);
+                    header("Content-Type:text/html");
+                    echo '<html><body>ok</body></html>';
+                    exit;
+                }
+            }
+        }
+
+        $identity = self::identity();
+        if (empty($identity) || empty($identity['id'])) {
+            return;
+        }
+        if ($identity['type'] == self::BROWSER) {
+            $store = false;
+            if (empty($identity['features'])) {
+                $identity['features'] = array('iframe' => 0, 'javascript' => 0, 'image' => 0);
+            }
+            if ($identity['features']['image'] < 1 && $identity['features']['image'] > -3) {
+                echo '<img width="1" height="1" border="0" src="?bouncer-challenge=1&nbsp;bouncer-identity=' . $identity['id']  . '&nbsp;bouncer-feature=image&nbsp;t=' . mktime() . '"/>';
+                $identity['features']['image'] = $identity['features']['image'] - 1;
+                $store = true;
+            }
+            if ($identity['features']['iframe'] < 1 && $identity['features']['iframe'] > -3) {
+                echo '<iframe width="1" height="1" src="?bouncer-challenge=1&nbsp;bouncer-identity=' . $identity['id']  . '&nbsp;bouncer-feature=iframe&nbsp;t=' . mktime() . '"></iframe>';
+                $identity['features']['iframe'] = $identity['features']['iframe'] - 1;
+                $store = true;
+            }
+            if ($identity['features']['javascript'] < 1 && $identity['features']['javascript'] > -3) {
+                echo '<script type="text/javascript">';
+                echo 'document.write(\'<img width="1" height="1" border="0" src="?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=javascript&t=' . mktime() . '"/>\');';
+                echo '</script>';
+                $identity['features']['javascript'] = $identity['features']['javascript'] - 1;
+                $store = true;
+            }
+            if ($store) {
+                self::setIdentity($identity['id'], $identity);
+            }
+        }
     }
 
     // Backend
