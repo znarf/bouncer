@@ -118,6 +118,16 @@ class Bouncer_Rules_Basic
             }
         }
 
+        // Features challenges
+        if (isset($identity['features'])) {
+            $f = $identity['features'];
+            if ($f['image'] < -3 && $f['iframe'] < -3 && $f['javascript'] < -3) {
+                $scores[] = array(-5, 'All features challenges failed');
+            } elseif ($f['image'] >= 1 && $f['iframe'] >= 1 && $f['javascript'] >= 1) {
+                $scores[] = array(2.5, 'All features challenges succeded');
+            }
+        }
+
         return $scores;
     }
 
