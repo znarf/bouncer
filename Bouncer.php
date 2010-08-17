@@ -463,22 +463,18 @@ class Bouncer
                     $identity['features']['image'] = $identity['features']['image'] + 2;
                     self::setIdentity($identity['id'], $identity);
                     echo 'ok';
-                    exit;
-                }
-                if ($_GET['bouncer-feature'] == 'javascript') {
+                } elseif ($_GET['bouncer-feature'] == 'javascript') {
                     $identity['features']['javascript'] = $identity['features']['javascript'] + 2;
                     self::setIdentity($identity['id'], $identity);
                     echo 'ok';
-                    exit;
-                }
-                if ($_GET['bouncer-feature'] == 'iframe') {
+                } elseif ($_GET['bouncer-feature'] == 'iframe') {
                     $identity['features']['iframe'] = $identity['features']['iframe'] + 2;
                     self::setIdentity($identity['id'], $identity);
                     header("Content-Type:text/html");
                     echo '<html><body>ok</body></html>';
-                    exit;
                 }
             }
+            exit;
         }
 
         $identity = self::identity();
@@ -491,12 +487,12 @@ class Bouncer
                 $identity['features'] = array('iframe' => 0, 'javascript' => 0, 'image' => 0);
             }
             if ($identity['features']['image'] < 1 && $identity['features']['image'] > -3) {
-                echo '<img width="1" height="1" border="0" src="?bouncer-challenge=1&nbsp;bouncer-identity=' . $identity['id']  . '&nbsp;bouncer-feature=image&nbsp;t=' . mktime() . '"/>';
+                echo '<img width="1" height="1" border="0" src="?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=image&t=' . mktime() . '"/>';
                 $identity['features']['image'] = $identity['features']['image'] - 1;
                 $store = true;
             }
             if ($identity['features']['iframe'] < 1 && $identity['features']['iframe'] > -3) {
-                echo '<iframe width="1" height="1" src="?bouncer-challenge=1&nbsp;bouncer-identity=' . $identity['id']  . '&nbsp;bouncer-feature=iframe&nbsp;t=' . mktime() . '"></iframe>';
+                echo '<iframe width="1" height="1" src="?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=iframe&t=' . mktime() . '"></iframe>';
                 $identity['features']['iframe'] = $identity['features']['iframe'] - 1;
                 $store = true;
             }
