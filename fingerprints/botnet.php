@@ -88,17 +88,46 @@ $botnet_fingerprints = array(
 // From hosts:
 // 46.118.133.235  - UA
 // 74.118.193.22   - US
+// 74.118.193.84   - US - AJAX-HSI
+// 77.41.123.122   - RU - Neo-CNT
+// 85.186.255.233  - RO - ASTRAL-B-FIBER
 // 91.201.66.4     - RU
+// 91.201.66.14    - RU
+// 91.201.66.18    - RU - Donekoserv
+// 91.201.66.21    - RU
+// 91.201.66.115   - RU
+// 91.201.66.133   - RU - Donekoserv
+// 91.207.224.85   - UA
+// 91.210.106.103  - RU
+// 91.210.106.137  - RU
 // 91.212.226.112  - RU
+// 91.214.45.103   - LU - ALTUSHOST-NET
+// 91.214.47.166   - LU
 // 91.216.122.46   - MD
+// 93.116.221.167  - MD - JSC-MOLDTELECOM-SA
 // 93.190.140.130  - RU
+// 94.75.233.7     - NL
+// 94.102.57.131   - NL - NL-ECATEL
+// 94.142.131.190  - LV
+// 95.24.251.208   - RU
+// 95.27.162.40    - RU - CORBINA-BROADBAND
+// 95.67.80.146    - UA - COSMONOVA
+// 95.189.141.127  - RU
+// 123.125.156.156 - CN - UNICOM-BJ
+// 178.216.177.177 - RU - LANCOM-RU-NET3
+// 193.105.210.165 - UA
 // 193.105.210.162 - UA
 // 193.105.210.173 - UA
+// 194.50.116.153  - UA
 // 194.165.0.6     - RU
+// 195.191.54.133  - LV - VENDITORE
 // 195.191.54.159
+// 212.95.58.198   - DE - INFERNO-NAME-967806
 // 212.95.58.209   - DE
 // 213.5.67.185    - RU
 // 213.5.71.156    - RU
+// 217.23.11.97    - NL - WORLDSTREAM
+// 221.130.17.18   - CN - CMNET-jiangsu
 '54a31e8c1992fe04c0de0710b0f0658a', // 19
 'c8d3f0375d47619f00ac4a07eac0c59b', // 18
 'c5b19be696393cde5b59e1320b3f0c9d', // 7
@@ -202,8 +231,6 @@ $botnet_fingerprints = array(
 'bda74224a55e54d80a35412a6623d23e', // 3
 'cef8dace9a6e327076028fa2703f81dd', // 3
 '99730ee20e5e01ce11df69b98ef6fb46', // 3
-'a3a4ccbce5a4e72d2c9a99bcedfd950a', // 3
-'1a66e6a25c22048c31d7c176cb39cd8a', // 3
 'b1614c54e8a86c1a8a947e7d4259ab1b', // 3
 '147995d0ea513091a085229f03f7643a', // 3
 '0de3e0809728aaa75f2419e75a681366', // 3
@@ -214,7 +241,6 @@ $botnet_fingerprints = array(
 '4df43731a17aaae626092eff551bb9dc', // 3
 '4c5143db0d753c1a75e73a40b6b74551', // 3
 'a1ee3c652bcb6f2da5733289d63f497d', // 2
-'c8b1c7422594e4e09e931a4603d3a68d', // 2
 'a382b42ba7c8ef6cf89e3ec024b39108', // 2
 '255c360ac25739850abb441faa389bae', // 2
 'e9ff641e46933db896997888ad7d9c52', // 2
@@ -234,7 +260,6 @@ $botnet_fingerprints = array(
 '7a81e0e8a1dc5171b46c5c87c845fcde', // 1
 '511323bccb9e8b0c47244b6685c9dd74', // 1
 '50217679733aca59007e294ba2416c65', // 1
-'64a0cae7711d72119016133a632fa47e', // 1
 '500b45f6f98b4643fc7924fc11c6c984', // 1
 '33d4f19620658d856e456100d60a3326', // 1
 '0a66722c88cb8102e7901e08cfffdb3a', // 1
@@ -247,6 +272,10 @@ $botnet_fingerprints = array(
 '878c166d255569c809bb53d70a802cfd', // 1
 '8961548980db0e02e08b8927700ca18e', // 1
 'bd8ce48b07476785413d1e9ff905c920', // 1
+'4da7e2379de336ded705440e76ed3b2e', // 1
+'bb761515ca010b15dc242e510c28e6a5', // 1
+'e087dd3d5d1fbbf9d83701b9796728c1', // 1
+'41beabdbd52a56447e787b52b31fed56', // 1
 // From hosts:
 // 74-115-6-57.anchorfree.com
 // ks369417.kimsufi.com
