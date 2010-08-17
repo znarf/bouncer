@@ -31,6 +31,14 @@ $os = array(
       "amiga" => ""
     )
   ),
+  "android" => array(
+    "icon" => "linux",
+    "title" => "Android",
+    "rule" => array(
+      "Android[ /]([0-9.b]{1,10})" => "\\1",
+      "Android" => ""
+    )
+  ),
   "atari" => array(
     "icon" => "other",
     "title" => "Atari",
