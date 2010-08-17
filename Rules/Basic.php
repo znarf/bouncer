@@ -102,6 +102,10 @@ class Bouncer_Rules_Basic
             if (empty($headers['Accept-Encoding'])) {
                 $scores[] = array(-2.5, 'Accept-Encoding header missing');
             }
+            // java library used to fake a browser identity
+            if (isset($headers['Accept']) && $headers['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2') {
+                $scores[] = array(-10, 'java signature detected');
+            }
         }
 
         // Legitimates Opera/Chrome/Firefox Browsers send Accept-Charset header
@@ -200,7 +204,7 @@ class Bouncer_Rules_Basic
                 break;
             case 'opera':
                 // Real Opera send this header (but sometimes not)
-                if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version=1') {  
+                if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version=1') {
                     $scores[] = array(2.5, 'Cookie2 header with value $Version=1');
                 }
                 if (isset($headers['TE']) && $headers['TE'] == 'deflate, gzip, chunked, identity, trailers') {
