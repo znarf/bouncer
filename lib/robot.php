@@ -1982,6 +1982,13 @@ $robot = array(
       "^Feedfetcher-Google" => "",
     )
   ),
+  "googlewireless" => array(
+    "icon" => "google",
+    "title" => "Google Wireless Transcoder",
+    "rule" => array (
+      "Google Wireless Transcoder" => "",
+    )
+  ),
   "goongee" => array(
     "icon" => "robot",
     "title" => "GoonGee",
