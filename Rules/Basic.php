@@ -200,8 +200,8 @@ class Bouncer_Rules_Basic
                 break;
             case 'opera':
                 // Real Opera send this header (but sometimes not)
-                if (isset($headers['Cookie2'])) {
-                    $scores[] = array(2.5, 'Cookie2 header detected');
+                if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version=1') {  
+                    $scores[] = array(2.5, 'Cookie2 header with value $Version=1');
                 }
                 if (isset($headers['TE']) && $headers['TE'] == 'deflate, gzip, chunked, identity, trailers') {
                     $scores[] = array(2.5, 'TE header with expected value');
