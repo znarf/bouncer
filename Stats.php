@@ -160,6 +160,7 @@ class Bouncer_Stats
              $prefetch = isset($last['request']['headers']['X-Moz']) && $last['request']['headers']['X-Moz'] == 'prefetch' ? 1 : 0;
              $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 0;
              $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
+             $accept = isset($identity['headers']['Accept']) ? $identity['headers']['Accept'] : 'none';
              $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : 'none';
              $java = isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' ? 1 : 0;
              $libwww = isset($last['request']['headers']['TE']) && $last['request']['headers']['TE'] == 'deflate,gzip;q=0.3' ? 1 : 0;
