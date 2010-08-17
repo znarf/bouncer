@@ -135,6 +135,7 @@ class Bouncer_Stats
              $hits = Bouncer::countAgentConnections($id, self::$_namespace);
              $addr = $identity['addr'];
              $host = $identity['host'];
+             $useragent = isset($identity['headers']['User-Agent']) ? $identity['headers']['User-Agent'] : 'none';
              $extension = isset($identity['country']) ? $identity['country'] : (isset($identity['extension']) ? $identity['extension'] : 'numeric');
              $type = $identity['type'];
              $signature = $identity['signature'];
@@ -158,6 +159,8 @@ class Bouncer_Stats
              $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 0;
              $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
              $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : 'none';
+             $java = isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' ? 1 : 0;
+             $libwww = isset($last['request']['headers']['TE']) && $last['request']['headers']['TE'] == 'deflate,gzip;q=0.3' ? 1 : 0;
 
              $ref = 0;
              if (!empty($first['request']['headers']['Referer'])) {
@@ -173,7 +176,7 @@ class Bouncer_Stats
                  if (strpos($filterKey, '-') === 0) {
                     $filterKey = substr($filterKey, 1);
                     if (isset($$filterKey)) {
-                     if ($filterKey == 'addr' || $filterKey == 'host' || $filterKey == 'referer') {
+                     if ($filterKey == 'addr' || $filterKey == 'host' || $filterKey == 'referer' || $filterKey == 'useragent') {
                          if (strpos($$filterKey, $filterValue) !== false) continue 2;
                      } else {
                          if ($$filterKey == $filterValue) continue 2;
@@ -181,7 +184,7 @@ class Bouncer_Stats
                     }
                  } else {
                      if (isset($$filterKey)) {
-                         if ($filterKey == 'addr' || $filterKey == 'host' || $filterKey == 'referer') {
+                         if ($filterKey == 'addr' || $filterKey == 'host' || $filterKey == 'referer' || $filterKey == 'useragent') {
                              if (strpos($$filterKey, $filterValue) === false) continue 2;
                          } else {
                              if ($$filterKey != $filterValue) continue 2;
