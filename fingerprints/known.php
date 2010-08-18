@@ -9,8 +9,6 @@ $known_fingerprints = array(
 '09f23681d71f4a667432fa11c8465f5c',  // facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
 '656fbf00aebce50ee22eb07b115c6395',  // Facebook share follower
 // Google
-'0f90768387e17021566a40bdc5ed4b0c',  //  * - Google Wireless Transcoder
-'46c694c4e4e26cd05657ff74cf9300da',  //  * - Google Wireless Transcoder
 '6f82b98fc53efbaca170d51e67469860',  //  * - Google Translate
 'e06615d3118241037d7314f5b9411105',  //  * - Google Desktop
 // App Engine Apps
@@ -41,12 +39,9 @@ $known_fingerprints = array(
 'f546324447d3ea14f88b35dc4083454f',  // US - Windows 2003  - Explorer 7.0
 '84c29cf970522cd3727c8627bd01a949',  // US - Windows XP    - Explorer 7.0
 // Crawlers
-// 'e69ff737f65a3b12adf29016e5ada98d',  // http://www.seoprofiler.com/bot
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '16e7bbc8f77ff058af8b2343b3115e72',  // INA
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
-'8c3c59cf7f249feecf359881ef36576e',  // Mozilla crawl/5.0 (compatible; fairshare.cc +http://fairshare.cc)
-'cf27cfef03e03eb38824956f27590580',  // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1 + FairShare-http://fairshare.cc)
 'eea168b7c9d0d958c6e9b29e1212414b',  // Search17 Web Crawler
 '65a6a88c94f8a9f6dbd11f129271843b',  // SheenBot
 '4244fa19396ed9f656d60a0f424abcd5',  // Twenga
@@ -65,15 +60,10 @@ $known_fingerprints = array(
 'ba1b1f5bd2fff182d02bebcae1238b62',  // Twitturly / v0.6
 'b02ebc3b48874c4b0a101a709dbdd379',  // acquia-crawler
 'be659eb627ef3c2fd42705e4e5d39044',  // ThingFetcher; (+http://thinglabs.com)
-// '2687c1f1bb7f6803a4f1ee2896a2e01e',  // Superfeedr: FeedDiscovery/1.1
 '8ccb889b7d69bb8e0453258c55db3c07',  // SurveyBot/2.3 (DomainTools)
 '2708e9c06a83250e6bcab443f73c71e3',  // http://page-store.com/
 '6afae750923289d89eb638a6a7ae8947',  // librabot/2.0 (+http://academic.research.microsoft.com/)
 '9c1bb51b327c07997fe1971925a5149e',  // librabot/2.0 (+http://academic.research.microsoft.com/)
-// '62af4df169beb4ff6ffc6ea471fcbdbe',  // Superfeedr: Superparser/1.0 http://superfeedr.com
-// 'a9b11c963519135d4b07c6b6ad36c0de',  // Social Mention/1.0; http://socialmention.com;)
-// 'a249ad9ab9dcd091a70c9a5cfb61bd03',  // Yahoo Pipes 1.0
-// 'b54f948e8e5cceb3b8f7d89e341d23c7',  // TwitterFeed 3
 '87d77eade01d9fcc73680ed520ea5e81',  // Netvibes - BM
 '6df8bda832ecbb4ad20ec624d6c86fdb',  // Netvibes - Mozilla/5.0 (compatible)
 '776e9d435c5a3b3fd4024863e771a7f2',  // Netvibes - Mozilla/5.0 (compatible)

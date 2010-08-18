@@ -261,6 +261,13 @@ $browser = array(
     ),
     "uri" => "http://www.google.com/chrome/"
   ),
+  "chromium" => array(
+    "icon" => "chrome",
+    "title" => "Chromium",
+    "rule" => array(
+      "chromium([ /])?([0-9.]{1,12})?" => "\\2"
+    )
+  ),
   "compuserve" => array(
     "icon" => "question",
     "title" => "CompuServe",

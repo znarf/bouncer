@@ -157,7 +157,7 @@ class Bouncer_Stats
              $pragma = isset($last['request']['headers']['Pragma']) ? 1 : 0;
              $wap = isset($last['request']['headers']['x-wap-profile']) ? 1 : 0;
              $proxy = isset($last['request']['headers']['Via']) || isset($last['request']['headers']['X-BlueCoat-Via']) || isset($last['request']['headers']['X-Forwarded-For']) ? 1 : 0;
-             $prefetch = isset($last['request']['headers']['X-Moz']) && $last['request']['headers']['X-Moz'] == 'prefetch' ? 1 : 0;
+             $xmoz = isset($last['request']['headers']['X-Moz']) ? $last['request']['headers']['X-Moz'] : 'none';
              $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 0;
              $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
              $accept = isset($identity['headers']['Accept']) ? $identity['headers']['Accept'] : 'none';
@@ -266,9 +266,13 @@ class Bouncer_Stats
                      echo '<td>' . $fingerprint . '</td>';
                      echo '<td>' . ( isset($fgtype) && $fgtype != 'none' ? $fgtype : '' ) . '</td>';
                  } elseif ($key == 'features') {
-                      echo '<td>' . $identity['features']['image'] . '</td>';
-                      echo '<td>' . $identity['features']['iframe'] . '</td>';
-                      echo '<td>' . $identity['features']['javascript'] . '</td>';
+                      if (isset($identity['features'])) {
+                          echo '<td>' . $identity['features']['image'] . '</td>';
+                          echo '<td>' . $identity['features']['iframe'] . '</td>';
+                          echo '<td>' . $identity['features']['javascript'] . '</td>';
+                      } else {
+                          echo '<td colspan="3">', '&nbsp;' ,'</td>';
+                      }
                  } else if ($key == 'host') {
                      echo '<td class="ic ' . $extension . '">', $host, '</td>';
                  } else if ($key == 'agent') {

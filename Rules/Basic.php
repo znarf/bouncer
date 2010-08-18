@@ -412,6 +412,9 @@ class Bouncer_Rules_Basic
                 $score += strpos($host, 'theplanet.com') === false ? -2.5 : 1;
                 $score += $identity['fingerprint'] != '58da13cc7b6dbfa72c81d8357f4dda0a' ? -2.5 : 1;
                 break;
+            case 'bdbrandprotect':
+                $score += strpos($host, 'blink.ca') === false ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;

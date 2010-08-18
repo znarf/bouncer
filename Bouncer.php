@@ -477,7 +477,8 @@ class Bouncer
             exit;
         }
 
-        if (strtoupper($_SERVER['REQUEST_METHOD']) == 'HEAD') {
+        $method = strtoupper($_SERVER['REQUEST_METHOD']);
+        if ($method == 'HEAD' || $method == 'OPTIONS') {
             return;
         }
 

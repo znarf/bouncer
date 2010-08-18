@@ -542,6 +542,14 @@ $robot = array(
     ),
     "uri" => ""
   ),
+  "bdbrandprotect" => array(
+    "icon" => "robot",
+    "title" => "Brand Protect",
+    "rule" => array(
+      "^BP Spider[ /]([0-9.]{1,10})" => ""
+    ),
+    "uri" => ""
+  ),
   "bdncentral" => array(
     "icon" => "robot",
     "title" => "Bdncentral",
@@ -1535,6 +1543,13 @@ $robot = array(
       "FacebookFeedParser[/ ]([0-9a-z.\-]{1,10})" => "\\1"
     ),
     "uri" => "http://www.facebook.com/"
+  ),
+  "fairshare" => array(
+    "icon" => "robot",
+    "title" => "FairShare",
+    "rule" => array(
+      "FairShare" => ""
+    )
   ),
   "fast" => array(
     "icon" => "fast",
@@ -5422,7 +5437,7 @@ $robot = array(
     "icon" => "wordpress",
     "title" => "WordPress",
     "rule" => array(
-      "WordPress[ /]([0-9.]{1,10})" => "\\1"
+      "WordPress[ /]([0-9a-z.]{1,10})" => "\\1"
     )
   ),
   "worio" => array(
