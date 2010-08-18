@@ -462,11 +462,13 @@ class Bouncer
                 if ($_GET['bouncer-feature'] == 'image') {
                     $identity['features']['image'] = $identity['features']['image'] + 2;
                     self::setIdentity($identity['id'], $identity);
-                    echo 'ok';
+                    header('Content-Type:image/gif');
+                    echo base64_decode("R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
                 } elseif ($_GET['bouncer-feature'] == 'javascript') {
                     $identity['features']['javascript'] = $identity['features']['javascript'] + 2;
                     self::setIdentity($identity['id'], $identity);
-                    echo 'ok';
+                    header('Content-Type:image/gif');
+                    echo base64_decode("R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
                 } elseif ($_GET['bouncer-feature'] == 'iframe') {
                     $identity['features']['iframe'] = $identity['features']['iframe'] + 2;
                     self::setIdentity($identity['id'], $identity);
@@ -493,18 +495,24 @@ class Bouncer
                 $identity['features'] = array('iframe' => 0, 'javascript' => 0, 'image' => 0);
             }
             if ($identity['features']['image'] < 1 && $identity['features']['image'] > -5) {
-                echo '<img width="1" height="1" border="0" src="?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=image&t=' . mktime() . '"/>';
+                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=image&t=' . mktime();
+                $style = 'position:absolute;border:0;width:1px;height:1px;right:1px;top:1px;background:red;';
+                echo '<img style="' . $style . '" src="' . $url  . '"/>';
                 $identity['features']['image'] = $identity['features']['image'] - 1;
                 $store = true;
             }
             if ($identity['features']['iframe'] < 1 && $identity['features']['iframe'] > -5) {
-                echo '<iframe width="1" height="1" src="?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=iframe&t=' . mktime() . '"></iframe>';
+                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=iframe&t=' . mktime();
+                $style = 'position:absolute;border:0;width:1px;height:1px;right:3px;top:1px;background:blue;';
+                echo '<iframe style="' . $style . '" width="1" height="1" src="' . $url  . '"></iframe>';
                 $identity['features']['iframe'] = $identity['features']['iframe'] - 1;
                 $store = true;
             }
             if ($identity['features']['javascript'] < 1 && $identity['features']['javascript'] > -5) {
+                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=javascript&t=' . mktime();
+                $style = 'position:absolute;border:0;width:1px;height:1px;right:5px;top:1px;background:lime;';
                 echo '<script type="text/javascript">';
-                echo 'document.write(\'<img width="1" height="1" border="0" src="?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=javascript&t=' . mktime() . '"/>\');';
+                echo 'document.write(\'<img style="' . $style . '" src="' . $url  . '"/>\');';
                 echo '</script>';
                 $identity['features']['javascript'] = $identity['features']['javascript'] - 1;
                 $store = true;
