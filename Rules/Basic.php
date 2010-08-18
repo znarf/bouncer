@@ -118,16 +118,6 @@ class Bouncer_Rules_Basic
             }
         }
 
-        // Features challenges
-        if (isset($identity['features'])) {
-            $f = $identity['features'];
-            if ($f['image'] < -3 && $f['iframe'] < -3 && $f['javascript'] < -3) {
-                $scores[] = array(-5, 'All features challenges failed');
-            } elseif ($f['image'] >= 1 && $f['iframe'] >= 1 && $f['javascript'] >= 1) {
-                $scores[] = array(2.5, 'All features challenges succeded');
-            }
-        }
-
         return $scores;
     }
 
@@ -180,6 +170,13 @@ class Bouncer_Rules_Basic
             $scores[] = array(-2.5, 'Content-Type Header with a GET Request');
         }
 
+        // libWWW used to fake a browser identity
+        if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
+            if (isset($headers['Connection']) && $headers['Connection'] == 'TE, close') {
+                $scores[] = array(-10, 'libWWW signature detected');
+            }
+        }
+
         if (in_array($name, Bouncer::$known_browsers)) {
             // Legitimate Browsers always send a Connection header
             if (empty($headers['Connection'])) {
@@ -187,12 +184,6 @@ class Bouncer_Rules_Basic
             // And never a Connection:Close header
             } elseif (stripos($headers['Connection'], 'close') !== false) {
                 $scores[] = array(-2.5, 'Connection Header=Close');
-            }
-            // libWWW used to fake a browser identity
-            if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
-                if (isset($headers['Connection']) && $headers['Connection'] == 'TE, close') {
-                    $scores[] = array(-10, 'libWWW signature detected');
-                }
             }
             // Only Firefox is sending this header
             if (isset($headers['Keep-Alive']) && $name != 'firefox')
@@ -232,6 +223,16 @@ class Bouncer_Rules_Basic
             $preferer = parse_url($request['headers']['Referer']);
             if (isset($preferer['host']) && strpos($preferer['host'], 'google')) {
                 $scores[] = array(2.5, 'Google as Referer');
+            }
+        }
+
+        // Features challenges
+        if (isset($identity['features'])) {
+            $f = $identity['features'];
+            if ($f['image'] < -3 && $f['iframe'] < -3 && $f['javascript'] < -3) {
+                $scores[] = array(-5, 'All features challenges failed');
+            } elseif ($f['image'] >= 1 && $f['iframe'] >= 1 && $f['javascript'] >= 1) {
+                $scores[] = array(2.5, 'All features challenges succeded');
             }
         }
 
