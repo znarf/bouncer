@@ -484,6 +484,10 @@ class Bouncer
             return;
         }
 
+        if (isset($_SERVER['HTTP_X_MOZ'])) {
+            return;
+        }
+
         $identity = self::identity();
         if (empty($identity) || empty($identity['id'])) {
             return;
