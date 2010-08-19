@@ -500,21 +500,21 @@ class Bouncer
             }
             if ($identity['features']['image'] < 1 && $identity['features']['image'] > -5) {
                 $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=image&t=' . mktime();
-                $style = 'position:absolute;border:0;width:1px;height:1px;right:1px;top:1px;background:red;';
+                $style = 'position:absolute;border:0;width:1px;height:1px;left:0;top:0;background:red;';
                 echo '<img style="' . $style . '" src="' . $url  . '"/>';
                 $identity['features']['image'] = $identity['features']['image'] - 1;
                 $store = true;
             }
             if ($identity['features']['iframe'] < 1 && $identity['features']['iframe'] > -5) {
                 $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=iframe&t=' . mktime();
-                $style = 'position:absolute;border:0;width:1px;height:1px;right:3px;top:1px;background:blue;';
+                $style = 'position:absolute;border:0;width:1px;height:1px;left:2px;top:0;background:blue;';
                 echo '<iframe style="' . $style . '" width="1" height="1" src="' . $url  . '"></iframe>';
                 $identity['features']['iframe'] = $identity['features']['iframe'] - 1;
                 $store = true;
             }
             if ($identity['features']['javascript'] < 1 && $identity['features']['javascript'] > -5) {
                 $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=javascript&t=' . mktime();
-                $style = 'position:absolute;border:0;width:1px;height:1px;right:5px;top:1px;background:lime;';
+                $style = 'position:absolute;border:0;width:1px;height:1px;left:1px;top:0;background:lime;';
                 echo '<script type="text/javascript">';
                 echo 'document.write(\'<img style="' . $style . '" src="' . $url  . '"/>\');';
                 echo '</script>';
