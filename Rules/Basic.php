@@ -416,6 +416,9 @@ class Bouncer_Rules_Basic
             case 'bdbrandprotect':
                 $score += strpos($host, 'blink.ca') === false ? -5 : 2.5;
                 break;
+            case 'fairshare':
+                $score += (strpos($addr, '209.249.') !== 0 && strpos($addr, '64.41.') !== 0) ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;

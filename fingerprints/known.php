@@ -69,6 +69,7 @@ $known_fingerprints = array(
 '776e9d435c5a3b3fd4024863e771a7f2',  // Netvibes - Mozilla/5.0 (compatible)
 '68c1cbc196603b22c85c48b32a6bbd51',  // Clearbricks Feed Reader/0.2
 '536cb87617e5a9ffdfae53365f116d89',  // Daumoa
+'3e2a346099d1c651e4df4bb47f158532',  // suchmaschinenoptimierung.de
 // Flash (eg: WP image uploader)
 'd22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
 '4f4c2a419649c56cad7d3cca8dc9eeb6',  // Adobe Flash Player 10
@@ -84,6 +85,7 @@ $known_fingerprints = array(
 'b5f86f22b42c905d30ecd11d0e767bb1',  // FR - Windows XP - Explorer 8.0
 '98382a7339a5175ad37a386a5bf74b89',  // BR - Windows XP - Explorer 7.0
 '98382a7339a5175ad37a386a5bf74b89',  // BR - Windows XP - Explorer 6.0
+'22577a6e96e1273c87ab563cd13a72d0',  // US - Windows XP - Firefox 3.6.8
 // RSS
 '5b2361fdf1c6e31b99a55def5adfea6e',  // SimplePie/1.1.1 (Moonmoon)
 '09e5ec4c2fb7c5fcdced58de35f6e289',  // FR - Windows-RSS-Platform/2.0 (MSIE 8.0; Windows NT 5.1)
