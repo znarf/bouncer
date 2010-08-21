@@ -44,11 +44,41 @@ class Bouncer_Backend_Redis
         $agentsIndex->prepend($agent);
     }
 
+    public static function indexAgentFingerprint($agent, $fingerprint, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
+        $agentsIndex = new Rediska_Key_List($indexKey);
+        $agentsIndex->remove($agent);
+        $agentsIndex->prepend($agent);
+    }
+
+    public static function indexAgentHost($agent, $haddr, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
+        $agentsIndex = new Rediska_Key_List($indexKey);
+        $agentsIndex->remove($agent);
+        $agentsIndex->prepend($agent);
+    }
+
     public static function getAgentsIndex($namespace = '')
     {
         $indexKey = empty($namespace) ? 'agents' : "agents-$namespace";
         $agentsIndex = new Rediska_Key_List($indexKey);
-        return $agentsIndex->toArray(0, 2500);
+        return $agentsIndex->toArray(0, 10000);
+    }
+
+    public static function getAgentsIndexFingerprint($fingerprint, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
+        $agentsIndex = new Rediska_Key_List($indexKey);
+        return $agentsIndex->toArray(0, 10000);
+    }
+
+    public static function getAgentsIndexHost($haddr, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
+        $agentsIndex = new Rediska_Key_List($indexKey);
+        return $agentsIndex->toArray(0, 10000);
     }
 
     public static function storeConnection($connection)
@@ -56,6 +86,12 @@ class Bouncer_Backend_Redis
         $key = uniqid();
         self::set("connection-" . $key, $connection);
         return $key;
+    }
+
+    public static function getConnectionsKeyList($namespace = '')
+    {
+        $key = empty($namespace) ? "connections" : "connections-$namespace";
+        return new Rediska_Key_List($key);
     }
 
     public static function getAgentConnectionsKeyList($agent, $namespace = '')
@@ -66,8 +102,11 @@ class Bouncer_Backend_Redis
 
     public static function indexConnection($key, $agent, $namespace = '')
     {
-        $connections = self::getAgentConnectionsKeyList($agent, $namespace);
+        $connections = self::getConnectionsKeyList($namespace);
         $connections->prepend($key);
+
+        $agentConnections = self::getAgentConnectionsKeyList($agent, $namespace);
+        $agentConnections->prepend($key);
     }
 
     public static function getAgentConnections($agent, $namespace = '')

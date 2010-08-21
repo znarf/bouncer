@@ -396,6 +396,8 @@ class Bouncer
     {
         $time = time();
         $agent = $identity['id'];
+        $haddr = self::hash($identity['addr']);
+        $fingerprint = $identity['fingerprint'];
 
         $connection = array();
         $connection['identity'] = $identity['id'];
@@ -410,8 +412,15 @@ class Bouncer
         $connectionKey = self::backend()->storeConnection($connection);
 
         foreach (self::$_namespaces as $ns) {
+            $backend = self::backend();
             // Add agent to agents index
-            self::backend()->indexAgent($agent, $ns);
+            $backend->indexAgent($agent, $ns);
+            // Add agent to fingerprint agent index
+            if (method_exists($backend, 'indexAgentFingerprint'))
+                $backend->indexAgentFingerprint($agent, $fingerprint, $ns);
+            // Add agent to host agent index
+            if (method_exists($backend, 'indexAgentHost'))
+                $backend->indexAgentHost($agent, $haddr, $ns);
             // Add connection to index
             self::backend()->indexConnection($connectionKey, $agent, $ns);
         }
@@ -553,6 +562,8 @@ class Bouncer
     public static function getIdentity($id) { return self::backend()->getIdentity($id); }
     public static function setIdentity($id, $value) { return self::backend()->setIdentity($id, $value); }
     public static function getAgentsIndex($ns = '') { return self::backend()->getAgentsIndex($ns); }
+    public static function getAgentsIndexFingerprint($fg, $ns = '') { return self::backend()->getAgentsIndexFingerprint($fg, $ns); }
+    public static function getAgentsIndexHost($host, $ns = '') { return self::backend()->getAgentsIndexHost($host, $ns); }
     public static function getAgentConnections($agent, $ns = '') { return self::backend()->getAgentConnections($agent, $ns); }
     public static function getLastAgentConnection($agent, $ns = '') { return self::backend()->getLastAgentConnection($agent, $ns); }
     public static function getFirstAgentConnection($agent, $ns = '') { return self::backend()->getFirstAgentConnection($agent, $ns); }

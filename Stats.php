@@ -77,7 +77,28 @@ class Bouncer_Stats
 
          require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
 
-         $agents = Bouncer::getAgentsIndex(self::$_namespace);
+         $filters = array();
+         if (!empty($_GET['filter'])) {
+             foreach (explode(' ', $_GET['filter']) as $f) {
+                 if (strpos($f, ':')) $filters[] = explode(':', trim($f));
+             }
+         }
+
+         foreach ($filters as $filter) {
+             list($filterKey, $filterValue) = $filter;
+             if ($filterKey == 'fingerprint') {
+                 $agents = Bouncer::getAgentsIndexFingerprint($filterValue, self::$_namespace);
+                 break;
+             }
+             if ($filterKey == 'addr') {
+                 $agents = Bouncer::getAgentsIndexHost(md5($filterValue), self::$_namespace);
+                 break;
+             }
+         }
+
+         if (empty($agents)) {
+             $agents = Bouncer::getAgentsIndex(self::$_namespace);
+         }
 
          $cssRules = array();
          $cssRules['unknown'] = 'background-image:url(http://h6e.net/bouncer/images/os_question.png)';
@@ -106,13 +127,6 @@ class Bouncer_Stats
              }
          }
          echo '</tr>' . "\n";
-
-         $filters = array();
-         if (!empty($_GET['filter'])) {
-             foreach (explode(' ', $_GET['filter']) as $f) {
-                 if (strpos($f, ':')) $filters[] = explode(':', trim($f));
-             }
-         }
 
          foreach ($agents as $time => $id) {
 
@@ -231,7 +245,7 @@ class Bouncer_Stats
                   $cssRules[$extension] = 'background-image:url(http://h6e.net/bouncer/images/ext_' . $extension . '.png)';
              }
              if ($linkify) {
-                 $host = '<a href="?filter=host%3A' .  $host . '">' .  $host . '</a>';
+                 $host = '<a href="?filter=addr%3A' .  $addr . '">' .  $host . '</a>';
              }
 
              if ($type == 'browser') {
