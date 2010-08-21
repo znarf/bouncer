@@ -482,7 +482,12 @@ class Bouncer
                     $identity['features']['iframe'] = $identity['features']['iframe'] + 2;
                     self::setIdentity($identity['id'], $identity);
                     header("Content-Type:text/html");
-                    echo '<html><body>ok</body></html>';
+                    echo '<html><head><meta name="robots" content="noindex,nofollow"></head><body>ok cowboy</body></html>';
+                } elseif ($_GET['bouncer-feature'] == 'link') {
+                    $identity['features']['link'] = $identity['features']['link'] + 2;
+                    self::setIdentity($identity['id'], $identity);
+                    header("Content-Type:text/html");
+                    echo '<html><head><meta name="robots" content="noindex,nofollow"></head><body>ok cowboy</body></html>';
                 }
             }
             exit;
@@ -505,7 +510,10 @@ class Bouncer
         if ($identity['type'] == self::BROWSER) {
             $store = false;
             if (empty($identity['features'])) {
-                $identity['features'] = array('iframe' => 0, 'javascript' => 0, 'image' => 0);
+                $identity['features'] = array('iframe' => 0, 'javascript' => 0, 'image' => 0, 'link' => 0);
+            }
+            if (empty($identity['features']['link'])) {
+                $identity['features']['link'] = 0;
             }
             if ($identity['features']['image'] < 1 && $identity['features']['image'] > -5) {
                 $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=image&t=' . mktime();
@@ -517,7 +525,7 @@ class Bouncer
             if ($identity['features']['iframe'] < 1 && $identity['features']['iframe'] > -5) {
                 $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=iframe&t=' . mktime();
                 $style = 'position:absolute;border:0;width:1px;height:1px;left:2px;top:0;background:blue;';
-                echo '<iframe style="' . $style . '" width="1" height="1" src="' . $url  . '"></iframe>';
+                echo '<iframe style="' . $style . '" src="' . $url  . '"></iframe>';
                 $identity['features']['iframe'] = $identity['features']['iframe'] - 1;
                 $store = true;
             }
@@ -528,6 +536,13 @@ class Bouncer
                 echo 'document.write(\'<img style="' . $style . '" src="' . $url  . '"/>\');';
                 echo '</script>';
                 $identity['features']['javascript'] = $identity['features']['javascript'] - 1;
+                $store = true;
+            }
+            if ($identity['features']['link'] < 10 && $identity['features']['link'] > -10) {
+                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=link&t=' . mktime();
+                $style = 'display:block;position:absolute;border:0;width:1px;height:1px;left:3px;top:0;background:black;';
+                echo '<a rel="nofollow" style="' . $style . '" href="' . $url  . '"><span style="display:none;">ok cowboy</span></a>';
+                $identity['features']['link'] = $identity['features']['link'] - 1;
                 $store = true;
             }
             if ($store) {
