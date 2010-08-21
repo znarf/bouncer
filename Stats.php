@@ -121,7 +121,7 @@ class Bouncer_Stats
                  echo '<th style="width:14px">', '', '</th>';
                  echo '<th colspan="2">', ucfirst($key), '</th>';
              } elseif ($key == 'features') {
-                 echo '<th colspan="3">', ucfirst($key), '</th>';
+                 echo '<th colspan="4">', ucfirst($key), '</th>';
              } else {
                  echo '<th>', ucfirst($key), '</th>';
              }
