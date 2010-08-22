@@ -51,7 +51,6 @@ $suspicious_fingerprints = array(
 '57b72e387d0933fe5633aea57423f26f',    // H6E - Windows 98    - Explorer 6.0
 '16ab19e56f54f1efa86e5f7060b02c46',    // H6E - Windows XP    - Explorer 6.0
 '22e59e278b28502334751892cff578bb',    // H6E - Windows XP    - Explorer 6.0     (CN)
-// '026c8cf2970607f6c96af64ab56d04a7',    // BM  - Windows XP    - Explorer 6.0     (CN)
 'e6742e43e21e965e69f31e5b3cd68fb3',    // BM  - Windows 2000  - Explorer 5.5
 'a4b3022d0d4ff28fad16fd845cb42cd4',    // BM  - Windows 98    - Explorer 5.5
 '7ec64413568c18029b11e0d69458b54f',    // BM  - Windows XP    - Explorer 7.0
@@ -66,7 +65,7 @@ $suspicious_fingerprints = array(
 '9887c55fda215fd9fe03e9bab9d51839',    // BM  - Windows XP    - Explorer 6.0
 '485b4542bb733fe4474fa2a51681712a',    // BM  - Windows Vista - Explorer 7.0    (US - theplanet.com + DE - 82.140)
 '7b26ac3bd2948a47704fc69202858d9c',    // BM  - Windows XP    - Explorer 8.0
-'ab634d6c80c5623084a5d473b00edb01',    // BM  - Windows 2000  - Explorer 6.0
+'ab634d6c80c5623084a5d473b00edb01',    // BM  - Windows 2000  - Explorer 6.0    (SG)
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
@@ -96,6 +95,8 @@ $suspicious_fingerprints = array(
 'ed267132b191ab450717e155e558cb54',    //  BM - Windows XP    - Firefox 3.0.10
 '464ad59abcf3e7adca9ccc8f09eee82b',    //  BM - Windows Vista - Firefox 3.0.1    (US - theplanet.com + DE - 82.140)
 '1c784cefba12a813271b02cbd28e8e01',    //  BM - Ubuntu        - Firefox 3.0.10
+'59cab5f2ded9964a860dfa438c81a35c',    //  BM - Linux         - Firefox 3.0
+'3a17ee0aa964b2fa5e1b074634906ded',    //  BM - Windows XP    - Firefox 3.6.8
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
@@ -118,6 +119,15 @@ $suspicious_fingerprints = array(
 '870660ecfc39667a3fd987a147c51170', // Windows 2000 - Explorer 5.5
 '19b8d1b99b6dd00dbcb4251b013969d5', // Windows XP   - Explorer 6.0
 '7ae7fbc9e52c64fd2fb5883381bce8a9', // Windows      - BrowseX 2.0.0
+// BM - zh-cn
+'026c8cf2970607f6c96af64ab56d04a7', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+'5dabbb1c536b58d7a6bb234fcdaa71bd', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+'596d5af304c3d0e12cb62fb8bb6e4c4e', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+'0f8d23baea1ccbdef05ebfe6ebd54c3b', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+'e5a8a17b5747b0407b31c7279d0cb7ff', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+'212e3663f2db25278a9c6f6fe9ea064f', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+'edac95c3e40d567074e7725ffc9ecef0', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; 360SE)
+'0341a77de94437c77a8a1813bae88224', // Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
 // Web Sniffer
 '3098ff1030d58eb6db388a85cdb63e75',    //  BM - Windows XP    - Explorer 7.0     (US - referer:http://web-sniffer.net/)
 );
