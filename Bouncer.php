@@ -579,6 +579,8 @@ class Bouncer
     public static function getAgentsIndex($ns = '') { return self::backend()->getAgentsIndex($ns); }
     public static function getAgentsIndexFingerprint($fg, $ns = '') { return self::backend()->getAgentsIndexFingerprint($fg, $ns); }
     public static function getAgentsIndexHost($host, $ns = '') { return self::backend()->getAgentsIndexHost($host, $ns); }
+    public static function countAgentsFingerprint($fg, $ns = '') { return self::backend()->countAgentsFingerprint($fg, $ns); }
+    public static function countAgentsHost($host, $ns = '') { return self::backend()->countAgentsHost($host, $ns); }
     public static function getAgentConnections($agent, $ns = '') { return self::backend()->getAgentConnections($agent, $ns); }
     public static function getLastAgentConnection($agent, $ns = '') { return self::backend()->getLastAgentConnection($agent, $ns); }
     public static function getFirstAgentConnection($agent, $ns = '') { return self::backend()->getFirstAgentConnection($agent, $ns); }

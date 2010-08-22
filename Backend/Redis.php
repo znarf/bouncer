@@ -81,6 +81,20 @@ class Bouncer_Backend_Redis
         return $agentsIndex->toArray(0, 10000);
     }
 
+    public static function countAgentsFingerprint($fingerprint, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
+        $agentsIndex = new Rediska_Key_List($indexKey);
+        return count($agentsIndex);
+    }
+
+    public static function countAgentsHost($haddr, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
+        $agentsIndex = new Rediska_Key_List($indexKey);
+        return count($agentsIndex);
+    }
+
     public static function storeConnection($connection)
     {
         $key = uniqid();

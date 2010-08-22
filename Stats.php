@@ -119,6 +119,8 @@ class Bouncer_Stats
          foreach (self::$_keys as $key) {
              if ($key == 'fingerprint') {
                  echo '<th style="width:14px">', '', '</th>';
+                 echo '<th colspan="3">', ucfirst($key), '</th>';
+             } elseif ($key == 'host') {
                  echo '<th colspan="2">', ucfirst($key), '</th>';
              } elseif ($key == 'features') {
                  echo '<th colspan="4">', ucfirst($key), '</th>';
@@ -280,6 +282,11 @@ class Bouncer_Stats
                      echo '<td style="background:#' . substr($identity['fingerprint'], 0, 6) . '">&nbsp;</td>';
                      echo '<td>' . $fingerprint . '</td>';
                      echo '<td>' . ( isset($fgtype) && $fgtype != 'none' ? $fgtype : '' ) . '</td>';
+                     if (method_exists('Bouncer', 'countAgentsFingerprint')) {
+                         echo '<td>' . Bouncer::countAgentsFingerprint($identity['fingerprint'], self::$_namespace) . '</td>';
+                     } else {
+                         echo '<td>', '&nbsp;', '</td>';
+                     }
                  } elseif ($key == 'features') {
                       if (isset($identity['features'])) {
                           echo '<td>' . $identity['features']['image'] . '</td>';
@@ -287,10 +294,15 @@ class Bouncer_Stats
                           echo '<td>' . $identity['features']['javascript'] . '</td>';
                           echo '<td>' . $identity['features']['link'] . '</td>';
                       } else {
-                          echo '<td colspan="4">', '&nbsp;' ,'</td>';
+                          echo '<td colspan="4">', '&nbsp;', '</td>';
                       }
                  } else if ($key == 'host') {
                      echo '<td class="ic ' . $extension . '">', $host, '</td>';
+                     if (method_exists('Bouncer', 'countAgentsHost')) {
+                         echo '<td>' . Bouncer::countAgentsHost(md5($identity['addr']), self::$_namespace) . '</td>';
+                     } else {
+                         echo '<td>', '&nbsp;', '</td>';
+                     }
                  } else if ($key == 'agent') {
                      echo '<td class="ic ' . $name . '">', $agent ,'</td>';
                  } else if ($key == 'system') {
