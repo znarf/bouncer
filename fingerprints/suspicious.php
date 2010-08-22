@@ -120,12 +120,18 @@ $suspicious_fingerprints = array(
 '19b8d1b99b6dd00dbcb4251b013969d5', // Windows XP   - Explorer 6.0
 '7ae7fbc9e52c64fd2fb5883381bce8a9', // Windows      - BrowseX 2.0.0
 // BM - zh-cn
-'026c8cf2970607f6c96af64ab56d04a7', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
-'5dabbb1c536b58d7a6bb234fcdaa71bd', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
-'596d5af304c3d0e12cb62fb8bb6e4c4e', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
-'0f8d23baea1ccbdef05ebfe6ebd54c3b', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
-'e5a8a17b5747b0407b31c7279d0cb7ff', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
-'212e3663f2db25278a9c6f6fe9ea064f', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+// Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+'026c8cf2970607f6c96af64ab56d04a7', // (IMAGE), (SHOCKWAVE), (EXCEL-POWERPOINT-WORD), */*
+'5dabbb1c536b58d7a6bb234fcdaa71bd', // (IMAGE), (SHOCKWAVE), (WORD-EXCEL-POWERPOINT), */*`
+'09bdb6e078f595fcabce84998fe79937', // (IMAGE), (SHOCKWAVE), (EXCEL-WORD), */*
+'7af33aa6587b0842bbbbbf004e6119e8', // (IMAGE), (SHOCKWAVE), (WORD), */*
+'596d5af304c3d0e12cb62fb8bb6e4c4e', // (IMAGE), (SHOCKWAVE), (EXCEL-POWERPOINT-WORD), application/QVOD, application/QVOD, */*
+'66174ec5746225e33e8f74764dd885ad', // (SHOCKWAVE), (IMAGE), (EXCEL-POWERPOINT-WORD), application/QVOD, application/QVOD, */*
+'942b04de06c753de6cf9769d2ec8d7e9', // (IMAGE), (SHOCKWAVE), (WORD-EXCEL-POWERPOINT), application/QVOD, application/QVOD, */*
+'0f8d23baea1ccbdef05ebfe6ebd54c3b', // (SHOCKWAVE), (IMAGE), (EXCEL-POWERPOINT-WORD), */*
+'eca27dd804d8e5e7cc9d7a0d066dde75', // (SHOCKWAVE), (IMAGE), (WORD-EXCEL-POWERPOINT), */*
+'e5a8a17b5747b0407b31c7279d0cb7ff', // (IMAGE), (SHOCKWAVE), */*
+'212e3663f2db25278a9c6f6fe9ea064f', // (IMAGE), (SHOCKWAVE), (EXCEL-POWERPOINT-WORD), (SILVERLIGHT), */*
 'edac95c3e40d567074e7725ffc9ecef0', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; 360SE)
 '0341a77de94437c77a8a1813bae88224', // Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
 // Web Sniffer
