@@ -30,7 +30,7 @@ $suspicious_fingerprints = array(
 'd05580236d7563115237363dc740f983', // TREND MICRO
 // Explorer
 '201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
-'21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)  
+'21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)
 '2a945eb820e0fb959e0eb42ebcae9c9f',    // LD  - Windows XP    - Explorer 8.0     (US - Vrtservers)
 '314bebd09a5bf6aab9b54fd3fdf9ae80',    // LD  - Windows XP    - Explorer 6.0     (CN - 58.61.164.*|124.115.1.*|114.80.93.71)
 '71769c0690c09ac31cc2bd7898a107a5',    // BM  - Windows XP    - Explorer 6.0     (US - websitewelcome.com|hostgator.com) (authenticated bm users)
@@ -126,14 +126,22 @@ $suspicious_fingerprints = array(
 '09bdb6e078f595fcabce84998fe79937', // (IMAGE), (SHOCKWAVE), (EXCEL-WORD), */*
 '7af33aa6587b0842bbbbbf004e6119e8', // (IMAGE), (SHOCKWAVE), (WORD), */*
 '596d5af304c3d0e12cb62fb8bb6e4c4e', // (IMAGE), (SHOCKWAVE), (EXCEL-POWERPOINT-WORD), application/QVOD, application/QVOD, */*
+'59af10c63722a89e9b60a66d2699e923', // (IMAGE), (SHOCKWAVE), (EXCEL-POWERPOINT-WORD), (SILVERLIGHT), application/QVOD, application/QVOD, */*
 '66174ec5746225e33e8f74764dd885ad', // (SHOCKWAVE), (IMAGE), (EXCEL-POWERPOINT-WORD), application/QVOD, application/QVOD, */*
 '942b04de06c753de6cf9769d2ec8d7e9', // (IMAGE), (SHOCKWAVE), (WORD-EXCEL-POWERPOINT), application/QVOD, application/QVOD, */*
 '0f8d23baea1ccbdef05ebfe6ebd54c3b', // (SHOCKWAVE), (IMAGE), (EXCEL-POWERPOINT-WORD), */*
 'eca27dd804d8e5e7cc9d7a0d066dde75', // (SHOCKWAVE), (IMAGE), (WORD-EXCEL-POWERPOINT), */*
+'0c0e1983235b857a7a60791c4d972126', // (SHOCKWAVE), (IMAGE), (WORD), */*
 'e5a8a17b5747b0407b31c7279d0cb7ff', // (IMAGE), (SHOCKWAVE), */*
 '212e3663f2db25278a9c6f6fe9ea064f', // (IMAGE), (SHOCKWAVE), (EXCEL-POWERPOINT-WORD), (SILVERLIGHT), */*
-'edac95c3e40d567074e7725ffc9ecef0', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; 360SE)
-'0341a77de94437c77a8a1813bae88224', // Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+// Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)
+'94f4688c821da35bf6e3246f3c53eaee', // (IMAGE), (SHOCKWAVE), (EXCEL-POWERPOINT-WORD), */*
+// Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; 360SE)
+'edac95c3e40d567074e7725ffc9ecef0', // (IMAGE), (SHOCKWAVE), (EXCEL-POWERPOINT-WORD), */*
+'a9a45b69b9ee66dd7ca4c9594f392c7d', // (IMAGE), (SHOCKWAVE), (WORD-EXCEL-POWERPOINT), */*
+'39910cd50e37317faa23c829627aaf95', // (SHOCKWAVE), (IMAGE), (EXCEL-POWERPOINT-WORD), */*
+// Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'0341a77de94437c77a8a1813bae88224',
 // Web Sniffer
 '3098ff1030d58eb6db388a85cdb63e75',    //  BM - Windows XP    - Explorer 7.0     (US - referer:http://web-sniffer.net/)
 );
