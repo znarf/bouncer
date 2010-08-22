@@ -33,7 +33,7 @@ $suspicious_fingerprints = array(
 '21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)  
 '2a945eb820e0fb959e0eb42ebcae9c9f',    // LD  - Windows XP    - Explorer 8.0     (US - Vrtservers)
 '314bebd09a5bf6aab9b54fd3fdf9ae80',    // LD  - Windows XP    - Explorer 6.0     (CN - 58.61.164.*|124.115.1.*|114.80.93.71)
-'71769c0690c09ac31cc2bd7898a107a5',    // BM  - Windows XP    - Explorer 6.0     (US - websitewelcome.com|hostgator.com)
+'71769c0690c09ac31cc2bd7898a107a5',    // BM  - Windows XP    - Explorer 6.0     (US - websitewelcome.com|hostgator.com) (authenticated bm users)
 'c58abcb98a1260e3cb7de50b305b5cd1',    // BM  - Windows XP    - Explorer 6.0     (US - websitewelcome.com|hostgator.com)
 '6b132ced76c43a575a702ac7917c2991',    // BM  - Windows XP    - Explorer 6.0     (TW - dynamic.hinet.net)
 '4d12feadaaa0d2de366391b5f26d9723',    // BM  - Windows XP    - Explorer 6.0     (PERU)
@@ -51,7 +51,7 @@ $suspicious_fingerprints = array(
 '57b72e387d0933fe5633aea57423f26f',    // H6E - Windows 98    - Explorer 6.0
 '16ab19e56f54f1efa86e5f7060b02c46',    // H6E - Windows XP    - Explorer 6.0
 '22e59e278b28502334751892cff578bb',    // H6E - Windows XP    - Explorer 6.0     (CN)
-'026c8cf2970607f6c96af64ab56d04a7',    // BM  - Windows XP    - Explorer 6.0     (CN)
+// '026c8cf2970607f6c96af64ab56d04a7',    // BM  - Windows XP    - Explorer 6.0     (CN)
 'e6742e43e21e965e69f31e5b3cd68fb3',    // BM  - Windows 2000  - Explorer 5.5
 'a4b3022d0d4ff28fad16fd845cb42cd4',    // BM  - Windows 98    - Explorer 5.5
 '7ec64413568c18029b11e0d69458b54f',    // BM  - Windows XP    - Explorer 7.0
@@ -64,8 +64,9 @@ $suspicious_fingerprints = array(
 '894a16a61da0d1d61ffb219d78512f7c',    // BM  - Windows XP    - Explorer 7.0b
 'b50cca9d908989cd453b12186d86c172',    // BM  - Windows XP    - Explorer 6.0
 '9887c55fda215fd9fe03e9bab9d51839',    // BM  - Windows XP    - Explorer 6.0
-'485b4542bb733fe4474fa2a51681712a',    // BM  - Windows Vista - Explorer 7.0
+'485b4542bb733fe4474fa2a51681712a',    // BM  - Windows Vista - Explorer 7.0    (US - theplanet.com + DE - 82.140)
 '7b26ac3bd2948a47704fc69202858d9c',    // BM  - Windows XP    - Explorer 8.0
+'ab634d6c80c5623084a5d473b00edb01',    // BM  - Windows 2000  - Explorer 6.0
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
@@ -93,6 +94,8 @@ $suspicious_fingerprints = array(
 '561440dbfdff525f24210ab3b34202db',    //  BM - Windows Vista - Firefox 3.0.8
 '6f0e54a31a8f0d3d034a68992c84108f',    //  BM - Windows XP    - Firefox 3.0.6
 'ed267132b191ab450717e155e558cb54',    //  BM - Windows XP    - Firefox 3.0.10
+'464ad59abcf3e7adca9ccc8f09eee82b',    //  BM - Windows Vista - Firefox 3.0.1    (US - theplanet.com + DE - 82.140)
+'1c784cefba12a813271b02cbd28e8e01',    //  BM - Ubuntu        - Firefox 3.0.10
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
@@ -105,7 +108,7 @@ $suspicious_fingerprints = array(
 '6046298b97a8fa9cab264f472979790f',    //  BM - Linux i686    - Epiphany 2.14
 '740876e7892358828a368929b64f314d',    //  BM - Linux Debian  - Mozilla 1.8.0.5-3
 '4483e1104a5c9d42f526f0ff0798898a',    //  BM - Windows XP    - Opera 9.60
-'54b2f182c6c9e764fbb75e40624f50f4',    //  BM - MacOS X       - Safari 3.0.2
+'54b2f182c6c9e764fbb75e40624f50f4',    //  BM - MacOS X       - Safari 3.0.2     (US - theplanet.com + DE - 82.140)
 // BM - inferno.name
 'a19471cdfd5262b77d9c2edb6ebc1510', // Windows 2003 - Opera 7.60
 'b6a988533111b50e812790f44de838aa', // Windows XP   - Explorer 6.0
