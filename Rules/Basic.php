@@ -172,9 +172,7 @@ class Bouncer_Rules_Basic
 
         // libWWW used to fake a browser identity
         if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
-            if (isset($headers['Connection']) && $headers['Connection'] == 'TE, close') {
-                $scores[] = array(-10, 'libWWW signature detected');
-            }
+            $scores[] = array(-10, 'libWWW signature detected');
         }
 
         if (in_array($name, Bouncer::$known_browsers)) {
