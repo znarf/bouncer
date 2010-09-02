@@ -133,9 +133,7 @@ class Bouncer_Rules_Basic
         $headers = $request['headers'];
 
         // PALC
-        if (isset($headers['X-BlueCoat-Via'])) {
-            $scores[] = array(5, 'BlueCoat PALC');
-        } else if (isset($headers['Via'])) {
+        if (isset($headers['Via'])) {
             // Proxy sometimes remove Accept-Encoding header, so we give a bonus
             $scores[] = array(2.5, 'PALC bonus');
         }
