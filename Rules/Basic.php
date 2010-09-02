@@ -5,6 +5,8 @@ class Bouncer_Rules_Basic
 
     public static $explorer_browsers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser');
 
+    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'epiphany', 'camino', 'netscape', 'flock', 'k-meleon');
+
     public static function load()
     {
 
@@ -86,6 +88,8 @@ class Bouncer_Rules_Basic
         // Identify Explorer derivatives
         if (in_array($name, self::$explorer_browsers)) {
             $name = 'explorer';
+        } elseif (in_array($name, self::$gecko_browsers)) {
+            $name = 'firefox';
         }
 
         // Legitimates browsers always send this Accept-* header
@@ -139,6 +143,8 @@ class Bouncer_Rules_Basic
         // Identify Explorer derivatives
         if (in_array($name, self::$explorer_browsers)) {
             $name = 'explorer';
+        } elseif (in_array($name, self::$gecko_browsers)) {
+            $name = 'firefox';
         }
 
         // Cookie, if it exists, it must not be blank
