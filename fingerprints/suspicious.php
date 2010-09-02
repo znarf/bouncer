@@ -62,7 +62,7 @@ $suspicious_fingerprints = array(
 '57b72e387d0933fe5633aea57423f26f',    // BM  - Windows 98    - Explorer 6.0
 '894a16a61da0d1d61ffb219d78512f7c',    // BM  - Windows XP    - Explorer 7.0b
 'b50cca9d908989cd453b12186d86c172',    // BM  - Windows XP    - Explorer 6.0
-'9887c55fda215fd9fe03e9bab9d51839',    // BM  - Windows XP    - Explorer 6.0
+'9887c55fda215fd9fe03e9bab9d51839',    // BM  - Windows XP    - Explorer 6.0    (cookie2)
 '485b4542bb733fe4474fa2a51681712a',    // BM  - Windows Vista - Explorer 7.0    (US - theplanet.com + DE - 82.140)
 '7b26ac3bd2948a47704fc69202858d9c',    // BM  - Windows XP    - Explorer 8.0
 'ab634d6c80c5623084a5d473b00edb01',    // BM  - Windows 2000  - Explorer 6.0    (SG)
@@ -104,7 +104,7 @@ $suspicious_fingerprints = array(
 '0b7496c8208ce55d66d79cbabdca71ff',    //  BM - Opera Mini 2.0.4719
 'b59e6ad8917389de9fc4ac545affa31c',    //  BM - MacOS PPC     - Netscape 4.7     (RU)
 '6ee31a0f6b63c451af5a393eae58ee98',    //  BM - Windows XP    - Netscape 7.2
-'8bc18a42e16e1948417d403c2507b5ce',    //  BM - Windows Vista - Opera 9.64
+'8bc18a42e16e1948417d403c2507b5ce',    //  BM - Windows Vista - Opera 9.64 (cookie2)
 'c08f1df2c2936d8f931c07ef495ad3c4',    //  BM - Windows 98    - MSN Explorer 2.5
 '6046298b97a8fa9cab264f472979790f',    //  BM - Linux i686    - Epiphany 2.14
 '740876e7892358828a368929b64f314d',    //  BM - Linux Debian  - Mozilla 1.8.0.5-3

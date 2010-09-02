@@ -24,6 +24,7 @@ $banned_fingerprints = array(
 // Security Exploits
 '1145d630273e73472fb728301b95b362', //  * - dex Bot Search
 'bd3ddc784afb3d4c98278e86cd2e38a8', // RU - Casper Bot Search
+'f6c56d66353ed1d75d9d6510e665afef', //  * - plaNETWORK Bot Search
 'b0f23770497882623698007998676f4c', //  * - MaMa CaSpEr
 '5d5185a11ffe776821edd761a57f87ad', //  * - SunOS 5.7 - Netscape 4.76
 // Fake Google
