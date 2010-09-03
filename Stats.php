@@ -172,12 +172,18 @@ class Bouncer_Stats
              $cc = isset($last['request']['headers']['Cache-Control']) ? 1 : 0;
              $pragma = isset($last['request']['headers']['Pragma']) ? 1 : 0;
              $wap = isset($last['request']['headers']['x-wap-profile']) ? 1 : 0;
-             $proxy = isset($last['request']['headers']['Via']) || isset($last['request']['headers']['X-BlueCoat-Via']) || isset($last['request']['headers']['X-Forwarded-For']) ? 1 : 0;
+             $proxy = isset($last['request']['headers']['Via']) ||
+                 isset($last['request']['headers']['X-BlueCoat-Via']) || isset($last['request']['headers']['X-Forwarded-For']) ? 1 : 0;
              $xmoz = isset($last['request']['headers']['X-Moz']) ? $last['request']['headers']['X-Moz'] : 'none';
              $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 0;
              $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
+             $pc = isset($last['request']['headers']['Proxy-Connection']) ? $last['request']['headers']['Proxy-Connection'] : 'none';
+
              $accept = isset($identity['headers']['Accept']) ? $identity['headers']['Accept'] : 'none';
              $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : 'none';
+             $al = isset($identity['headers']['Accept-Language']) ? $identity['headers']['Accept-Language'] : 'none';
+             $ac = isset($identity['headers']['Accept-Charset']) ? $identity['headers']['Accept-Charset'] : 'none';
+
              $java = isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' ? 1 : 0;
              $libwww = isset($last['request']['headers']['TE']) && $last['request']['headers']['TE'] == 'deflate,gzip;q=0.3' ? 1 : 0;
              $bluecoat = isset($last['request']['headers']['X-BlueCoat-Via']) ? $last['request']['headers']['X-BlueCoat-Via'] : 'none';
@@ -220,9 +226,9 @@ class Bouncer_Stats
              }
 
              if ($linkify) {
-                 $id = '<a href="?agent=' . $id . '">' . substr($id, 0, 10) . '</a>';
+                 $id = '<a href="?agent=' . $id . '">' . substr($id, 0, 16) . '</a>';
              } else {
-                 $id = substr($id, 0, 10);
+                 $id = substr($id, 0, 16);
              }
 
              if (isset($user) && $user != 'none' && $linkify) {
