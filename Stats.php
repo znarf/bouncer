@@ -172,6 +172,7 @@ class Bouncer_Stats
              $via = isset($last['request']['headers']['Via']) ? 1 : 0;
              $cc = isset($last['request']['headers']['Cache-Control']) ? 1 : 0;
              $pragma = isset($last['request']['headers']['Pragma']) ? 1 : 0;
+             $range = isset($last['request']['headers']['Range']) ? 1 : 0;
              $wap = isset($last['request']['headers']['x-wap-profile']) ? 1 : 0;
              $proxy = isset($last['request']['headers']['Via']) ||
                  isset($last['request']['headers']['X-BlueCoat-Via']) || isset($last['request']['headers']['X-Forwarded-For']) ? 1 : 0;

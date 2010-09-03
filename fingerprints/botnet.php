@@ -11,6 +11,7 @@ $botnet_fingerprints = array(
 // From hosts:
 // 94.102.49.83
 // 91.214.44.31 - LU
+// 173.193.197.46 - US
 'd199bda08e459dcb87416730712670f6', // 1
 'f6baefdd010cde843fbb07d8ef589ee5', // 1
 'ff748c8d9d893921a5e24996f5a29d4a', // 1
@@ -41,8 +42,7 @@ $botnet_fingerprints = array(
 '5047996c59d5f03cf5331b1a06a135af', // 1
 '750fc22dc14aabddecad664ab08c22f4', // 1
 '4373de386fc9825211db2297a6289031', // 1
-'e07ab817e2a6368d15b9d2c6f7c45d80', // 1
-'6bb84672e3423e1b39df772a0a724ad1', // 1
+'e07ab817e2a6368d15b9d2c6f7c45d80', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 '350ae434dc276b0892e6ce5c41b3441b', // 1
 '2037cd58eb9ce713db483dde2be725a7', // 1
 'ff0385a211b2738ba7708def4018e8be', // 1
@@ -69,13 +69,13 @@ $botnet_fingerprints = array(
 '54ae78a4149172153991fe2dd6e1f344', // 1
 '9733800e00954bf1456b5f58d8465e25', // 1
 '01ca0d8b4ee040928309dbbc29c7f465', // 1
-'fc8bea519bca3013a7aa31ca2712a220', // 1
+'fc8bea519bca3013a7aa31ca2712a220', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 'fe2895090ff225906455fe7aa3de92c3', // 1
 'f6e66415cab016ed8220ef7bffc14ed5', // 1
 'c62dcaddb54d051d969299d01521c099', // 1
 '6792bd5ab08ba39924061659744c6018', // 1
 '79da032f9312e408e296b309b6a2db9d', // 1
-'4c85b1c0173a2a08d710bbe8e1b729b5', // 1
+'4c85b1c0173a2a08d710bbe8e1b729b5', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 '68afe34ceaf014125873b0a888ec0361', // 1
 '9a84b60d8a948d77da81ba94e8c985fc', // 1
 'd8801ab85f329f5fc3bef04a0cd47b8b', // 1
@@ -85,6 +85,17 @@ $botnet_fingerprints = array(
 '406bb277607088809fdecfbe1929f3e5', // 1
 '40805e6db8973bc4fd008aba5a8a148e', // 1
 '0971043612382836130e01a39426a3cf', // 1
+'a994e3cd81502142e9916babad6fff6e', // 1
+'6cb4c930104fbb31bc29f4e3dc69ba27', // 1
+'d61dd5fb91eae0cd4f6e0b398abd3bc3', // 1
+'f4a93d3f98c9bb4339592e18dc745ea5', // 1
+'edd170b350dd1781700c896045c16eed', // 1
+'e83fbc0680b02ff1743960d15f1219d2', // 1 
+'38ffe286c00afa4b46daa7a9628f6ae4', // 1
+'164f8a866080eb394c6314063ef91382', // 1
+'600fad3370a2aa69463a14d647fcd035', // 1
+'538f4c8ca1821bb64d6d978141cfeb08', // 1
+'11088da4159f0586d7acb6ed258cd599', // 1
 // From hosts:
 // 46.118.133.235  - UA
 // 74.118.193.22   - US
@@ -128,7 +139,9 @@ $botnet_fingerprints = array(
 // 213.5.71.156    - RU
 // 217.23.11.97    - NL - WORLDSTREAM
 // 221.130.17.18   - CN - CMNET-jiangsu
-'54a31e8c1992fe04c0de0710b0f0658a', // 19
+'ad1077a889ddbf849956769bd426908b', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) - Accept: */*
+'e3fa53e1f132f1620e45757d76e45542', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) - Accept: */*
+'54a31e8c1992fe04c0de0710b0f0658a', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) - Accept: */*
 'c8d3f0375d47619f00ac4a07eac0c59b', // 18
 'c5b19be696393cde5b59e1320b3f0c9d', // 7
 'd077f0356a945400425fe80489f3eae0', // 6
@@ -139,7 +152,6 @@ $botnet_fingerprints = array(
 '2fff14eaae572ceca59942ebe85a909c', // 5
 '45090ca0aef2d504bf17580988ae6254', // 5
 '41751bddc436b91c6c5451ec6b58f6a2', // 5
-'ad1077a889ddbf849956769bd426908b', // 5
 '9695b07b62dc882a0b4f21dd29da47d4', // 4
 '4704159f92dcb5e1d2fce74000aef5f8', // 4
 '01cf543ab79ec23a1eaf8eaf8e7a8dea', // 4
@@ -195,7 +207,6 @@ $botnet_fingerprints = array(
 '33d4f19620658d856e456100d60a3326', // 2
 '78b84c119f8db78879f3ee1d0c3c92f1', // 2
 '678a127d660c1625cd26429f3ef969fa', // 2
-'e3fa53e1f132f1620e45757d76e45542', // 2
 'e9ff641e46933db896997888ad7d9c52', // 2
 'e77f60cab10a6f1affcd15654b427dad', // 2
 '763835335701ffe43a67d4b43c7fd4b2', // 2
@@ -271,13 +282,16 @@ $botnet_fingerprints = array(
 '8961548980db0e02e08b8927700ca18e', // 1
 'bd8ce48b07476785413d1e9ff905c920', // 1
 '4da7e2379de336ded705440e76ed3b2e', // 1
-'bb761515ca010b15dc242e510c28e6a5', // 1
+'bb761515ca010b15dc242e510c28e6a5', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 - Cookie2:$Version="1"
 'e087dd3d5d1fbbf9d83701b9796728c1', // 1
 '41beabdbd52a56447e787b52b31fed56', // 1
 '950ecc5ceb226cca318766040425298e', // 1
-'a4380d61889a399263ab97001987ba3d', // 1
+'a4380d61889a399263ab97001987ba3d', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 - Cookie2:$Version="1"
 '0e806e9816f801db5f8a3ceb80f1b817', // 1
 '54ad3d3981cd71f8c9126e64bc32ac31', // 1
+'a51edf7220e549a5554914ee52804993', // 1
+'1a806dccf24394e78baf5cdbd795d91a', // 1
+'161f15e137112f66461b20d8755316f3', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 - Cookie2:$Version="1"
 // From hosts:
 // 74-115-6-57.anchorfree.com
 // ks369417.kimsufi.com

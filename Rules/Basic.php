@@ -96,9 +96,13 @@ class Bouncer_Rules_Basic
         if (in_array($name, Bouncer::$known_browsers)) {
             if (empty($headers['Accept'])) {
                 $scores[] = array(-5, 'Accept header Missing (Bad Behavior: 17566707)');
-            // FIXME: Ajax Requests send this header / also Browser looking for an image (favicon)
+            // FIXME: Ajax Requests send this header / also IE looking for an image (favicon)
             } else if ($headers['Accept'] == '*/*') {
-                $scores[] = array(-2.5, '*/* Accept header');
+                if ($name == 'firefox') {
+                    $scores[] = array(-7.5, '*/* Accept header (firefox)');
+                } else {
+                    $scores[] = array(-2.5, '*/* Accept header');
+                }
             }
             if (empty($headers['Accept-Language'])) {
                 $scores[] = array(-2.5, 'Accept-Language header missing');
@@ -109,6 +113,23 @@ class Bouncer_Rules_Basic
             // java library used to fake a browser identity
             if (isset($headers['Accept']) && $headers['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2') {
                 $scores[] = array(-10, 'java signature detected');
+            }
+            // Accept-Encoding gzip
+            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip') {
+                if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] != 'utf-8,*') { // google translate exception
+                    if ($identity['os'] != 'android') { // android exception
+                        $scores[] = array(-2.5, 'Accept-Encoding:gzip');
+                    }
+                }
+            }
+            // Only Gecko/Firefox send this headers
+            if ($name != 'firefox') {
+                if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
+                    $scores[] = array(-5, 'firefox Accept header');
+                }
+                if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] == 'ISO-8859-1,utf-8;q=0.7,*;q=0.7') {
+                    $scores[] = array(-2.5, 'firefox Accept-Charset header');
+                }
             }
         }
 
@@ -174,11 +195,6 @@ class Bouncer_Rules_Basic
             $scores[] = array(-2.5, 'Content-Type Header with a GET Request');
         }
 
-        // libWWW used to fake a browser identity
-        if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
-            $scores[] = array(-10, 'libWWW signature detected');
-        }
-
         if (in_array($name, Bouncer::$known_browsers)) {
             // Legitimate Browsers always send a Connection header
             if (empty($headers['Connection'])) {
@@ -188,11 +204,17 @@ class Bouncer_Rules_Basic
                 $scores[] = array(-2.5, 'Connection Header=Close');
             }
             // Only Firefox is sending this header
-            if (isset($headers['Keep-Alive']) && $name != 'firefox')
-                $scores[] = array(-2.5, 'Unexpected Keep-Alive header');
+            if (isset($headers['Keep-Alive']) && $name != 'firefox') {
+                $scores[] = array(-5, 'Unexpected Keep-Alive header');
+            }
             // Only Spambots are sending this header
-            if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version="1"')
+            if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version="1"') {
                 $scores[] = array(-5, 'Cookie2 header with value $Version="1"');
+            }
+            // libWWW used to fake a browser identity
+            if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
+                $scores[] = array(-10, 'libWWW signature detected');
+            }
         }
 
         switch ($name) {
@@ -216,8 +238,9 @@ class Bouncer_Rules_Basic
                 break;
             case 'explorer':
                 // Only legitimate browsers are setting this header
-                if (isset($headers['UA-CPU']))
+                if (isset($headers['UA-CPU'])) {
                     $scores[] = array(2.5, 'UA-CPU Header Detected');
+                }
                 break;
         }
 

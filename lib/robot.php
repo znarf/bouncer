@@ -5665,7 +5665,7 @@ $robot = array(
     "icon" => "yahoo",
     "title" => "Yahoo Pipes",
     "rule" => array(
-      "^Yahoo Pipes[/ ]([0-9a-z.]{1,10})" => "\\1"
+      "Yahoo Pipes[/ ]([0-9a-z.]{1,10})" => "\\1"
     )
   ),
   "yandex" => array(

@@ -17,6 +17,7 @@ $suspicious_fingerprints = array(
 '4331cc92d234b76eb0b5926b62ca28b9', // Mozilla/4.0 (compatible; Windows;) - Accept:*/*
 'e36cf8d82aaacacd2533bf7779f362bd', // Spider - Accept:*/*
 '04ddfa686115af0c3306828f9572591b', // Accept:text/html
+'8d0c98829565508d1da3fdaf38dedb2b', // Mozilla/5.0 - Accept-Encoding:gzip,deflate
 // Programming languages defaults
 'e92acd969162f34aaac2099466e58464', // Ruby/1.8.7
 '023beda1cb2cb7eea339c13a304b8d22', // Python-urllib/2.5
@@ -62,7 +63,7 @@ $suspicious_fingerprints = array(
 '57b72e387d0933fe5633aea57423f26f',    // BM  - Windows 98    - Explorer 6.0
 '894a16a61da0d1d61ffb219d78512f7c',    // BM  - Windows XP    - Explorer 7.0b
 'b50cca9d908989cd453b12186d86c172',    // BM  - Windows XP    - Explorer 6.0
-'9887c55fda215fd9fe03e9bab9d51839',    // BM  - Windows XP    - Explorer 6.0    (cookie2)
+'9887c55fda215fd9fe03e9bab9d51839',    // BM  - Windows XP    - Explorer 6.0    (Cookie2:$Version="1")
 '485b4542bb733fe4474fa2a51681712a',    // BM  - Windows Vista - Explorer 7.0    (US - theplanet.com + DE - 82.140)
 '7b26ac3bd2948a47704fc69202858d9c',    // BM  - Windows XP    - Explorer 8.0
 'ab634d6c80c5623084a5d473b00edb01',    // BM  - Windows 2000  - Explorer 6.0    (SG)
@@ -75,19 +76,19 @@ $suspicious_fingerprints = array(
 '2e4572613564df07f322e9d6411afd91',    //  BM - Windows XP    - Firefox 3.0.2    (CN - 110.75.169.*)
 'ae21b88a5f9d9e0f194d197bf3c1b16a',    //  BM - Unknown       - Firefox 3.0.5    (KR - 211.43.152.*)
 'e2bc467bfa309e5ec9e7db02d793c3f4',    //  BM - Windows XP    - Firefox 2.0.0.7  (US - theplanet.com)
-'95fb4f4df53accd38acbe819b75e36ec',    //  BM - Windows XP    - Firefox 2.0.0.11 (US - theplanet.com)
+'95fb4f4df53accd38acbe819b75e36ec',    //  BM - Windows XP    - Firefox 2.0.0.11 (US - theplanet.com + SE - 80.248 + UK - 93.158.109 + US - 75.126)
 '4833036355f39be011809cc013aeef78',    //  BM - Windows 7     - Firefox 3.6.8    (US)
 'db8a6ab35b03950699e416f7ca192509',    //  BM - Windows Vista - Firefox 3.0.1    (US - theplanet.com)
 'eb1ba78b8e255f14d22f976c403fdeca',    //  BM - Windows XP    - Firefox 1.5      (FR - EOLAS)
 'dd481608e3b776fbcdaa3aa0e5300593',    //  BM - Windows XP    - Firefox 3.0.10
 'a931efbf109f44739e7e5e8389559bf8',    //  BM - Ubuntu        - Firefox 3.8
-'dbc083352c46b6675bac4f808bf91604',    //  BM - Linux i686    - Firefox 1.5.0.7
+'dbc083352c46b6675bac4f808bf91604',    //  BM - Linux i686    - Firefox 1.5.0.7  (Cookie2:$Version="1")
 '5e59f3afcb8128b5e19d23c56a6f7eca',    //  BM - SuSE          - Firefox 2.0.0.2
 '88543674fb7f5dd2b89843583883b522',    //  BM - Windows XP    - Firefox 1.0.6
-'fb368ab6e982e18747cf240a7bf9ea70',    //  BM - Windows XP    - Firefox 3.0.10
+'fb368ab6e982e18747cf240a7bf9ea70',    //  BM - Windows XP    - Firefox 3.0.10   (Cookie2:$Version="1")
 'a450670526ac41f8280e1c8ec229ab7f',    //  BM - Windows XP    - Firefox 2.0.0.1
 '036bedfc8b7bc46374f895c9673a2dca',    //  BM - Windows XP    - Firefox 3.0.7
-'3dfed844dc126275d6d535bd0128a037',    //  BM - Windows XP    - Firefox 3.0.5    (popular)
+'3dfed844dc126275d6d535bd0128a037',    //  BM - Windows XP    - Firefox 3.0.5    (Cookie2:$Version="1") (popular)
 '9f2c5a729cf256ae7df689a153233397',    //  BM - Windows XP    - Firefox 3.0.10   (popular)
 'e589d8a655a5ba4f71f11128e6aeba8d',    //  BM - Windows 2003  - Firefox 3.0.6
 '561440dbfdff525f24210ab3b34202db',    //  BM - Windows Vista - Firefox 3.0.8
@@ -100,11 +101,12 @@ $suspicious_fingerprints = array(
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
+'f6f9ffca44cc504c999a537c7483ea70',    //  BM - Linux         - Chrome 5.0.307.7
 // Various
 '0b7496c8208ce55d66d79cbabdca71ff',    //  BM - Opera Mini 2.0.4719
 'b59e6ad8917389de9fc4ac545affa31c',    //  BM - MacOS PPC     - Netscape 4.7     (RU)
 '6ee31a0f6b63c451af5a393eae58ee98',    //  BM - Windows XP    - Netscape 7.2
-'8bc18a42e16e1948417d403c2507b5ce',    //  BM - Windows Vista - Opera 9.64 (cookie2)
+'8bc18a42e16e1948417d403c2507b5ce',    //  BM - Windows Vista - Opera 9.64       (Cookie2:$Version="1")
 'c08f1df2c2936d8f931c07ef495ad3c4',    //  BM - Windows 98    - MSN Explorer 2.5
 '6046298b97a8fa9cab264f472979790f',    //  BM - Linux i686    - Epiphany 2.14
 '740876e7892358828a368929b64f314d',    //  BM - Linux Debian  - Mozilla 1.8.0.5-3
