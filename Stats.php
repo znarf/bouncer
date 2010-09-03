@@ -207,6 +207,7 @@ class Bouncer_Stats
 
              foreach ($filters as $filter) {
                  list($filterKey, $filterValue) = $filter;
+                 $filterValue = str_replace('_', ' ', $filterValue);
                  if (strpos($filterKey, '-') === 0) {
                     $filterKey = substr($filterKey, 1);
                     if (isset($$filterKey)) {
