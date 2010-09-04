@@ -61,12 +61,13 @@ $suspicious_fingerprints = array(
 '8186edb76937779324d8b10c698844a0',    // BM  - Windows 2000  - Explorer 5.5
 '867b704a2a13789b9a3a750b4ed43bec',    // BM  - Windows 2000  - Explorer 5.01
 '57b72e387d0933fe5633aea57423f26f',    // BM  - Windows 98    - Explorer 6.0
-'894a16a61da0d1d61ffb219d78512f7c',    // BM  - Windows XP    - Explorer 7.0b
+'894a16a61da0d1d61ffb219d78512f7c',    // BM  - Windows XP    - Explorer 7.0b   (Cookie2:$Version="1")
 'b50cca9d908989cd453b12186d86c172',    // BM  - Windows XP    - Explorer 6.0
 '9887c55fda215fd9fe03e9bab9d51839',    // BM  - Windows XP    - Explorer 6.0    (Cookie2:$Version="1")
 '485b4542bb733fe4474fa2a51681712a',    // BM  - Windows Vista - Explorer 7.0    (US - theplanet.com + DE - 82.140)
 '7b26ac3bd2948a47704fc69202858d9c',    // BM  - Windows XP    - Explorer 8.0
 'ab634d6c80c5623084a5d473b00edb01',    // BM  - Windows 2000  - Explorer 6.0    (SG)
+'407fa0dab1fc4043e1dd5d197b5d3b7c',    // BM  - Windows MC 6  - Explorer 8.0
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)

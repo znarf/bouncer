@@ -79,6 +79,7 @@ $banned_fingerprints = array(
 '7611f5198af4e6cb85ea0edaa1144c31', // Java/1.6.0_11
 'f53bff6acc2e26e7b78da6831eb467f0', // Java/1.6.0_12
 'aa8ba6fd98fd9085ec08ede5cd67b941', // Java/1.6.0_14
+'29c425f154b362acd18fdd54d58cd82c', // Java/1.6.0_15
 '28a71f390ac85707e2f71fda43de578a', // Java/1.6.0_16
 '5416d4958dd6569e17f2269de5f64f46', // Java/1.6.0_17
 'b1844cc5196d7f0642a7f390e2d028f7', // Java/1.6.0_18

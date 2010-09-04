@@ -17,7 +17,7 @@ class Bouncer
     protected static $_backend = 'memcache';
     protected static $_backendInstance = null;
 
-    public static $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera', 'konqueror');
+    public static $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
 
     public static $identity_headers = array('User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From');
 

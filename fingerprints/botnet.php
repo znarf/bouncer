@@ -149,7 +149,7 @@ $botnet_fingerprints = array(
 'de9a2f3278b6257490dbe2fdc91aa35a', // 6
 '70c5f388c3d44dd64070c2688d786a79', // 6
 '856d93ce94623151c4812c05eb822c9c', // 6
-'2fff14eaae572ceca59942ebe85a909c', // 5
+'2fff14eaae572ceca59942ebe85a909c', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322) - Accept: */*
 '45090ca0aef2d504bf17580988ae6254', // 5
 '41751bddc436b91c6c5451ec6b58f6a2', // 5
 '9695b07b62dc882a0b4f21dd29da47d4', // 4
@@ -292,6 +292,14 @@ $botnet_fingerprints = array(
 'a51edf7220e549a5554914ee52804993', // 1
 '1a806dccf24394e78baf5cdbd795d91a', // 1
 '161f15e137112f66461b20d8755316f3', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 - Cookie2:$Version="1"
+// Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 - Cookie2:$Version="1"
+'c71279e97c655cac1b66190d6a4bcb90', // Mozilla/5.0 (X11; U; Linux x86_64; en-GB; rv:1.8.0.4) Gecko/20060608 Ubuntu/dapper-security Epiphany/2.14
+'debc26f3ad600af3c8e3809930f93b2a', // Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.10) Gecko/2009042315 Firefox/3.0.10
+'f774d12b62a094b13ac5de569a2e8c89', // Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+'f3da7626ffc272c686ccd2bce5dba0ce', // Mozilla/5.0 (Windows; U; Windows NT 6.0; fr; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10 (.NET CLR 3.5.30729)
+'05f8ff416f738eb1132dc1115f4a2b9f', // Mozilla/5.0 (Windows; U; Windows NT 6.0; fr; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10
+'f0a38232067eec918f59add6165d7c57', // Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/20061204 Firefox/2.0.0.1
+'acc60b4ea9457a019dbc36cbf97b6f63', // Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10
 // From hosts:
 // 74-115-6-57.anchorfree.com
 // ks369417.kimsufi.com

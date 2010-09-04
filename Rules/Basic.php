@@ -114,6 +114,10 @@ class Bouncer_Rules_Basic
             if (isset($headers['Accept']) && $headers['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2') {
                 $scores[] = array(-10, 'java signature detected');
             }
+            // HTTrack used to fake a browser identity
+            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, identity;q=0.9') {
+                $scores[] = array(-10, 'WinHTTrack signature detected');
+            }
             // Accept-Encoding gzip
             if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip') {
                 if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] != 'utf-8,*') { // google translate exception
@@ -152,12 +156,6 @@ class Bouncer_Rules_Basic
 
         $name = $identity['name'];
         $headers = $request['headers'];
-
-        // PALC
-        if (isset($headers['Via'])) {
-            // Proxy sometimes remove Accept-Encoding header, so we give a bonus
-            $scores[] = array(2.5, 'PALC bonus');
-        }
 
         // Identify Explorer derivatives
         if (in_array($name, self::$explorer_browsers)) {
@@ -207,13 +205,18 @@ class Bouncer_Rules_Basic
             if (isset($headers['Keep-Alive']) && $name != 'firefox') {
                 $scores[] = array(-5, 'Unexpected Keep-Alive header');
             }
-            // Only Spambots are sending this header
+            // LWP used to fake a browser identity
             if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version="1"') {
                 $scores[] = array(-5, 'Cookie2 header with value $Version="1"');
             }
             // libWWW used to fake a browser identity
             if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
                 $scores[] = array(-10, 'libWWW signature detected');
+            }
+            // PALC
+            if (isset($headers['Via'])) {
+                // Proxy sometimes remove Accept-Encoding header, so we give a bonus
+                $scores[] = array(2.5, 'PALC bonus');
             }
         }
 
@@ -222,6 +225,9 @@ class Bouncer_Rules_Basic
                 // Real Firefox send this header
                 if (isset($headers['Keep-Alive']) && in_array($headers['Keep-Alive'], array(115, 300))) {
                     $scores[] = array(2.5, 'Keep-Alive header with expected value');
+                }
+                if (isset($headers['Connection']) && $headers['Connection'] == 'keep-alive') {
+                    $scores[] = array(2.5, 'Connection header with expected value');
                 }
                 if (isset($headers['X-Moz']) && in_array($headers['X-Moz'], array('livebookmarks', 'prefetch'))) {
                     $scores[] = array(2.5, 'X-Moz header with expected value');
