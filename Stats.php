@@ -169,17 +169,26 @@ class Bouncer_Stats
 
              $kb = in_array($name, Bouncer::$known_browsers) ? 1 : 0;
              $te = isset($last['request']['headers']['TE']) ? 1 : 0;
-             $via = isset($last['request']['headers']['Via']) ? 1 : 0;
-             $cc = isset($last['request']['headers']['Cache-Control']) ? 1 : 0;
+             $via = isset($last['request']['headers']['Via']) ? $last['request']['headers']['Via'] : 'none';
+             $cc = isset($last['request']['headers']['Cache-Control']) ? $last['request']['headers']['Cache-Control'] : 'none';
              $pragma = isset($last['request']['headers']['Pragma']) ? 1 : 0;
              $range = isset($last['request']['headers']['Range']) ? 1 : 0;
              $wap = isset($last['request']['headers']['x-wap-profile']) ? 1 : 0;
-             $proxy = isset($last['request']['headers']['Via']) ||
-                 isset($last['request']['headers']['X-BlueCoat-Via']) || isset($last['request']['headers']['X-Forwarded-For']) ? 1 : 0;
+             
+             $bluecoat = isset($last['request']['headers']['X-BlueCoat-Via']) ? 1 : 0;
+             $squid = isset($last['request']['headers']['Via']) && isset($last['request']['headers']['Cache-Control'])
+                 && $last['request']['headers']['Cache-Control'] == 'max-age=259200' ? 1 : 0;
+             $proxy1 = isset($last['request']['headers']['FORWARDED_FOR']) ? 1 : 0;
+             $proxy2 = isset($last['request']['headers']['HTTP_X_FORWARDED_FOR']) ? 1 : 0;
+             $proxy3 = isset($last['request']['headers']['accept-encoding']) && isset($last['request']['headers']['COnnecTIon']) ? 1 : 0;
+
+             $proxy = ($bluecoat || $squid || $proxy1 || $proxy2 || $proxy3) ? 1 : 0;
+
              $xmoz = isset($last['request']['headers']['X-Moz']) ? $last['request']['headers']['X-Moz'] : 'none';
-             $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 0;
+             $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 'none';
              $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
              $pc = isset($last['request']['headers']['Proxy-Connection']) ? $last['request']['headers']['Proxy-Connection'] : 'none';
+             $pa = isset($last['request']['headers']['Proxy-Authentication']) ? $last['request']['headers']['Proxy-Authentication'] : 'none';
 
              $accept = isset($identity['headers']['Accept']) ? $identity['headers']['Accept'] : 'none';
              $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : 'none';
@@ -188,8 +197,7 @@ class Bouncer_Stats
 
              $java = isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' ? 1 : 0;
              $libwww = isset($last['request']['headers']['TE']) && $last['request']['headers']['TE'] == 'deflate,gzip;q=0.3' ? 1 : 0;
-             $bluecoat = isset($last['request']['headers']['X-BlueCoat-Via']) ? $last['request']['headers']['X-BlueCoat-Via'] : 'none';
-             $cookie2 = isset($last['request']['headers']['Cookie2']) && $last['request']['headers']['Cookie2'] == '$Version="1"' ? 1 : 0;
+             $lwp = isset($last['request']['headers']['Cookie2']) && $last['request']['headers']['Cookie2'] == '$Version="1"' ? 1 : 0;
 
              $js = isset($identity['features']['javascript']) && $identity['features']['javascript'] != 0 ? (int)($identity['features']['javascript'] > 0) : '';
              $img = isset($identity['features']['image']) && $identity['features']['image'] != 0 ? (int)($identity['features']['image'] > 0) : '';
