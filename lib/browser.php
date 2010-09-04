@@ -1010,6 +1010,13 @@ $browser = array(
       "www\.phaseout\.net" => ""
     )
   ),
+  "playstation" => array(
+    "icon" => "question",
+    "title" => "Playstation",
+    "rule" => array(
+      "PLAYSTATION 3" => ""
+    )
+  ),
   "plink" => array(
     "icon" => "plink",
     "title" => "PLink",
@@ -1208,6 +1215,7 @@ $browser = array(
     ),
     "uri" => "http://sis.gwlink.net/"
   ),
+  /*
   "sputnik" => array(
     "icon" => "sputnik",
     "title" => "Sputnik",
@@ -1215,6 +1223,7 @@ $browser = array(
       "Sputnik[ /]([0-9.]{1,10})" => "\\1"
     ),
   ),
+  */
   "squeezecenter" => array(
     "icon" => "squeezecenter",
     "title" => "SqueezeCenter",

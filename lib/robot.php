@@ -3641,6 +3641,7 @@ $robot = array(
     ),
     "uri" => "http://www.projecthoneypot.org"
   ),
+  /*
   "proxycache" => array(
     "icon" => "robot",
     "title" => "Proxy Cache",
@@ -3648,6 +3649,7 @@ $robot = array(
       "^Mozilla/[0-9.]{1,10} \(compatible\;\)$" => ""
     )
   ),
+  */
   "proxyhunter" => array(
     "icon" => "robot",
     "title" => "ProxyHunter",

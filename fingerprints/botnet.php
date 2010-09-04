@@ -202,7 +202,7 @@ $botnet_fingerprints = array(
 '64a0cae7711d72119016133a632fa47e', // 2
 'de6b6b4828c2660db1249893a62e71aa', // 2
 '1a66e6a25c22048c31d7c176cb39cd8a', // 2
-'147995d0ea513091a085229f03f7643a', // 2
+'147995d0ea513091a085229f03f7643a', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MRA 4.6 (build 01425); MRSPUTNIK 1, 5, 0, 19 SW)
 '6a314e42288db60d2ce4a458dc4a1fc2', // 2
 '33d4f19620658d856e456100d60a3326', // 2
 '78b84c119f8db78879f3ee1d0c3c92f1', // 2
@@ -242,7 +242,6 @@ $botnet_fingerprints = array(
 'cef8dace9a6e327076028fa2703f81dd', // 3
 '99730ee20e5e01ce11df69b98ef6fb46', // 3
 'b1614c54e8a86c1a8a947e7d4259ab1b', // 3
-'147995d0ea513091a085229f03f7643a', // 3
 '0de3e0809728aaa75f2419e75a681366', // 3
 '0b0d46cc1cf8adfe930ac047923a17ce', // 3
 'cb7305579ce82b9c9756c97e336233ca', // 3
@@ -300,6 +299,8 @@ $botnet_fingerprints = array(
 '05f8ff416f738eb1132dc1115f4a2b9f', // Mozilla/5.0 (Windows; U; Windows NT 6.0; fr; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10
 'f0a38232067eec918f59add6165d7c57', // Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/20061204 Firefox/2.0.0.1
 'acc60b4ea9457a019dbc36cbf97b6f63', // Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10
+'cc660bd85c89ed5902c06b1e8db7e0da', // Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.8) Gecko/20051107 Camino/1.0b1
+'26ca3ee1d331eefe5539bd9076252c14', // Mozilla/5.0 (PLAYSTATION 3; 1.00)
 // From hosts:
 // 74-115-6-57.anchorfree.com
 // ks369417.kimsufi.com
