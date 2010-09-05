@@ -163,6 +163,7 @@ class Bouncer_Stats
              $system_version = isset($identity['os']) ? $identity['os'][1] : '';
              $referer = isset($first['request']['headers']['Referer']) ? $first['request']['headers']['Referer'] : '';
              $cookie = isset($last['request']['headers']['Cookie']) ? $last['request']['headers']['Cookie'] : '';
+             $hascookie = isset($last['request']['headers']['Cookie']) ? 1 : 0;
              $score = isset($last['result']) ? $last['result'][1] : 0;
              $server = isset($last['request']['server']) ? $last['request']['server'] : '';
              $method = isset($last['request']['method']) ? $last['request']['method'] : 'GET';
