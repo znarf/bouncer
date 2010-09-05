@@ -516,6 +516,7 @@ $robot = array(
     "title" => "Baidu",
     "rule" => array(
       "Baiduspider" => "",
+      "baidu Transcoder" => "",
       "BaiduMobaider[/ ]([0-9a-z.]{1,10})" => "\\1"
     )
   ),
@@ -964,6 +965,14 @@ $robot = array(
       "^CazoodleBot[/ ]([a-z0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.cazoodle.com/cazoodlebot"
+  ),
+  "ccbot" => array(
+    "icon" => "robot",
+    "title" => "CCBot",
+    "rule" => array(
+      "CCBot[/ ]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.commoncrawl.org/bot.html"
   ),
   "ccgcrawl" => array(
     "icon" => "robot",
@@ -2227,7 +2236,7 @@ $robot = array(
   ),
   "ics" => array(
     "icon" => "robot",
-    "title" => "Novell iChain Cool Solutions caching",
+    "title" => "ICS",
     "rule" => array(
       "^Mozilla[/ ]([0-9.]{1,10})[/ ]\(compatible[ ;]*ICS" => "\\1"
     )

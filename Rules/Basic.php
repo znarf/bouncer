@@ -3,9 +3,9 @@
 class Bouncer_Rules_Basic
 {
 
-    public static $explorer_browsers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser');
+    public static $explorer_browsers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser', 'kkman', 'acoo');
 
-    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'epiphany', 'camino', 'netscape', 'flock', 'k-meleon');
+    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'epiphany', 'camino', 'netscape', 'flock', 'k-meleon', 'firebird');
 
     public static function load()
     {
@@ -105,7 +105,7 @@ class Bouncer_Rules_Basic
                 }
             }
             if (empty($headers['Accept-Language'])) {
-                $scores[] = array(-2.5, 'Accept-Language header missing');
+                $scores[] = array(-5, 'Accept-Language header missing');
             }
             if (empty($headers['Accept-Encoding'])) {
                 $scores[] = array(-2.5, 'Accept-Encoding header missing');
@@ -116,7 +116,7 @@ class Bouncer_Rules_Basic
             }
             // HTTrack used to fake a browser identity
             if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, identity;q=0.9') {
-                $scores[] = array(-10, 'WinHTTrack signature detected');
+                $scores[] = array(-10, 'HTTrack signature detected');
             }
             // Accept-Encoding gzip
             if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip') {
@@ -129,10 +129,16 @@ class Bouncer_Rules_Basic
             // Only Gecko/Firefox send this headers
             if ($name != 'firefox') {
                 if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
-                    $scores[] = array(-5, 'firefox Accept header');
+                    $scores[] = array(-5, 'Firefox Accept header');
                 }
                 if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] == 'ISO-8859-1,utf-8;q=0.7,*;q=0.7') {
-                    $scores[] = array(-2.5, 'firefox Accept-Charset header');
+                    $scores[] = array(-2.5, 'Firefox Accept-Charset header');
+                }
+                if (isset($headers['Accept-Language']) && $headers['Accept-Language'] == 'en-us,en;q=0.5') {
+                    $scores[] = array(-2.5, 'Firefox Accept-Language header');
+                }
+                if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip,deflate') {
+                    $scores[] = array(-2.5, 'Firefox Accept-Encoding header');
                 }
             }
         }
@@ -196,10 +202,13 @@ class Bouncer_Rules_Basic
         if (in_array($name, Bouncer::$known_browsers)) {
             // Legitimate Browsers always send a Connection header
             if (empty($headers['Connection'])) {
-                $scores[] = array(-5, 'Connection Header Missing');
+                $scores[] = array(-5, 'Connection header Missing');
             // And never a Connection:Close header
-            } elseif (stripos($headers['Connection'], 'close') !== false) {
-                $scores[] = array(-2.5, 'Connection Header=Close');
+            } elseif ($headers['Connection'] == 'Close') {
+                $scores[] = array(-5, 'Connection header with value Close');
+            // And rarely a Connection:close header
+            } elseif ($headers['Connection'] == 'close') {
+                $scores[] = array(-2.5, 'Connection header with value close');
             }
             // Only Firefox is sending this header
             if (isset($headers['Keep-Alive']) && $name != 'firefox') {
@@ -207,7 +216,7 @@ class Bouncer_Rules_Basic
             }
             // LWP used to fake a browser identity
             if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version="1"') {
-                $scores[] = array(-5, 'Cookie2 header with value $Version="1"');
+                $scores[] = array(-5, 'Cookie2 header with value $Version="1" (lwp signature)');
             }
             // libWWW used to fake a browser identity
             if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
@@ -258,10 +267,12 @@ class Bouncer_Rules_Basic
         }
 
         // Features challenges
-        if (isset($identity['features'])) {
+        if (in_array($name, Bouncer::$known_browsers) && isset($identity['features'])) {
             $f = $identity['features'];
             if ($f['image'] <= -3 && $f['iframe'] <= -3 && $f['javascript'] <= -3) {
-                $scores[] = array(-5, 'All features challenges failed');
+                $scores[] = array(-5, 'All features challenges failed (3x+)');
+            } elseif ($f['image'] <= -1 && $f['iframe'] <= -1 && $f['javascript'] <= -1) {
+                $scores[] = array(-2.5, 'All features challenges failed (1x+)');
             } elseif ($f['image'] >= 1 && $f['iframe'] >= 1 && $f['javascript'] >= 1) {
                 $scores[] = array(2.5, 'All features challenges succeded');
             }
@@ -450,9 +461,15 @@ class Bouncer_Rules_Basic
             case 'fairshare':
                 $score += (strpos($addr, '209.249.') !== 0 && strpos($addr, '64.41.') !== 0) ? -5 : 2.5;
                 break;
+            case 'picsearch':
+                $score += strpos($host, 'picsearch.com') === false ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;
+                break;
+            case 'yahoo-feed':
+                $score += strpos($host, 'yahoo.net') === false ? -5 : 2.5;
                 break;
             case 'googlefeeds':
                 $score += (strpos($host, 'google.com') === false

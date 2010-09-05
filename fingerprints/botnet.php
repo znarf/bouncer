@@ -12,6 +12,8 @@ $botnet_fingerprints = array(
 // 94.102.49.83
 // 91.214.44.31 - LU
 // 173.193.197.46 - US
+// 217.24.250.235 - AL
+'fc8bea519bca3013a7aa31ca2712a220', // Mozilla/5.0 (Windows NT 5.1; U; en) Opera 8.01 - Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 'd199bda08e459dcb87416730712670f6', // 1
 'f6baefdd010cde843fbb07d8ef589ee5', // 1
 'ff748c8d9d893921a5e24996f5a29d4a', // 1
@@ -69,7 +71,6 @@ $botnet_fingerprints = array(
 '54ae78a4149172153991fe2dd6e1f344', // 1
 '9733800e00954bf1456b5f58d8465e25', // 1
 '01ca0d8b4ee040928309dbbc29c7f465', // 1
-'fc8bea519bca3013a7aa31ca2712a220', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 'fe2895090ff225906455fe7aa3de92c3', // 1
 'f6e66415cab016ed8220ef7bffc14ed5', // 1
 'c62dcaddb54d051d969299d01521c099', // 1
@@ -96,6 +97,18 @@ $botnet_fingerprints = array(
 '600fad3370a2aa69463a14d647fcd035', // 1
 '538f4c8ca1821bb64d6d978141cfeb08', // 1
 '11088da4159f0586d7acb6ed258cd599', // 1
+'05d2696310af72651b27beca31ea87d9', // Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+'5c5f58f3dd64a410ca4f00fb18fdc1cd', // 12
+'55c85149d86b0e4cea6bde25b3e7fcbf', // 8
+'9b940d45f674c0aaf1b17a17927bc359', // 6
+'05d2696310af72651b27beca31ea87d9', // 6
+'98c342b8eacdcd3aed79ca43d0d73beb', // 5
+'acdfa067728829e74895aa4bfc041662', // 5
+'5a13f98425a19a6bfdcdadb893811202', // 4
+'2384aaa768eef924e8e41909a30cf120', // 2
+'b274e4316fce849fcfb84995cb0cab41', // 1
+'2b51f701127cecf2d054c1702edca5c2', // 1
+'3ec82568b5e6ae54689dc926d3b5d15a', // 1
 // From hosts:
 // 46.118.133.235  - UA
 // 74.118.193.22   - US
@@ -142,16 +155,21 @@ $botnet_fingerprints = array(
 'ad1077a889ddbf849956769bd426908b', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) - Accept: */*
 'e3fa53e1f132f1620e45757d76e45542', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) - Accept: */*
 '54a31e8c1992fe04c0de0710b0f0658a', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) - Accept: */*
-'c8d3f0375d47619f00ac4a07eac0c59b', // 18
-'c5b19be696393cde5b59e1320b3f0c9d', // 7
+'c8d3f0375d47619f00ac4a07eac0c59b', // Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0) - Accept: */*
+'50217679733aca59007e294ba2416c65', // Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 4.0; .NET CLR 1.0.2914) - Accept: */*
+'4db7ae838027a636c7aa9b7b1c69370b', // Mozilla/3.0 (compatible; WebCapture 2.0; Auto; Windows) - Accept: */*
+'de6b6b4828c2660db1249893a62e71aa', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Avant Browser [avantbrowser.com]; Hotbar 4.4.5.0)
+'c5b19be696393cde5b59e1320b3f0c9d', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 8.01 - Accept: */*
+'4df43731a17aaae626092eff551bb9dc', // Mozilla/4.79 [en] (Windows NT 5.0; U) - Accept: */*
+'644401ea1affb25b1da238bea02a70b0', // Mozilla/4.0 (compatible; MSIE 5.5; Windows 95) - Accept: */*
+'de9a2f3278b6257490dbe2fdc91aa35a', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FREE; .NET CLR 1.1.4322) - Accept: */*
+'41751bddc436b91c6c5451ec6b58f6a2', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727) - Accept: */*
 'd077f0356a945400425fe80489f3eae0', // 6
 'f6bad5ce12f6620f2b32cfa516dc2c12', // 6
-'de9a2f3278b6257490dbe2fdc91aa35a', // 6
 '70c5f388c3d44dd64070c2688d786a79', // 6
 '856d93ce94623151c4812c05eb822c9c', // 6
 '2fff14eaae572ceca59942ebe85a909c', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322) - Accept: */*
 '45090ca0aef2d504bf17580988ae6254', // 5
-'41751bddc436b91c6c5451ec6b58f6a2', // 5
 '9695b07b62dc882a0b4f21dd29da47d4', // 4
 '4704159f92dcb5e1d2fce74000aef5f8', // 4
 '01cf543ab79ec23a1eaf8eaf8e7a8dea', // 4
@@ -198,20 +216,17 @@ $botnet_fingerprints = array(
 '64410795051243ab30de5bf747de2dc6', // 2
 '0a66722c88cb8102e7901e08cfffdb3a', // 2
 '035ff66e92d330225c4c4e323b6f7cc3', // 2
-'644401ea1affb25b1da238bea02a70b0', // 2
 '64a0cae7711d72119016133a632fa47e', // 2
-'de6b6b4828c2660db1249893a62e71aa', // 2
 '1a66e6a25c22048c31d7c176cb39cd8a', // 2
 '147995d0ea513091a085229f03f7643a', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MRA 4.6 (build 01425); MRSPUTNIK 1, 5, 0, 19 SW)
 '6a314e42288db60d2ce4a458dc4a1fc2', // 2
-'33d4f19620658d856e456100d60a3326', // 2
+'33d4f19620658d856e456100d60a3326', // Mozilla/6.0 (compatible; MSIE 7.0a1; Windows NT 5.2; SV1)
 '78b84c119f8db78879f3ee1d0c3c92f1', // 2
 '678a127d660c1625cd26429f3ef969fa', // 2
 'e9ff641e46933db896997888ad7d9c52', // 2
 'e77f60cab10a6f1affcd15654b427dad', // 2
 '763835335701ffe43a67d4b43c7fd4b2', // 2
 '53f28d67cc90e61965c63d0181189ec7', // 2
-'50217679733aca59007e294ba2416c65', // 2
 '877ab9c6ff1c7ebbe202975a7c1db32e', // 2
 '916df48ee64a0dcd60cc0175ab84ceae', // 2
 '5f91a0bcc3c4c79060b6dbd4c11a3d5c', // 2
@@ -229,13 +244,11 @@ $botnet_fingerprints = array(
 '2a7d4ef89915cbfdd335518f0d0c683f', // 1
 '0b0d46cc1cf8adfe930ac047923a17ce', // 1
 '4c5143db0d753c1a75e73a40b6b74551', // 1
-'4df43731a17aaae626092eff551bb9dc', // 1
 'ac1649d4e47e9564f301a9b9daeea77c', // 1
 'a4c2caa3170da540c413e0a55499de9a', // 1
 '7feb0ef2fd9cf5a1af0a54841cb82f33', // 1
 '5223776e39c7a5ac2c736cc65e8545ea', // 1
 'c3d9ba1e9a32e8d82f08c13dac86fd08', // 1
-'4db7ae838027a636c7aa9b7b1c69370b', // 4
 '6d0867f1436adb9753127dd4d25725fb', // 4
 'f06b5910a9151ea855af9e1d8dcb98d2', // 4
 'bda74224a55e54d80a35412a6623d23e', // 3
@@ -247,11 +260,9 @@ $botnet_fingerprints = array(
 'cb7305579ce82b9c9756c97e336233ca', // 3
 'a388778fcbbc815c6867315eb6af433a', // 3
 '51d648d7ec401dbdab2ae50023632b2e', // 3
-'4df43731a17aaae626092eff551bb9dc', // 3
 '4c5143db0d753c1a75e73a40b6b74551', // 3
 'a1ee3c652bcb6f2da5733289d63f497d', // 2
 'a382b42ba7c8ef6cf89e3ec024b39108', // 2
-'255c360ac25739850abb441faa389bae', // 2
 'e9ff641e46933db896997888ad7d9c52', // 2
 '34f605b03779978ab22f86c140fd1038', // 2
 '24e8c8b3c88ebe5d3f7dcb6320b23659', // 2
@@ -268,7 +279,6 @@ $botnet_fingerprints = array(
 'deba13b9705e2557feb7155c7b9fb298', // 1
 '7a81e0e8a1dc5171b46c5c87c845fcde', // 1
 '511323bccb9e8b0c47244b6685c9dd74', // 1
-'50217679733aca59007e294ba2416c65', // 1
 '500b45f6f98b4643fc7924fc11c6c984', // 1
 '33d4f19620658d856e456100d60a3326', // 1
 '09db3fcff9268be4cf4348c04db23904', // 1
@@ -361,6 +371,8 @@ $botnet_fingerprints = array(
 'c3653abf292839a77d495eb770d8be7c', // 2
 'c550aa5229480b9ff2e0e800f39c653b', // 1
 'bcc2d7e247bb485e24da6e2f741b6684', // 1
+// 
+'9cd87d41ac189374ca07e1c1423b6d0a', // 3
 );
 return $botnet_fingerprints;
 ?>
