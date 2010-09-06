@@ -394,7 +394,8 @@ class Bouncer_Rules_Basic
                 $score += $identity['extension'] != 'cn' ? -5 : 1;
                 break;
             case 'youdao':
-                $score += $identity['fingerprint'] != '123153a2352ae8af25b8944eadb38fcb' ? -5 : 1;
+                $score += $identity['fingerprint'] != '123153a2352ae8af25b8944eadb38fcb' &&
+                    $identity['fingerprint'] != 'c2f67c34cec521f5ae2ca4108d1c9edc' ? -5 : 1;
                 $score += $identity['extension'] != 'cn' ? -5 : 1;
                 break;
             case 'hatena':
@@ -465,7 +466,7 @@ class Bouncer_Rules_Basic
             case 'fairshare':
                 $score += (strpos($addr, '209.249.') !== 0 && strpos($addr, '64.41.') !== 0) ? -5 : 2.5;
                 break;
-            case 'picsearch':
+            case 'psbot':
                 $score += strpos($host, 'picsearch.com') === false ? -5 : 2.5;
                 break;
             // feeds
