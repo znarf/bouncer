@@ -121,7 +121,7 @@ class Bouncer_Rules_Basic
             // Accept-Encoding gzip
             if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip') {
                 if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] != 'utf-8,*') { // google translate exception
-                    if ($identity['os'] != 'android') { // android exception
+                    if (isset($identity['os'][0]) && $identity['os'][0] != 'android') { // android exception
                         $scores[] = array(-2.5, 'Accept-Encoding:gzip');
                     }
                 }
