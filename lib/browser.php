@@ -206,6 +206,7 @@ $browser = array(
       "^Biyubi/([0-9.]{1,10})" => "\\1"
     )
   ),
+  /*
   "blazer" => array(
     "icon" => "blazer",
     "title" => "Blazer",
@@ -213,6 +214,7 @@ $browser = array(
       "Blazer[/ ]([0-9.]{1,10})" => "\\1"
     )
   ),
+  */
   "bluefish" => array(
     "icon" => "bluefish",
     "title" => "BlueFish",
