@@ -222,11 +222,6 @@ class Bouncer_Rules_Basic
             if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
                 $scores[] = array(-10, 'libWWW signature detected');
             }
-            // PALC
-            if (isset($headers['Via'])) {
-                // Proxy sometimes remove Accept-Encoding header, so we give a bonus
-                $scores[] = array(2.5, 'PALC bonus');
-            }
         }
 
         switch ($name) {
