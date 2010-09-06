@@ -172,7 +172,7 @@ class Bouncer_Stats
              $te = isset($last['request']['headers']['TE']) ? 1 : 0;
              $via = isset($last['request']['headers']['Via']) ? $last['request']['headers']['Via'] : 'none';
              $cc = isset($last['request']['headers']['Cache-Control']) ? $last['request']['headers']['Cache-Control'] : 'none';
-             $pragma = isset($last['request']['headers']['Pragma']) ? 1 : 0;
+             $pragma = isset($last['request']['headers']['Pragma']) ? $last['request']['headers']['Pragma'] : 'none';
              $range = isset($last['request']['headers']['Range']) ? 1 : 0;
              $wap = isset($last['request']['headers']['x-wap-profile']) ? 1 : 0;
              
