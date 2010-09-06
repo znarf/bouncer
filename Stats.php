@@ -121,7 +121,7 @@ class Bouncer_Stats
                  echo '<th style="width:14px">', '', '</th>';
                  echo '<th colspan="3">', ucfirst($key), '</th>';
              } elseif ($key == 'host') {
-                 echo '<th colspan="2">', ucfirst($key), '</th>';
+                 echo '<th colspan="3">', ucfirst($key), '</th>';
              } elseif ($key == 'features') {
                  echo '<th colspan="4">', ucfirst($key), '</th>';
              } else {
@@ -318,6 +318,7 @@ class Bouncer_Stats
                       }
                  } else if ($key == 'host') {
                      echo '<td class="ic ' . $extension . '">', $host, '</td>';
+                     echo '<td>', Bouncer_Rules_Httpbl::getType($identity), '</td>';
                      if (method_exists('Bouncer', 'countAgentsHost')) {
                          echo '<td>' . Bouncer::countAgentsHost(md5($identity['addr']), self::$_namespace) . '</td>';
                      } else {

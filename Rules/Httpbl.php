@@ -75,6 +75,25 @@ class Bouncer_Rules_Httpbl
         return null;
     }
 
+    public static function getType($identity)
+    {
+        if (empty($identity['httpbl'])) {
+            return '';
+        }
+        $result = $identity['httpbl'];
+        switch ($result['type']) {
+            case 0: return 'search engine';
+            case 1: return 'suspicious';
+            case 2: return 'harvester';
+            case 3: return 'susp + harv';
+            case 4: return 'comment spam';
+            case 5: return 'susp + spam';
+            case 6: return 'harv + spam';
+            case 7: return 'susp + harv + spam';
+        }
+        return '';
+    }
+
     // Quick and dirty check for an IPv6 address
     protected static function is_ipv6($address)
     {
