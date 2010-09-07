@@ -469,6 +469,9 @@ class Bouncer_Rules_Basic
             case 'psbot':
                 $score += strpos($host, 'picsearch.com') === false ? -5 : 2.5;
                 break;
+            case 'heritrix':
+                $score += strpos($host, 'archive.org') === false ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;
