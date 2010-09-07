@@ -157,9 +157,6 @@ class Bouncer_Rules_Basic
             if (isset($headers['Accept']) && strpos($headers['Accept'], 'image/gif') === 0) {
                 $scores[] = array(2.5, 'Expected Accept header (explorer)');
             }
-            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, deflate') {
-                $scores[] = array(2.5, 'Expected Accept-Encoding header (explorer)');
-            }
         }
 
         return $scores;
