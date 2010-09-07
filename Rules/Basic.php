@@ -469,6 +469,9 @@ class Bouncer_Rules_Basic
             case 'heritrix':
                 $score += strpos($host, 'archive.org') === false ? -5 : 2.5;
                 break;
+            case 'ccbot':
+                $score += strpos($addr, '38.107.191.') !== 0 ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;
