@@ -311,6 +311,7 @@ $botnet_fingerprints = array(
 'acc60b4ea9457a019dbc36cbf97b6f63', // Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10
 'cc660bd85c89ed5902c06b1e8db7e0da', // Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.8) Gecko/20051107 Camino/1.0b1
 '26ca3ee1d331eefe5539bd9076252c14', // Mozilla/5.0 (PLAYSTATION 3; 1.00)
+'5cc69e3822aa6ea909d4a945d7aab2f8', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50215) Netscape/8.0.1
 // From hosts:
 // 74-115-6-57.anchorfree.com
 // ks369417.kimsufi.com
@@ -371,8 +372,9 @@ $botnet_fingerprints = array(
 'c3653abf292839a77d495eb770d8be7c', // 2
 'c550aa5229480b9ff2e0e800f39c653b', // 1
 'bcc2d7e247bb485e24da6e2f741b6684', // 1
-// 
-'9cd87d41ac189374ca07e1c1423b6d0a', // 3
+// New entries
+'9cd87d41ac189374ca07e1c1423b6d0a'
+'7d9cebea26cce23590134c77cff57ff4'
 );
 return $botnet_fingerprints;
 ?>

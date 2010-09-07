@@ -85,7 +85,6 @@ $known_fingerprints = array(
 'b5f86f22b42c905d30ecd11d0e767bb1',  // FR - Windows XP - Explorer 8.0
 '98382a7339a5175ad37a386a5bf74b89',  // BR - Windows XP - Explorer 7.0
 '98382a7339a5175ad37a386a5bf74b89',  // BR - Windows XP - Explorer 6.0
-'22577a6e96e1273c87ab563cd13a72d0',  // US - Windows XP - Firefox 3.6.8
 // RSS
 '5b2361fdf1c6e31b99a55def5adfea6e',  // SimplePie/1.1.1 (Moonmoon)
 '09e5ec4c2fb7c5fcdced58de35f6e289',  // FR - Windows-RSS-Platform/2.0 (MSIE 8.0; Windows NT 5.1)

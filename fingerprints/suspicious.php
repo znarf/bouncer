@@ -100,6 +100,7 @@ $suspicious_fingerprints = array(
 '1c784cefba12a813271b02cbd28e8e01',    //  BM - Ubuntu        - Firefox 3.0.10
 '59cab5f2ded9964a860dfa438c81a35c',    //  BM - Linux         - Firefox 3.0
 '3a17ee0aa964b2fa5e1b074634906ded',    //  BM - Windows XP    - Firefox 3.6.8
+'12291b04e3b9f13e50446a069f7f617f',    //  BM - Windows XP    - Firefox 3.5.3
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28

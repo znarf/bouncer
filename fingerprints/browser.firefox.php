@@ -12,6 +12,8 @@ $browsers_fingerprints = array(
 '6b3e52bf9c154dc4cb32cbf347c4b5cc', // en-US - Windows XP - Firefox 3.6.6 
 'fd30eacd2930fffd164fa0c9729e7dd9', // en-US - Windows XP - Firefox 3.6.7 
 '4516812bb7e9948423a37011c6ccdb62', // en-US - Windows XP - Firefox 3.6.8 
+'2bb666e02a1f93652df55748cc40cfb5', // en-US - Windows XP - Firefox 3.6.9 
+'bc6e079748c2eb49c02bc881578705ce', // en-US - Windows XP - Firefox 4.0 
 'c882080bdd8c48435e616a1b15de60a2', // en-US - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '77bd0fb63ae5137fc6eda3317f1053ed', // en-US - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '90b186a92658914cccf01da262f996c6', // en-US - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -24,6 +26,8 @@ $browsers_fingerprints = array(
 '7e3145e3db0f1c2549c301d5d9f97c23', // en-US - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '25ffc256fca5f8c9a39c53b0e25231cd', // en-US - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'c651d1f1393d7d4ec76da8b23b3331c3', // en-US - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'556b938c69a80a1ac53f76d59dd89a11', // en-US - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'eeca4fad742d8109406ef9a5e40da617', // en-US - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '93f69f6541efa536f31dfa204821647a', // en-US - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '279e58c232c1354d1d1fe605f6b2175a', // en-US - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'b7966800696dd9f2faf82beadff42951', // en-US - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -36,6 +40,8 @@ $browsers_fingerprints = array(
 '9235262565c813f59c504cf93084c09a', // en-US - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '68160d7ec5271cb6a480956fa3f33aac', // en-US - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '3c2bab5d380e770dd2a83674dd76da43', // en-US - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'87961ec87cf4b4fed1d16aff74957130', // en-US - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'055522e0ef0608680290216523bb0fd3', // en-US - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'b27e6248ebe507da7753e5590f5ec117', // en-US - Windows Vista - Firefox 3.0.19 
 'b89869c6df1fda25725d5c38758ef63f', // en-US - Windows Vista - Firefox 3.5.7 
 '268a6202ab3f91ea50f2f3a49d172fc4', // en-US - Windows Vista - Firefox 3.5.9 
@@ -48,6 +54,8 @@ $browsers_fingerprints = array(
 'f2f824fc81fbef1afb9adfdcb4e0b70e', // en-US - Windows Vista - Firefox 3.6.6 
 'bc9ec0e8f51e4aaf5266b492b4a2d86c', // en-US - Windows Vista - Firefox 3.6.7 
 '4f5e199ef2bc1cfa50e8f9919cb5191a', // en-US - Windows Vista - Firefox 3.6.8 
+'d0e93edc664dbdf5774eb87bfc41557e', // en-US - Windows Vista - Firefox 3.6.9 
+'1d47839e4dadfb47f310b4858e80ca9a', // en-US - Windows Vista - Firefox 4.0 
 '0a7aa1642339cf86f8caccfd56b53249', // en-US - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '4f811c80cdb3fcd7082641c1333869a5', // en-US - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '9cc1df7a4a411cca252577ff05e68e64', // en-US - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -60,6 +68,8 @@ $browsers_fingerprints = array(
 '3ee8199b363fbe5b03af7866d922b1c5', // en-US - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '07ddbd449618a8200f334e6709ed7ceb', // en-US - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '933497e54bec416ad6e07d8065f72a1b', // en-US - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'668771a27695120c83f45be0469394a9', // en-US - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'2a02263cffc6f2ee6870188bc80bc25a', // en-US - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '1e010d8f2314ee709f4f83733cce8cbf', // en-US - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'b81460782750aea6dc27398f1b93a176', // en-US - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'c4be92588630068759e9addb0c38622d', // en-US - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -72,6 +82,8 @@ $browsers_fingerprints = array(
 '9b9320360a729f089fbd56ff9e2c534a', // en-US - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '08d960b9220c0ed60fe79fc5f3243ec1', // en-US - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '0e06d2708a342bce2e0c4f8117fcf8a1', // en-US - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'7a3a7920fb5ec439041a06e47b708add', // en-US - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'fe2d4ffe4f2e51683558a99601c37b26', // en-US - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'f2b8734611dd46c5dc0542c372fb439a', // en-US - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '2900f9166bac3c48f7932c6f3e1f98bb', // en-US - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '089c09b6956931af0ebcbad82283c967', // en-US - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -84,6 +96,8 @@ $browsers_fingerprints = array(
 'aaa2c095e4efd39c2261b5e153980ec4', // en-US - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '0f5cdeb8a023ad91e62fb98f529c33cd', // en-US - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'ed03d8371d1c16e024afea2bb7285399', // en-US - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'546539b506e97d4e33e302221e445751', // en-US - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'be9edcae8e05940d369fb8c6144f8e6d', // en-US - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '50b95550a169db1d9fac9e58707666c0', // en-US - Windows 7 - Firefox 3.0.19 
 '2a17e20600a29ac0a7d5383218f7e9d1', // en-US - Windows 7 - Firefox 3.5.7 
 '2fa2caa99301d0d302bdb6913abf9736', // en-US - Windows 7 - Firefox 3.5.9 
@@ -96,6 +110,8 @@ $browsers_fingerprints = array(
 'c7d0a016aea3cef5edf47705bca6f721', // en-US - Windows 7 - Firefox 3.6.6 
 '64f88dcb8ec4048c32c43f4ba7b74154', // en-US - Windows 7 - Firefox 3.6.7 
 '3d2271990715b0186345e0d210abb003', // en-US - Windows 7 - Firefox 3.6.8 
+'b1e9f7a75c47bb25f81868ca1ea91b92', // en-US - Windows 7 - Firefox 3.6.9 
+'dd496d464f46c77fe92e2a6c64366fb3', // en-US - Windows 7 - Firefox 4.0 
 '1b34e81a78b55efddfd1e76830d68e34', // en-US - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '7eab3468b86ae5f3ff615a4ba75c98f1', // en-US - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'f725e4d2570c55592cc2b37ab9203c97', // en-US - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -108,6 +124,8 @@ $browsers_fingerprints = array(
 '12eb09e44c606640a5c8ab77ca39d9c9', // en-US - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '9170c46e9f806f38868450100340e1fb', // en-US - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'f2bc536f9971cc648c7003b1672f9fab', // en-US - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'8ec97533e22b5da3e2a20a43f1249a82', // en-US - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'f57a587b041a18efd77dab246bf548bc', // en-US - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'd4e31c4906c1de3b89aaa17efbf16141', // en-US - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '87ed553b4763b6d2f339fc1a28a0a198', // en-US - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'ec48b3babf5eaf950c2f20a8532f70ae', // en-US - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -120,6 +138,8 @@ $browsers_fingerprints = array(
 '6834fa137cc7ae931b08ed40fa345789', // en-US - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '084c1f352fa99bf1c485a93eab23e12e', // en-US - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'cbe7259e7d4b17bcacd6d46126740284', // en-US - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'f4c060ad960de251b9eaad9526c34bf1', // en-US - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'574d41ff7ca17d8ca3d2405d96d81dcc', // en-US - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'e7462277ac1bc6a5afcbaf9cfc83612d', // en-US - MacOS X 10.4 - Firefox 3.0.19 
 'd37d5d2e4e182f5f6c59ba33a1ec1168', // en-US - MacOS X 10.4 - Firefox 3.5.7 
 'c07626cde0cd75f1c1302a4389b92c83', // en-US - MacOS X 10.4 - Firefox 3.5.9 
@@ -132,6 +152,8 @@ $browsers_fingerprints = array(
 'b5aa44918e6de591b3cd8aeb08a490fc', // en-US - MacOS X 10.4 - Firefox 3.6.6 
 '7668e2196334842065579743b9b4acda', // en-US - MacOS X 10.4 - Firefox 3.6.7 
 '0c59a865b4448d1e16f74b17e2949109', // en-US - MacOS X 10.4 - Firefox 3.6.8 
+'30af5a2cd96c53be47d93787c0a084f2', // en-US - MacOS X 10.4 - Firefox 3.6.9 
+'36b096b1283f3432cb4ebadb3c3fb679', // en-US - MacOS X 10.4 - Firefox 4.0 
 '6ff5f08bc20f2616d18bc831a721fec8', // en-US - MacOS X 10.5 - Firefox 3.0.19 
 'bb2cede26876ba28bb743394c1af3e9c', // en-US - MacOS X 10.5 - Firefox 3.5.7 
 'bf559a412b6a5ecbb4829bc36815e574', // en-US - MacOS X 10.5 - Firefox 3.5.9 
@@ -144,6 +166,8 @@ $browsers_fingerprints = array(
 '4ece4d508881e4d8a9f33f0815e5bbf0', // en-US - MacOS X 10.5 - Firefox 3.6.6 
 '1bb98e9003be72134aa7e48390b12eb7', // en-US - MacOS X 10.5 - Firefox 3.6.7 
 '82bbc9aa8b9f6825d42228815d41e4a5', // en-US - MacOS X 10.5 - Firefox 3.6.8 
+'8aa313262ba96e32d3f5ed06e07e4091', // en-US - MacOS X 10.5 - Firefox 3.6.9 
+'ed96a149e72dc7684ee1fcf6145ada39', // en-US - MacOS X 10.5 - Firefox 4.0 
 'f95479e9d8d49a145f727fa1aae9f7db', // en-US - MacOS X 10.4 - Firefox 3.0.19 
 'c9dfae6595707a216096237b0b917444', // en-US - MacOS X 10.4 - Firefox 3.5.7 
 '6223f8b529c4426cde954fa6b63e324d', // en-US - MacOS X 10.4 - Firefox 3.5.9 
@@ -156,6 +180,8 @@ $browsers_fingerprints = array(
 'dcbd0dc1e8fd62b68187459e9717aed6', // en-US - MacOS X 10.4 - Firefox 3.6.6 
 'c0b8e990c39204af0ca5c1e171f092e3', // en-US - MacOS X 10.4 - Firefox 3.6.7 
 '3aa3bbe99fa59aaf5c41f486992bfccb', // en-US - MacOS X 10.4 - Firefox 3.6.8 
+'378ef7e8ca009055ad9ca2028154e622', // en-US - MacOS X 10.4 - Firefox 3.6.9 
+'f36ca7c998f4c48f96f24e94f347680b', // en-US - MacOS X 10.4 - Firefox 4.0 
 'ec244c90c9495d732c1b081861671afb', // en-US - MacOS X 10.5 - Firefox 3.0.19 
 '49aab3d1adf45fa9450fa18915d94f63', // en-US - MacOS X 10.5 - Firefox 3.5.7 
 'bff7eda0ca77aaf27e6100f79932fae7', // en-US - MacOS X 10.5 - Firefox 3.5.9 
@@ -168,6 +194,8 @@ $browsers_fingerprints = array(
 '0cef9f8d7234db7ab2a243a3a12ccaf6', // en-US - MacOS X 10.5 - Firefox 3.6.6 
 'ee933b55e6e79e92ebab4fb25f63f2e7', // en-US - MacOS X 10.5 - Firefox 3.6.7 
 '880de22471dc628be3868dd9deb65937', // en-US - MacOS X 10.5 - Firefox 3.6.8 
+'db04e8bde1123017740f97fb8257f2a7', // en-US - MacOS X 10.5 - Firefox 3.6.9 
+'ec4bf3f50d7d907a81185fe9125701d3', // en-US - MacOS X 10.5 - Firefox 4.0 
 '84de3223089eccf699b18bd8b8993227', // en-US - MacOS X 10.6 - Firefox 3.0.19 
 'b050c88010838e52905ab8841de9ce0b', // en-US - MacOS X 10.6 - Firefox 3.5.7 
 '2bdb548b7d25bfc3471c14fce0487611', // en-US - MacOS X 10.6 - Firefox 3.5.9 
@@ -180,6 +208,8 @@ $browsers_fingerprints = array(
 '8feabe869f12c516f4801fea4a6c1200', // en-US - MacOS X 10.6 - Firefox 3.6.6 
 '955dbb7a95516ca872546e7faa092b04', // en-US - MacOS X 10.6 - Firefox 3.6.7 
 '5538adcaeeed584a483cef57d9d4b9c0', // en-US - MacOS X 10.6 - Firefox 3.6.8 
+'dd2c9258bbf6806fed4cd81a8bde7d38', // en-US - MacOS X 10.6 - Firefox 3.6.9 
+'fecb157a3298b26af35fad3927e46628', // en-US - MacOS X 10.6 - Firefox 4.0 
 'b1f433ef674cd19e64c6f16691b37bbd', // en-US - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'b0590e26ed5eca16a00d1813d430be3f', // en-US - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'e85c363c60298d5a1e18459cd811f8ff', // en-US - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -224,6 +254,8 @@ $browsers_fingerprints = array(
 '088a5d6911b2346c19078749f4852680', // en-US - Windows XP - Firefox 3.6.6 
 '8a43da5b1a442cf237207d5981b46c22', // en-US - Windows XP - Firefox 3.6.7 
 'be6b094d3328910945d0735b1bbcf5c0', // en-US - Windows XP - Firefox 3.6.8 
+'18458ed928a60a531ff23af93cf1b633', // en-US - Windows XP - Firefox 3.6.9 
+'eaf0220467bba3fe4a4a5a034e2be2b6', // en-US - Windows XP - Firefox 4.0 
 '7cc8e16db44c60b5c03d87b686dfa63b', // en-US - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '4f0a14c26d012d9f55d25c99904bc742', // en-US - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '1c90c1a6b3d2d00f9076c748bb0de083', // en-US - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -236,6 +268,8 @@ $browsers_fingerprints = array(
 'd7614a1f6fb948b66c0cd6d9cfa2f3d1', // en-US - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'a545cee150b72c7739565d6d785abcbb', // en-US - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '0d6658b51554ac88a39a4da2d4a96f68', // en-US - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'a2682a95c3084c197a1557d71cb782c0', // en-US - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'6307c9215a9d78e86cd3a5b9d93c7f2b', // en-US - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '787463bf1f8c3d30032db3633e436abe', // en-US - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '4626defbb663af97d8e7f784c926ccc8', // en-US - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '2c2e329e40c9af7ae194008641341d23', // en-US - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -248,6 +282,8 @@ $browsers_fingerprints = array(
 'f1bbdb92fbd5ca8bf4befedd414bf579', // en-US - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'c439aef630d0698db7156ff95af7da1e', // en-US - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '0b477595ac6f8dd631da827fd66a8616', // en-US - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'73f0c884047bef3c09e6e94c0fdf64ca', // en-US - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'0ead27146db6bc6af0d5a46f80d489e5', // en-US - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '96695788233a16b78508637571db2661', // en-US - Windows Vista - Firefox 3.0.19 
 '40540f9828e76f0fdfc937e0edeff833', // en-US - Windows Vista - Firefox 3.5.7 
 '25cb82362a2a384fb2f458c55466730d', // en-US - Windows Vista - Firefox 3.5.9 
@@ -260,6 +296,8 @@ $browsers_fingerprints = array(
 'f70cccefdfb3b73ca0bac03580f5eb41', // en-US - Windows Vista - Firefox 3.6.6 
 '804042c4e6b936c9aee44cc2e132088a', // en-US - Windows Vista - Firefox 3.6.7 
 '07e140fc3ba05c711b2cddf4b46ebcde', // en-US - Windows Vista - Firefox 3.6.8 
+'d1cd927abfd3086d2ee5bf876b5822f1', // en-US - Windows Vista - Firefox 3.6.9 
+'6dbf09ca9559206561535f098dd3f030', // en-US - Windows Vista - Firefox 4.0 
 '811cd6632db3d81fcb6ac263925eaf9f', // en-US - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '3d96b4e4e2377caace9306370ec2fe89', // en-US - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '6fdcc6d05b155deaf20b4bf53a1e6b72', // en-US - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -272,6 +310,8 @@ $browsers_fingerprints = array(
 '92fb5bceaaf7a00833613979c9fded66', // en-US - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '904c1a58a6267d63afed3ab2704830b9', // en-US - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '3228785d467ffdc60005b6e7483ee718', // en-US - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'f096295b760059b77b454fdd8a580447', // en-US - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'e9301e0163f9d50b99cf5d6134c9f3c4', // en-US - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'a6a04c2254998bd76d42aa157376ad2e', // en-US - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'c1a36f850b95135aea89836e2becf6b8', // en-US - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '4de3d5af3193c5fd33b0a9ea786bcd79', // en-US - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -284,6 +324,8 @@ $browsers_fingerprints = array(
 'a3b7b72063b4f115c02062e54d09191a', // en-US - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'c0d0be88e85df936f3cc924f4c36441d', // en-US - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'a06ea91bffad009a942bb0696ed2e958', // en-US - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'4223840e7730d7604a2e3cc4fb9b6902', // en-US - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'e7b128aee5be0c08f27d47c31e81357c', // en-US - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '64bf933f1af181caa8e737f04f5dfc19', // en-US - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '20aa4c256bb7b0a0f24f712fc0d7dc36', // en-US - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '52fc003f3066d28e044aeb059eda88a4', // en-US - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -296,6 +338,8 @@ $browsers_fingerprints = array(
 '43f453eaf55469582b57f4873ae770f1', // en-US - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'e9d263e76224e13676439f8c681c1b79', // en-US - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'cc59be1cf98d163e4546931cbe2f88d6', // en-US - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'f4a57c55959dc4e87283b4c4598845f1', // en-US - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'458242a961d2f4f25c477df3d5731a12', // en-US - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'b74f718aa02a354f21ec6b66335c0df5', // en-US - Windows 7 - Firefox 3.0.19 
 '5d6573d9a6773177cdeaebb7df00efce', // en-US - Windows 7 - Firefox 3.5.7 
 '50466b89fb2dbb70148fb3a067bdc363', // en-US - Windows 7 - Firefox 3.5.9 
@@ -308,6 +352,8 @@ $browsers_fingerprints = array(
 'eee2379cefac29c48108288a0987a292', // en-US - Windows 7 - Firefox 3.6.6 
 'e43ad47a57835ad6636c5eaad51b1cc2', // en-US - Windows 7 - Firefox 3.6.7 
 'b322c63ae438213b85328610347c97d7', // en-US - Windows 7 - Firefox 3.6.8 
+'9c43edb66c766914732e9ef8f1d58800', // en-US - Windows 7 - Firefox 3.6.9 
+'bd0a2af035086d229509f4f9889c3acd', // en-US - Windows 7 - Firefox 4.0 
 '962e3b4427d7b257b99d45a5ea59f690', // en-US - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '43b89f146d29723dcb9fec3219df185c', // en-US - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '683f63811d5e0153625d78c6bd8bb68a', // en-US - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -320,6 +366,8 @@ $browsers_fingerprints = array(
 '34dc087ab23650b55f6360c0348b6809', // en-US - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '6f8cac4a4716127e5c63fb172d228302', // en-US - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '2fe8f92e99250634d661ebd1c55d1767', // en-US - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'4a16b4abf461bc9443e059c29c064192', // en-US - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'98061df91dcc327f79c7eaf8551f5c45', // en-US - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'ff85fb3ba8bf50d43190d1f9748127d5', // en-US - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '417e24e0c615d5a99feb4c97c2a61888', // en-US - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'cf6f7c83ec8f4f60b468e00b497ab7e7', // en-US - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -332,6 +380,8 @@ $browsers_fingerprints = array(
 '65679879c54b1df7d3700933a4e8f522', // en-US - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '825999f3b5c85d6496c2d0332d4cc8cb', // en-US - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '51bf0abf60d2a7615d218f5fa95a1a86', // en-US - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'243bdd72c680e28c5aed952a373b0b41', // en-US - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'655b88ed4745811977c4b0b5a7401504', // en-US - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'abdd2f3ed09df196e838d8eeea13c32b', // en-US - MacOS X 10.4 - Firefox 3.0.19 
 'cbaf2606c882a2fe93a8288270611b2a', // en-US - MacOS X 10.4 - Firefox 3.5.7 
 'f3e51cff3b44fe40469f92539cd27dd7', // en-US - MacOS X 10.4 - Firefox 3.5.9 
@@ -344,6 +394,8 @@ $browsers_fingerprints = array(
 'c6170cbbe2121e8f66fe24f880459b56', // en-US - MacOS X 10.4 - Firefox 3.6.6 
 '1faead864df669ce7f588b1f8ed200f9', // en-US - MacOS X 10.4 - Firefox 3.6.7 
 'f1a9f532d2c4baf4eadc36202d95ffeb', // en-US - MacOS X 10.4 - Firefox 3.6.8 
+'b39506c7e0fe985abf569f075ac1ac71', // en-US - MacOS X 10.4 - Firefox 3.6.9 
+'7bc9b45ccaa21350854f14b387ab5404', // en-US - MacOS X 10.4 - Firefox 4.0 
 '59bc0ced730aad4744502ea79285dc59', // en-US - MacOS X 10.5 - Firefox 3.0.19 
 '1bbc113e16d94b41d981de914b8777a6', // en-US - MacOS X 10.5 - Firefox 3.5.7 
 '0dbec9c30f3aaa6a668a4e0631925dbb', // en-US - MacOS X 10.5 - Firefox 3.5.9 
@@ -356,6 +408,8 @@ $browsers_fingerprints = array(
 'f4307dd84b94418a28a65b61ae57de8f', // en-US - MacOS X 10.5 - Firefox 3.6.6 
 '06115b051bb5893baa062b7fab855754', // en-US - MacOS X 10.5 - Firefox 3.6.7 
 'fb7ae7950e6574a386c1ba7774a4fb47', // en-US - MacOS X 10.5 - Firefox 3.6.8 
+'d713330c8c7f494cb45b9e9ee6029498', // en-US - MacOS X 10.5 - Firefox 3.6.9 
+'ac4beb2c0d4b38fe19c9f69c967caf39', // en-US - MacOS X 10.5 - Firefox 4.0 
 '710992f4b3fbbf68412646cd6f29fac6', // en-US - MacOS X 10.4 - Firefox 3.0.19 
 'da2330cbe643ad5c961c1ffb9aacda4b', // en-US - MacOS X 10.4 - Firefox 3.5.7 
 '9fe761e9da8afd8c601ed6eab0db874f', // en-US - MacOS X 10.4 - Firefox 3.5.9 
@@ -368,6 +422,8 @@ $browsers_fingerprints = array(
 '25d1be56a82742dd5cd254ac5851826c', // en-US - MacOS X 10.4 - Firefox 3.6.6 
 '203bfb6d2909f97e21281381f9ced015', // en-US - MacOS X 10.4 - Firefox 3.6.7 
 '4ccb4f88ebbfd98e2b9d9d93fb7b0df4', // en-US - MacOS X 10.4 - Firefox 3.6.8 
+'7db72fe56e471c6efba388c2e23248ae', // en-US - MacOS X 10.4 - Firefox 3.6.9 
+'c57deb001d85cc7b24701ea032e7eea6', // en-US - MacOS X 10.4 - Firefox 4.0 
 '74936365a5548ff41f627de98edc2195', // en-US - MacOS X 10.5 - Firefox 3.0.19 
 'fdb991aad1795ed340a72661a62065d5', // en-US - MacOS X 10.5 - Firefox 3.5.7 
 '7c2e3e70a85443379a7d8c74175cfec3', // en-US - MacOS X 10.5 - Firefox 3.5.9 
@@ -380,6 +436,8 @@ $browsers_fingerprints = array(
 'cc9193cec2c44cc5792c9205687ad706', // en-US - MacOS X 10.5 - Firefox 3.6.6 
 'd6554763bbc21dcbe64ff13083dc227e', // en-US - MacOS X 10.5 - Firefox 3.6.7 
 '8ae14614da33dbad1205efd4226fc56a', // en-US - MacOS X 10.5 - Firefox 3.6.8 
+'27050c5d25323cbf5037c040e6116ecd', // en-US - MacOS X 10.5 - Firefox 3.6.9 
+'4f158f3b56dce06a7fb78b30dcb55041', // en-US - MacOS X 10.5 - Firefox 4.0 
 'a9f4d45d6c1f92b62a830356934bec88', // en-US - MacOS X 10.6 - Firefox 3.0.19 
 '00a9ef5b7e95398a0859ec4b13b1af2a', // en-US - MacOS X 10.6 - Firefox 3.5.7 
 'ed79c6e3a8f8203c8c34d9972634818d', // en-US - MacOS X 10.6 - Firefox 3.5.9 
@@ -392,6 +450,8 @@ $browsers_fingerprints = array(
 '8e2da27bb824f4b55099f6ceae3b1c24', // en-US - MacOS X 10.6 - Firefox 3.6.6 
 '20efc12b4de34655caa32bbbf10a3d61', // en-US - MacOS X 10.6 - Firefox 3.6.7 
 '94b6ba5952e7e8b38ad947e2d1f71392', // en-US - MacOS X 10.6 - Firefox 3.6.8 
+'c3f81a5d1601914dc06a637f2205b560', // en-US - MacOS X 10.6 - Firefox 3.6.9 
+'2c476d56c000f8dddaac8c1ea447b736', // en-US - MacOS X 10.6 - Firefox 4.0 
 '1b8e210d39554c43fb0b37274e3bc0fe', // en-US - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '98afe28db55ce3ea274f2d95dd0050d4', // en-US - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '0ed53142e0f85152df1c64c407455e3b', // en-US - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -436,6 +496,8 @@ $browsers_fingerprints = array(
 '7e976896b57bb5c1425678e0d90dbf20', // en-GB - Windows XP - Firefox 3.6.6 
 '2c968704a1aa6d1faf18044ea259c273', // en-GB - Windows XP - Firefox 3.6.7 
 '0d4bc870b74a714b6026b8d0584cd35e', // en-GB - Windows XP - Firefox 3.6.8 
+'6c4a668725293ec3a880354650baabbe', // en-GB - Windows XP - Firefox 3.6.9 
+'2710ec87f4a5b6f7e14d93000200dabf', // en-GB - Windows XP - Firefox 4.0 
 '895ffd9bf94ea8589d57f088b3955309', // en-GB - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'b5cd7884e291f3149c0a1076215e1a27', // en-GB - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '01ac894504189ae7f011c902c4a6b4f1', // en-GB - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -448,6 +510,8 @@ $browsers_fingerprints = array(
 '301cc47054baacf7df1febf0e909ab94', // en-GB - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '9c03aae2732b08f4edaa99c159978b33', // en-GB - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '26d0c84fcf651afa9a1e8fe5e18d72a3', // en-GB - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'72f83880bf55a70aef36b1f71b92ddd8', // en-GB - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'51cf5e053958ce21e28497c51a4cbb6d', // en-GB - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'c8210c806c672222dcd5323e0e2a7343', // en-GB - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '4931791a7d8bb40f8ff42e854e87f9de', // en-GB - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '76616a69b51ef1300c6104226d05d107', // en-GB - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -460,6 +524,8 @@ $browsers_fingerprints = array(
 '7c996d5f5d60eee63a8d7de0083b9f66', // en-GB - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '1b538012411eb442189f32919a03558e', // en-GB - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '13d69d10007c4ac3f05f067bb8733944', // en-GB - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'ac2b283f1cdb995a9992ab41544e6b5f', // en-GB - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'2db275916e011f09af1e41a5d6351a41', // en-GB - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'fa4b81176a6b4eb18b2b6e2b31a06fe8', // en-GB - Windows Vista - Firefox 3.0.19 
 '955396bbd01ef3ed24da5341434dc830', // en-GB - Windows Vista - Firefox 3.5.7 
 'a76439f1981f2692a3b5450b0ba15da3', // en-GB - Windows Vista - Firefox 3.5.9 
@@ -472,6 +538,8 @@ $browsers_fingerprints = array(
 'e3a3201e35bc64549ed0273b577d23a2', // en-GB - Windows Vista - Firefox 3.6.6 
 'ffb13a48658baa1f31ed31422a373341', // en-GB - Windows Vista - Firefox 3.6.7 
 'b4c465cbee133bb4b5d5eea0189cb3f0', // en-GB - Windows Vista - Firefox 3.6.8 
+'335388c3ac1cee44993ebbcd03422e7b', // en-GB - Windows Vista - Firefox 3.6.9 
+'d10583c81f98d68236855519e7fb9478', // en-GB - Windows Vista - Firefox 4.0 
 '3c3d67f5e77f5bdee6f59e771d3274a5', // en-GB - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '83294e7e5f9d7b49894c37da1b096d0a', // en-GB - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '1693c75590e129202bb528fb0bce9fad', // en-GB - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -484,6 +552,8 @@ $browsers_fingerprints = array(
 '362bf4284357c8ccd38767cd0b928fa6', // en-GB - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'f6b950cdf705c76ef2d2e3a1414815a7', // en-GB - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '977c699003b156d5b8cd4095d7114209', // en-GB - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'55821f40ec6fcc39352e7c186166b209', // en-GB - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'701438b50fc001eb176d548d7baae454', // en-GB - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'd3017a25ff600a4a97dcddc503538342', // en-GB - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '09ec8ac2dce8347b7f4ee502a5bd4030', // en-GB - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'a5c6a4fc52901294ddd6c9aa5317e247', // en-GB - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -496,6 +566,8 @@ $browsers_fingerprints = array(
 '5906d5aadd18e54ad110f501de453f16', // en-GB - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'a22d5894bd9f3f9cb62520142eaf20ed', // en-GB - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'c93b83f4f929c77432d19a63b5f7b5e4', // en-GB - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'79978c8687c47e9512d64591e1dd4a34', // en-GB - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'38b93110cfbeda2534f3e717bb219ff1', // en-GB - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '025ac6a9197a0d22118902c656334e3f', // en-GB - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '4adf094ac7e351da430f989611b87359', // en-GB - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '29e63e424b43a61b5db544cfd007867d', // en-GB - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -508,6 +580,8 @@ $browsers_fingerprints = array(
 '4c4aac3e2b36747f628b9cc663d10450', // en-GB - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '579eb19d37be90941132f036caae5fe8', // en-GB - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'b3f593ac06204d177142d215276ed369', // en-GB - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'0c19b0d14eea3239bd8796da22b47b62', // en-GB - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'bf76b10eccaf383c6fbb773d06608930', // en-GB - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'eeb1e3cc358e7244b976f107ab0f30a9', // en-GB - Windows 7 - Firefox 3.0.19 
 '56c97d362c06a261702107adf2a954c1', // en-GB - Windows 7 - Firefox 3.5.7 
 'be3a12b91c43615ed99e15e7003a3ff8', // en-GB - Windows 7 - Firefox 3.5.9 
@@ -520,6 +594,8 @@ $browsers_fingerprints = array(
 '8d8de5e95fc9fa7ba062be5d44939485', // en-GB - Windows 7 - Firefox 3.6.6 
 '77ffb6c8d065732b61cdc54c81681f03', // en-GB - Windows 7 - Firefox 3.6.7 
 'a09ee2d8fab1baa4fc54da61e7eeb916', // en-GB - Windows 7 - Firefox 3.6.8 
+'e5412cbf8d3d17c48edbb109c4f801f4', // en-GB - Windows 7 - Firefox 3.6.9 
+'655459802b9ca99e356e89f6f15d9b7c', // en-GB - Windows 7 - Firefox 4.0 
 'b8100ebd99d4cdbd5d5f66235b0e7d13', // en-GB - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '77bf866a079f1fd3e299ca3bd035d67c', // en-GB - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'b8c9f3d2925ddae2ce28602673fd8199', // en-GB - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -532,6 +608,8 @@ $browsers_fingerprints = array(
 'bf4301e063b0fc66d75505a26b37d244', // en-GB - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '6c83ac8fdf0ac104831fdcedc2995ca2', // en-GB - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '78f3daf5ea270ee01fb9ff578fe3d24b', // en-GB - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'145e7614f7377538ded28aa6550f2c15', // en-GB - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'f312af3b868df6759a30968cca8cf208', // en-GB - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'a749964372155926a7c7844b1da4d71e', // en-GB - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'a4f022ab249badda4126c537cfd89b18', // en-GB - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '07e6749f43ac6b72354e535641617629', // en-GB - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -544,6 +622,8 @@ $browsers_fingerprints = array(
 '6622b17acb6c26f02bff249a81962508', // en-GB - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'e58ef8a79b18da1d7bd09bd58613b332', // en-GB - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'd0cc055778209f3e08b1534a57036cfb', // en-GB - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'bbc764ec911868029053008f39dd0673', // en-GB - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'cab8e1d2192d9a735a24e55e7b023312', // en-GB - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '840663f2008636a1eccb1e9bb73352b2', // en-GB - MacOS X 10.4 - Firefox 3.0.19 
 'a680838ba1917ce9ca602eb69d175a45', // en-GB - MacOS X 10.4 - Firefox 3.5.7 
 '43558bcead1f439f3d94b7387ecbbfaa', // en-GB - MacOS X 10.4 - Firefox 3.5.9 
@@ -556,6 +636,8 @@ $browsers_fingerprints = array(
 'f2b9213a86495278754246df05b3a83b', // en-GB - MacOS X 10.4 - Firefox 3.6.6 
 '43390e0407742832aafd7e73c09aa43d', // en-GB - MacOS X 10.4 - Firefox 3.6.7 
 '57ea8c2aa2e416858e35f7c73b28b197', // en-GB - MacOS X 10.4 - Firefox 3.6.8 
+'1fa348d75230520065a76a013bd55400', // en-GB - MacOS X 10.4 - Firefox 3.6.9 
+'d1a9239886320f2f791d82f42e7a9c75', // en-GB - MacOS X 10.4 - Firefox 4.0 
 'db28ce13dce377fe2e4706fd3fc4f27b', // en-GB - MacOS X 10.5 - Firefox 3.0.19 
 'a130d6a1c0ef4ee984dd1e5757a6e989', // en-GB - MacOS X 10.5 - Firefox 3.5.7 
 'db0f819b23435d9a3daf43ac4cd82472', // en-GB - MacOS X 10.5 - Firefox 3.5.9 
@@ -568,6 +650,8 @@ $browsers_fingerprints = array(
 '480e6bac02001346e9f05671ac1b6b3f', // en-GB - MacOS X 10.5 - Firefox 3.6.6 
 'fbfb97878a2d2661989481f6c81e63ac', // en-GB - MacOS X 10.5 - Firefox 3.6.7 
 '956bc7f020ce1d82f4e1d3ba458392fc', // en-GB - MacOS X 10.5 - Firefox 3.6.8 
+'f67135d28775ec6207a9500b0d5db403', // en-GB - MacOS X 10.5 - Firefox 3.6.9 
+'dfe79f0ec0fdaaf54c501c74d1b700ce', // en-GB - MacOS X 10.5 - Firefox 4.0 
 'cfa022d1466b3bc899907474c7050431', // en-GB - MacOS X 10.4 - Firefox 3.0.19 
 '6dd284222977c91c181dd07f3c50f0a6', // en-GB - MacOS X 10.4 - Firefox 3.5.7 
 '066015474103217ce459d9c3c25de20b', // en-GB - MacOS X 10.4 - Firefox 3.5.9 
@@ -580,6 +664,8 @@ $browsers_fingerprints = array(
 'e1cc8f9d2c6279f7845a8246f9974723', // en-GB - MacOS X 10.4 - Firefox 3.6.6 
 'eda08f08149739ceff472d53d4a72e18', // en-GB - MacOS X 10.4 - Firefox 3.6.7 
 'e088e65e3ca89148f579c98511b83a24', // en-GB - MacOS X 10.4 - Firefox 3.6.8 
+'477e4166af1d7ea5e4945188275f4f75', // en-GB - MacOS X 10.4 - Firefox 3.6.9 
+'3a28ad2b00015c89556cc9ec2ed16d1c', // en-GB - MacOS X 10.4 - Firefox 4.0 
 '4bc24a140f5116bd3eba6f8c58c7d93b', // en-GB - MacOS X 10.5 - Firefox 3.0.19 
 '2b4685f4904d8c5d4baab9df437f798e', // en-GB - MacOS X 10.5 - Firefox 3.5.7 
 '2d17a89b22df4b887d199edfb6fc7eb6', // en-GB - MacOS X 10.5 - Firefox 3.5.9 
@@ -592,6 +678,8 @@ $browsers_fingerprints = array(
 '4c763f5f44bb29c2549278671cb034ca', // en-GB - MacOS X 10.5 - Firefox 3.6.6 
 'c7113d01160985257cfa39fdf9693402', // en-GB - MacOS X 10.5 - Firefox 3.6.7 
 'ce7b2b17916865e2495264fb8e97d15e', // en-GB - MacOS X 10.5 - Firefox 3.6.8 
+'303dc873521b314075567ba3d3a7694c', // en-GB - MacOS X 10.5 - Firefox 3.6.9 
+'5ce395e9bdb5e6f8f72d927dc267bf13', // en-GB - MacOS X 10.5 - Firefox 4.0 
 '7e356243786a96fdb12482e7177ea2ab', // en-GB - MacOS X 10.6 - Firefox 3.0.19 
 '69bae839e7a72cc2e051c9915114aea8', // en-GB - MacOS X 10.6 - Firefox 3.5.7 
 '75aec5962982f59ac1b1d82df941dfb3', // en-GB - MacOS X 10.6 - Firefox 3.5.9 
@@ -604,6 +692,8 @@ $browsers_fingerprints = array(
 '15b8198b1d6c428e1986267127b3577f', // en-GB - MacOS X 10.6 - Firefox 3.6.6 
 '147e5bdeb7cd62a7803876cc9980de41', // en-GB - MacOS X 10.6 - Firefox 3.6.7 
 '2b782a704b54338137bc67edc29666d6', // en-GB - MacOS X 10.6 - Firefox 3.6.8 
+'0a7330fb381cde50778ac4769a614545', // en-GB - MacOS X 10.6 - Firefox 3.6.9 
+'6e1d3a88c16b0300a825266c2f3296c3', // en-GB - MacOS X 10.6 - Firefox 4.0 
 '33953d95541f14ab4ab03037b0f55cb7', // en-GB - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '0c2167986c0e1bc973724ca93c02c8fb', // en-GB - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '4aadf28928f42d7f4dc7124d8de8212e', // en-GB - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -648,6 +738,8 @@ $browsers_fingerprints = array(
 '3361cb6963df08656fd5fc0967e61cbf', // fr - Windows XP - Firefox 3.6.6 
 '187ee885d8fbf49ae238398b39330272', // fr - Windows XP - Firefox 3.6.7 
 '3010506f529f33f826101e0178e61509', // fr - Windows XP - Firefox 3.6.8 
+'0cdb775f9519f8c9e106f5e3ee93b59c', // fr - Windows XP - Firefox 3.6.9 
+'cc2532ba5d618354463817c67d8dec42', // fr - Windows XP - Firefox 4.0 
 'daa7ce4e47f0079277f9906227ec8b65', // fr - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'c525202ca0ac21c90a935e3ab9639d24', // fr - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '338cc4db2d49254f8094a7ef5d02eb52', // fr - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -660,6 +752,8 @@ $browsers_fingerprints = array(
 'd449d3879003e43571cc5f4fc8ee20bf', // fr - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '08f59979c610d456cc3b050e95eed7dd', // fr - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '9eaf723f2a1c3f0c2eb77e8faa80a5c9', // fr - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'8b7986ee3a28f6ffb5fbd77a679fec79', // fr - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'f2cab2370d4251377b27a79a4067afac', // fr - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'e401e4eacf011ac6159ce397b205c69d', // fr - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'd9ebd13c4b6038c12fb91fc06c0f6dab', // fr - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '444a6b7b04c9ba030483d14ecefe3aa3', // fr - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -672,6 +766,8 @@ $browsers_fingerprints = array(
 '3ea1a6598ce9b95f75872b6f03b3ac1b', // fr - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '113ccd129903a54d8c78651236fc6256', // fr - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '64200b7708ab449ed421f94fb234a708', // fr - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'15cd8c179a9797e2c52f5e2502050c1c', // fr - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'3ef9dd40311618b45786cfbef4853eba', // fr - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '29b21ea0803f2af481714494685eda63', // fr - Windows Vista - Firefox 3.0.19 
 '92dcbe43ccfe5e1cc36afcc57a55149d', // fr - Windows Vista - Firefox 3.5.7 
 '09e9bfc37cb7c60eed6ad059eb8b285b', // fr - Windows Vista - Firefox 3.5.9 
@@ -684,6 +780,8 @@ $browsers_fingerprints = array(
 '5b17532b8a15a9319f89d2a8cc5570c7', // fr - Windows Vista - Firefox 3.6.6 
 '55340e6e3ff5dfdb229bfb99dbae72d0', // fr - Windows Vista - Firefox 3.6.7 
 'dde79355e15bf2e422cf7b73d8fd078a', // fr - Windows Vista - Firefox 3.6.8 
+'9f48e9cca2da70091c6b4957e60b71b4', // fr - Windows Vista - Firefox 3.6.9 
+'1bd76c0cb3c4ab62be53d200b5142645', // fr - Windows Vista - Firefox 4.0 
 '7f296a20f6e7776481f8e28ec5a7e8d8', // fr - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '7397e46f2ef4604f6851edc4f47ebf2e', // fr - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '81c2ac842dc04462e7bd65bf67254a91', // fr - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -696,6 +794,8 @@ $browsers_fingerprints = array(
 '3635f9f8c56e65c945a3e0e63d7adf72', // fr - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '5666a0a0a6db1e0d5c0320642a616519', // fr - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '5704d158db9031c7870b01a93dae3edd', // fr - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'b032a80885d6c85169792a73857a671f', // fr - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'c20fd13bcb24b550cd47bfd092adbeb6', // fr - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '205f96ad52828f596bb3872d246e7f55', // fr - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'e586003f8cea8c801128505f1773c233', // fr - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '6a6d6b2c72340033ac8ac1d676aef78b', // fr - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -708,6 +808,8 @@ $browsers_fingerprints = array(
 '3408691801212b367889c28818d2966a', // fr - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'f93fd4c7d7c2de5461a0f3c2ae0d1a9a', // fr - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '9a8085b81e7b5b6d165b401039fe3161', // fr - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'6a1f7efd278ec228ca785a4cad97f72a', // fr - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'a077e49dfabe5acf7b032f78272881de', // fr - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '07284afa96771e1c40e1555473d50a50', // fr - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'e5c4a7d03d33fbd6e4fec742f7ab99d9', // fr - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '324876bdaecf46c34e33bfefb74f7369', // fr - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -720,6 +822,8 @@ $browsers_fingerprints = array(
 '8674ef72f602080385d02ad40c8d6112', // fr - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '0311da1e559dd78e295a2e69aea22c05', // fr - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '66e8dcb39a33e16ff5b6e5dc48a8e8a4', // fr - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'8462789d3ca6f8f61ad58a10fdf3e221', // fr - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'0f685fe3a0ec4cfd960a59789ac637b9', // fr - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'e497b0cb222acee17ef34d37aabee82f', // fr - Windows 7 - Firefox 3.0.19 
 'a038e81790cdf370d2c2c0a06d0816d3', // fr - Windows 7 - Firefox 3.5.7 
 '093d926811ff175c6a55f2ffe98935bb', // fr - Windows 7 - Firefox 3.5.9 
@@ -732,6 +836,8 @@ $browsers_fingerprints = array(
 'bf154fd8bc0816e49d3b7651053a265d', // fr - Windows 7 - Firefox 3.6.6 
 'a680488a10939ea7bb26feed619d7005', // fr - Windows 7 - Firefox 3.6.7 
 'c002dbda980422b86ccf6976917b0fb3', // fr - Windows 7 - Firefox 3.6.8 
+'79c8fe22bd7bdccda8e9abf9c9393df2', // fr - Windows 7 - Firefox 3.6.9 
+'b002836b56fef3d0ef8c8206b9487d45', // fr - Windows 7 - Firefox 4.0 
 '5c8a9376a9fe0b574edcb038090c45ab', // fr - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '9a1095e461b8ff55dba21323f63c000b', // fr - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '01b2ab97d923b4da7ebe6d2f23189de4', // fr - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -744,6 +850,8 @@ $browsers_fingerprints = array(
 '0945986f3d2a20d1178214463e4c2729', // fr - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '2ab6a606ba95ed5c3a482860ac1771c8', // fr - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '2e56cc35e111cbcade195cdc5fd77727', // fr - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'21bb1d758c7b12d79f11c4d08200522e', // fr - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'b04e1abf8478aea3cc327963c94ba484', // fr - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '3820f67dc3a0a20178f127c3361b11bd', // fr - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '0c5e9c73dbb56819c338ba2fbc56b93a', // fr - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'deaba4837a652a28f04b16ea8a752f32', // fr - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -756,6 +864,8 @@ $browsers_fingerprints = array(
 'b702fce3adb38414dd151ee554198a0f', // fr - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'f92570300b0cee5eb5dee7b6fb4ec9b2', // fr - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '86f762b369a2779f6fa3f52e7c5f98a3', // fr - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'31a3a646244c06f578d211606f24a735', // fr - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'fa4a3ab1bb4ed4cc68a33f5da1e50d71', // fr - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'a58445d57cef3ad292f1b3267485d8c6', // fr - MacOS X 10.4 - Firefox 3.0.19 
 '740d40bf498f2ff4a8da0dcb5861fb1f', // fr - MacOS X 10.4 - Firefox 3.5.7 
 '17d98a9a225910d9315f0ff76b8dfbd8', // fr - MacOS X 10.4 - Firefox 3.5.9 
@@ -768,6 +878,8 @@ $browsers_fingerprints = array(
 '04f593a5549643094eac3dab76daa7be', // fr - MacOS X 10.4 - Firefox 3.6.6 
 '43c4b7bedce924335f3692ac7ed90383', // fr - MacOS X 10.4 - Firefox 3.6.7 
 'b8b73408e76b6d30c00e457e6c280bfb', // fr - MacOS X 10.4 - Firefox 3.6.8 
+'044bf668cdd2f49c550b97cb987fed27', // fr - MacOS X 10.4 - Firefox 3.6.9 
+'2b5af5b872289e6740c8b72857d5f280', // fr - MacOS X 10.4 - Firefox 4.0 
 'f8d447c9d2c3fac5f2e5cea0c2132e04', // fr - MacOS X 10.5 - Firefox 3.0.19 
 'ebe95e8fea51816b39d7c8c34e08ac58', // fr - MacOS X 10.5 - Firefox 3.5.7 
 '429df53ced9d85b327e62f6e17329990', // fr - MacOS X 10.5 - Firefox 3.5.9 
@@ -780,6 +892,8 @@ $browsers_fingerprints = array(
 '33b6419dfab2332a62b74906375fdd95', // fr - MacOS X 10.5 - Firefox 3.6.6 
 '60ea58f42f721d531687e2603bc6b68f', // fr - MacOS X 10.5 - Firefox 3.6.7 
 '3a257909504c73ff0aead5d3e11b7385', // fr - MacOS X 10.5 - Firefox 3.6.8 
+'34be30e6ac0bfa10d4d08bba830f9aeb', // fr - MacOS X 10.5 - Firefox 3.6.9 
+'392b8ca4874528960dfa4069e3c12e5d', // fr - MacOS X 10.5 - Firefox 4.0 
 '55060d06c4f2ce8e1e677023fae9f8b7', // fr - MacOS X 10.4 - Firefox 3.0.19 
 'e604f2e06aa435c564105f0dc4f72035', // fr - MacOS X 10.4 - Firefox 3.5.7 
 'b0d9714d19e9b2d762237b61ba6fae1e', // fr - MacOS X 10.4 - Firefox 3.5.9 
@@ -792,6 +906,8 @@ $browsers_fingerprints = array(
 '39f3a6207ef0f459de5e939015d57508', // fr - MacOS X 10.4 - Firefox 3.6.6 
 '6955859696974066fe5c14617fc4b1c8', // fr - MacOS X 10.4 - Firefox 3.6.7 
 'c63d894a5e8cd3dcb1b3a886e102c3e1', // fr - MacOS X 10.4 - Firefox 3.6.8 
+'f2a112e862f305a30f1dcbfd383626d6', // fr - MacOS X 10.4 - Firefox 3.6.9 
+'8ffc8a86021bba1ca587286b70a62d75', // fr - MacOS X 10.4 - Firefox 4.0 
 '9766daf1ce5b3c84effe7ee898cdd71e', // fr - MacOS X 10.5 - Firefox 3.0.19 
 'fa2766a6c91a7dd94fae082b7d08b70e', // fr - MacOS X 10.5 - Firefox 3.5.7 
 '0d333c4479f70126fbe7678879ce3f94', // fr - MacOS X 10.5 - Firefox 3.5.9 
@@ -804,6 +920,8 @@ $browsers_fingerprints = array(
 'bc9934ad8ca6b527c5f3eebd6fb3e2ef', // fr - MacOS X 10.5 - Firefox 3.6.6 
 '8eea3cb616c6b624506f09245ab46c2f', // fr - MacOS X 10.5 - Firefox 3.6.7 
 '97555e8a5ac41b0297be7a68f758af1c', // fr - MacOS X 10.5 - Firefox 3.6.8 
+'3baa849e447018b01e32c2747fea1340', // fr - MacOS X 10.5 - Firefox 3.6.9 
+'e7b9dc77a4ead5d9849d54f30560a510', // fr - MacOS X 10.5 - Firefox 4.0 
 '7303eda6b60438712407fd18839accd2', // fr - MacOS X 10.6 - Firefox 3.0.19 
 '23e618cb4e3cd599af021c343d35440c', // fr - MacOS X 10.6 - Firefox 3.5.7 
 'd103845695fcac28aafa71f8e25c44da', // fr - MacOS X 10.6 - Firefox 3.5.9 
@@ -816,6 +934,8 @@ $browsers_fingerprints = array(
 '34daea849b88be8a70e66117f43437ad', // fr - MacOS X 10.6 - Firefox 3.6.6 
 'bf3709a2c62b3879a85e51e7eb17656d', // fr - MacOS X 10.6 - Firefox 3.6.7 
 '7ec97967c1c801603825ed0fd0db38ef', // fr - MacOS X 10.6 - Firefox 3.6.8 
+'1fcd2396328c5c7ed6f2702b3737b68e', // fr - MacOS X 10.6 - Firefox 3.6.9 
+'f9de6fb1bddb3f4301064e4962041bb3', // fr - MacOS X 10.6 - Firefox 4.0 
 'd460abde0621bcca62f98be6bc65188f', // fr - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '0f478f6a1584ad7ea024fd4041e882c7', // fr - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'badc0fdca30e8d2716e82c6ef9db1bd4', // fr - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -860,6 +980,8 @@ $browsers_fingerprints = array(
 'ffc6cee8ccc23f7447086e5b2a7afa43', // fr - Windows XP - Firefox 3.6.6 
 '06d9db4df139dce01d22c7ca0b09f40a', // fr - Windows XP - Firefox 3.6.7 
 '7721f8ecedb100a125d0a63609685fb1', // fr - Windows XP - Firefox 3.6.8 
+'322d3db1ac75ccba135b1e7c6808cc06', // fr - Windows XP - Firefox 3.6.9 
+'c470f4650252f78d346a0c6b70e886e9', // fr - Windows XP - Firefox 4.0 
 'f5668da9b5836e0ed6d0f854b3218cb2', // fr - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '43db567db20ed3cea0d4473204822474', // fr - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '8b5fa2c7a868301cc3fc793cb17de21d', // fr - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -872,6 +994,8 @@ $browsers_fingerprints = array(
 'c2a8e39b795a0a440a53b9f7328b6e98', // fr - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '94b1b178c2d6b100884facf65a77ea99', // fr - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '031addf3960415be175c71f2c08a920b', // fr - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'a3b7f005cbf5900a7f81a40d0890c128', // fr - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'7d95889309a52e6dd32b8c8787081db2', // fr - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '91d8e78111a37746932467d699fe783c', // fr - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '878f220199f933154d05319c74daeca7', // fr - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '835a86c3d76d5a52155a03829045fda1', // fr - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -884,6 +1008,8 @@ $browsers_fingerprints = array(
 'd424ad0414a8488f47ab1d31024758bc', // fr - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'e927f4e4b74dab79445eefc372370751', // fr - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '0f726904cdc68f1171b004b1b429fe51', // fr - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'6cb28690047aae6e822cd749349cabe5', // fr - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'1daaa938bccbf55785288da328769482', // fr - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'cb2d1562d5a42c8f79a08f584039f7b9', // fr - Windows Vista - Firefox 3.0.19 
 '212cfdd14ce40bcf41d1f3367703994f', // fr - Windows Vista - Firefox 3.5.7 
 '5652062dbb990fe330c7d964b6e27f52', // fr - Windows Vista - Firefox 3.5.9 
@@ -896,6 +1022,8 @@ $browsers_fingerprints = array(
 '042c297ad41f1098783db2aad1dc7b2a', // fr - Windows Vista - Firefox 3.6.6 
 'ebcade7a54f9883ed0fa5d1fe29adaab', // fr - Windows Vista - Firefox 3.6.7 
 '267dfac2b53f94b83f28cd8d4c5853af', // fr - Windows Vista - Firefox 3.6.8 
+'107fcbecddfb02793245778e3065cd9d', // fr - Windows Vista - Firefox 3.6.9 
+'f351c9a0a3e334e57d37c660c8195e11', // fr - Windows Vista - Firefox 4.0 
 '4733b87b20be5ea3ab441f037cb924a4', // fr - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '3534070841a50ef22196a26c500404a4', // fr - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'ec3dfdbb9435fbeab79f241695567592', // fr - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -908,6 +1036,8 @@ $browsers_fingerprints = array(
 '237855919f1cdf72ac4c51ff364d2d71', // fr - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '15fc167d89b68bd6b61489e1ef5bc433', // fr - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '5840d28c3bd3ed5a19280b3eeb425989', // fr - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'91353fdf49f8a8b5e9ce49c5dc3380c8', // fr - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'8227d1ee71929a18d59716b102cf2695', // fr - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '9f838de0e440d2c4399bfe2fa474a9cb', // fr - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '91f4f4fcde6c6f289c67517786278691', // fr - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '57a321823eb71b22879db015741aa082', // fr - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -920,6 +1050,8 @@ $browsers_fingerprints = array(
 '502c6a4941e1e31948cff9671ba2d329', // fr - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'ee34f8a23932618a02a3522ff05abaa8', // fr - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'b87be84bc406224198669568e7f5c261', // fr - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'63191b92acf5c23aa3c45a5f2daa5f77', // fr - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'8a1c6a8c304beaee55fd27ea1f56da4a', // fr - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'c2ef65c579a9f5c161689e8e7b026468', // fr - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'ccd2561669aa4a2c613ab2b4c544644b', // fr - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'b738a0c42ba9a152fa541c32b02e89b0', // fr - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -932,6 +1064,8 @@ $browsers_fingerprints = array(
 '8f48960e55a91bbdaf9fa5b85c12fe2a', // fr - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '0edb418fc0fed58f9b80374d701ff87a', // fr - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'b35367d714a2d7b2b192cf71080bbbfa', // fr - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'fca7b0b187d16e7d99f5a17bf420086d', // fr - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'78c0fd9851fa4e3be6b98541fd78f339', // fr - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'cf9bbb0e91f5b140a17de612f437cb3b', // fr - Windows 7 - Firefox 3.0.19 
 '59382f43b17285cac994175fe00a4874', // fr - Windows 7 - Firefox 3.5.7 
 'aae44eb3dfc6fa6082cd9ffc73e86ad6', // fr - Windows 7 - Firefox 3.5.9 
@@ -944,6 +1078,8 @@ $browsers_fingerprints = array(
 '67e7ef727e02414dc3cb30d7e56e45b0', // fr - Windows 7 - Firefox 3.6.6 
 'd4c08cd00849b18ea585de4472ecf864', // fr - Windows 7 - Firefox 3.6.7 
 '085212febfdace8e405d8761fcab0395', // fr - Windows 7 - Firefox 3.6.8 
+'cb81426467d9aada827b2f62c9de2f93', // fr - Windows 7 - Firefox 3.6.9 
+'05c40aae53cf995d6856b4e6ea0a0a0a', // fr - Windows 7 - Firefox 4.0 
 'dbd63c1b19e8081a12e901e65cb9de28', // fr - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '6787e232881725501a41f2f8edcea94c', // fr - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '51ca3f55333540a6f45ec5ce35f9221d', // fr - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -956,6 +1092,8 @@ $browsers_fingerprints = array(
 '9fada278bdbb23128b19190225b3cfba', // fr - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'fde6fe2b365a5d4db598fa1f6279b13f', // fr - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '9afc32ffb63d0b786330a702499d20a9', // fr - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'daa150f38345216a33f5eda29f0d737b', // fr - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'a60b471ae60e4f4a37eb2108bb5b0b46', // fr - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '5d96c38561fdc774a4051d2c1e29eac5', // fr - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'dadcea14e02e50a6a8ae4dd784230f9a', // fr - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '6bf8983be2f50485aabbf45425e92d1d', // fr - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -968,6 +1106,8 @@ $browsers_fingerprints = array(
 '4761f42ef208a93689d891e63cdd99ad', // fr - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '74b2e66213a2beb9aa1f11f56e8014a2', // fr - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '1b7a440e4ab7ba4e334fae663ea89440', // fr - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'caa35052bd75127d7e79408684a44326', // fr - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'ef51bc020bfaf2fe800ce0f322793278', // fr - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '29a156459293b073675e2e9453683fc6', // fr - MacOS X 10.4 - Firefox 3.0.19 
 'c22042f6baa4376babaa716224a55e6f', // fr - MacOS X 10.4 - Firefox 3.5.7 
 'a8156d22705a5cb18dd0f94b9234aa5c', // fr - MacOS X 10.4 - Firefox 3.5.9 
@@ -980,6 +1120,8 @@ $browsers_fingerprints = array(
 '939fd146873f31013657c460f38c9632', // fr - MacOS X 10.4 - Firefox 3.6.6 
 'ebd6212f69a180b1c85e419f30c9bd84', // fr - MacOS X 10.4 - Firefox 3.6.7 
 'f81f639eaf2b74344c06972d5884bf2b', // fr - MacOS X 10.4 - Firefox 3.6.8 
+'8b6ae29f01233758a3b6ef6ca3c8ae80', // fr - MacOS X 10.4 - Firefox 3.6.9 
+'e41d07340d38c30bce594bf95d191770', // fr - MacOS X 10.4 - Firefox 4.0 
 '3d87643ab4a2df83e5e017c4305ddb8e', // fr - MacOS X 10.5 - Firefox 3.0.19 
 '0ee557bac3ba2bd1bc3e19b36ee5ed33', // fr - MacOS X 10.5 - Firefox 3.5.7 
 '00c36e8109daf982d5de8f2672df5bfb', // fr - MacOS X 10.5 - Firefox 3.5.9 
@@ -992,6 +1134,8 @@ $browsers_fingerprints = array(
 '86792ddc4c5e36d172bac98504f6eccf', // fr - MacOS X 10.5 - Firefox 3.6.6 
 '16d49b755ba61227638fd0fc64c545ea', // fr - MacOS X 10.5 - Firefox 3.6.7 
 'd772038a06fa6a5471dd87d516ee64aa', // fr - MacOS X 10.5 - Firefox 3.6.8 
+'8f565a7566907e4e1b9efd6611d859e1', // fr - MacOS X 10.5 - Firefox 3.6.9 
+'7c54be815b54fb2b627052318054b118', // fr - MacOS X 10.5 - Firefox 4.0 
 '8b4b4eb6bd3d98e0229c45b6372f363b', // fr - MacOS X 10.4 - Firefox 3.0.19 
 '94f6894bd64310be282c22fa1cd471a0', // fr - MacOS X 10.4 - Firefox 3.5.7 
 '9445a96e3f7bf14fad4ed3fe54c8d353', // fr - MacOS X 10.4 - Firefox 3.5.9 
@@ -1004,6 +1148,8 @@ $browsers_fingerprints = array(
 '6406f764b9761415d3bedc60d9667062', // fr - MacOS X 10.4 - Firefox 3.6.6 
 '109d74986e860d3649452ff41888b7f4', // fr - MacOS X 10.4 - Firefox 3.6.7 
 '123acf86072e236c41701349da982f25', // fr - MacOS X 10.4 - Firefox 3.6.8 
+'0ef23f2f9f7dafb8c8df4c62c11675fb', // fr - MacOS X 10.4 - Firefox 3.6.9 
+'1b94d314702f7491bf76bedffcdad7bc', // fr - MacOS X 10.4 - Firefox 4.0 
 '93a1c1f5fcff68da23ad17e47deda467', // fr - MacOS X 10.5 - Firefox 3.0.19 
 '0dc0a9cc50442567b26dff26f42e5282', // fr - MacOS X 10.5 - Firefox 3.5.7 
 '90386de9ec09491eb955557f28520ab4', // fr - MacOS X 10.5 - Firefox 3.5.9 
@@ -1016,6 +1162,8 @@ $browsers_fingerprints = array(
 '8274fd097a79ea08a7086775afbb439c', // fr - MacOS X 10.5 - Firefox 3.6.6 
 'd30f741efdf35a614837897ebdb6a87d', // fr - MacOS X 10.5 - Firefox 3.6.7 
 '7a484330c4d92dd2e1c3dee84fdaf68b', // fr - MacOS X 10.5 - Firefox 3.6.8 
+'b8c02e8b8b1a2afc486b37f9cecbef73', // fr - MacOS X 10.5 - Firefox 3.6.9 
+'9ca605c9e014f6262f5b42ec5c524853', // fr - MacOS X 10.5 - Firefox 4.0 
 'd621be20cbe75a0dfb1323ea24e88528', // fr - MacOS X 10.6 - Firefox 3.0.19 
 '2d20d8f59cdac2603dfcff57d9afe911', // fr - MacOS X 10.6 - Firefox 3.5.7 
 '5fe5415f09a74e13c3cb2fd06e169e8c', // fr - MacOS X 10.6 - Firefox 3.5.9 
@@ -1028,6 +1176,8 @@ $browsers_fingerprints = array(
 '26b883558deb26242f72da159c6b2738', // fr - MacOS X 10.6 - Firefox 3.6.6 
 'f2927a35b2ef554f08f9721cff21880c', // fr - MacOS X 10.6 - Firefox 3.6.7 
 '1622db83102e2c6481016172bc5a493e', // fr - MacOS X 10.6 - Firefox 3.6.8 
+'db547fb517a1a2270fedcc12eabca874', // fr - MacOS X 10.6 - Firefox 3.6.9 
+'49cd0a36e7acf48e9b0c4130fbe17670', // fr - MacOS X 10.6 - Firefox 4.0 
 '04166f9cf6e3b06ff89176cc4b7a4bd9', // fr - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'fb1ae8da2ce31297c688047a7f9465fe', // fr - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '8328ae5e1b19be6c97f922ceef31d345', // fr - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -1072,6 +1222,8 @@ $browsers_fingerprints = array(
 'c9050940a01a5b6a4a699dce3841b58f', // fr - Windows XP - Firefox 3.6.6 
 'dadd94db0b0dea0ec4698ae919888349', // fr - Windows XP - Firefox 3.6.7 
 '3b0324d2030d82b70dce7821ac20a703', // fr - Windows XP - Firefox 3.6.8 
+'d15b85c6ffe1ea66bf7a7fe06f1025ca', // fr - Windows XP - Firefox 3.6.9 
+'6d4197e0a1d1353126cbe6b35027ab88', // fr - Windows XP - Firefox 4.0 
 '568b02cb8061c3b38f2ddc10f44ac23f', // fr - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '048ed90a8c0a73c0a62bc8f875da0557', // fr - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'f614514bdb66b9b49821c087533d97db', // fr - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1084,6 +1236,8 @@ $browsers_fingerprints = array(
 '42a00b765e5d9e6c5ae8118d73c55e4b', // fr - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '75600c5c69f665f7f66a5cba9e7ad9c7', // fr - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'd22c3490dd1eaeb715a0578610b6975e', // fr - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'567ea07e71bed7be5dfc836078be74fc', // fr - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'cce70ade8c50b8a88feda8f367f6f405', // fr - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '1d68179c14195e353ba7bf0f56d42cde', // fr - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '7ee804bb19ae80f87d90d124aa4e5b37', // fr - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '53107df25de34e1be764b2639c60097b', // fr - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1096,6 +1250,8 @@ $browsers_fingerprints = array(
 'e26889954151ed62e81ab1e7bf2ea174', // fr - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '359fc7513b453de55bfd0e252d42f9ae', // fr - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'd837758c0af8406c1408839f1c2844a9', // fr - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'a41ade920e5eedd6107735015b52c54d', // fr - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'2cef61fe7269a44dbca80b3330fe468e', // fr - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '6561dcb54d000a753b88d863fda8122e', // fr - Windows Vista - Firefox 3.0.19 
 'b72ef7beb541596c27eafddc1bf5035f', // fr - Windows Vista - Firefox 3.5.7 
 '0b531efa7084a6eb66a1124ce1e83dac', // fr - Windows Vista - Firefox 3.5.9 
@@ -1108,6 +1264,8 @@ $browsers_fingerprints = array(
 'a73a24511be33d475262cebb0554117e', // fr - Windows Vista - Firefox 3.6.6 
 '56173aade604cb210bfa9b005511a8eb', // fr - Windows Vista - Firefox 3.6.7 
 'c6a79475d273e9442c93d3af8d142f11', // fr - Windows Vista - Firefox 3.6.8 
+'9ca58dabdf5a21d7f3c4aa43077e6250', // fr - Windows Vista - Firefox 3.6.9 
+'967168724619cb00642e128925376f90', // fr - Windows Vista - Firefox 4.0 
 '5fcabad5fbe192c5bf0ac1b1431593a7', // fr - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'c203279355e288bc7eb315048b3bed60', // fr - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '5c5478b558a31db5f7509177b4fa5a5f', // fr - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1120,6 +1278,8 @@ $browsers_fingerprints = array(
 '2294ccfcd37560de26fbdc70af7b4c8b', // fr - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '858d2ab387b9d845ad73d2dcb97f7309', // fr - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '699724d9db00de56d896de82ce100e6b', // fr - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'8336c3a47276d90186771f37d4b3d494', // fr - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'e1ef9ba2a053521785b6d1bdd1ed49cb', // fr - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'a2c40e7b40d1f69961243157720bed16', // fr - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '76795fdfb5251704351fbf1ee0720d7c', // fr - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '4f068cc047a13c746af30dcbcbe41692', // fr - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1132,6 +1292,8 @@ $browsers_fingerprints = array(
 '8e41db5c355fe1bfe3440f9aef1be50a', // fr - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '60f29ee22c85f082b6dff84509c0c2d7', // fr - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '76f4ad945b5135289ac1a45e997ae196', // fr - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'8c631e31046b27dde64125fae831877a', // fr - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'9adf73fddd6060892df139fec14a66c9', // fr - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '8e8ebdf53657e5915e1ec6ad72442413', // fr - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '4f5f6b0b488622bfb0bd05c6075e0488', // fr - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '7ece73474315f27de9f2127dc505d89f', // fr - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -1144,6 +1306,8 @@ $browsers_fingerprints = array(
 'a56c420c3ba2710799a39e2c977b3752', // fr - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '745730d835a47bafccbb2a7d7512bbce', // fr - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '04382482f89ccf2dc9ce9b400d690104', // fr - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'42e6f99cd955633c70a74b754d797c77', // fr - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'11553f607e702ff9095d10505dbde503', // fr - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '26715582fcd269c4ac1405e2188528d8', // fr - Windows 7 - Firefox 3.0.19 
 '6c4e3467ba0674b0776fe226ab240edd', // fr - Windows 7 - Firefox 3.5.7 
 'c0e0609098df5e42d2f7665b6cc5b605', // fr - Windows 7 - Firefox 3.5.9 
@@ -1156,6 +1320,8 @@ $browsers_fingerprints = array(
 '2ccfe42b146ca29be7e6fa19d76c0a07', // fr - Windows 7 - Firefox 3.6.6 
 'f9d0a107d2c74e860671a6cfbb7414a5', // fr - Windows 7 - Firefox 3.6.7 
 '72bc4ca51a3477a893decf9e184118f4', // fr - Windows 7 - Firefox 3.6.8 
+'b5cfe75d5c26724c1e92ce308cc488e3', // fr - Windows 7 - Firefox 3.6.9 
+'fa5a4a3593f112fc98f4bf651c3ddccd', // fr - Windows 7 - Firefox 4.0 
 'b1c4d5bea39d9e4dac8955e7f6b3b4a0', // fr - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '23fa4d1a1d79fbf12ba9aeacf4a9e40e', // fr - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '50316053e2551f3dc33cef817072de82', // fr - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1168,6 +1334,8 @@ $browsers_fingerprints = array(
 '979a3fdd7a538789f8bec4243c20ffd2', // fr - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '7018f57e5b43691ff6274a2fe2425090', // fr - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '8d27ac99fffff4f46b6081677d5c8d78', // fr - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'9df3eb62170ad3c7c96b2426900e2e50', // fr - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'8ed6999219d394bf5790316944f049e6', // fr - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'f6bd8e8f203235b93d34bd1bd1277a35', // fr - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '98158b59cce480f7f0df82cc75686385', // fr - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'c0c6431661b486d5ba1c7abf8d2a4bc6', // fr - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1180,6 +1348,8 @@ $browsers_fingerprints = array(
 '908fac93e20fb035cd209a9ebf59d827', // fr - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'c769438c7c5a105f9dab7e36cb4c2033', // fr - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '125bb39117e8d0d728c209eafafdcd4c', // fr - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'dd03355cb1acc7512d29479c30d32e93', // fr - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'a3c44769174f142cc559f4fea8fa4098', // fr - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '1b3f432bd8162418352a5b336265684e', // fr - MacOS X 10.4 - Firefox 3.0.19 
 '6a1cb1bef7fd0be73e9ccd7124a6bac2', // fr - MacOS X 10.4 - Firefox 3.5.7 
 'e72e044f1f69ebeb87523d45f7b823f7', // fr - MacOS X 10.4 - Firefox 3.5.9 
@@ -1192,6 +1362,8 @@ $browsers_fingerprints = array(
 '84fa3bbcccad6737934f134ed0fd819e', // fr - MacOS X 10.4 - Firefox 3.6.6 
 'c5f902e59da1ef546ff3344258016d57', // fr - MacOS X 10.4 - Firefox 3.6.7 
 'c1cc68339ff6c99ca769b272a5dd3949', // fr - MacOS X 10.4 - Firefox 3.6.8 
+'47e14eb665cf440002efeb84cef59cd9', // fr - MacOS X 10.4 - Firefox 3.6.9 
+'0362c9c5a7bf338d33caa2c56cf6d654', // fr - MacOS X 10.4 - Firefox 4.0 
 '5e1981e224cc61d9e29af3b66cfb652a', // fr - MacOS X 10.5 - Firefox 3.0.19 
 'a59faa4e9b6b5acb5f400da3a98ad2c2', // fr - MacOS X 10.5 - Firefox 3.5.7 
 '1a429e222c983e4f0d48397b6d0812a6', // fr - MacOS X 10.5 - Firefox 3.5.9 
@@ -1204,6 +1376,8 @@ $browsers_fingerprints = array(
 'eb17271ed50e1496cc938307fc65c459', // fr - MacOS X 10.5 - Firefox 3.6.6 
 'fac6f2a5178daa60d67a2d90ca5d6dab', // fr - MacOS X 10.5 - Firefox 3.6.7 
 '24918c1675f0a8aa9a345d7f061638ba', // fr - MacOS X 10.5 - Firefox 3.6.8 
+'f7cfe3b6a7dd768eac2f8f22dd94b842', // fr - MacOS X 10.5 - Firefox 3.6.9 
+'f8387407620b05498e42d696205322b3', // fr - MacOS X 10.5 - Firefox 4.0 
 '27483c43933fb609193280d87e4e1b22', // fr - MacOS X 10.4 - Firefox 3.0.19 
 '2275a24f515e3ad8d17224ed6fc7a0aa', // fr - MacOS X 10.4 - Firefox 3.5.7 
 'b9fc0124f1d969ea79cf2105c10c5487', // fr - MacOS X 10.4 - Firefox 3.5.9 
@@ -1216,6 +1390,8 @@ $browsers_fingerprints = array(
 'e9016598688950ef01bb94470acf97fa', // fr - MacOS X 10.4 - Firefox 3.6.6 
 'bc26a05d8e5a4a1e8194aa7fc8d1a057', // fr - MacOS X 10.4 - Firefox 3.6.7 
 '40ace929990eb7c10f12048bf5bb590f', // fr - MacOS X 10.4 - Firefox 3.6.8 
+'c73e30364bf01c4962ad418c6a1d4f83', // fr - MacOS X 10.4 - Firefox 3.6.9 
+'f0016adff227e538c066e4b00c01e70d', // fr - MacOS X 10.4 - Firefox 4.0 
 '4475492547111fd0cecb1d6182e3f34c', // fr - MacOS X 10.5 - Firefox 3.0.19 
 '3aa1fc4065561d9b10f02b0ac6d755d8', // fr - MacOS X 10.5 - Firefox 3.5.7 
 'a1013a7239f4ec0543884f1297754a4c', // fr - MacOS X 10.5 - Firefox 3.5.9 
@@ -1228,6 +1404,8 @@ $browsers_fingerprints = array(
 'f8924cc5578a2b27e2755a698a110d8e', // fr - MacOS X 10.5 - Firefox 3.6.6 
 '9eb16e67a284ed14d4d60c2bc7ca465f', // fr - MacOS X 10.5 - Firefox 3.6.7 
 '25183a3ab0c16f135fca28f6181ca0d5', // fr - MacOS X 10.5 - Firefox 3.6.8 
+'e96a1ac9cd2ad1f9729f32584fc59478', // fr - MacOS X 10.5 - Firefox 3.6.9 
+'9ec6308f38b4b6cd7a5084b2a31d64bf', // fr - MacOS X 10.5 - Firefox 4.0 
 '96a418690c7aef68fa5c3818aba2eebc', // fr - MacOS X 10.6 - Firefox 3.0.19 
 '0dac0b69483785690a8e4f6dc221d62f', // fr - MacOS X 10.6 - Firefox 3.5.7 
 '8fae4afc154af02b3f2134a08fdf0c23', // fr - MacOS X 10.6 - Firefox 3.5.9 
@@ -1240,6 +1418,8 @@ $browsers_fingerprints = array(
 '43421eb1d150dfd9775dcfdbe98e8280', // fr - MacOS X 10.6 - Firefox 3.6.6 
 '7b169c6ac6e6ccf8b7e8e78c5d243abc', // fr - MacOS X 10.6 - Firefox 3.6.7 
 'c9456f3dcf48fa088b042a8649f653b0', // fr - MacOS X 10.6 - Firefox 3.6.8 
+'f75d49c14e3177cb726e9325ad96319b', // fr - MacOS X 10.6 - Firefox 3.6.9 
+'4a59e3cfb7223ccb5bcf96b9677dc881', // fr - MacOS X 10.6 - Firefox 4.0 
 'b750bcac79f589cf675330bbc60dd4a6', // fr - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '333640c6b2e393790db13914e1d85097', // fr - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '89b3e32b55972356d6f2982a2af1c01e', // fr - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -1284,6 +1464,8 @@ $browsers_fingerprints = array(
 '8ab65a30f65daf9cf79e6683f4cd651e', // de - Windows XP - Firefox 3.6.6 
 'd8460c7b94f36ba3a6ace6e8073a2835', // de - Windows XP - Firefox 3.6.7 
 'bce6f2ac387c9b14dfc360c8df5f32f8', // de - Windows XP - Firefox 3.6.8 
+'6fc6f0ac5b2b1c9adeea95716522570c', // de - Windows XP - Firefox 3.6.9 
+'a192e29ffc1387ce51c80de77c0ad455', // de - Windows XP - Firefox 4.0 
 'f5e3a0f4412b1b8742e7888fa2f5e79d', // de - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '67a0b49f5a89bf6587792f8025f5a552', // de - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '209fe1014151e23fd4980eccac3bfcb5', // de - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1296,6 +1478,8 @@ $browsers_fingerprints = array(
 '4482c035862e9b8fa71729880ea3e4ab', // de - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'deb44f3168a835151bcc67cc31b953cb', // de - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '9712e49a1f05af1007822cba1495c488', // de - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'b0399d72cd7e76ba7e854ba9ccd6a0b7', // de - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'66b6b53c232948afe37252ec77e1c8c4', // de - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '08a9a118a3f402967e28b407ae5d6018', // de - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '4e1b576782ff1e0ee87aa9fa92cc95cd', // de - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '90d9b6316a98cecb6087df825d30f1ec', // de - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1308,6 +1492,8 @@ $browsers_fingerprints = array(
 '3daff5f4a776545c1b9e663dee9d02a1', // de - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '734c320b951f7428e3275f8b020f7061', // de - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '64d7d23d9f7e669b768af8a217bd304c', // de - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'661f42d18e4ed2e1e781714e37563484', // de - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'c682709484ff44e0473f900792445e90', // de - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'f44577e14714a8cbf5396d1b67822e65', // de - Windows Vista - Firefox 3.0.19 
 'e2f5a13ee1289983b9ff45a662cf5b60', // de - Windows Vista - Firefox 3.5.7 
 '3cdb14a4711cf736a688e808a1eb4edc', // de - Windows Vista - Firefox 3.5.9 
@@ -1320,6 +1506,8 @@ $browsers_fingerprints = array(
 '2bee2017151a87ba2302147450cc48ea', // de - Windows Vista - Firefox 3.6.6 
 '190874f2f4040ab098c297d54f535556', // de - Windows Vista - Firefox 3.6.7 
 'e46cc0b052f4fe46643888cdd0d74526', // de - Windows Vista - Firefox 3.6.8 
+'61f9bfee22037360146ee6d62af786e2', // de - Windows Vista - Firefox 3.6.9 
+'6807aaebd766cc58f78fa2f56d1020f5', // de - Windows Vista - Firefox 4.0 
 '39c4ae0a5cf25fec42084d978b909650', // de - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '32f3db9f590725d509adb44673bee671', // de - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '7cd2ea852521e838c9203688345b1295', // de - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1332,6 +1520,8 @@ $browsers_fingerprints = array(
 'b69ef94ff2cf5d00e020c9a5943669d4', // de - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '10417a253c69457df3ff5c35f8045230', // de - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '55dafe61fce790810359dcbbfaf10476', // de - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'3c10b22a5072d77cf5ddc5a20c73e616', // de - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'f5411af297e22da4981d9ec5c0b2d405', // de - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '966277a0909969d09258df000d941a3b', // de - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'bfd27baedea7f264aa99a4a210621afd', // de - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'd9abeb14f808044e216b03966c25f200', // de - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1344,6 +1534,8 @@ $browsers_fingerprints = array(
 'b9b52707b564f94560f54edb44d87eb5', // de - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '3dcd5f0ec913a346c347507507c7dcdb', // de - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '2c7f6365a9357f9648a13954fd715729', // de - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'c07c93a9ed46402c10e469732e7e0cc8', // de - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'ced0ada3ca42880d2ecd433f4ed386c1', // de - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'a38d91dd360f43c1b036870d68777ae0', // de - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'd3640f056b9434ce7a67f42df67daac0', // de - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'ad25a6f97f88a414f1a11de7a94f7975', // de - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -1356,6 +1548,8 @@ $browsers_fingerprints = array(
 'b7d68905ed859da9172bb27e929c5b05', // de - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'cf476128ffe15675c5f53da04f96d6ff', // de - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '13474268cdd01a3bcbc27fed5d46cdf7', // de - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'31d2a837198e695df6884fa4c99a9ae2', // de - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'462fa7b0a0d36c16d585963da5e83c85', // de - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'f3ee2258adc0be8c1aa670caf14ada53', // de - Windows 7 - Firefox 3.0.19 
 'a872bca6934401e83a5cd776b9ee6926', // de - Windows 7 - Firefox 3.5.7 
 '61b8d4bd2aca755fc59fe4b18fcfaba7', // de - Windows 7 - Firefox 3.5.9 
@@ -1368,6 +1562,8 @@ $browsers_fingerprints = array(
 '363ef75badf109b766a4546143193c20', // de - Windows 7 - Firefox 3.6.6 
 'eeb6d2f1e5cd9e057c18e0f0ed9b7c8b', // de - Windows 7 - Firefox 3.6.7 
 '4725f0da2c1176f957ee4086615a9d08', // de - Windows 7 - Firefox 3.6.8 
+'30e60c12ec0ad594ff6b6485487f6459', // de - Windows 7 - Firefox 3.6.9 
+'a734b69d7ad35e0ce16007a2efee2158', // de - Windows 7 - Firefox 4.0 
 '782f7368403ecfe7cf9fc98c73683145', // de - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'e0ad070902f7e5399ada2d0ee1da6c4a', // de - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '74909eb28f43c7ed394da53f3116f859', // de - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1380,6 +1576,8 @@ $browsers_fingerprints = array(
 '4ef8799256a63bf157eb16b48c763552', // de - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'c43b23f65f9ab45384ea443b563c6bf8', // de - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'd49a4e028e7ab3353784f20111e3467d', // de - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'b7bff74c1acfca36f1de115351ae5bf3', // de - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'187e4fe375fb75e371d289cd211c30ec', // de - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'c318ea6bc6a57583795b3bb007cb66fe', // de - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'd6520bfd5b7ea52a8b0ff9af63bb5eb7', // de - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '7c375e97a28e2d3e2d5961b3c498677f', // de - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1392,6 +1590,8 @@ $browsers_fingerprints = array(
 'efb60aebd4ebf5ef8e81262b18835530', // de - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '42df10e338c4ed4e3c42f023c33a7292', // de - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'ce82abed34415387491dd8ebbe08e05d', // de - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'c8ad98dcf2146487013b04591d4ac8ab', // de - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'bd3378009845848ea6eaa3806a4ade2c', // de - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '04a3c8d0edf9364f7100f6ed02036d7a', // de - MacOS X 10.4 - Firefox 3.0.19 
 '623227804a8356a354d7fea4bf72cbe1', // de - MacOS X 10.4 - Firefox 3.5.7 
 '49b7576edbdaa83ab2a35869bdd3eec0', // de - MacOS X 10.4 - Firefox 3.5.9 
@@ -1404,6 +1604,8 @@ $browsers_fingerprints = array(
 '4cb17f425b37607b6597da415da62159', // de - MacOS X 10.4 - Firefox 3.6.6 
 'b862464ca173da62785b220850fc85a3', // de - MacOS X 10.4 - Firefox 3.6.7 
 '1e41fce5bfd86f87fd98ae4b38a2d803', // de - MacOS X 10.4 - Firefox 3.6.8 
+'e1879e301dd056b58dc1a65025b2e569', // de - MacOS X 10.4 - Firefox 3.6.9 
+'9a3a8a162aab01973e93487ffe2cd645', // de - MacOS X 10.4 - Firefox 4.0 
 '25f9addb304a0e8774b1105b4b0e3db8', // de - MacOS X 10.5 - Firefox 3.0.19 
 '2683f20fca32ea4c95804467c859342d', // de - MacOS X 10.5 - Firefox 3.5.7 
 'c0815d0eb3b119defae4a60fc6e0d203', // de - MacOS X 10.5 - Firefox 3.5.9 
@@ -1416,6 +1618,8 @@ $browsers_fingerprints = array(
 '3cd8afaeda588198dc8ce54d6ce4b3ab', // de - MacOS X 10.5 - Firefox 3.6.6 
 '7cc840a02f3bfb76b8ba5eb737c120cb', // de - MacOS X 10.5 - Firefox 3.6.7 
 '0cdc91ef108e819cd43dcab4763a99d8', // de - MacOS X 10.5 - Firefox 3.6.8 
+'ba7cd79c45812e1371ae15c37bcf12c6', // de - MacOS X 10.5 - Firefox 3.6.9 
+'ff36153a2b29431dc27b0932b0b511a6', // de - MacOS X 10.5 - Firefox 4.0 
 '20c6ffd557d169b0cfcd142193bbb48a', // de - MacOS X 10.4 - Firefox 3.0.19 
 'cc519d3e5ac2eb0b4e7035af6d4bb158', // de - MacOS X 10.4 - Firefox 3.5.7 
 'a52bd284ec062f464018426dd56cc1ba', // de - MacOS X 10.4 - Firefox 3.5.9 
@@ -1428,6 +1632,8 @@ $browsers_fingerprints = array(
 '6bb441dfe2c8f21bdab68cae6b8f1357', // de - MacOS X 10.4 - Firefox 3.6.6 
 '72de6cfa3416eeaa6627ce0d99257acc', // de - MacOS X 10.4 - Firefox 3.6.7 
 '4ebdf09b57b642982edf31e066638382', // de - MacOS X 10.4 - Firefox 3.6.8 
+'8c0042640dd400f3019842d2c3b8a372', // de - MacOS X 10.4 - Firefox 3.6.9 
+'4d7f89c90ca290111d85ddca9c14a34c', // de - MacOS X 10.4 - Firefox 4.0 
 'da853eac24b440b3d3240da88a07c936', // de - MacOS X 10.5 - Firefox 3.0.19 
 'fbfa6eecbcab61cc6bbfa7b402e69728', // de - MacOS X 10.5 - Firefox 3.5.7 
 '7c3833cb5c719f157e96e3190a2d161f', // de - MacOS X 10.5 - Firefox 3.5.9 
@@ -1440,6 +1646,8 @@ $browsers_fingerprints = array(
 'b52285dbabb06f02ffee734481c6d22d', // de - MacOS X 10.5 - Firefox 3.6.6 
 '113b65873ff9d8da8b6d2dceb5f65d81', // de - MacOS X 10.5 - Firefox 3.6.7 
 '767d7ac9f49e7103ffbe3f9e4034b8a8', // de - MacOS X 10.5 - Firefox 3.6.8 
+'e0db4828c51c7d24f571a929c1dd5f96', // de - MacOS X 10.5 - Firefox 3.6.9 
+'e3e45bde5c8ea6251567a0424c598f98', // de - MacOS X 10.5 - Firefox 4.0 
 'b47f2f595e5ba8a2fb45277dc520b895', // de - MacOS X 10.6 - Firefox 3.0.19 
 '3d4d26f5681eb2391ca04beb574d2845', // de - MacOS X 10.6 - Firefox 3.5.7 
 '8ce2ae67d9c455504af99f4400ad6c38', // de - MacOS X 10.6 - Firefox 3.5.9 
@@ -1452,6 +1660,8 @@ $browsers_fingerprints = array(
 'cfd393b4a340d80bcccaca5edb7072b7', // de - MacOS X 10.6 - Firefox 3.6.6 
 '9ba3514417f4af3176fff191b0846473', // de - MacOS X 10.6 - Firefox 3.6.7 
 '57bf227b5d74695e575b5fbd575eece0', // de - MacOS X 10.6 - Firefox 3.6.8 
+'7119f2309b0e5f4d964c23457a590362', // de - MacOS X 10.6 - Firefox 3.6.9 
+'4a6e0afe3d9bbcd6751bc3ef4ecdadab', // de - MacOS X 10.6 - Firefox 4.0 
 'b45f346f9be61530f07103d46d78bd41', // de - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'a5699b3f6cbaaa2ae3fb13f48bc15e2f', // de - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'c57f4612964e6e23ca35a688517bb093', // de - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -1496,6 +1706,8 @@ $browsers_fingerprints = array(
 'd350c8d48eb52c7a07a39ce9b0d98d3d', // de - Windows XP - Firefox 3.6.6 
 '0f5c1fcafc8da6a07375efe2638456de', // de - Windows XP - Firefox 3.6.7 
 'a8cf4f4a0caeb2dbab57f05ee9822856', // de - Windows XP - Firefox 3.6.8 
+'4c590e548121355fa5ea292e085f63a6', // de - Windows XP - Firefox 3.6.9 
+'08678748fd91bb4fcfc470d195c9972a', // de - Windows XP - Firefox 4.0 
 '8520a8d13844d72ec739bda94c96f2a0', // de - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'c25984a19a7dac176f9222c82b6d6adb', // de - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'ef62b49de009a88817db51af198b43fa', // de - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1508,6 +1720,8 @@ $browsers_fingerprints = array(
 'e32daaa17666f9f1951c61d99bd33e7a', // de - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '8fa4e7697706819e76e699bf7867fc02', // de - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '643e4b9ea2636f57f2c7ccc9575e341f', // de - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'a0ec1e15365a05d94a6c5c3469437845', // de - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'9483e17ea2925a645b3152b94f668498', // de - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'd2d7658242769eb884986b3f7c7f9c12', // de - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'e48a0a79ffb06350193487b0e00ebeb7', // de - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '678f247ff89b232000d949758d09720b', // de - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1520,6 +1734,8 @@ $browsers_fingerprints = array(
 '371a8f67a88c8ac074def8ce03e4e46a', // de - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'bfb857accdb2f2fc2be4ebecd7ab870f', // de - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'ec17f252dd86a8d5eb33bee9cd588b12', // de - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'d575ba2dc1bbf932db0780f13b5badb8', // de - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'0a2feb5188dcc138d55f00285956d9c7', // de - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '6abf0e6a1115f3767cef77c169a12fc9', // de - Windows Vista - Firefox 3.0.19 
 'e124c9261e3f764d10fa4b9a490d32a8', // de - Windows Vista - Firefox 3.5.7 
 '61796c49be8538627a12326bdbc8c495', // de - Windows Vista - Firefox 3.5.9 
@@ -1532,6 +1748,8 @@ $browsers_fingerprints = array(
 '9b395e7b7b41c8cd47b0a33ece1d9cde', // de - Windows Vista - Firefox 3.6.6 
 'e2cabaec693cf623c97d52cbb692ba33', // de - Windows Vista - Firefox 3.6.7 
 '90535a087e09180b798805535c329b98', // de - Windows Vista - Firefox 3.6.8 
+'77ace59fc41451dc95b54850bef06e59', // de - Windows Vista - Firefox 3.6.9 
+'705cb29cfa10269df9c88f22a577e46d', // de - Windows Vista - Firefox 4.0 
 '13b585c077f9aef343b3bd0e7471746e', // de - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'a3d67f166db227dd1d07421330d53b14', // de - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'e59ca9f27d99b08d211be876ba60cdc2', // de - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1544,6 +1762,8 @@ $browsers_fingerprints = array(
 '5fb50056ab3e5be4a3f8a158a6a28e8c', // de - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'ec4c43d93a8d9a35d66fab35aa0b682f', // de - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '5d707b1ad94d6292b4e225c0ff07d934', // de - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'4d952c4ccaabc47b6c25bc4872884050', // de - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'2360ab8b21953f1c003f0a10e42f02e1', // de - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '7b489fd5bf191aa8739abaef1e4c2818', // de - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '281971ef49e81113dd6931c64b405073', // de - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'c6c2a9d7a8788bb888b3fbb493bfa9b3', // de - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1556,6 +1776,8 @@ $browsers_fingerprints = array(
 'efd35cd5e47e4544cdbce0707fcd9a1d', // de - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'cd43cd8b2fef3f0c1d5cd4e00b796a5c', // de - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '3ae7b5b1fb1b6f86c4a88f1d84e4e7ad', // de - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'7764275a4165d4aa3497ddb45bbb646a', // de - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'6fee67a287580c5abe29b2fca7849305', // de - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'da9c1dc8c48730fd68433cdb0ad34352', // de - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'eefcec8f80691523f5dd26ffc948e08a', // de - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'cf78bb98db784b8ab6920276e4eec10b', // de - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -1568,6 +1790,8 @@ $browsers_fingerprints = array(
 '624ba1368b7092dbefd4ad131c790cc7', // de - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'd866c7acbc5f9bec188f5d7f65e501b0', // de - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'e86345407a4ceca3cf8f9f04bd6a8111', // de - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'98ed04f2e8d3d7edcc8cd9e9d79b6aa4', // de - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'e56e3bc6a34a56d31f8e46a3a9ed5ff2', // de - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'c7f1f892d6eb783206c74ad639a3ebfe', // de - Windows 7 - Firefox 3.0.19 
 '742db32137af3673c4b0e165bcea3940', // de - Windows 7 - Firefox 3.5.7 
 'b4ae0f9e4eb120f7f06d1402619b8983', // de - Windows 7 - Firefox 3.5.9 
@@ -1580,6 +1804,8 @@ $browsers_fingerprints = array(
 '0d376e303da7ba18e8b2cc8880eeadae', // de - Windows 7 - Firefox 3.6.6 
 'dfa9976afa5631114f3342e38a07eb75', // de - Windows 7 - Firefox 3.6.7 
 '7ff0dea09aee07644582161cda38876a', // de - Windows 7 - Firefox 3.6.8 
+'354c30807b8d7db72b946a284ec0be1c', // de - Windows 7 - Firefox 3.6.9 
+'a46395240bdf9767d88136bc797e3cb3', // de - Windows 7 - Firefox 4.0 
 '2536033ada75261454d05799f52ba2d2', // de - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '21c1777035daac4a40f0f72afb91ad81', // de - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'fc728bbee59395ce826c5bb878ed273f', // de - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1592,6 +1818,8 @@ $browsers_fingerprints = array(
 '5b440bbb039f5ae671f260e7ae7fefab', // de - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '2ecf541fc28bd17ef2a8937e615c97af', // de - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '1e2e6d3b7e3e2df9bb81ff04b816bddb', // de - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'0e1f29d3dfe7cd214347fcf15411a475', // de - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'5a2b7f388998760e5d0cfbad9e08edb5', // de - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '272d3a8b00e10c2b9a1dbba0cade79fe', // de - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'f02dbb36837960d2eebe76a2c6226cc7', // de - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '7a8a49e0b45dee785dadb54fb2bd7299', // de - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1604,6 +1832,8 @@ $browsers_fingerprints = array(
 'b3a118be054905f23ec9937945013f77', // de - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'e283a06c272edd0a598c53f17d028136', // de - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '9951cf8120a5200524e2e01590c88adf', // de - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'0b7ec5886ec6f96c861ee5d82f00755c', // de - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'dc11f37fcafe019d465d78d9e0f9ac6f', // de - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '0673cc7a3a4d1305b01319c53f64c881', // de - MacOS X 10.4 - Firefox 3.0.19 
 '66ebf0194bddf556e84d1c981dcce232', // de - MacOS X 10.4 - Firefox 3.5.7 
 '8ed531914b98f40823a03c4faee1df98', // de - MacOS X 10.4 - Firefox 3.5.9 
@@ -1616,6 +1846,8 @@ $browsers_fingerprints = array(
 '13a5d61c2ba1823c6146e4f16d5594e1', // de - MacOS X 10.4 - Firefox 3.6.6 
 '624588b9377755794d447ecc5eea6bd9', // de - MacOS X 10.4 - Firefox 3.6.7 
 '624d3435caa6b362689ad88b9bc55ec1', // de - MacOS X 10.4 - Firefox 3.6.8 
+'a502fcd814a96914db8dd281af63fd95', // de - MacOS X 10.4 - Firefox 3.6.9 
+'14f94e9d2da5b0006d791acbbddbe20e', // de - MacOS X 10.4 - Firefox 4.0 
 '7d07a1096bf2354e21e93f3eb6ccedb9', // de - MacOS X 10.5 - Firefox 3.0.19 
 'f2bf724d60c4362a18dac0852de72cff', // de - MacOS X 10.5 - Firefox 3.5.7 
 'c7c3b55fdaa48486f022d0a709bc5548', // de - MacOS X 10.5 - Firefox 3.5.9 
@@ -1628,6 +1860,8 @@ $browsers_fingerprints = array(
 'cf94efe7f03a6649e3740f71ef34a495', // de - MacOS X 10.5 - Firefox 3.6.6 
 'ff547f661be10a961dc2a8ab7fc658e3', // de - MacOS X 10.5 - Firefox 3.6.7 
 '535b71a79fae3082422cf4c4f2eec0a3', // de - MacOS X 10.5 - Firefox 3.6.8 
+'e4f98dd3459f23145616aed064737bab', // de - MacOS X 10.5 - Firefox 3.6.9 
+'7cec2e4653e977466228f8ba299c4761', // de - MacOS X 10.5 - Firefox 4.0 
 '3a48b9c1953b8db588ca630dc267bb04', // de - MacOS X 10.4 - Firefox 3.0.19 
 '5e10ccde68ccfb764a05c99255fce493', // de - MacOS X 10.4 - Firefox 3.5.7 
 '59ca4d0a6d3ac7a22db389cd0c36ec3c', // de - MacOS X 10.4 - Firefox 3.5.9 
@@ -1640,6 +1874,8 @@ $browsers_fingerprints = array(
 '967adbbf133ded9214d8a4481933602c', // de - MacOS X 10.4 - Firefox 3.6.6 
 '64a0e7cc09cb1c31be575acbfbefac73', // de - MacOS X 10.4 - Firefox 3.6.7 
 '1ef66b8fa2bed505b464e8d44ee0c587', // de - MacOS X 10.4 - Firefox 3.6.8 
+'64e8b421295bc76912e927faa6c9643c', // de - MacOS X 10.4 - Firefox 3.6.9 
+'2430066b824dbcd3841d981bfc1d2de8', // de - MacOS X 10.4 - Firefox 4.0 
 'dd3d8eb1104d251e4d364ba8fe59b887', // de - MacOS X 10.5 - Firefox 3.0.19 
 '3a0fdbc2ab5ce00c8faf28c4aff553a4', // de - MacOS X 10.5 - Firefox 3.5.7 
 '9fcc4a45f6fc3982288ac1b7863cb962', // de - MacOS X 10.5 - Firefox 3.5.9 
@@ -1652,6 +1888,8 @@ $browsers_fingerprints = array(
 'bda30075a2ed0913936413907858b141', // de - MacOS X 10.5 - Firefox 3.6.6 
 'fc711b8c699664f1ebad91bb8e87541e', // de - MacOS X 10.5 - Firefox 3.6.7 
 'd17aac5eac771e904ede17783f17a935', // de - MacOS X 10.5 - Firefox 3.6.8 
+'024c0d23ad8f56124f9d2eaf81652935', // de - MacOS X 10.5 - Firefox 3.6.9 
+'1ff03fd9dace17b681c6cb8fa4d42a00', // de - MacOS X 10.5 - Firefox 4.0 
 '5777947eb847600ded38a9bfa558fffb', // de - MacOS X 10.6 - Firefox 3.0.19 
 '1082f6502cdef0b3f11174b2722f4899', // de - MacOS X 10.6 - Firefox 3.5.7 
 '21fbe93e6b7261958ff7fe246b237930', // de - MacOS X 10.6 - Firefox 3.5.9 
@@ -1664,6 +1902,8 @@ $browsers_fingerprints = array(
 '820693cf995e7a69204df82066149d26', // de - MacOS X 10.6 - Firefox 3.6.6 
 '8c5d0af394a5835dd96c42a9ca861fea', // de - MacOS X 10.6 - Firefox 3.6.7 
 '5d1a822649846e20740dd1a8cbe79d79', // de - MacOS X 10.6 - Firefox 3.6.8 
+'3d81ec0bc64eecb87f9dad73cff079e4', // de - MacOS X 10.6 - Firefox 3.6.9 
+'7f170206ab4768f1a369cb6ce8787391', // de - MacOS X 10.6 - Firefox 4.0 
 '82cec50943d7d2d3bf3e4387fa0bbecd', // de - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'df684a929d4276b620dd680f69ffbc98', // de - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '4397ea6465ea4f2693041428571cf81d', // de - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -1708,6 +1948,8 @@ $browsers_fingerprints = array(
 'a96e0470f9eafc7ef22e98f909d80a04', // it - Windows XP - Firefox 3.6.6 
 'c23074e1eeaa92ce329027e6399d53ac', // it - Windows XP - Firefox 3.6.7 
 'd9850033c20b276edda56332472bbdf6', // it - Windows XP - Firefox 3.6.8 
+'6240bdc31ca176f6cd1a22f31e5e531e', // it - Windows XP - Firefox 3.6.9 
+'55803f85428fc20665407036b454409d', // it - Windows XP - Firefox 4.0 
 '1152cff9421c63c23fa3f5b2dd43e8f7', // it - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'de81eeaf5489d387bbf8f89d56278147', // it - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'bf22efe9a858341a1162277bbbeb03c7', // it - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1720,6 +1962,8 @@ $browsers_fingerprints = array(
 'c658cb7d6aed5d5301bfe0531257953c', // it - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '4035bb741fbfef0901a6d0378cfa72d8', // it - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '8b0cfc7e627280cef2181a93b12f60ee', // it - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'72825d67f4ecad97b07c08f7874e714d', // it - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'d1ccd9d53305c9fb8c34ee512f0a8310', // it - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '582b9e7cad0572078ebda90601636ffb', // it - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'bd092fd0b51bbc1c775285229ee59f95', // it - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'faf3c984d217202c5fc41454f00aa74d', // it - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1732,6 +1976,8 @@ $browsers_fingerprints = array(
 'a4f556271051fbc4e12df3f151211f71', // it - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '8d0044b0926fc0e908f09381fc579866', // it - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'aa811db6227e115b8c769378d416adf8', // it - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'73615ce864ef9856ecaab86fa4548dee', // it - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'613583cf84a1030329a15176f85a8ebc', // it - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '5b3ece15874609eaf322be09fbb9e41f', // it - Windows Vista - Firefox 3.0.19 
 '4efba8ee12d43261800e1ee51206eef6', // it - Windows Vista - Firefox 3.5.7 
 '4b6e145b1eb8a2806cf01e391b639cee', // it - Windows Vista - Firefox 3.5.9 
@@ -1744,6 +1990,8 @@ $browsers_fingerprints = array(
 '7ded8802fa2be5076439dda3521c5c8f', // it - Windows Vista - Firefox 3.6.6 
 'fdd8347a089e45e51d40e66de1717d0d', // it - Windows Vista - Firefox 3.6.7 
 'dcb37bc20f8aad9ccb63544dbb714541', // it - Windows Vista - Firefox 3.6.8 
+'c4d050eda09fe0819074abc3d9e57536', // it - Windows Vista - Firefox 3.6.9 
+'cf7a46cb021a7b3a29909acc8564657a', // it - Windows Vista - Firefox 4.0 
 '9049c4d49a710ee32d5d5c32498049da', // it - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'd25546ab289ba1da97ab3de6ec86580c', // it - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '07c0044f3e5ea0e1cc20b10c1e7f2361', // it - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1756,6 +2004,8 @@ $browsers_fingerprints = array(
 '34ca0c8b481ec02efab13186974ffda0', // it - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'c7f216a73d3d4964281f71c6e7eb0af4', // it - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '2acbe9a428bf0856f52358b36f027ee3', // it - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'1a09f63dbd497347a5f1ce2b2faee0e2', // it - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'0b9d6314a3498ae1f48911caf294618e', // it - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'bdeff44281b74603489c60e1fc1e07c3', // it - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '800deb909269ee1052ea4e2adacb9177', // it - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '68241a8468b89e04b1d8062e0fae2555', // it - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1768,6 +2018,8 @@ $browsers_fingerprints = array(
 '4120fb01224ca8dcd20434499b1f5974', // it - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '3db7da20b55668b9bf32a1d0329ca044', // it - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '94421765c8814f7dc8496c3cd333073c', // it - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'f73fc08c5bd7e2b21530c38e60ab9d51', // it - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'59630d5387e2585f334c716c217d5b39', // it - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '62679aa9c22242562a2402578f061733', // it - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '60b9ca2f5051041eb1b494831414df36', // it - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'ad102a8a4976f5ffea5b7efb0751f4e8', // it - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -1780,6 +2032,8 @@ $browsers_fingerprints = array(
 '9e6af1a6dbe847157125a24ac2fe5b85', // it - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '6dfc1992c179f184db05b0ef1c716da1', // it - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '7d3bbc908df248eeda913a1f23ec25c5', // it - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'0127218c560594878f987b1e9177f1e9', // it - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'c2caf034fa37077e59450030e562ffe4', // it - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '1f6a05ebfd46eb992e2d9eda3512933e', // it - Windows 7 - Firefox 3.0.19 
 'b2d845cf356fce2356c7ca7fd1ad9594', // it - Windows 7 - Firefox 3.5.7 
 'e51ef501b81784e69fcb6684fa4af104', // it - Windows 7 - Firefox 3.5.9 
@@ -1792,6 +2046,8 @@ $browsers_fingerprints = array(
 '6b1d5217a9444cad1c7b889be186c933', // it - Windows 7 - Firefox 3.6.6 
 '8ddff36acda33f9677089f0fff93a86b', // it - Windows 7 - Firefox 3.6.7 
 '258f37abea420249c62eaad808d091ea', // it - Windows 7 - Firefox 3.6.8 
+'73e8b0b4d9a6faf152588b7e95e05e6e', // it - Windows 7 - Firefox 3.6.9 
+'c841a51e5c478d0c3332775d73ccde06', // it - Windows 7 - Firefox 4.0 
 'f2b1be1e3199d3c1a32cc274ec801372', // it - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'fca8c19563846e4a4e83e506e617bdf1', // it - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '16275fec091375c0c5ccf413dc1d13b5', // it - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1804,6 +2060,8 @@ $browsers_fingerprints = array(
 '2368f40e2e064d46e47700803dcba1a7', // it - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'bfa52d58e25370c1e43e9acf5831c9b1', // it - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '29968dbf971eae1b837f80c1671237ec', // it - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'4fc57a9035791b49ba6b187b61696776', // it - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'833967277d2564a2a2435c4445a549ae', // it - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'ec57845b55e349dabe9334e1f1819512', // it - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '97e1cd282f42340898aefa11c978e515', // it - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '72b5dcd73fd2b2054f0c1a609664a579', // it - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1816,6 +2074,8 @@ $browsers_fingerprints = array(
 '4865115223048b8460320d547cbb6396', // it - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '97cdac6fd93f22ec1e6ad43ec1c1cc97', // it - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '3ea5a814ddb543641c7b55277f3a6fe7', // it - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'4f777f64ad3021b77a652295e2d65eb0', // it - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'4aa4c41d904935821a38197993105548', // it - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '78b73743cf9b064d75b6011eca6b6dfa', // it - MacOS X 10.4 - Firefox 3.0.19 
 'a2ca33d0444a35a3dd27e818c0e8831f', // it - MacOS X 10.4 - Firefox 3.5.7 
 '24821c26ddaa3f2c12c226ebd9442806', // it - MacOS X 10.4 - Firefox 3.5.9 
@@ -1828,6 +2088,8 @@ $browsers_fingerprints = array(
 '785a1c789576091ea1acc884f76e4f0e', // it - MacOS X 10.4 - Firefox 3.6.6 
 '7afa7c15d3282dfe894db4220f0ee2e0', // it - MacOS X 10.4 - Firefox 3.6.7 
 '7e6f1b6380122c7ed85d013aa567c911', // it - MacOS X 10.4 - Firefox 3.6.8 
+'d32bdcab1ab26b3a2ed85a90d5921273', // it - MacOS X 10.4 - Firefox 3.6.9 
+'acf7b625f0584c417f257ed48b147a1f', // it - MacOS X 10.4 - Firefox 4.0 
 '86985a1da4dde9bae6f9247c03f4be6e', // it - MacOS X 10.5 - Firefox 3.0.19 
 '5dc40a7d8ee01c744b9f7474d23b6f7b', // it - MacOS X 10.5 - Firefox 3.5.7 
 '6a9ed19ce636981b57f39027ec599292', // it - MacOS X 10.5 - Firefox 3.5.9 
@@ -1840,6 +2102,8 @@ $browsers_fingerprints = array(
 '16edab4abc079dbae22bc82e0bbe396c', // it - MacOS X 10.5 - Firefox 3.6.6 
 '46871451e48a4b2eb6f0b77dcafddc83', // it - MacOS X 10.5 - Firefox 3.6.7 
 '4187f0b3924c3a578958d0a3742a9e8e', // it - MacOS X 10.5 - Firefox 3.6.8 
+'98d1e895e00b0f08364a58ea85057be1', // it - MacOS X 10.5 - Firefox 3.6.9 
+'21b52739512c68e2d9f4bf53952da240', // it - MacOS X 10.5 - Firefox 4.0 
 '91c1b3733af44134cd9923fa11797645', // it - MacOS X 10.4 - Firefox 3.0.19 
 '957555da672741305f85068c5ea51863', // it - MacOS X 10.4 - Firefox 3.5.7 
 'cade382b157b0ac29bd8dbdff7ecf625', // it - MacOS X 10.4 - Firefox 3.5.9 
@@ -1852,6 +2116,8 @@ $browsers_fingerprints = array(
 'dcc809a8e88270734194f3e07409909d', // it - MacOS X 10.4 - Firefox 3.6.6 
 'b0bc0d8209aa3c72d775efa5f392a0df', // it - MacOS X 10.4 - Firefox 3.6.7 
 '2468ab73e8d2c297cfe1a429419bc93e', // it - MacOS X 10.4 - Firefox 3.6.8 
+'eec652ebaa27174fa014fa09ea83e799', // it - MacOS X 10.4 - Firefox 3.6.9 
+'af33eb673e8e153e1dff75f3266ebed4', // it - MacOS X 10.4 - Firefox 4.0 
 '47b11659f3897afcd5931d55f02e669b', // it - MacOS X 10.5 - Firefox 3.0.19 
 'd9d958bec36ba3298465c3f2c9472888', // it - MacOS X 10.5 - Firefox 3.5.7 
 '967ca4a21907b7bdb4a8b2480c01ccbe', // it - MacOS X 10.5 - Firefox 3.5.9 
@@ -1864,6 +2130,8 @@ $browsers_fingerprints = array(
 'a7a77c3aa0366e156f311bc9dd12f3b9', // it - MacOS X 10.5 - Firefox 3.6.6 
 'b2abae61ac62e3e60fcbc087f2dd281b', // it - MacOS X 10.5 - Firefox 3.6.7 
 '5106834705d8cbb056b4ff3bd144f748', // it - MacOS X 10.5 - Firefox 3.6.8 
+'97aa9599d3486f27636b16afb467d44e', // it - MacOS X 10.5 - Firefox 3.6.9 
+'0c6b04c1315d21e49553335490fec33e', // it - MacOS X 10.5 - Firefox 4.0 
 'b33d05445cad7fc26533d7eae8a50128', // it - MacOS X 10.6 - Firefox 3.0.19 
 '5e659b3eeb98108ceb04d8570bd69dd8', // it - MacOS X 10.6 - Firefox 3.5.7 
 '4a333271a163398d8f664b296a3ad8c1', // it - MacOS X 10.6 - Firefox 3.5.9 
@@ -1876,6 +2144,8 @@ $browsers_fingerprints = array(
 '02127a0ba405a6439b3227b53a31e10a', // it - MacOS X 10.6 - Firefox 3.6.6 
 'aa526f83e31e583fb7526c383c7aafcd', // it - MacOS X 10.6 - Firefox 3.6.7 
 '22d4f908684761ce4708a3d3320c077b', // it - MacOS X 10.6 - Firefox 3.6.8 
+'eff3fec79adca198b8161fd9c67ffef3', // it - MacOS X 10.6 - Firefox 3.6.9 
+'aaa4f3d1f94e8917c5f3dd6b622b9206', // it - MacOS X 10.6 - Firefox 4.0 
 'bd5073fc2a047089b10b344dd125b722', // it - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'ac2317a51ae4af2d4d3f5a5b1dffa5a3', // it - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '7b594e50774441eef37b64804b64c5a1', // it - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -1920,6 +2190,8 @@ $browsers_fingerprints = array(
 'af53347d3caf7dc357b32514b6672ecf', // it - Windows XP - Firefox 3.6.6 
 '2874b6269a0f7791ef7d16fbff962936', // it - Windows XP - Firefox 3.6.7 
 'f91e01800eb60e6b7471837c66bf7684', // it - Windows XP - Firefox 3.6.8 
+'2d0abe05d086d0e4de509d1f0b42502a', // it - Windows XP - Firefox 3.6.9 
+'1b577c8ba8786485233eebc9360ce6d7', // it - Windows XP - Firefox 4.0 
 '348f944ecb2c16aea75d9bf870b1c5bd', // it - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '976c8143712c49bbbdf36a403129cee1', // it - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '2c0d0629da3b1fdfcad82b25c3e65bfb', // it - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1932,6 +2204,8 @@ $browsers_fingerprints = array(
 '85eec3b76fbbc033f63edf99311bec1e', // it - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '4781e69d4cbb342438c204544fd2f955', // it - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'deb958f46bf3286def795c27ac6ca54d', // it - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'498c4f12e35f02ecabac5ee2ab759f47', // it - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'413aa7216bcb133dc515c40be904a336', // it - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '0b86ae8a532808724423cb8383fce563', // it - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'ada30333d2561f5af34c63b976222e31', // it - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'f2804cdf0d510bc907628bfb43c3d79b', // it - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1944,6 +2218,8 @@ $browsers_fingerprints = array(
 'c212a4e7e9cdf89530eb388a2ac70e51', // it - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'c5b639b4d2b7b9468583387697442f94', // it - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'c076c82f2a217b921c654c136eb6dce4', // it - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'1ed51843d45bb7d7ff6b8d9a2eb5172c', // it - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'c8b8af5db34bbdc293e568cda27b6161', // it - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '5e5ce0be7126261caae4a5b175a68be9', // it - Windows Vista - Firefox 3.0.19 
 '3d0db67444a2a9c3290ab4ef7e3e856b', // it - Windows Vista - Firefox 3.5.7 
 '814a06b541e277262c9c132319506648', // it - Windows Vista - Firefox 3.5.9 
@@ -1956,6 +2232,8 @@ $browsers_fingerprints = array(
 '7df0f21fee5d28523e3b342f82bd0181', // it - Windows Vista - Firefox 3.6.6 
 'b34370bf24882c885572081c0e87ec44', // it - Windows Vista - Firefox 3.6.7 
 'ab33cdde11b7814164f0f4690e154fb2', // it - Windows Vista - Firefox 3.6.8 
+'9c829a9ba925538ca5c57b215ec3eb7d', // it - Windows Vista - Firefox 3.6.9 
+'263528bd8cd215a5fa26d380fada0e56', // it - Windows Vista - Firefox 4.0 
 '9d8b0789f742158546648dfe6d27607f', // it - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'e9b855ae4f77de33b67edba34e5ffbd9', // it - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '256daac0254e1a9db5f7a85469690e30', // it - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -1968,6 +2246,8 @@ $browsers_fingerprints = array(
 '44fc50fd242d19156aec18537c3243dd', // it - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'd9506882b26f526a76da51a799d8dff8', // it - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'df4e13843c70fc47a4c2e0f970c5fee5', // it - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'24678164a39521872f2631ca80e15680', // it - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'d15b0b1776d6827f8829d9f054ddc241', // it - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '69bb40d8aea34acd28493b577825e781', // it - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '2e49cb6f7947f12cfcd4b20dd3429ba8', // it - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '008b5329c2816e8aa6880cf027807937', // it - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -1980,6 +2260,8 @@ $browsers_fingerprints = array(
 'c0b32a07cd30e3a3e38d7f7ed77214a4', // it - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'b6729282c2f83e8f888540e3f5a44e82', // it - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'b489652fbb815b887d745079505c22a7', // it - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'2b49f2752600b40870404d4cd96b0a2f', // it - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'0cd0d2568fa683a5108b415d105e8580', // it - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '7e4c1ce49aae80d954a276d59381ea05', // it - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '1c4fa653d2470e8f53605d4947ec23aa', // it - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'eec7049782c80a1c9d76c883874278e9', // it - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -1992,6 +2274,8 @@ $browsers_fingerprints = array(
 'a850934902368b384fb968243826cc32', // it - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'c256a5fc8b28b8800e80ba53c2659dc9', // it - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'aa46c3954db49bdff677b15d248ab430', // it - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'f73ea1bd3d1ff896841331a5f9d1e3ca', // it - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'877275985eba4862c7432e1dea5959a1', // it - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'ea6f7e8b9ea8cf95f176a5adf93d1343', // it - Windows 7 - Firefox 3.0.19 
 '56c9acbbdce8571618067d9ca159d30d', // it - Windows 7 - Firefox 3.5.7 
 'dc2b748160a46c0300283d3b4c8a83e6', // it - Windows 7 - Firefox 3.5.9 
@@ -2004,6 +2288,8 @@ $browsers_fingerprints = array(
 '950014acce5a51b080112b5c94baa40e', // it - Windows 7 - Firefox 3.6.6 
 '21e44a6dccdfb475f0fb4b210bf5230b', // it - Windows 7 - Firefox 3.6.7 
 '3c6a33a6811df376ed9dc9298b1aa513', // it - Windows 7 - Firefox 3.6.8 
+'da2af22756e595cb1ea3b00d206bef92', // it - Windows 7 - Firefox 3.6.9 
+'9278921347de366ad03c51b9f62f645d', // it - Windows 7 - Firefox 4.0 
 '41e86e2ab270f83217c27d1c1f91ef4a', // it - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '572336e03dc1419d67014d6b91c2ede9', // it - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'a3c28a3d31ee863cb4ce5d0ea2e67da4', // it - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2016,6 +2302,8 @@ $browsers_fingerprints = array(
 '828737a49900e8c57f164fcc55c1cd73', // it - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'e620761e156af4b20e754767eec2d28c', // it - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '30531ce9f6d3c663a0265791d3a6902e', // it - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'07142985a3c5ba6310697898b12eb537', // it - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'6ca78b38bf883e8e37274861945e56a3', // it - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'a8f3218007cf48c52c8d32179f9e1d62', // it - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'b9330ed7b66db2feb25975e9fd043eec', // it - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '996f83a6b69b5a8ff9bdc64bd715328f', // it - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2028,6 +2316,8 @@ $browsers_fingerprints = array(
 '60668c9c2e6abc9f5aed8d6c3ff40f80', // it - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '0b7e8086f3fb9ba469c7ef1448144261', // it - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '52aad0ea1b45d7b691abf5ded5bc630c', // it - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'19ef6081a951ac4a86c7279a51da78d8', // it - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'ff825f8fddb499c8f44c98c85a34b86e', // it - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'a45e71b09dab5c2f8540260764e35f20', // it - MacOS X 10.4 - Firefox 3.0.19 
 '8877f83246ddc7ec8073f58fbf968c63', // it - MacOS X 10.4 - Firefox 3.5.7 
 'dd2ff7a8f4c1fccf727b2ea8525c1828', // it - MacOS X 10.4 - Firefox 3.5.9 
@@ -2040,6 +2330,8 @@ $browsers_fingerprints = array(
 '4bd091536abd2687d35ce5eeac701afc', // it - MacOS X 10.4 - Firefox 3.6.6 
 'e7b15e7622cdc2120f11f92579df8ae5', // it - MacOS X 10.4 - Firefox 3.6.7 
 '27b38a3f691b64de5028586d77cabcc0', // it - MacOS X 10.4 - Firefox 3.6.8 
+'e7177e1cbf8f79c211a3a22abf36f253', // it - MacOS X 10.4 - Firefox 3.6.9 
+'57f50cb8f7172edef1c812bc7590818d', // it - MacOS X 10.4 - Firefox 4.0 
 '5b243b1faaa3a2986b2b763c45e9b21c', // it - MacOS X 10.5 - Firefox 3.0.19 
 '973c896003829875c45a3e17e1f715c4', // it - MacOS X 10.5 - Firefox 3.5.7 
 '74b75ee202bb481b268b20ce27288a71', // it - MacOS X 10.5 - Firefox 3.5.9 
@@ -2052,6 +2344,8 @@ $browsers_fingerprints = array(
 'd24b85f24c110776994f3a0f44581a75', // it - MacOS X 10.5 - Firefox 3.6.6 
 '764213cbd909b9450d3fe0080fc7d2c7', // it - MacOS X 10.5 - Firefox 3.6.7 
 '8ced179a780804538515527329b20aaa', // it - MacOS X 10.5 - Firefox 3.6.8 
+'701606a9abf3fe0f2e1a077a5427c77a', // it - MacOS X 10.5 - Firefox 3.6.9 
+'74c4e221f038195907219e41dbb3f08b', // it - MacOS X 10.5 - Firefox 4.0 
 '5c0ecc0163d8465fb47f3547896e568e', // it - MacOS X 10.4 - Firefox 3.0.19 
 '738c54e336c9060a8c9a4bc3de3d81a6', // it - MacOS X 10.4 - Firefox 3.5.7 
 '7b0714a049c44f986651b8e11a9b3786', // it - MacOS X 10.4 - Firefox 3.5.9 
@@ -2064,6 +2358,8 @@ $browsers_fingerprints = array(
 '5c7aa733d55636be6ae9a81a73d4d342', // it - MacOS X 10.4 - Firefox 3.6.6 
 '2c214a1875d75e41332cc6614f2ae7f3', // it - MacOS X 10.4 - Firefox 3.6.7 
 '0ba142a9d11d9c42b7044b5549968289', // it - MacOS X 10.4 - Firefox 3.6.8 
+'a64dede404a69a86934a1fd34bac2b46', // it - MacOS X 10.4 - Firefox 3.6.9 
+'cb49a7966d7a60a4bb5aed0cefc67be6', // it - MacOS X 10.4 - Firefox 4.0 
 '57bef43d6ed135f3e04fc38c3eb43591', // it - MacOS X 10.5 - Firefox 3.0.19 
 'bd3907eab3c841a124bfe654f315078a', // it - MacOS X 10.5 - Firefox 3.5.7 
 'f41913c5097609b3e3993b012c5dafc0', // it - MacOS X 10.5 - Firefox 3.5.9 
@@ -2076,6 +2372,8 @@ $browsers_fingerprints = array(
 '86fead8977a2bd4a09397562064ce2ee', // it - MacOS X 10.5 - Firefox 3.6.6 
 '12b836d89565640d23f6fb206e1c0981', // it - MacOS X 10.5 - Firefox 3.6.7 
 '31c2c69ee7d926c93d94a54bb7add041', // it - MacOS X 10.5 - Firefox 3.6.8 
+'99cdb35df6af857bb52a374d78031229', // it - MacOS X 10.5 - Firefox 3.6.9 
+'0fac235048bb5d99f03a203d194055a3', // it - MacOS X 10.5 - Firefox 4.0 
 'db4454041d0b4b18b15b7414baca1a4b', // it - MacOS X 10.6 - Firefox 3.0.19 
 'adfb46fab80a80254a6a529307c5f327', // it - MacOS X 10.6 - Firefox 3.5.7 
 '008c2065ca10f21cc0e9444de73ee3f1', // it - MacOS X 10.6 - Firefox 3.5.9 
@@ -2088,6 +2386,8 @@ $browsers_fingerprints = array(
 '34eafb52ee4593bf8bfe59d8f19f2d44', // it - MacOS X 10.6 - Firefox 3.6.6 
 '81089cba3b7786f13e8f206b7e6b8dfe', // it - MacOS X 10.6 - Firefox 3.6.7 
 '5b7f7048d1c592a838eb9e62370275eb', // it - MacOS X 10.6 - Firefox 3.6.8 
+'16f7554adf91f43fbb12c32ff134357a', // it - MacOS X 10.6 - Firefox 3.6.9 
+'f858fd59f44f037d1a001c18551099b1', // it - MacOS X 10.6 - Firefox 4.0 
 'e49414ac48fbf5ae6b80b811c1a1145c', // it - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '16b8fe48ae71041afeb916ecf5e501a9', // it - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '65fa81d1b2db8ca5d213553d58b1902b', // it - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -2132,6 +2432,8 @@ $browsers_fingerprints = array(
 '73213ee8d16c5e90a2b816fba6c762e4', // nl - Windows XP - Firefox 3.6.6 
 '958345b3264b0fabf7f6515781df61c9', // nl - Windows XP - Firefox 3.6.7 
 '924bc443e8a5c5c141ac95fd7882308f', // nl - Windows XP - Firefox 3.6.8 
+'a68998cc7d04a913b7c38b10100f9cfa', // nl - Windows XP - Firefox 3.6.9 
+'1f1c52fb20f04474bde49e653229149a', // nl - Windows XP - Firefox 4.0 
 '2a28d7759fce3dcee92c359c188b05cd', // nl - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '19eb567fb7fc6928089894c729608a45', // nl - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'dada2962f100ee58185eadf7b089065e', // nl - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2144,6 +2446,8 @@ $browsers_fingerprints = array(
 '19e02a5c3fdedfb7326e28e1c2ff875a', // nl - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '6385f1fe3c9e3dcc53234714090cea06', // nl - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '40b52c28c83bcf593e4e3649aa17dcc9', // nl - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'3e78810596ea63ad66ac0fd7e7f635c3', // nl - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'bd300dde01d1fd34235139468dac3001', // nl - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '2946ad4f877838c6e160584f4ebe3342', // nl - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '3c038e954a33630a284157c1fb66d7a9', // nl - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '2b419271b4d19885cced476ee020cfd9', // nl - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2156,6 +2460,8 @@ $browsers_fingerprints = array(
 'ca7fd360b98ca7778595de2505e37216', // nl - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '11c09631d9067c26aa8c0df2cd799031', // nl - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '6c52f4f09f515f6735185a6f911d6d6d', // nl - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'d8005dcbef35e5807cac8b55875723fe', // nl - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'dec47742fdd7713f0e289ce364cc7e34', // nl - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '3a636d500de8c3579fcae0b81dcec67f', // nl - Windows Vista - Firefox 3.0.19 
 'd955b7ee23d88a2e81b20f33de013137', // nl - Windows Vista - Firefox 3.5.7 
 '60c7c1915bdde926ca067a5d0cf6e062', // nl - Windows Vista - Firefox 3.5.9 
@@ -2168,6 +2474,8 @@ $browsers_fingerprints = array(
 '457932605107d5d6b825c102aabd0562', // nl - Windows Vista - Firefox 3.6.6 
 'de33f1a9f9c59d446b93bc6d23057efe', // nl - Windows Vista - Firefox 3.6.7 
 'eecf6082a85c1d9ee3a09fe2afb381bc', // nl - Windows Vista - Firefox 3.6.8 
+'34c269d928973088fb84d8f283769a99', // nl - Windows Vista - Firefox 3.6.9 
+'837ea554c8af5d564217af2f62b35b20', // nl - Windows Vista - Firefox 4.0 
 'c1edfaa44720f58b551ac701b39b07ee', // nl - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'caf344a661f57e5fe0d160285d80d338', // nl - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '8e3bf0de04ebca4cb4596e1bd945f473', // nl - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2180,6 +2488,8 @@ $browsers_fingerprints = array(
 'c9d1e33f8b70867a131d8007a110be29', // nl - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '6590d93baf33dad9b12b2189cb1896f1', // nl - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'a0a08cbf02c462f3edfcea26cc664d14', // nl - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'eecd354336394413a75600f691e9da59', // nl - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'da2b533c1e6d93a479c8f98a3be69593', // nl - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '47524b24c253d3d457676823a2be1eb8', // nl - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '41e544f5c9a310a156d144d4f25dbb0e', // nl - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '2697fe4c11fbb24f83a4cf580741af80', // nl - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2192,6 +2502,8 @@ $browsers_fingerprints = array(
 '2311dafb14a8311919b00579013d7b48', // nl - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'cbfc47a9cd59e55984a1c9a74149fa36', // nl - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '070613245f9b93a9b76cfa6783bc5d8d', // nl - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'d9e5651c6afa2ce156b68b1f298b15ff', // nl - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'779db50cb557bd6d160fac8e5b0f215b', // nl - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'b4b0019637ae4932ac018e78902f5b3e', // nl - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'fd7cdb5a1e166b08a42dd853b7e1be18', // nl - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '3a36a9e969b270e4da145acc0448280a', // nl - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -2204,6 +2516,8 @@ $browsers_fingerprints = array(
 '135abf83eb3995d8890e36e6cdfc61c4', // nl - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '01701bb95e0b4a5b9cc8e7ea31e63140', // nl - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '3f276fdd0a053dd0bc5c35243a35f2a2', // nl - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'b7751d1bf9c41150148625007457094f', // nl - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'1e191fc475f90b6df714b639c22c5304', // nl - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '3fa41dd68cc97b8dec08bdd57c6d2b26', // nl - Windows 7 - Firefox 3.0.19 
 '823ee96ee1d15c4a174c3a69ff19ea91', // nl - Windows 7 - Firefox 3.5.7 
 'fb63d18a15451f5b030747426dba291d', // nl - Windows 7 - Firefox 3.5.9 
@@ -2216,6 +2530,8 @@ $browsers_fingerprints = array(
 '3ff52612b356aa556aad302c0abaae57', // nl - Windows 7 - Firefox 3.6.6 
 'a1c15e25b8bd8287489e71ab7bf6b267', // nl - Windows 7 - Firefox 3.6.7 
 '7538a5eadb8db7844df0fc6b7e41e661', // nl - Windows 7 - Firefox 3.6.8 
+'5f7c204125f5803971d129a35ef94c6c', // nl - Windows 7 - Firefox 3.6.9 
+'fe882cdb1d72e054f706ceb45d807c99', // nl - Windows 7 - Firefox 4.0 
 '80c7e417f9051d53e52ee10fd87c0d50', // nl - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'b455ea3be74359972619b7780139baa6', // nl - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'd400ff1113b332b2f68db1d73d07eb77', // nl - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2228,6 +2544,8 @@ $browsers_fingerprints = array(
 'b68a52a312401611d61765a0a56a0318', // nl - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '13af25a2e5063ef84b647a5bff72e495', // nl - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '620f23f7d708b56f00782c4575f2393e', // nl - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'ba9d3cbec6206ab51372d6353de3ed5b', // nl - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'fff256514d3abf13f9a862999a237163', // nl - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '0194e699911df10869d077cc44ac369f', // nl - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'b9b0069ab0e12b760a5a13a1e812d568', // nl - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'ef237f34290bb844fa82a0a37535b8e6', // nl - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2240,6 +2558,8 @@ $browsers_fingerprints = array(
 'aa17293fe7d2ec0a2c72c7b33d4a3bfc', // nl - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'b9a365a04bbe3795836f21ea56a5e5e3', // nl - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '181fc0518122f32e9637b09be84c7ddf', // nl - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'09ff7ede1a8b0e01ac25510214395105', // nl - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'385836a0e78a13d3903fc6c8c4097480', // nl - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'cba29851cfdab10370e7224ff95b9ecf', // nl - MacOS X 10.4 - Firefox 3.0.19 
 'd6d7e7a9ab124416beea6c238c31eded', // nl - MacOS X 10.4 - Firefox 3.5.7 
 '3d41be219e3f25c3fab5c73efce587a4', // nl - MacOS X 10.4 - Firefox 3.5.9 
@@ -2252,6 +2572,8 @@ $browsers_fingerprints = array(
 '85a0c037b26231a4a07a3a15da3f1804', // nl - MacOS X 10.4 - Firefox 3.6.6 
 'b14d12027fa02b254815380f2baaeb7c', // nl - MacOS X 10.4 - Firefox 3.6.7 
 '411fecee8c31ca64a7f56d9653277ba0', // nl - MacOS X 10.4 - Firefox 3.6.8 
+'cfa585851c9beba1f7ab0e63fec2a906', // nl - MacOS X 10.4 - Firefox 3.6.9 
+'99541dcdc7fcfb1438596af96f23ffa1', // nl - MacOS X 10.4 - Firefox 4.0 
 '8dffbac0f1b27db0bc04625294d97cc6', // nl - MacOS X 10.5 - Firefox 3.0.19 
 '543d6a8c234618cf8a2fca8f978f699f', // nl - MacOS X 10.5 - Firefox 3.5.7 
 'b39fab27806f6a68feadbe8b87c45138', // nl - MacOS X 10.5 - Firefox 3.5.9 
@@ -2264,6 +2586,8 @@ $browsers_fingerprints = array(
 '70419ce8c026d2fc0fa85d96e0cadcb6', // nl - MacOS X 10.5 - Firefox 3.6.6 
 '38e07a52b0af60d592e600b0088e85aa', // nl - MacOS X 10.5 - Firefox 3.6.7 
 '9a1ec6bb9eb8063faa16a1a479a51f10', // nl - MacOS X 10.5 - Firefox 3.6.8 
+'856992f2deb1236718d4a7bd79a2ae94', // nl - MacOS X 10.5 - Firefox 3.6.9 
+'b75d55a942d65ce5c60e13a436c8b1db', // nl - MacOS X 10.5 - Firefox 4.0 
 'e28a7bb8f0bfb50feb09165f099ed55c', // nl - MacOS X 10.4 - Firefox 3.0.19 
 '993f70c29e1048dfd57362aaa24764e0', // nl - MacOS X 10.4 - Firefox 3.5.7 
 '5099434d44a608d04f96d2b2afe5ba8f', // nl - MacOS X 10.4 - Firefox 3.5.9 
@@ -2276,6 +2600,8 @@ $browsers_fingerprints = array(
 '03a64403b385ec15bc2f9280b800a1cc', // nl - MacOS X 10.4 - Firefox 3.6.6 
 '07bfe439863daf3ed0fa7628304cf8da', // nl - MacOS X 10.4 - Firefox 3.6.7 
 '43722c58dbb49ac13f3714316064d47a', // nl - MacOS X 10.4 - Firefox 3.6.8 
+'693442b359bc09ebb9bbcc897829692c', // nl - MacOS X 10.4 - Firefox 3.6.9 
+'0113174516763a655a0027c1784eecbb', // nl - MacOS X 10.4 - Firefox 4.0 
 'e97df40ccba875577d0c91d51c09872b', // nl - MacOS X 10.5 - Firefox 3.0.19 
 '4124910496f06f06c92f5379cd733092', // nl - MacOS X 10.5 - Firefox 3.5.7 
 '4575f446cb3773b943ff5510d4ecc6e8', // nl - MacOS X 10.5 - Firefox 3.5.9 
@@ -2288,6 +2614,8 @@ $browsers_fingerprints = array(
 '38ad17977da7d2f329cfc0120b810e15', // nl - MacOS X 10.5 - Firefox 3.6.6 
 'f8f36b85af61bd6555e7684ad876005f', // nl - MacOS X 10.5 - Firefox 3.6.7 
 'f94d41e20d7a2f5ea0d55262b473fdf0', // nl - MacOS X 10.5 - Firefox 3.6.8 
+'b23325fc135cef6fbce6f53046dcff4a', // nl - MacOS X 10.5 - Firefox 3.6.9 
+'e050bfc913d05da83c4abea3ea2f29fb', // nl - MacOS X 10.5 - Firefox 4.0 
 'd99f0391ef5134965b0c8d07748ebaf2', // nl - MacOS X 10.6 - Firefox 3.0.19 
 'e66800ce2efdaa73a31c0f1799e057ff', // nl - MacOS X 10.6 - Firefox 3.5.7 
 '428e92c2ff436db34bc9a874029106ef', // nl - MacOS X 10.6 - Firefox 3.5.9 
@@ -2300,6 +2628,8 @@ $browsers_fingerprints = array(
 '59c0244018697a28a8a1e152ddf08995', // nl - MacOS X 10.6 - Firefox 3.6.6 
 '5f734d3bef17bd16dcf5e5d26570f8ee', // nl - MacOS X 10.6 - Firefox 3.6.7 
 'c6444af9d7d211cddcbcf4c3a566ad29', // nl - MacOS X 10.6 - Firefox 3.6.8 
+'8d06e3a9080405fcb7f19f9b034b9c80', // nl - MacOS X 10.6 - Firefox 3.6.9 
+'44eadf25a4765d4de8f30844e95c16d9', // nl - MacOS X 10.6 - Firefox 4.0 
 '2f7d1a7de12622b01224db9cf9d8bcfc', // nl - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '1bf549b8c2e8357233288cbf1ade7c66', // nl - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'a09bb7563b3fa331611087299e2632ba', // nl - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -2344,6 +2674,8 @@ $browsers_fingerprints = array(
 '38f5b56f7ac7a26e2550a16cff102997', // pt-PT - Windows XP - Firefox 3.6.6 
 'a7a3b77e72e7077a9087865ce28df2c7', // pt-PT - Windows XP - Firefox 3.6.7 
 '87c7749ea051b43c528acf5baacb0ae6', // pt-PT - Windows XP - Firefox 3.6.8 
+'4864e9f356755e993196d551c61585fa', // pt-PT - Windows XP - Firefox 3.6.9 
+'074c72c50f3dc3be45d0c735cf0822a6', // pt-PT - Windows XP - Firefox 4.0 
 '253b710fecc4e8f85c8f5be831dcc51a', // pt-PT - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '2980f573cb349b87a989b4b5b139a691', // pt-PT - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '1c36e5cc9deceea14b9d1a9f6f79e751', // pt-PT - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2356,6 +2688,8 @@ $browsers_fingerprints = array(
 '0960450837236c13b329c6beeef41215', // pt-PT - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '9c9c6ff3e163004f7d68873f2573b89f', // pt-PT - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '1c4cd328d03f62f63a549110bdab000b', // pt-PT - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'71e18e8d6a794b7b06b0c7efec7ca743', // pt-PT - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'671cfa3d3a113923aa9b633fde587d52', // pt-PT - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'd4855b784ec27bffc45bbfc47135dde0', // pt-PT - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '83fb27859b1378a863b464ce0f0f1378', // pt-PT - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '906a90b22ec5fed3b6b505d999f7eae1', // pt-PT - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2368,6 +2702,8 @@ $browsers_fingerprints = array(
 '9eca346a6c8db3e3db276d9b0a31b419', // pt-PT - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'bc0b69e6ddc553fad348bef5c5a26dc8', // pt-PT - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'dbddc557b32909930f66a325f4da21a9', // pt-PT - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'92e8720e87552b727c2caa4c23455b12', // pt-PT - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'8f24d38707675ae920484d9c964f22f2', // pt-PT - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '161b3cb2aa02ca013d32b1c91346dde2', // pt-PT - Windows Vista - Firefox 3.0.19 
 '00daa1e960a1b17d501922af8bebd3de', // pt-PT - Windows Vista - Firefox 3.5.7 
 '00d45ff09086e3571dec94bfba313dfe', // pt-PT - Windows Vista - Firefox 3.5.9 
@@ -2380,6 +2716,8 @@ $browsers_fingerprints = array(
 '5ba1a2edc350797691fec7f4ff654263', // pt-PT - Windows Vista - Firefox 3.6.6 
 'e8cf81738f900dba9d6f461764a95871', // pt-PT - Windows Vista - Firefox 3.6.7 
 '6ccea1f2c03335dde5ac40539cc75f43', // pt-PT - Windows Vista - Firefox 3.6.8 
+'00069c493b8db223af1614dc946b0448', // pt-PT - Windows Vista - Firefox 3.6.9 
+'c6e450ef186d2699d0bf99a8cca895e8', // pt-PT - Windows Vista - Firefox 4.0 
 '2b8645f5349ccc0b26793927b0b3300e', // pt-PT - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '5bea0fe92aa3c6a131aea26c7cc9fc1d', // pt-PT - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'b74ecd6e83a706fe59175650ec2059a8', // pt-PT - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2392,6 +2730,8 @@ $browsers_fingerprints = array(
 '5c58f51323a5e31b2f0e7ff8936b32e6', // pt-PT - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'ee52868867cd210ae4c0101259461c48', // pt-PT - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '4b7b71aefc49156012fcbefbe431ab09', // pt-PT - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'53ce197f5a747ab6bd3cf350453239f3', // pt-PT - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'0786e0afa68a18bbc58b61597944b8ab', // pt-PT - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '23f7d8a5c9948df03e81d68bc0ed6dd4', // pt-PT - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'fb5b870f7dea5f2a152eaf0d966709a0', // pt-PT - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '786ffc19de8f521e114084c08a9965b8', // pt-PT - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2404,6 +2744,8 @@ $browsers_fingerprints = array(
 '7392ff8e7ce7d73cbb1d095238da6bd5', // pt-PT - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '7a4469558c85e47f6bbf5dccc3c7e1c1', // pt-PT - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'f341c5f8ef55f03b0eccd69e4a4e9ec3', // pt-PT - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'e1f667c46cf3af73249a75ae3ed515c7', // pt-PT - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'286341843a12ec7fa17ad6cd4b321699', // pt-PT - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'b389b286cbbb99c125f73e426e494e64', // pt-PT - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '2725733db116ad303efe749e87c667e9', // pt-PT - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '54cb0f32b78365d2395a3dc4d4f519af', // pt-PT - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -2416,6 +2758,8 @@ $browsers_fingerprints = array(
 '68b9dd4b16c834eb3fb74495fbc1b97e', // pt-PT - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'b2ac6801905017e85127845dc3ea73e5', // pt-PT - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '96bb207ac56d2178e04abfd31279a495', // pt-PT - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'bd5a812d27d63eb443250dc9edb45ad9', // pt-PT - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'31558ee99ac51a740c94a162ec86023e', // pt-PT - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '98d60a292adea46be1e1af36ea8613aa', // pt-PT - Windows 7 - Firefox 3.0.19 
 '0bf61a37f71475ea3d54f8db0eb18904', // pt-PT - Windows 7 - Firefox 3.5.7 
 '1465cf1bea18c217327f2486bc3cd48c', // pt-PT - Windows 7 - Firefox 3.5.9 
@@ -2428,6 +2772,8 @@ $browsers_fingerprints = array(
 'b246ab8ad4b1e9c71e6626d5409a4bdf', // pt-PT - Windows 7 - Firefox 3.6.6 
 'bee0eed8ae64b130ae8155281c8b6520', // pt-PT - Windows 7 - Firefox 3.6.7 
 'd26db0e1dcc0b5601af9ad1ac344a12e', // pt-PT - Windows 7 - Firefox 3.6.8 
+'77d894d3fdd7f0c0efeb99d14fc5cbe0', // pt-PT - Windows 7 - Firefox 3.6.9 
+'0e5e6d3ce8ef252968cb0cf83958ddb0', // pt-PT - Windows 7 - Firefox 4.0 
 '89b899f7c16c6ac48a053ca162db7047', // pt-PT - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'fab4030c8beeb00e322063c97cb48b55', // pt-PT - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '14259085d54b770046638af5ab0c9006', // pt-PT - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2440,6 +2786,8 @@ $browsers_fingerprints = array(
 '4e3b9d57aee33098bea10c7220210a12', // pt-PT - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'eef03dda241ff1489e4a0d41b0de0bcc', // pt-PT - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '416a633f9c138e7dea1eb94a656612fc', // pt-PT - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'7c6657bfa9a7a1c6fbeef3c66b2d778a', // pt-PT - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'98572480c6cb7d3e923499f32125003c', // pt-PT - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '77956c43aeac81c3732c385f3bbef2ea', // pt-PT - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '7bf5d79446da9491985c4652c3c17a52', // pt-PT - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'd686eef04419523d7aef0590fb2664a8', // pt-PT - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2452,6 +2800,8 @@ $browsers_fingerprints = array(
 '7624aa845faa8ea0102b6a6a83c70733', // pt-PT - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '3dbda978585c0f853f6202d307170e4a', // pt-PT - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '055cdf7cceb496e8b0736f377908801b', // pt-PT - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'30534d68214e74be5470b8bae647021e', // pt-PT - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'8d9aa8696fea25e85af403f9ae9df435', // pt-PT - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '3f1895fcb5d8133d006d38e0a083699f', // pt-PT - MacOS X 10.4 - Firefox 3.0.19 
 '8844d4d8b47de01a3f363b5ee924ed4b', // pt-PT - MacOS X 10.4 - Firefox 3.5.7 
 '7eacc4e716d1bba16472b28821bbd099', // pt-PT - MacOS X 10.4 - Firefox 3.5.9 
@@ -2464,6 +2814,8 @@ $browsers_fingerprints = array(
 'd5a6aa838d952d11d6cee30e70d1e06f', // pt-PT - MacOS X 10.4 - Firefox 3.6.6 
 '0efe5e512b21c71af449d73dfe1f2b84', // pt-PT - MacOS X 10.4 - Firefox 3.6.7 
 '043aa0ede6aed0b6a7d23d4289e66c49', // pt-PT - MacOS X 10.4 - Firefox 3.6.8 
+'3c8c852705b0b2e42ce42430292922ef', // pt-PT - MacOS X 10.4 - Firefox 3.6.9 
+'0bd6bd507fa15984be04363d3da3b929', // pt-PT - MacOS X 10.4 - Firefox 4.0 
 '9fef91cd7f34db48080241314ad7ec34', // pt-PT - MacOS X 10.5 - Firefox 3.0.19 
 '6ac436c2ddd9f9b392a09c1b9a279d2e', // pt-PT - MacOS X 10.5 - Firefox 3.5.7 
 '7b01cc921f31aae184cbccece2c04c05', // pt-PT - MacOS X 10.5 - Firefox 3.5.9 
@@ -2476,6 +2828,8 @@ $browsers_fingerprints = array(
 '5cbabe41e753a027bae17bcce9afba90', // pt-PT - MacOS X 10.5 - Firefox 3.6.6 
 '121b5b953ef3005cbf6a5b769cd056ba', // pt-PT - MacOS X 10.5 - Firefox 3.6.7 
 '682aebc185afd3bc2b10113b653c93fa', // pt-PT - MacOS X 10.5 - Firefox 3.6.8 
+'81dba71689b292df9da1dbd8bad72384', // pt-PT - MacOS X 10.5 - Firefox 3.6.9 
+'109b72dc475a1ef3226e43f998088b3b', // pt-PT - MacOS X 10.5 - Firefox 4.0 
 'e6187d13c058a397b94a16d715263fa6', // pt-PT - MacOS X 10.4 - Firefox 3.0.19 
 '402d039dea4ca8bb8f87a73d27b69641', // pt-PT - MacOS X 10.4 - Firefox 3.5.7 
 '60f382530a0ae51020bf0801b66a578f', // pt-PT - MacOS X 10.4 - Firefox 3.5.9 
@@ -2488,6 +2842,8 @@ $browsers_fingerprints = array(
 'fb11bb9f3cba2fe90d691cfb465937a5', // pt-PT - MacOS X 10.4 - Firefox 3.6.6 
 '313bcee4c393e21184fe6d5282a50933', // pt-PT - MacOS X 10.4 - Firefox 3.6.7 
 '984e2fc0195c8c28c9dfcedf3b7ce1bc', // pt-PT - MacOS X 10.4 - Firefox 3.6.8 
+'8a359a03865de3d5e26e0c5cf20b1c0e', // pt-PT - MacOS X 10.4 - Firefox 3.6.9 
+'1a2bcbde9cb2b8280891cdb985738cd2', // pt-PT - MacOS X 10.4 - Firefox 4.0 
 '66f248793bfddea7fef0f477bd5bfe8a', // pt-PT - MacOS X 10.5 - Firefox 3.0.19 
 '2670721398077680424ad365081cd9f4', // pt-PT - MacOS X 10.5 - Firefox 3.5.7 
 '1f0ff2d97725ea237a3c5b511a2891dd', // pt-PT - MacOS X 10.5 - Firefox 3.5.9 
@@ -2500,6 +2856,8 @@ $browsers_fingerprints = array(
 '6e04a1c66f8f40772427a866f2139f4b', // pt-PT - MacOS X 10.5 - Firefox 3.6.6 
 '5914c57063b1dd2c5511fa58225fc9b2', // pt-PT - MacOS X 10.5 - Firefox 3.6.7 
 '69d01df3a5b9a966038a666e2ce97c71', // pt-PT - MacOS X 10.5 - Firefox 3.6.8 
+'30e7bd117509bc7b7b2ecd8cfef530e2', // pt-PT - MacOS X 10.5 - Firefox 3.6.9 
+'1099181fc0f4fe3173b6b50a8f44cde3', // pt-PT - MacOS X 10.5 - Firefox 4.0 
 '69c8f0cae0ade005eaf94b03616c13e7', // pt-PT - MacOS X 10.6 - Firefox 3.0.19 
 '94f04937eed7193aaef025897d2f29ff', // pt-PT - MacOS X 10.6 - Firefox 3.5.7 
 'f1ddde6451299d01de0346ddd9ba1818', // pt-PT - MacOS X 10.6 - Firefox 3.5.9 
@@ -2512,6 +2870,8 @@ $browsers_fingerprints = array(
 '13316242b8817b5068a59d77102d0467', // pt-PT - MacOS X 10.6 - Firefox 3.6.6 
 'ee25cea7d0f3a58f1fad2d9faefc67ae', // pt-PT - MacOS X 10.6 - Firefox 3.6.7 
 '397cc9cb5dcb7f23336aec96ceca75ce', // pt-PT - MacOS X 10.6 - Firefox 3.6.8 
+'639cde2da986cf6423b0c29ea3e4506a', // pt-PT - MacOS X 10.6 - Firefox 3.6.9 
+'a349ef94724ad3ffd9a97630222d4688', // pt-PT - MacOS X 10.6 - Firefox 4.0 
 'e9884df89afbc42db00f5d8220a1e841', // pt-PT - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'd53a774ed868719366a1491f195e0158', // pt-PT - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '18402addfa3a180acc02acdb855f675a', // pt-PT - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -2556,6 +2916,8 @@ $browsers_fingerprints = array(
 '29f315fe8593dea173b56fbc37b6345b', // pt-BR - Windows XP - Firefox 3.6.6 
 '005f10307b30dc456e84a38115bd73ed', // pt-BR - Windows XP - Firefox 3.6.7 
 'ec20a043c4fcaa21ab6913bbb42e217b', // pt-BR - Windows XP - Firefox 3.6.8 
+'5bff11b647900da07fcd460146c6f9e4', // pt-BR - Windows XP - Firefox 3.6.9 
+'c05de59308804d2ba9d29507e5001c36', // pt-BR - Windows XP - Firefox 4.0 
 '46b93b8302b137030dd2aaa25a3267c6', // pt-BR - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '0d199d5401054a44beb1414b72bd774a', // pt-BR - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'a4551dea24ccb514f5830acd00944ff8', // pt-BR - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2568,6 +2930,8 @@ $browsers_fingerprints = array(
 '74b49d6ecae0024d5245fd575b74e0d4', // pt-BR - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '252c1bbdfe7fbccfad8ccf55bb1592b1', // pt-BR - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '4e1dc8da67a37adbd977654aa22240c4', // pt-BR - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'b02b0402af0b8b06d664dc5ece1302f0', // pt-BR - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'6f3a6ccc321c4778b764f62e5d39621e', // pt-BR - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '763ca6524042f55f785f4c5ea6fb3376', // pt-BR - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '0b55beb74fa553d417ceece1ab7dd1a5', // pt-BR - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '3616901191cbcdf155c856de718e3edf', // pt-BR - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2580,6 +2944,8 @@ $browsers_fingerprints = array(
 'db13459ba9e12578f1c90d968bd9e6b3', // pt-BR - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'd46ba1662dbcb63c927ee37293d969d9', // pt-BR - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '07a26dff8d679129384e46232af5636c', // pt-BR - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'0e1a75cdd444e14bcc221977e70f17e3', // pt-BR - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'435b67d4b493b6e33388edd73ae1fa1e', // pt-BR - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'ccfd98af971c416de21cfe5200f4812e', // pt-BR - Windows Vista - Firefox 3.0.19 
 '529badddb2e25782d1327ae11fce5745', // pt-BR - Windows Vista - Firefox 3.5.7 
 '796cb70075457924b17f77f78eda8913', // pt-BR - Windows Vista - Firefox 3.5.9 
@@ -2592,6 +2958,8 @@ $browsers_fingerprints = array(
 '8ca8c52b0bdc19c2901b7c2d2eca6457', // pt-BR - Windows Vista - Firefox 3.6.6 
 '13947fff28b9742d347e98d699d36931', // pt-BR - Windows Vista - Firefox 3.6.7 
 '4090e2a2de57dc219cc21b0e0a499d1c', // pt-BR - Windows Vista - Firefox 3.6.8 
+'d48232cc00efbf3e9ed4c6321329cec5', // pt-BR - Windows Vista - Firefox 3.6.9 
+'d90b990e1ac6c2f112b4dc3bba3e6c09', // pt-BR - Windows Vista - Firefox 4.0 
 '81e57a5b26cb48555e3ed16cb4675e37', // pt-BR - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '5dc65fa10afe5d32a8c802c6523fccf5', // pt-BR - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'db449510ed67b40454997975ad58701c', // pt-BR - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2604,6 +2972,8 @@ $browsers_fingerprints = array(
 'e54921d8d107eaacf0004d1929397d85', // pt-BR - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '12ad49ef15a75b352610bea1175a2b21', // pt-BR - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'b92b187641737f34f56e398c8e431cce', // pt-BR - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'67837472257c46e7ea9e17b131a6b2f8', // pt-BR - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'ab441241e070f5cf76a655d3b917a0c3', // pt-BR - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'ce335d847e1fd6ca256bfdcbaf16b658', // pt-BR - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '5ca065929f71540c4ff27f488bed0235', // pt-BR - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '80d5870cad122aa73e8c4aebcddec5cd', // pt-BR - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2616,6 +2986,8 @@ $browsers_fingerprints = array(
 '8891794408ad223eadb9a2a8c07862ef', // pt-BR - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '3017cadac7db168eb96b7d8776179599', // pt-BR - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'c847aa903a7d478f408647d2124cb92e', // pt-BR - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'7374e7f2038da4b79f122db38af1c62b', // pt-BR - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'2c7601482a02f5942da5baf51037684d', // pt-BR - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'b98a87ba1c8ba3671cd9e1ad8d35d757', // pt-BR - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '94779356db9077d312762f662b113dfe', // pt-BR - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '782f27385afe2340077100f26b60efe8', // pt-BR - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -2628,6 +3000,8 @@ $browsers_fingerprints = array(
 '9baf8fa3a1100d8b2d04057e3a93ea73', // pt-BR - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'c3b4fbe5a15fc53df1b4e1105722a161', // pt-BR - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '43a2aa5cdae0eb23911a249e80c3d9a2', // pt-BR - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'be7747a7abdb1eff8a4283251d0abd82', // pt-BR - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'94f2b216ae9e9e759dc8f4ffc20bdc72', // pt-BR - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'c83d89f1218d67570cd4eab736831069', // pt-BR - Windows 7 - Firefox 3.0.19 
 '73e46f69155f9bb12b1b5068591b9625', // pt-BR - Windows 7 - Firefox 3.5.7 
 'd212e150727fe8b526bab8e5f0ff1b0d', // pt-BR - Windows 7 - Firefox 3.5.9 
@@ -2640,6 +3014,8 @@ $browsers_fingerprints = array(
 '13b1fcf8a3b77664e30d323d1030a4c4', // pt-BR - Windows 7 - Firefox 3.6.6 
 'ccafed8d1c69ba2906692f1e35ec7e83', // pt-BR - Windows 7 - Firefox 3.6.7 
 'c40d3dd930aafa785b40669f218021da', // pt-BR - Windows 7 - Firefox 3.6.8 
+'74bb745e25db21fdbb8eec5a18365903', // pt-BR - Windows 7 - Firefox 3.6.9 
+'d4e72f35072109fa4a0ccf9f50ac12d2', // pt-BR - Windows 7 - Firefox 4.0 
 'd0f76014a487fd6bfb8949e098b95684', // pt-BR - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '79c3749bfe189b4d95142f24cbe82f7e', // pt-BR - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '01f377cc4b26175067765cd712bc78e1', // pt-BR - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2652,6 +3028,8 @@ $browsers_fingerprints = array(
 '02846fec253fb5db705a0888feddf4b3', // pt-BR - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '82cc6a8d76f7aca6add68ed94c2a3b49', // pt-BR - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '8aa85e25308a7340880059871c205503', // pt-BR - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'789cf20badd17504b00e4a302a75fac6', // pt-BR - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'a2bf5470ffa98bf0cc06f5d68d3d7e23', // pt-BR - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '93f772b5a79e918dbfb1c38bdf91b417', // pt-BR - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'ca31c7dcf07034cee91461f35aadf0fe', // pt-BR - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '201ca625d031bb67e6b326cffc0a49c5', // pt-BR - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2664,6 +3042,8 @@ $browsers_fingerprints = array(
 '6639d875ac763b3273ea9966cc1ce151', // pt-BR - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'cbe1b5b818f863bca45c2dc9aafeed85', // pt-BR - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '37adea1d4d22c49be90fff095c1ada4e', // pt-BR - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'b4046c56061d0e2f6501d0a519d2cb72', // pt-BR - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'d2c95cd1e008cb99ae5ac45f860369ae', // pt-BR - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '3ee837fe4ad010cadc3cb3ec0103b94d', // pt-BR - MacOS X 10.4 - Firefox 3.0.19 
 '5621ef3b6cb81a814ad4b00de1c4933f', // pt-BR - MacOS X 10.4 - Firefox 3.5.7 
 '9bbc1bb2d67fbbf1b60b787594e24dd4', // pt-BR - MacOS X 10.4 - Firefox 3.5.9 
@@ -2676,6 +3056,8 @@ $browsers_fingerprints = array(
 'c4f46a26b56294b41cc1b18ad597c31d', // pt-BR - MacOS X 10.4 - Firefox 3.6.6 
 '9a7cb90efbcc87ce3825f0b81a9773da', // pt-BR - MacOS X 10.4 - Firefox 3.6.7 
 '382e5618426760e2387a89722f5281d8', // pt-BR - MacOS X 10.4 - Firefox 3.6.8 
+'8202a420ba0e145125baeb401cc1fdd0', // pt-BR - MacOS X 10.4 - Firefox 3.6.9 
+'3b10fa0b7f7a47ba61b2a880915d3fc3', // pt-BR - MacOS X 10.4 - Firefox 4.0 
 'dcfde62ab4c5d61549c796eb14879b7c', // pt-BR - MacOS X 10.5 - Firefox 3.0.19 
 '2481646fbde66b157f11949db3841190', // pt-BR - MacOS X 10.5 - Firefox 3.5.7 
 'f4ecc666e8648094eca7c32a529bc244', // pt-BR - MacOS X 10.5 - Firefox 3.5.9 
@@ -2688,6 +3070,8 @@ $browsers_fingerprints = array(
 'b8c6579c4b4fb9a111e7e16b9fd7c2c5', // pt-BR - MacOS X 10.5 - Firefox 3.6.6 
 '37966d91393044eb40973098526a022c', // pt-BR - MacOS X 10.5 - Firefox 3.6.7 
 'ad193397742b1156106ec1d50f873736', // pt-BR - MacOS X 10.5 - Firefox 3.6.8 
+'124e700eef0cb0a5cb6ce756877c14f1', // pt-BR - MacOS X 10.5 - Firefox 3.6.9 
+'1240112703c10c17be43fda6e1143b59', // pt-BR - MacOS X 10.5 - Firefox 4.0 
 'c2756ce35766b3cda1b83171b6aff60c', // pt-BR - MacOS X 10.4 - Firefox 3.0.19 
 '5b1e8bd16bcb3b02114486db13d2aea5', // pt-BR - MacOS X 10.4 - Firefox 3.5.7 
 '937c3108cd5b9f1606e2b47bc72ea694', // pt-BR - MacOS X 10.4 - Firefox 3.5.9 
@@ -2700,6 +3084,8 @@ $browsers_fingerprints = array(
 '06ed1c6e7364bdc415bc7be745a1aba5', // pt-BR - MacOS X 10.4 - Firefox 3.6.6 
 '852f89c818bb5cd34daafffe82f58f96', // pt-BR - MacOS X 10.4 - Firefox 3.6.7 
 'b32e9fee3620c43fa7087bd17fe54d69', // pt-BR - MacOS X 10.4 - Firefox 3.6.8 
+'5f3e1c775c2f1bafb2d1c3018b764cb8', // pt-BR - MacOS X 10.4 - Firefox 3.6.9 
+'a03baeb1c9e857b2aed99096a6d96f3d', // pt-BR - MacOS X 10.4 - Firefox 4.0 
 '466225fbd4d19afc637ac239442101d4', // pt-BR - MacOS X 10.5 - Firefox 3.0.19 
 '5ff563d5e0e496d1050dd57b56e376b4', // pt-BR - MacOS X 10.5 - Firefox 3.5.7 
 'bbb07d7d37919a195561e9021197b969', // pt-BR - MacOS X 10.5 - Firefox 3.5.9 
@@ -2712,6 +3098,8 @@ $browsers_fingerprints = array(
 'fbaf24d983bc2dd639b6f5379f240dea', // pt-BR - MacOS X 10.5 - Firefox 3.6.6 
 '6d9674446ac5027779eae1f51c9d6e9f', // pt-BR - MacOS X 10.5 - Firefox 3.6.7 
 '2f27749ee970183b2d1e92f9f5707470', // pt-BR - MacOS X 10.5 - Firefox 3.6.8 
+'ad1d3ec604b59c757b4873394e7cdf13', // pt-BR - MacOS X 10.5 - Firefox 3.6.9 
+'27048ccfdf27667b503c7651245a0636', // pt-BR - MacOS X 10.5 - Firefox 4.0 
 '17c971f1aab3524624971e9210eaf3c5', // pt-BR - MacOS X 10.6 - Firefox 3.0.19 
 '20f5c9b1e2614e7bbbd4b818c10652e9', // pt-BR - MacOS X 10.6 - Firefox 3.5.7 
 'de199fa7c0a25929567001dacb0d7726', // pt-BR - MacOS X 10.6 - Firefox 3.5.9 
@@ -2724,6 +3112,8 @@ $browsers_fingerprints = array(
 '40d889ff1134bd6b561deb5fd392615c', // pt-BR - MacOS X 10.6 - Firefox 3.6.6 
 '5e79b8dca6a0fe36ae9aa28cd1fd4bb5', // pt-BR - MacOS X 10.6 - Firefox 3.6.7 
 '22443b1719ef0da0087bb1ed50e6e173', // pt-BR - MacOS X 10.6 - Firefox 3.6.8 
+'da796f0ad6a1d91fd384e07252ab828f', // pt-BR - MacOS X 10.6 - Firefox 3.6.9 
+'6f5690b0aec5cc0dcc23a5747c6c266a', // pt-BR - MacOS X 10.6 - Firefox 4.0 
 '2189161ed9c15363eb82f42cf42768c8', // pt-BR - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '39f3cdc75ec845ac9163d7339a5e656e', // pt-BR - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'd7a8dc9b0037af2dcd01b4c5c0b28b3c', // pt-BR - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -2768,6 +3158,8 @@ $browsers_fingerprints = array(
 'dfaadf68d393f1ba0e4a98a53171197b', // pt-BR - Windows XP - Firefox 3.6.6 
 '69935560c1b8dfbdf6c58378d8084ce7', // pt-BR - Windows XP - Firefox 3.6.7 
 '7dee3040e17506eae64309e4262c4a74', // pt-BR - Windows XP - Firefox 3.6.8 
+'2370d900dc2aaa5a90f5d5218edd398d', // pt-BR - Windows XP - Firefox 3.6.9 
+'9a735d01bf01fb225b6a1b2214944472', // pt-BR - Windows XP - Firefox 4.0 
 '72459dedfb22db4479d4e21718e303a1', // pt-BR - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'e9c394e344160bfcd79d899e3c5f32d8', // pt-BR - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '7004d7e6a7febe6a27764f06ce484dcb', // pt-BR - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2780,6 +3172,8 @@ $browsers_fingerprints = array(
 'b73ae8e6851a19a6bef48c6f2f3e8e32', // pt-BR - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '3b33f59779bb42438813a902ba4907a8', // pt-BR - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'aa35bcf34de32957d0d51d9b4fc51930', // pt-BR - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'95de2519f074156e6cbe66131d5f1e47', // pt-BR - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'2e3ffb92879ec09e6d22f60881651b51', // pt-BR - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '7531a44fe8bc441f8d3a4e18abdfd1bb', // pt-BR - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'c39894e144fc2e3ac6ad2cf056d35d95', // pt-BR - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'af0dd745b475a7376d18f9e15de329e5', // pt-BR - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2792,6 +3186,8 @@ $browsers_fingerprints = array(
 '932a900d1cb465d265b9e1492aa5365e', // pt-BR - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '3765b4e3d490d81a5afb98c3e6970873', // pt-BR - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'f0b926c1f9c4f0d91575f1f091190a14', // pt-BR - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'b8618d9b805a58af46ca5e0e4eb3f5b2', // pt-BR - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'2648d63f3fcfe354d8feadb37231b03d', // pt-BR - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '751eb99f090d060648158072f763eae5', // pt-BR - Windows Vista - Firefox 3.0.19 
 'f218b0967b929682676d5439f323a4cb', // pt-BR - Windows Vista - Firefox 3.5.7 
 '9459bc41d2523952b80141e69b89fbce', // pt-BR - Windows Vista - Firefox 3.5.9 
@@ -2804,6 +3200,8 @@ $browsers_fingerprints = array(
 '77c86928e65a2cb1ecc90c9846de5fbb', // pt-BR - Windows Vista - Firefox 3.6.6 
 '3521f64e16b15c2ec0f9bdf515f71dbf', // pt-BR - Windows Vista - Firefox 3.6.7 
 '27e08d4d2e93c64c2af05e97be6d6386', // pt-BR - Windows Vista - Firefox 3.6.8 
+'1e09e4d8afaecfc364471b8b9b441d82', // pt-BR - Windows Vista - Firefox 3.6.9 
+'2bf3ed879e17b49dc11f10ffcfe17393', // pt-BR - Windows Vista - Firefox 4.0 
 '0580e3ba6ed56f9967d3adedeb063ee1', // pt-BR - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '37a1540ebd8a381e0e474e85034d926d', // pt-BR - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'd08bb96d84bd1469f843ef58b50949f4', // pt-BR - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2816,6 +3214,8 @@ $browsers_fingerprints = array(
 '0fbe4d24ecd54e960b28ddd20b5b54b4', // pt-BR - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'c85c7a1a106b5065e938fd371534f6d7', // pt-BR - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '82aaf099e9bf0453d231c1aa2fe14d61', // pt-BR - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'e4924fc36d3d76891d2e8586afbc872b', // pt-BR - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'47237651392dc5689fd88a6f77b518b3', // pt-BR - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'bb7bf3908820d7270515be0bc4041529', // pt-BR - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '1ede188796b0311e0703cb21097590ab', // pt-BR - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'a66da4defb3ad52254c25d37b1f66946', // pt-BR - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2828,6 +3228,8 @@ $browsers_fingerprints = array(
 '884b8e0f79cdb845c0c54b659ca57610', // pt-BR - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '3978ff6bb32048fd04a01d5f13cd3ba4', // pt-BR - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'b1c40517a9404dbed998611e503226ca', // pt-BR - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'a1ec1e2348237507eee0f18695abac94', // pt-BR - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'da698149c4a54a2a1728e5ec9200a05c', // pt-BR - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '33e843af9ebd0d91f930995fe0761a23', // pt-BR - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'a0b24513fba493587653481304422cf9', // pt-BR - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '7cc97fb504414a7f14fe509bfc552218', // pt-BR - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -2840,6 +3242,8 @@ $browsers_fingerprints = array(
 'b4d1446ca0ca06b28b88733d6a6af3a7', // pt-BR - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '719817c6767f3a09d3edd23f97e96820', // pt-BR - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '3e7be7007a031503b13bdc2b651f44f5', // pt-BR - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'1aa1ac7274e70d8b0844e8c2c3056829', // pt-BR - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'9ab3d8345403ca2e96c04804e037e2e5', // pt-BR - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '893a92ae11ec7d8b53953cfc769a47a3', // pt-BR - Windows 7 - Firefox 3.0.19 
 'c717a82ccb92e27abca13bf2877edf3f', // pt-BR - Windows 7 - Firefox 3.5.7 
 'ac0c7625f81b23da92d6e611d044c7d9', // pt-BR - Windows 7 - Firefox 3.5.9 
@@ -2852,6 +3256,8 @@ $browsers_fingerprints = array(
 'c7b7c9c2971544f8fa545b4f86a10d1d', // pt-BR - Windows 7 - Firefox 3.6.6 
 '50573e841c0c9d7ac31e6d460367ddab', // pt-BR - Windows 7 - Firefox 3.6.7 
 '85b8000a316ab4cea83fb36acc0b6a36', // pt-BR - Windows 7 - Firefox 3.6.8 
+'b0d804945c89690eb9a6fb030bc85d47', // pt-BR - Windows 7 - Firefox 3.6.9 
+'4db936a6f5ff09bb2b1bb696ee092692', // pt-BR - Windows 7 - Firefox 4.0 
 '3b62fcf021fdcf1c0ea7a3d7ad80b683', // pt-BR - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '5cd990f05969ce3078e9ddfdce51416b', // pt-BR - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'c9cbd9cefcd5c4b23317adfd033a440d', // pt-BR - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2864,6 +3270,8 @@ $browsers_fingerprints = array(
 'da248075b4c94c9b55c8163b3dbe0eee', // pt-BR - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '0d165ffb0a2f3f4b7aca043f0ebca6d0', // pt-BR - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'bb2d15b2aec71e4951b52e2e28cb1566', // pt-BR - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'1404689223ed1a13b4357938d17005f6', // pt-BR - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'9da4307fddcc5dca16ac2e3f298be696', // pt-BR - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'd850b56e5581342758a42cf4dd796b6c', // pt-BR - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'e9ae503e07ab6785b18b3bebf75eff96', // pt-BR - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '479d1ff772606fc8b719fe2416196c7c', // pt-BR - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -2876,6 +3284,8 @@ $browsers_fingerprints = array(
 '91348a246af042fb2843df47cf901dc1', // pt-BR - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '64a890c15be2e967b38c9aff53b3ee4e', // pt-BR - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'c187ead8a8384af94e18f4d6d10d47e1', // pt-BR - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'f9d709c0691d895eab737e62aad14402', // pt-BR - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'76e69a3a72eba1a161387bdc12f2aa25', // pt-BR - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'c39d462586320fc6a2534f36a538c3a6', // pt-BR - MacOS X 10.4 - Firefox 3.0.19 
 '1bf946d29185edf9a519d3b6e1fa1451', // pt-BR - MacOS X 10.4 - Firefox 3.5.7 
 '3008036dd5aa78ec3645c21d266097ee', // pt-BR - MacOS X 10.4 - Firefox 3.5.9 
@@ -2888,6 +3298,8 @@ $browsers_fingerprints = array(
 'ff2cafd749d50bdb583d0085f7871569', // pt-BR - MacOS X 10.4 - Firefox 3.6.6 
 '2067140456a20102fe15d8c8ed128b12', // pt-BR - MacOS X 10.4 - Firefox 3.6.7 
 'e75a1f2d3aa7e53ceca1644663b911d3', // pt-BR - MacOS X 10.4 - Firefox 3.6.8 
+'374061d1d287bdbfbece77f29bbd98fd', // pt-BR - MacOS X 10.4 - Firefox 3.6.9 
+'a3a7c212a0b03d935f233d400ee77763', // pt-BR - MacOS X 10.4 - Firefox 4.0 
 '963c5c8e21d7874be5ed33deb82158bb', // pt-BR - MacOS X 10.5 - Firefox 3.0.19 
 '9710d0678d160c11052dee979ade1737', // pt-BR - MacOS X 10.5 - Firefox 3.5.7 
 '1d461d0c8ead484cbd6a79986320011b', // pt-BR - MacOS X 10.5 - Firefox 3.5.9 
@@ -2900,6 +3312,8 @@ $browsers_fingerprints = array(
 '2c840f3c3a31456a862ad56268e9417f', // pt-BR - MacOS X 10.5 - Firefox 3.6.6 
 '37f2a5d3e84a596b33cc659b84acc00d', // pt-BR - MacOS X 10.5 - Firefox 3.6.7 
 '7da2968ad08f316da68a973176e36de8', // pt-BR - MacOS X 10.5 - Firefox 3.6.8 
+'f3855570a34bbbd6de62b73d59d94755', // pt-BR - MacOS X 10.5 - Firefox 3.6.9 
+'1bc6270e433200e985c84c91e5999c40', // pt-BR - MacOS X 10.5 - Firefox 4.0 
 '878c6226428e80d5bd35fe4016dd433a', // pt-BR - MacOS X 10.4 - Firefox 3.0.19 
 '4e258521443239fcb7b6173f8545b449', // pt-BR - MacOS X 10.4 - Firefox 3.5.7 
 '32425e25fa3e171d134155b99f003b31', // pt-BR - MacOS X 10.4 - Firefox 3.5.9 
@@ -2912,6 +3326,8 @@ $browsers_fingerprints = array(
 '1db3ca11b58550c5ef73f9486a35e645', // pt-BR - MacOS X 10.4 - Firefox 3.6.6 
 'b4468bad03901c3c733e9d131628c932', // pt-BR - MacOS X 10.4 - Firefox 3.6.7 
 '43cb64416a455dd1f4c22b3e1a4392eb', // pt-BR - MacOS X 10.4 - Firefox 3.6.8 
+'a46ebd07ae7a06d8768c1b2b3a568553', // pt-BR - MacOS X 10.4 - Firefox 3.6.9 
+'6c8153d85a6bbb3a45e1cfed25b5fa9e', // pt-BR - MacOS X 10.4 - Firefox 4.0 
 '470b66088856cff05dc48c1d1a2d1d02', // pt-BR - MacOS X 10.5 - Firefox 3.0.19 
 'c0626fec5fe925339238e7c5afce1403', // pt-BR - MacOS X 10.5 - Firefox 3.5.7 
 '7e9cba91b5f3fc1731cf234ff4685647', // pt-BR - MacOS X 10.5 - Firefox 3.5.9 
@@ -2924,6 +3340,8 @@ $browsers_fingerprints = array(
 '7fdb34ccf75378527351bb38baabdf76', // pt-BR - MacOS X 10.5 - Firefox 3.6.6 
 'e9888d0478ff8af3519ed5ad61bbba79', // pt-BR - MacOS X 10.5 - Firefox 3.6.7 
 '6cda3806ac257bd3473fca511b5045a9', // pt-BR - MacOS X 10.5 - Firefox 3.6.8 
+'603a4b4cebf6137b85f25e7d71ad0496', // pt-BR - MacOS X 10.5 - Firefox 3.6.9 
+'553880a36b21060422efa4fdc80d03b5', // pt-BR - MacOS X 10.5 - Firefox 4.0 
 'f38a849fdb5b40cbce492bd41d10a810', // pt-BR - MacOS X 10.6 - Firefox 3.0.19 
 '467a24e8f14b1c38a6b2e764d9505353', // pt-BR - MacOS X 10.6 - Firefox 3.5.7 
 'bc4e3063716949765fc98b6a94744e71', // pt-BR - MacOS X 10.6 - Firefox 3.5.9 
@@ -2936,6 +3354,8 @@ $browsers_fingerprints = array(
 '6b0e0f0619c6bcc13a427cfbcc6650c3', // pt-BR - MacOS X 10.6 - Firefox 3.6.6 
 'cc101af20edf81b724883b0bb814985e', // pt-BR - MacOS X 10.6 - Firefox 3.6.7 
 '29632d634c277bdcb68e43bc70d809df', // pt-BR - MacOS X 10.6 - Firefox 3.6.8 
+'e4c4605b1d8ce0c8ea93fd05323b4b27', // pt-BR - MacOS X 10.6 - Firefox 3.6.9 
+'f8816f2fbdece2f74e2b4f57188128c4', // pt-BR - MacOS X 10.6 - Firefox 4.0 
 'd62387e70cec65a12944c9eebdcd1a26', // pt-BR - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '2710eee4785c9d9444069b703f5ff2b3', // pt-BR - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '598b5fc6cea3940b80ef52ef30d2e604', // pt-BR - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -2980,6 +3400,8 @@ $browsers_fingerprints = array(
 'cd0177815812f22d1c45cb9086acdabc', // sv-SE - Windows XP - Firefox 3.6.6 
 '7db3fee50a502063c5482c59ae2c6c12', // sv-SE - Windows XP - Firefox 3.6.7 
 '48592fc8e7d6a0c56da18336cf3f8150', // sv-SE - Windows XP - Firefox 3.6.8 
+'2d66b1cd5fa3e275224850c96458a9d9', // sv-SE - Windows XP - Firefox 3.6.9 
+'49168cae27f1596d2604f155ef7faed3', // sv-SE - Windows XP - Firefox 4.0 
 '80fe9b23ddb706e679e9cc1256676d6a', // sv-SE - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'bb63111d395308128ca8433950c0512b', // sv-SE - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '65d24c3dd81323690bdc608d1c45cbc6', // sv-SE - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -2992,6 +3414,8 @@ $browsers_fingerprints = array(
 'a2c85c74f531330f739106484a89ca98', // sv-SE - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'fee743dddaf92d937010d9fba38074cf', // sv-SE - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '15437afd8232873c417f2a0ce65d980c', // sv-SE - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'cc2e6b8598acfd52d2a334ce452baebe', // sv-SE - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'eb0439502d8ab5aa7c06a54e4d37d0fb', // sv-SE - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '7cfffeef99ffe95c04a29a7df8179123', // sv-SE - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '925961013eef510a12b59591498a5a90', // sv-SE - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'f0e4447f6c6149aaa8f96ee7a55458ae', // sv-SE - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3004,6 +3428,8 @@ $browsers_fingerprints = array(
 'fbaaf539f2988bcf2dd6b1feeab30ba8', // sv-SE - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'cc95cacac60844f79ee13a83cfc10ba0', // sv-SE - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '4f0cd0532e1a9c36692ce76e6ef93eb0', // sv-SE - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'64843d187b58ea3c86bef94c07ea9472', // sv-SE - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'264f1699bac0ee822f42286c736ecdf8', // sv-SE - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'f5c78d796070eb79463cdea47e7e3cbd', // sv-SE - Windows Vista - Firefox 3.0.19 
 '6f6aabe852805c147c19e5f87710b925', // sv-SE - Windows Vista - Firefox 3.5.7 
 '379a071847db3d9739451f783bf47174', // sv-SE - Windows Vista - Firefox 3.5.9 
@@ -3016,6 +3442,8 @@ $browsers_fingerprints = array(
 'b4350c031622803e3ecfecc13c9286bb', // sv-SE - Windows Vista - Firefox 3.6.6 
 '347ec3804b31ce88265e712cb633a390', // sv-SE - Windows Vista - Firefox 3.6.7 
 '7b6b66add682754362fde9e5c1f9dd25', // sv-SE - Windows Vista - Firefox 3.6.8 
+'5606c0093c0fe12e55913a4ce0dca792', // sv-SE - Windows Vista - Firefox 3.6.9 
+'2bcf87299ecb71af38bd64630ea15f45', // sv-SE - Windows Vista - Firefox 4.0 
 '58b4c40cbd2230275a1b3ee7efccdd41', // sv-SE - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '8eda357972906dcafa7abb4f86085835', // sv-SE - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '89e6925e2afb4de9a4ca1b71debb1c23', // sv-SE - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3028,6 +3456,8 @@ $browsers_fingerprints = array(
 '0673815d7a223a9921e85fb3771414f5', // sv-SE - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '00b56966f277c9fd5b6cfa9f4283f364', // sv-SE - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'b391375a22f1fea4808307896c3cfcbc', // sv-SE - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'fcc3754729bbe2d456bcec786be96b47', // sv-SE - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'9aa04b3326ef25e7a9f7c37938342b93', // sv-SE - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'd5bccde32b43046f9b636199bcb8e921', // sv-SE - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '592e1fe3f290521fbe53c36c430509d8', // sv-SE - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'd867ef6cc4322484107f6b034b44c8b2', // sv-SE - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3040,6 +3470,8 @@ $browsers_fingerprints = array(
 '13649113d4d0c9fca79bbc524659432c', // sv-SE - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '37307d5144e192a5a78cf5814b6bd5ff', // sv-SE - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '9ad88317cbdf421f1a1f85dc8aa66242', // sv-SE - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'b055d41009fe34fff5d00183a572267b', // sv-SE - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'5687cceb724d115d2e2bdc23498c5f36', // sv-SE - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '0439b239ccd9120a3b3816161458eb3b', // sv-SE - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'd8e4856bed1982796676ebc697b91b8e', // sv-SE - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'ce3569384917f22d43e96038bb27d692', // sv-SE - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -3052,6 +3484,8 @@ $browsers_fingerprints = array(
 '5db5c58e07105a02a270665a95099f33', // sv-SE - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'aa6a6000c32941fca452d4a055c1c0a5', // sv-SE - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '09f7cfeb0111fb5a72d2f19e8b82ef10', // sv-SE - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'3cb6467a457396742f690f96264a018a', // sv-SE - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'304d0fd6ef8eb6cb3010281fee007e4a', // sv-SE - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '209321ee29eb6722e08216a221a0549f', // sv-SE - Windows 7 - Firefox 3.0.19 
 '3aa0cce22dbeb94353831b0cbd4bc075', // sv-SE - Windows 7 - Firefox 3.5.7 
 'fd7bad34a5624781806e3b78f33efebd', // sv-SE - Windows 7 - Firefox 3.5.9 
@@ -3064,6 +3498,8 @@ $browsers_fingerprints = array(
 'aea582e5de3107b0d468a5be2df03dcb', // sv-SE - Windows 7 - Firefox 3.6.6 
 'e245f8fe9b712a2301e02372fe17af76', // sv-SE - Windows 7 - Firefox 3.6.7 
 '0b909d0ec211f92a32f0c0434513aecb', // sv-SE - Windows 7 - Firefox 3.6.8 
+'75dae65ba13757e870c24c1ee6973101', // sv-SE - Windows 7 - Firefox 3.6.9 
+'ca9181cf80665596be33b91aafc5b3d0', // sv-SE - Windows 7 - Firefox 4.0 
 'c7e88a802bf2b7508f0739c3e676d07d', // sv-SE - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'f6519f877b9e8ee4d80ee9e64b7d1880', // sv-SE - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '79e101ef5f21efc4e7320a941b01c2d9', // sv-SE - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3076,6 +3512,8 @@ $browsers_fingerprints = array(
 'eeb678f071d612b83a5dd091c6774669', // sv-SE - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '8591cff52b4c2dfd3689e0cb5d92d38e', // sv-SE - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '40f98628c648ab77212caf58d712007d', // sv-SE - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'46a6a40586dd24fa7ad353986a021538', // sv-SE - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'2b7983ad587321db8dc88c8e5b9de261', // sv-SE - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '2676608a9d10b1288120ae1acd26e5ad', // sv-SE - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'c551d4871d35fe9b2336c56edc737320', // sv-SE - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'ffe72818d2062531d3e55b23e1aa891c', // sv-SE - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3088,6 +3526,8 @@ $browsers_fingerprints = array(
 '2f295126c990ebf5ed4df9d371f73fa8', // sv-SE - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'fbe2c9f05f77eb3847751fe4ddfb293a', // sv-SE - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'f7882beaa5152b32a656abc1f2abbf7a', // sv-SE - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'c40d88ad361b1a5364f5ed194b2ad563', // sv-SE - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'0df05dc236144467d82f5fa5ea3f967b', // sv-SE - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'd9205709bfb9fd00536438f0d90fda31', // sv-SE - MacOS X 10.4 - Firefox 3.0.19 
 'bb0bc9403396ef44833efedb08c28dcb', // sv-SE - MacOS X 10.4 - Firefox 3.5.7 
 '25f11b8548676596408fdb76ab341221', // sv-SE - MacOS X 10.4 - Firefox 3.5.9 
@@ -3100,6 +3540,8 @@ $browsers_fingerprints = array(
 '2d72cbda07a57a1f6059ce65a4484154', // sv-SE - MacOS X 10.4 - Firefox 3.6.6 
 'bf31aa56301853f9927ec23843866930', // sv-SE - MacOS X 10.4 - Firefox 3.6.7 
 'ca961461c987c3bced8959596cbe993f', // sv-SE - MacOS X 10.4 - Firefox 3.6.8 
+'9c581727ddd679d9f9a96d2dbbc7dfb2', // sv-SE - MacOS X 10.4 - Firefox 3.6.9 
+'caabe0ad693a9008016d1a5257b10fe0', // sv-SE - MacOS X 10.4 - Firefox 4.0 
 '607b750953f056881c6b0f2887bb89b0', // sv-SE - MacOS X 10.5 - Firefox 3.0.19 
 'ee7c464e1ed7d888dd779220bbef3671', // sv-SE - MacOS X 10.5 - Firefox 3.5.7 
 '5c7614a67572379efe11287ff45a796e', // sv-SE - MacOS X 10.5 - Firefox 3.5.9 
@@ -3112,6 +3554,8 @@ $browsers_fingerprints = array(
 'ec2cce9bca10e5abaffd8d4bf28db5ad', // sv-SE - MacOS X 10.5 - Firefox 3.6.6 
 '1356c5968196fdbe290f577e14314be7', // sv-SE - MacOS X 10.5 - Firefox 3.6.7 
 '41f74b378f54c061c79f9cfa751473d3', // sv-SE - MacOS X 10.5 - Firefox 3.6.8 
+'0e5aa3cb43ccc08be5c3e44e33a13db8', // sv-SE - MacOS X 10.5 - Firefox 3.6.9 
+'e9c341ea0d44723ad339d8ab50558fa4', // sv-SE - MacOS X 10.5 - Firefox 4.0 
 'd1c44d397f4d9e1bf416ad4e343c0f65', // sv-SE - MacOS X 10.4 - Firefox 3.0.19 
 '1379506522a0be72c6bfd8c35d5d1dc2', // sv-SE - MacOS X 10.4 - Firefox 3.5.7 
 '1c84d6a3e6aae3cc533747efb8b98881', // sv-SE - MacOS X 10.4 - Firefox 3.5.9 
@@ -3124,6 +3568,8 @@ $browsers_fingerprints = array(
 '170a3003c2f75dc8e20d432fe3b12724', // sv-SE - MacOS X 10.4 - Firefox 3.6.6 
 '60d75ed6281b516df0884829a608be7f', // sv-SE - MacOS X 10.4 - Firefox 3.6.7 
 '08341126080485737661f165a5bf3893', // sv-SE - MacOS X 10.4 - Firefox 3.6.8 
+'bc3c3ea733a7903394cfa8402adb7875', // sv-SE - MacOS X 10.4 - Firefox 3.6.9 
+'816a868f32e42f5100e867944e199c49', // sv-SE - MacOS X 10.4 - Firefox 4.0 
 'c050c53e703ea1abe9efb6d255e5cf9e', // sv-SE - MacOS X 10.5 - Firefox 3.0.19 
 '0bafb3dc0fb02f18c66d8db4252afce6', // sv-SE - MacOS X 10.5 - Firefox 3.5.7 
 '928845084b0827b0ae3b99f0694cbb7d', // sv-SE - MacOS X 10.5 - Firefox 3.5.9 
@@ -3136,6 +3582,8 @@ $browsers_fingerprints = array(
 'a0a75bdec0073ca663351c37cfa07fe6', // sv-SE - MacOS X 10.5 - Firefox 3.6.6 
 '86b3bf9b7238565db8c55d04c0403417', // sv-SE - MacOS X 10.5 - Firefox 3.6.7 
 '7a40b20c0032127fa808143dd000fb41', // sv-SE - MacOS X 10.5 - Firefox 3.6.8 
+'d2eeb4a970cb413f1ea6cc2cad4b7502', // sv-SE - MacOS X 10.5 - Firefox 3.6.9 
+'344a72a3657e29a2bd7ec8876a2d3b2d', // sv-SE - MacOS X 10.5 - Firefox 4.0 
 '0953592356c4c41168545f9aa4674f64', // sv-SE - MacOS X 10.6 - Firefox 3.0.19 
 'b646bcc688a92c632af80d6ec5214f91', // sv-SE - MacOS X 10.6 - Firefox 3.5.7 
 '09b034572faac0513220d7588b2b10ea', // sv-SE - MacOS X 10.6 - Firefox 3.5.9 
@@ -3148,6 +3596,8 @@ $browsers_fingerprints = array(
 'a0b5b29099d9497c42be0c11ff3df83d', // sv-SE - MacOS X 10.6 - Firefox 3.6.6 
 '6321158a1a7649a725324afa1a70be68', // sv-SE - MacOS X 10.6 - Firefox 3.6.7 
 '408552234382f86b22f4e4090d7a6a43', // sv-SE - MacOS X 10.6 - Firefox 3.6.8 
+'874682b6512a7a6c057c7def5ba69ee4', // sv-SE - MacOS X 10.6 - Firefox 3.6.9 
+'97363c179e2ab89567af2a0797a5cd84', // sv-SE - MacOS X 10.6 - Firefox 4.0 
 '5dac06b8bacfddef1a9ec645c57ed0c9', // sv-SE - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'e560611f91e3599a38f5edde8c23b64e', // sv-SE - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '2fbe812661bb1565af5bbc01389928c0', // sv-SE - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -3192,6 +3642,8 @@ $browsers_fingerprints = array(
 '518ab258d781e85dddff8157735b0bd5', // es-ES - Windows XP - Firefox 3.6.6 
 'd8aca147fd32c146e564273f1ea26804', // es-ES - Windows XP - Firefox 3.6.7 
 '51707b5888dbbdf210884cdfb9e58201', // es-ES - Windows XP - Firefox 3.6.8 
+'9c44ebe13f93e66597800e8e6cf62a99', // es-ES - Windows XP - Firefox 3.6.9 
+'7474ba3fefa3784378cb95d0fd3f242b', // es-ES - Windows XP - Firefox 4.0 
 'afe1c17fabde8527156bc490466561e2', // es-ES - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '0582dfb00e2a8a7e96269f669999a654', // es-ES - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '16587a266dfa31f6a1f35956ad28bea5', // es-ES - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3204,6 +3656,8 @@ $browsers_fingerprints = array(
 'fe2a285d8f0686b0909923b2cd12a190', // es-ES - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '36ddd5f3c09f2d0939b61a0f4d53429c', // es-ES - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '5f6133e42cf0f4980c9e65e38a069e6b', // es-ES - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'66a2e2c513cd62bbd34cff069ffafb62', // es-ES - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'211e0f261a8859e72cf9e7bc3b04bd5c', // es-ES - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'ec72ba051a7a0189fdc3efa45c61b279', // es-ES - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '1b250290c73af9775c17eab8085b3801', // es-ES - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '8a1b86f1ec173a44b18f8df316215674', // es-ES - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3216,6 +3670,8 @@ $browsers_fingerprints = array(
 '2f9d3d61a75364f67838bc2e97169044', // es-ES - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '29310a4051db7869388f09ea2a6aae25', // es-ES - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '77364affda34185a0e589e71a8ace5b4', // es-ES - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'77a440e4837fb4009bb5d73e13d5249a', // es-ES - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'12588af8522e8ec5161d427f48fe9407', // es-ES - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'ca1293c53101ef0ae32a2f20bd98e566', // es-ES - Windows Vista - Firefox 3.0.19 
 '9c9454e9e77b583e338b229a2585329f', // es-ES - Windows Vista - Firefox 3.5.7 
 '267dda15d7f61fefb111f37cc5d8e9db', // es-ES - Windows Vista - Firefox 3.5.9 
@@ -3228,6 +3684,8 @@ $browsers_fingerprints = array(
 'ce7abfefe22b395bd1f12e567dba4266', // es-ES - Windows Vista - Firefox 3.6.6 
 '23c3cddfa71bf20837b05a4310450ea3', // es-ES - Windows Vista - Firefox 3.6.7 
 'bb4a005897bc966f62765850ece7f7ac', // es-ES - Windows Vista - Firefox 3.6.8 
+'71b10db54df43d407163f1aa67775968', // es-ES - Windows Vista - Firefox 3.6.9 
+'6ff6e0904d1921a82d090ad2d36e2675', // es-ES - Windows Vista - Firefox 4.0 
 'a558e0b0598e5917c45ffa16cb6be06c', // es-ES - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'c6b7bbc7ef5122a36d93316e22d3975a', // es-ES - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '8ce1f28030464b8665499ba1d8626988', // es-ES - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3240,6 +3698,8 @@ $browsers_fingerprints = array(
 '7c29355c6219f244630a31029f8a7edd', // es-ES - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'de08a54a404e651161ff243e88ba84b6', // es-ES - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '276007fd681fbfc3b03ccefd09b861cc', // es-ES - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'9d72554f7ce6c5eb63a1c439527f654d', // es-ES - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'986a65f31bd76fef7b8ed5bde0888d53', // es-ES - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '856a3f931f2837f89eea1747429494af', // es-ES - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'e7fad5e2550004b61070f50cab3ff34c', // es-ES - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '69a5e239878728c8955208fa5e30c88c', // es-ES - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3252,6 +3712,8 @@ $browsers_fingerprints = array(
 '46dad45105c6373cbd3f012c88ecd304', // es-ES - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '9309298afd34e2003c46ce780b798ae1', // es-ES - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '3fc7058fd5e12eca1be92b53a748560e', // es-ES - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'ace6bc592c961a875c72ec376018d3e0', // es-ES - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'8ad252449b2dd942070d438d6f52d78b', // es-ES - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '1d2011b3a88a4cd67a24ec9eac4d2db1', // es-ES - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '4c84f8f0c68724bc144b2d62b59e7b3f', // es-ES - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'b2328977edafa612730746e9ccf8246a', // es-ES - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -3264,6 +3726,8 @@ $browsers_fingerprints = array(
 'bbdef1a114b89cba1de8474b05feee54', // es-ES - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '1f53ca6d5a78a7123c648ec0568a5920', // es-ES - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '51c6f518ec0a87d6be2c0b1a21eccb00', // es-ES - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'d5bffbdee20f76084530323179ef1095', // es-ES - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'2e93f3d5df289d291edd7a039aa93272', // es-ES - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '19f8d64b86910da63d1562beff7260ca', // es-ES - Windows 7 - Firefox 3.0.19 
 'e04b677735f6880afcf5c4bacc1419e5', // es-ES - Windows 7 - Firefox 3.5.7 
 'd2ced3c975c3a17b2437c688ace64fa8', // es-ES - Windows 7 - Firefox 3.5.9 
@@ -3276,6 +3740,8 @@ $browsers_fingerprints = array(
 '1ca9bb019d40a3ac6fa2a58769414fbe', // es-ES - Windows 7 - Firefox 3.6.6 
 '5db2ef6088255506c4efa2e064ea8c1e', // es-ES - Windows 7 - Firefox 3.6.7 
 '97b1cf03b46b52864137c4a2dff4f464', // es-ES - Windows 7 - Firefox 3.6.8 
+'b017534e086068120b5481442862dd97', // es-ES - Windows 7 - Firefox 3.6.9 
+'505aabe2df090ec156d6b0d2000869c1', // es-ES - Windows 7 - Firefox 4.0 
 '532e7ee215a0c1c5f0f3de7a82db4555', // es-ES - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'c71dcba6dd204d7c519d7bc30db3013e', // es-ES - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '1e0c60d9ab2119dadb01190f5767c17d', // es-ES - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3288,6 +3754,8 @@ $browsers_fingerprints = array(
 '02811489bd4d9987f4159f6370acaf9b', // es-ES - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '7754fc43fc4aae78658329a9e5b3e4f4', // es-ES - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'c692b37eed80bb674c5530db0b3b9d23', // es-ES - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'6928959e9906724d3440909ec8b7db4a', // es-ES - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'a112ca34c4e2b791843de1e8f8a04dc9', // es-ES - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '2688c791438d7009979038f76a1c2b07', // es-ES - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '4e9e046d41893837636564e1e6e3cdef', // es-ES - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'c83ad5211d5addb8423cebd5cf2abe4c', // es-ES - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3300,6 +3768,8 @@ $browsers_fingerprints = array(
 '78c141214d7ca1342b838ec101b5d623', // es-ES - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '85397bdaabae3753497f6986eba3cb8f', // es-ES - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'dccd951cf81850f50cba6a6ccc89ac3c', // es-ES - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'fd42f280c8aa194f43699587ebeb079b', // es-ES - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'ce0a8fdfa325272dc0f6c34edcbe8cd1', // es-ES - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '530fcba6ce5317528bfa84120760b53d', // es-ES - MacOS X 10.4 - Firefox 3.0.19 
 '161b386aaf6251915777736c62f1d87d', // es-ES - MacOS X 10.4 - Firefox 3.5.7 
 '2bfceca867da3897a765c702c57df985', // es-ES - MacOS X 10.4 - Firefox 3.5.9 
@@ -3312,6 +3782,8 @@ $browsers_fingerprints = array(
 '271bda11daa932039dce2054b3e0c466', // es-ES - MacOS X 10.4 - Firefox 3.6.6 
 '7c752a5a03c16c6b26adf261d9ff7449', // es-ES - MacOS X 10.4 - Firefox 3.6.7 
 '1f95dab68b7510c90ef72afd3df434e7', // es-ES - MacOS X 10.4 - Firefox 3.6.8 
+'a835afc2b94015b16a23afb12ffbfb1d', // es-ES - MacOS X 10.4 - Firefox 3.6.9 
+'48ece7b14344f45a48d06d68d25d5f53', // es-ES - MacOS X 10.4 - Firefox 4.0 
 'c5787db93c45fb1dd4de3029f662eec0', // es-ES - MacOS X 10.5 - Firefox 3.0.19 
 '249ac5ccb8191d78e3e0a1562d0f1a4c', // es-ES - MacOS X 10.5 - Firefox 3.5.7 
 'f99bec2b7c327cff85d5b5062418b640', // es-ES - MacOS X 10.5 - Firefox 3.5.9 
@@ -3324,6 +3796,8 @@ $browsers_fingerprints = array(
 '0e2f758ebd64fdab92da7ce02c4c8632', // es-ES - MacOS X 10.5 - Firefox 3.6.6 
 'b655ef063c2d3eebeb47a1ece9bc7bda', // es-ES - MacOS X 10.5 - Firefox 3.6.7 
 '871de160d9e0f8c176eba814fa172097', // es-ES - MacOS X 10.5 - Firefox 3.6.8 
+'ceb5f1cf15377be0b9fef9db3d05656a', // es-ES - MacOS X 10.5 - Firefox 3.6.9 
+'2c4be1cadc571b064f4d60dbe9c58648', // es-ES - MacOS X 10.5 - Firefox 4.0 
 '82be84430512762383e131986d66015f', // es-ES - MacOS X 10.4 - Firefox 3.0.19 
 'de0a9bc9043021d4f8f17fa7342db738', // es-ES - MacOS X 10.4 - Firefox 3.5.7 
 'd7260876d10d45633dbf15502f98bbbf', // es-ES - MacOS X 10.4 - Firefox 3.5.9 
@@ -3336,6 +3810,8 @@ $browsers_fingerprints = array(
 '8afd9d2208878c9b742b950215812042', // es-ES - MacOS X 10.4 - Firefox 3.6.6 
 'f56b24d3f23fda9bf5ebf5454853f5d2', // es-ES - MacOS X 10.4 - Firefox 3.6.7 
 'de053bd29d5d51cf7f612d6a524ebb9a', // es-ES - MacOS X 10.4 - Firefox 3.6.8 
+'46945959948ba8d4991dbb6a22d1be23', // es-ES - MacOS X 10.4 - Firefox 3.6.9 
+'3f6e1149c765e241270a7171634e2ae1', // es-ES - MacOS X 10.4 - Firefox 4.0 
 '11b138009fd1d8b365e177155751b736', // es-ES - MacOS X 10.5 - Firefox 3.0.19 
 'eb9218c9f05f8e0c5d727f077c06a061', // es-ES - MacOS X 10.5 - Firefox 3.5.7 
 'f3fdaef7577e9a576ae2f77bb8ded688', // es-ES - MacOS X 10.5 - Firefox 3.5.9 
@@ -3348,6 +3824,8 @@ $browsers_fingerprints = array(
 'c23ad13b8305282ef911db65883c9dd3', // es-ES - MacOS X 10.5 - Firefox 3.6.6 
 'cb2af8909fa07ad1344177317b8eaf09', // es-ES - MacOS X 10.5 - Firefox 3.6.7 
 '0a2689d92711141c2e821ec7eaa2a859', // es-ES - MacOS X 10.5 - Firefox 3.6.8 
+'3b08f997cee8028f3cdf7c6498d0e88c', // es-ES - MacOS X 10.5 - Firefox 3.6.9 
+'9b4ade730b47c1dac6afeade6d339258', // es-ES - MacOS X 10.5 - Firefox 4.0 
 '478bc6a983246b4da423ded85a756b52', // es-ES - MacOS X 10.6 - Firefox 3.0.19 
 '0639cc0987b59bb89d582d2ecc36d36a', // es-ES - MacOS X 10.6 - Firefox 3.5.7 
 'fa79406b2ea75eae074826e417b171a6', // es-ES - MacOS X 10.6 - Firefox 3.5.9 
@@ -3360,6 +3838,8 @@ $browsers_fingerprints = array(
 '42c4b37c25e0f3525f0614e28d5ed65c', // es-ES - MacOS X 10.6 - Firefox 3.6.6 
 'd153023a467539758fed1195e2ead0f4', // es-ES - MacOS X 10.6 - Firefox 3.6.7 
 '9895b2c7aa627d829725f21721a47233', // es-ES - MacOS X 10.6 - Firefox 3.6.8 
+'2de1183c0b2e4f935e0c9fcb14af4444', // es-ES - MacOS X 10.6 - Firefox 3.6.9 
+'cf17518484f8aee68438aafa37ab5715', // es-ES - MacOS X 10.6 - Firefox 4.0 
 'fa17f8a853a0a83addcdeec5fc0849f6', // es-ES - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'c4891446808a290966a7f8808a304d0b', // es-ES - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '34ca4a8c2c1d780aaef0f204e4b53a2e', // es-ES - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -3404,6 +3884,8 @@ $browsers_fingerprints = array(
 '8c3cd2e544ceff7c5233d3a787e15407', // es-ES - Windows XP - Firefox 3.6.6 
 '2c276eb3a5a7ec3b7a8693cebe7163be', // es-ES - Windows XP - Firefox 3.6.7 
 '204dc6c573de396a25169584e6f2c710', // es-ES - Windows XP - Firefox 3.6.8 
+'18df571572afe2ad96a0a2c86e9f34e2', // es-ES - Windows XP - Firefox 3.6.9 
+'f0ba828a3c24a11e418e3453984d53f0', // es-ES - Windows XP - Firefox 4.0 
 '6c817f528bb31ef94060f1f80fe14eab', // es-ES - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'dd3796ac70a3868e2d74f4c966506b01', // es-ES - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '4112c8aa883914156e56df4e4444dfba', // es-ES - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3416,6 +3898,8 @@ $browsers_fingerprints = array(
 'd1148b657df0a3be01a2ff53dda2b0ff', // es-ES - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '0d6b33076241405ab914c5ff471914b1', // es-ES - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '37d004346df0c32652190aed21491634', // es-ES - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'000baec22a39d061bdcf42bf58d4afe2', // es-ES - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'bce7bdf65201a8114ee3800bf3083640', // es-ES - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '59d421c62c4a71f532bb3573467707df', // es-ES - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'c4584214e99c86d4a434323d7d73b44e', // es-ES - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '130d9f5aea3183e369e93a0714552c5b', // es-ES - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3428,6 +3912,8 @@ $browsers_fingerprints = array(
 '1b1ab621b1168d7bd40081d042f981ee', // es-ES - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '2007d8d41294844c8c9c6e6ca12ceb23', // es-ES - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '163c8d347ab2d084e7c23be7597f1eef', // es-ES - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'319aaeb0e8a103134f01aa2561d5c782', // es-ES - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'6414d8572a67c1d11d5027b7baa88e54', // es-ES - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'b5301492541b5876a3e95526abb5b96a', // es-ES - Windows Vista - Firefox 3.0.19 
 'aa35594403217a2fb720fa68dbd87c31', // es-ES - Windows Vista - Firefox 3.5.7 
 '02d5658aebeca44513ab9d590fa19ef6', // es-ES - Windows Vista - Firefox 3.5.9 
@@ -3440,6 +3926,8 @@ $browsers_fingerprints = array(
 'c11426b53435cbf78b78071040550c49', // es-ES - Windows Vista - Firefox 3.6.6 
 '9997a4794f79492afe94c54f3b05bd87', // es-ES - Windows Vista - Firefox 3.6.7 
 '91c9e3b8bc5adb3d2a72e77c95acd4a5', // es-ES - Windows Vista - Firefox 3.6.8 
+'13d44a97b244db5ec3061045829819ba', // es-ES - Windows Vista - Firefox 3.6.9 
+'27c8c090948d3a4182e4db4a0aaa8b15', // es-ES - Windows Vista - Firefox 4.0 
 'ae55a8e01646471fca4abadf52ab986d', // es-ES - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '711ef40281d1112f4f848339c917d61c', // es-ES - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '61749737b97c5afe4421fa7e8bef7eaa', // es-ES - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3452,6 +3940,8 @@ $browsers_fingerprints = array(
 'ea539cb9ebcb8ba98cde5a00d941352a', // es-ES - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '18636efb811ee01eaa3a0506f368e928', // es-ES - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'c2521383f6c7c0dd23cc3f67f6863e70', // es-ES - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'43ba048fd64c5790496e248c1545fe35', // es-ES - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'0d3d2ff67e8a2b429723c09042c412bf', // es-ES - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '66ea7234fc6fb6901b62757e85448d36', // es-ES - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '932be417db639e6a37640a6e77062dae', // es-ES - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'ec59114e944f228fabff0a615c118092', // es-ES - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3464,6 +3954,8 @@ $browsers_fingerprints = array(
 '21feb4e978fda0cc817a46e3e85e1b8b', // es-ES - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '2ccb566512aae63e439f19fdf7fba0b1', // es-ES - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'aa946ef9651554f8db28a5f30c0b82ac', // es-ES - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'feafb62ac5c4fbcd82ae40f2cc2ac8d2', // es-ES - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'358ba48cf6e0b2b8f6802b28bf69337f', // es-ES - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'a2cce0a11bc8c02a5b450763b8826781', // es-ES - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '90eeab9b4298beadd4c07b070b8b18e8', // es-ES - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'a0ce5c5e6e478047ede8fcd3204ce813', // es-ES - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -3476,6 +3968,8 @@ $browsers_fingerprints = array(
 '997a50faf8b8dacf24ec6591ecb6069b', // es-ES - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '68a78151072949fd94f5e263872bfdfb', // es-ES - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '1421fa0d6070e9beed05bd8b38dcacc6', // es-ES - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'a1104c6a84e18fa38a3e051626a03179', // es-ES - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'8eac8e1670edd4b743b7170ecaa83611', // es-ES - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'b7c20ceefb4b63925aa33d700f08341d', // es-ES - Windows 7 - Firefox 3.0.19 
 '017235d2960b75f418d82db31e3f9305', // es-ES - Windows 7 - Firefox 3.5.7 
 'dfe79173681b7fdb076e6fc91b31b0e9', // es-ES - Windows 7 - Firefox 3.5.9 
@@ -3488,6 +3982,8 @@ $browsers_fingerprints = array(
 '59080426abf6441851db4a0e1e086989', // es-ES - Windows 7 - Firefox 3.6.6 
 '2c3083776a7f1aeb77d2490b4c91c62e', // es-ES - Windows 7 - Firefox 3.6.7 
 'f20ed44a0d575dc6b1d996c91128a25b', // es-ES - Windows 7 - Firefox 3.6.8 
+'fb797bb3f02a5d43a18ef2be74de4c23', // es-ES - Windows 7 - Firefox 3.6.9 
+'4e56b2d14c06c3d6dd6569aef18a9d5e', // es-ES - Windows 7 - Firefox 4.0 
 '0581baa7ff0f2107f4d946f84f54462f', // es-ES - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'b47453f136e5011aff0a1c422ef58cb6', // es-ES - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'e7a0de0bb8a8df5d33f1c48186fdbabb', // es-ES - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3500,6 +3996,8 @@ $browsers_fingerprints = array(
 '6b7b02c1e6a374606d33d3523345d9ea', // es-ES - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'aa191f9fe6fad91fd60e1ff42fcd2778', // es-ES - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '80a72a33cfc675eb7acf659177436782', // es-ES - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'a8ba2e166236e075e1727c392830f976', // es-ES - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'4cbb24e1698b1b715b1c2c3561e997f1', // es-ES - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '21996cef6313713c031ed33dbca48456', // es-ES - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '9356894951f42d1762dc898d7a7cf6ca', // es-ES - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '896f9c6b78ce3724414056c3d92849da', // es-ES - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3512,6 +4010,8 @@ $browsers_fingerprints = array(
 'a0090f4925abd108eca5670526968759', // es-ES - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '61a263e029c628e4a7515b14a168d446', // es-ES - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '0b83584f8dee43a41ed69e3886398cb4', // es-ES - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'f2dd2bc48ed4cbd825192d521f1605d7', // es-ES - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'93c183bbad7e778d483e309bc3103759', // es-ES - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '77e66c55b56e618d5549432b3f8235c9', // es-ES - MacOS X 10.4 - Firefox 3.0.19 
 '475eb0ad133f3cefe8d73bb847ec47c1', // es-ES - MacOS X 10.4 - Firefox 3.5.7 
 '799a32fc44464aff2e0c705cf871cd51', // es-ES - MacOS X 10.4 - Firefox 3.5.9 
@@ -3524,6 +4024,8 @@ $browsers_fingerprints = array(
 '209146dd00623f76e2bde33048e67e23', // es-ES - MacOS X 10.4 - Firefox 3.6.6 
 '161dc0a5cde022d654a31ebec8c44a7e', // es-ES - MacOS X 10.4 - Firefox 3.6.7 
 '3bd950ba46bb5214513fdd4af2667303', // es-ES - MacOS X 10.4 - Firefox 3.6.8 
+'d41cfedc546a379d3899d2ce6cb7cdb0', // es-ES - MacOS X 10.4 - Firefox 3.6.9 
+'0b016a80777d1d4cbfab1ec1dd759c77', // es-ES - MacOS X 10.4 - Firefox 4.0 
 '740e49a2d686049a1d71fbfaff41cec2', // es-ES - MacOS X 10.5 - Firefox 3.0.19 
 'd3e3612dd8147d756cda94f87dbfbbbd', // es-ES - MacOS X 10.5 - Firefox 3.5.7 
 'c811f6f60e1349246b6f29c589af99f1', // es-ES - MacOS X 10.5 - Firefox 3.5.9 
@@ -3536,6 +4038,8 @@ $browsers_fingerprints = array(
 'd7aa02da9538a9e2c79643aafada2ace', // es-ES - MacOS X 10.5 - Firefox 3.6.6 
 'b459fe1be2ed67b71c7ff12dc65a3016', // es-ES - MacOS X 10.5 - Firefox 3.6.7 
 '5175eaedbca17ecce4894e70c2d2957a', // es-ES - MacOS X 10.5 - Firefox 3.6.8 
+'ea400051ca4d3abcd9f7cc8e96f7a64a', // es-ES - MacOS X 10.5 - Firefox 3.6.9 
+'62d0b4f2dba5531fa69ecf7c35971bbe', // es-ES - MacOS X 10.5 - Firefox 4.0 
 'feb0e16b80397ea5f464be8e4ae7dc60', // es-ES - MacOS X 10.4 - Firefox 3.0.19 
 '1340ef3277a28bf60949b09d72755938', // es-ES - MacOS X 10.4 - Firefox 3.5.7 
 '1d6185705b07b2f79697c874617a0523', // es-ES - MacOS X 10.4 - Firefox 3.5.9 
@@ -3548,6 +4052,8 @@ $browsers_fingerprints = array(
 'bc9645a89ccebd60c6265ec2f6825c5a', // es-ES - MacOS X 10.4 - Firefox 3.6.6 
 '253e42bfd493ec4943c26304c346b28b', // es-ES - MacOS X 10.4 - Firefox 3.6.7 
 'dfb49e54bd1bf1f3fe15db17b0560ac7', // es-ES - MacOS X 10.4 - Firefox 3.6.8 
+'41bf289c4d9f7e18b1daa66f689f976f', // es-ES - MacOS X 10.4 - Firefox 3.6.9 
+'944a023c1cb636ea6ed4a6a51f877d9f', // es-ES - MacOS X 10.4 - Firefox 4.0 
 'ab7bf4c3550540ea0c2851032eeeee54', // es-ES - MacOS X 10.5 - Firefox 3.0.19 
 '1efd87e054923799ff89eb575b6db9be', // es-ES - MacOS X 10.5 - Firefox 3.5.7 
 'e169509993db66157b397bb1933f9c34', // es-ES - MacOS X 10.5 - Firefox 3.5.9 
@@ -3560,6 +4066,8 @@ $browsers_fingerprints = array(
 '7403dc26d7e4bf56e5011cfdf2121ac8', // es-ES - MacOS X 10.5 - Firefox 3.6.6 
 '5ea7ddc9c8128a75015b42fbd9758f0d', // es-ES - MacOS X 10.5 - Firefox 3.6.7 
 '8c75527b37e24032d50bf375d88d0e10', // es-ES - MacOS X 10.5 - Firefox 3.6.8 
+'99ba145554c9b0b731cf7811550cf330', // es-ES - MacOS X 10.5 - Firefox 3.6.9 
+'b9bb018e3e93f0bc1332adfd0560c81a', // es-ES - MacOS X 10.5 - Firefox 4.0 
 '5125eca3709b26434f4e192a6c83b2e9', // es-ES - MacOS X 10.6 - Firefox 3.0.19 
 '92fbc7dc7730ecf75a1dbbac01e7180f', // es-ES - MacOS X 10.6 - Firefox 3.5.7 
 '55e0a4ea78a3be075bc9d43a539f32a4', // es-ES - MacOS X 10.6 - Firefox 3.5.9 
@@ -3572,6 +4080,8 @@ $browsers_fingerprints = array(
 'b975b6953245e7dfa9affa9b4b45b954', // es-ES - MacOS X 10.6 - Firefox 3.6.6 
 '6401cfbea1bbbade444b35a8da792334', // es-ES - MacOS X 10.6 - Firefox 3.6.7 
 '2d1211e0a42f85786319378c9bfb6126', // es-ES - MacOS X 10.6 - Firefox 3.6.8 
+'99ef45ae554020367170eaa6fab5c9ed', // es-ES - MacOS X 10.6 - Firefox 3.6.9 
+'c08a280bcec5b8f9642297c23412aa98', // es-ES - MacOS X 10.6 - Firefox 4.0 
 'a251eafb07e24db712d98776cf88bebe', // es-ES - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '664075fa8bf7438fe5d1063daf067a29', // es-ES - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '3030ad4e2e3f3e87d6b35dc408b559e8', // es-ES - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -3616,6 +4126,8 @@ $browsers_fingerprints = array(
 '1cdaaa03a41a35f3ec58d3f253e5ac7b', // es-MX - Windows XP - Firefox 3.6.6 
 '0f8ee216503dbafdf9980c3edb282b5b', // es-MX - Windows XP - Firefox 3.6.7 
 '39d772a79075f2e85c4c8caf5c0fcf60', // es-MX - Windows XP - Firefox 3.6.8 
+'5c83abba24942ac9fe208a80aa4ebe9c', // es-MX - Windows XP - Firefox 3.6.9 
+'7f4e9ed8046bd9b9ee306cf193fbc863', // es-MX - Windows XP - Firefox 4.0 
 '634c1d537ed9f5cc3888a3e5144b65ed', // es-MX - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'b231f81ddc1171357fe111a4eba06f98', // es-MX - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'f95402d37f4f9b5469e16e303d69da3f', // es-MX - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3628,6 +4140,8 @@ $browsers_fingerprints = array(
 'a6b64d883081c6efce1246c4ad70503c', // es-MX - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '7407f367b8a5367c2045f29b51db23b8', // es-MX - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '5c0e43c31e1d7a8d8cb826fea7159aeb', // es-MX - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'10950fffef1dbd6aa20f5e9e2c6f2fd1', // es-MX - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'efc85a839204cbe1bce9beef49bc1ca9', // es-MX - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'ee5c165f1ea0f50fe53fd2381b89f552', // es-MX - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'cc7e86f02a7d7dedef2355e977c127d5', // es-MX - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '8001a4d16ba79720c500732af772af5e', // es-MX - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3640,6 +4154,8 @@ $browsers_fingerprints = array(
 'f53f1058d6425dafd3866422f783e212', // es-MX - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '28cb3bd19f7bb2d433906a5cee082bad', // es-MX - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'f5d7c0af6a21de2697adb8f423ce2b02', // es-MX - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'d7bfece3e02956c2f61193bb9e7208e2', // es-MX - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'2c4ff09d464fb767df301d44fd65e7c6', // es-MX - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'f6e05157612616df3b0f6f262bcb97b1', // es-MX - Windows Vista - Firefox 3.0.19 
 '31e6d3db443b8907b7bf4d56c3a855e6', // es-MX - Windows Vista - Firefox 3.5.7 
 'b001b9a8e69cc0b795c04ed5af6d629b', // es-MX - Windows Vista - Firefox 3.5.9 
@@ -3652,6 +4168,8 @@ $browsers_fingerprints = array(
 '917a1dda338fe353a6a6128e8f5cb97c', // es-MX - Windows Vista - Firefox 3.6.6 
 'baf654f6f5cc37b1a3088fe4eef82755', // es-MX - Windows Vista - Firefox 3.6.7 
 'c958992d671bb21e0bfb6520aa3c2e74', // es-MX - Windows Vista - Firefox 3.6.8 
+'502458b22e1b5b56723bc257680ea22b', // es-MX - Windows Vista - Firefox 3.6.9 
+'a7bded0f19de5b6a42c440804552799b', // es-MX - Windows Vista - Firefox 4.0 
 'dfa4f08f7cbb9e9f640ef23fba320dee', // es-MX - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'f9ff06530182c3f7a0969458dbe2aa3f', // es-MX - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '52c4918d30d8c79b95246af8bf14f7c5', // es-MX - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3664,6 +4182,8 @@ $browsers_fingerprints = array(
 '2157d9ee884fa7d7465f5f1f9ab5fd19', // es-MX - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '3d33355464c9302cbc168eb2039870d8', // es-MX - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '797c443412eb7225643961243a6c46c5', // es-MX - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'3904f009a069bdc5552298230e8e492e', // es-MX - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'d9673e05b82dc0db269954fdf9130105', // es-MX - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '7c32c457cbdf4c66319358cbaacbb718', // es-MX - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '49f25c62b94508dd7d44f3dd874ead84', // es-MX - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '9eab734a2f2a60f62678b62f8c8aafb9', // es-MX - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3676,6 +4196,8 @@ $browsers_fingerprints = array(
 'f370591934b1c746edb76d5916b0cafa', // es-MX - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '221c9c85d92b7c2e9800582c9d57f3fb', // es-MX - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '9faa9688f9a05985026c2e55e4529717', // es-MX - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'3090047f5d3d1d4117def05a105b78c0', // es-MX - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'b4c7e2d12fd2c5ae5057c94780307db4', // es-MX - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'e2d005923b78f009e512cc7fb97418f2', // es-MX - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '5d81931450f914d728b1de966195416d', // es-MX - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '6f122817c90efcdbf5d77d487d8022c6', // es-MX - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -3688,6 +4210,8 @@ $browsers_fingerprints = array(
 '5acd1de898f685ec881325eb53542993', // es-MX - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'd77e414f72993c6f7c25120266026c3a', // es-MX - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '5c7b74a54894f14b4e9d94349187521e', // es-MX - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'11c90296459c3f73a6d5541bbfb1cc2d', // es-MX - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'aa08912b64203ef3ed9bdbb2118a7619', // es-MX - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '0e8650db1ba4a8a12c1e053df968a406', // es-MX - Windows 7 - Firefox 3.0.19 
 '609cb4c33df48f4a4dd626216e7fb9e6', // es-MX - Windows 7 - Firefox 3.5.7 
 'f44b610d0385f773d88a087135227d6b', // es-MX - Windows 7 - Firefox 3.5.9 
@@ -3700,6 +4224,8 @@ $browsers_fingerprints = array(
 '005487ff5b0a2c6178910964440d3480', // es-MX - Windows 7 - Firefox 3.6.6 
 '4d1fd9b25b924c96e504faa0fd600ec6', // es-MX - Windows 7 - Firefox 3.6.7 
 'bfeb0f369ce336bdfea1c668f804653b', // es-MX - Windows 7 - Firefox 3.6.8 
+'ff7d5121df89735f284fe0c6aa49b110', // es-MX - Windows 7 - Firefox 3.6.9 
+'bc440010a58b2228d28cfb9bebc873bf', // es-MX - Windows 7 - Firefox 4.0 
 '563cbcc2c8059f477593ef1b1e07e4ac', // es-MX - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'b5c33f29784bea4917fa61ff735a1a5e', // es-MX - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'c899347c3db7a3ccd60fbb346ed0271b', // es-MX - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3712,6 +4238,8 @@ $browsers_fingerprints = array(
 'd54a952c681541ca386b443cbe2b3313', // es-MX - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '33b4d345678822edeef1c7f2bd410a2e', // es-MX - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'b07dfe7b33a55d44dcac80ade49c9e54', // es-MX - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'f15a23b18b0ba57cf4e4c06f8f5361f7', // es-MX - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'1e80a765657519d84b427ab74eeae9a7', // es-MX - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '925f94e7a4be0ca60cc5ccfdc7eb4ee4', // es-MX - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '87e2d6d72bd0369d313a98ff390f4b97', // es-MX - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'ea684baea1be04f8e5be3400c53b75ce', // es-MX - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3724,6 +4252,8 @@ $browsers_fingerprints = array(
 '97a3972f76b24fee8d0fb46f7e6c2d4d', // es-MX - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '638380746d3dab69d89fa777ea0c41df', // es-MX - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '40443678585205fe066d1e26f602ad49', // es-MX - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'039d111ea342ecffbf19e8874f31cb6c', // es-MX - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'b2b4d7156ef07a8c0e30f8412f2b8b65', // es-MX - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '087747a8270756237d45afa76ff50758', // es-MX - MacOS X 10.4 - Firefox 3.0.19 
 '71a40173804984306d6343cdf7d7b03d', // es-MX - MacOS X 10.4 - Firefox 3.5.7 
 '97d02f4f1d94dc4c9fb10ccec471f602', // es-MX - MacOS X 10.4 - Firefox 3.5.9 
@@ -3736,6 +4266,8 @@ $browsers_fingerprints = array(
 '54aa35ffe0c2b509b7954b8c30df2f2c', // es-MX - MacOS X 10.4 - Firefox 3.6.6 
 'bdbc9a376ac77a19a8e604b3998cd980', // es-MX - MacOS X 10.4 - Firefox 3.6.7 
 '163a0f3d66473c2891b526d0b9e63477', // es-MX - MacOS X 10.4 - Firefox 3.6.8 
+'42e8dfde9fd0cf3474e0b19fca9eca1d', // es-MX - MacOS X 10.4 - Firefox 3.6.9 
+'7c788a37a238ecf0ef14601892c67439', // es-MX - MacOS X 10.4 - Firefox 4.0 
 '6257d02c43df811cbfa82c15c185a0aa', // es-MX - MacOS X 10.5 - Firefox 3.0.19 
 '227cef5563a1124c46661c1cb0ea1b54', // es-MX - MacOS X 10.5 - Firefox 3.5.7 
 '0ad5b43891bccecceef9124a58f24b1f', // es-MX - MacOS X 10.5 - Firefox 3.5.9 
@@ -3748,6 +4280,8 @@ $browsers_fingerprints = array(
 'f5a6f69c081a4362497f43fc586085d6', // es-MX - MacOS X 10.5 - Firefox 3.6.6 
 '20e51a5313b4c25f78984e7c87d5236a', // es-MX - MacOS X 10.5 - Firefox 3.6.7 
 'd042cdf0ce5a9ed9b913834b3761b04d', // es-MX - MacOS X 10.5 - Firefox 3.6.8 
+'a3322b0f61e7fa01eb7aaf456897d238', // es-MX - MacOS X 10.5 - Firefox 3.6.9 
+'fcc635fb0647776d77ab1eb148517875', // es-MX - MacOS X 10.5 - Firefox 4.0 
 'd44685ecbe3e048787c708cbc4ccf8b9', // es-MX - MacOS X 10.4 - Firefox 3.0.19 
 'f327b5a48c2bd80eb2e6a4768442631d', // es-MX - MacOS X 10.4 - Firefox 3.5.7 
 '598020954a64d6599366ae1e4454214f', // es-MX - MacOS X 10.4 - Firefox 3.5.9 
@@ -3760,6 +4294,8 @@ $browsers_fingerprints = array(
 'd009f12c7cfd7464ea27f4625ae23e30', // es-MX - MacOS X 10.4 - Firefox 3.6.6 
 '76d27ad6e128e4a86740a258cde596c5', // es-MX - MacOS X 10.4 - Firefox 3.6.7 
 'fc23ae2c3e2137ad1e176875255abb8a', // es-MX - MacOS X 10.4 - Firefox 3.6.8 
+'236811ca3c7cd313a65874ac7cea24b3', // es-MX - MacOS X 10.4 - Firefox 3.6.9 
+'cbb743a302d204a7a62d32f1e375facf', // es-MX - MacOS X 10.4 - Firefox 4.0 
 'e3a155e58198c35f667b714499b43a39', // es-MX - MacOS X 10.5 - Firefox 3.0.19 
 'd5ce4b49e0ba086449a19d13abbad4f6', // es-MX - MacOS X 10.5 - Firefox 3.5.7 
 'dc3da5fbfdcb018211c79d0a63765589', // es-MX - MacOS X 10.5 - Firefox 3.5.9 
@@ -3772,6 +4308,8 @@ $browsers_fingerprints = array(
 'd27f38e731072306fd2a3eeda0315071', // es-MX - MacOS X 10.5 - Firefox 3.6.6 
 'f23eae033e4323e4b0f5dcd0b2306a1d', // es-MX - MacOS X 10.5 - Firefox 3.6.7 
 'd0688adcb17d024b498f17bdfee8c254', // es-MX - MacOS X 10.5 - Firefox 3.6.8 
+'a941422acd4c893f460c96037f46fa27', // es-MX - MacOS X 10.5 - Firefox 3.6.9 
+'d6f5e1407edd4f1df6f688e17361f0d6', // es-MX - MacOS X 10.5 - Firefox 4.0 
 '724884c16aa667f455274ab10da16ecd', // es-MX - MacOS X 10.6 - Firefox 3.0.19 
 '82faee06523843a2dc0b2201f2f9e42b', // es-MX - MacOS X 10.6 - Firefox 3.5.7 
 '59e40c09a6ca5533090c6463d2dfc3e6', // es-MX - MacOS X 10.6 - Firefox 3.5.9 
@@ -3784,6 +4322,8 @@ $browsers_fingerprints = array(
 '151d09da363886d7d70877be2444b591', // es-MX - MacOS X 10.6 - Firefox 3.6.6 
 '9c497b03c3b27569b33055fa80b645da', // es-MX - MacOS X 10.6 - Firefox 3.6.7 
 '9c7de9700182ce71f11d65121a5d3a54', // es-MX - MacOS X 10.6 - Firefox 3.6.8 
+'88a223dba01b01b20d3d551192ff1fde', // es-MX - MacOS X 10.6 - Firefox 3.6.9 
+'d7d48ad5af5864cf011b63fe5ba8b364', // es-MX - MacOS X 10.6 - Firefox 4.0 
 'dd6d5ca79bfc643565c9d20be5eab3bf', // es-MX - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'fda65ac84f94b9cfa43b09e78d24ab15', // es-MX - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'a776f914e4bf9ae04da850b5878a239b', // es-MX - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -3828,6 +4368,8 @@ $browsers_fingerprints = array(
 '7de6f4e1253161615feb97c37354f4c5', // es-AR - Windows XP - Firefox 3.6.6 
 '424f8d53dda012552960adfdb59cd3b4', // es-AR - Windows XP - Firefox 3.6.7 
 '3d8a7d54067dee3ecbd80d5d8997892d', // es-AR - Windows XP - Firefox 3.6.8 
+'23fccda8cda2873bde0b6f03dd6be5d6', // es-AR - Windows XP - Firefox 3.6.9 
+'49b4726420658e6a9ce31e117eb7db98', // es-AR - Windows XP - Firefox 4.0 
 'b4e55e370659a3f105b501e8b9da5be3', // es-AR - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '3f694e42c3e6e9cc77198ef184a0bfa0', // es-AR - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'e67a4c3d1910d877ecf0ffe917b71f4c', // es-AR - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3840,6 +4382,8 @@ $browsers_fingerprints = array(
 'd348d212005e9f1767c4c7f8e7bc7d8b', // es-AR - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '8df662976cba7f1f56beb4529b998c9a', // es-AR - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'ce54c95faa7838d95ed7b798c79a28dd', // es-AR - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'c931eb5aa0babaec765a490b1c24da77', // es-AR - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'cd786c91fa775e0278db992d69234693', // es-AR - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'aef72c848627b866fb4f4ffb765e4006', // es-AR - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '49ba18a7b5328bd09f8b93708eaf8321', // es-AR - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '05dac39f4f8e9db4671a2c2d9cfd5051', // es-AR - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3852,6 +4396,8 @@ $browsers_fingerprints = array(
 'df953fc56d81e202374c79e20fd92a11', // es-AR - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '49d378170938cdb8c8e907c357e144a2', // es-AR - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'd94989794459b3614bbb6f6d04b2021d', // es-AR - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'c0a792b4e2c88c40127bfda233a797e2', // es-AR - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'3d872c5d785bd8368eee7fe39467099a', // es-AR - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '85386533a7c1e811707df0dc04492ba0', // es-AR - Windows Vista - Firefox 3.0.19 
 '30be7e0059f9ed85a66b3922d342039c', // es-AR - Windows Vista - Firefox 3.5.7 
 '0477bb8c98085a2708280512785936a7', // es-AR - Windows Vista - Firefox 3.5.9 
@@ -3864,6 +4410,8 @@ $browsers_fingerprints = array(
 'fd30dce5d0eb05d8bcca379b61787430', // es-AR - Windows Vista - Firefox 3.6.6 
 'fe64f386ee8d07e3ea405f04c93f160b', // es-AR - Windows Vista - Firefox 3.6.7 
 '61a5200c407e6f1c0efce27d347d2b01', // es-AR - Windows Vista - Firefox 3.6.8 
+'7662129dfa7b88b903e57d1c72999fdf', // es-AR - Windows Vista - Firefox 3.6.9 
+'21f02329c3433a34038fd148a39060ca', // es-AR - Windows Vista - Firefox 4.0 
 '99729ab09f623e5d494ac97d441b56c2', // es-AR - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '66f543c9e883ed729e2a06202bf72959', // es-AR - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '83b9410877c1f27d5d9a37bf62be1d21', // es-AR - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3876,6 +4424,8 @@ $browsers_fingerprints = array(
 '609cf7d41d4e9cc3ae4911e406f8d09f', // es-AR - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '54d9ebf145467739dc608f85e7ac7881', // es-AR - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '835250994acdfb9d874e15cb9f4a28c5', // es-AR - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'96be384ffcb62696b4a9b50df55518e3', // es-AR - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'66adbfaac5d4a7ef41d46438278aa599', // es-AR - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '519700b9e613cb4d4c31e579af14f913', // es-AR - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'e4eb61b7059d6ae4d1fddbda2cf1d914', // es-AR - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '572a6d66e5f508b95a9c5623202fdf7d', // es-AR - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3888,6 +4438,8 @@ $browsers_fingerprints = array(
 'df72c6b7237c8705401724a8d2d2e58c', // es-AR - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '5b095dcc6132200d8b4f43f39f048ea8', // es-AR - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '225d00f425101c0bbd7d85334ab77e83', // es-AR - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'e3349d645902ffa2e8d6a3d5cfa1c0ac', // es-AR - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'923a99c6e96df0408ca4b8a2a62d97c5', // es-AR - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'cca38c8d4431ba92bae77ba247c78358', // es-AR - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'efc9df60589f3735e4ee795ca249abe8', // es-AR - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '503ba7923418f7fc8b832840f590833c', // es-AR - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -3900,6 +4452,8 @@ $browsers_fingerprints = array(
 '0b83f6b5bb992521aef6e4f825a24549', // es-AR - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '182c3ce69b59d498a81cf156487dae7b', // es-AR - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '09d090e1e118db099b3a57adb2c27e82', // es-AR - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'80b7f50ab4454db9e04bff82196ecc7e', // es-AR - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'5e119f3acee0ac763c473e2e214bb842', // es-AR - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'ec71f0daa976ab44a3fbb6075e71be95', // es-AR - Windows 7 - Firefox 3.0.19 
 'be6fac91318f75397f3380a4ddae1b6c', // es-AR - Windows 7 - Firefox 3.5.7 
 'a15618f5fbcb888c342a62175c776f84', // es-AR - Windows 7 - Firefox 3.5.9 
@@ -3912,6 +4466,8 @@ $browsers_fingerprints = array(
 'e49088b820a9d41c2f1a4d8b33730e8a', // es-AR - Windows 7 - Firefox 3.6.6 
 'ec7f0fdedf6a7a03633260e902056afb', // es-AR - Windows 7 - Firefox 3.6.7 
 '2e6a4b284078a0c814063e6b2f04a7d8', // es-AR - Windows 7 - Firefox 3.6.8 
+'61a0ebd6a215763fb46c12d289afa2b4', // es-AR - Windows 7 - Firefox 3.6.9 
+'5d3c6d205667b4339ef44d8554a95a32', // es-AR - Windows 7 - Firefox 4.0 
 'd406533d9de9154f9ef904223030822d', // es-AR - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '036bdeec692881cc792d88af79aadb45', // es-AR - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '6ac3307f83f62577bb044e4a31198238', // es-AR - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -3924,6 +4480,8 @@ $browsers_fingerprints = array(
 '0d6b04a3bdd69fd19cd54ac747d5674a', // es-AR - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '41a34fd7e29b0333e77f929e8b4059ec', // es-AR - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'cc2041ff27b8aa4ba3432faf1ec3718f', // es-AR - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'d78c036bb13e28642f558d563d9d3cbd', // es-AR - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'199b9125224ddbdfc141b2ac2ddf87fd', // es-AR - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '96d3cda013961374a2a89c64412924cc', // es-AR - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'a78f5b7f24e112e0dc5a443c7885ab57', // es-AR - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '11a335d3dffadc0484d878fe2b9c11f6', // es-AR - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -3936,6 +4494,8 @@ $browsers_fingerprints = array(
 '5a6bff0cbe002860e25186cc704ce17d', // es-AR - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '86e3a26ad5a102590a26928f9f93c949', // es-AR - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '48fb0195505fd41573c37d56f700fa25', // es-AR - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'79b07b13627f4ae4c098bb1201c4d2fc', // es-AR - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'a955db454d6f5c5d827ece59178d9000', // es-AR - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'e098881a48bc191b11ca6694f842cbd1', // es-AR - MacOS X 10.4 - Firefox 3.0.19 
 '8044df40bf55601f6db7199cc5854346', // es-AR - MacOS X 10.4 - Firefox 3.5.7 
 '59845ead831458b2dc4b2716b67d38c9', // es-AR - MacOS X 10.4 - Firefox 3.5.9 
@@ -3948,6 +4508,8 @@ $browsers_fingerprints = array(
 '7158f025469ba089f39a8f36167d1e34', // es-AR - MacOS X 10.4 - Firefox 3.6.6 
 'b6d87dca73ceb51e0fc07e0bf271c829', // es-AR - MacOS X 10.4 - Firefox 3.6.7 
 '98d003b5f6d662ab33b8f854947b2a6f', // es-AR - MacOS X 10.4 - Firefox 3.6.8 
+'1cbef71bc88647cf12a63f7ec93adddb', // es-AR - MacOS X 10.4 - Firefox 3.6.9 
+'9a22a271220a94810c70533a5d27a0bb', // es-AR - MacOS X 10.4 - Firefox 4.0 
 'fa2f53e03e0fbc7d8d8b29b98de7c4a8', // es-AR - MacOS X 10.5 - Firefox 3.0.19 
 'f3517f4f1529a6e1d14269d91755121e', // es-AR - MacOS X 10.5 - Firefox 3.5.7 
 'bcc1a35bc357b5cfa067e1d71a187ec7', // es-AR - MacOS X 10.5 - Firefox 3.5.9 
@@ -3960,6 +4522,8 @@ $browsers_fingerprints = array(
 '9aaa5379e4a6c351161c579460bb1cd1', // es-AR - MacOS X 10.5 - Firefox 3.6.6 
 '05a09383d0a02b1bc835a16587844427', // es-AR - MacOS X 10.5 - Firefox 3.6.7 
 '1868f689f1fd4eff60b8d94e6979027c', // es-AR - MacOS X 10.5 - Firefox 3.6.8 
+'f4aeff053715c2b2551db362b2708e58', // es-AR - MacOS X 10.5 - Firefox 3.6.9 
+'a820b2fee3e141367c9ff1ab022a18f2', // es-AR - MacOS X 10.5 - Firefox 4.0 
 '7526006a69311d91d09ead468129d156', // es-AR - MacOS X 10.4 - Firefox 3.0.19 
 '5d59153bb16522775c373d70f4e0ff37', // es-AR - MacOS X 10.4 - Firefox 3.5.7 
 '24883a7a8c6a6b319b49ecd63347c9dc', // es-AR - MacOS X 10.4 - Firefox 3.5.9 
@@ -3972,6 +4536,8 @@ $browsers_fingerprints = array(
 'abd5fd57310cad46b4716183f5f99e0f', // es-AR - MacOS X 10.4 - Firefox 3.6.6 
 '586a5a74ed348233ede82769aab96e47', // es-AR - MacOS X 10.4 - Firefox 3.6.7 
 '7253f95e956345d5551821edf457ea69', // es-AR - MacOS X 10.4 - Firefox 3.6.8 
+'f9edb777c9dd456aa27e6a950e0eff9d', // es-AR - MacOS X 10.4 - Firefox 3.6.9 
+'1a7761707994bf15ac200333dc98cf83', // es-AR - MacOS X 10.4 - Firefox 4.0 
 '8fa6d2dfe4884e77a2a7a70479b20605', // es-AR - MacOS X 10.5 - Firefox 3.0.19 
 '090efce3e5f25af51ab573b6be3bdf90', // es-AR - MacOS X 10.5 - Firefox 3.5.7 
 '0d834c3bb458d8affccbce968e779561', // es-AR - MacOS X 10.5 - Firefox 3.5.9 
@@ -3984,6 +4550,8 @@ $browsers_fingerprints = array(
 'c8306f7ed1423951c40cb7720bb60cf6', // es-AR - MacOS X 10.5 - Firefox 3.6.6 
 'e389ca1831c469c9e698d197fe85102d', // es-AR - MacOS X 10.5 - Firefox 3.6.7 
 '68cbb872c9a0b5ad98ceff35d04fed52', // es-AR - MacOS X 10.5 - Firefox 3.6.8 
+'ec07d6f9f68fc33cfdbd1041a2b533b1', // es-AR - MacOS X 10.5 - Firefox 3.6.9 
+'2d7cb697f2a01dccc5dc5c4d84038e4b', // es-AR - MacOS X 10.5 - Firefox 4.0 
 '0ccacafd4855c4c2d057a655633a29fa', // es-AR - MacOS X 10.6 - Firefox 3.0.19 
 '18d550c8be418fcad3a29ccb6332b4f2', // es-AR - MacOS X 10.6 - Firefox 3.5.7 
 'c25629f5d667013d0550485ae4d28a85', // es-AR - MacOS X 10.6 - Firefox 3.5.9 
@@ -3996,6 +4564,8 @@ $browsers_fingerprints = array(
 'b93afbd98a956f5eda8a967bc2d1cab8', // es-AR - MacOS X 10.6 - Firefox 3.6.6 
 '26abaa3aa748bce5652832e24c629403', // es-AR - MacOS X 10.6 - Firefox 3.6.7 
 'dd0b9fea020296ff064f56cf1bef94dd', // es-AR - MacOS X 10.6 - Firefox 3.6.8 
+'fafc8c5bc7aaced188c032091005365d', // es-AR - MacOS X 10.6 - Firefox 3.6.9 
+'6f367b4137097078aa5a34b1be7ac541', // es-AR - MacOS X 10.6 - Firefox 4.0 
 'a8d91ab516294811777908e33e5e135a', // es-AR - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'a906bc3cb36324d704da60abf65df243', // es-AR - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'b599bcedbee583e49c091ada6347ee04', // es-AR - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -4040,6 +4610,8 @@ $browsers_fingerprints = array(
 'ff5e7d50559ac871820ee349cdbc44da', // ca - Windows XP - Firefox 3.6.6 
 'b4539f71e52bb8040838ff8813625534', // ca - Windows XP - Firefox 3.6.7 
 '98f22a02aa4b2334b6582fd6bf7a1307', // ca - Windows XP - Firefox 3.6.8 
+'d03450c2a42d8e5526aab3024d81b521', // ca - Windows XP - Firefox 3.6.9 
+'7938a8260be085f0c4368b27dfb2a2e9', // ca - Windows XP - Firefox 4.0 
 'f7d40f50424573f04032bc2003da53f3', // ca - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '6ecb5463b2ae9c10efc898b9d4a4c3ba', // ca - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '577aae38ad9726a1198b3e8a22a39389', // ca - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4052,6 +4624,8 @@ $browsers_fingerprints = array(
 '263555fb3cc27d0669b050045531ffc5', // ca - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '0c39a5591cc11ccd1821a9a31e694ec8', // ca - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '383978c9dd8ca013e059297aa8c82402', // ca - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'40dcdf846d637e2aa58230fb428296e3', // ca - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'7990e42e62c91c8781089bc87fc66795', // ca - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '274eb7cf73716517ba4d2549d1bb9e08', // ca - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'fc0a8956cb46c91071c451f68c45748e', // ca - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'f8880ccbfc6cffcde9c44e2c490a13eb', // ca - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4064,6 +4638,8 @@ $browsers_fingerprints = array(
 '854f6dd91502741299484aa9fc62fb02', // ca - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'c542029692507652717750edf36d3688', // ca - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'bac489212e0df4070a05690eb027123c', // ca - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'e1d5c5cb9d12d1149656a38481d67bf0', // ca - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'eb111317db24c3fed0e2525554928d18', // ca - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'd4a876d692053abda5412ef8d1fbb950', // ca - Windows Vista - Firefox 3.0.19 
 '0f3c4c9c4c41ca84cf9cdbd0fb734fa7', // ca - Windows Vista - Firefox 3.5.7 
 'e7b28bb96901ba57d94de391086b829f', // ca - Windows Vista - Firefox 3.5.9 
@@ -4076,6 +4652,8 @@ $browsers_fingerprints = array(
 '5801420cf56b157d35570d1eb7dedafb', // ca - Windows Vista - Firefox 3.6.6 
 '8100d2be7291d5ab4b79de841c842d79', // ca - Windows Vista - Firefox 3.6.7 
 '05c9eede017864fdf0414726470fbaf2', // ca - Windows Vista - Firefox 3.6.8 
+'8a50f1d14daf27bc62d89034cb139748', // ca - Windows Vista - Firefox 3.6.9 
+'6faa6a05e0d7d1453c38f00742f2bd10', // ca - Windows Vista - Firefox 4.0 
 '48a3703ce60a6ff8cfe815015ee482d0', // ca - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '4293cccdb2050444d7a006ded126df19', // ca - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'e2338b6ca58cdb34d5ff1b5c9607ce1b', // ca - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4088,6 +4666,8 @@ $browsers_fingerprints = array(
 'a2af0994b6d72a7fd7a98cd1b8e7b366', // ca - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '7bdac1c923791f28604a3900c2ba0a54', // ca - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '8e2b0d255ff66058366a5d4b2fd9e563', // ca - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'55e0e57cf5f2d4831fc2d3b6f61173ad', // ca - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'575c6c9cfbdbe69a1b611dcb2a15fa45', // ca - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '3d9b080230daff02a40f9984c0fffa2f', // ca - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'eff9f45ed24e4d8b39da276758a71db6', // ca - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '7402bdde183adf463143b70bd84a182f', // ca - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4100,6 +4680,8 @@ $browsers_fingerprints = array(
 '55dee2ff8065d668a1c44a874b12c7d5', // ca - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '0ab341a7fdd1ccb2185cb3906d445469', // ca - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '7689a8e6df587609963dea01404bf86d', // ca - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'4eb56f66a06325d5f8d06af09b548493', // ca - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'ec74c26fc548932a148e2c711de3d1f0', // ca - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '41c6657a06441c8df1560ca8c664b21f', // ca - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'faf7eab8bb2129a78d1086640bd4021f', // ca - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '4fe32d8a4262411b2e3ff84807c74e1c', // ca - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -4112,6 +4694,8 @@ $browsers_fingerprints = array(
 'c1a4ad655d48257e81cda2e05244de78', // ca - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '98d52ceefe76bb5b5985e653358bd538', // ca - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '433e267bdbebe78fed5479d19b72c4ad', // ca - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'bb2cdfcd982121010e9ea67339b1838b', // ca - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'44a59e7d5620f8ad729e59d0738cd7be', // ca - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '1e4189029721c405c9f4f1b4d4a4fbcf', // ca - Windows 7 - Firefox 3.0.19 
 '2d716f3ea0e0b25da382144e645c1803', // ca - Windows 7 - Firefox 3.5.7 
 '9daea71c1f60e31f1b4cf7db82cd68f6', // ca - Windows 7 - Firefox 3.5.9 
@@ -4124,6 +4708,8 @@ $browsers_fingerprints = array(
 'b735c8ef5899d81beca172ae19db2cc2', // ca - Windows 7 - Firefox 3.6.6 
 '642436270738247239880b2f9b78efac', // ca - Windows 7 - Firefox 3.6.7 
 '2d382f73a1e9dd57499cffad0cdf6764', // ca - Windows 7 - Firefox 3.6.8 
+'2ae6d6f9e70c926ce2d0b54e8740e7a1', // ca - Windows 7 - Firefox 3.6.9 
+'ad4bd67a3f5d8b2919f19196fe675e71', // ca - Windows 7 - Firefox 4.0 
 '6a8759d0169b1e3c913c0c8f0a07a1b8', // ca - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'a0b618dd7c231bf0b31419d10edf0891', // ca - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '17ecb99f521e4665dec1b26052fc40fb', // ca - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4136,6 +4722,8 @@ $browsers_fingerprints = array(
 '116503576f9649f36c4f65dcc0990399', // ca - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '454d2da7eb7144af618e024f1b79f20d', // ca - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '791441f194c3068e69cabd8ee381c351', // ca - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'f9ac497d2128b74815bdbeff615a21ba', // ca - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'325f1688b07751241cafe40f5f9674a3', // ca - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'bfa65ca2643226800c2fd539119f8ea3', // ca - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '181c193671ee04a95557a583f936c4f6', // ca - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '198a162c66c558f3f15cb6a2d2d359dc', // ca - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4148,6 +4736,8 @@ $browsers_fingerprints = array(
 '815e97213e860fd7ef172e2bb6dfeb0f', // ca - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'a5b1ef3e1ff68db1eac69080f1c6defc', // ca - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '53f623a1efaf69be3e7926bcabfac2d9', // ca - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'db11a22f13d0ac81b116f655f393b3e2', // ca - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'538dfe5944047c25d94a5f097f9677a8', // ca - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '7fe473fe7c7f4b49b07b2e9f0629657e', // ca - MacOS X 10.4 - Firefox 3.0.19 
 'fcb87b333bb53e2df2f9b9c823574f38', // ca - MacOS X 10.4 - Firefox 3.5.7 
 'a79e36b0e0759ea858d90e1965ba16b5', // ca - MacOS X 10.4 - Firefox 3.5.9 
@@ -4160,6 +4750,8 @@ $browsers_fingerprints = array(
 '37f934e2c41c61f46a78249165282f27', // ca - MacOS X 10.4 - Firefox 3.6.6 
 'fb714160c99ce7e1cdb229d65354d684', // ca - MacOS X 10.4 - Firefox 3.6.7 
 'a639f8f52dbf8fef8d79e6529bf0586b', // ca - MacOS X 10.4 - Firefox 3.6.8 
+'9872d056da028aa375147236df45e68c', // ca - MacOS X 10.4 - Firefox 3.6.9 
+'c19b83fd14c156874ac09ffb751d237d', // ca - MacOS X 10.4 - Firefox 4.0 
 'f213a2273ebde17569e1621652fba21c', // ca - MacOS X 10.5 - Firefox 3.0.19 
 '0e7724c6e0698e20c163d08575e2971f', // ca - MacOS X 10.5 - Firefox 3.5.7 
 'f1dd3a9cdaccdf64b6fde90ac671a637', // ca - MacOS X 10.5 - Firefox 3.5.9 
@@ -4172,6 +4764,8 @@ $browsers_fingerprints = array(
 '730d0c93df1cca8fc399033cc1df5f7f', // ca - MacOS X 10.5 - Firefox 3.6.6 
 'f139b32579e28a6469befff0d5ae7f60', // ca - MacOS X 10.5 - Firefox 3.6.7 
 'ae48642030ec6cebeaf38f423d2a6b84', // ca - MacOS X 10.5 - Firefox 3.6.8 
+'9a3ac80930d5db7ffe94aff2ad7d803e', // ca - MacOS X 10.5 - Firefox 3.6.9 
+'781d6bf127900c312b79c0189868bdb9', // ca - MacOS X 10.5 - Firefox 4.0 
 'd109b1060d8868f220a6528c3429dc57', // ca - MacOS X 10.4 - Firefox 3.0.19 
 '54b5f4d2678d543d0d94c3ef2469be71', // ca - MacOS X 10.4 - Firefox 3.5.7 
 '55d24007b6a2a2a0c675febfc433c0f3', // ca - MacOS X 10.4 - Firefox 3.5.9 
@@ -4184,6 +4778,8 @@ $browsers_fingerprints = array(
 '3dd86e2a946ccf8c3b1e74c8ae9850e1', // ca - MacOS X 10.4 - Firefox 3.6.6 
 '83ba80f6b832532837a2457838bbc84a', // ca - MacOS X 10.4 - Firefox 3.6.7 
 'c3988844462a78e243f6c20d573fd6de', // ca - MacOS X 10.4 - Firefox 3.6.8 
+'03f3e3adacd83364828bae6555ec8098', // ca - MacOS X 10.4 - Firefox 3.6.9 
+'ce7de436ecdcd0e831837091fb6d8e58', // ca - MacOS X 10.4 - Firefox 4.0 
 'f4a338895614c7b4f573c9d7ed51beb7', // ca - MacOS X 10.5 - Firefox 3.0.19 
 'a1302c891a91ea8ae38de5628bdea267', // ca - MacOS X 10.5 - Firefox 3.5.7 
 '6ca0e75dca33878d198343573c8d4f40', // ca - MacOS X 10.5 - Firefox 3.5.9 
@@ -4196,6 +4792,8 @@ $browsers_fingerprints = array(
 'aa39717e7b9b969e9bea5946d2a4ba2b', // ca - MacOS X 10.5 - Firefox 3.6.6 
 '82d5a3686b0f14faf0b839aef583d480', // ca - MacOS X 10.5 - Firefox 3.6.7 
 '291e8262cd55bd260932b2d8a79ff8c1', // ca - MacOS X 10.5 - Firefox 3.6.8 
+'360f49ec8d6ab80a54ba2c1294ef2690', // ca - MacOS X 10.5 - Firefox 3.6.9 
+'54a057e8c56746a2e7e19e2a93c81081', // ca - MacOS X 10.5 - Firefox 4.0 
 'd0a5cfae896c4f94fe8a9aaa8e9bb4a8', // ca - MacOS X 10.6 - Firefox 3.0.19 
 'c7a17a6a2df8289cfcc5cf30976a133f', // ca - MacOS X 10.6 - Firefox 3.5.7 
 '28e4137a3272f888a35412f8488f7c8a', // ca - MacOS X 10.6 - Firefox 3.5.9 
@@ -4208,6 +4806,8 @@ $browsers_fingerprints = array(
 '5f7be4c50ddbd6c7024896de80979b30', // ca - MacOS X 10.6 - Firefox 3.6.6 
 '936a5ec6057c0b23dc68d6fde4e1f693', // ca - MacOS X 10.6 - Firefox 3.6.7 
 'cda8f173e5757908a9380a7991e1d515', // ca - MacOS X 10.6 - Firefox 3.6.8 
+'b547fdaec92876934f5d049f00c4f750', // ca - MacOS X 10.6 - Firefox 3.6.9 
+'c98d8aab0bf44f7d6c725ec1ccacd894', // ca - MacOS X 10.6 - Firefox 4.0 
 '374aa844c51a3b697f11f8c5cd7e7989', // ca - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '1f9da376d0e1444733dc2fb6d87bd069', // ca - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'd8d3bbf69997fa83f04c505835bad18e', // ca - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -4252,6 +4852,8 @@ $browsers_fingerprints = array(
 '0bc6624d2c9e8b557b48403ca4d58e2d', // el - Windows XP - Firefox 3.6.6 
 '7318395173a6fa6b4e54fa51c0c03cb8', // el - Windows XP - Firefox 3.6.7 
 '1f80d5ccb6fdd4f9ffdd6aaef069a628', // el - Windows XP - Firefox 3.6.8 
+'056bdb3a1cbebec1e3e0f9181c009117', // el - Windows XP - Firefox 3.6.9 
+'b6656ba125b449e449c1175966149563', // el - Windows XP - Firefox 4.0 
 'cb32555fea238c61c880bbf49c2deaa5', // el - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'af26d1ddf8f0237acaa3600ffa0265ec', // el - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'd75701d5821db0cb27237d2597802d49', // el - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4264,6 +4866,8 @@ $browsers_fingerprints = array(
 '805499fc7aa66f3daba4284b99f75715', // el - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'e580ccb8423b29d38606f36d8e44a183', // el - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'bfdb2448f966e5eff18f49e027267fdc', // el - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'a34f14a9ad616026f14fb7daff93066d', // el - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'e52abad7eebffd84606195f2698de31f', // el - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '405c4eabeffdfba0b25580fb26569c7e', // el - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '8a091c51533f9d0794cb4d38312fbc2d', // el - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'efb833eb5a8702677603a31e6a165986', // el - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4276,6 +4880,8 @@ $browsers_fingerprints = array(
 'b8941a61df57e026c41151dc64648253', // el - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '9463ba588ecfcf541b9101010bafede7', // el - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '4e004b9feaed0b6a6d0611ae0e9903a7', // el - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'b82c79534d6e3111124a3338787c69b6', // el - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'7825f72948b7ebd82f48c2c8e4d1d814', // el - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '934e2e7bd5d1c7b69bb3c232ee725f8e', // el - Windows Vista - Firefox 3.0.19 
 '3228cfa94846477e18585142829c63c5', // el - Windows Vista - Firefox 3.5.7 
 'd4f74384eadfd51a82719f8f94ca9c73', // el - Windows Vista - Firefox 3.5.9 
@@ -4288,6 +4894,8 @@ $browsers_fingerprints = array(
 '71181c923f99702ea6f007718cb4c2b7', // el - Windows Vista - Firefox 3.6.6 
 '75b2574234ddd49bef528bd864b4b2ec', // el - Windows Vista - Firefox 3.6.7 
 'cfda60522cf30250299b7e25ee2fa440', // el - Windows Vista - Firefox 3.6.8 
+'7f37b016ae84dac4d45636d230d9be14', // el - Windows Vista - Firefox 3.6.9 
+'2e17d64728ba5daa742381312a1de055', // el - Windows Vista - Firefox 4.0 
 '795970d086e38c999f61089b006cd534', // el - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'a7850476ed306346c1f5e14786b384c1', // el - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '1d9aaba1b89a2155815f32bf3ad951ce', // el - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4300,6 +4908,8 @@ $browsers_fingerprints = array(
 'bb47a6ead62f1be560693746e17179c1', // el - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '13ec461a2356e486247ea68bd18556f9', // el - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'aa23135ae7f018f7ea96e06576ab893d', // el - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'7e6935cdbe9c907a86016393aad66e45', // el - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'69b13cb7491b2b71e20f9ef83c76cb0f', // el - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '6e4b70addeab3200282b203a56b0a6f4', // el - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'f67021a34cf8be19da26c87f8c57df2f', // el - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '749df861d61741740010a2e95a6a9eaf', // el - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4312,6 +4922,8 @@ $browsers_fingerprints = array(
 'e7e4c8262d49de5bfcaff1fb9efc90d9', // el - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '41e5d4ed63d7574c5258385b8d27d5fd', // el - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '2d950343dfdf307a4aa88b37a07fa6dc', // el - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'95c3371ba05714fa737212e1a51b1fa1', // el - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'ab13577e25e98e53665954cced208fcd', // el - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '9c1873227178f8229257efe2c903b0f7', // el - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'ba229fdcccbb0ead438b990a04e2f99a', // el - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'db7c70bfa2ed874736c0e626c5cc9ff6', // el - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -4324,6 +4936,8 @@ $browsers_fingerprints = array(
 '6ae2be6d498848ac47dcae02797f88be', // el - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'f403bae226d809044ccd1a6dc8fb30ca', // el - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '3a300dd7f413071fad45938496c0e631', // el - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'2ee806c69bba839a3a42485888267353', // el - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'b29ca0d28ff1cdd9f29891fb64b2a7c4', // el - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '26dbde37b4c9989cf24f027b3cacdf18', // el - Windows 7 - Firefox 3.0.19 
 'bfdba28756760621babb558fc4302406', // el - Windows 7 - Firefox 3.5.7 
 '636335c435266ae3d76b6baa707b21da', // el - Windows 7 - Firefox 3.5.9 
@@ -4336,6 +4950,8 @@ $browsers_fingerprints = array(
 '7a8ea19388a5fb70b650c3c384b11662', // el - Windows 7 - Firefox 3.6.6 
 '99278b5163bf76dd264976b88d4b520b', // el - Windows 7 - Firefox 3.6.7 
 'f16d1e496f81021e6338d63ec38a5b13', // el - Windows 7 - Firefox 3.6.8 
+'124cdabbe5a8bfa126e525949c625c73', // el - Windows 7 - Firefox 3.6.9 
+'dcd9b58536522e6c192de3099fe96b6a', // el - Windows 7 - Firefox 4.0 
 '660817776d405d4810fc8edf22aa71b3', // el - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '6252daed26f9b04c9d79c5daa24af6e5', // el - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '45dbddd324f95c9482f6706fcf2dcf6e', // el - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4348,6 +4964,8 @@ $browsers_fingerprints = array(
 'b593b0dc62e7de217bd48a84c69780a4', // el - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '874aee5f3b1e5514af713a55d801f849', // el - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '1aa6cc85112b9fa3e6be709298459fb7', // el - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'53635d58bc5eee3038025e40a369abf7', // el - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'76de54bdbdb57b2b8a2334d33fc70bac', // el - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '1d603fabd37041e6fab469739598ce9d', // el - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '32caeff017d62f2d8814fbd83cca8e19', // el - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'cf3f949df9d078639a17e4a2b032c5a5', // el - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4360,6 +4978,8 @@ $browsers_fingerprints = array(
 '6a0dafef2c1826e691b8b86a6a21f7b6', // el - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '446b5fa0f466512ece6bc36d9e596119', // el - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'ed26faf75a63809e3216849dd5ff3e53', // el - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'05b882673f878c7d1adbb5deda7af1e3', // el - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'123797c0c51c7f96d49f4f9e1e50c220', // el - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '0fcf71e10b78a864359f7d7f42c7f5b4', // el - MacOS X 10.4 - Firefox 3.0.19 
 'c689bd7c7be979702479f449f4821086', // el - MacOS X 10.4 - Firefox 3.5.7 
 'c0808484fc13693253528749c2d20f10', // el - MacOS X 10.4 - Firefox 3.5.9 
@@ -4372,6 +4992,8 @@ $browsers_fingerprints = array(
 '83fc6ac91613fa89136b1ed5e723ccbe', // el - MacOS X 10.4 - Firefox 3.6.6 
 '38099cae61f2d5830069fbd2d8563b3f', // el - MacOS X 10.4 - Firefox 3.6.7 
 'b4fef000ab838116292f05e7633d8f9f', // el - MacOS X 10.4 - Firefox 3.6.8 
+'7764f0daa76b99f37816196da44b453a', // el - MacOS X 10.4 - Firefox 3.6.9 
+'c8f15912eb679ec7b9de86d45d2bc814', // el - MacOS X 10.4 - Firefox 4.0 
 'a5f03251fc0dc591715d9a6e261cb7d0', // el - MacOS X 10.5 - Firefox 3.0.19 
 'fc5eeea37a30624c622ef6dcdc45fbaa', // el - MacOS X 10.5 - Firefox 3.5.7 
 '6e7042a04ee01f3316ee64048b25e9af', // el - MacOS X 10.5 - Firefox 3.5.9 
@@ -4384,6 +5006,8 @@ $browsers_fingerprints = array(
 'af26308256381414578156ea9bde4f62', // el - MacOS X 10.5 - Firefox 3.6.6 
 'a14ab754c7ec4919e77c42acb4756749', // el - MacOS X 10.5 - Firefox 3.6.7 
 'a168ce473ca041879f2f2d1e53398f99', // el - MacOS X 10.5 - Firefox 3.6.8 
+'6082d2624af87b62eb392ed05360062f', // el - MacOS X 10.5 - Firefox 3.6.9 
+'47ad90be70f2fe2666345087d6fb83d5', // el - MacOS X 10.5 - Firefox 4.0 
 'ee186b1f7783e4166cc4c83a1c15b178', // el - MacOS X 10.4 - Firefox 3.0.19 
 'e8d1e5aaa5040d14a1d18aafb989ded7', // el - MacOS X 10.4 - Firefox 3.5.7 
 '77d315cfdd65ab82cda3811e89812bed', // el - MacOS X 10.4 - Firefox 3.5.9 
@@ -4396,6 +5020,8 @@ $browsers_fingerprints = array(
 '1a7969925e6d91488aee8fd0ffb42182', // el - MacOS X 10.4 - Firefox 3.6.6 
 '72f20919517f93ecd093625c1e423c77', // el - MacOS X 10.4 - Firefox 3.6.7 
 '4d630473a841b0e6e4a14dc2bf827969', // el - MacOS X 10.4 - Firefox 3.6.8 
+'438cc0f4e577a0d1fccfffd010e7d6c6', // el - MacOS X 10.4 - Firefox 3.6.9 
+'92329948faa960f0f8a612c524487d65', // el - MacOS X 10.4 - Firefox 4.0 
 '581fbc81fead8cab43b6e76fbbf003ed', // el - MacOS X 10.5 - Firefox 3.0.19 
 '5a228f991825d16fca7c8ca6b72d9eed', // el - MacOS X 10.5 - Firefox 3.5.7 
 'f3825113d63dd050b482b923d2fdacd1', // el - MacOS X 10.5 - Firefox 3.5.9 
@@ -4408,6 +5034,8 @@ $browsers_fingerprints = array(
 '7d8946ceba7291eb14e507305f768187', // el - MacOS X 10.5 - Firefox 3.6.6 
 'a489eff0e93dafa7fa7124152d50b72d', // el - MacOS X 10.5 - Firefox 3.6.7 
 '1e7572611cb789ae4faf71f6cdeee13b', // el - MacOS X 10.5 - Firefox 3.6.8 
+'061472ec192ae9a850692decd3f42770', // el - MacOS X 10.5 - Firefox 3.6.9 
+'b2b2b9c2adb635d2568cb2e981b19a37', // el - MacOS X 10.5 - Firefox 4.0 
 '0249c89e78fc9065e0e966761cc0fe86', // el - MacOS X 10.6 - Firefox 3.0.19 
 'b1427fd0fe3c7f7fd7f1399861f1581d', // el - MacOS X 10.6 - Firefox 3.5.7 
 '3354a40618fa1f096a04e1df0b738b11', // el - MacOS X 10.6 - Firefox 3.5.9 
@@ -4420,6 +5048,8 @@ $browsers_fingerprints = array(
 'ace44caecce49a27fd88806e1e346f70', // el - MacOS X 10.6 - Firefox 3.6.6 
 '637a7675dc08bb66dc482db6af306e9e', // el - MacOS X 10.6 - Firefox 3.6.7 
 'a75f83ecddf23f827152e86eaea239ca', // el - MacOS X 10.6 - Firefox 3.6.8 
+'898bc453a004634e7d3fb59ecc519eda', // el - MacOS X 10.6 - Firefox 3.6.9 
+'06c41cca7ee54d1633826378bc5c2dbd', // el - MacOS X 10.6 - Firefox 4.0 
 '66016340b8a3b4734a4ceca748a853ff', // el - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '8828f21b2331578c5664b5a15a790716', // el - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '3982a1363c83a6b37a51195caffe76e6', // el - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -4464,6 +5094,8 @@ $browsers_fingerprints = array(
 '3e91196e823d2698f6174cb89328f349', // tr - Windows XP - Firefox 3.6.6 
 'df0b2581affbadd9f0a6a54bf02cfc12', // tr - Windows XP - Firefox 3.6.7 
 '0f74e911e06563931914849a8636d906', // tr - Windows XP - Firefox 3.6.8 
+'c678b2ebd52697782c9992f3f090dd74', // tr - Windows XP - Firefox 3.6.9 
+'7248c4bc518b1833b048277478167643', // tr - Windows XP - Firefox 4.0 
 '05feffed79e159d08508c940186e2410', // tr - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'fc3b51291d4dd58dbf88b93529df845f', // tr - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'b67611a1e76bd141a5c2447947aa72dc', // tr - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4476,6 +5108,8 @@ $browsers_fingerprints = array(
 'd822b7c0ec26b7e0b9d9c45b8a962b32', // tr - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'cee2b23fde6261f32622fa0642b37947', // tr - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '07f4973bf814f4afca26aa15e706cca0', // tr - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'8502235341d242eea8a37f70cc81d6e6', // tr - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'7a7e88baeab269df3d4ab9178f1ca50e', // tr - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '79ab577a6f7286e67d122d3153ef9456', // tr - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '72574ab2a2b00dd9b2dd2825ce6ffa42', // tr - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '9e420677d09761e3f3876e98900526b0', // tr - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4488,6 +5122,8 @@ $browsers_fingerprints = array(
 '975e8c56873a1b10a9dbb67579b7162e', // tr - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'e18d09137da67e18059f4b9ff5f55279', // tr - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'da7c7c509e76b8c04972c6fbda03a31b', // tr - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'07fe06812f83f5e8f87abdfcecaa7fb4', // tr - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'c9b367cab548bef64cc3424e7698a896', // tr - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '8310aae6e799b2b000a453cc5ae3adf4', // tr - Windows Vista - Firefox 3.0.19 
 'f6dd0a00b59c927c1105a7129eb5b680', // tr - Windows Vista - Firefox 3.5.7 
 '05f5e9e0ad42a8655e1dcf6824a9a453', // tr - Windows Vista - Firefox 3.5.9 
@@ -4500,6 +5136,8 @@ $browsers_fingerprints = array(
 '6a53562f037b5adbffca39d7445fe78a', // tr - Windows Vista - Firefox 3.6.6 
 '4646646f19c301e0cb7616778b67532e', // tr - Windows Vista - Firefox 3.6.7 
 'de8c980e8211ea60141dfc439caad390', // tr - Windows Vista - Firefox 3.6.8 
+'5aad9b599db0d8e9e02c0368d3eac565', // tr - Windows Vista - Firefox 3.6.9 
+'b070c21832ba1de32050c23671735f22', // tr - Windows Vista - Firefox 4.0 
 '26c173e2661f83ae54b7e0b896ee9eb8', // tr - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '96f69140cd46487a510d90f7df467ba2', // tr - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'ea235e27c22605c5701376a6cdd79404', // tr - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4512,6 +5150,8 @@ $browsers_fingerprints = array(
 '7a64a82a7a3ec82fdf7ddb373135f683', // tr - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'b2ab7e12505b1a1302d0876c280ffa89', // tr - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '28ed3b27e25ef1afa368ffa69bf08a59', // tr - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'cdae6101e60607d3f2a72b553ebd7657', // tr - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'c92547a30e4a0651f4ed8284f0111f34', // tr - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '7e00330c80c8ba05aa82ae53e03d1f3d', // tr - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'c61162348df196057849e852a8acf25a', // tr - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '8642a96f21a151425cd40d4cf03b0f5d', // tr - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4524,6 +5164,8 @@ $browsers_fingerprints = array(
 'a73ffee7240a3a4afbdd0e5baa0902de', // tr - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'd2bff35936c12782f4b1f2d6f6c34cd4', // tr - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'c7277fb64f9b6d0b7b60f4e2bef45cff', // tr - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'3ebfae2c61eac35946bcdff769157294', // tr - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'2c28347e73e77de96b2ea6dca78f3caf', // tr - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '117a794972c4043263c0e601900a81a7', // tr - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '21c8e6b9364cb01763d7d23359253d16', // tr - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '3c70df8ee682aaa07478e8f0d9b39a0c', // tr - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -4536,6 +5178,8 @@ $browsers_fingerprints = array(
 '3e05321d23863e39dc991f91d5a612d5', // tr - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'd04989e4ac1afa0dcbfb73687e852a42', // tr - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'c9d25202af9eebc433a22ec7cd07ff46', // tr - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'9bfaa6cedcaa1c00d7f452fed196f70c', // tr - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'f0eb1cab80594de80e636ec6c05d2afe', // tr - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 'b8f38a9e667b04110175026c692b24db', // tr - Windows 7 - Firefox 3.0.19 
 '65e6e7d896f3b6dcedf57c1c16cd2fde', // tr - Windows 7 - Firefox 3.5.7 
 '16eb710beca86215789910c10f196304', // tr - Windows 7 - Firefox 3.5.9 
@@ -4548,6 +5192,8 @@ $browsers_fingerprints = array(
 'dbd64f189e5b9a25d2cf4b375819d2dd', // tr - Windows 7 - Firefox 3.6.6 
 'c0a570ac5f4a6840858c8298409e05cd', // tr - Windows 7 - Firefox 3.6.7 
 'ff4fcd4030ee865dbeb2c0ad2ec7a85f', // tr - Windows 7 - Firefox 3.6.8 
+'fde0ce9174f36072ef2973037b223c40', // tr - Windows 7 - Firefox 3.6.9 
+'07dd6fcd1e336a52aeb2bb014299a3f4', // tr - Windows 7 - Firefox 4.0 
 'bb74a68150ac9181140abadb86d06476', // tr - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'a1cd9936ca2b405b8682784a8cf53863', // tr - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '1e8605884f92846bb941566380f12e6c', // tr - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4560,6 +5206,8 @@ $browsers_fingerprints = array(
 'affd8e00c0bcfb26be09abe5dcb975a2', // tr - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'ae078a2a8462b1a52ef0cdf1a98ed676', // tr - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '0fdd6a0d0956cfcca4abed279249a6bd', // tr - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'c26b33680bc5f34c3c5a8f8e416b66ca', // tr - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'5d4256a0488fcdb987aa13e3aa9388fe', // tr - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'f316e3cc50ac7d4f2499884110ea1ddf', // tr - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '20536c529d4bb2457c75fe4b49a3bc0f', // tr - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'bba94aef4a7b577fc3c5be4f3a40113b', // tr - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4572,6 +5220,8 @@ $browsers_fingerprints = array(
 '278c3f6e6be06d256242a7f8de803a92', // tr - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '6f239d63fdcde3694ca8e47b15576e34', // tr - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '9c93fc237aae707d462dfc62b69e8fa2', // tr - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'2f63ad0ccd1fbb85a3e678bb6a70ae53', // tr - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'f29edda66cd3065a7f36c72d98694a92', // tr - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'dcc4f777595e3bb708d8b0c92e63b6c1', // tr - MacOS X 10.4 - Firefox 3.0.19 
 'b9d169ff171b2f442bba0b77d16d4c69', // tr - MacOS X 10.4 - Firefox 3.5.7 
 '1e764575edb28c110702656074bd3eef', // tr - MacOS X 10.4 - Firefox 3.5.9 
@@ -4584,6 +5234,8 @@ $browsers_fingerprints = array(
 '3ee5f11e1359f32520acc1a2c8b7ca24', // tr - MacOS X 10.4 - Firefox 3.6.6 
 '7d22235002421848956df64f25ef7a56', // tr - MacOS X 10.4 - Firefox 3.6.7 
 'ac16bb427a61dc998b79f599ab085273', // tr - MacOS X 10.4 - Firefox 3.6.8 
+'b1b58db5d4ab7190da73c16868b1bbc3', // tr - MacOS X 10.4 - Firefox 3.6.9 
+'74f8a1653f5727517cd3b4d152abea62', // tr - MacOS X 10.4 - Firefox 4.0 
 'fc72db96eb254605fa751d5d15a0a83e', // tr - MacOS X 10.5 - Firefox 3.0.19 
 '4e93a89a0291f594ba5970900c80e599', // tr - MacOS X 10.5 - Firefox 3.5.7 
 'ccfa183d516fcb86b29bf46bde00bb12', // tr - MacOS X 10.5 - Firefox 3.5.9 
@@ -4596,6 +5248,8 @@ $browsers_fingerprints = array(
 '7854c8f67f129464342fe9bd3910b24a', // tr - MacOS X 10.5 - Firefox 3.6.6 
 'c18fc33792bca247b73b22b3c4e8766e', // tr - MacOS X 10.5 - Firefox 3.6.7 
 '81d0ebeab7a79a5d3a599a5214d83858', // tr - MacOS X 10.5 - Firefox 3.6.8 
+'25d6c30f8b7946c3d60e1dc9d78b2957', // tr - MacOS X 10.5 - Firefox 3.6.9 
+'5d9aa99d0c3c66b9a2b5b082b84322d2', // tr - MacOS X 10.5 - Firefox 4.0 
 '72e3c66dc45e5c44af50bf5f276edb8e', // tr - MacOS X 10.4 - Firefox 3.0.19 
 '15e16e817d0a6ac36c2938004dec22e6', // tr - MacOS X 10.4 - Firefox 3.5.7 
 '24c88139063ec977a4b338c9f9bbc9e0', // tr - MacOS X 10.4 - Firefox 3.5.9 
@@ -4608,6 +5262,8 @@ $browsers_fingerprints = array(
 '05ff5940c6035e01bd72c001cc147892', // tr - MacOS X 10.4 - Firefox 3.6.6 
 'f096a3c6c976af6494b36c377e762c95', // tr - MacOS X 10.4 - Firefox 3.6.7 
 '70f5afd5e2e0009e434e44b7667d2c2e', // tr - MacOS X 10.4 - Firefox 3.6.8 
+'fc93a690e0b2b934361da2248b20e8f1', // tr - MacOS X 10.4 - Firefox 3.6.9 
+'9f3cc18498e8263e833c2ea3c335bd59', // tr - MacOS X 10.4 - Firefox 4.0 
 '49cfcec25d118ea177578fea3ffb8758', // tr - MacOS X 10.5 - Firefox 3.0.19 
 '6070088548a8663542292d62d4c36cd2', // tr - MacOS X 10.5 - Firefox 3.5.7 
 '87ea9c7e41c53dda0d449aef26ddbdc7', // tr - MacOS X 10.5 - Firefox 3.5.9 
@@ -4620,6 +5276,8 @@ $browsers_fingerprints = array(
 '0e4dd31f228b2c6f97fb152577c35aa4', // tr - MacOS X 10.5 - Firefox 3.6.6 
 '9530e601bfe83192382caa221b1b280b', // tr - MacOS X 10.5 - Firefox 3.6.7 
 '51ad0ad7ef335212d75e4262a20f5a5e', // tr - MacOS X 10.5 - Firefox 3.6.8 
+'1ed68c63de02ff257400eea27af3f228', // tr - MacOS X 10.5 - Firefox 3.6.9 
+'87352cf61687163360b966802af02628', // tr - MacOS X 10.5 - Firefox 4.0 
 'a71bf45d1c5b5db76be62a4aebd74f46', // tr - MacOS X 10.6 - Firefox 3.0.19 
 'a5023bf95d7ebf00c4d0b2e696b5742a', // tr - MacOS X 10.6 - Firefox 3.5.7 
 '7125789ac81e997093e382a07e872221', // tr - MacOS X 10.6 - Firefox 3.5.9 
@@ -4632,6 +5290,8 @@ $browsers_fingerprints = array(
 '43c9cda5c478eb21f1f7afe3cb5fd414', // tr - MacOS X 10.6 - Firefox 3.6.6 
 '0b0862e96622fed96d2f511dca74783b', // tr - MacOS X 10.6 - Firefox 3.6.7 
 '38968652935d6ec985e0a6d11a9342d4', // tr - MacOS X 10.6 - Firefox 3.6.8 
+'7bd016745c06d981bd93868033597bd5', // tr - MacOS X 10.6 - Firefox 3.6.9 
+'d77bc5006ab1ab7be34f242e9d9e14fe', // tr - MacOS X 10.6 - Firefox 4.0 
 '61ac5d2a3d559a2131c2e79291054ff7', // tr - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '051a92034c3e71b1f7aa12766f6dd19d', // tr - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '035215882d166908635c7fcd1a0be424', // tr - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -4676,6 +5336,8 @@ $browsers_fingerprints = array(
 '688a3850d7067a2556ccf37a3c0c8501', // ru - Windows XP - Firefox 3.6.6 
 '12ea82018c22248a87ed53af55ae21f2', // ru - Windows XP - Firefox 3.6.7 
 'ea4053d13f59cd13cf2f3fd319701469', // ru - Windows XP - Firefox 3.6.8 
+'13686b59b71fac25f29dc93c90078fee', // ru - Windows XP - Firefox 3.6.9 
+'9811d116bee52430ce210f41b694624e', // ru - Windows XP - Firefox 4.0 
 'e041f72b3f7f6d0cad8a1e60cd784544', // ru - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'dab424d43c0f47a5e6d74e71418863ad', // ru - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'e4c78b4363bbc4fd482b45e467cb0cd9', // ru - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4688,6 +5350,8 @@ $browsers_fingerprints = array(
 '82d13878ae18f2670a105df94fb2c1e9', // ru - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '99e2221b631438446c26d44f1acc8a85', // ru - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'ead435ff1d934a09ce51433508985be1', // ru - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'ca20c5212c59c939bcee07ad6665d6da', // ru - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'8f67032e95b3dde8f290e13aad0b9798', // ru - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '59826ec6c10cbf0510dabbe9171b6d28', // ru - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'e846de63534e7bab077794537e1f1f76', // ru - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '8479751776e07da2e6903b429d6ce2ec', // ru - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4700,6 +5364,8 @@ $browsers_fingerprints = array(
 'a446b4c5ee9d002355e98473fa2dd9f3', // ru - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '88084e28db71769e68596cbcc757e7cc', // ru - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '3ecb26072d1798ce6379628beed9347f', // ru - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'53720802e1888ce9460c52d81fdd5304', // ru - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'6597796af922b50bc23c31481bd83d7c', // ru - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '4fa6a4989a8436bf9804545307a547af', // ru - Windows Vista - Firefox 3.0.19 
 '2d4847568eabab90e48f54e16d783c99', // ru - Windows Vista - Firefox 3.5.7 
 'd813042e134ec4240590bef80af55825', // ru - Windows Vista - Firefox 3.5.9 
@@ -4712,6 +5378,8 @@ $browsers_fingerprints = array(
 '409c9ad171e035a63bb23e6163461838', // ru - Windows Vista - Firefox 3.6.6 
 '63cc8d8bb818bc614019684783ae9c87', // ru - Windows Vista - Firefox 3.6.7 
 '962f2b2a4a33215451d6ecd8dc369682', // ru - Windows Vista - Firefox 3.6.8 
+'554ce0143bab82adb248f1c207607b7c', // ru - Windows Vista - Firefox 3.6.9 
+'2a5c2a9f4e4d82d5f669804fb8afeedd', // ru - Windows Vista - Firefox 4.0 
 '7d1ad4721f089a726b9bea0758b80f0a', // ru - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '9cf4df6cec27ca2d46b52d95bd4528c2', // ru - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'c12d0f0173fc025afd2fe84a6b9e1644', // ru - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4724,6 +5392,8 @@ $browsers_fingerprints = array(
 'f418af39b1ad2246460669a38a8372cf', // ru - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '433560734c0ee88f274264dc8bca98e6', // ru - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '3ab9fb08ef0fb91398cbedb03d5b914c', // ru - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'1f8b7d35b690d590154ddd3b3b933723', // ru - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'68383d704d8837e23456aead40af1f98', // ru - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '18397e7b99f8156c34243521637d09ef', // ru - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '68861c69783966611e11184ec372de5a', // ru - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'e8f760918c31ba1930ea2fc95da04739', // ru - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4736,6 +5406,8 @@ $browsers_fingerprints = array(
 'f04c410fbf04a81c3f95c42f02a8528f', // ru - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'd84d1c6772b44a26b1316357dc05d682', // ru - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'c638ada1faa34de07235523ee3141f81', // ru - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'074724f81d5121cf0601d21041a0790b', // ru - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'b34546ce6df426701c73470ca60c4abd', // ru - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '5217be2f95b5d7362768af2b12f0a069', // ru - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '92a973d50ebf1fc6ffe35a6ea130b74d', // ru - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '4909cc8e7b9798fbd74c3e50fef63b49', // ru - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -4748,6 +5420,8 @@ $browsers_fingerprints = array(
 '011c454c36ee4c183bfda9f9d7ba900d', // ru - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '70a202c1845c71d5de57f93b98a9e357', // ru - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '05a57d2d7d380fb34241a020f293e57c', // ru - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'72fd2c78898e3eceb513d60881f20202', // ru - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'634356a2ad158cdc94271df044b1140c', // ru - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '166fa43a20bb09b6508e84a222faf29a', // ru - Windows 7 - Firefox 3.0.19 
 '18250bb5311d8aa17e4a9371771eae1e', // ru - Windows 7 - Firefox 3.5.7 
 '65025f299413e5e2344632fb9225e7e2', // ru - Windows 7 - Firefox 3.5.9 
@@ -4760,6 +5434,8 @@ $browsers_fingerprints = array(
 '0e80aa0eae1801b6a7ed80e063813fea', // ru - Windows 7 - Firefox 3.6.6 
 '832fca8e80102c15fbe48d9d431a65b7', // ru - Windows 7 - Firefox 3.6.7 
 'bc9d2fd5c24e13a11eba43e05031c315', // ru - Windows 7 - Firefox 3.6.8 
+'0a993e5a6aed3a67db8425dab373b6a6', // ru - Windows 7 - Firefox 3.6.9 
+'1e162fc773ac7de279036544e64d344c', // ru - Windows 7 - Firefox 4.0 
 'a2d9c920a7413cc7f15bfb8b0adda7f7', // ru - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '2b66c47a158bbc515f2428418cd7907b', // ru - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'ed5d21990953e7933eb558e3ed9e65fa', // ru - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4772,6 +5448,8 @@ $browsers_fingerprints = array(
 '92d846094d9e7255dbd96e398a66b10e', // ru - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '77178b7008ad6c870bc7a2c5d2b9cf56', // ru - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'f8df717fcaae69fdc70958e8f2776697', // ru - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'3a9c9d5841ac57ca789889b8d329f254', // ru - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'36a217a453d899f9234c79de464bf0cf', // ru - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '1b2fd938fbf72b95dca7edf17fcf04c9', // ru - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '08ebb7e83f742336856d24883fc5bd44', // ru - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'f987e1635918c4dc458c179db8bd557b', // ru - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4784,6 +5462,8 @@ $browsers_fingerprints = array(
 'dc4f33ab311780063d1fd9a8b2ae3581', // ru - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '1982b49833ee81e9e8cac5f60bd9a38c', // ru - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'c2afb9597760ec2d9362164b4a7c9cb0', // ru - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'97779c6f0ef011a52124a95a028e7306', // ru - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'b63889d9a836814e3270794146e8f724', // ru - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'e65f3186399786317df763f2ab305cc8', // ru - MacOS X 10.4 - Firefox 3.0.19 
 '6fd8ba11a79e1caeb090d06e618becb4', // ru - MacOS X 10.4 - Firefox 3.5.7 
 'ba767f32742c1a3f2d1ac1c87adff86b', // ru - MacOS X 10.4 - Firefox 3.5.9 
@@ -4796,6 +5476,8 @@ $browsers_fingerprints = array(
 'cc4ce0e06d306edb9d4bd8c832bb59cb', // ru - MacOS X 10.4 - Firefox 3.6.6 
 'a1a41a652f9ecedbe5d2abc4f565cc27', // ru - MacOS X 10.4 - Firefox 3.6.7 
 '7ff3f35f46a5eda16caa6023bb0d13c2', // ru - MacOS X 10.4 - Firefox 3.6.8 
+'ae2616624285ba615ca3a9d84f93bb88', // ru - MacOS X 10.4 - Firefox 3.6.9 
+'9f62e53ff1c871f3997d325a2764aa91', // ru - MacOS X 10.4 - Firefox 4.0 
 '97d70cfa6f0ed34547bd231eaf5eac4e', // ru - MacOS X 10.5 - Firefox 3.0.19 
 'a6de671fe24700d4e3ae6bae5554f953', // ru - MacOS X 10.5 - Firefox 3.5.7 
 '095cb4cff97dbba62b3cf2bf6ef2b2a4', // ru - MacOS X 10.5 - Firefox 3.5.9 
@@ -4808,6 +5490,8 @@ $browsers_fingerprints = array(
 '8548767ab1098024f9e95534e7a92668', // ru - MacOS X 10.5 - Firefox 3.6.6 
 '49ed2a24495e9a93a2d8104e32ce4ab6', // ru - MacOS X 10.5 - Firefox 3.6.7 
 '65bb4f5f8181d476f1c7dea9ddfcd8c0', // ru - MacOS X 10.5 - Firefox 3.6.8 
+'1d0b9b26a1d6c547d980f2b4f871180c', // ru - MacOS X 10.5 - Firefox 3.6.9 
+'73a334f778455311bbfdd072752dd254', // ru - MacOS X 10.5 - Firefox 4.0 
 'f39435c675685004649bac4c32d75dbc', // ru - MacOS X 10.4 - Firefox 3.0.19 
 '860f289ab6b273cbd23d2e15d894ffe1', // ru - MacOS X 10.4 - Firefox 3.5.7 
 '2162a639a86da2a3d3b03c2d2e9039bc', // ru - MacOS X 10.4 - Firefox 3.5.9 
@@ -4820,6 +5504,8 @@ $browsers_fingerprints = array(
 '4c2e697ee7948a982c8bbaa47ce6fa13', // ru - MacOS X 10.4 - Firefox 3.6.6 
 'a87e97f67b53b2b75a9343d4e9558af1', // ru - MacOS X 10.4 - Firefox 3.6.7 
 'cfccea39d40a27ff03d69c54f7662c2d', // ru - MacOS X 10.4 - Firefox 3.6.8 
+'9f9833091fe8ad8b3780e317b0e0b14d', // ru - MacOS X 10.4 - Firefox 3.6.9 
+'8917d766b7e8f46ee7bb3c966919e0c5', // ru - MacOS X 10.4 - Firefox 4.0 
 '3ffff28af2f581c6b5ae8a77636d9da5', // ru - MacOS X 10.5 - Firefox 3.0.19 
 '6f08d65c9baec6882fc132193433ad25', // ru - MacOS X 10.5 - Firefox 3.5.7 
 'f32c3ddb5b08a679cfbdd769a918d5e5', // ru - MacOS X 10.5 - Firefox 3.5.9 
@@ -4832,6 +5518,8 @@ $browsers_fingerprints = array(
 '6dfa3aeaf12c58dea6ed07dd2e56a459', // ru - MacOS X 10.5 - Firefox 3.6.6 
 'c974c9fff3573e584b1a68473797848b', // ru - MacOS X 10.5 - Firefox 3.6.7 
 'fb0e34d2c36e728609e1ecc8e7a2c490', // ru - MacOS X 10.5 - Firefox 3.6.8 
+'059dbf698f093bb2a1c981beb05dbbe3', // ru - MacOS X 10.5 - Firefox 3.6.9 
+'bfe00a15be3145817020ab36faa86267', // ru - MacOS X 10.5 - Firefox 4.0 
 'ae7d273a2abc0fe3d3fe41634220c172', // ru - MacOS X 10.6 - Firefox 3.0.19 
 'a4b1869ec6dc2b778ec38dc563e5e51f', // ru - MacOS X 10.6 - Firefox 3.5.7 
 '4691338d4391fc368bffbfdc51a23ca9', // ru - MacOS X 10.6 - Firefox 3.5.9 
@@ -4844,6 +5532,8 @@ $browsers_fingerprints = array(
 '6e0b90c67bf661c8378140b8220593fb', // ru - MacOS X 10.6 - Firefox 3.6.6 
 'eb1afd37311d91562b20afd4ee8caeac', // ru - MacOS X 10.6 - Firefox 3.6.7 
 '964c31d9fa1decd6c3a77091c4008cdd', // ru - MacOS X 10.6 - Firefox 3.6.8 
+'0e3c9ef1e819131d5a7d53d7de5d6082', // ru - MacOS X 10.6 - Firefox 3.6.9 
+'052a39d4f54757a7919c7cd850e7358e', // ru - MacOS X 10.6 - Firefox 4.0 
 '3d0bdca2228055f4d3ed8fa04abdd675', // ru - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '91f607cb9c39d189f66bc74a993908f1', // ru - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '8c8d1f0ffb85a5c476abc4d8cace0442', // ru - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -4888,6 +5578,8 @@ $browsers_fingerprints = array(
 '74ba96fd5489f14738c2b5273767cede', // ru - Windows XP - Firefox 3.6.6 
 '1105741a910ce7c24bdd9c0062f44d59', // ru - Windows XP - Firefox 3.6.7 
 '3715a2fe4120e89811b221580fd0899f', // ru - Windows XP - Firefox 3.6.8 
+'eda5d8ac345d073a9ffdf7b8f2634ab6', // ru - Windows XP - Firefox 3.6.9 
+'cd182a7454b4b2523a8de2ea94a572f9', // ru - Windows XP - Firefox 4.0 
 '51654ecd5cd0ba1bd2b75d0639498077', // ru - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '83ae4ca3ff331910432f46651343ce75', // ru - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'ba59766081310e480326127521afe9f0', // ru - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4900,6 +5592,8 @@ $browsers_fingerprints = array(
 '261bbf1675289895a91f6df9e0ac41d7', // ru - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'c16026bc36ec836d1386b6b8750fc3c0', // ru - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '0e49e48e2d694f5e3f84b001a42fd40d', // ru - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'06b28d1e7bcbafebd62a09789423c699', // ru - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'6fe9e7d29aa0f4a364be5154b436924e', // ru - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '13cbe23e580f291e79e13f5b1dc38957', // ru - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '5ccc07fd96a51fa0d32929be9ab1c387', // ru - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'b56c2903bc4ae8d6f748c5fafda335a1', // ru - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4912,6 +5606,8 @@ $browsers_fingerprints = array(
 '9176bc18e166c5c331745ff75b555fa7', // ru - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'b153671eabf6dc5cf6f8b665393f4033', // ru - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'e07f864fae1db1bfce4e868ccbaeb05f', // ru - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'960251a34ac1bd09ff8f34576b8c1517', // ru - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'38f3174249ed2920ca39534833b962e8', // ru - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '4ae585dfee4bca9fa6dd0a26fd938249', // ru - Windows Vista - Firefox 3.0.19 
 '17fa8de0ef3c9ad972c11dcc8ba87609', // ru - Windows Vista - Firefox 3.5.7 
 '8b9ee0cfaa11bec91db0020f168fea7b', // ru - Windows Vista - Firefox 3.5.9 
@@ -4924,6 +5620,8 @@ $browsers_fingerprints = array(
 '6e4ffb61294bea834f821478b6e987c3', // ru - Windows Vista - Firefox 3.6.6 
 'f37ab22c3f1919f0815428eb3703aeaa', // ru - Windows Vista - Firefox 3.6.7 
 '5d46308a26d3e19d27b5c369760cfc84', // ru - Windows Vista - Firefox 3.6.8 
+'833b3bb3bd70c0086542ca42cfec7d25', // ru - Windows Vista - Firefox 3.6.9 
+'d26c9a9846325ad14ef7adfd0bfdff12', // ru - Windows Vista - Firefox 4.0 
 '289e5f3edf9827a277eeb32778ddc8fb', // ru - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '0b178a65abeb731f481cd64fedd54d63', // ru - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '1bcdd10f8ed53be278e5856fd35c0cef', // ru - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4936,6 +5634,8 @@ $browsers_fingerprints = array(
 '26fd92e382dca670473a8a5c9e53c944', // ru - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '0f48517e10e808d9cbca656f486065f5', // ru - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'b989593ecea6c94590fabb9d1af87e6d', // ru - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'b75b23d25d7461caddf2185e9a20279c', // ru - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'38249ecdbc064f955432dfd2fa9f82c2', // ru - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'f417c2a1b398937eb84da677c5570341', // ru - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '79ee68685bc7ae8d7294d2115e1f139d', // ru - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '1dec3cad4c8a5c3c2cfe6342540b0b7c', // ru - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4948,6 +5648,8 @@ $browsers_fingerprints = array(
 '413a6bf7f0cf2da23abc79bffb132010', // ru - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'cbf3e471e44a1cac483df3e52bcce65b', // ru - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'e38597f3d37dc5d0d12485aab1829b3c', // ru - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'f3df554f32e12e74e995e50de113bff5', // ru - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'8e83952b4e2fc96e537e786d9f8173f0', // ru - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '2c1f6a67a8d2a2ce2640c119a728475b', // ru - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'bf93ad9a58552941f3304023d18df550', // ru - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '6e690ccecdd6b668d1601579321500be', // ru - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -4960,6 +5662,8 @@ $browsers_fingerprints = array(
 '5cdf498bf3247e0356171a93f0ca26e9', // ru - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '07a67b2786cae26db53f5edd0032e889', // ru - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '889cf5375914f80b8ff7d8f6f0e6651b', // ru - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'416dde134ca7076b090902935772e3e1', // ru - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'d01dae7df32a11ca8940295c3aac59c5', // ru - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '262d400071b2b7317a295dc922df3ddf', // ru - Windows 7 - Firefox 3.0.19 
 '3b9961a9739534ef111aaafcc094216b', // ru - Windows 7 - Firefox 3.5.7 
 '6ed2a0a9ef34d3eb2b6bc2edb7427908', // ru - Windows 7 - Firefox 3.5.9 
@@ -4972,6 +5676,8 @@ $browsers_fingerprints = array(
 '3e43cec1926645a7ddc49f6651d10c20', // ru - Windows 7 - Firefox 3.6.6 
 'af4e1bf7892fc261f9f72c9939135ef2', // ru - Windows 7 - Firefox 3.6.7 
 '4b3099b5931a6b449bd4fe989ced4595', // ru - Windows 7 - Firefox 3.6.8 
+'ded623ba62fa4e18360a28b6d267cd16', // ru - Windows 7 - Firefox 3.6.9 
+'4806adab1d7fa5e5d2bba4d9e9d15359', // ru - Windows 7 - Firefox 4.0 
 '529f269fe5f5733d89797f71ca0b4980', // ru - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '6267a1b31629ba6a550743ecefffec0f', // ru - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'ed7a43908d8dee8d91aa07c6081777cf', // ru - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -4984,6 +5690,8 @@ $browsers_fingerprints = array(
 '2c087679751b374415352df0abcbfcae', // ru - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '186e8bce3f35d8186f037d9151df9fb2', // ru - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'b16beb6d30528dd73ee2bfe7d1b5ac56', // ru - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'b84bab33214cc54f447743da1716e4d9', // ru - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'d97434d7ac33fe17c29c82e6d0e099f2', // ru - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'c4162494c469f1e620d116353d3a5f18', // ru - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'c9604a7df166fd0e797c4463022720e1', // ru - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'e9eed3899fd4c772486a51f72c39f78e', // ru - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -4996,6 +5704,8 @@ $browsers_fingerprints = array(
 '3e86059301f683a5fe0458ce5e5a8aff', // ru - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'd5fde9e3409b802ab32ccb85608cd58b', // ru - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '3a82df373759bdd60e9b11bb268182ef', // ru - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'13b0cc9cb0fb370114d870d509fc6589', // ru - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'93617b20a6f002e14594d025b68a7304', // ru - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '2e6068121c01f75c13abf14212a5cc00', // ru - MacOS X 10.4 - Firefox 3.0.19 
 '4dae6e6f19b06b353d0676232ee00bdd', // ru - MacOS X 10.4 - Firefox 3.5.7 
 'd450c9a56337a62c593c91e4f5672280', // ru - MacOS X 10.4 - Firefox 3.5.9 
@@ -5008,6 +5718,8 @@ $browsers_fingerprints = array(
 '8f99a3bae8d303a5f82436772edca3a0', // ru - MacOS X 10.4 - Firefox 3.6.6 
 'fba0df60124a4de18ffd123af7a63042', // ru - MacOS X 10.4 - Firefox 3.6.7 
 '666037963bb458fc504ea3dac4cfd525', // ru - MacOS X 10.4 - Firefox 3.6.8 
+'b85eae0970575fa7c03a4faf0eac7cda', // ru - MacOS X 10.4 - Firefox 3.6.9 
+'1a3106657c48f0de6e12e631428e8238', // ru - MacOS X 10.4 - Firefox 4.0 
 '9a7a67a2c56fbc02f83b458482607f98', // ru - MacOS X 10.5 - Firefox 3.0.19 
 'd50729b8005d192522c6e9c982e20f3c', // ru - MacOS X 10.5 - Firefox 3.5.7 
 'dd7a23e6e0304ce2fe598099f6561297', // ru - MacOS X 10.5 - Firefox 3.5.9 
@@ -5020,6 +5732,8 @@ $browsers_fingerprints = array(
 'd57843177833c4bced9627c9b5d8adff', // ru - MacOS X 10.5 - Firefox 3.6.6 
 '7df6ffbb28ea49fb98d83cda219224fc', // ru - MacOS X 10.5 - Firefox 3.6.7 
 'dc69ec88569aef43f2dc5260af3b8071', // ru - MacOS X 10.5 - Firefox 3.6.8 
+'b2323b80495372fa1040374c9f6afef4', // ru - MacOS X 10.5 - Firefox 3.6.9 
+'883f454f87cc15a4a21771c8094e86ea', // ru - MacOS X 10.5 - Firefox 4.0 
 '7faee8d3589dee3c71f35ee6e6a44049', // ru - MacOS X 10.4 - Firefox 3.0.19 
 '1da58c0a8ea2805bf702432607fcce59', // ru - MacOS X 10.4 - Firefox 3.5.7 
 '31bdf5058dd49576ccde5bafe97af5e2', // ru - MacOS X 10.4 - Firefox 3.5.9 
@@ -5032,6 +5746,8 @@ $browsers_fingerprints = array(
 'dfbd39a7641e51c1a7ea0891ee147e74', // ru - MacOS X 10.4 - Firefox 3.6.6 
 '1f5d824a5d9f32a9ad9d4637d497332d', // ru - MacOS X 10.4 - Firefox 3.6.7 
 '15c42bdb54ff551796dfab0ee55fe3f2', // ru - MacOS X 10.4 - Firefox 3.6.8 
+'f415347ae6b34fdf02eca92f32e84e02', // ru - MacOS X 10.4 - Firefox 3.6.9 
+'298c97bb7501050de06e55d936071317', // ru - MacOS X 10.4 - Firefox 4.0 
 '0824c805ad62bb852f3028122d840252', // ru - MacOS X 10.5 - Firefox 3.0.19 
 'e68c70c03bf1176ac8c4cc07ee6b0c74', // ru - MacOS X 10.5 - Firefox 3.5.7 
 'f823cec2636610023f0c21fa78eabbd0', // ru - MacOS X 10.5 - Firefox 3.5.9 
@@ -5044,6 +5760,8 @@ $browsers_fingerprints = array(
 '1fe66f3baa7d6d7baf4f729928260bdc', // ru - MacOS X 10.5 - Firefox 3.6.6 
 '7e776256a3e866b1524dc00d43fa968d', // ru - MacOS X 10.5 - Firefox 3.6.7 
 'c5a494099c6458e765b016e6875e131b', // ru - MacOS X 10.5 - Firefox 3.6.8 
+'d7b4cac4d7c426ba9bee34e7d81e2939', // ru - MacOS X 10.5 - Firefox 3.6.9 
+'5b56dfd2992dbc6afd367c9d21d1850d', // ru - MacOS X 10.5 - Firefox 4.0 
 '4b2f5ad2769daf93ec5bd248f74bb037', // ru - MacOS X 10.6 - Firefox 3.0.19 
 '9bd50587abbd97d5d69086dab577827c', // ru - MacOS X 10.6 - Firefox 3.5.7 
 '34ea3acbaf9be3c50e4a316e252fa16a', // ru - MacOS X 10.6 - Firefox 3.5.9 
@@ -5056,6 +5774,8 @@ $browsers_fingerprints = array(
 '255dcbc08ba929e7c1095bc89e252d29', // ru - MacOS X 10.6 - Firefox 3.6.6 
 'fab45609f5587f0d1c4ad6eb2ad461d3', // ru - MacOS X 10.6 - Firefox 3.6.7 
 'e55123cf2e180ed99f8c6d2cd9e2f457', // ru - MacOS X 10.6 - Firefox 3.6.8 
+'9a5ac6d15e81f734b6de907fe5b14eb7', // ru - MacOS X 10.6 - Firefox 3.6.9 
+'cb8fd7850c69b9d9addc97b963c197d4', // ru - MacOS X 10.6 - Firefox 4.0 
 'fed946779fdf5cf7ab219d9313b26948', // ru - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '8315c7bcc3bb50308afd9eee8aac671f', // ru - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '89514893ed432090975e8ce1b572cec4', // ru - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -5100,6 +5820,8 @@ $browsers_fingerprints = array(
 '11c7b7b5f628d2526d5d2f4ed4cf3c89', // pl - Windows XP - Firefox 3.6.6 
 'a993880ae2c26d177f2ca7c8e012c4ff', // pl - Windows XP - Firefox 3.6.7 
 'f5446a8f82eac2c37200d8c60f050285', // pl - Windows XP - Firefox 3.6.8 
+'e0251613b852c38c3823cb4f9c855f5e', // pl - Windows XP - Firefox 3.6.9 
+'00677fc694fbc726d6e04d9ebf931475', // pl - Windows XP - Firefox 4.0 
 'abce4b9b99544a9e3c540d4837fd68f7', // pl - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '15eaeb3107eda1c62bf2aa82a4225eaa', // pl - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'ae26aedf2dbc4db6e837904d33828ebb', // pl - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5112,6 +5834,8 @@ $browsers_fingerprints = array(
 '6a5ceed6264fe021ecb7495622cefb5b', // pl - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '806e4f557a3b23100c4d580f2cdf03b2', // pl - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '46cf2b9e1881ff14f95d612faa9c977e', // pl - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'809c7b66e66d1e43b16d52fcc25cdb6a', // pl - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'846e338a94e9e650d828339af5637dbb', // pl - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'c2292d513cf5da346ef845f03f8cacc5', // pl - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'faf09b7753085d21f0ef698425dcad80', // pl - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '81942c9d7f881b3c12bd528169b9638d', // pl - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5124,6 +5848,8 @@ $browsers_fingerprints = array(
 '24d013a07c380f883752749308635f05', // pl - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '46b19a5d7deaaf30872b465a11369bd4', // pl - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '0e49907d1d636b45b70bfe03fa330907', // pl - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'b3311319f21b3b225fd46118a0d9c940', // pl - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'b3bad4a822088dc47ad3bba0b7a0044e', // pl - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '27cabf863d06068411d83692f546a6f3', // pl - Windows Vista - Firefox 3.0.19 
 'a3191f99e748970bf156b0c5c30ef65a', // pl - Windows Vista - Firefox 3.5.7 
 'caed7c58c29b8055983ec6f7deaa5949', // pl - Windows Vista - Firefox 3.5.9 
@@ -5136,6 +5862,8 @@ $browsers_fingerprints = array(
 'd6b75c94c175f6027cb85da7ad85d439', // pl - Windows Vista - Firefox 3.6.6 
 '91f912acb6a7ee3a57745913c58007df', // pl - Windows Vista - Firefox 3.6.7 
 '0f12af72305ac4b1ee7194bf4efd232c', // pl - Windows Vista - Firefox 3.6.8 
+'2ea7709b827a0c890d7b53d45d0abbb1', // pl - Windows Vista - Firefox 3.6.9 
+'023ceebb5c6b7d3b06ea592b48e01f45', // pl - Windows Vista - Firefox 4.0 
 '168dd3f65d01b689bd5ae2190440cdb1', // pl - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'df4539a0cf92b9b7749067b546c04d39', // pl - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '401e0a0e4640f524cf21f4c7cedc1856', // pl - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5148,6 +5876,8 @@ $browsers_fingerprints = array(
 '93510a32ba0d18a6844d24b9f700c63b', // pl - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '0e85d99c7ab0c6f23f9e4adf8e1471af', // pl - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '70e20fa8db1b309b55625dc268fb9cb8', // pl - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'571ec8433a6a28d0fc109f60fef5cf1b', // pl - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'c78383a5befd2ac39001fd64253423fa', // pl - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '0321f44c12f025df536c7173d4fdd424', // pl - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'e021df391c4513da1d1cdce8f8e35ef0', // pl - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'c3af69066d3ade15594cc514b0ede970', // pl - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5160,6 +5890,8 @@ $browsers_fingerprints = array(
 'e2c3f68e04f09521b2e60e225c71f802', // pl - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '135b5432aeae77c949862d61417c341f', // pl - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '9b65aa34e0032d94aef1693aec112180', // pl - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'31411cb0b9b3649b12f3a69ac8aac6ae', // pl - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'f91e9cb3a741123d630814d021131f05', // pl - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'cf25ba60f361254a31dddf8d52a7d043', // pl - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 'be72a0846565e0c3d01f3d785cde0cdd', // pl - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'f98a64d5f0c0252151680614c989afe6', // pl - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -5172,6 +5904,8 @@ $browsers_fingerprints = array(
 'd787da365934e463b0b016f9aab45007', // pl - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '0bbae39c92ddcfd6b10dea4a539be17c', // pl - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '9b10c4b0ac8703f51e8282735adc7bdb', // pl - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'7b917426ee082675b1b9a5f78ddd4f8a', // pl - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'45ed0510d8f37b32aaa3e2f00891455f', // pl - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '00c8b46ab07096c948d3d09d3960b718', // pl - Windows 7 - Firefox 3.0.19 
 'be38a5c583d8ff960479e805fbf3a3ed', // pl - Windows 7 - Firefox 3.5.7 
 '7abf40802a04abdbaa972bf1327180f1', // pl - Windows 7 - Firefox 3.5.9 
@@ -5184,6 +5918,8 @@ $browsers_fingerprints = array(
 '30cc4a6b85cc7534cc591dba783ff64a', // pl - Windows 7 - Firefox 3.6.6 
 '869ac0ec641942b83e1985c4fdb71b69', // pl - Windows 7 - Firefox 3.6.7 
 '72d85777f6cbc34ede6bab149c86911b', // pl - Windows 7 - Firefox 3.6.8 
+'6f1066f9fe05592fd34180b30b339a4f', // pl - Windows 7 - Firefox 3.6.9 
+'ae7214ea2d4e0e8a4bd893471fe58be7', // pl - Windows 7 - Firefox 4.0 
 '1fff3369f6c14890518253174a205465', // pl - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '69f1620ede22a5f874e2f598e3b185c6', // pl - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '045c8d7a5fcc14056a0b1b8687489fc2', // pl - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5196,6 +5932,8 @@ $browsers_fingerprints = array(
 '6b6783d997c76d1ee8e0247c745ac714', // pl - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'e0c3b1de7bec8902fb99062cc372c937', // pl - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '8d63dd367715d9f8417d4ffdb2759fcb', // pl - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'16244ec9ec299b7c547f9b3c3a0c4472', // pl - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'f101e468352e2795c1f4f6d1144277fb', // pl - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '8ed2a171d062d96228603c4f7d77ac91', // pl - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '0eea6cbcc6132db9c6a67566130676cc', // pl - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '8e7dd76c5ef63baeacadf7386e625110', // pl - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5208,6 +5946,8 @@ $browsers_fingerprints = array(
 'c0d72e4dcc9a5466630469156cf26b43', // pl - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '686cb993d284a5f1da67d2225b6147a0', // pl - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '1947fed29daf5de781fad44d36d454f1', // pl - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'b919ea63c816b8f8ec972332be44c0c0', // pl - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'600b0faff2c431e87844d2b5daa619d0', // pl - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '7e67130c7e5724db76d1b770c29cec92', // pl - MacOS X 10.4 - Firefox 3.0.19 
 '044889857f74dc42f8fa8b024d8f4080', // pl - MacOS X 10.4 - Firefox 3.5.7 
 '592cd0fd6be1adf8ac184d094b178af0', // pl - MacOS X 10.4 - Firefox 3.5.9 
@@ -5220,6 +5960,8 @@ $browsers_fingerprints = array(
 'a514551fdd5256846bffdd58dbb0b704', // pl - MacOS X 10.4 - Firefox 3.6.6 
 '17f06ea61739aa40f8ac1a13db9f5344', // pl - MacOS X 10.4 - Firefox 3.6.7 
 '761da5bcef0dc3c286d460dfd3418aff', // pl - MacOS X 10.4 - Firefox 3.6.8 
+'701c45cc855a042bf3854bb902573238', // pl - MacOS X 10.4 - Firefox 3.6.9 
+'0e90bdc791fc44cdd289952237c51ff1', // pl - MacOS X 10.4 - Firefox 4.0 
 'c45ea40e9597d2407b1e23679dabdbe5', // pl - MacOS X 10.5 - Firefox 3.0.19 
 '21a7722150adeb16bf5a280923f4134c', // pl - MacOS X 10.5 - Firefox 3.5.7 
 '3a5772cdbfbfc6434e234dd396588464', // pl - MacOS X 10.5 - Firefox 3.5.9 
@@ -5232,6 +5974,8 @@ $browsers_fingerprints = array(
 '976411fa25bd67d53e1349b83edec48b', // pl - MacOS X 10.5 - Firefox 3.6.6 
 'c3ee412ffcbf589982c85d02f34adf32', // pl - MacOS X 10.5 - Firefox 3.6.7 
 '5cd82ad5632762d2983bdce6c59c55c0', // pl - MacOS X 10.5 - Firefox 3.6.8 
+'334655361d39d1fa9e476cb0089338d2', // pl - MacOS X 10.5 - Firefox 3.6.9 
+'ae0c436d8ca4881a2546daa8386a3414', // pl - MacOS X 10.5 - Firefox 4.0 
 '475c13bd39c5d327c1d25be0f45e0e6b', // pl - MacOS X 10.4 - Firefox 3.0.19 
 '4822126b3df4e92d89763573c951f33d', // pl - MacOS X 10.4 - Firefox 3.5.7 
 '2cacb2f4598ff65009428f8676454d87', // pl - MacOS X 10.4 - Firefox 3.5.9 
@@ -5244,6 +5988,8 @@ $browsers_fingerprints = array(
 '16f8ab9817efd56797eda8bf3899cc56', // pl - MacOS X 10.4 - Firefox 3.6.6 
 '1acd5bcd9172c6cb79a07cc1a6663a7e', // pl - MacOS X 10.4 - Firefox 3.6.7 
 'bfbc02b1dd50a6b6a7f0805990abf670', // pl - MacOS X 10.4 - Firefox 3.6.8 
+'1c7d04e4fbf9cf09bb66899e1a9c350b', // pl - MacOS X 10.4 - Firefox 3.6.9 
+'76b8ba754b09257b1fde9f93ca1aa753', // pl - MacOS X 10.4 - Firefox 4.0 
 'cd271864174ec8ae7ee17fe339739843', // pl - MacOS X 10.5 - Firefox 3.0.19 
 'b591688c51adf4bbfdc2b69cf5533461', // pl - MacOS X 10.5 - Firefox 3.5.7 
 'a10da228941f6f809f2c7e99c05c65f9', // pl - MacOS X 10.5 - Firefox 3.5.9 
@@ -5256,6 +6002,8 @@ $browsers_fingerprints = array(
 'f39948d46bdc406846fafbc3bb6904a7', // pl - MacOS X 10.5 - Firefox 3.6.6 
 'a39302dab42644922cbf59d9cb047e99', // pl - MacOS X 10.5 - Firefox 3.6.7 
 'e68bc2b4e68f7871e8bc97c757ddd7fd', // pl - MacOS X 10.5 - Firefox 3.6.8 
+'569c9a8320b7622791cbde79434c02e2', // pl - MacOS X 10.5 - Firefox 3.6.9 
+'991289059f77ec5d143ca2625a1f4baa', // pl - MacOS X 10.5 - Firefox 4.0 
 'a8a866f7388fce895fab8104c37490d8', // pl - MacOS X 10.6 - Firefox 3.0.19 
 '4d78ddfbdaf8d99df9a513de77938c53', // pl - MacOS X 10.6 - Firefox 3.5.7 
 '6216b79e3c8d5e72e77f85c0138e8539', // pl - MacOS X 10.6 - Firefox 3.5.9 
@@ -5268,6 +6016,8 @@ $browsers_fingerprints = array(
 'd454996b01b6ee5903e09efbaa962203', // pl - MacOS X 10.6 - Firefox 3.6.6 
 '4fde701fcf1ff85720288d59aafd7553', // pl - MacOS X 10.6 - Firefox 3.6.7 
 '2b6a033c15524ee292d0646f8a80821e', // pl - MacOS X 10.6 - Firefox 3.6.8 
+'c293a5c4b3cf5935a62500c84990f41a', // pl - MacOS X 10.6 - Firefox 3.6.9 
+'c45bfe8fcbbd1c7e5a1fd0fa1b14d6d1', // pl - MacOS X 10.6 - Firefox 4.0 
 'b4f608d777a8958b3d58bd64a8e40c14', // pl - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'cec14692a57ecd3d51fca112113a8e6c', // pl - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 'c8fdc98fdbf2248b62217cf05277c02d', // pl - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -5312,6 +6062,8 @@ $browsers_fingerprints = array(
 '1e30425b3e7066cc4557d9a14b5fc995', // hu - Windows XP - Firefox 3.6.6 
 '7da0497ca36e353816f814f895c4bdff', // hu - Windows XP - Firefox 3.6.7 
 '9f4f0ab0241492ca01cb15f307373745', // hu - Windows XP - Firefox 3.6.8 
+'56d00666940a9c9d18fd4feb7a42608c', // hu - Windows XP - Firefox 3.6.9 
+'1abad88c4b0916787bd19f4d61b68706', // hu - Windows XP - Firefox 4.0 
 'ec973d7a57aecb8a73827752d2de290a', // hu - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'fd0fc801388531fd90c887ec7179c04e', // hu - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'c015a4a5c4338fd048f6b90dab6f9c5a', // hu - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5324,6 +6076,8 @@ $browsers_fingerprints = array(
 '8c6ab491848c0986a7d4788c576a6058', // hu - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '592ebd9b517680b0d605fcc926bb477a', // hu - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '3064d12f8ea3bdad59880e61a1590f9e', // hu - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'f39dccd99c3c0ad03f58fad1394093d4', // hu - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'ec79e014761fa1f7a4647454da2cfbca', // hu - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 'e3e97d88d93d7ed00518c5a9b7351f68', // hu - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'f56fc8b0788cfc2b44d973307759220a', // hu - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '5ff7d31f406560ccd75eaf6d8a3c9812', // hu - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5336,6 +6090,8 @@ $browsers_fingerprints = array(
 '2b485d7b028f5fddd789d3af68939bf6', // hu - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '39f05987c0929df005157e96f2abfdaf', // hu - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'c3087bcbe5dfa35aefe629301e8e1a2a', // hu - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'f121fdd8c22d28664be1a0a88598bf9f', // hu - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'4b6d0c0b474ac17abdf89e8d2ebdf1eb', // hu - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'f4cb4d5ec38021a9a2fe2a195327a0f5', // hu - Windows Vista - Firefox 3.0.19 
 '91e8dcd5b4f1c5fe7e497777899622a4', // hu - Windows Vista - Firefox 3.5.7 
 'deafdca893e40e064bdf31af75bcbbe8', // hu - Windows Vista - Firefox 3.5.9 
@@ -5348,6 +6104,8 @@ $browsers_fingerprints = array(
 'e529a1ceb73e75d57e66c336c29efc5e', // hu - Windows Vista - Firefox 3.6.6 
 '8925768d8b442953f022268e090d58d6', // hu - Windows Vista - Firefox 3.6.7 
 'e865ff91a06aa19545cb451c5e2455ec', // hu - Windows Vista - Firefox 3.6.8 
+'a17d0704d49c3c846d439922c731c3a2', // hu - Windows Vista - Firefox 3.6.9 
+'f62baf79905c386762c97be3c36e59c5', // hu - Windows Vista - Firefox 4.0 
 'f56797ffd492d6158ff56cad68775bac', // hu - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '091c86b1bf1a033e7f80b4bc266c2a44', // hu - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'b2ed48ce58518873148657f321f76a06', // hu - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5360,6 +6118,8 @@ $browsers_fingerprints = array(
 '79e2170e3a2ccb1f339b76e00cd1f734', // hu - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '128c54a8facf73117d1369c007cebcd5', // hu - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '72b333f575736c8452f3506596545b06', // hu - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'26f1b615633286316f0e538822e11c7c', // hu - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'062bdd83bfb1824c3296325f806d5702', // hu - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '77829b3bbe4c8ce81602c491dd56f3f6', // hu - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '262c554f01257c1bb7f7e6e71541aa48', // hu - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'c2e059e1acfa5a5f985694da30051a59', // hu - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5372,6 +6132,8 @@ $browsers_fingerprints = array(
 '8468249a092807631c28b911f3da0df6', // hu - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'e2d3d0e65d51d74ff476b3abf073cf28', // hu - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'ae9a4584946307aa980762328c1e2df9', // hu - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'07857496fa35fcca579e56a25b3bb837', // hu - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'6b64adce406596e5ef1170ed27239495', // hu - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'c4185c38409183496228c16903cca511', // hu - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '35d61b682d4e40ae7877d49418a562d5', // hu - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'e8ba1127c65974164d66391db6843871', // hu - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -5384,6 +6146,8 @@ $browsers_fingerprints = array(
 '88c17a13854ff6c6a4e621c3978d1de4', // hu - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 'ce9f4e597747d63ee06fce6b643396a4', // hu - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '8ba56886e40feeb008ab648ea54a8df1', // hu - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'36d9253bc12f2a454a092add2273020f', // hu - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'4830461192c160dcc391f60077d3fb91', // hu - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '82b6f8d6ce0972b555c3c5a378444e39', // hu - Windows 7 - Firefox 3.0.19 
 '6c3910e8795842a0a22292781ef5e6b1', // hu - Windows 7 - Firefox 3.5.7 
 '89ae787977c6c65407731aaded3d6bc1', // hu - Windows 7 - Firefox 3.5.9 
@@ -5396,6 +6160,8 @@ $browsers_fingerprints = array(
 'ae33f1990cedc99b0984c1a68388825d', // hu - Windows 7 - Firefox 3.6.6 
 '870369fe2d50503113f68d593862e758', // hu - Windows 7 - Firefox 3.6.7 
 '8bf8e33abda08355f983c02e18fbe8ac', // hu - Windows 7 - Firefox 3.6.8 
+'f3e6728f9e81a514d997b93fd0de0921', // hu - Windows 7 - Firefox 3.6.9 
+'d8e4baad95e248a5da9f26d3c56e7abd', // hu - Windows 7 - Firefox 4.0 
 'f0910c3c1162be95a684440694c49ae1', // hu - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '3ca09918d3fd02714b49f6fd85b62892', // hu - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '1cc10ddbe6a671e887812c559239fa96', // hu - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5408,6 +6174,8 @@ $browsers_fingerprints = array(
 'ee4c26d2e957bbef1132c462bf42b993', // hu - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '1395d325fba09c25cda08ddefd1e7814', // hu - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'a9800f5df1edd13709686bc42fbc0592', // hu - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'1c201d37bbd8c830fd9e66f3734bb35c', // hu - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'6b3808e600a8c3bce7a9f3d080330b2f', // hu - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 '2308d0d4d8101428375529dc506dd1bc', // hu - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '780c44029f3198b0fb736550f9617492', // hu - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '77f5af02ccc83574f723a81c5aaf013a', // hu - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5420,6 +6188,8 @@ $browsers_fingerprints = array(
 '0cf426981a40ff28c8e0671ab2028f27', // hu - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'ef01c8efde8583cf022af14754d1c2ee', // hu - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'ca99b0837f470b63ea0b0e126b5f9644', // hu - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'647b96f5737005bd8c81e9ada1f3d649', // hu - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'d7c6c870f8e362682ce6fbcead21e6bf', // hu - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 'f98e6c674691497e0955200e2108099a', // hu - MacOS X 10.4 - Firefox 3.0.19 
 'b1bd2b99025119bdd29d5e7df737a314', // hu - MacOS X 10.4 - Firefox 3.5.7 
 'fd4d4f24fc005f830178a9b3e50d4785', // hu - MacOS X 10.4 - Firefox 3.5.9 
@@ -5432,6 +6202,8 @@ $browsers_fingerprints = array(
 '7e82199f84a3466b38fda6e7d07a06ed', // hu - MacOS X 10.4 - Firefox 3.6.6 
 '213a6e970fc1b0cef6737c001bcf3c8f', // hu - MacOS X 10.4 - Firefox 3.6.7 
 '3c6ebacaaf0d307dc650cc9684d6c5dd', // hu - MacOS X 10.4 - Firefox 3.6.8 
+'52e47917cb1e9fd8ad057aafb09bd520', // hu - MacOS X 10.4 - Firefox 3.6.9 
+'1a1db632f3a552d0517fe1ce73cdf791', // hu - MacOS X 10.4 - Firefox 4.0 
 '50cc0d7c2c31abce7dcb2f262282d1b4', // hu - MacOS X 10.5 - Firefox 3.0.19 
 '286f443cf17f097a9cd35be529254aaa', // hu - MacOS X 10.5 - Firefox 3.5.7 
 '4bf22a4821f0fd1b5058ff29705224b7', // hu - MacOS X 10.5 - Firefox 3.5.9 
@@ -5444,6 +6216,8 @@ $browsers_fingerprints = array(
 'd625ae764a9d9a3be6a773d2e4a6cad3', // hu - MacOS X 10.5 - Firefox 3.6.6 
 'b3fb023d0590ad8d6018883bd96e924d', // hu - MacOS X 10.5 - Firefox 3.6.7 
 '13f356ac145b9d2d0519bc2f312f67c8', // hu - MacOS X 10.5 - Firefox 3.6.8 
+'e136497d18c16fbc58e3ec7924bf98d9', // hu - MacOS X 10.5 - Firefox 3.6.9 
+'c2880476304ba53c02763dcf1a3445ae', // hu - MacOS X 10.5 - Firefox 4.0 
 'f549d8039b47d3a50022c1fd05e5d4a7', // hu - MacOS X 10.4 - Firefox 3.0.19 
 'deabadde4c32fd4c4e2c77edd1257cd3', // hu - MacOS X 10.4 - Firefox 3.5.7 
 'd09461883db555682d7fe44a44a1670e', // hu - MacOS X 10.4 - Firefox 3.5.9 
@@ -5456,6 +6230,8 @@ $browsers_fingerprints = array(
 'd51c00e396cb6f09523c72dddaa6eca8', // hu - MacOS X 10.4 - Firefox 3.6.6 
 'a918b803dfc5890bfee686bc50183e2b', // hu - MacOS X 10.4 - Firefox 3.6.7 
 '9e1b73a9bf39cce4020a81e5cf4ceb4c', // hu - MacOS X 10.4 - Firefox 3.6.8 
+'e48d29bcafb20726114d1966558151ae', // hu - MacOS X 10.4 - Firefox 3.6.9 
+'5a97385b1b6b302095490b9c87ad6d94', // hu - MacOS X 10.4 - Firefox 4.0 
 'cb2f2ac99679da7d9a0bab830ee92091', // hu - MacOS X 10.5 - Firefox 3.0.19 
 '82f232cffc5c4accbc1f6175790e3006', // hu - MacOS X 10.5 - Firefox 3.5.7 
 '3a711d5fc820392c39be970869d12447', // hu - MacOS X 10.5 - Firefox 3.5.9 
@@ -5468,6 +6244,8 @@ $browsers_fingerprints = array(
 'd289e334e385871c2b87bf22d65ce6f1', // hu - MacOS X 10.5 - Firefox 3.6.6 
 'fd68b71c73f3a11896078f6406b4e5c9', // hu - MacOS X 10.5 - Firefox 3.6.7 
 '6ce0d879e18974fc06bfaf2b28f38ac6', // hu - MacOS X 10.5 - Firefox 3.6.8 
+'74d3191aa919aaf741b1e76c36f4ef73', // hu - MacOS X 10.5 - Firefox 3.6.9 
+'ca6a9048eddb57d87b8913b6f5a568a7', // hu - MacOS X 10.5 - Firefox 4.0 
 'f6d47da38e63295d09c2fd30fc7e8384', // hu - MacOS X 10.6 - Firefox 3.0.19 
 'a1aefd2a0763515acfb84592dd4a54b5', // hu - MacOS X 10.6 - Firefox 3.5.7 
 '20eb6fa05cf75795660986d757a59780', // hu - MacOS X 10.6 - Firefox 3.5.9 
@@ -5480,6 +6258,8 @@ $browsers_fingerprints = array(
 '312fdb01405ea0a08afde759798a17a0', // hu - MacOS X 10.6 - Firefox 3.6.6 
 '6191338fd17ae650529f040231755fea', // hu - MacOS X 10.6 - Firefox 3.6.7 
 '780784b7849146865b9546745fa4018b', // hu - MacOS X 10.6 - Firefox 3.6.8 
+'2b567604a2aedcd4c8b38ccd89cad365', // hu - MacOS X 10.6 - Firefox 3.6.9 
+'e5af15a6998efdfd7c1fff96d52bcfd1', // hu - MacOS X 10.6 - Firefox 4.0 
 '8246cf881353d36812705412af32f98e', // hu - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'f7799cd3718e60dd09a4e33df28178bd', // hu - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '253191187a38d12afa203b0e6a0aae15', // hu - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -5524,6 +6304,8 @@ $browsers_fingerprints = array(
 'f7d38a2814bc915b71ded888c8f29c98', // ja - Windows XP - Firefox 3.6.6 
 '6194892d7a72cdbd9ae7fce2f12af8ff', // ja - Windows XP - Firefox 3.6.7 
 '2fd6fdc6de9896b6e7f039f9287854f0', // ja - Windows XP - Firefox 3.6.8 
+'dfba47bf28f618055ded9b1e623349cc', // ja - Windows XP - Firefox 3.6.9 
+'46040b9fb6d6901c33b605724e04a09e', // ja - Windows XP - Firefox 4.0 
 'e0b5f8f5b4d6eca7108f5d9c49600e4c', // ja - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '59ff637ac7a469832a7f85b1f82a70ca', // ja - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'f894918acf7a8ee3191ee12cde7c5110', // ja - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5536,6 +6318,8 @@ $browsers_fingerprints = array(
 'f3c76799176df2087e42a9c2d9f3a0a4', // ja - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '338722723ad1f078aa4adedc6d81ad90', // ja - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '11d944ec4789f703b318191e55ae903c', // ja - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'72cfb1aa381e82b4194dd6e57ecbe9c6', // ja - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'e924487f44a18c7e5bab6b462c371221', // ja - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '292d6e1bdfd317a9f73cd00491efd2b1', // ja - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '0997aa4b1cc72c5c3b3045904f4e6f1f', // ja - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '7b5324e88e30cca6008fcfcb36605a0e', // ja - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5548,6 +6332,8 @@ $browsers_fingerprints = array(
 '9efa80700f1a9f59343d23835691acf2', // ja - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'ad95bde30a97fa0b0c0cf9d5a718644e', // ja - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'aa733532825a6da5846382b3e899f3d0', // ja - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'0e7527d6010576abb54a7ffaf029ac5a', // ja - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'ece5a108f38b4a13daf48c211da84cb2', // ja - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 'efd12f31a23052d274feb58ee9ed86c8', // ja - Windows Vista - Firefox 3.0.19 
 'a454229c75d8e0154aacd05632a9aa63', // ja - Windows Vista - Firefox 3.5.7 
 'beb829ba1f580582a7e51d41f977a079', // ja - Windows Vista - Firefox 3.5.9 
@@ -5560,6 +6346,8 @@ $browsers_fingerprints = array(
 'b02938c6b5961609a2d1cb6a913707d8', // ja - Windows Vista - Firefox 3.6.6 
 '724122d15b1dfc0bfb5d7e04bf8eddae', // ja - Windows Vista - Firefox 3.6.7 
 'fc218876b78f8eb46c79a8e5cf62a38c', // ja - Windows Vista - Firefox 3.6.8 
+'48840a5d2e8299778a5fc707497e45d1', // ja - Windows Vista - Firefox 3.6.9 
+'431972697009eec21b4f1e1277829b19', // ja - Windows Vista - Firefox 4.0 
 '2ee47efe0ae9c66d3d79471edfe3d38f', // ja - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '985c0b10a0584ecaffc977b04937863c', // ja - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '67c516c55c8e8f343fab9a695c7a8acb', // ja - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5572,6 +6360,8 @@ $browsers_fingerprints = array(
 '153e42edf296906cd4d17acb7917adfe', // ja - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'a9a974121e2fc8ec027ed39ac6329a1e', // ja - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '45e585936bd036058807573966d4ff09', // ja - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'8ca9d8932720e043f690db779e0dc6fe', // ja - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'8b4a07cb31998546e454747ec858f1c1', // ja - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 '43a87e0e9471435bc9f5bf8def3675b5', // ja - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'eadf343425d6698ef6c3d124a98553d4', // ja - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '9da67c3c75ca3db04fad1faab1ad9c9b', // ja - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5584,6 +6374,8 @@ $browsers_fingerprints = array(
 'c68fceea4ff6e003b4147f073d192e7b', // ja - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'c6c6f3553f6ba3784afb5197fe71ef41', // ja - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'd580a6f757eb07256aaf8f0b2eabadfc', // ja - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'3652df0e7451ba78160281acb8e9f8a8', // ja - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'0a893a2bbb242c896c8a86645d157340', // ja - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 '6d884064c6af4cccccba30ee2b498008', // ja - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '06b57f079ec66ac2e6f04eeb4d4f1153', // ja - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 'a65990e75b9144d24a5233e376a993df', // ja - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -5596,6 +6388,8 @@ $browsers_fingerprints = array(
 'ff2b42ebb1d0761df9c4b4858237d947', // ja - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '016a9f38a65928074da1060696d0543a', // ja - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '229b40beadc430f44c000ab47b64b1cd', // ja - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'789eb9a218610de837456ac6b6182a0e', // ja - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'39a96a58a42a05743f62799b508a3389', // ja - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '942553e403f643cbff95581622441754', // ja - Windows 7 - Firefox 3.0.19 
 '79bd19668579ce316f55783598cab12f', // ja - Windows 7 - Firefox 3.5.7 
 'a2f5d6b629928c8b1807e1bf32661ee3', // ja - Windows 7 - Firefox 3.5.9 
@@ -5608,6 +6402,8 @@ $browsers_fingerprints = array(
 '938361ddd56e634571fee23d40c243df', // ja - Windows 7 - Firefox 3.6.6 
 'b9b99034b0fcc3aac4282aebe2872f3e', // ja - Windows 7 - Firefox 3.6.7 
 '404268904191aedfbbed709281e1e4b0', // ja - Windows 7 - Firefox 3.6.8 
+'a71717b3735f60df21d50ec6e0db2d11', // ja - Windows 7 - Firefox 3.6.9 
+'ed3226ed5482651b22afa6e5e26305be', // ja - Windows 7 - Firefox 4.0 
 '92f8ef36d190c7398a2b4f1d13f4c298', // ja - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '70c812565f62aa6316c6f277bb6aa8d9', // ja - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '4f8fb1212c5c761a1c65b9941f23bf96', // ja - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5620,6 +6416,8 @@ $browsers_fingerprints = array(
 '0448cd84c80945e2e7ef124a575c439e', // ja - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '7408a53adb6c451ca33efd2bce2f4bbd', // ja - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'b3f299b0b1a177931e7605139dcfa616', // ja - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'5b6dccaa173fa1015e792f68e0499b3b', // ja - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'78da1fe91a397d66481600dcbfe313ad', // ja - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'bfc0b2edc06a6df0b160fecfc5ec7248', // ja - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '18411f7e131cdf34178cc4c0abbc9b95', // ja - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 '3cba38d17e048644f6d2319328a0114d', // ja - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5632,6 +6430,8 @@ $browsers_fingerprints = array(
 'ea37e240fb99aecedbee7c20da3a16da', // ja - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '1ca5dbb8f9b097d8763f305955cb0441', // ja - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '97bec178ed78f39fe781836f72b91f55', // ja - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'f80e0ce0927958eeaf840a7487b8c892', // ja - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'c23c5f717e2f0eeeb54113703f882ee8', // ja - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '0651db29f0ca76be0cd64bb6c81792e4', // ja - MacOS X 10.4 - Firefox 3.0.19 
 '9e3d5d6c56780db2562142888fd41756', // ja - MacOS X 10.4 - Firefox 3.5.7 
 'b51d316024f36482a5952e9f77c2875d', // ja - MacOS X 10.4 - Firefox 3.5.9 
@@ -5644,6 +6444,8 @@ $browsers_fingerprints = array(
 '8036c8738d45ff601861cb9ff3ae5cba', // ja - MacOS X 10.4 - Firefox 3.6.6 
 'd6e97c862080998640b6e4cb647602e9', // ja - MacOS X 10.4 - Firefox 3.6.7 
 '58c471c07a0a6e7fa421bc842fa42b60', // ja - MacOS X 10.4 - Firefox 3.6.8 
+'32a3984b0626b6ea71a58c5e3f2df7f4', // ja - MacOS X 10.4 - Firefox 3.6.9 
+'87139cd39d49511f56c1b647840469e2', // ja - MacOS X 10.4 - Firefox 4.0 
 '84007deaec1147cafa749662f50bcfee', // ja - MacOS X 10.5 - Firefox 3.0.19 
 '566a839dd602edc3a6b8f3f434a0f75e', // ja - MacOS X 10.5 - Firefox 3.5.7 
 '801cd8b18bda2eb6d63767cc60241b52', // ja - MacOS X 10.5 - Firefox 3.5.9 
@@ -5656,6 +6458,8 @@ $browsers_fingerprints = array(
 '538119f8ec39b474ce92941312c5add2', // ja - MacOS X 10.5 - Firefox 3.6.6 
 'fa61cc28306512acca6dbf321a32da3a', // ja - MacOS X 10.5 - Firefox 3.6.7 
 '309062e6453e2cf2a0cdaccd181bee3b', // ja - MacOS X 10.5 - Firefox 3.6.8 
+'25b2189a2a861bfd2db65db1b898ce7a', // ja - MacOS X 10.5 - Firefox 3.6.9 
+'26ff49e9b56bf6e94f96a96ffbd48c14', // ja - MacOS X 10.5 - Firefox 4.0 
 'fea4f1be115d34d3b22cf53c4a9cb7e5', // ja - MacOS X 10.4 - Firefox 3.0.19 
 '47c6866b631dee804c6f13d96e239624', // ja - MacOS X 10.4 - Firefox 3.5.7 
 '1f76bb9753ade7140c3ac6288c074bff', // ja - MacOS X 10.4 - Firefox 3.5.9 
@@ -5668,6 +6472,8 @@ $browsers_fingerprints = array(
 '6dd4725b3c7e103d63b21e4943fea7f1', // ja - MacOS X 10.4 - Firefox 3.6.6 
 'd8a0298087649b17f212eb1c72cf1fb6', // ja - MacOS X 10.4 - Firefox 3.6.7 
 'bae38e2824c9a1b5b2f0b12d73cdadaf', // ja - MacOS X 10.4 - Firefox 3.6.8 
+'f2d45b5443b73ebdafa61bc66f449c0d', // ja - MacOS X 10.4 - Firefox 3.6.9 
+'e5d1a47f59d968c9b67e0e8c0ff3f8ea', // ja - MacOS X 10.4 - Firefox 4.0 
 '100103b7f6ae993feb1a79c9d142b7c4', // ja - MacOS X 10.5 - Firefox 3.0.19 
 '14dbff7fe7faf7e7cad8702264783753', // ja - MacOS X 10.5 - Firefox 3.5.7 
 'e9de3f4840d629a04358f4831c771274', // ja - MacOS X 10.5 - Firefox 3.5.9 
@@ -5680,6 +6486,8 @@ $browsers_fingerprints = array(
 '915856234b2c6c05ea033d247391fe54', // ja - MacOS X 10.5 - Firefox 3.6.6 
 '002484945dc736f61d82d58572a025db', // ja - MacOS X 10.5 - Firefox 3.6.7 
 '1ad04e1c97ec1d7558a29f94a0d2e7a9', // ja - MacOS X 10.5 - Firefox 3.6.8 
+'e5c0e8122a02484ccd32c8c10da03b5a', // ja - MacOS X 10.5 - Firefox 3.6.9 
+'695d1a1da32be709df247d36b9e0c981', // ja - MacOS X 10.5 - Firefox 4.0 
 '14edfc33f03b4abb96481ea569139faf', // ja - MacOS X 10.6 - Firefox 3.0.19 
 '65222fea13693c2fd975fedfe87525b6', // ja - MacOS X 10.6 - Firefox 3.5.7 
 '60863d7db21a0d5b602d86b57faab364', // ja - MacOS X 10.6 - Firefox 3.5.9 
@@ -5692,6 +6500,8 @@ $browsers_fingerprints = array(
 '913373509ef7cce4db7e4f0066095adc', // ja - MacOS X 10.6 - Firefox 3.6.6 
 '0e35afbb60d4fe943cbf722653660222', // ja - MacOS X 10.6 - Firefox 3.6.7 
 'ece2103210155a32b49ed3652fcff0d4', // ja - MacOS X 10.6 - Firefox 3.6.8 
+'e24198ab36e989374ec7d7b95025e058', // ja - MacOS X 10.6 - Firefox 3.6.9 
+'a43fff72e13703d252318e44bf202243', // ja - MacOS X 10.6 - Firefox 4.0 
 '6a7d216b01840b96c09b97286ce0d0a1', // ja - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 '7f6d33400f6d1243ddab54322b04fef1', // ja - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '808a63c36b4c571a78c6dcbc9be143ad', // ja - Ubuntu/9.10 (karmic) - Firefox 3.6 
@@ -5736,6 +6546,8 @@ $browsers_fingerprints = array(
 'e7729c24777a0c3776d9d911536663bc', // zh-CN - Windows XP - Firefox 3.6.6 
 '4bccd199a3d9c201a54ebf32e735f265', // zh-CN - Windows XP - Firefox 3.6.7 
 '48c982ac8b73b776e1392cd0321707d4', // zh-CN - Windows XP - Firefox 3.6.8 
+'b911b45eea57e82410178a23ea36d330', // zh-CN - Windows XP - Firefox 3.6.9 
+'f2a834a95f02d8673ae5b16628129409', // zh-CN - Windows XP - Firefox 4.0 
 'a8ed289d9d8e2708c50f44237468d734', // zh-CN - Windows XP - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '936fbc6f6af423e214d214b0bf16f475', // zh-CN - Windows XP - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'b81197309db70ea80265cda8bad31bc3', // zh-CN - Windows XP - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5748,6 +6560,8 @@ $browsers_fingerprints = array(
 'cc23284d1b28aab00f9b41c1e3110ebe', // zh-CN - Windows XP - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'd488a65653918b1e4150b56a60bb3bf2', // zh-CN - Windows XP - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '587df545cadf23c25bc673616e97a788', // zh-CN - Windows XP - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'5a9d755ac58313f2c9bf5fa6446914a3', // zh-CN - Windows XP - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'5583dfd47b874c8c24d9cea3289af609', // zh-CN - Windows XP - Firefox 4.0 ( .NET CLR 3.5.30729)
 '3be5bdce84c55ce9a4035b2ba738c6d8', // zh-CN - Windows XP - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'efe9df5c57efd4efa9a028f4751ba855', // zh-CN - Windows XP - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'eb8f7abccbe70a036decd46e9b1f50cd', // zh-CN - Windows XP - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5760,6 +6574,8 @@ $browsers_fingerprints = array(
 'b623176f58bc8624a7f07b05cd4bc263', // zh-CN - Windows XP - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'b9bc8d4244e926bfde735e00cb3a7a87', // zh-CN - Windows XP - Firefox 3.6.7 (.NET CLR 3.5.30729)
 'e09a6b5393c900d7a49f951eeb331a5d', // zh-CN - Windows XP - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'74153228ef92a2b2e33ea03e16b706e5', // zh-CN - Windows XP - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'18f1208970e5412fa00a1fbb9c557d71', // zh-CN - Windows XP - Firefox 4.0 (.NET CLR 3.5.30729)
 '75a2de7aacd3d124091c1c6c94310c6f', // zh-CN - Windows Vista - Firefox 3.0.19 
 '1febf3be5d223c2d9ea20d73bf7078ed', // zh-CN - Windows Vista - Firefox 3.5.7 
 '0e0b86a49afacb944fa989fc9a695406', // zh-CN - Windows Vista - Firefox 3.5.9 
@@ -5772,6 +6588,8 @@ $browsers_fingerprints = array(
 '57a30e43ba3c1090c9e54562b5e807dd', // zh-CN - Windows Vista - Firefox 3.6.6 
 '08bd2649efc15ec451ec929b02553769', // zh-CN - Windows Vista - Firefox 3.6.7 
 'f34dfe4af4dfb0e6db573ae4dffb1b75', // zh-CN - Windows Vista - Firefox 3.6.8 
+'29f24d244816338bf238f57598650e50', // zh-CN - Windows Vista - Firefox 3.6.9 
+'262555697793f8bf638372035789b958', // zh-CN - Windows Vista - Firefox 4.0 
 '654e4c2b62320bacf3db944fb1dc7365', // zh-CN - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 'dc004a0f4c738ada20f1b99a5e810f77', // zh-CN - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 '654d153b28db4954e5b955f44ae9bcbb', // zh-CN - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5784,6 +6602,8 @@ $browsers_fingerprints = array(
 '9102955a371ae8a2e72e05f7638ac3ba', // zh-CN - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 '3dbbc080a4a8533872901648b3e68792', // zh-CN - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 'c6a3d4b8e8e74492feee5206b1aa8ba9', // zh-CN - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'d0ab177966d11c395fb326a15e42ea80', // zh-CN - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'f1d4b654fbd3d45b2682cc2e668b90a0', // zh-CN - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729)
 'd27f580b49c405be3f2774511dce76a4', // zh-CN - Windows Vista - Firefox 3.0.19 (.NET CLR 3.5.30729)
 'b366c030ddf2fcf09dd67ad3e4906725', // zh-CN - Windows Vista - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'ea252da9707dc15e8c897174f9ad2883', // zh-CN - Windows Vista - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5796,6 +6616,8 @@ $browsers_fingerprints = array(
 '6ee1ec225c39bbcb4df9c6e4b257cfa0', // zh-CN - Windows Vista - Firefox 3.6.6 (.NET CLR 3.5.30729)
 '38bf1c1279985390d5960b4ebe2d3325', // zh-CN - Windows Vista - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '17f2ec53d45879d1c96d008a6f60ddf5', // zh-CN - Windows Vista - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'a75a40a869f637181a2034c7c6b2c1b8', // zh-CN - Windows Vista - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'b07752bd787c0bf5e5c39a1ffb08b1e1', // zh-CN - Windows Vista - Firefox 4.0 (.NET CLR 3.5.30729)
 'dac291da2ca753ea9becf1f2494bfcce', // zh-CN - Windows Vista - Firefox 3.0.19 ( .NET CLR 3.5.30729; .NET4.0C)
 '87623d92b99c543576c7a87d7d36c41e', // zh-CN - Windows Vista - Firefox 3.5.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '557deb5cb0750f2e2d19d6fc66776f79', // zh-CN - Windows Vista - Firefox 3.5.9 ( .NET CLR 3.5.30729; .NET4.0C)
@@ -5808,6 +6630,8 @@ $browsers_fingerprints = array(
 '2e346014d95e9d7c3d60301bdd3cac9d', // zh-CN - Windows Vista - Firefox 3.6.6 ( .NET CLR 3.5.30729; .NET4.0C)
 '60162a8769775dae96f23c1575c07244', // zh-CN - Windows Vista - Firefox 3.6.7 ( .NET CLR 3.5.30729; .NET4.0C)
 '4a74c32df45d90f3cb5e72b74daba9c1', // zh-CN - Windows Vista - Firefox 3.6.8 ( .NET CLR 3.5.30729; .NET4.0C)
+'5cef3922c055302691203c6bb1a7fa2e', // zh-CN - Windows Vista - Firefox 3.6.9 ( .NET CLR 3.5.30729; .NET4.0C)
+'91a061021ff129dd4a6b83b701e36b3f', // zh-CN - Windows Vista - Firefox 4.0 ( .NET CLR 3.5.30729; .NET4.0C)
 '5f1ae42733d6b8a00488ccd09c534e4e', // zh-CN - Windows 7 - Firefox 3.0.19 
 '5df6291b799e13815b716ead89efc59c', // zh-CN - Windows 7 - Firefox 3.5.7 
 '3bdd4db1f7bd2194c29debc46d0baeaf', // zh-CN - Windows 7 - Firefox 3.5.9 
@@ -5820,6 +6644,8 @@ $browsers_fingerprints = array(
 '995bdb535a44ef07995b8096cbe80372', // zh-CN - Windows 7 - Firefox 3.6.6 
 '905de5252cf1a7beb5d69155577a6e2c', // zh-CN - Windows 7 - Firefox 3.6.7 
 '634beb7ef959c25b09fb62e8bd63712e', // zh-CN - Windows 7 - Firefox 3.6.8 
+'c08301a34ea696b82a6adf8eae6055d6', // zh-CN - Windows 7 - Firefox 3.6.9 
+'825ae7ea35e10cde8b46c39e929decee', // zh-CN - Windows 7 - Firefox 4.0 
 '7889dcabf73b7c73948db36b851473c4', // zh-CN - Windows 7 - Firefox 3.0.19 ( .NET CLR 3.5.30729)
 '5684d6901392bfc519fd1210476db608', // zh-CN - Windows 7 - Firefox 3.5.7 ( .NET CLR 3.5.30729)
 'a42ee7a49e07f687611670f08f65e982', // zh-CN - Windows 7 - Firefox 3.5.9 ( .NET CLR 3.5.30729)
@@ -5832,6 +6658,8 @@ $browsers_fingerprints = array(
 'a8ee012e21e04ae8364e23f79ed00098', // zh-CN - Windows 7 - Firefox 3.6.6 ( .NET CLR 3.5.30729)
 'cb6603121b9440c464b0f3cbd4314e8e', // zh-CN - Windows 7 - Firefox 3.6.7 ( .NET CLR 3.5.30729)
 '5e53041c32ce50d0303c2500d484399c', // zh-CN - Windows 7 - Firefox 3.6.8 ( .NET CLR 3.5.30729)
+'e763646cebc09decce0fe06719b1b67b', // zh-CN - Windows 7 - Firefox 3.6.9 ( .NET CLR 3.5.30729)
+'b6fd59a36eac74e2ca15bd01b5073f16', // zh-CN - Windows 7 - Firefox 4.0 ( .NET CLR 3.5.30729)
 'fca8fcedb7fe4e8eb6b0a5fcf734ca59', // zh-CN - Windows 7 - Firefox 3.0.19 (.NET CLR 3.5.30729)
 '2fce36bf62e3969a5f8e5c6630aca068', // zh-CN - Windows 7 - Firefox 3.5.7 (.NET CLR 3.5.30729)
 'dc79549ed3a19770176925affc22a0fe', // zh-CN - Windows 7 - Firefox 3.5.9 (.NET CLR 3.5.30729)
@@ -5844,6 +6672,8 @@ $browsers_fingerprints = array(
 'd9ad11425a900b16e3d6ba2f27b8edc4', // zh-CN - Windows 7 - Firefox 3.6.6 (.NET CLR 3.5.30729)
 'b115b255808e94c8d2e0205e711ce965', // zh-CN - Windows 7 - Firefox 3.6.7 (.NET CLR 3.5.30729)
 '3d01351ad6afda66d9c67724e50c6067', // zh-CN - Windows 7 - Firefox 3.6.8 (.NET CLR 3.5.30729)
+'4b0548fbbf98f952a2a84faf0f347afc', // zh-CN - Windows 7 - Firefox 3.6.9 (.NET CLR 3.5.30729)
+'b0ab80a6afe866da266c76a8c505da94', // zh-CN - Windows 7 - Firefox 4.0 (.NET CLR 3.5.30729)
 '9a4ac2a7a2d3f14fef38557ccf719765', // zh-CN - MacOS X 10.4 - Firefox 3.0.19 
 '724575fe6d0a158f8245c8db7d156e3a', // zh-CN - MacOS X 10.4 - Firefox 3.5.7 
 '2850ebd01db5d1b86b57f299e8ebc4a4', // zh-CN - MacOS X 10.4 - Firefox 3.5.9 
@@ -5856,6 +6686,8 @@ $browsers_fingerprints = array(
 '5055cfa6fdf0c27ac50eb92890db35fa', // zh-CN - MacOS X 10.4 - Firefox 3.6.6 
 '72311072b2ad91b114f92740e7117d1a', // zh-CN - MacOS X 10.4 - Firefox 3.6.7 
 'eb02eb4fe2089a7240305687e258ffcb', // zh-CN - MacOS X 10.4 - Firefox 3.6.8 
+'37441dd32523e368d1315dc8563768aa', // zh-CN - MacOS X 10.4 - Firefox 3.6.9 
+'8b53b7850da64190e6b614843f8db767', // zh-CN - MacOS X 10.4 - Firefox 4.0 
 '86c3e8935d2dc18a07a8ae7aecfb17b0', // zh-CN - MacOS X 10.5 - Firefox 3.0.19 
 'baee9064cb7904f083a395123fd391f8', // zh-CN - MacOS X 10.5 - Firefox 3.5.7 
 'bc82423f47915de6cc62ab0d7f45e3e6', // zh-CN - MacOS X 10.5 - Firefox 3.5.9 
@@ -5868,6 +6700,8 @@ $browsers_fingerprints = array(
 '1c19ccf192b335afcbfcfd22b32e99bc', // zh-CN - MacOS X 10.5 - Firefox 3.6.6 
 '047fefa38f74ab95fdbefcae0389d25b', // zh-CN - MacOS X 10.5 - Firefox 3.6.7 
 '71b0f0ca762609a6c946042b9cefa0bb', // zh-CN - MacOS X 10.5 - Firefox 3.6.8 
+'0bef346913f979cf834a3b272825c204', // zh-CN - MacOS X 10.5 - Firefox 3.6.9 
+'4275b517a36c0cfaaef79686c8df0eb7', // zh-CN - MacOS X 10.5 - Firefox 4.0 
 'f928f4b07157ce6418726bf36b91837e', // zh-CN - MacOS X 10.4 - Firefox 3.0.19 
 '9b5763e4c33192e1659d18ce9d2048e1', // zh-CN - MacOS X 10.4 - Firefox 3.5.7 
 '32b41f88da3a70906743d61847a0a78a', // zh-CN - MacOS X 10.4 - Firefox 3.5.9 
@@ -5880,6 +6714,8 @@ $browsers_fingerprints = array(
 'b850c55ccd56ee0bc43d5fef2e6aa8ef', // zh-CN - MacOS X 10.4 - Firefox 3.6.6 
 '7933940a66e755957e73dde6183fe78a', // zh-CN - MacOS X 10.4 - Firefox 3.6.7 
 'bf131e992bf73a7ba0deaafd86192592', // zh-CN - MacOS X 10.4 - Firefox 3.6.8 
+'f8e1ee66a168cc310c49ec7af5cc031e', // zh-CN - MacOS X 10.4 - Firefox 3.6.9 
+'33575ad062cb0d25df7d45c41b02109c', // zh-CN - MacOS X 10.4 - Firefox 4.0 
 '358914676580ba89465ba20be1d9162b', // zh-CN - MacOS X 10.5 - Firefox 3.0.19 
 'eab44b9654bc89211a646e907233295f', // zh-CN - MacOS X 10.5 - Firefox 3.5.7 
 'ed7945aa96d2b616b2793226f6ee6c59', // zh-CN - MacOS X 10.5 - Firefox 3.5.9 
@@ -5892,6 +6728,8 @@ $browsers_fingerprints = array(
 '07018b2cbd503cfa9b7f6fca9657cc1a', // zh-CN - MacOS X 10.5 - Firefox 3.6.6 
 'ad44fbf6ee0c264abe7ad49dbc91fbba', // zh-CN - MacOS X 10.5 - Firefox 3.6.7 
 '3d9d3015315b7989eb0fbd80f9da53c5', // zh-CN - MacOS X 10.5 - Firefox 3.6.8 
+'f297f082b4d9393a97c2f4a373225f69', // zh-CN - MacOS X 10.5 - Firefox 3.6.9 
+'fbb214f1185ec347dd1722e9365853a0', // zh-CN - MacOS X 10.5 - Firefox 4.0 
 'e2d128fc41c00fd1e2329657aaad2705', // zh-CN - MacOS X 10.6 - Firefox 3.0.19 
 '7fc01d68acda89bfbf36feb1ad5a5460', // zh-CN - MacOS X 10.6 - Firefox 3.5.7 
 'e6e54a265aa1b6d52f3ad3c2cd2e3739', // zh-CN - MacOS X 10.6 - Firefox 3.5.9 
@@ -5904,6 +6742,8 @@ $browsers_fingerprints = array(
 'be2da37491d9e34301ff84d71042586f', // zh-CN - MacOS X 10.6 - Firefox 3.6.6 
 '2a47f88db272972f5e69440235c7d79f', // zh-CN - MacOS X 10.6 - Firefox 3.6.7 
 '3a961d25b9ed5cce7b485e9271f0faf5', // zh-CN - MacOS X 10.6 - Firefox 3.6.8 
+'91c7ad670a50bf0c6a946f765541aebf', // zh-CN - MacOS X 10.6 - Firefox 3.6.9 
+'a1388d0fecf1e45c1a1d76bb17c4b2ef', // zh-CN - MacOS X 10.6 - Firefox 4.0 
 '24c8c4a5e66ba41bb35836cdae8cde39', // zh-CN - Ubuntu/9.10 (karmic) - Firefox 3.5.3 
 'ae5013f2d043ba7968853870c43b4531', // zh-CN - Ubuntu/9.10 (karmic) - Firefox 3.5.9 
 '7f0d41102c201481aae1668174c0f9d6', // zh-CN - Ubuntu/9.10 (karmic) - Firefox 3.6 
