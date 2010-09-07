@@ -373,8 +373,8 @@ $botnet_fingerprints = array(
 'c550aa5229480b9ff2e0e800f39c653b', // 1
 'bcc2d7e247bb485e24da6e2f741b6684', // 1
 // New entries
-'9cd87d41ac189374ca07e1c1423b6d0a'
-'7d9cebea26cce23590134c77cff57ff4'
+'9cd87d41ac189374ca07e1c1423b6d0a',
+'7d9cebea26cce23590134c77cff57ff4',
 );
 return $botnet_fingerprints;
 ?>
