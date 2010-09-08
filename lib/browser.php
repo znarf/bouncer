@@ -255,20 +255,27 @@ $browser = array(
     ),
     "uri" => "http://www.chimera.org/"
   ),
-  "chrome" => array(
-    "icon" => "chrome",
-    "title" => "Chrome",
-    "rule" => array(
-      "chrome([ /])?([0-9.]{1,12})?" => "\\2"
-    ),
-    "uri" => "http://www.google.com/chrome/"
-  ),
   "chromium" => array(
     "icon" => "chrome",
     "title" => "Chromium",
     "rule" => array(
-      "chromium([ /])?([0-9.]{1,12})?" => "\\2"
+      "Chromium[ /]([0-9.]{1,12})" => "\\1"
     )
+  ),
+  "chrome" => array(
+    "icon" => "chrome",
+    "title" => "Chrome",
+    "rule" => array(
+      "Chrome[ /]([0-9.]{1,12})" => "\\1"
+    ),
+    "uri" => "http://www.google.com/chrome/"
+  ),
+  "chromeframe" => array(
+    "icon" => "chrome",
+    "title" => "Chrome Frame",
+    "rule" => array(
+      "chromeframe[ /]([0-9.]{1,12})" => "\\1"
+    ),
   ),
   "compuserve" => array(
     "icon" => "question",
