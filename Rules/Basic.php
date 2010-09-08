@@ -141,6 +141,12 @@ class Bouncer_Rules_Basic
                     $scores[] = array(-2.5, 'Firefox Accept-Encoding header');
                 }
             }
+            // Only Explorer send this headers
+            if ($name != 'explorer') {
+                if (isset($headers['Accept']) && strpos($headers['Accept'], 'image/gif') === 0) {
+                    $scores[] = array(-2.5, 'Explorer Accept header');
+                }
+            }
         }
 
         // Legitimates Opera/Chrome/Firefox Browsers send Accept-Charset header
