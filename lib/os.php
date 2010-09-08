@@ -390,6 +390,7 @@ $os = array(
     ),
     "uri" => "http://www.wii.com/"
   ),
+  /*
   "windowsmc" => array(
     "icon" => "windowsxp",
     "title" => "Windows Media Center",
@@ -398,6 +399,7 @@ $os = array(
     ),
     "uri" => "http://www.microsoft.com/windowsxp/mediacenter/"
   ),
+  */
   "windowsxp64" => array(
     "icon" => "windowsxp",
     "title" => "Windows XP (64-bit)",
