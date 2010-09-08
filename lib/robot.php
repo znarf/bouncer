@@ -5331,6 +5331,7 @@ $robot = array(
     ),
     "uri" => "http://websearchbench.cs.uni-dortmund.de/"
   ),
+  /*
   "websense" => array(
     "icon" => "websense",
     "title" => "Websense",
@@ -5339,6 +5340,7 @@ $robot = array(
     ),
     "uri" => ""
   ),
+  */
   "websiteworth" => array(
     "icon" => "robot",
     "title" => "WebsiteWorth",

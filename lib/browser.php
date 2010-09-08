@@ -774,6 +774,7 @@ $browser = array(
       "mBrowser[ /]([0-9.]{1,10})" => "\\1"
     )
   ),
+  /*
   "mediaplayer" => array(
     "icon" => "wmp10",
     "title" => "Media Player",
@@ -784,6 +785,7 @@ $browser = array(
     ),
     "uri" => ""
   ),
+  */
   // mobile one
   "mib" => array(
     "icon" => "mobile",
@@ -1105,6 +1107,7 @@ $browser = array(
     ),
     "uri" => "http://www.apple.com/quicktime/"
   ),
+  /*
   "realplayer" => array(
     "icon" => "realplayer",
     "title" => "Real Player",
@@ -1114,6 +1117,7 @@ $browser = array(
       "RMA/([0-9.+]{1,10})" => ""
     )
   ),
+  */
   "reeder" => array(
     "icon" => "question",
     "title" => "Reeder",
