@@ -159,6 +159,12 @@ class Bouncer_Rules_Basic
             }
         }
 
+        if ($name == 'safari') {
+            if (isset($headers['Accept']) && $headers['Accept'] == 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
+                $scores[] = array(2.5, 'Expected Accept header (safari)');
+            }
+        }
+
         return $scores;
     }
 
@@ -252,6 +258,10 @@ class Bouncer_Rules_Basic
                     $scores[] = array(2.5, 'TE header with expected value');
                 }
                 break;
+            case 'safari':
+                if (isset($headers['Connection']) && $headers['Connection'] == 'keep-alive') {
+                    $scores[] = array(2.5, 'Connection header with expected value');
+                }
             case 'explorer':
                 // Only legitimate browsers are setting this header
                 if (isset($headers['UA-CPU'])) {
