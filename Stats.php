@@ -182,8 +182,7 @@ class Bouncer_Stats
              $squid = isset($last['request']['headers']['Via']) && isset($last['request']['headers']['Cache-Control'])
                  && $last['request']['headers']['Cache-Control'] == 'max-age=259200' ? 1 : 0;
              $proxy1 = isset($last['request']['headers']['FORWARDED_FOR']) ? 1 : 0;
-             $proxy2 = isset($last['request']['headers']['HTTP_X_FORWARDED_FOR']) ? 1 : 0;
-             $proxy3 = isset($last['request']['headers']['accept-encoding']) && isset($last['request']['headers']['COnnecTIon']) ? 1 : 0;
+             $proxy2 = isset($last['request']['headers']['Client-ip']) ? 1 : 0;
 
              $proxy = ($bluecoat || $squid || $proxy1 || $proxy2 || $proxy3) ? 1 : 0;
 
@@ -202,8 +201,8 @@ class Bouncer_Stats
              $libwww = isset($last['request']['headers']['TE']) && $last['request']['headers']['TE'] == 'deflate,gzip;q=0.3' ? 1 : 0;
              $lwp = isset($last['request']['headers']['Cookie2']) && $last['request']['headers']['Cookie2'] == '$Version="1"' ? 1 : 0;
 
-             $ie = in_array($name, Bouncer_Rules_Basic::$explorer_browsers) ? 1 : 0;
-             $gecko = in_array($name, Bouncer_Rules_Basic::$gecko_browsers) ? 1 : 0;
+             $ie = $name == 'explorer' || in_array($name, Bouncer_Rules_Basic::$explorer_browsers) ? 1 : 0;
+             $gecko = $name == 'firefox' || in_array($name, Bouncer_Rules_Basic::$gecko_browsers) ? 1 : 0;
 
              $js = isset($identity['features']['javascript']) && $identity['features']['javascript'] != 0 ? (int)($identity['features']['javascript'] > 0) : '';
              $img = isset($identity['features']['image']) && $identity['features']['image'] != 0 ? (int)($identity['features']['image'] > 0) : '';
