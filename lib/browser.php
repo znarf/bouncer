@@ -998,6 +998,7 @@ $browser = array(
     "uri" => "http://www.netdive.com/oxygen/"
   ),*/
   // mobile one
+  /*
   "palmsource" => array(
     "icon" => "palmsource",
     "title" => "PalmSource Web Browser",
@@ -1007,6 +1008,7 @@ $browser = array(
     ),
     "uri" => "http://www.palmos.com/dev/tech/palmos5/webbrowser.html"
   ),
+  */
   "paparazzi" => array(
     "icon" => "question",
     "title" => "Paparazzi",
