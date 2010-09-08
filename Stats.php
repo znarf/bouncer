@@ -75,7 +75,9 @@ class Bouncer_Stats
          require( dirname(__FILE__) . "/lib/os.php" );
          require( dirname(__FILE__) . "/lib/robot.php" );
 
+         require_once dirname(__FILE__) . '/Rules/Basic.php';
          require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
+         require_once dirname(__FILE__) . '/Rules/Httpbl.php';
 
          $filters = array();
          if (!empty($_GET['filter'])) {
@@ -199,6 +201,9 @@ class Bouncer_Stats
              $java = isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' ? 1 : 0;
              $libwww = isset($last['request']['headers']['TE']) && $last['request']['headers']['TE'] == 'deflate,gzip;q=0.3' ? 1 : 0;
              $lwp = isset($last['request']['headers']['Cookie2']) && $last['request']['headers']['Cookie2'] == '$Version="1"' ? 1 : 0;
+
+             $ie = in_array($name, Bouncer_Rules_Basic::$explorer_browsers) ? 1 : 0;
+             $gecko = in_array($name, Bouncer_Rules_Basic::$gecko_browsers) ? 1 : 0;
 
              $js = isset($identity['features']['javascript']) && $identity['features']['javascript'] != 0 ? (int)($identity['features']['javascript'] > 0) : '';
              $img = isset($identity['features']['image']) && $identity['features']['image'] != 0 ? (int)($identity['features']['image'] > 0) : '';
