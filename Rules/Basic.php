@@ -500,7 +500,8 @@ class Bouncer_Rules_Basic
                          && strpos($addr, '72.14.')  !== 0
                          && strpos($addr, '74.125.') !== 0
                          && strpos($addr, '66.249.') !== 0
-                         && strpos($addr, '68.249.') !== 0) ? -5 : 1;
+                         && strpos($addr, '68.249.') !== 0
+                         && strpos($addr, '209.85.') !== 0) ? -5 : 1;
                 break;
             case 'bloglines':
                 $score += strpos($host, 'bloglines.com') === false ? -5 : 1;
