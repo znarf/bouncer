@@ -177,7 +177,7 @@ class Bouncer_Stats
              $pragma = isset($last['request']['headers']['Pragma']) ? $last['request']['headers']['Pragma'] : 'none';
              $range = isset($last['request']['headers']['Range']) ? 1 : 0;
              $wap = isset($last['request']['headers']['x-wap-profile']) ? 1 : 0;
-             
+
              $bluecoat = isset($last['request']['headers']['X-BlueCoat-Via']) ? 1 : 0;
              $squid = isset($last['request']['headers']['Via']) && isset($last['request']['headers']['Cache-Control'])
                  && $last['request']['headers']['Cache-Control'] == 'max-age=259200' ? 1 : 0;
@@ -218,13 +218,15 @@ class Bouncer_Stats
                  }
              }
 
+             $partialKeys = array('addr', 'host', 'referer', 'useragent', 'cookie', 'accept');
+
              foreach ($filters as $filter) {
                  list($filterKey, $filterValue) = $filter;
                  $filterValue = str_replace('_', ' ', $filterValue);
                  if (strpos($filterKey, '-') === 0) {
                     $filterKey = substr($filterKey, 1);
                     if (isset($$filterKey)) {
-                     if ($filterKey == 'addr' || $filterKey == 'host' || $filterKey == 'referer' || $filterKey == 'useragent' || $filterKey == 'cookie') {
+                     if (in_array($filterKey, $partialKeys)) {
                          if (strpos($$filterKey, $filterValue) !== false) continue 2;
                      } else {
                          if ($$filterKey == $filterValue) continue 2;
@@ -232,7 +234,7 @@ class Bouncer_Stats
                     }
                  } else {
                      if (isset($$filterKey)) {
-                         if ($filterKey == 'addr' || $filterKey == 'host' || $filterKey == 'referer' || $filterKey == 'useragent' || $filterKey == 'cookie') {
+                         if (in_array($filterKey, $partialKeys)) {
                              if (strpos($$filterKey, $filterValue) === false) continue 2;
                          } else {
                              if ($$filterKey != $filterValue) continue 2;
