@@ -5,7 +5,7 @@ class Bouncer_Rules_Basic
 
     public static $explorer_browsers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser', 'kkman', 'acoo');
 
-    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'epiphany', 'camino', 'netscape', 'flock', 'k-meleon', 'firebird');
+    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'epiphany', 'camino', 'netscape', 'flock', 'k-meleon', 'firebird', 'mozilla');
 
     public static function load()
     {
@@ -44,7 +44,9 @@ class Bouncer_Rules_Basic
         // minus
         else if ($name == 'explorer' && strpos($version, '5.') === 0)    $scores[] = array(-2.5, 'Old Browser');
         else if ($name == 'explorer' && strpos($version, '6.') === 0)    $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'konqueror' && strpos($version, '3.') === 0)   $scores[] = array(-2.5, 'Old Browser');
         else if ($name == 'netscape')                                    $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'mozilla')                                     $scores[] = array(-2.5, 'Old Browser');
 
         return $scores;
     }
@@ -79,7 +81,7 @@ class Bouncer_Rules_Basic
         $scores = array();
 
         if ($identity['type'] != Bouncer::BROWSER) {
-            return 0;
+            return $scores;
         }
 
         $name = $identity['name'];
@@ -110,9 +112,13 @@ class Bouncer_Rules_Basic
             if (empty($headers['Accept-Encoding'])) {
                 $scores[] = array(-2.5, 'Accept-Encoding header missing');
             }
-            // java library used to fake a browser identity
+            // Java library used to fake a browser identity
             if (isset($headers['Accept']) && $headers['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2') {
-                $scores[] = array(-10, 'java signature detected');
+                $scores[] = array(-10, 'Java signature detected');
+            }
+            // Snoopy (or another) library used to fake a browser identity
+            if (isset($headers['Accept']) && $headers['Accept'] == 'image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*') {
+                $scores[] = array(-10, 'Suspicious Accept header value');
             }
             // HTTrack used to fake a browser identity
             if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, identity;q=0.9') {
@@ -120,7 +126,7 @@ class Bouncer_Rules_Basic
             }
             // Accept-Encoding gzip
             if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip') {
-                if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] != 'utf-8,*') { // google translate exception
+                if (empty($headers['Accept-Charset']) || $headers['Accept-Charset'] != 'utf-8,*') { // google translate exception
                     if (isset($identity['os'][0]) && $identity['os'][0] != 'android') { // android exception
                         $scores[] = array(-2.5, 'Accept-Encoding:gzip');
                     }
@@ -209,6 +215,11 @@ class Bouncer_Rules_Basic
         // Proxy-Connection does not exist and should never be seen in the wild
         if (isset($headers['Proxy-Connection'])) {
             $scores[] = array(-5, 'Proxy-Connection header detected (Bad Behavior: b7830251)');
+        }
+
+        // Suspicious header (used by randomized user agents)
+        if (isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/html, text/plain') {
+            $scores[] = array(-10, 'Suspicious Accept header value');
         }
 
         // Content Type is surely not for GET ... moron!
