@@ -1253,6 +1253,14 @@ $robot = array(
     ),
     "uri" => "http://www.diffbot.com"
   ),
+  "digest" => array(
+    "icon" => "robot",
+    "title" => "dige.st",
+    "rule" => array(
+      "dige.st" => ""
+    ),
+    "uri" => "http://dige.st/"
+  ),
   "directhit" => array(
     "icon" => "robot",
     "title" => "Direct Hit",
@@ -1365,6 +1373,14 @@ $robot = array(
     "rule" => array(
       "eBay Relevance Ad Crawler" => ""
     )
+  ),
+  "ecairn-grabber" => array(
+    "icon" => "robot",
+    "title" => "eCairn Grabber",
+    "rule" => array(
+      "eCairn-Grabber[/ ]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://ecairn.com/grabber"
   ),
   "echo" => array(
     "icon" => "robot",
@@ -2272,6 +2288,14 @@ $robot = array(
       "Iltrovatore-Setaccio" => "",
       "iltrovatore[ /]([0-9.]{1,10})" => "\\1"
     )
+  ),
+  "ina" => array(
+    "icon" => "robot",
+    "title" => "INA",
+    "rule" => array(
+      "INA dlweb" => ""
+    ),
+    "uri" => "http://www.ina-entreprise.com/entreprise/activites/depot-legal-radio-tele/depot-legal-web.html"
   ),
   "indylibrary" => array(
     "icon" => "robot",

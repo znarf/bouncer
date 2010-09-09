@@ -40,7 +40,6 @@ $known_fingerprints = array(
 '84c29cf970522cd3727c8627bd01a949',  // US - Windows XP    - Explorer 7.0
 // Crawlers
 '2e3e78982b709fcee9558e17726c7638',  // BNF
-'16e7bbc8f77ff058af8b2343b3115e72',  // INA
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
 'eea168b7c9d0d958c6e9b29e1212414b',  // Search17 Web Crawler
 '65a6a88c94f8a9f6dbd11f129271843b',  // SheenBot

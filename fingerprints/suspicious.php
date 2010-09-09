@@ -12,7 +12,6 @@ $suspicious_fingerprints = array(
 'd28f73e67a253fb8503538b92ff5f33f', // Mozilla/3.0 (compatible)
 'a55dbce033e47342f4493b6b8e317a11', // Accept-Encoding:identity
 'b8a1d0f6c953cb9ff2dca95425cf4a67', // Mozilla/4.0 (compatible)
-'4c67cac030adba659c1ad691368db27e', // Mozilla/4.0 (compatible; ICS)
 'e261d653a34451b1db31d6613aace1f7', // Mozilla/5.0 (compatible)
 '4331cc92d234b76eb0b5926b62ca28b9', // Mozilla/4.0 (compatible; Windows;) - Accept:*/*
 'e36cf8d82aaacacd2533bf7779f362bd', // Spider - Accept:*/*
@@ -29,6 +28,7 @@ $suspicious_fingerprints = array(
 // Bots
 '40fc775be2dcad9d6d0d798276a6177d', // Mozilla 5.0 (US - static.theplanet.com)
 'd05580236d7563115237363dc740f983', // TREND MICRO
+'8ec0b03883d2aa93b6de3ac919701912', // Quipply V1 RT
 // Explorer
 '201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
 '21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)
@@ -101,6 +101,7 @@ $suspicious_fingerprints = array(
 '59cab5f2ded9964a860dfa438c81a35c',    //  BM - Linux         - Firefox 3.0
 '3a17ee0aa964b2fa5e1b074634906ded',    //  BM - Windows XP    - Firefox 3.6.8
 '12291b04e3b9f13e50446a069f7f617f',    //  BM - Windows XP    - Firefox 3.5.3
+'98a1c8b514f2c9a80b7fbb989a3d831e',    //  BM - Windows XP    - Firefox 3.0.4
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28

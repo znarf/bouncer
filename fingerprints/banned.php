@@ -21,6 +21,8 @@ $banned_fingerprints = array(
 'e001df5efb3b7e2392430eea763ef765', //  * - binlar 2.6.3
 'c3519edceadd1945fdeb626ad9c2a5fe', //  * - larbin 2.6.3
 '1eee5009bfa152ad21b863af9cb134c6', //  * - page_test - larbin 2.6.3
+// ICS
+'4c67cac030adba659c1ad691368db27e',
 // Security Exploits
 '1145d630273e73472fb728301b95b362', //  * - dex Bot Search
 'bd3ddc784afb3d4c98278e86cd2e38a8', // RU - Casper Bot Search
@@ -33,6 +35,10 @@ $banned_fingerprints = array(
 'b1c0361564c267d2786dd731a346af77',
 'b56beeee346852e3f2928964b2eb97c7',
 '704e985ee38d27eb605fe94507f854a1',
+'f94e6a904f7d6a185755e6bf7d144129',
+'bd071fdfb2a7ad087cca666b86a23b9c',
+'f94e6a904f7d6a185755e6bf7d144129',
+'f82fb91416713cbf302217d272f18c6f',
 // Advanced Email Extractor
 'a71a3073b82c5f249cacdae80c0e154e', // 2.61
 'f739bf1bfb67daadf0cc3462dfc5dc59', // 2.76
