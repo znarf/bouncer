@@ -1530,22 +1530,13 @@ $browser = array(
       "Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1) Gecko/20060918 Firefox/2.0" => "2.0 on Windows XP"
     )
   ),
-  /* Not useful
   "mozilla" => array(
     "icon" => "mozilla",
     "title" => "Mozilla",
     "rule" => array(
-      "^mozilla/[5-9]\.[0-9.]{1,10}.+rv:([0-9a-z.+]{1,10})" => "\\1",
-      "^mozilla/([5-9]\.[0-9a-z.]{1,10})" => "\\1",
-      "GNUzilla/([0-9.+]{1,10})" => "\\1" // Unbranded Mozilla, GNU compatible
-    ),
-    "uri" => "",
-    "known" => array(
-      "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050511" => "Mozilla 1.7.9 on Linux (american english)",
-      "Mozilla/5.0 (X11; U; Linux i686; cs-CZ; rv:1.7.12) Gecko/20050929" => "Mozilla 1.7.12 on Gentoo Linux"
+      "^Mozilla/[5-9]\.[0-9.]{1,10}.+rv:([0-9a-z.+]{1,10})" => "\\1"
     )
   ),
-  */
 // WAP catchup
   "wap" => array(
     "icon" => "question",
