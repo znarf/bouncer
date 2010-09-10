@@ -32,14 +32,14 @@ class Bouncer_Rules_Basic
         $version = $identity['version'];
 
         // plus
-             if ($name == 'safari'   && strpos($version, '5.') === 0)    $scores[] = array(2.5, 'Recent Browser');
-        else if ($name == 'chrome'   && strpos($version, '5.') === 0)    $scores[] = array(2.5, 'Recent Browser');
-        else if ($name == 'chrome'   && strpos($version, '6.') === 0)    $scores[] = array(2.5, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '3.6') === 0)   $scores[] = array(2.5, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '4.') === 0)    $scores[] = array(2.5, 'Recent Browser');
-        else if ($name == 'explorer' && strpos($version, '8.') === 0)    $scores[] = array(2.5, 'Recent Browser');
-        else if ($name == 'explorer' && strpos($version, '9.') === 0)    $scores[] = array(2.5, 'Recent Browser');
-        else if ($name == 'opera'    && strpos($version, '10.') === 0)   $scores[] = array(2.5, 'Recent Browser');
+             if ($name == 'safari'   && strpos($version, '5.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'chrome'   && strpos($version, '6.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'chrome'   && strpos($version, '7.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'firefox'  && strpos($version, '3.6') === 0)   $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'firefox'  && strpos($version, '4.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'explorer' && strpos($version, '8.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'explorer' && strpos($version, '9.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'opera'    && strpos($version, '10.') === 0)   $scores[] = array(1, 'Recent Browser');
 
         // minus
         else if ($name == 'explorer' && strpos($version, '5.') === 0)    $scores[] = array(-2.5, 'Old Browser');
@@ -64,8 +64,8 @@ class Bouncer_Rules_Basic
         $os_version = $identity['os'][1];
 
         // plus
-        if ($os_name == 'macosx' && strpos($os_version, '10.6') === 0) $scores[] = array(2.5, 'Recent OS');
-        else if ($os_name == 'windows7')                               $scores[] = array(2.5, 'Recent OS');
+        if ($os_name == 'macosx' && strpos($os_version, '10.6') === 0) $scores[] = array(1, 'Recent OS');
+        else if ($os_name == 'windows7')                               $scores[] = array(1, 'Recent OS');
 
         // minus
         else if ($os_name == 'windows95') $scores[] = array(-2.5, 'Old OS');
@@ -135,7 +135,10 @@ class Bouncer_Rules_Basic
             // Only Gecko/Firefox send this headers
             if ($name != 'firefox') {
                 if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
-                    $scores[] = array(-5, 'Firefox Accept header');
+                    $scores[] = array(-5, 'current Firefox Accept header');
+                }
+                if (isset($headers['Accept']) && $headers['Accept'] == 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
+                    $scores[] = array(-5, 'old Firefox Accept header');
                 }
                 if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] == 'ISO-8859-1,utf-8;q=0.7,*;q=0.7') {
                     $scores[] = array(-2.5, 'Firefox Accept-Charset header');
@@ -165,15 +168,14 @@ class Bouncer_Rules_Basic
             }
         }
 
-        if ($name == 'explorer') {
-            if (isset($headers['Accept']) && strpos($headers['Accept'], 'image/gif') === 0) {
-                $scores[] = array(2.5, 'Expected Accept header (explorer)');
-            }
-        }
-
         if ($name == 'safari') {
             if (isset($headers['Accept']) && $headers['Accept'] == 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
                 $scores[] = array(2.5, 'Expected Accept header (safari)');
+            }
+            if (isset($headers['Accept-Charset'])) {
+                if (isset($identity['os'][0]) && $identity['os'][0] != 'android' && $identity['os'][0] != 'symbian' && $identity['os'][0] != 'mobile') { // temp webkit exception
+                    $scores[] = array(-2.5, 'Unexpected Accept header (safari)');
+                }
             }
         }
 
@@ -217,6 +219,11 @@ class Bouncer_Rules_Basic
             $scores[] = array(-5, 'Proxy-Connection header detected (Bad Behavior: b7830251)');
         }
 
+        // Proxy infos used in supicious connections
+        if (isset($headers['FORWARDED_FOR']) && isset($headers['Client-ip']) && isset($headers['Pragma'])) {
+            $scores[] = array(-7.5, 'Suspicious proxy');
+        }
+
         // Suspicious header (used by randomized user agents)
         if (isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/html, text/plain') {
             $scores[] = array(-10, 'Suspicious Accept header value');
@@ -252,6 +259,8 @@ class Bouncer_Rules_Basic
                 $scores[] = array(-10, 'libWWW signature detected');
             }
         }
+
+
 
         switch ($name) {
             case 'firefox':
@@ -297,9 +306,9 @@ class Bouncer_Rules_Basic
         // Features challenges
         if (in_array($name, Bouncer::$known_browsers) && isset($identity['features'])) {
             $f = $identity['features'];
-            if ($f['image'] <= -3 && $f['iframe'] <= -3 && $f['javascript'] <= -3) {
+            if ($f['image'] <= -3 && $f['javascript'] <= -3) {
                 $scores[] = array(-5, 'All features challenges failed (3x+)');
-            } elseif ($f['image'] <= -1 && $f['iframe'] <= -1 && $f['javascript'] <= -1) {
+            } elseif ($f['image'] <= -1 && $f['javascript'] <= -1) {
                 $scores[] = array(-2.5, 'All features challenges failed (1x+)');
             } elseif ($f['image'] >= 1 && $f['iframe'] >= 1 && $f['javascript'] >= 1) {
                 $scores[] = array(2.5, 'All features challenges succeded');
