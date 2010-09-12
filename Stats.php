@@ -163,7 +163,7 @@ class Bouncer_Stats
              $version = isset($identity['version']) ? $identity['version'] : null;
              $system = $system_name = isset($identity['os']) ? $identity['os'][0] : 'unknown';
              $system_version = isset($identity['os']) ? $identity['os'][1] : '';
-             $referer = isset($first['request']['headers']['Referer']) ? $first['request']['headers']['Referer'] : '';
+             $referer = isset($first['request']['headers']['Referer']) ? $first['request']['headers']['Referer'] : 'none';
              $cookie = isset($last['request']['headers']['Cookie']) ? $last['request']['headers']['Cookie'] : '';
              $hascookie = isset($last['request']['headers']['Cookie']) ? 1 : 0;
              $score = isset($last['result']) ? $last['result'][1] : 0;
@@ -181,10 +181,9 @@ class Bouncer_Stats
              $bluecoat = isset($last['request']['headers']['X-BlueCoat-Via']) ? 1 : 0;
              $squid = isset($last['request']['headers']['Via']) && isset($last['request']['headers']['Cache-Control'])
                  && $last['request']['headers']['Cache-Control'] == 'max-age=259200' ? 1 : 0;
-             $proxy1 = isset($last['request']['headers']['FORWARDED_FOR']) ? 1 : 0;
-             $proxy2 = isset($last['request']['headers']['Client-ip']) ? 1 : 0;
+             $proxy1 = isset($last['request']['headers']['FORWARDED_FOR']) && isset($last['request']['headers']['Client-ip']) ? 1 : 0;
 
-             $proxy = ($bluecoat || $squid || $proxy1 || $proxy2 || $proxy3) ? 1 : 0;
+             $proxy = ($bluecoat || $squid || $proxy1) ? 1 : 0;
 
              $xmoz = isset($last['request']['headers']['X-Moz']) ? $last['request']['headers']['X-Moz'] : 'none';
              $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 'none';
@@ -201,8 +200,8 @@ class Bouncer_Stats
              $libwww = isset($last['request']['headers']['TE']) && $last['request']['headers']['TE'] == 'deflate,gzip;q=0.3' ? 1 : 0;
              $lwp = isset($last['request']['headers']['Cookie2']) && $last['request']['headers']['Cookie2'] == '$Version="1"' ? 1 : 0;
 
-             $ie = $name == 'explorer' || in_array($name, Bouncer_Rules_Basic::$explorer_browsers) ? 1 : 0;
-             $gecko = $name == 'firefox' || in_array($name, Bouncer_Rules_Basic::$gecko_browsers) ? 1 : 0;
+             $ie = $name == 'explorer' || in_array($name, Bouncer_Rules_Browser::$explorer_browsers) ? 1 : 0;
+             $gecko = $name == 'firefox' || in_array($name, Bouncer_Rules_Browser::$gecko_browsers) ? 1 : 0;
 
              $js = isset($identity['features']['javascript']) && $identity['features']['javascript'] != 0 ? (int)($identity['features']['javascript'] > 0) : '';
              $img = isset($identity['features']['image']) && $identity['features']['image'] != 0 ? (int)($identity['features']['image'] > 0) : '';
@@ -218,7 +217,7 @@ class Bouncer_Stats
                  }
              }
 
-             $partialKeys = array('addr', 'host', 'referer', 'useragent', 'cookie', 'accept');
+             $partialKeys = array('addr', 'host', 'referer', 'useragent', 'cookie', 'via');
 
              foreach ($filters as $filter) {
                  list($filterKey, $filterValue) = $filter;

@@ -1,0 +1,222 @@
+<?php
+
+class Bouncer_Rules_Robot
+{
+
+    public static function load()
+    {
+        Bouncer::addRule('robot_identity', array('Bouncer_Rules_Robot', 'robot_identity'));
+    }
+
+    public static function robot_identity($identity)
+    {
+        $scores = array();
+        $score = 0;
+
+        if ($identity['type'] != Bouncer::ROBOT || empty($identity['name'])) {
+            return null;
+        }
+
+        $addr = $identity['addr'];
+        $host = $identity['host'];
+        $headers = $identity['headers'];
+
+        switch ($identity['name']) {
+            // top crawlers
+            case 'google':
+                $score += strpos($host, 'googlebot.com') === false ? -5 : 1;
+                $score += empty($headers['From']) ? -5 : 1;
+                break;
+            case 'mediapartners':
+                $score += strpos($host, 'googlebot.com') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '4b8841489bb368a2e0defed8149bf912' ? -5 : 2.5;
+                break;
+            case 'googlemobile':
+                $score += strpos($host, 'googlebot.com') === false ? -5 : 2.5;
+                $score += empty($headers['From']) ? -5 : 2.5;
+                break;
+            case 'yahoo':
+                $score += strpos($host, 'yahoo.net') === false ? -5 : 1;
+                break;
+            case 'msnbot':
+                $score += strpos($host, 'msn.com') === false && empty($headers['From']) ? -5 : 1;
+                break;
+            case 'voila':
+                $score += strpos($host, 'fti.net') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '2e593407134622b8cab54d30e1efb9d9' ? -5 : 2.5;
+            case 'orange':
+                $score += strpos($host, 'fti.net') === false ? -5 : 2.5;
+                break;
+            case 'naverbot':
+                $score += (strpos($host, 'naver.jp') === false && strpos($addr, '61.247.204.') === false) ? -5 : 1;
+                break;
+            case 'scoutjet':
+                $score += strpos($host, 'scoutjet.com') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != 'd970c6ffb8d5547d9f6052207200b0dd' ? -5 : 2.5;
+                break;
+            case 'baidu':
+                $score += (strpos($host, 'baidu.') === false && strpos($addr, '123.125.') === false) ? -5 : 2.5;
+                break;
+            case 'ask':
+                $score += strpos($host, 'ask.com') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '742b4a79a150f6ab785e558ddbf7aaa6' ? -5 : 2.5;
+                break;
+            case 'mailru':
+                $score += strpos($host, 'mail.ru') === false ? -5 : 1;
+                break;
+            case 'twiceler':
+                $score += strpos($host, 'cuil.com') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != 'b90c08ff5b5c8265dbfd9c6fa65f2e09' ? -5 : 2.5;
+                break;
+            case 'spinn3r':
+                $score += strpos($host, 'spinn3r.com') === false ? -5 : 1;
+                break;
+            case 'picsearch':
+                $score += strpos($host, 'picsearch.com') === false ? -5 : 2.5;
+                break;
+            case 'exabot':
+                $score += strpos($host, 'exabot.com') === false ? -5 : 1;
+                $score += empty($headers['From']) ? -5 : 1;
+                break;
+            case 'entireweb':
+                $score += strpos($host, 'entireweb.' === false) ? -2.5 : 1;
+                $score += $identity['extension'] != 'se' ? -2.5 : 1;
+                $score += empty($headers['From']) ? -2.5 : 1.5;
+                $score += $identity['fingerprint'] != 'c2bff0ebec4c3dab9da8035e5219a0fd' ? -2.5 : 1.5;
+                break;
+            case 'alexa':
+                $score += strpos($host, 'amazonaws.com') === false ? -5 : 1;
+                $score += empty($headers['From']) ? -5 : 1;
+                break;
+            case 'daum':
+                $score += $identity['fingerprint'] != 'c566ee1e58e2bfc09389b1d4f5790574' ? -5 : 1;
+                $score += $identity['extension'] != 'kr' ? -5 : 1;
+                break;
+            case 'soso':
+                $score += $identity['fingerprint'] != '6c722beb9681d0d922b8919606168c43' &&
+                    $identity['fingerprint'] != 'e3a7b53bb13161f3706426d28cf06eff' ? -5 : 1;
+                $score += $identity['extension'] != 'cn' ? -5 : 1;
+                break;
+            case 'youdao':
+                $score += $identity['fingerprint'] != '123153a2352ae8af25b8944eadb38fcb' &&
+                    $identity['fingerprint'] != 'c2f67c34cec521f5ae2ca4108d1c9edc' ? -5 : 1;
+                $score += $identity['extension'] != 'cn' ? -5 : 1;
+                break;
+            case 'hatena':
+                $score += $identity['fingerprint'] != '2d2155f7ce9b6b4f866fffa067a76a14' ? -5 : 1;
+                $score += $identity['extension'] != 'jp' ? -5 : 1;
+                break;
+            case 'dotbot':
+                $score += strpos($host, 'dotnetdotcom.org') === false ? -4 : 1;
+                $score += $identity['extension'] != 'us' ? -3 : 1;
+                $score += $identity['fingerprint'] != '1ba3e09e05c3a64578777e53d4f20a3c' ? -3 : 1;
+                break;
+            case 'sogou':
+                $score += $identity['fingerprint'] != 'a86f74048055ff8ea8a8570615c478f4' ? -5 : 2.5;
+                $score += $identity['extension'] != 'cn' ? -5 : 2.5;
+                break;
+            case 'alexa':
+                $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
+                $score += empty($headers['From']) ? -5 : 2.5;
+                break;
+            case 'setooz':
+                $score += strpos($host, 'setooz.com') === false ? -5 : 2.5;
+                break;
+            case 'goo':
+                $score += strpos($host, 'super-goo.com') === false ? -5 : 2.5;
+                break;
+            case 'mlbot':
+                $score += (strpos($addr, '66.219.58.') === false && strpos($addr, '71.41.201.') === false) ? -5 : 2.5;
+                break;
+            case 'feedburner':
+                $score += $identity['fingerprint'] != 'cdcb44c8464c40d53a6f5635ee66d642' &&
+                          $identity['fingerprint'] != '84e14e474b5972e7b11fae97d08fff4c' ? -5 : 2.5;
+                $score += $identity['extension'] != 'us' ? -5 : 2.5;
+                break;
+            case 'netcraft':
+                $score += $identity['fingerprint'] != '6fdbdebe4a4e159db61b246974a63efb' ? -5 : 2.5;
+                break;
+            case 'radian6':
+                $score += strpos($addr, '142.166.170.') === false ? -5 : 2.5;
+                break;
+            case 'socialmention':
+                $score += $identity['fingerprint'] != 'a9b11c963519135d4b07c6b6ad36c0de' ? -5 : 2.5;
+                break;
+            case 'yandex':
+                $score += strpos($host, 'yandex') === false ? -5 : 2.5;
+                break;
+            case 'friendfeed':
+                $score += (strpos($host, 'facebook.com') === false && strpos($addr, '69.63.180.') === false)? -5 : 2.5;
+                break;
+            case 'spbot':
+                $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
+                break;
+            case 'superfeedr':
+                $score += $identity['fingerprint'] != 'd2a7ed74ff810af20968752875c06511' ? -5 : 2.5;
+                break;
+            case 'yahoo-pipes':
+                $score += strpos($host, 'yahoo.com') === false ? -5 : 2.5;
+                break;
+            case 'twitterfeed':
+                $score += strpos($addr, '128.242.249.') === false ? -5 : 2.5;
+                break;
+            case 'tumblr':
+                $score += strpos($host, 'theplanet.com') === false ? -2.5 : 1;
+                $score += $identity['fingerprint'] != '58da13cc7b6dbfa72c81d8357f4dda0a' ? -2.5 : 1;
+                break;
+            case 'bdbrandprotect':
+                $score += strpos($host, 'blink.ca') === false ? -5 : 2.5;
+                break;
+            case 'fairshare':
+                $score += (strpos($addr, '209.249.') !== 0 && strpos($addr, '64.41.') !== 0) ? -5 : 2.5;
+                break;
+            case 'psbot':
+                $score += strpos($host, 'picsearch.com') === false ? -5 : 2.5;
+                break;
+            case 'heritrix':
+                $score += strpos($host, 'archive.org') === false ? -5 : 2.5;
+                break;
+            case 'ccbot':
+                $score += strpos($addr, '38.107.191.') !== 0 ? -5 : 2.5;
+                break;
+            // feeds
+            case 'netvibes':
+                $score += strpos($host, 'netvibes.com') === false ? -5 : 1;
+                break;
+            case 'yahoo-feed':
+                $score += strpos($host, 'yahoo.net') === false ? -5 : 2.5;
+                break;
+            case 'googlefeeds':
+                $score += (strpos($host, 'google.com') === false
+                         && strpos($addr, '72.14.')  !== 0
+                         && strpos($addr, '74.125.') !== 0
+                         && strpos($addr, '66.249.') !== 0
+                         && strpos($addr, '68.249.') !== 0
+                         && strpos($addr, '209.85.') !== 0) ? -5 : 1;
+                break;
+            case 'bloglines':
+                $score += strpos($host, 'bloglines.com') === false ? -5 : 1;
+                break;
+            case 'page2rss':
+                $score += strpos($host, 'page2rss.com') === false ? -5 : 1;
+                break;
+            case 'icerocket':
+                $score += strpos($host, 'icerocket.com') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '261b05f8f307e382d8acce6f304f481e' ? -5 : 2.5;
+                break;
+        }
+
+        if ($score >= 1) {
+            $scores[] = array($score, 'Robot identity verified');
+        } else if ($score == 0) {
+            $scores[] = array($score, 'Robot identity not verified');
+        } else if ($score <= -5) {
+            $scores[] = array($score, 'Robot identity suspicious');
+        } else {
+            $scores[] = array($score, 'Robot identity ambigous');
+        }
+
+        return $scores;
+    }
+
+}

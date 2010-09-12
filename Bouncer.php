@@ -46,6 +46,12 @@ class Bouncer
         Bouncer_Rules_Bbclone::load();
         require_once dirname(__FILE__) . '/Rules/Basic.php';
         Bouncer_Rules_Basic::load();
+        require_once dirname(__FILE__) . '/Rules/Browser.php';
+        Bouncer_Rules_Browser::load();
+        require_once dirname(__FILE__) . '/Rules/Robot.php';
+        Bouncer_Rules_Robot::load();
+        require_once dirname(__FILE__) . '/Rules/Request.php';
+        Bouncer_Rules_Request::load();
         require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
         Bouncer_Rules_Fingerprint::load();
         require_once dirname(__FILE__) . '/Rules/Network.php';
@@ -379,9 +385,9 @@ class Bouncer
             }
         }
 
-        if ($score >= 10) {
+        if ($score > 10) {
             $result = array(self::NICE, $score, $details);
-        } else if ($score <= -10) {
+        } else if ($score < -10) {
             $result = array(self::BAD, $score, $details);
         } else if ($score <= -5) {
             $result = array(self::SUSPICIOUS, $score, $details);
