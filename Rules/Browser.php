@@ -94,7 +94,7 @@ class Bouncer_Rules_Browser
             }
             // Only Explorer send this headers
             if ($name != 'explorer') {
-                if (isset($headers['Accept']) && strpos($headers['Accept'], 'image/gif') === 0) {
+                if (isset($headers['Accept']) && strpos($headers['Accept'], 'image/pjpeg') !== false) {
                     $scores[] = array(-2.5, 'Explorer Accept header');
                 }
             }
@@ -123,13 +123,23 @@ class Bouncer_Rules_Browser
             }
         }
 
+        if ($name == 'opera') {
+            if (isset($headers['Accept']) && $headers['Accept'] == 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1') {
+                $scores[] = array(2.5, 'Expected Accept header (opera)');
+            }
+            if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] == 'iso-8859-1, utf-8, utf-16, *;q=0.1') {
+                $scores[] = array(2.5, 'Expected Accept-Charset header (opera)');
+            }
+            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'deflate, gzip, x-gzip, identity, *;q=0') {
+                $scores[] = array(2.5, 'Expected Accept-Encoding header (opera)');
+            }
+        }
+
         if ($name == 'explorer') {
             if (isset($headers['Accept'])) {
-                if (strpos($headers['Accept'], 'image/pjpeg') !== false) {
-                    $scores[] = array(1, 'Expected Accept header (explorer)');
-                } elseif ($headers['Accept'] == '*/*') {
+                if ($headers['Accept'] == '*/*') {
                     $scores[] = array(-2.5, '*/* Accept header (explorer)');
-                } else {
+                } elseif (strpos($headers['Accept'], 'image/pjpeg') === false) {
                     $scores[] = array(-5, 'Bad Accept header (explorer)');
                 }
             }
@@ -224,13 +234,17 @@ class Bouncer_Rules_Browser
                 if (isset($headers['UA-CPU'])) {
                     $scores[] = array(2.5, 'UA-CPU Header Detected');
                 }
+                if (isset($headers['Connection']) && $headers['Connection'] == 'Keep-Alive') {
+                    $scores[] = array(2.5, 'Connection header with expected value');
+                }
                 break;
         }
 
+        // Welcome nicely users from Google
         if (!empty($request['headers']['Referer'])) {
             $preferer = parse_url($request['headers']['Referer']);
             if (isset($preferer['host']) && strpos($preferer['host'], 'google')) {
-                $scores[] = array(2.5, 'Google as Referer');
+                $scores[] = array(5, 'Google as Referer');
             }
         }
 

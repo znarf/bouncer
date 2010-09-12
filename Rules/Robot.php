@@ -155,7 +155,7 @@ class Bouncer_Rules_Robot
                 $score += $identity['fingerprint'] != 'd2a7ed74ff810af20968752875c06511' ? -5 : 2.5;
                 break;
             case 'yahoo-pipes':
-                $score += strpos($host, 'yahoo.com') === false ? -5 : 2.5;
+                $score += strpos($host, 'yahoo.') === false ? -5 : 2.5;
                 break;
             case 'twitterfeed':
                 $score += strpos($addr, '128.242.249.') === false ? -5 : 2.5;

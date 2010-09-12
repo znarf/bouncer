@@ -23,8 +23,6 @@ $suspicious_fingerprints = array(
 'db71ede31df67309d22fba536bb786ae', // Python-urllib/2.6
 '790f947b2a7fe78890c8fa9a1ab50749', // PycURL/7.18.2
 '7501eb1d36df266c545527806e540e09', // The Incutio XML-RPC PHP Library
-// Curl
-'7b1b91d32d341e80e89ae21bb8f5554b', // curl/7.19.6 (i386-pc-win32) libcurl/7.19.6 OpenSSL/0.9.8k zlib/1.2.3
 // Bots
 '40fc775be2dcad9d6d0d798276a6177d', // Mozilla 5.0 (US - static.theplanet.com)
 'd05580236d7563115237363dc740f983', // TREND MICRO

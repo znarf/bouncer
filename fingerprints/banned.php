@@ -21,6 +21,7 @@ $banned_fingerprints = array(
 'e001df5efb3b7e2392430eea763ef765', //  * - binlar 2.6.3
 'c3519edceadd1945fdeb626ad9c2a5fe', //  * - larbin 2.6.3
 '1eee5009bfa152ad21b863af9cb134c6', //  * - page_test - larbin 2.6.3
+'ed6a32ee2c78863ad5a1f007a95ae420', //  * - larbin 2.6.3
 // ICS
 '4c67cac030adba659c1ad691368db27e',
 // Security Exploits
@@ -39,6 +40,8 @@ $banned_fingerprints = array(
 'bd071fdfb2a7ad087cca666b86a23b9c',
 'f94e6a904f7d6a185755e6bf7d144129',
 'f82fb91416713cbf302217d272f18c6f',
+'8ea3fb6a8c5cc988ceb18877e9d0f698',
+'cf7496791c144f929120f056fc42d834',
 // Advanced Email Extractor
 'a71a3073b82c5f249cacdae80c0e154e', // 2.61
 'f739bf1bfb67daadf0cc3462dfc5dc59', // 2.76
@@ -55,6 +58,7 @@ $banned_fingerprints = array(
 'a029b4d65c51fcd4d67551c0ae97f529', // libWWW 5.811
 '95dde41a36a4c266b9bc520a9d4a8f1f', // libWWW 5.812
 'bfe5caacf3af775ccc94e927a5737372', // libWWW 5.813
+'e917d52c6b22468b1db1b27bfa4062b4', // libWWW 5.814
 '9405658d078823e6df4c8429ea72be46', // libWWW 5.816
 '5654842294d6f200197b6f4d73f39743', // libWWW 5.819
 '7bd5d06c1c4905e13a94c5dffcb3d55f', // libWWW 5.820
@@ -72,8 +76,10 @@ $banned_fingerprints = array(
 'e89cb5d761fd739e0ce7a50e78c7fe48', // Java/1.4.2_07
 'ecc03938cc08478c23e6fe702ae7b715', // Java/1.6.0_0
 'b9d80793083ab72eecb293c49a4e97be', // Java/1.5.0_04
+'78d335088097bc4a390e84f287230480', // Java/1.5.0_05
 '0d360766d1b65022c2fad9a8e1017a3b', // Java/1.5.0_08
 '5303f135ebdd3e4a13e2c018681db268', // Java/1.5.0_12
+'c06ed801086df06f47d2e59a72475b50', // Java/1.5.0_15
 'fa1d0fa9804e415239b734d215563a0d', // Java/1.6.0-rc
 '07bebae5fabaf4fe78686e0333bda69b', // Java/1.6.0
 'ecc03938cc08478c23e6fe702ae7b715', // Java/1.6.0_0
