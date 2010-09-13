@@ -7,6 +7,7 @@ $browsers_fingerprints = array(
 'e79ac06ca2487c07ca5548b039ca8bb1', // en-GB - Windows XP - Opera 10.60
 '1de571c60c29925e5de2825429b68716', // en-GB - Windows XP - Opera 10.60
 'e9898c113ba06591cf980f9e67508887', // en-GB - Windows XP - Opera 10.61
+'613b1eb18b3c4572cc3706f882197ea8', // en-GB - Windows XP - Opera 10.62
 '8a5c6d4779e4658f4beb017fe34c2a77', // en-GB - Windows Vista - Opera 10.10
 '84b3479620efc3e1feb46f125f75378c', // en-GB - Windows Vista - Opera 10.51
 '1199d488382b1b5ede5c3a962be1cb01', // en-GB - Windows Vista - Opera 10.53
@@ -14,6 +15,7 @@ $browsers_fingerprints = array(
 '5dc4e419364f710f342ef4f1e5f61f6c', // en-GB - Windows Vista - Opera 10.60
 '1776ea235a99d1dd8041b05506512479', // en-GB - Windows Vista - Opera 10.60
 'f5cfc3a608df3323d2f80b8665670d29', // en-GB - Windows Vista - Opera 10.61
+'f58f157659ac2d63f75179d2a613dd4d', // en-GB - Windows Vista - Opera 10.62
 'a96aa617f8e0e79f0c2e25fb87367207', // en-GB - Windows 7 - Opera 10.10
 'cc0e0d70a529c0970e15d34445c36f4f', // en-GB - Windows 7 - Opera 10.51
 '4ebd6e0973c202404a00e44c91aaa7ba', // en-GB - Windows 7 - Opera 10.53
@@ -21,6 +23,7 @@ $browsers_fingerprints = array(
 '5fe28d3e03f07057761b96717fd5704e', // en-GB - Windows 7 - Opera 10.60
 '1302639697843f16be736c2c22a80c16', // en-GB - Windows 7 - Opera 10.60
 'ed2e3831cf492ead8b2f850a085efb56', // en-GB - Windows 7 - Opera 10.61
+'f46838e82dddcef514ad3c77378e6a4d', // en-GB - Windows 7 - Opera 10.62
 'ceeaba8ae27532fea6bb48357eda79a4', // en-GB - MacOS X - Opera 10.10
 '19aedbc65f77b0ce347f90ebfc51362a', // en-GB - MacOS X - Opera 10.51
 'a1df0d6fd7c902d66563afa5d7f848f9', // en-GB - MacOS X - Opera 10.53
@@ -28,6 +31,7 @@ $browsers_fingerprints = array(
 'cbff061d5c5b766be52e6cf6a2e662db', // en-GB - MacOS X - Opera 10.60
 '26470b6fda51b79c42886830af63ec39', // en-GB - MacOS X - Opera 10.60
 '88d1bc16f58bafbc52708f0b10741711', // en-GB - MacOS X - Opera 10.61
+'4cccadf1ea08f1c44aa85a28401a4b8c', // en-GB - MacOS X - Opera 10.62
 '508c3326b6fb964fdd94a0b36a287e35', // en-US - Windows XP - Opera 10.10
 'f284e82e505b8afa1fd2c5eb988b165c', // en-US - Windows XP - Opera 10.51
 '089ead08bdc2d75656756ed011f55e94', // en-US - Windows XP - Opera 10.53
@@ -35,6 +39,7 @@ $browsers_fingerprints = array(
 '9fc0f2b8d4962efa4546b6bb7a01c4f2', // en-US - Windows XP - Opera 10.60
 'ac314ddab5611d5f8497ecb2967efe89', // en-US - Windows XP - Opera 10.60
 '9442029f66e6803749dfcf0d690a5c38', // en-US - Windows XP - Opera 10.61
+'218a4146a2ee2b95bd6c7cab5723ae57', // en-US - Windows XP - Opera 10.62
 'b1a0d78f75fa6bce958ec28a42bf0ddd', // en-US - Windows Vista - Opera 10.10
 '927f6226d2f2963693a32406b4bd08ea', // en-US - Windows Vista - Opera 10.51
 '2eb767e2820d8afe84d8264dc252b757', // en-US - Windows Vista - Opera 10.53
@@ -42,6 +47,7 @@ $browsers_fingerprints = array(
 'b3d3287484dad5b7388a4a2d9810e712', // en-US - Windows Vista - Opera 10.60
 'd8492e2c1b3f3776531cf0ed486324e2', // en-US - Windows Vista - Opera 10.60
 'b89146aea9d8d27693b46873620c35cf', // en-US - Windows Vista - Opera 10.61
+'3bb9531c8ebd6d04751fc615d3164517', // en-US - Windows Vista - Opera 10.62
 'c3616e8ef2d5f8eafb6f9e4480958b88', // en-US - Windows 7 - Opera 10.10
 '4e050e7d5af712825b1cec51f67f3607', // en-US - Windows 7 - Opera 10.51
 '6827fddc25b300f1e5ae1e05ad21f7cf', // en-US - Windows 7 - Opera 10.53
@@ -49,6 +55,7 @@ $browsers_fingerprints = array(
 'ee5c7082ffe662f0e6cbe27be7be52e5', // en-US - Windows 7 - Opera 10.60
 '4bca1dfb036c926bc81ce723e88384b1', // en-US - Windows 7 - Opera 10.60
 '8ca8e1a5983e57bba8132bbe0d323ad7', // en-US - Windows 7 - Opera 10.61
+'36d9a26bff4d7f56d2993ce4e4aac35d', // en-US - Windows 7 - Opera 10.62
 'aee73c3d0dc594d5e55aa1c33ac39704', // en-US - MacOS X - Opera 10.10
 '4f0c9f5193442f6a44ea54e57c726eb9', // en-US - MacOS X - Opera 10.51
 '0d97fc59f141766a38780d895df5d839', // en-US - MacOS X - Opera 10.53
@@ -56,6 +63,7 @@ $browsers_fingerprints = array(
 '279068eeba49ad3a03ea943d2ca8e8ba', // en-US - MacOS X - Opera 10.60
 '4ec405417f5741eb59f16b4975cc2058', // en-US - MacOS X - Opera 10.60
 '7ff98d586ae8cf02cd52b5d15564f33f', // en-US - MacOS X - Opera 10.61
+'322a9b954b687e9c71818b1449479c4d', // en-US - MacOS X - Opera 10.62
 '146149b6842f68a31750785b926256d7', // fr-FR - Windows XP - Opera 10.10
 '48901e421478c7a14e6b847988253782', // fr-FR - Windows XP - Opera 10.51
 '3eb4ffdf77760bf1390df3218b974f71', // fr-FR - Windows XP - Opera 10.53
@@ -63,6 +71,7 @@ $browsers_fingerprints = array(
 '02fb5200332ab5adbbd43a8d1c3d51ae', // fr-FR - Windows XP - Opera 10.60
 'df65acb13741a47c9591c68a9b2c9d05', // fr-FR - Windows XP - Opera 10.60
 '5b8b60b867aac0250c03959de8c13c58', // fr-FR - Windows XP - Opera 10.61
+'f38527e2d89c924a96896916b15b7859', // fr-FR - Windows XP - Opera 10.62
 'c7339c3a8495cf61237ac2d707da4174', // fr-FR - Windows Vista - Opera 10.10
 '44b48c3116e68835959b79c4d41baa32', // fr-FR - Windows Vista - Opera 10.51
 'cef9b69552f7068928af79e153fff0fa', // fr-FR - Windows Vista - Opera 10.53
@@ -70,6 +79,7 @@ $browsers_fingerprints = array(
 '1a367a2b57b2cc16a1f834d5c451f551', // fr-FR - Windows Vista - Opera 10.60
 '6491ce19fbbf05bbc63e9f882501cbec', // fr-FR - Windows Vista - Opera 10.60
 '155b6dbff6a12f5db8add58785c34340', // fr-FR - Windows Vista - Opera 10.61
+'d020f5bec82371dc2ba7c146e0334552', // fr-FR - Windows Vista - Opera 10.62
 '96f82852e7c4dbcaa665f27aa7e187b7', // fr-FR - Windows 7 - Opera 10.10
 'd36b363b30b4be8f95bfc3a113f14d03', // fr-FR - Windows 7 - Opera 10.51
 'f8508c995dd7b679e20137aa803949d9', // fr-FR - Windows 7 - Opera 10.53
@@ -77,6 +87,7 @@ $browsers_fingerprints = array(
 'e990db34f2f3e31fdc5eaf54c9c4c829', // fr-FR - Windows 7 - Opera 10.60
 'a5b29451c56528c12cf12d404fe1ba87', // fr-FR - Windows 7 - Opera 10.60
 '0ba7c44d81008e581326aaa5714f1166', // fr-FR - Windows 7 - Opera 10.61
+'8c409e107d706edc2d844d56b0a8ca37', // fr-FR - Windows 7 - Opera 10.62
 'd60069a78aff987279856cd748c6c59a', // fr-FR - MacOS X - Opera 10.10
 '8c01ee081b1349291bacf3778abd6dbe', // fr-FR - MacOS X - Opera 10.51
 '131dc4cdb790f191cdfa6942519d24c9', // fr-FR - MacOS X - Opera 10.53
@@ -84,6 +95,7 @@ $browsers_fingerprints = array(
 'a2c616320a3a75e8fbab89666420ecf5', // fr-FR - MacOS X - Opera 10.60
 '2071670f27990288ff209ca40e854b1f', // fr-FR - MacOS X - Opera 10.60
 'ebc2f443d2bf0337b38029b2354e1afd', // fr-FR - MacOS X - Opera 10.61
+'1839bf822395d4c7a3b770fd258448d7', // fr-FR - MacOS X - Opera 10.62
 '0d04217c2e1958b792c08ebcf5577f5f', // ru-RU - Windows XP - Opera 10.10
 'c5d4590637770e40519369b66c39c4af', // ru-RU - Windows XP - Opera 10.51
 '268ab3f586d5c909cb5400ddb263a7b6', // ru-RU - Windows XP - Opera 10.53
@@ -91,6 +103,7 @@ $browsers_fingerprints = array(
 '4dfc0dcb23030dd6190c07b18a2b63a5', // ru-RU - Windows XP - Opera 10.60
 '035c4667e4c97728e8e032087c1aeb9f', // ru-RU - Windows XP - Opera 10.60
 '06287626971ac618efb77986a17cdb41', // ru-RU - Windows XP - Opera 10.61
+'089fcf9acb482d5af0d92147c4ec005d', // ru-RU - Windows XP - Opera 10.62
 'fecda58e34877cf878fb560fb4e7a0af', // ru-RU - Windows Vista - Opera 10.10
 'edd4a1c4c8f52739f538f114e4e5752e', // ru-RU - Windows Vista - Opera 10.51
 '189adf65d1c5560771edab8d69c5a236', // ru-RU - Windows Vista - Opera 10.53
@@ -98,6 +111,7 @@ $browsers_fingerprints = array(
 '7b65ebb41bc68709ddcf9d7ad96d4970', // ru-RU - Windows Vista - Opera 10.60
 'f91559f858ab3b96179d97620cdef985', // ru-RU - Windows Vista - Opera 10.60
 '69cdb424c96062020835efadeeb1cfaa', // ru-RU - Windows Vista - Opera 10.61
+'70ce974c548491607719ab1c036a2430', // ru-RU - Windows Vista - Opera 10.62
 '181d27490d77f728d6babecf15c88b0d', // ru-RU - Windows 7 - Opera 10.10
 '16bc8f1050a308d0d50420ffa87bfd61', // ru-RU - Windows 7 - Opera 10.51
 'c892c9b2498b88026a85cd6c13aca544', // ru-RU - Windows 7 - Opera 10.53
@@ -105,6 +119,7 @@ $browsers_fingerprints = array(
 'ef995e9485f142c22a1b81ec46add379', // ru-RU - Windows 7 - Opera 10.60
 'ac1a79475a72188d95547b44c3a8debd', // ru-RU - Windows 7 - Opera 10.60
 'e166a437945fa4c25287e06c4dd5030b', // ru-RU - Windows 7 - Opera 10.61
+'295d31ccdd06903efe39fe012d1da961', // ru-RU - Windows 7 - Opera 10.62
 'f79e1fc103893cebd82683d240139f0e', // ru-RU - MacOS X - Opera 10.10
 '50666f1661b1c67ab60fa43ceb775666', // ru-RU - MacOS X - Opera 10.51
 'f2abe7f039b7fc944a9708f991dcd2f7', // ru-RU - MacOS X - Opera 10.53
@@ -112,6 +127,7 @@ $browsers_fingerprints = array(
 'd93326898f12dc6fdb8b74dee21a224a', // ru-RU - MacOS X - Opera 10.60
 '592861506dce27f3a6b5a00d4efef31c', // ru-RU - MacOS X - Opera 10.60
 'f0d699bf153fea3f788aa99570eb34df', // ru-RU - MacOS X - Opera 10.61
+'27517a2b7cb1c7081e1bc2f9d8273395', // ru-RU - MacOS X - Opera 10.62
 '21081ead735458df4c22334117b547b9', // de-DE - Windows XP - Opera 10.10
 'a4316b3596e0f2b229747c6c87004b95', // de-DE - Windows XP - Opera 10.51
 'f7550aaf9fbf8a5ff15a55c552214779', // de-DE - Windows XP - Opera 10.53
@@ -119,6 +135,7 @@ $browsers_fingerprints = array(
 '47ffcb937a2b64ee8dbe1d2599321598', // de-DE - Windows XP - Opera 10.60
 'd9e7c42395e37aa1cf437c011c90b999', // de-DE - Windows XP - Opera 10.60
 'a955008e140f3a6a0a838fdc99e41572', // de-DE - Windows XP - Opera 10.61
+'50dd82e7ae1d14c882880256c72c57a0', // de-DE - Windows XP - Opera 10.62
 '5764aa8c7eeea1366a2ce4ff284d5c7a', // de-DE - Windows Vista - Opera 10.10
 '67301f669c7a2ed6d1098bff53b804be', // de-DE - Windows Vista - Opera 10.51
 '91187e6304d087addc5256595b4f5394', // de-DE - Windows Vista - Opera 10.53
@@ -126,6 +143,7 @@ $browsers_fingerprints = array(
 'c29266f967cf862f050463641dcf252c', // de-DE - Windows Vista - Opera 10.60
 'a5303f6b620909ccac05d8be58e21705', // de-DE - Windows Vista - Opera 10.60
 'fa5ecf155ba38cc4490e75d49f76fc5d', // de-DE - Windows Vista - Opera 10.61
+'c2a31ce941792d3e7d88de008c8ab6ad', // de-DE - Windows Vista - Opera 10.62
 '07efabc6b387c4e4a623b21a2f215069', // de-DE - Windows 7 - Opera 10.10
 '7e872d408258deead59249e731fb21d4', // de-DE - Windows 7 - Opera 10.51
 '01376d65816d738229da940f6fc4082d', // de-DE - Windows 7 - Opera 10.53
@@ -133,6 +151,7 @@ $browsers_fingerprints = array(
 '03f614516cc48fec99de8661ecd1acfe', // de-DE - Windows 7 - Opera 10.60
 'c16a7704fbf0f8b68d4cd7502e6a2b52', // de-DE - Windows 7 - Opera 10.60
 '50219d63a6d20cc547102a17b7b2e38a', // de-DE - Windows 7 - Opera 10.61
+'f415cde232b01d085d9745f56f979f8a', // de-DE - Windows 7 - Opera 10.62
 '41ddd9df2a772a816f589b37c854d446', // de-DE - MacOS X - Opera 10.10
 '06de086e52567735a53e4dd667feac26', // de-DE - MacOS X - Opera 10.51
 'f041927480826910d0aa2a48550b8b80', // de-DE - MacOS X - Opera 10.53
@@ -140,6 +159,7 @@ $browsers_fingerprints = array(
 '3ae0b893cfc3b9d60c074078c45e9cb4', // de-DE - MacOS X - Opera 10.60
 'f7655a86c29cd9dbc18a7aef4875cb1e', // de-DE - MacOS X - Opera 10.60
 '25884f04603b6f55d3eceb2ebd68fd0b', // de-DE - MacOS X - Opera 10.61
+'50a1fc8e38376d6f0082040ef941fce0', // de-DE - MacOS X - Opera 10.62
 'f52f672f716e018065da75b0690d293b', // cs-CZ - Windows XP - Opera 10.10
 '2f7c53c65f83e36642fc646ebc1f1be2', // cs-CZ - Windows XP - Opera 10.51
 '11e6df65af7ed12ce3f383ba2e6af70a', // cs-CZ - Windows XP - Opera 10.53
@@ -147,6 +167,7 @@ $browsers_fingerprints = array(
 'dc5768a16f1aecf12d0d485ed0591d37', // cs-CZ - Windows XP - Opera 10.60
 '650e767d832ee6b9d6c6fe1813c5f331', // cs-CZ - Windows XP - Opera 10.60
 '16b418621a986cc4bb9cee1c54d200d8', // cs-CZ - Windows XP - Opera 10.61
+'98c28a5e785558c97a7be3d7b639cccb', // cs-CZ - Windows XP - Opera 10.62
 '64d96c3b622d6fe7d7d730ee9f7bf0d2', // cs-CZ - Windows Vista - Opera 10.10
 '727c2db9a6d879db43e5a1455cc38284', // cs-CZ - Windows Vista - Opera 10.51
 '281de975366dd13009d6edccf419d139', // cs-CZ - Windows Vista - Opera 10.53
@@ -154,6 +175,7 @@ $browsers_fingerprints = array(
 'a75012eb7231dc5c873cc2e7ac235a03', // cs-CZ - Windows Vista - Opera 10.60
 'c02cd10b658c96616b776f4f5da5f052', // cs-CZ - Windows Vista - Opera 10.60
 '173cfab583285a8d3d5d20268c62d1bc', // cs-CZ - Windows Vista - Opera 10.61
+'cfd76ba2a92c0590ddab4f0d847d82af', // cs-CZ - Windows Vista - Opera 10.62
 '9b9772cca31a7a2d930c046dbe0cbf43', // cs-CZ - Windows 7 - Opera 10.10
 '1b0fef750c3e2f738d86f9ed7b27251a', // cs-CZ - Windows 7 - Opera 10.51
 '9b1b2586e4e4b5603440be6f59943a33', // cs-CZ - Windows 7 - Opera 10.53
@@ -161,6 +183,7 @@ $browsers_fingerprints = array(
 '31675391df65863c55f480526c7d0b44', // cs-CZ - Windows 7 - Opera 10.60
 '4f1c57da4618fcac2200b8d2ef6062fa', // cs-CZ - Windows 7 - Opera 10.60
 'ec6dca27dec3b6e2285caa273d29c841', // cs-CZ - Windows 7 - Opera 10.61
+'ab7d849a8faa1edb6c07e9aa7da9e855', // cs-CZ - Windows 7 - Opera 10.62
 '809647471c3f564cdec6e0496916c83e', // cs-CZ - MacOS X - Opera 10.10
 '4f189d43dc5104d29088bd7109c129f5', // cs-CZ - MacOS X - Opera 10.51
 '1d05fdd4081fe8c88c436a5b2912c2a9', // cs-CZ - MacOS X - Opera 10.53
@@ -168,6 +191,7 @@ $browsers_fingerprints = array(
 '70a4e403e8872746320aed7cda878169', // cs-CZ - MacOS X - Opera 10.60
 'f07980ede2facba4fe4f4eada896fdae', // cs-CZ - MacOS X - Opera 10.60
 '127a23b3b9b3e73ada045271e86bd392', // cs-CZ - MacOS X - Opera 10.61
+'f731507e8e3a736a765323b5ed2553e2', // cs-CZ - MacOS X - Opera 10.62
 '89a4ca53d9c8b97d68475f73fd79a310', // pt-BR - Windows XP - Opera 10.10
 '9cd01785f7d18ad753c9888e3c582837', // pt-BR - Windows XP - Opera 10.51
 'dc560b00b47da9d607826acbed7eb7a6', // pt-BR - Windows XP - Opera 10.53
@@ -175,6 +199,7 @@ $browsers_fingerprints = array(
 '8c6517248a8d68a522937ca75ad24eaa', // pt-BR - Windows XP - Opera 10.60
 'a48b06eb09a6a0ed5c37876da98c1f63', // pt-BR - Windows XP - Opera 10.60
 '8ba77b8357b8555e24dcabf4bfcdf573', // pt-BR - Windows XP - Opera 10.61
+'e876d980f9808b6ba4ebb3ff3552495e', // pt-BR - Windows XP - Opera 10.62
 '297643759471d36f579919a49feb8298', // pt-BR - Windows Vista - Opera 10.10
 '1a1f6f5de7ffae73a4defb3e1ef875b9', // pt-BR - Windows Vista - Opera 10.51
 '4a9faa9953bc35a204250566b066535e', // pt-BR - Windows Vista - Opera 10.53
@@ -182,6 +207,7 @@ $browsers_fingerprints = array(
 'da115150b2b1da58f8aac7fc773664fa', // pt-BR - Windows Vista - Opera 10.60
 '9ad5059e0b7d8a1ad82a67ef298426fd', // pt-BR - Windows Vista - Opera 10.60
 '5b8dcba6aef2578a6815d51cdb952bf0', // pt-BR - Windows Vista - Opera 10.61
+'48f6bf67fcc88ee8df7b595bc1108782', // pt-BR - Windows Vista - Opera 10.62
 '868c0ba41da7c374a52d83b26a92c867', // pt-BR - Windows 7 - Opera 10.10
 'c2a9517c63a32fadc6157d1dfac87def', // pt-BR - Windows 7 - Opera 10.51
 'a04a1278c165c76587134fbb16a7e206', // pt-BR - Windows 7 - Opera 10.53
@@ -189,6 +215,7 @@ $browsers_fingerprints = array(
 'b5801c3ab10c799613c125ff5ef0b8fb', // pt-BR - Windows 7 - Opera 10.60
 '3cdd3d7183a909680243f45b007b700d', // pt-BR - Windows 7 - Opera 10.60
 'ef04b1f18971715178a643090f282475', // pt-BR - Windows 7 - Opera 10.61
+'63fa4b25f65289703e84bfda630222cb', // pt-BR - Windows 7 - Opera 10.62
 '405695769a58349b1d10dbde3f3e020b', // pt-BR - MacOS X - Opera 10.10
 '3bef6edf55711ca7df73718a372ce39e', // pt-BR - MacOS X - Opera 10.51
 '1d52c49e5b2d86db55fda79684b01747', // pt-BR - MacOS X - Opera 10.53
@@ -196,6 +223,7 @@ $browsers_fingerprints = array(
 '958e98c9a4c9a6e9a3418eac5fcee194', // pt-BR - MacOS X - Opera 10.60
 '31f0c9c0460b52258a037e9ffa1e5986', // pt-BR - MacOS X - Opera 10.60
 'fb4a4a86fdff7f9cb0376b7165d52b26', // pt-BR - MacOS X - Opera 10.61
+'d9b627dc0b644588cdb432572ec1c7bc', // pt-BR - MacOS X - Opera 10.62
 );
 return $browsers_fingerprints;
 ?>

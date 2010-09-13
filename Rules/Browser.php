@@ -95,7 +95,7 @@ class Bouncer_Rules_Browser
             // Only Explorer send this headers
             if ($name != 'explorer') {
                 if (isset($headers['Accept']) && strpos($headers['Accept'], 'image/pjpeg') !== false) {
-                    $scores[] = array(-2.5, 'Explorer Accept header');
+                    $scores[] = array(-5, 'Explorer Accept header');
                 }
             }
         }
@@ -119,12 +119,13 @@ class Bouncer_Rules_Browser
                 $scores[] = array(-7.5, '*/* Accept header (firefox)');
             }
             if (strpos($identity['user_agent'], 'rv:') === false) {
-                $scores[] = array(-5, 'No Mozilla platform token (gecko)');
+                $scores[] = array(-5, 'No Mozilla platform token (firefox)');
             }
         }
 
         if ($name == 'opera') {
-            if (isset($headers['Accept']) && $headers['Accept'] == 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1') {
+            if (isset($headers['Accept']) && $headers['Accept'] ==
+                'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1') {
                 $scores[] = array(2.5, 'Expected Accept header (opera)');
             }
             if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] == 'iso-8859-1, utf-8, utf-16, *;q=0.1') {

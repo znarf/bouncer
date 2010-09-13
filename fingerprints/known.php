@@ -21,23 +21,6 @@ $known_fingerprints = array(
 '86da1e9551b784725ced8434be16755d',  // getfavicon
 '337fb2b23192d6dbdfa9031e1468fb92',  // rtweetme
 '5577bdd018c3f246007dd1bb07f0d81f',  // pubsubhubbub
-// Microsoft Suspicous Crawlers
-'34f895d7de2f45b4ee2a57a6ece95518',  // US - Windows 2003  - Explorer 6.0 (search.msn.com)
-'7764c3c0f1922a0a6d1edf498b35bc20',  // US - Windows 2003  - Explorer 6.0 (search.msn.com)
-'970fa08c4ee995e7dde6b45b69bd9fb9',  // US - Windows Vista - Explorer 7.0
-'0d8c0fe3cbecc12b7c4d416786be82bd',  // US - Windows 2003  - Explorer 6.0
-'498aa0376230d5dd29b93242493a47d1',  // US - Windows 2003  - Explorer 6.0
-'86b514d5a14bff1d237affaee680dbe1',  // US - Windows XP    - Explorer 6.0
-'9f93e51b6cfe93f6da579b96452e4e22',  // US - Windows 2003  - Explorer 6.0
-'7db6eb564b3454843085b7e112fc08a0',  // US - Windows 2003  - Explorer 6.0
-'a03692f17fca1183f81571b323b06603',  // US - Windows XP    - Explorer 6.0
-'680cf2aea17429b27f8f43e3332cf20d',  // US - Windows XP    - Explorer 6.0
-'812a7eb82cd88810f66bd415598828ac',  // US - Windows 2003  - Explorer 6.0
-'4872be284155fc900f610613a0b05f8c',  // US - Windows 2003  - Explorer 6.0
-'2440249824ac5f46c8450483c0f9abba',  // US - Windows XP    - Explorer 6.0
-'98e8461c651f2019cdf8e4f16fc80383',  // US - Windows XP    - Explorer 6.0
-'f546324447d3ea14f88b35dc4083454f',  // US - Windows 2003  - Explorer 7.0
-'84c29cf970522cd3727c8627bd01a949',  // US - Windows XP    - Explorer 7.0
 // Crawlers
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
