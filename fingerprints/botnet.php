@@ -164,11 +164,18 @@ $botnet_fingerprints = array(
 '644401ea1affb25b1da238bea02a70b0', // Mozilla/4.0 (compatible; MSIE 5.5; Windows 95) - Accept: */*
 'de9a2f3278b6257490dbe2fdc91aa35a', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FREE; .NET CLR 1.1.4322) - Accept: */*
 '41751bddc436b91c6c5451ec6b58f6a2', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727) - Accept: */*
-'d077f0356a945400425fe80489f3eae0', // 6
-'f6bad5ce12f6620f2b32cfa516dc2c12', // 6
+'0b0d46cc1cf8adfe930ac047923a17ce', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; Win64; AMD64) - Accept: */*
+'035ff66e92d330225c4c4e323b6f7cc3', // Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0; T312461) - Accept: */*
+'2fff14eaae572ceca59942ebe85a909c', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322) - Accept: */*
+'c8b1c7422594e4e09e931a4603d3a68d', // Opera/7.11 (Windows NT 5.1; U) [en] - Accept: */*
+'1f782b3dd82eb6c725928a29ac30a279', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322) Babya Discoverer 8.0: - Accept: */*
+'809bff0a2498a1effbfc596f16668688', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322) - Accept: */*
+'ac1649d4e47e9564f301a9b9daeea77c', // Mozilla/4.0 (compatible; MSIE 6.0; AOL 9.0; Windows NT 5.1) - Accept: */*
+'8e517dc5107bce8f67fbd4ae9bdd4366', // Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt) - Accept: */*
+'d077f0356a945400425fe80489f3eae0', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; MRA 4.6 (build 01425); .NET CLR 1.1.4322; .NET CLR 2.0.50727) - Accept: */*
+'f6bad5ce12f6620f2b32cfa516dc2c12', // Opera/9.0 (Windows NT 5.1; U; en) - Accept: */*
 '70c5f388c3d44dd64070c2688d786a79', // 6
 '856d93ce94623151c4812c05eb822c9c', // 6
-'2fff14eaae572ceca59942ebe85a909c', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322) - Accept: */*
 '45090ca0aef2d504bf17580988ae6254', // 5
 '9695b07b62dc882a0b4f21dd29da47d4', // 4
 '4704159f92dcb5e1d2fce74000aef5f8', // 4
@@ -182,9 +189,6 @@ $botnet_fingerprints = array(
 '48ac5a1a46864edf38b1f8ae91689af4', // 4
 '16762bd46599be05801210e651a24e8a', // 4
 '7eb70a03352acf45299cf6fcf2f9a454', // 3
-'8e517dc5107bce8f67fbd4ae9bdd4366', // 3
-'809bff0a2498a1effbfc596f16668688', // 3
-'c8b1c7422594e4e09e931a4603d3a68d', // 3
 'cb912085b8291965eef4cd2e439b6520', // 3
 'cef8dace9a6e327076028fa2703f81dd', // 3
 'b9e7f4386a904b1f56748d94601760e6', // 3
@@ -211,12 +215,10 @@ $botnet_fingerprints = array(
 'f1df8c8dce71d1b3eab11f43aea7979f', // 2
 'e05ef728d19df48a51e21e5f6b72532b', // 2
 '2ff339416f9eb4801b15819824ffe0e4', // 2
-'1f782b3dd82eb6c725928a29ac30a279', // 2
 '11d8f0a5f257dec15f36a5763f199ea9', // 2
 '78f9e2731a98a5bfddc7276f5d5d0d5d',
 '64410795051243ab30de5bf747de2dc6', // 2
 '0a66722c88cb8102e7901e08cfffdb3a', // 2
-'035ff66e92d330225c4c4e323b6f7cc3', // 2
 '64a0cae7711d72119016133a632fa47e', // 2
 '1a66e6a25c22048c31d7c176cb39cd8a', // 2
 '147995d0ea513091a085229f03f7643a', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MRA 4.6 (build 01425); MRSPUTNIK 1, 5, 0, 19 SW)
@@ -243,9 +245,7 @@ $botnet_fingerprints = array(
 '4891d2160230f6bb26dbb1b2b93495cf', // 1
 '33ad9687e29ee05393f99b51c968a64d', // 1
 '2a7d4ef89915cbfdd335518f0d0c683f', // 1
-'0b0d46cc1cf8adfe930ac047923a17ce', // 1
 '4c5143db0d753c1a75e73a40b6b74551', // 1
-'ac1649d4e47e9564f301a9b9daeea77c', // 1
 'a4c2caa3170da540c413e0a55499de9a', // 1
 '7feb0ef2fd9cf5a1af0a54841cb82f33', // 1
 '5223776e39c7a5ac2c736cc65e8545ea', // 1
@@ -257,7 +257,6 @@ $botnet_fingerprints = array(
 '99730ee20e5e01ce11df69b98ef6fb46', // 3
 'b1614c54e8a86c1a8a947e7d4259ab1b', // 3
 '0de3e0809728aaa75f2419e75a681366', // 3
-'0b0d46cc1cf8adfe930ac047923a17ce', // 3
 'cb7305579ce82b9c9756c97e336233ca', // 3
 'a388778fcbbc815c6867315eb6af433a', // 3
 '51d648d7ec401dbdab2ae50023632b2e', // 3
@@ -376,6 +375,7 @@ $botnet_fingerprints = array(
 // New entries
 '9cd87d41ac189374ca07e1c1423b6d0a',
 '7d9cebea26cce23590134c77cff57ff4',
+'9ef96d51b4367ad3ce6860c4602d5770',
 );
 return $botnet_fingerprints;
 ?>
