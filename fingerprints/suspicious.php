@@ -8,12 +8,14 @@ $suspicious_fingerprints = array(
 '34cc6f29ce8920ec9cc8b983ff7b482d', // Mozilla/4.0
 '8d4e52f445afc04479700fb94f606ea2', // Mozilla/5.0 - Accept:*/*
 'd3c137acd8ada3e23b5d18a7773260ec', // Mozilla/4.0 - Accept:*/*
+'0c6fa6c4c6aa8561509d62a0346908d9', // Mozilla 4.0 - Accept:*/*
 '208b39e00387100e0dfde392d73736f6', // Mozilla/4.0 - Accept:*/* - deflate, gzip
 'd28f73e67a253fb8503538b92ff5f33f', // Mozilla/3.0 (compatible)
 'a55dbce033e47342f4493b6b8e317a11', // Accept-Encoding:identity
 'b8a1d0f6c953cb9ff2dca95425cf4a67', // Mozilla/4.0 (compatible)
 'e261d653a34451b1db31d6613aace1f7', // Mozilla/5.0 (compatible)
 '4331cc92d234b76eb0b5926b62ca28b9', // Mozilla/4.0 (compatible; Windows;) - Accept:*/*
+'6dcd6a16db48630f077725a134f636fc', // Mozilla/4.0 - Accept-Language:en-us
 'e36cf8d82aaacacd2533bf7779f362bd', // Spider - Accept:*/*
 '04ddfa686115af0c3306828f9572591b', // Accept:text/html
 '8d0c98829565508d1da3fdaf38dedb2b', // Mozilla/5.0 - Accept-Encoding:gzip,deflate
@@ -38,7 +40,7 @@ $suspicious_fingerprints = array(
 '3bf0133e96c47bc69333c04926ae855a',    // BM  - Windows XP    - Explorer 6.0     (TW - dynamic.hinet.net)
 '4d12feadaaa0d2de366391b5f26d9723',    // BM  - Windows XP    - Explorer 6.0     (PERU)
 'a83d11e2c4b78a31f922ac5e6535bd02',    // BM  - Windows XP    - Explorer 6.0     (CN - 61.135.162.*|61.135.169.*)
-'407fa0dab1fc4043e1dd5d197b5d3b7c',    // BM  - Windows MC 6  - Explorer 8.0
+'407fa0dab1fc4043e1dd5d197b5d3b7c',    // BM  - Windows 7     - Explorer 8.0
 '938331c1534578621896d7be51bc4de3',    // BM  - Windows XP    - Explorer 7.0
 'b7449fcac8672fb618b33bbfe477981a',    // BM  - Windows XP    - Explorer 7.0     (US - 24.39.1.*|nys.biz.rr.com)
 'd15670bbecb02aa913a84504cd8d3616',    // BM  - Windows XP    - Explorer 6.0
@@ -100,6 +102,8 @@ $suspicious_fingerprints = array(
 '3a17ee0aa964b2fa5e1b074634906ded',    //  BM - Windows XP    - Firefox 3.6.8
 '12291b04e3b9f13e50446a069f7f617f',    //  BM - Windows XP    - Firefox 3.5.3
 '98a1c8b514f2c9a80b7fbb989a3d831e',    //  BM - Windows XP    - Firefox 3.0.4
+'e9865916118c88b06343747baca52250',    //  BM - MacOS X 10.5  - Firefox 3.6.3
+'7a4645b68800184a4df291bd22863614',    //  BM - Windows XP    - Firefox 3.0.1
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28

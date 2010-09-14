@@ -5,7 +5,7 @@ class Bouncer_Rules_Browser
 
     public static $explorer_browsers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser', 'kkman', 'acoo', 'netcaptor', 'sleipnir');
 
-    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'camino', 'flock', 'k-meleon', 'firebird', 'mozilla');
+    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'camino', 'flock', 'k-meleon', 'firebird', 'mozilla', 'icecat');
 
     public static function load()
     {
@@ -184,7 +184,7 @@ class Bouncer_Rules_Browser
         }
         // libWWW used to fake a browser identity
         if (isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
-            $scores[] = array(-10, 'libWWW signature detected');
+            $scores[] = array(-10, 'libWWW signature detected (browser)');
         }
 
         if (in_array($name, Bouncer::$known_browsers)) {
@@ -230,13 +230,19 @@ class Bouncer_Rules_Browser
                 if (isset($headers['Connection']) && $headers['Connection'] == 'keep-alive') {
                     $scores[] = array(2.5, 'Connection header with expected value');
                 }
+                break;
             case 'explorer':
                 // Only legitimate browsers are setting this header
                 if (isset($headers['UA-CPU'])) {
                     $scores[] = array(2.5, 'UA-CPU Header Detected');
                 }
                 if (isset($headers['Connection']) && $headers['Connection'] == 'Keep-Alive') {
-                    $scores[] = array(2.5, 'Connection header with expected value');
+                    $scores[] = array(2.5, 'Connection header with expected value (explorer)');
+                }
+                if (isset($headers['Cache-Control']) && $headers['Cache-Control'] == 'no-cache') {
+                    if ($request['method'] == 'GET') {
+                        $scores[] = array(-2.5, 'no-cache Cache-Control header (explorer)');
+                    }
                 }
                 break;
         }

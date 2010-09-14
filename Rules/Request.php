@@ -37,9 +37,13 @@ class Bouncer_Rules_Request
             $scores[] = array(-5, 'Proxy-Connection header detected (Bad Behavior: b7830251)');
         }
 
+        if (isset($headers['Proxy-Authentication']) && $headers['Proxy-Authentication'] == 'Basic Og==') {
+            $scores[] = array(-5, 'Proxy-Authentication header detected');
+        }
+
         // Proxy infos used in suspicious connections
         if (isset($headers['FORWARDED_FOR']) && isset($headers['Client-ip']) && isset($headers['Pragma'])) {
-            $scores[] = array(-7.5, 'Suspicious proxy');
+            $scores[] = array(-7.5, 'Suspicious proxy (FORWARDED_FOR)');
         }
 
         // Suspicious header (used by randomized user agents)
@@ -51,11 +55,18 @@ class Bouncer_Rules_Request
         if (isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/*,*/*') {
             $scores[] = array(-5, 'Suspicious Accept header value');
         }
+        if (isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/*, */*') {
+            $scores[] = array(-5, 'Suspicious Accept header value');
+        }
 
         // Content Type is surely not for GET ... moron!
         // Well, but some legitimate agents doesn't know that ...
         if (isset($headers['Content-Type']) && $request['method'] == 'GET') {
             $scores[] = array(-2.5, 'Content-Type Header with a GET Request');
+        }
+
+        if ($identity['user_agent'] == 'Mozilla/5.0' && isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
+            $scores[] = array(-10, 'libWWW signature detected (unknown)');
         }
 
         return $scores;

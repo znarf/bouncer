@@ -21,6 +21,7 @@ $known_fingerprints = array(
 '86da1e9551b784725ced8434be16755d',  // getfavicon
 '337fb2b23192d6dbdfa9031e1468fb92',  // rtweetme
 '5577bdd018c3f246007dd1bb07f0d81f',  // pubsubhubbub
+'377ded6a5ede231bc66e65c80a4437ac',  // unblock4myspace
 // Crawlers
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)

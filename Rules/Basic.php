@@ -37,6 +37,10 @@ class Bouncer_Rules_Basic
         else if ($name == 'explorer'  && strpos($version, '6.') === 0)   $scores[] = array(-2.5, 'Old Browser');
         else if ($name == 'konqueror' && strpos($version, '3.') === 0)   $scores[] = array(-2.5, 'Old Browser');
         else if ($name == 'netscape'  && strpos($version, '4.') === 0)   $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'netscape'  && strpos($version, '3.') === 0)   $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'opera' && strpos($version, '8.') === 0)       $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'opera' && strpos($version, '7.') === 0)       $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'opera' && strpos($version, '6.') === 0)       $scores[] = array(-2.5, 'Old Browser');
         else if ($name == 'mozilla')                                     $scores[] = array(-2.5, 'Old Browser');
 
         return $scores;
