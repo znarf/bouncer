@@ -115,7 +115,7 @@ class Bouncer_Rules_Browser
         }
 
         if ($name == 'firefox') {
-            if ($headers['Accept'] == '*/*') {
+            if (isset($headers['Accept'] && $headers['Accept'] == '*/*') {
                 $scores[] = array(-7.5, '*/* Accept header (firefox)');
             }
             if (strpos($identity['user_agent'], 'rv:') === false) {
@@ -241,7 +241,7 @@ class Bouncer_Rules_Browser
                 }
                 if (isset($headers['Cache-Control']) && $headers['Cache-Control'] == 'no-cache') {
                     if ($request['method'] == 'GET') {
-                        $scores[] = array(-2.5, 'no-cache Cache-Control header (explorer)');
+                        $scores[] = array(-2.5, ' Cache-Control header with value no-cache (explorer)');
                     }
                 }
                 break;

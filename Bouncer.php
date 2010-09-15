@@ -293,9 +293,6 @@ class Bouncer
                 usleep($throttle);
             case self::NEUTRAL:
                 if ($identity['type'] == Bouncer::ROBOT) {
-                    if ($identity['name'] == "voila" || $identity['name'] == "socialmention") {
-                        self::unavailable();
-                    }
                     $throttle = rand(250*1000, 1000*1000);
                     usleep($throttle);
                 }

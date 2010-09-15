@@ -3436,7 +3436,8 @@ $robot = array(
     "icon" => "orange",
     "title" => "Orange",
     "rule" => array(
-      "OrangeBot-Mobile[ /]([0-9.]{1,10})" => "\\1"
+      "OrangeBot-Mobile[ /]([0-9.]{1,10})" => "\\1",
+      "OrangeBot-Mobile" => ""
     ),
     "uri" => "http://orange.com/"
   ),

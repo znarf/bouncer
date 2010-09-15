@@ -76,7 +76,6 @@ class Bouncer_Rules_Robot
                 break;
             case 'exabot':
                 $score += strpos($host, 'exabot.com') === false ? -5 : 1;
-                $score += empty($headers['From']) ? -5 : 1;
                 break;
             case 'entireweb':
                 $score += strpos($host, 'entireweb.' === false) ? -2.5 : 1;

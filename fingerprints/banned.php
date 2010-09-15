@@ -31,6 +31,7 @@ $banned_fingerprints = array(
 'f6c56d66353ed1d75d9d6510e665afef', //  * - plaNETWORK Bot Search
 'b0f23770497882623698007998676f4c', //  * - MaMa CaSpEr
 '5d5185a11ffe776821edd761a57f87ad', //  * - SunOS 5.7 - Netscape 4.76
+'84b22310b79b5acf19637583f88e56a5', //  * - kmccrew Bot Search
 // Fake Google
 'a8c59cca16eb7d753659ae07aa6745bb',
 '834f20c97f18fc1fa04ddd63f11ec2e8',
