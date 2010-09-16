@@ -64,8 +64,11 @@ $banned_fingerprints = array(
 '9405658d078823e6df4c8429ea72be46', // libWWW 5.816
 '5654842294d6f200197b6f4d73f39743', // libWWW 5.819
 '7bd5d06c1c4905e13a94c5dffcb3d55f', // libWWW 5.820
+'46b9d16c1ebc9cb234f8d47929ff9390', // libWWW 5.822
 'da24c0264d4d16452c89d130d981eaed', // libWWW 5.823
 '49a2baabfc2a9ed50086f75b4dda5a0b', // libWWW 5.825
+'07c84c7364627aa6477de824d6faf06d', // libWWW 5.826
+'f93f7902bf8d9dfee536e5c8c29e8fc0', // libWWW 5.827
 'c5e51aa28d70b9c5ed76d2c48f3a2e6e', // libWWW 5.829
 '6df364481412ce3c51b624f39d68dae5', // libWWW 5.830
 '63fe534afc8cfc5afb0c90c40619dafa', // libWWW 5.831
@@ -76,7 +79,7 @@ $banned_fingerprints = array(
 // Java (text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2)
 '013c9e2e72d01a71528ea3e5828287f0', // Java/1.4.1_04
 'e89cb5d761fd739e0ce7a50e78c7fe48', // Java/1.4.2_07
-'ecc03938cc08478c23e6fe702ae7b715', // Java/1.6.0_0
+'9bb1516b745d69e208c52aeb1eb86550', // Java/1.5.0
 'b9d80793083ab72eecb293c49a4e97be', // Java/1.5.0_04
 '78d335088097bc4a390e84f287230480', // Java/1.5.0_05
 '0d360766d1b65022c2fad9a8e1017a3b', // Java/1.5.0_08

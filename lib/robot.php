@@ -647,6 +647,14 @@ $robot = array(
       "BitBeamer/([0-9.]{1,10})" => "\\1"
     )
   ),
+  "bixolabs" => array(
+    "icon" => "robot",
+    "title" => "Bixolabs",
+    "rule" => array(
+      "bixolabs/([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://bixolabs.com/crawler/general/"
+  ),
   "biz360" => array(
     "icon" => "biz360",
     "title" => "Biz360",
@@ -5432,6 +5440,14 @@ $robot = array(
       "^WebFetch" => ""
     ),
     "uri" => "http://www.wingflyer.com/"
+  ),
+  "wink" => array(
+    "icon" => "robot",
+    "title" => "Wink",
+    "rule" => array(
+      "WinkBot[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://wink.com/"
   ),
   "wininet" => array(
     "icon" => "robot",

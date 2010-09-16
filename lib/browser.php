@@ -1086,7 +1086,7 @@ $browser = array(
   ),
   "psp" => array(
     "icon" => "question",
-    "title" => "PlayStation Portable",
+    "title" => "PSP",
     "rule" => array(
       "PSP \(PlayStation Portable\); ([0-9.]{1,10})" => "\\1"
     ),

@@ -294,7 +294,7 @@ $os = array(
   ),
   "psp" => array(
     "icon" => "playstation",
-    "title" => "PlayStation Portable",
+    "title" => "PSP",
     "rule" => array(
       "PlayStation Portable.* ([0-9._]{1,10})" => "\\1",
       "PlayStation Portable" => ""
