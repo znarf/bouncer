@@ -115,7 +115,7 @@ class Bouncer_Rules_Browser
         }
 
         if ($name == 'firefox') {
-            if (isset($headers['Accept'] && $headers['Accept'] == '*/*') {
+            if (isset($headers['Accept']) && $headers['Accept'] == '*/*') {
                 $scores[] = array(-7.5, '*/* Accept header (firefox)');
             }
             if (strpos($identity['user_agent'], 'rv:') === false) {
