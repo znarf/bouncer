@@ -30,6 +30,7 @@ $suspicious_fingerprints = array(
 '40fc775be2dcad9d6d0d798276a6177d', // Mozilla 5.0 (US - static.theplanet.com)
 'd05580236d7563115237363dc740f983', // TREND MICRO
 '8ec0b03883d2aa93b6de3ac919701912', // Quipply V1 RT
+'c1ad0a278f5ce9abff581debb14273de', // UCANN2_CRAWLER
 // Explorer
 '201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
 '21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)
@@ -75,6 +76,7 @@ $suspicious_fingerprints = array(
 '23f47f85c135339fc0e90e1e193793af',    // BM  - Windows XP    - Explorer 7.0    (US - cubbsnet.com)
 '16ee5bc3202e9b89691ae7444903345c',    // BM  - Windows 7     - Explorer 7.0
 'b084a51c35d46608ad9362771584dee4',    // BM  - Windows 98    - Explorer 6.0
+'ee0d0214224ecf467c7ebffe821c0b87',    // BM  - Windows 98    - Explorer 5.5
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
