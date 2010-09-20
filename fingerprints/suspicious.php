@@ -14,9 +14,11 @@ $suspicious_fingerprints = array(
 'a55dbce033e47342f4493b6b8e317a11', // Accept-Encoding:identity
 'b8a1d0f6c953cb9ff2dca95425cf4a67', // Mozilla/4.0 (compatible)
 '9f4b085b10875940bce19a6c7c1b6ed4', // Mozilla/4.0 (compatible;) - Accept:*/*
+'2a39dc7dfa441a5e059af1454e37215e', // Mozilla/4.0 (compatible;) - Accept:text/html, */* - Accept-Encoding:identity
 'e261d653a34451b1db31d6613aace1f7', // Mozilla/5.0 (compatible)
 '4331cc92d234b76eb0b5926b62ca28b9', // Mozilla/4.0 (compatible; Windows;) - Accept:*/*
 '6dcd6a16db48630f077725a134f636fc', // Mozilla/4.0 - Accept-Language:en-us
+'338ffbfe35cb0aecf3da2dcba64c89f0', // Mozilla/4.0 - Accept-Language:en-us - Accept:text/*,*/*
 'e36cf8d82aaacacd2533bf7779f362bd', // Spider - Accept:*/*
 '04ddfa686115af0c3306828f9572591b', // Accept:text/html
 '8d0c98829565508d1da3fdaf38dedb2b', // Mozilla/5.0 - Accept-Encoding:gzip,deflate
@@ -31,6 +33,18 @@ $suspicious_fingerprints = array(
 'd05580236d7563115237363dc740f983', // TREND MICRO
 '8ec0b03883d2aa93b6de3ac919701912', // Quipply V1 RT
 'c1ad0a278f5ce9abff581debb14273de', // UCANN2_CRAWLER
+// Networks
+'23f47f85c135339fc0e90e1e193793af',    // BM  - Windows XP    - Explorer 7.0    (US - cubbsnet.com)
+'c7be8ebcaba8f7bcf2ff26aaa214efc8',    // BM  - Windows XP    - Explorer 7.0    (US - cubbsnet.com)
+'27b529f4e20a571f690b500406ea67be',    // BM  - Windows XP    - Explorer 7.0    (US - cubbsnet.com)
+'7bcbd694fda49a10fa89b7e039bc7a3a',    // BM  - Windows Vista - Explorer 6.0    (US - cubbsnet.com)
+'ec638af4adb94f521ddd8e4df0612c6b',    // BM  - Windows Vista - Explorer 6.0    (US - cubbsnet.com)
+'7a4645b68800184a4df291bd22863614',    // BM  - Windows XP    - Firefox 3.0.1   (US - cubbsnet.com)
+'c2f7ae003dba437589c9adecc67ce321',    // BM  - Windows XP    - Firefox 3.0.1   (US - cubbsnet.com)
+'ec638af4adb94f521ddd8e4df0612c6b',    // BM  - Windows 98    - AOL 7.0         (US - onlinehome-server.com)
+'6076bc29215e360a89d7f758b27ef0cb',    // BM  - MacOS PPC     - Explorer 5.17   (US - onlinehome-server.com)
+'f0516a4ec2348c6e5faf94f41cdf05df',    // BM  - Windows 2000  - Netscape 4.73   (US - onlinehome-server.com)
+'fedce817d4b4d8b16c6ee675290302dc',    // BM  - Windows 98    - Explorer 5.01   (US - onlinehome-server.com)
 // Explorer
 '201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
 '21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)
@@ -73,7 +87,6 @@ $suspicious_fingerprints = array(
 'ab634d6c80c5623084a5d473b00edb01',    // BM  - Windows 2000  - Explorer 6.0    (SG)
 '407fa0dab1fc4043e1dd5d197b5d3b7c',    // BM  - Windows MC 6  - Explorer 8.0
 '117b1b8071a055fe718af3514106618b',    // BM  - Windows 7     - Explorer 8.0    (US - amazonaws.com)
-'23f47f85c135339fc0e90e1e193793af',    // BM  - Windows XP    - Explorer 7.0    (US - cubbsnet.com)
 '16ee5bc3202e9b89691ae7444903345c',    // BM  - Windows 7     - Explorer 7.0
 'b084a51c35d46608ad9362771584dee4',    // BM  - Windows 98    - Explorer 6.0
 'ee0d0214224ecf467c7ebffe821c0b87',    // BM  - Windows 98    - Explorer 5.5
@@ -111,12 +124,12 @@ $suspicious_fingerprints = array(
 '12291b04e3b9f13e50446a069f7f617f',    //  BM - Windows XP    - Firefox 3.5.3
 '98a1c8b514f2c9a80b7fbb989a3d831e',    //  BM - Windows XP    - Firefox 3.0.4
 'e9865916118c88b06343747baca52250',    //  BM - MacOS X 10.5  - Firefox 3.6.3
-'7a4645b68800184a4df291bd22863614',    //  BM - Windows XP    - Firefox 3.0.1    (US - cubbsnet.com)
-'c2f7ae003dba437589c9adecc67ce321',    //  BM - Windows XP    - Firefox 3.0.1    (US - cubbsnet.com)
+'e98b2e22977e0e8532d16e7379989a65',    //  BM - Windows 7     - Firefox 3.5.3
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
 'f6f9ffca44cc504c999a537c7483ea70',    //  BM - Linux         - Chrome 5.0.307.7
+'f7c1e05acfc892ee95c0a25dc733c360',    //  BM - Windows XP    - Chrome 4.0.221.7
 // Various
 '0b7496c8208ce55d66d79cbabdca71ff',    //  BM - Opera Mini 2.0.4719
 'b59e6ad8917389de9fc4ac545affa31c',    //  BM - MacOS PPC     - Netscape 4.7     (RU)

@@ -516,6 +516,7 @@ $robot = array(
     "title" => "Baidu",
     "rule" => array(
       "Baiduspider" => "",
+      "BaiduImagespider",
       "baidu Transcoder" => "",
       "BaiduMobaider[/ ]([0-9a-z.]{1,10})" => "\\1"
     )
@@ -712,6 +713,13 @@ $robot = array(
     "rule" => array(
       "Bloglines[ /]([0-9.]{1,10})" => "\\1",
       "Bloglines" => ""
+    )
+  ),
+  "bloglovin" => array(
+    "icon" => "robot",
+    "title" => "Bloglovin",
+    "rule" => array(
+      "Bloglovin[/ ]([0-9.]{1,10})" => "\\1"
     )
   ),
   "blogmap" => array(
@@ -2710,7 +2718,8 @@ $robot = array(
     "icon" => "livedoor",
     "title" => "Livedoor",
     "rule" => array(
-      "^Livedoor( SF( - California Crawl)?|Checkers)[ /]" => ""
+      "^Livedoor( SF( - California Crawl)?|Checkers)[ /]" => "",
+      "^livedoor" => "",
     )
   ),
   "livejournal" => array(
@@ -4589,6 +4598,14 @@ $robot = array(
       "Szukacz[ /]([0-9.]{1,10})" => "\\1"
     )
   ),
+  "tabbloid" => array(
+    "icon" => "robot",
+    "title" => "Tabbloid",
+    "rule" => array(
+      "Tabbloid[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://tabbloid.com/"
+  ),
   "tagoo" => array(
     "icon" => "tagoobot",
     "title" => "Tagoo",
@@ -5715,6 +5732,13 @@ $robot = array(
     ),
     "uri" => "http://www.yahoo.com"
   ),
+  "yahoo-feed-jp" => array(
+    "icon" => "yahoo",
+    "title" => "Yahoo Feedseeker Japan",
+    "rule" => array(
+      "YahooFeedSeekerBetaJp[/ ]([0-9a-z.]{1,10})" => "\\1"
+    )
+  ),
   "yahoo-pipes" => array(
     "icon" => "yahoo",
     "title" => "Yahoo Pipes",
@@ -5771,6 +5795,7 @@ $robot = array(
     "title" => "Youdao",
     "rule" => array(
       "YodaoBot-(Image|Mobile)?[ /]([0-9.]{1,10})" => "\\2",
+      "YodaoBot[ /]([0-9.]{1,10})" => "\\1",
       "YoudaoBot[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.youdao.com/help/webmaster/spider/"

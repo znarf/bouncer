@@ -22,6 +22,7 @@ $banned_fingerprints = array(
 'c3519edceadd1945fdeb626ad9c2a5fe', //  * - larbin 2.6.3
 '1eee5009bfa152ad21b863af9cb134c6', //  * - page_test - larbin 2.6.3
 'ed6a32ee2c78863ad5a1f007a95ae420', //  * - larbin 2.6.3
+'ab37081000071ae3ced2a659889930c3', //  * - larbin 2.6.3
 '41690152a7d0c8c259a8854cc72b65f5', //  * - AutoHotkey
 // ICS
 '4c67cac030adba659c1ad691368db27e',

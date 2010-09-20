@@ -97,9 +97,7 @@ class Bouncer_Rules_Robot
                 $score += $identity['extension'] != 'cn' ? -5 : 1;
                 break;
             case 'youdao':
-                $score += $identity['fingerprint'] != '123153a2352ae8af25b8944eadb38fcb' &&
-                    $identity['fingerprint'] != 'c2f67c34cec521f5ae2ca4108d1c9edc' ? -5 : 1;
-                $score += $identity['extension'] != 'cn' ? -5 : 1;
+                $score += strpos($addr, '61.135.') === false ? -5 : 2.5;
                 break;
             case 'hatena':
                 $score += $identity['fingerprint'] != '2d2155f7ce9b6b4f866fffa067a76a14' ? -5 : 1;
@@ -177,6 +175,9 @@ class Bouncer_Rules_Robot
                 break;
             case 'ccbot':
                 $score += strpos($addr, '38.107.191.') !== 0 ? -5 : 2.5;
+                break;
+            case 'postrank':
+                $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
                 break;
             // feeds
             case 'netvibes':
