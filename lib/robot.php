@@ -516,7 +516,7 @@ $robot = array(
     "title" => "Baidu",
     "rule" => array(
       "Baiduspider" => "",
-      "BaiduImagespider",
+      "BaiduImagespider" => "",
       "baidu Transcoder" => "",
       "BaiduMobaider[/ ]([0-9a-z.]{1,10})" => "\\1"
     )
