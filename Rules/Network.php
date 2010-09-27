@@ -12,7 +12,15 @@ class Bouncer_Rules_Network
         'unknown.altushost.com',
         'unassigned.calpop.com',
         'unassigned.psychz.net',
-        'hn.kd.ny.adsl'
+        'hn.kd.ny.adsl',
+        'reverse.completel.net',
+        's-serv1.inferno.name',
+        's-serv2.inferno.name',
+        'adsl.viettel.vn',
+        'dynamic.vdc.vn',
+        'no-revers-dns.set',
+        'place.holder',
+        'unassigned.syndtech.net'
     );
 
     public static function load(array $options = array())
@@ -114,7 +122,7 @@ class Bouncer_Rules_Network
         if (isset($whois[$addr])) {
             return $whois[$addr]['net-name'];
         }
-        return '';
+        return 'unknown';
     }
 
     static function doPWLookupBulk($queryarray)

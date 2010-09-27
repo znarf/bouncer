@@ -80,6 +80,7 @@ $known_fingerprints = array(
 '0ef25273f985d74a4d5268e921fece79',  // JP - Apple-PubSub 65.20
 '49150c78f0d39898e3ddba9cbcac2d4e',  // DE - Apple-PubSub 65.20
 'c57228f2504118b78c338cf6c62299e7',  // IT - Apple-PubSub 65.20
+'47702517895b09e7e3e3d383de0bc613',  // BR - Apple-PubSub 65.20
 '8e756bbd8fd1b053856ce00735d9fe6f',  // US - Apple-PubSub 65.19
 '7ac14d372759acefcf867c15ffeffec0',  // GB - Apple-PubSub 65.19
 '9acfacf72fee443f8ee3c437ed847fac',  // FR - Apple-PubSub 65.19
@@ -108,6 +109,7 @@ $known_fingerprints = array(
 '8808c9db1008304e0e77cdb45cd852c9',  // FR - Apple-PubSub 65.1.4
 '2a24a50989d3d498054a46cb252e2f93',  // US - Apple-PubSub 65
 '4426ccebdb8efd4884ad3c8b187bbbd0',  // FR - Apple-PubSub 65
+'2aab3c9ff6725a0ee0e39691604f2a70',  // BR - Apple-PubSub 65
 'b906752d12c59f44cc54f26e090a0c6d',  // FR - AppleSyndication
 '456b14879e2280c76c1c949b805f821d',  // FR - AppleSyndication/56.1
 'f25748fc2c3c617fba53199f337f7131',  // IT - AppleSyndication/56.1

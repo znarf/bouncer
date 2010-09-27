@@ -7,6 +7,8 @@ class Bouncer_Rules_Browser
 
     public static $gecko_browsers = array('seamonkey', 'iceweasel', 'camino', 'flock', 'k-meleon', 'firebird', 'mozilla', 'icecat');
 
+    public static $webkit_browsers = array('safari', 'chrome', 'chromium', 'webkit', 'midori', 'maxthon');
+
     public static function load()
     {
         Bouncer::addRule('browser_identity', array('Bouncer_Rules_Browser', 'browser_identity'));
@@ -48,6 +50,10 @@ class Bouncer_Rules_Browser
         if (isset($headers['Accept']) && $headers['Accept'] == 'image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*') {
             $scores[] = array(-10, 'Suspicious Accept header value');
         }
+        // Suspicious
+        if (isset($headers['Accept']) && $headers['Accept'] == 'text/html, */*') {
+            $scores[] = array(-5, 'Suspicious Accept header value');
+        }
         // HTTrack used to fake a browser identity
         if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, identity;q=0.9') {
             $scores[] = array(-10, 'HTTrack signature detected');
@@ -80,7 +86,9 @@ class Bouncer_Rules_Browser
                     $scores[] = array(-5, 'current Firefox Accept header');
                 }
                 if (isset($headers['Accept']) && $headers['Accept'] == 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
-                    $scores[] = array(-5, 'old Firefox Accept header');
+                    if ($name != 'safari' && $name != 'chrome') { // safari 3.0.x can send this header, also chrome 1.0
+                        $scores[] = array(-5, 'old Firefox Accept header'); // firefox < 3.0
+                    }
                 }
                 if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] == 'ISO-8859-1,utf-8;q=0.7,*;q=0.7') {
                     $scores[] = array(-2.5, 'Firefox Accept-Charset header');
@@ -107,10 +115,6 @@ class Bouncer_Rules_Browser
             }
             if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Charset'], $headers['Accept-Encoding'])) {
                 $scores[] = array(2.5, 'All Accept-* headers detected');
-            }
-        } elseif (in_array($name, array('safari', 'explorer'))) {
-            if (isset($headers['Accept-Charset'])) {
-                $scores[] = array(-5, 'Accept-Charset header detected');
             }
         }
 
@@ -144,14 +148,19 @@ class Bouncer_Rules_Browser
                     $scores[] = array(-5, 'Bad Accept header (explorer)');
                 }
             }
+            if (isset($headers['Accept-Charset'])) {
+                $scores[] = array(-5, 'Accept-Charset header detected (explorer)');
+            }
         }
 
         if ($name == 'safari') {
-            if (isset($headers['Accept']) && $headers['Accept'] == 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
+            if (isset($headers['Accept']) &&
+                $headers['Accept'] == 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
                 $scores[] = array(2.5, 'Expected Accept header (safari)');
             }
             if (isset($headers['Accept-Charset'])) {
-                if (isset($identity['os'][0]) && $identity['os'][0] != 'android' && $identity['os'][0] != 'symbian' && $identity['os'][0] != 'mobile') { // temp webkit exception
+                if (isset($identity['os'][0]) && $identity['os'][0] != 'android' &&
+                    $identity['os'][0] != 'symbian' && $identity['os'][0] != 'mobile') { // temp webkit exception
                     $scores[] = array(-2.5, 'Unexpected Accept-Charset header (safari)');
                 }
             }

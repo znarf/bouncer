@@ -92,9 +92,7 @@ class Bouncer_Rules_Robot
                 $score += $identity['extension'] != 'kr' ? -5 : 1;
                 break;
             case 'soso':
-                $score += $identity['fingerprint'] != '6c722beb9681d0d922b8919606168c43' &&
-                    $identity['fingerprint'] != 'e3a7b53bb13161f3706426d28cf06eff' ? -5 : 1;
-                $score += $identity['extension'] != 'cn' ? -5 : 1;
+                $score += (strpos($addr, '124.115.') === false && strpos($addr, '114.80.') === false) ? -5 : 2.5;
                 break;
             case 'youdao':
                 $score += strpos($addr, '61.135.') === false ? -5 : 2.5;
@@ -178,6 +176,9 @@ class Bouncer_Rules_Robot
                 break;
             case 'postrank':
                 $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
+                break;
+            case 'tagoo':
+                $score += strpos($addr, '92.241.182.') !== 0 ? -5 : 2.5;
                 break;
             // feeds
             case 'netvibes':

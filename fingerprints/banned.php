@@ -33,6 +33,7 @@ $banned_fingerprints = array(
 'b0f23770497882623698007998676f4c', //  * - MaMa CaSpEr
 '5d5185a11ffe776821edd761a57f87ad', //  * - SunOS 5.7 - Netscape 4.76
 '84b22310b79b5acf19637583f88e56a5', //  * - kmccrew Bot Search
+'56cb5aa3bc50560382d31c887cde3696', //  * - MaMa CyBer
 // Fake Google
 'a8c59cca16eb7d753659ae07aa6745bb',
 '834f20c97f18fc1fa04ddd63f11ec2e8',
@@ -45,6 +46,7 @@ $banned_fingerprints = array(
 'f82fb91416713cbf302217d272f18c6f',
 '8ea3fb6a8c5cc988ceb18877e9d0f698',
 'cf7496791c144f929120f056fc42d834',
+'b50457ec8e01d50f1d6c9aa1f358ab32',
 // Advanced Email Extractor
 'a71a3073b82c5f249cacdae80c0e154e', // 2.61
 'f739bf1bfb67daadf0cc3462dfc5dc59', // 2.76
