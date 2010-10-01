@@ -43,6 +43,13 @@ $suspicious_fingerprints = array(
 'c2f7ae003dba437589c9adecc67ce321',    // BM  - Windows XP    - Firefox 3.0.1   (US - cubbsnet.com)
 '77312f312596d479a825bbae117b2f44',    // BM  - Windows Vista - Explorer 6.0    (US - cubbsnet.com)
 'cdce3014fc29c718e1e6ee871a5aed06',    // BM  - Windows XP   - Firefox 2.0.0.16 (US - cubbsnet.com)
+'24dd05ae3b1a1e26d7030147a99b0a1a',    // BM  - Windows XP   - Firefox 2.0.0.16 (US - cubbsnet.com)
+'483bca9dc1615a636d59614621f271e2',    // BM  - MacOS X 10.5.3 - Safari 3.1.2   (US - cubbsnet.com)
+'a798043e007629483e5bbf7eabc1d1e7',    // BM  - MacOS X 10.5.3 - Safari 3.1.2   (US - cubbsnet.com)
+'36e324377c370b756c68eb62f72f166c',    // BM  - Windows Vista - Firefox 3.0.3   (US - cubbsnet.com)
+'09ca6b5530519792d1c152f8d7b0c866',    // BM  - Windows Vista - Firefox 3.0.2   (US - cubbsnet.com)
+'659e3e08c1974d2368a9bf22b7663475',    // BM  - Windows Vista - Firefox 3.0     (US - cubbsnet.com)
+'0118fa4a761a8b9dd5f02b41cc2b026d',    // BM  - Windows Vista - Firefox 3.0     (US - cubbsnet.com)
 '07fbf286f1491ecac52923eeccbf5e05',    // BM  - Windows 98    - AOL 7.0         (US - onlinehome-server.com)
 '6076bc29215e360a89d7f758b27ef0cb',    // BM  - MacOS PPC     - Explorer 5.17   (US - onlinehome-server.com)
 'f0516a4ec2348c6e5faf94f41cdf05df',    // BM  - Windows 2000  - Netscape 4.73   (US - onlinehome-server.com)
@@ -52,6 +59,11 @@ $suspicious_fingerprints = array(
 '4b886d1f4bbca5ed7a3be83935690537',    // BM  - Windows 98    - AOL 4.0         (US - onlinehome-server.com)
 'f3aff3b2d987d5d353e1680dfff1f553',    // BM  - Windows 98    - AOL 7.0         (US - onlinehome-server.com)
 '96dd0f6294cc1e27e28fde54d1877e97',    // BM  - Windows 98    - AOL 9.0         (US - onlinehome-server.com)
+'ac63c6b6dae71183c22ff7f38d14269e',    // BM  - Windows 2000  - AOL 9.0         (US - onlinehome-server.com)
+'87bd85cc59633d348e6b6fb18aa9b189',    // BM  - Windows 2000  - Explorer 6.0    (US - onlinehome-server.com)
+'93f02294ae604354fbdb00fc3ef03cca',    // BM  - Windows NT4   - Explorer 5.5    (US - onlinehome-server.com)
+'3cae3330007b12986c7f9324e8d046b0',    // BM  - MacOS PPC     - Explorer 5.23   (US - onlinehome-server.com)
+'a78cfde29d6ef5ff57f356ff97a32489',    // BM  - Windows 98    - AOL 8.0         (US - onlinehome-server.com)
 // Explorer
 '201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
 '21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)
@@ -148,6 +160,7 @@ $suspicious_fingerprints = array(
 '4483e1104a5c9d42f526f0ff0798898a',    //  BM - Windows XP    - Opera 9.60
 '54b2f182c6c9e764fbb75e40624f50f4',    //  BM - MacOS X       - Safari 3.0.2     (US - theplanet.com + DE - 82.140)
 '9d88f6206f5191eeb591ac4b2c90911f',    //  BM - Mozilla/5.0 (compatible; MSIE 6.0; ) Gecko (US - 65.36.241)
+'8524ec628d095062da5c063a8bbf5405',    //  BM - MacOS X 10.6.4 - Safari 5.0.1
 // BM - inferno.name
 'a19471cdfd5262b77d9c2edb6ebc1510', // Windows 2003 - Opera 7.60
 'b6a988533111b50e812790f44de838aa', // Windows XP   - Explorer 6.0

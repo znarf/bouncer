@@ -22,6 +22,7 @@ $known_fingerprints = array(
 '337fb2b23192d6dbdfa9031e1468fb92',  // rtweetme
 '5577bdd018c3f246007dd1bb07f0d81f',  // pubsubhubbub
 '377ded6a5ede231bc66e65c80a4437ac',  // unblock4myspace
+'55971403dc3cbdd67d3dcf3ad872d5ca',  // twitter-trending-topics
 // Crawlers
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
@@ -55,6 +56,7 @@ $known_fingerprints = array(
 '3e2a346099d1c651e4df4bb47f158532',  // suchmaschinenoptimierung.de
 '4de3da80257ab637e8612f9469fe968f',  // cloud4search.com ?
 '81042c2f26c945a805781c10f675d23c',  // 80legs
+'bfd0336b65cddb768fb25b2e994eb4d6',  // 80legs
 // Flash (eg: WP image uploader)
 'd22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
 '4f4c2a419649c56cad7d3cca8dc9eeb6',  // Adobe Flash Player 10

@@ -180,6 +180,12 @@ class Bouncer_Rules_Robot
             case 'tagoo':
                 $score += strpos($addr, '92.241.182.') !== 0 ? -5 : 2.5;
                 break;
+            case 'rambler':
+                $score += strpos($host, 'rambler.ru') === false ? -5 : 2.5;
+                break;
+            case 'wink':
+                $score += strpos($host, 'wink.com') === false ? -5 : 2.5;
+                break;
             // feeds
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;

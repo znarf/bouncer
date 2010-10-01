@@ -2993,7 +2993,8 @@ $robot = array(
     "rule" => array(
       "MSN(BOT|PTC)[ /]([0-9.]{1,10})" => "\\2",
       "MS Search ([0-9.]{1,10}) Robot" => "\\1",
-      "MSNBOT-(MEDIA|PRODUCTS|NewsBlogs)[ /]([0-9.]{1,10})" => "\\2"
+      "MSNBOT-(MEDIA|PRODUCTS|NewsBlogs)[ /]([0-9.]{1,10})" => "\\2",
+      "bingbot[ /]([0-9.]{1,10})" => "\\1",
     )
   ),
   "msnbot-mobile" => array(
@@ -4745,6 +4746,14 @@ $robot = array(
     "rule" => array(
       "timboBot" => ""
     )
+  ),
+  "topicmaster" => array(
+    "icon" => "robot",
+    "title" => "Topicmaster",
+    "rule" => array(
+      "^WMCAI-robot" => ""
+    ),
+    "uri" => "http://www.topicmaster.jp/wmcai/crawler.html"
   ),
   "topsy" => array(
     "icon" => "topsy",
