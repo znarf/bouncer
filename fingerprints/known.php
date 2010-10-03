@@ -108,6 +108,7 @@ $known_fingerprints = array(
 '4d908f72752d2a627f8d057ef18b86a0',  // ES - Apple-PubSub 65.11
 'b29c7c4d8fa9ebf7847cccc913f2a3f9',  // NL - Apple-PubSub 65.11
 '38f04bbd00765a16fac050023827723c',  // BR - Apple-PubSub 65.11
+'8b8a6e95efd7e75a32dee57182c77d53',  // IT - Apple-PubSub 65.11
 '8808c9db1008304e0e77cdb45cd852c9',  // FR - Apple-PubSub 65.1.4
 '2a24a50989d3d498054a46cb252e2f93',  // US - Apple-PubSub 65
 '4426ccebdb8efd4884ad3c8b187bbbd0',  // FR - Apple-PubSub 65

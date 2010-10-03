@@ -18,6 +18,7 @@ class Bouncer_Rules_Network
         's-serv2.inferno.name',
         'adsl.viettel.vn',
         'dynamic.vdc.vn',
+        'static.vdc.vn',
         'no-revers-dns.set',
         'place.holder',
         'unassigned.syndtech.net'

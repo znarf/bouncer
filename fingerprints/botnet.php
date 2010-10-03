@@ -171,6 +171,7 @@ $botnet_fingerprints = array(
 '1f782b3dd82eb6c725928a29ac30a279', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322) Babya Discoverer 8.0: - Accept: */*
 '809bff0a2498a1effbfc596f16668688', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322) - Accept: */*
 'ac1649d4e47e9564f301a9b9daeea77c', // Mozilla/4.0 (compatible; MSIE 6.0; AOL 9.0; Windows NT 5.1) - Accept: */*
+'0b639478a81a36f1fb5b4fd2a19ceb5b', // Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)
 '8e517dc5107bce8f67fbd4ae9bdd4366', // Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt) - Accept: */*
 'd077f0356a945400425fe80489f3eae0', // Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; MRA 4.6 (build 01425); .NET CLR 1.1.4322; .NET CLR 2.0.50727) - Accept: */*
 'f6bad5ce12f6620f2b32cfa516dc2c12', // Opera/9.0 (Windows NT 5.1; U; en) - Accept: */*

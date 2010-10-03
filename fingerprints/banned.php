@@ -80,6 +80,7 @@ $banned_fingerprints = array(
 'ca6b56b9244a2201fedad435c76333c2', // libWWW 5.833
 '953a6b376f8c3cf19d6a99cd52f933bc', // libWWW 5.834
 '10cabc19da6511f5655f29c4aa871d85', // libWWW 5.836
+'4c075896ef53d0ed43f0a73606e4bb99', // libWWW 5.837
 // Java (text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2)
 '013c9e2e72d01a71528ea3e5828287f0', // Java/1.4.1_04
 'e89cb5d761fd739e0ce7a50e78c7fe48', // Java/1.4.2_07
