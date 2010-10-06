@@ -52,7 +52,6 @@ $known_fingerprints = array(
 '6df8bda832ecbb4ad20ec624d6c86fdb',  // Netvibes - Mozilla/5.0 (compatible)
 '776e9d435c5a3b3fd4024863e771a7f2',  // Netvibes - Mozilla/5.0 (compatible)
 '68c1cbc196603b22c85c48b32a6bbd51',  // Clearbricks Feed Reader/0.2
-'536cb87617e5a9ffdfae53365f116d89',  // Daumoa
 '3e2a346099d1c651e4df4bb47f158532',  // suchmaschinenoptimierung.de
 '4de3da80257ab637e8612f9469fe968f',  // cloud4search.com ?
 '81042c2f26c945a805781c10f675d23c',  // 80legs
@@ -92,6 +91,7 @@ $known_fingerprints = array(
 '2569e538829f558ef9eafa94ba67718e',  // PT - Apple-PubSub 65.19
 'd25f04999693ba3952141a7ef4c10dc2',  // TH - Apple-PubSub 65.19
 '74d290fabe4e2612bff76aeff9228dcd',  // ES - Apple-PubSub 65.19
+'208d89f614e603099fedc836d297c16e',  // DK - Apple-PubSub 65.19
 '21f0cb2cdf1f6f93f5a3b10e577df842',  // US - Apple-PubSub 65.12.1
 '34ce75b388f7d016655d3e8f4e9b4dc3',  // FR - Apple-PubSub 65.12.1
 '60248970d4202b916d13bc9634f1c9cf',  // IT - Apple-PubSub 65.12.1

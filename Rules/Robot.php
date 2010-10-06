@@ -36,7 +36,7 @@ class Bouncer_Rules_Robot
                 $score += empty($headers['From']) ? -5 : 2.5;
                 break;
             case 'yahoo':
-                $score += strpos($host, 'yahoo.net') === false ? -5 : 1;
+                $score += strpos($host, 'yahoo.') === false ? -5 : 2.5;
                 break;
             case 'msnbot':
                 $score += strpos($host, 'msn.com') === false && empty($headers['From']) ? -5 : 1;
@@ -55,7 +55,9 @@ class Bouncer_Rules_Robot
                 $score += $identity['fingerprint'] != 'd970c6ffb8d5547d9f6052207200b0dd' ? -5 : 2.5;
                 break;
             case 'baidu':
-                $score += (strpos($host, 'baidu.') === false && strpos($addr, '123.125.') === false) ? -5 : 2.5;
+                $score += (strpos($host, 'baidu.') === false
+                        && strpos($addr, '123.125.') === false
+                        && strpos($addr, '119.63.193.') === false) ? -5 : 2.5;
                 break;
             case 'ask':
                 $score += strpos($host, 'ask.com') === false ? -5 : 2.5;
@@ -129,7 +131,8 @@ class Bouncer_Rules_Robot
                 $score += $identity['extension'] != 'us' ? -5 : 2.5;
                 break;
             case 'netcraft':
-                $score += $identity['fingerprint'] != '6fdbdebe4a4e159db61b246974a63efb' ? -5 : 2.5;
+                $score += strpos($host, 'amazonaws.com') === false && strpos($host, 'netcraft.com') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '781c385820c12b26ee29b741ae8c13bd' ? -5 : 2.5;
                 break;
             case 'radian6':
                 $score += strpos($addr, '142.166.170.') === false ? -5 : 2.5;
@@ -147,7 +150,8 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
                 break;
             case 'superfeedr':
-                $score += $identity['fingerprint'] != 'd2a7ed74ff810af20968752875c06511' ? -5 : 2.5;
+                $score += strpos($host, 'cloud-ips.com') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '2687c1f1bb7f6803a4f1ee2896a2e01e' ? -5 : 2.5;
                 break;
             case 'yahoo-pipes':
                 $score += strpos($host, 'yahoo.') === false ? -5 : 2.5;
@@ -185,6 +189,9 @@ class Bouncer_Rules_Robot
                 break;
             case 'wink':
                 $score += strpos($host, 'wink.com') === false ? -5 : 2.5;
+                break;
+            case 'tabbloid':
+                $score += strpos($host, 'austin.hp.com') === false ? -5 : 2.5;
                 break;
             // feeds
             case 'netvibes':

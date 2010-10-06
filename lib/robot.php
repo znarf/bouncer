@@ -1229,7 +1229,8 @@ $robot = array(
       "Daum Communications Corp" => "",
       "EDI[ /]([0-9.]{1,10})" => "\\1",
       "Edacious.*Intelligent Web Robot" => "",
-      "RaBot[/ ]([0-9.]{1,10}) Agent" => "\\1"
+      "RaBot[/ ]([0-9.]{1,10}) Agent" => "\\1",
+      "Daumoa-feedfetcher" => ""
     ),
     "uri" => ""
   ),

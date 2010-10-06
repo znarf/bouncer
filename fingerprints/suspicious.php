@@ -66,6 +66,9 @@ $suspicious_fingerprints = array(
 '93f02294ae604354fbdb00fc3ef03cca',    // BM  - Windows NT4   - Explorer 5.5    (US - onlinehome-server.com)
 '3cae3330007b12986c7f9324e8d046b0',    // BM  - MacOS PPC     - Explorer 5.23   (US - onlinehome-server.com)
 'a78cfde29d6ef5ff57f356ff97a32489',    // BM  - Windows 98    - AOL 8.0         (US - onlinehome-server.com)
+'68183bd77dcb9f3b8c519aeba8a86d72',    // BM  - MacOS PPC     - Explorer 5.12   (US - onlinehome-server.com)
+'7de8e14b120b33764f2147db56c5b0e1',    // BM  - Windows XP    - AOL 8.0         (US - onlinehome-server.com)
+'082d653c5207e2d42ad72b076eabb3fd',    // BM  - Windows 2003  - Explorer 6.0    (US - onlinehome-server.com)
 // Explorer
 '201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
 '21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)
@@ -148,11 +151,13 @@ $suspicious_fingerprints = array(
 'e98b2e22977e0e8532d16e7379989a65',    //  BM - Windows 7     - Firefox 3.5.3
 '88bb897e01d35d13a751f6341122022f',    //  BM - Windows XP    - Firefox 3.5.2    (> 1000 hosts)
 'a1129a8148c232076fb22355ae978f1d',    //  BM - Windows XP    - Firefox 3.6.8    (CN - 110.75.*.*)
+'648b3d0bacbd3ac92fc18b8db3733fdb',    //  BM - Windows XP    - Firefox 3.5.3
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
 'f6f9ffca44cc504c999a537c7483ea70',    //  BM - Linux         - Chrome 5.0.307.7
 'f7c1e05acfc892ee95c0a25dc733c360',    //  BM - Windows XP    - Chrome 4.0.221.7
+'e73fee5fd0fe91662c379982c08acc9e',    //  BM - Windows XP    - Chrome 4.0.221.7
 // Various
 '0b7496c8208ce55d66d79cbabdca71ff',    //  BM - Opera Mini 2.0.4719
 'b59e6ad8917389de9fc4ac545affa31c',    //  BM - MacOS PPC     - Netscape 4.7     (RU)

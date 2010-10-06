@@ -5,7 +5,7 @@ class Bouncer_Rules_Browser
 
     public static $explorer_browsers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser', 'kkman', 'acoo', 'netcaptor', 'sleipnir');
 
-    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'camino', 'flock', 'k-meleon', 'firebird', 'mozilla', 'icecat');
+    public static $gecko_browsers = array('seamonkey', 'iceweasel', 'camino', 'flock', 'k-meleon', 'firebird', 'mozilla', 'icecat', 'swiftfox');
 
     public static $webkit_browsers = array('safari', 'chrome', 'chromium', 'webkit', 'midori', 'maxthon');
 
