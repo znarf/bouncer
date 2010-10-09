@@ -27,6 +27,13 @@ $robot = array(
       "^Yeti$" => ""
     )
   ),
+  "123people" => array(
+    "icon" => "robot",
+    "title" => "123people",
+    "rule" => array(
+      "123peoplebot[/ ]([0-9.]{1,10})" => "\\1"
+    ),
+  ),
   "123spider" => array(
     "icon" => "robot",
     "title" => "123Spider",
@@ -1646,6 +1653,13 @@ $robot = array(
     "title" => "FeedBack",
     "rule" => array(
       "FeedBack[/ ]([0-9.]{1,10})" => "\\1"
+    )
+  ),
+  "feedblitz" => array(
+    "icon" => "robot",
+    "title" => "FeedBlitz",
+    "rule" => array(
+      "FeedBlitz[/ ]([0-9.]{1,10})" => "\\1"
     )
   ),
   "feedburner" => array(

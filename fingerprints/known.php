@@ -52,6 +52,7 @@ $known_fingerprints = array(
 '6df8bda832ecbb4ad20ec624d6c86fdb',  // Netvibes - Mozilla/5.0 (compatible)
 '776e9d435c5a3b3fd4024863e771a7f2',  // Netvibes - Mozilla/5.0 (compatible)
 '68c1cbc196603b22c85c48b32a6bbd51',  // Clearbricks Feed Reader/0.2
+'1084f8680db0ef2d421e257cc9739867',  // sfFeedReader/0.9
 '3e2a346099d1c651e4df4bb47f158532',  // suchmaschinenoptimierung.de
 '4de3da80257ab637e8612f9469fe968f',  // cloud4search.com ?
 '81042c2f26c945a805781c10f675d23c',  // 80legs

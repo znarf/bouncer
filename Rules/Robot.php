@@ -144,14 +144,13 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'yandex') === false ? -5 : 2.5;
                 break;
             case 'friendfeed':
-                $score += (strpos($host, 'facebook.com') === false && strpos($addr, '69.63.180.') === false)? -5 : 2.5;
+                $score += (strpos($host, 'facebook.com') === false && strpos($addr, '69.63.180.') === false) ? -5 : 2.5;
                 break;
             case 'spbot':
                 $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
                 break;
             case 'superfeedr':
-                $score += strpos($host, 'cloud-ips.com') === false ? -5 : 2.5;
-                $score += $identity['fingerprint'] != '2687c1f1bb7f6803a4f1ee2896a2e01e' ? -5 : 2.5;
+                $score += (strpos($host, 'cloud-ips.com') === false && strpos($host, 'slicehost.net') === false) ? -5 : 2.5;
                 break;
             case 'yahoo-pipes':
                 $score += strpos($host, 'yahoo.') === false ? -5 : 2.5;
@@ -183,6 +182,9 @@ class Bouncer_Rules_Robot
                 break;
             case 'tagoo':
                 $score += strpos($addr, '92.241.182.') !== 0 ? -5 : 2.5;
+                break;
+            case '123people':
+                $score += strpos($addr, '91.206.113.') !== 0 ? -5 : 2.5;
                 break;
             case 'rambler':
                 $score += strpos($host, 'rambler.ru') === false ? -5 : 2.5;
