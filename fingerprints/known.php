@@ -83,6 +83,7 @@ $known_fingerprints = array(
 '49150c78f0d39898e3ddba9cbcac2d4e',  // DE - Apple-PubSub 65.20
 'c57228f2504118b78c338cf6c62299e7',  // IT - Apple-PubSub 65.20
 '47702517895b09e7e3e3d383de0bc613',  // BR - Apple-PubSub 65.20
+'dd707631423f5bc61abdb61af6c58295',  // DK - Apple-PubSub 65.20
 '8e756bbd8fd1b053856ce00735d9fe6f',  // US - Apple-PubSub 65.19
 '7ac14d372759acefcf867c15ffeffec0',  // GB - Apple-PubSub 65.19
 '9acfacf72fee443f8ee3c437ed847fac',  // FR - Apple-PubSub 65.19
@@ -119,6 +120,7 @@ $known_fingerprints = array(
 'f25748fc2c3c617fba53199f337f7131',  // IT - AppleSyndication/56.1
 '741a1e269a2ce4f51bf8f1520c9b288d',  // DE - AppleSyndication/56.1
 '66c3e3add8b34e15cc1d48aea1b7919b',  // US - AppleSyndication/56.1
+'6687a5f945ec7dcd34bb8cf5ec050baa',  // PT - AppleSyndication/56.1
 );
 return $known_fingerprints;
 ?>

@@ -109,7 +109,8 @@ class Bouncer_Rules_Robot
                 $score += $identity['fingerprint'] != '1ba3e09e05c3a64578777e53d4f20a3c' ? -3 : 1;
                 break;
             case 'sogou':
-                $score += $identity['fingerprint'] != 'a86f74048055ff8ea8a8570615c478f4' ? -5 : 2.5;
+                $score += $identity['fingerprint'] != 'a86f74048055ff8ea8a8570615c478f4' &&
+                          $identity['fingerprint'] != 'a6c9efa47da38d7946b4bb40d81f66ee' ? -5 : 2.5;
                 $score += $identity['extension'] != 'cn' ? -5 : 2.5;
                 break;
             case 'alexa':
@@ -132,7 +133,7 @@ class Bouncer_Rules_Robot
                 break;
             case 'netcraft':
                 $score += strpos($host, 'amazonaws.com') === false && strpos($host, 'netcraft.com') === false ? -5 : 2.5;
-                $score += $identity['fingerprint'] != '781c385820c12b26ee29b741ae8c13bd' ? -5 : 2.5;
+                // $score += $identity['fingerprint'] != '6fdbdebe4a4e159db61b246974a63efb' ? -5 : 2.5;
                 break;
             case 'radian6':
                 $score += strpos($addr, '142.166.170.') === false ? -5 : 2.5;
@@ -150,7 +151,7 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
                 break;
             case 'superfeedr':
-                $score += (strpos($host, 'cloud-ips.com') === false && strpos($host, 'slicehost.net') === false) ? -5 : 2.5;
+                $score += (strpos($host, 'superfeedr.com') === false && strpos($host, 'linode.com') === false) ? -5 : 2.5;
                 break;
             case 'yahoo-pipes':
                 $score += strpos($host, 'yahoo.') === false ? -5 : 2.5;
@@ -195,7 +196,12 @@ class Bouncer_Rules_Robot
             case 'tabbloid':
                 $score += strpos($host, 'austin.hp.com') === false ? -5 : 2.5;
                 break;
-            // feeds
+            case 'livedoor':
+                $score += strpos($host, 'data-hotel.net') === false ? -5 : 2.5;
+                break;
+            case 'feedblitz':
+                $score += strpos($host, 'feedblitz.com') === false ? -5 : 2.5;
+                break;
             case 'netvibes':
                 $score += strpos($host, 'netvibes.com') === false ? -5 : 1;
                 break;
