@@ -226,6 +226,9 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'icerocket.com') === false ? -5 : 2.5;
                 $score += $identity['fingerprint'] != '261b05f8f307e382d8acce6f304f481e' ? -5 : 2.5;
                 break;
+            case 'surphace':
+                $score += strpos($addr, '64.40.') !== 0 ? -5 : 2.5;
+                break;
         }
 
         if ($score >= 1) {

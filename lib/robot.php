@@ -1726,6 +1726,14 @@ $robot = array(
       "^FeedValidator[/ ]([0-9.]{1,10})" => "\\1"
     )
   ),
+  "fever" => array(
+    "icon" => "robot",
+    "title" => "Fever",
+    "rule" => array(
+      "^Fever[/ ]([0-9a-z.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://feedafever.com"
+  ),
   "fdm" => array(
     "icon" => "robot",
     "title" => "Free Download Manager",
@@ -2150,6 +2158,13 @@ $robot = array(
       "^helix[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.sitesearch.ca/helix/"
+  ),
+  "hellocoton" => array(
+    "icon" => "robot",
+    "title" => "Hellocoton",
+    "rule" => array(
+      "Hellocoton.fr" => ""
+    )
   ),
   "heritrix" => array(
     "icon" => "heritrix",
@@ -3374,6 +3389,14 @@ $robot = array(
     "rule" => array(
       "Omea Reader[ /]([0-9.]{1,10})" => "\\1"
     )
+  ),
+  "oneriot" => array(
+    "icon" => "robot",
+    "title" => "OneRiot",
+    "rule" => array(
+      "OneRiot[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.oneriot.com"
   ),
   "onet" => array(
     "icon" => "onet",
@@ -5820,7 +5843,8 @@ $robot = array(
     "rule" => array(
       "YodaoBot-(Image|Mobile)?[ /]([0-9.]{1,10})" => "\\2",
       "YodaoBot[ /]([0-9.]{1,10})" => "\\1",
-      "YoudaoBot[ /]([0-9.]{1,10})" => "\\1"
+      "YoudaoBot[ /]([0-9.]{1,10})" => "\\1",
+      "YoudaoFeedFetcher[ /]([0-9.]{1,10})" => "\\1",
     ),
     "uri" => "http://www.youdao.com/help/webmaster/spider/"
   ),

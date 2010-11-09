@@ -5,6 +5,12 @@ $banned_fingerprints = array(
 // Browsers
 '800debb6bf463b5c72336a2ab6c76176', // JP - Windows XP   - Explorer 6.0   (.asianetcom.net),
 'd4a3108acff0dd17752192df5d175333', // KR - MacOS X 10.5 - Firefox 3.0.6
+// Forum Spam
+// Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US)
+'d7a9c865d751ab1f54216b99c3233f4e', // Accept-Encoding:none
+'26266e23a1e673220591d891f2aa2b5f', // Accept-Encoding:gzip
+'a7f6ebb46b5f7a3d6618ac0caed7eb83', // Accept-Encoding:gzip,deflate
+'b4bc915a34ea449382e1d1d849864cf4', // Accept-Encoding:identity,gzip,deflate
 // Comment Spam
 'd72e329d83dbc23e65b7d8412dbe31b8', //  *  - Windows XP    - Explorer 6.0
 '00e9cd8e4ffc0d2d5ab8236bc062773b', //  *  - Windows XP    - Explorer 6.0
@@ -114,6 +120,7 @@ $banned_fingerprints = array(
 '4616e11d99bdf4cdf877be2b67cb61c2', // Java/1.6.0_19
 'cd0e52f56c70ca6b149c9d41af4f698b', // Java/1.6.0_20
 '7b8a8409e605ab281c8efc7c4366fd02', // Java/1.6.0_21
+'19bce80c4af0e5cae656fff133f7902a', // Java/1.6.0_22
 // Various
 '69c914f8638b73983cc50aaad91257f1', // Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 );

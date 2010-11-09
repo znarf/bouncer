@@ -379,6 +379,9 @@ $botnet_fingerprints = array(
 '9ef96d51b4367ad3ce6860c4602d5770',
 'd7b5edf217c3fee1d5d651e5dce20fa2',
 '98afac33570732c449d7060bcef547f0',
+// New New Manual entries
+'01a599a87904a8ffe77c88b10d51d3d9', // Mozilla/5.0 (Windows; U; Windows NT 5.0; ca; rv:1.8.0.8) Gecko/20061025 Firefox/1.5.0.8
+'bb50f4841cadd5c82daa3da46d403cc3', // Mozilla/4.0 (compatible; MSIE 4.02; Windows CE; Smartphone; SDA/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)
 );
 return $botnet_fingerprints;
 ?>

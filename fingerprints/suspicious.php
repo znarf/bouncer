@@ -23,6 +23,7 @@ $suspicious_fingerprints = array(
 '04ddfa686115af0c3306828f9572591b', // Accept:text/html
 '8d0c98829565508d1da3fdaf38dedb2b', // Mozilla/5.0 - Accept-Encoding:gzip,deflate
 // Programming languages defaults
+'d7c338fc5292ac8b15bacd0808ee1245', // Ruby
 'e92acd969162f34aaac2099466e58464', // Ruby/1.8.7
 '023beda1cb2cb7eea339c13a304b8d22', // Python-urllib/2.5
 'db71ede31df67309d22fba536bb786ae', // Python-urllib/2.6
