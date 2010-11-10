@@ -381,7 +381,7 @@ $botnet_fingerprints = array(
 'f7c1e05acfc892ee95c0a25dc733c360',
 'cbb0e2e7520018c2ec89de77ee34fcd2',
 '216c354e70a4b7600883462e468710d1',
-'e5a2f48bd82b18fd1c7a6842bb58efd2'
+'e5a2f48bd82b18fd1c7a6842bb58efd2',
 // New entries
 '9cd87d41ac189374ca07e1c1423b6d0a',
 '7d9cebea26cce23590134c77cff57ff4',
