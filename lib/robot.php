@@ -5509,7 +5509,7 @@ $robot = array(
     "icon" => "robot",
     "title" => "Wink",
     "rule" => array(
-      "WinkBot[ /]([0-9.]{1,10})" => "\\1"
+      "WinkBot" => ""
     ),
     "uri" => "http://wink.com/"
   ),
