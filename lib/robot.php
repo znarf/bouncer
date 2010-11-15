@@ -2007,7 +2007,8 @@ $robot = array(
     "icon" => "goo",
     "title" => "Goo",
     "rule" => array (
-      "(gazz|ichiro|mog(et|imogi))[ /]([0-9.]{1,10})" => "\\3"
+      "(gazz|ichiro|mog(et|imogi))[ /]([0-9.]{1,10})" => "\\3",
+      "ichiro" => ""
     )
   ),
 //TODO: Must be before google... sigh
@@ -2059,6 +2060,13 @@ $robot = array(
     "title" => "Google-Feedfetcher",
     "rule" => array (
       "^Feedfetcher-Google" => "",
+    )
+  ),
+  "googlepreview" => array(
+    "icon" => "google",
+    "title" => "Google Web Preview",
+    "rule" => array (
+      "Google Web Preview" => "",
     )
   ),
   "googlewireless" => array(
@@ -4192,6 +4200,13 @@ $robot = array(
     "title" => "Simpy",
     "rule" => array(
       "^(argus|simpy)[ /]([0-9.]{1,10})" => "\\2",
+    )
+  ),
+  "simplepie" => array(
+    "icon" => "rss",
+    "title" => "SimplePie",
+    "rule" => array(
+      "SimplePie[ /]([0-9.]{1,10})" => "\\2",
     )
   ),
   "singingfish" => array(

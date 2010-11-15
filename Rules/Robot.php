@@ -229,6 +229,11 @@ class Bouncer_Rules_Robot
             case 'surphace':
                 $score += strpos($addr, '64.40.') !== 0 ? -5 : 2.5;
                 break;
+            case 'facebook':
+                $score += (strpos($host, 'tfbnw.net') === false
+                        && strpos($addr, '66.220.') !== 0
+                        && strpos($addr, '69.63.')  !== 0) ? -5 : 1;
+                break;
         }
 
         if ($score >= 1) {
