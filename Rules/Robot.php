@@ -136,7 +136,7 @@ class Bouncer_Rules_Robot
                 // $score += $identity['fingerprint'] != '6fdbdebe4a4e159db61b246974a63efb' ? -5 : 2.5;
                 break;
             case 'radian6':
-                $score += strpos($addr, '142.166.') === false ? -5 : 2.5;
+                $score += strpos($addr, '142.166.') === false && strpos($addr, '142.166.') === false ? -5 : 2.5;
                 break;
             case 'socialmention':
                 $score += $identity['fingerprint'] != 'a9b11c963519135d4b07c6b6ad36c0de' ? -5 : 2.5;
@@ -233,6 +233,9 @@ class Bouncer_Rules_Robot
                 $score += (strpos($host, 'tfbnw.net') === false
                         && strpos($addr, '66.220.') !== 0
                         && strpos($addr, '69.63.')  !== 0) ? -5 : 1;
+                break;
+            case 'bloglovin':
+                $score += strpos($addr, '83.140.155.') !== 0 ? -5 : 2.5;
                 break;
         }
 
