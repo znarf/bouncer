@@ -15,7 +15,7 @@ class Bouncer_Backend_Redis
         $defaults = array(
             'servers' => array(array('host' => '127.0.0.1'))
         );
-        $options = array_merge($options, $defaults);
+        $options = array_merge($defaults, $options);
         self::$_rediska = new Rediska($options);
     }
 

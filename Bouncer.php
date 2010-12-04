@@ -33,6 +33,8 @@ class Bouncer
         ''
     );
 
+    protected static $_servers = array();
+
     public static function run(array $options = array())
     {
         self::setOptions($options);
@@ -70,6 +72,9 @@ class Bouncer
         }
         if (isset($options['namespaces'])) {
             self::$_namespaces = $options['namespaces'];
+        }
+        if (isset($options['servers'])) {
+            self::$_servers = $options['servers'];
         }
     }
 
@@ -253,7 +258,7 @@ class Bouncer
         return $result;
     }
 
-    protected static function bounce()
+    public static function bounce()
     {
         if (isset($_GET['bouncer-challenge'])) {
             self::challenge();
@@ -571,6 +576,12 @@ class Bouncer
                 case 'redis':
                     require_once dirname(__FILE__) . '/Backend/Redis.php';
                     $options = array('namespace' => self::$_prefix);
+                    if (!empty(self::$_servers)) {
+                        $options['servers'] = array();
+                        foreach (self::$_servers as $server) {
+                            $options['servers'][] = array('host' => $server);
+                        }
+                    }
                     self::$_backendInstance = new Bouncer_Backend_Redis($options);
                     break;
             }
