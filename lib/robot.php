@@ -4244,7 +4244,7 @@ $robot = array(
     "icon" => "sitesell",
     "title" => "SiteSell",
     "rule" => array(
-      "SBIder[/ ]([0-9a-z.\-]{1,10})" => "\\1"
+      "^SBIder" => ""
     )
   ),
   "sitespider" => array(
@@ -4452,6 +4452,13 @@ $robot = array(
     "title" => "Star Downloader",
     "rule" => array(
       "^Star Downloader( Pro)?" => ""
+    )
+  ),
+  "statusnet" => array(
+    "icon" => "robot",
+    "title" => "Status.net",
+    "rule" => array(
+      "^StatusNet" => ""
     )
   ),
   "steeler" => array(
@@ -5879,6 +5886,13 @@ $robot = array(
       "OmniExplorer_Bot[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.yottacars.com"
+  ),
+  "yottaa" => array(
+    "icon" => "robot",
+    "title" => "Yottaa",
+    "rule" => array(
+      "YottaaMonitor" => ""
+    ),
   ),
   "yoono" => array(
     "icon" => "yoono",

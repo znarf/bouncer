@@ -24,6 +24,7 @@ $known_fingerprints = array(
 '377ded6a5ede231bc66e65c80a4437ac',  // unblock4myspace
 '55971403dc3cbdd67d3dcf3ad872d5ca',  // twitter-trending-topics
 '8c1bfd4e130c5ae33d180bea4d96b5a6',  // botanyfree
+'2254fbea58cd0557c6ac4e08fdc7aad1',  // kiwi78
 // Crawlers
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
