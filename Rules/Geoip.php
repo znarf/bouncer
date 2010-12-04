@@ -12,11 +12,12 @@ class Bouncer_Rules_Geoip extends Bouncer
 
     public static function ipInfos($infos)
     {
-        $notCountries = array('com', 'org', 'net', 'numeric', 'unknown');
+        // $notCountries = array('com', 'org', 'net', 'numeric', 'unknown');
         $infos['country'] = self::country_code_by_addr($infos['addr']);
-        if (in_array($infos['extension'], $notCountries) && !in_array($infos['country'], $notCountries)) {
-            $infos['extension'] = $infos['country'];
-        }
+        // if (in_array($infos['extension'], $notCountries) && !in_array($infos['country'], $notCountries)) {
+        //     $infos['extension'] = $infos['country'];
+        // }
+        $infos['extension'] = $infos['country'];
         return $infos;
     }
 
