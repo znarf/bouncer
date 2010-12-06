@@ -83,6 +83,7 @@ class Bouncer
         // Opera Mini
         if (strpos($_SERVER['REMOTE_ADDR'], '64.255')  === 0 ||
             strpos($_SERVER['REMOTE_ADDR'], '80.239')  === 0 ||
+            strpos($_SERVER['REMOTE_ADDR'], '82.145')  === 0 ||
             strpos($_SERVER['REMOTE_ADDR'], '94.246')  === 0 ||
             strpos($_SERVER['REMOTE_ADDR'], '195.189') === 0) {
                  $headers = self::getHeaders();
