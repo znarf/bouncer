@@ -11,6 +11,8 @@ $known_fingerprints = array(
 // Google
 '6f82b98fc53efbaca170d51e67469860',  //  * - Google Translate
 'e06615d3118241037d7314f5b9411105',  //  * - Google Desktop
+// MSN / Bing
+'34f895d7de2f45b4ee2a57a6ece95518',
 // App Engine Apps
 'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
 'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha
@@ -37,8 +39,6 @@ $known_fingerprints = array(
 '37a95c66ec11cc628a1aeadf2dfbb84f',  // WebVac
 '934b30bd6857304ebb8cdbc0e2be3953',  // TweetmemeBot
 '4244fa19396ed9f656d60a0f424abcd5',  // TwengaBot-Discover (http://www.twenga.fr/bot-discover.html)
-// 'acfb1cd9b01b3c53d5fdbc14cc83d201',  // OneRiot/1.0 (http://www.oneriot.com)
-// 'c1e39fdc4438cc12d7fd4d1962199e4b',  // OneRiot/1.0 (http://www.oneriot.com)
 'c6ee697b0d3ed706ac974e45fa16221a',  // http://www.ellerdale.com/crawler.html
 'eb69ec8038e09c15dc6c7bf544814076',  // http://www.hpi.uni-potsdam.de/meinel/bross/feedcrawler
 '00bb892963ac734a8eeb681e23d01395',  // Twitterbot/0.1

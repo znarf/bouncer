@@ -97,6 +97,7 @@ $banned_fingerprints = array(
 '78d335088097bc4a390e84f287230480', // Java/1.5.0_05
 '0d360766d1b65022c2fad9a8e1017a3b', // Java/1.5.0_08
 'c7619398ca9cc62676bc22470b30e292', // Java/1.5.0_09
+'935ddbfef63f064602c28059b71e4f48', // Java/1.5.0_11
 '5303f135ebdd3e4a13e2c018681db268', // Java/1.5.0_12
 'c06ed801086df06f47d2e59a72475b50', // Java/1.5.0_15
 '589908d6348c10b42e0ec53f35a6b7e0', // Java/1.5.0_17
@@ -121,6 +122,7 @@ $banned_fingerprints = array(
 'cd0e52f56c70ca6b149c9d41af4f698b', // Java/1.6.0_20
 '7b8a8409e605ab281c8efc7c4366fd02', // Java/1.6.0_21
 '19bce80c4af0e5cae656fff133f7902a', // Java/1.6.0_22
+'615f3cb1f1a256d34e0c99cd389bb784', // Java/1.7.0-ea
 // Various
 '69c914f8638b73983cc50aaad91257f1', // Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 );
