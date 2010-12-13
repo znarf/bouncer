@@ -11,6 +11,7 @@ $known_fingerprints = array(
 // Google
 '6f82b98fc53efbaca170d51e67469860',  //  * - Google Translate
 'e06615d3118241037d7314f5b9411105',  //  * - Google Desktop
+'11f6da515b0304a457a4e449c6053127',  // urlresolver
 // MSN / Bing
 '34f895d7de2f45b4ee2a57a6ece95518',
 // App Engine Apps

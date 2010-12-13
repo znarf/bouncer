@@ -3033,6 +3033,7 @@ $robot = array(
       "MS Search ([0-9.]{1,10}) Robot" => "\\1",
       "MSNBOT-(MEDIA|PRODUCTS|NewsBlogs)[ /]([0-9.]{1,10})" => "\\2",
       "bingbot[ /]([0-9.]{1,10})" => "\\1",
+      "^msnbot" => ""
     )
   ),
   "msnbot-mobile" => array(
