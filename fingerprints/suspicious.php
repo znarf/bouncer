@@ -92,13 +92,10 @@ $suspicious_fingerprints = array(
 '2ce0b31b84400c36e225c9956aaf44ff',    // BM  - Windows 7     - Explorer 8.0
 'd97a041302e88ecbd175e12eef58aa52',    // BM  - Windows XP    - Explorer 7.0
 '0f60bb152cdf85950b4a3b07c8fa7ce9',    // BM  - Windows XP    - Explorer 8.0
-'10ea94edcf5eaf16c1c3f51407387996',    // BM  - Windows XP    - Explorer 6.0
 'db0fd8380f835bf22c7d1be492b2c495',    // BM  - Windows XP    - Explorer 6.0
-'0d7b2bbe2aeaeda69cff3bb2ee0802ac',    // BM  - Windows XP    - Explorer 6.0
 '215918d9c55686ac9e03690fd29b41d1',    // BM  - Windows XP    - Explorer 6.0
 'cd69d5dad03f5b309d4a7984a5ead486',    // BM  - Windows XP    - Explorer 7.0
-'5265cf354a0ac765943ac57cd2b992a1',    // BM  - Windows Vista - Explorer 7.0b
-'e2c3427a6c4007fd32bf3b705c5a8b29',    // BM  - Windows XP    - Explorer 6.0
+'8e697fdd503a58332e6c2d83fb68dbb4',    // BM  - Windows XP    - Explorer 6.0
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
