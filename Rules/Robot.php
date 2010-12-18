@@ -238,7 +238,7 @@ class Bouncer_Rules_Robot
                 $score += strpos($addr, '83.140.155.') !== 0 ? -5 : 2.5;
                 break;
             case 'yahoo-china':
-                $score += strpos($host, 'aliyun.com') === false ? -5 : 2.5;
+                $score += strpos($host, 'aliyun.com') === false && strpos($host, 'yahoo.net') === false ? -5 : 2.5;
                 break;
         }
 
