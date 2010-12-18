@@ -29,6 +29,7 @@ $suspicious_fingerprints = array(
 '023beda1cb2cb7eea339c13a304b8d22', // Python-urllib/2.5
 'db71ede31df67309d22fba536bb786ae', // Python-urllib/2.6
 '790f947b2a7fe78890c8fa9a1ab50749', // PycURL/7.18.2
+'0460db53bfafffc480d718d089c99908', // PycURL/7.19.5
 '7501eb1d36df266c545527806e540e09', // The Incutio XML-RPC PHP Library
 // Bots
 '2c898764f97fa4c47459724a4125f5ff', // Mozilla/4.0 (compatible; RSS Reader)

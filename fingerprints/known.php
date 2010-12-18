@@ -14,6 +14,7 @@ $known_fingerprints = array(
 '11f6da515b0304a457a4e449c6053127',  // urlresolver
 // MSN / Bing
 '34f895d7de2f45b4ee2a57a6ece95518',
+'f546324447d3ea14f88b35dc4083454f',
 // App Engine Apps
 'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
 'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha

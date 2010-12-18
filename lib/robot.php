@@ -5778,6 +5778,13 @@ $robot = array(
       "yacy\.net" => ""
     )
   ),
+  "yahoo-china" => array(
+    "icon" => "yahoo",
+    "title" => "Yahoo China",
+    "rule" => array(
+      "Yahoo! Slurp China" => ""
+    )
+  ),
   "yahoo" => array(
     "icon" => "yahoo",
     "title" => "Yahoo",
