@@ -38,6 +38,9 @@ $suspicious_fingerprints = array(
 '8ec0b03883d2aa93b6de3ac919701912', // Quipply V1 RT
 'c1ad0a278f5ce9abff581debb14273de', // UCANN2_CRAWLER
 '4bc612ee1ba0b0fa110b0171b88acd2b', // FDM 3.x
+// Security / Brand / Media bots
+'1db826142acf332a4aadefe24c1c1bf4', // MacOS X 10.6.4 - Safari 5.0.1 (MediaDefender)
+'448c515c192c8292a77b980803bec31d', // Windows 7 - Explorer 8.0 (brandprotect)
 // Popular
 '3dfed844dc126275d6d535bd0128a037', //  BM  - Windows XP    - Firefox 3.0.5
 '9f2c5a729cf256ae7df689a153233397', //  BM  - Windows XP    - Firefox 3.0.10
@@ -97,6 +100,7 @@ $suspicious_fingerprints = array(
 '215918d9c55686ac9e03690fd29b41d1',    // BM  - Windows XP    - Explorer 6.0
 'cd69d5dad03f5b309d4a7984a5ead486',    // BM  - Windows XP    - Explorer 7.0
 '8e697fdd503a58332e6c2d83fb68dbb4',    // BM  - Windows XP    - Explorer 6.0
+'519e876fa6e446447a2a58181fb0b17c',    // BM  - Windows 7     - Explorer 8.0
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
@@ -136,6 +140,7 @@ $suspicious_fingerprints = array(
 '3eba1a9bd9518f83b6739c122586f8f1',    //  BM - Windows XP    - Firefox 1.5      (EGYPT)
 '7d046900370014646c98ae2f4c439f98',    //  BM - Windows 7     - Firefox 3.6.12   (squidproxies.com)
 'c31245fb9c7ae1bda265fb110f64f5e5',    //  BM - Windows 2000  - Firefox 3.5.8
+'a1f1d332025979db7ea517f4d51a07bc',    //  BM - Windows XP    - Firefox 3.0.1    (US - theplanet.com)
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
@@ -152,6 +157,7 @@ $suspicious_fingerprints = array(
 '9d88f6206f5191eeb591ac4b2c90911f',    //  BM - Mozilla/5.0 (compatible; MSIE 6.0; ) Gecko (US - 65.36.241)
 '8524ec628d095062da5c063a8bbf5405',    //  BM - MacOS X 10.6.4 - Safari 5.0.1
 'a0847fb857a6c7bd4a630a3501d4e5fa',    //  BM - Mozilla/5.0 (compatible; OpenWeb 5.7.4-09)
+'5870eafe0080788d962fc47aaf54956a',    //  BM - Windows 2000   - Avant Browser
 // BM - inferno.name
 'a19471cdfd5262b77d9c2edb6ebc1510', // Windows 2003 - Opera 7.60
 'b6a988533111b50e812790f44de838aa', // Windows XP   - Explorer 6.0

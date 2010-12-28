@@ -15,6 +15,7 @@ $known_fingerprints = array(
 // MSN / Bing
 '34f895d7de2f45b4ee2a57a6ece95518',
 'f546324447d3ea14f88b35dc4083454f',
+'84c29cf970522cd3727c8627bd01a949',
 // App Engine Apps
 'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
 'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha
@@ -88,6 +89,7 @@ $known_fingerprints = array(
 'c57228f2504118b78c338cf6c62299e7',  // IT - Apple-PubSub 65.20
 '47702517895b09e7e3e3d383de0bc613',  // BR - Apple-PubSub 65.20
 'dd707631423f5bc61abdb61af6c58295',  // DK - Apple-PubSub 65.20
+'b74efe030453e0bf7094bd03d136adde',  // NL - Apple-PubSub 65.20
 '8e756bbd8fd1b053856ce00735d9fe6f',  // US - Apple-PubSub 65.19
 '7ac14d372759acefcf867c15ffeffec0',  // GB - Apple-PubSub 65.19
 '9acfacf72fee443f8ee3c437ed847fac',  // FR - Apple-PubSub 65.19
@@ -125,6 +127,7 @@ $known_fingerprints = array(
 '741a1e269a2ce4f51bf8f1520c9b288d',  // DE - AppleSyndication/56.1
 '66c3e3add8b34e15cc1d48aea1b7919b',  // US - AppleSyndication/56.1
 '6687a5f945ec7dcd34bb8cf5ec050baa',  // PT - AppleSyndication/56.1
+'b214c600f9febae38b24a81608f1428a',  // ES - AppleSyndication/56.1
 );
 return $known_fingerprints;
 ?>
