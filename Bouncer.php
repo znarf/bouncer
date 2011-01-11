@@ -98,7 +98,10 @@ class Bouncer
 
     protected static function getUserAgent()
     {
-         return $_SERVER['HTTP_USER_AGENT'];
+        if (array_key_exists('HTTP_USER_AGENT', $_SERVER)) {
+            return $_SERVER['HTTP_USER_AGENT'];
+        }
+        return '';
     }
 
     protected static function identity()
