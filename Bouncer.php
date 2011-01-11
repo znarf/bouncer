@@ -611,7 +611,9 @@ class Bouncer
     {
         self::setOptions($options);
         self::load();
-        require dirname(__FILE__) . '/Stats.php';
+        require_once dirname(__FILE__) . '/Stats.php';
+        Bouncer_Stats::css();
+        Bouncer_Stats::search();
         Bouncer_Stats::stats($options);
     }
 
