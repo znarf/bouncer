@@ -80,12 +80,22 @@ class Bouncer
 
     protected static function getAddr()
     {
+        $addr = $_SERVER['REMOTE_ADDR'];
+
+        // Local Proxy
+        if ($addr === '127.0.0.1' || $addr == '::1') {
+            $headers = self::getHeaders();
+            if (isset($headers['X-Forwarded-For'])) {
+                return $headers['X-Forwarded-For'];
+            }
+        }
+
         // Opera Mini
-        if (strpos($_SERVER['REMOTE_ADDR'], '64.255')  === 0 ||
-            strpos($_SERVER['REMOTE_ADDR'], '80.239')  === 0 ||
-            strpos($_SERVER['REMOTE_ADDR'], '82.145')  === 0 ||
-            strpos($_SERVER['REMOTE_ADDR'], '94.246')  === 0 ||
-            strpos($_SERVER['REMOTE_ADDR'], '195.189') === 0) {
+        if (strpos($addr, '64.255')  === 0 ||
+            strpos($addr, '80.239')  === 0 ||
+            strpos($addr, '82.145')  === 0 ||
+            strpos($addr, '94.246')  === 0 ||
+            strpos($addr, '195.189') === 0) {
                  $headers = self::getHeaders();
                  // TODO: case insensitive, split multiple value
                  if (isset($headers['x-forwarded-for'])) {
@@ -93,7 +103,7 @@ class Bouncer
                  }
          }
 
-         return $_SERVER['REMOTE_ADDR'];
+         return $addr;
     }
 
     protected static function getUserAgent()
