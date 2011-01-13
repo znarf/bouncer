@@ -101,6 +101,7 @@ $suspicious_fingerprints = array(
 'cd69d5dad03f5b309d4a7984a5ead486',    // BM  - Windows XP    - Explorer 7.0
 '8e697fdd503a58332e6c2d83fb68dbb4',    // BM  - Windows XP    - Explorer 6.0
 '519e876fa6e446447a2a58181fb0b17c',    // BM  - Windows 7     - Explorer 8.0
+'e9a534838bc9cfe4e62d9138e809fe34',    // LD  - Windows XP    - Explorer 6.0
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
@@ -141,6 +142,8 @@ $suspicious_fingerprints = array(
 '7d046900370014646c98ae2f4c439f98',    //  BM - Windows 7     - Firefox 3.6.12   (squidproxies.com)
 'c31245fb9c7ae1bda265fb110f64f5e5',    //  BM - Windows 2000  - Firefox 3.5.8
 'a1f1d332025979db7ea517f4d51a07bc',    //  BM - Windows XP    - Firefox 3.0.1    (US - theplanet.com)
+'0e8ac149f40d409683b80470ecce4225',    //  BM - Windows Vista - Firefox 3.5.7    (JP)
+'f82f849c1705c8850c75f3753c1131fc',    //  BM - Windows Vista - Firefox 3.6.11
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
