@@ -5,14 +5,19 @@ class Bouncer_Backend_Memcache
 
     protected static $_prefix = null;
 
+    protected static $_servers = array('127.0.0.1');
+
     public static $memcache = null;
 
     private static $cache = array();
 
-    public function __construct($options)
+    public function __construct(array $options = array())
     {
         if (isset($options['prefix'])) {
             self::$_prefix = $options['prefix'];
+        }
+        if (isset($options['servers'])) {
+            self::$_servers = $options['servers'];
         }
     }
 
@@ -21,7 +26,9 @@ class Bouncer_Backend_Memcache
         if (empty(self::$memcache)) {
             if (class_exists('Memcache')) {
                 $memcache = new Memcache();
-                $memcache->addServer('127.0.0.1');
+                foreach (self::$_servers as $server) {
+                    $memcache->addServer($server);
+                }
                 self::$memcache = $memcache;
             }
         }
@@ -90,6 +97,16 @@ class Bouncer_Backend_Memcache
         $indexKey = empty($namespace) ? 'agents' : "agents-$namespace";
         $agents = self::get($indexKey);
         return $agents;
+    }
+
+    public static function countAgentsFingerprint($fingerprint, $namespace = '')
+    {
+        return 0;
+    }
+
+    public static function countAgentsHost($haddr, $namespace = '')
+    {
+        return 0;
     }
 
     public static function storeConnection($connection)

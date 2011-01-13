@@ -585,6 +585,9 @@ class Bouncer
                 case 'memcache':
                     require_once dirname(__FILE__) . '/Backend/Memcache.php';
                     $options = array('prefix' => self::$_prefix);
+                    if (!empty(self::$_servers)) {
+                        $options['servers'] = self::$_servers;
+                    }
                     self::$_backendInstance = new Bouncer_Backend_Memcache($options);
                     break;
                 case 'redis':
