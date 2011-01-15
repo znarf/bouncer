@@ -36,7 +36,7 @@ class Bouncer_Rules_Robot
                 $score += empty($headers['From']) ? -5 : 2.5;
                 break;
             case 'yahoo':
-                $score += strpos($host, 'yahoo.') === false ? -5 : 2.5;
+                $score += strpos($host, 'yahoo.') === false && strpos($host, 'aliyun.com') === false ? -5 : 2.5;
                 break;
             case 'msnbot':
                 $score += strpos($host, 'msn.com') === false && empty($headers['From']) ? -5 : 1;
@@ -57,6 +57,7 @@ class Bouncer_Rules_Robot
             case 'baidu':
                 $score += (strpos($host, 'baidu.') === false
                         && strpos($addr, '123.125.') === false
+                        && strpos($addr, '119.63.192.') === false
                         && strpos($addr, '119.63.193.') === false) ? -5 : 2.5;
                 break;
             case 'ask':
