@@ -50,6 +50,15 @@ class Bouncer_Stats
         if (isset($options['detailed_connections'])) {
             self::$_detailed_connections = $options['detailed_connections'];
         }
+        if (isset($options['detailed_ips'])) {
+            self::$_detailed_ips = $options['detailed_ips'];
+        }
+        if (isset($options['detailed_score'])) {
+            self::$_detailed_score = $options['detailed_score'];
+        }
+        if (isset($options['detailed_host'])) {
+            self::$_detailed_host = $options['detailed_host'];
+        }
         if (isset($options['base_static_url'])) {
             self::$_base_static_url = $options['base_static_url'];
         }
@@ -314,8 +323,8 @@ class Bouncer_Stats
                      if (self::$_detailed_host) {
                          echo '<td>', Bouncer_Rules_Httpbl::getType($identity), '</td>';
                          if (method_exists('Bouncer', 'countAgentsHost')) {
-                             $count = Bouncer::countAgentsHost(md5($identity['addr']), self::$_namespace);
-                             echo '<td>' . ($count ? $count : 1) . '</td>';
+                             $hcount = Bouncer::countAgentsHost(md5($identity['addr']), self::$_namespace);
+                             echo '<td>' . ($hcount ? $hcount : 1) . '</td>';
                          } else {
                              echo '<td>', '&nbsp;', '</td>';
                          }
@@ -371,20 +380,15 @@ class Bouncer_Stats
         echo '<tr>', '<td>', 'Id', '</td>',
                      '<td>', $identity['id'], '</td>', '</tr>';
 
-        echo '<tr>', '<td>', 'IP', '</td>',
-                     '<td>', '<a href="?filter=addr%3A' . $identity['addr'] . '">', $identity['addr'], '</a></td>', '</tr>';
-        echo '<tr>', '<td>', 'Host', '</td>',
-                     '<td>', $identity['host'], '</td>', '</tr>';
-        echo '<tr>', '<td>', 'Extension', '</td>',
-                     '<td>', '<a href="?filter=extension%3A' . $identity['extension'] . '">', $identity['extension'], '</a></td>', '</tr>';
+        echo '<tr>', '<td>', 'Signature', '</td>',
+                     '<td>', '<a href="?filter=signature%3A' . $identity['signature'] . '">', $identity['signature'], '</a></td>', '</tr>';
 
-         echo '<tr>', '<td>', 'Signature', '</td>',
-                      '<td>', '<a href="?filter=signature%3A' . $identity['signature'] . '">', $identity['signature'], '</a></td>', '</tr>';
-         echo '<tr>', '<td>', 'Fingerprint', '</td>',
-                      '<td>', '<a href="?filter=fingerprint%3A' . $identity['fingerprint'] . '">', $identity['fingerprint'], '</a></td>', '</tr>';
+        echo '<tr>', '<td>', 'Fingerprint', '</td>',
+                     '<td>', '<a href="?filter=fingerprint%3A' . $identity['fingerprint'] . '">', $identity['fingerprint'], '</a></td>', '</tr>';
 
         echo '<tr>', '<td>', 'Name', '</td>',
                      '<td>', '<a href="?filter=name%3A' . $identity['name'] . '">', $identity['name'], '</a></td>', '</tr>';
+
         if (isset($identity['version'])) {
             echo '<tr>', '<td>', 'Version',
                          '</td>', '<td>', $identity['version'], '</td>', '</tr>';
@@ -395,13 +399,19 @@ class Bouncer_Stats
                          '<td>', '<a href="?filter=system%3A' . $system . '">', $system, '</a></td>', '</tr>';
         }
 
+        echo '<tr>', '<td>', 'IP', '</td>',
+                     '<td>', '<a href="?filter=addr%3A' . $identity['addr'] . '">', $identity['addr'], '</a></td>', '</tr>';
+
+        echo '<tr>', '<td>', 'Host', '</td>',
+                     '<td>', $identity['host'], '</td>', '</tr>';
+
+        echo '<tr>', '<td>', 'Extension', '</td>',
+                     '<td>', '<a href="?filter=extension%3A' . $identity['extension'] . '">', $identity['extension'], '</a></td>', '</tr>';
+
         if (self::$_detailed_ips) {
 
-            echo '<tr>', '<td>', 'Http:BL', '</td>',
-                         '<td>'; if (isset($identity['httpbl'])) print_r($identity['httpbl']); echo '</td>', '</tr>';
-
-            // echo '<tr>', '<td>', 'Country Code', '</td>',
-            //              '<td>', Bouncer_Rules_Geoip::country_code_by_addr($identity['addr']), '</td>', '</tr>';
+            echo '<tr>', '<td>', 'Http:BL', '</td>';
+            echo '<td>'; if (isset($identity['httpbl'])) print_r($identity['httpbl']); echo '</td>', '</tr>';
 
             echo '<tr>', '<td>', 'Reverse', '</td>', '<td>';
             $rev = preg_replace('/^(\\d+)\.(\\d+)\.(\\d+)\.(\\d+)$/', '$4.$3.$2.$1', $identity['addr']);
@@ -416,6 +426,15 @@ class Bouncer_Stats
 
             echo '<tr>', '<td>', 'Network', '</td>', '<td>';
             print_r(Bouncer_Rules_Network::doPWLookupBulk(array($identity['addr'])));
+            echo '</td>', '</tr>';
+
+        } else {
+
+            $lookup = Bouncer_Rules_Network::doPWLookupBulk(array($identity['addr']));
+            $network = $lookup[ $identity['addr'] ];
+
+            echo '<tr>', '<td>', 'Network Org Name', '</td>', '<td>';
+            echo $network['org-name'];
             echo '</td>', '</tr>';
 
         }
@@ -723,7 +742,7 @@ class Bouncer_Stats
         echo '<form method="get" action="" style="margin:0">';
         $value = isset($_GET['filter']) ? htmlspecialchars($_GET['filter']) : '';
         echo '<input type="search" name="filter" id="bouncer-filter" class="bouncer-filter" value="' . $value . '"/>';
-        echo '<script type="text/javascript">document.getElementById("bouncer-filter").focus();</script>';
+        // echo '<script type="text/javascript">document.getElementById("bouncer-filter").focus();</script>';
         echo '</form>';
     }
 
