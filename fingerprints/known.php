@@ -1,5 +1,15 @@
 <?php
 $known_fingerprints = array(
+// Top Bots
+'793f840d86e2554135283d9aef58c7ff',  // Googlebot
+'c81a634f3f75e335030284bf4c72bd2f',  // Yahoo! Slurp
+'cabf78b12c02f825861abeeacc4882fa',  // Yahoo! Slurp
+'273cf731218cee6bbea75c880c6de3c3',  // Baidu (cn)
+'8f810bd4a1eec86aec316f2245500d47',  // Baidu (jp)
+'35d55b760b985cf233ad9466fd38dee8',  // Baidu (jp - mobile)
+'72604be2402cd5d1cfc84a413516a0da',  // Bingbot
+'6dcd83439ea1c096a43b0f06811e64d2',  // Bingbot
+'ab12474fbc997f8655ca93952784393b',  // Yandex
 // Facebook
 '22a5eee46083360de8bc4beca9c8fe2d',  // http://www.facebook.com/externalhit_uatext.php
 'ddb1e86b32cf145e05a6e0a52e92f174',  // FacebookFeedParser
