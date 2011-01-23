@@ -258,7 +258,7 @@ class Bouncer_Stats
 
              if ($type == 'browser' && isset($os[$system])) {
                  if (empty($cssRules[$system])) {
-                     $cssRules[$system] = 'background-image:url(' . self::$_base_static_url . '/images/os_' . $os[$system]['icon'] . '.png)';
+                     $cssRules[$system] = 'background-image:url(' . self::$_base_static_url . '/images/os/' . $os[$system]['icon'] . '.png)';
                  }
                  $system = $os[$system]['title'] . ' ' . $system_version;
              } else {
@@ -267,7 +267,7 @@ class Bouncer_Stats
              }
 
              if (empty($cssRules[$extension])) {
-                  $cssRules[$extension] = 'background-image:url(' . self::$_base_static_url . '/images/ext_' . $extension . '.png)';
+                  $cssRules[$extension] = 'background-image:url(' . self::$_base_static_url . '/images/ext/' . $extension . '.png)';
              }
              if ($linkify) {
                  $host = '<a href="?filter=addr%3A' .  $addr . '">' .  $host . '</a>';
@@ -275,12 +275,12 @@ class Bouncer_Stats
 
              if ($type == 'browser') {
                  if (empty($cssRules[$name])) {
-                     $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/browser_' . $browser[$name]['icon'] . '.png)';
+                     $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/browser/' . $browser[$name]['icon'] . '.png)';
                  }
                  $agent = $browser[$name]['title'] . ' ' . $version;
              } else if ($type == 'robot') {
                  if (empty($cssRules[$name])) {
-                     $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/robot_' . $robot[$name]['icon'] . '.png)';
+                     $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/robot/' . $robot[$name]['icon'] . '.png)';
                  }
                  $agent = $robot[$name]['title'] . ' ' . $version;
              }
@@ -725,14 +725,14 @@ class Bouncer_Stats
         .ic { padding-left:20px; background:2px 2px no-repeat }
         .fr { background-image:url(<?php echo self::$_base_static_url ?>/images/ext_fr.png) }
         .unknown  { background-image:url(<?php echo self::$_base_static_url ?>/images/os_question.png) }
-        .explorer { background-image:url(<?php echo self::$_base_static_url ?>/images/browser_explorer.png) }
-        .firefox  { background-image:url(<?php echo self::$_base_static_url ?>/images/browser_firefox.png) }
-        .safari   { background-image:url(<?php echo self::$_base_static_url ?>/images/browser_safari.png) }
-        .opera    { background-image:url(<?php echo self::$_base_static_url ?>/images/browser_opera.png) }
-        .chrome   { background-image:url(<?php echo self::$_base_static_url ?>/images/browser_chrome.png) }
-        .macosx   { background-image:url(<?php echo self::$_base_static_url ?>/images/os_macosx.png) }
-        .windowsxp, .windowsmc { background-image:url(<?php echo self::$_base_static_url ?>/images/os_windowsxp.png) }
-        .windowsvista, .windows7 { background-image:url(<?php echo self::$_base_static_url ?>/images/os_windowsvista.png) }
+        .explorer { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/explorer.png) }
+        .firefox  { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/firefox.png) }
+        .safari   { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/safari.png) }
+        .opera    { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/opera.png) }
+        .chrome   { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/chrome.png) }
+        .macosx   { background-image:url(<?php echo self::$_base_static_url ?>/images/os/macosx.png) }
+        .windowsxp, .windowsmc { background-image:url(<?php echo self::$_base_static_url ?>/images/os/windowsxp.png) }
+        .windowsvista, .windows7 { background-image:url(<?php echo self::$_base_static_url ?>/images/os/windowsvista.png) }
         </style>
         <?php
     }
