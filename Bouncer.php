@@ -596,7 +596,12 @@ class Bouncer
                     if (!empty(self::$_servers)) {
                         $options['servers'] = array();
                         foreach (self::$_servers as $server) {
-                            $options['servers'][] = array('host' => $server);
+                            if (strpos($server, ':')) {
+                                list($server, $port) = explode(':', $server);
+                                $options['servers'][] = array('host' => $server, 'port' => $port);
+                            } else {
+                                $options['servers'][] = array('host' => $server);
+                            }
                         }
                     }
                     self::$_backendInstance = new Bouncer_Backend_Redis($options);
