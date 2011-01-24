@@ -643,7 +643,9 @@ class Bouncer
         self::load();
         require_once dirname(__FILE__) . '/Stats.php';
         Bouncer_Stats::css();
-        Bouncer_Stats::search();
+        if (empty($_GET['agent']) && empty($_GET['connection']) && empty($_GET['stats'])) {
+            Bouncer_Stats::search();
+        }
         Bouncer_Stats::stats($options);
     }
 

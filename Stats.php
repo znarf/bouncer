@@ -189,7 +189,7 @@ class Bouncer_Stats
              $pc = isset($last['request']['headers']['Proxy-Connection']) ? $last['request']['headers']['Proxy-Connection'] : 'none';
              $pa = isset($last['request']['headers']['Proxy-Authentication']) ? $last['request']['headers']['Proxy-Authentication'] : 'none';
 
-             $prefetch = (isset($xmoz) && $xmoz == 'prefetch') || (isset($xpurpose) && $xpurpose == 'prefetch');
+             $prefetch = ( (isset($xmoz) && $xmoz == 'prefetch') || (isset($xpurpose) && $xpurpose == 'prefetch') ) ? 1 : 0;
 
              $accept = isset($identity['headers']['Accept']) ? $identity['headers']['Accept'] : 'none';
              $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : 'none';
@@ -204,7 +204,7 @@ class Bouncer_Stats
              $gecko = $name == 'firefox' || in_array($name, Bouncer_Rules_Browser::$gecko_browsers) ? 1 : 0;
              $webkit = in_array($name, Bouncer_Rules_Browser::$webkit_browsers) ? 1 : 0;
 
-             $rss = in_array($name, Bouncer_Rules_Browser::$rss_browsers) ? 1 : 0;
+             $rss = ( in_array($name, Bouncer_Rules_Browser::$rss_browsers) || (isset($xmoz) && $xmoz == 'livebookmarks') ) ? 1 : 0;
 
              $js = isset($identity['features']['javascript']) && $identity['features']['javascript'] != 0 ? (int)($identity['features']['javascript'] > 0) : '';
              $img = isset($identity['features']['image']) && $identity['features']['image'] != 0 ? (int)($identity['features']['image'] > 0) : '';
@@ -391,6 +391,9 @@ class Bouncer_Stats
 
         echo '<tr>', '<td>', 'Fingerprint', '</td>',
                      '<td>', '<a href="?filter=fingerprint%3A' . $identity['fingerprint'] . '">', $identity['fingerprint'], '</a></td>', '</tr>';
+
+        echo '<tr>', '<td>', 'Type', '</td>',
+             '<td>', '<a href="?filter=type%3A' . $identity['type'] . '">', $identity['type'], '</a></td>', '</tr>';
 
         echo '<tr>', '<td>', 'Name', '</td>',
                      '<td>', '<a href="?filter=name%3A' . $identity['name'] . '">', $identity['name'], '</a></td>', '</tr>';
@@ -726,13 +729,13 @@ class Bouncer_Stats
         .bouncer-filter { display:block; margin-bottom:10px; border:1px solid #DEDEDE; }
         .bouncer-table { border-collapse:collapse; }
         .bouncer-table td, .bouncer-table th { border:1px solid #DEDEDE; }
-        .bouncer-table td { height:18px; line-height:14px; }
-        .bouncer-table td img { vertical-align:-2px; width:14px; height:14px; }
+        .bouncer-table td { height:20px; padding:2px 4px; }
+        .bouncer-table td.ic { padding-left:24px; }
         .bouncer-table tr.neutral { background-color:#E0E5F2; }
         .bouncer-table tr.bad { background-color:#EFE2EC; }
         .bouncer-table tr.suspicious { background-color:#f2e8e0; }
         .bouncer-table tr.nice { background-color:#e2f2e0; }
-        .ic { padding-left:20px; background:2px 2px no-repeat }
+        .ic { padding-left:24px; background:4px 2px no-repeat }
         .fr { background-image:url(<?php echo self::$_base_static_url ?>/images/ext_fr.png) }
         .unknown  { background-image:url(<?php echo self::$_base_static_url ?>/images/os_question.png) }
         .explorer { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/explorer.png) }
