@@ -13,7 +13,7 @@ class Bouncer_Rules_Geoip extends Bouncer
     public static function ipInfos($infos)
     {
         // $notCountries = array('com', 'org', 'net', 'numeric', 'unknown');
-        $infos['country'] = self::country_code_by_addr($infos['addr']);
+        $infos['country'] = self::country_code_by_addr($infos['addr'], $infos['host']);
         // if (in_array($infos['extension'], $notCountries) && !in_array($infos['country'], $notCountries)) {
         //     $infos['extension'] = $infos['country'];
         // }
@@ -21,10 +21,10 @@ class Bouncer_Rules_Geoip extends Bouncer
         return $infos;
     }
 
-    public static function country_code_by_addr($addr)
+    public static function country_code_by_addr($addr, $host)
     {
         // first run without geoip extension
-        if (empty(self::$_gi) && !function_exists('geoip_country_code_by_addr')) {
+        if (empty(self::$_gi) && !function_exists('geoip_country_code_by_name')) {
             require_once dirname(__FILE__) . "/../lib/geoip.inc";
             self::$_gi = geoip_open(dirname(__FILE__) . "/../lib/geoip.dat", GEOIP_STANDARD);
         }
@@ -34,8 +34,8 @@ class Bouncer_Rules_Geoip extends Bouncer
             $code = geoip_country_code_by_addr(self::$_gi, $addr);
 
         // with geoip extension
-        } elseif (function_exists('geoip_country_code_by_addr')) {
-            $code = geoip_country_code_by_addr($addr);
+        } elseif (function_exists('geoip_country_code_by_name')) {
+            $code = geoip_country_code_by_name($host);
         }
 
         if (empty($code) || $code == 'AP' || $code == 'A1' || $code == 'A2') {
