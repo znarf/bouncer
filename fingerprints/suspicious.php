@@ -54,7 +54,6 @@ $suspicious_fingerprints = array(
 '59cab5f2ded9964a860dfa438c81a35c', //  BM  - Linux         - Firefox 3.0      (CN)
 'a8d05109ce1452f434c41086c58763e3', //  BM  - Windows XP    - Explorer 6.0
 'a83d11e2c4b78a31f922ac5e6535bd02', //  BM  - Windows XP    - Explorer 6.0     (CN - 61.135.162.*|61.135.169.*|61.135.190.*)
-'54b2f182c6c9e764fbb75e40624f50f4', //  BM  - MacOS X       - Safari 3.0.2     (US - theplanet.com + DE - 82.140)
 'c0166151e7c005b85564f16c63403223', //  BM  - Windows XP    - Explorer 6.0     (US - *.cust.propagation.net)
 'e6742e43e21e965e69f31e5b3cd68fb3', //  BM  - Windows 2000  - Explorer 5.5
 '99565980df77d3c44fcf13b7005e3099', //  BM  - Windows 2000  - Explorer 8.0     (US - 207.70.*)
@@ -63,6 +62,12 @@ $suspicious_fingerprints = array(
 'ae21b88a5f9d9e0f194d197bf3c1b16a', //  BM  - Unknown       - Firefox 3.0.5    (KR - 211.43.152.*)
 '7b9e8b3e15f083ffd4003d6348a862b5', //  BM  - Windows XP    - Explorer 7.0     (FR - OVH)
 'fd614978f3c2536172c5d9793aead2c1', //  BM  - Windows Vista - Explorer 7.0
+'519e876fa6e446447a2a58181fb0b17c', //  BM  - Windows 7     - Explorer 8.0
+'6f0e54a31a8f0d3d034a68992c84108f', //  BM  - Windows XP    - Firefox 3.0.6
+'cd69d5dad03f5b309d4a7984a5ead486', //  BM  - Windows XP    - Explorer 7.0     (US - cubbsnet.com)
+'464ad59abcf3e7adca9ccc8f09eee82b', //  BM  - Windows Vista - Firefox 3.0.1    (US - theplanet.com + DE - 82.140)
+'485b4542bb733fe4474fa2a51681712a', //  BM  - Windows Vista - Explorer 7.0     (US - theplanet.com + DE - 82.140)
+'54b2f182c6c9e764fbb75e40624f50f4', //  BM  - MacOS X       - Safari 3.0.2     (US - theplanet.com + DE - 82.140)
 // Explorer
 '201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
 '21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)
@@ -86,7 +91,6 @@ $suspicious_fingerprints = array(
 '894a16a61da0d1d61ffb219d78512f7c',    // BM  - Windows XP    - Explorer 7.0b   (Cookie2:$Version="1")
 'b50cca9d908989cd453b12186d86c172',    // BM  - Windows XP    - Explorer 6.0
 '9887c55fda215fd9fe03e9bab9d51839',    // BM  - Windows XP    - Explorer 6.0    (Cookie2:$Version="1")
-'485b4542bb733fe4474fa2a51681712a',    // BM  - Windows Vista - Explorer 7.0    (US - theplanet.com + DE - 82.140)
 'ab634d6c80c5623084a5d473b00edb01',    // BM  - Windows 2000  - Explorer 6.0    (SG)
 '117b1b8071a055fe718af3514106618b',    // BM  - Windows 7     - Explorer 8.0    (US - amazonaws.com)
 '16ee5bc3202e9b89691ae7444903345c',    // BM  - Windows 7     - Explorer 7.0
@@ -98,9 +102,7 @@ $suspicious_fingerprints = array(
 '0f60bb152cdf85950b4a3b07c8fa7ce9',    // BM  - Windows XP    - Explorer 8.0
 'db0fd8380f835bf22c7d1be492b2c495',    // BM  - Windows XP    - Explorer 6.0
 '215918d9c55686ac9e03690fd29b41d1',    // BM  - Windows XP    - Explorer 6.0
-'cd69d5dad03f5b309d4a7984a5ead486',    // BM  - Windows XP    - Explorer 7.0
 '8e697fdd503a58332e6c2d83fb68dbb4',    // BM  - Windows XP    - Explorer 6.0
-'519e876fa6e446447a2a58181fb0b17c',    // BM  - Windows 7     - Explorer 8.0
 'e9a534838bc9cfe4e62d9138e809fe34',    // LD  - Windows XP    - Explorer 6.0
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
@@ -123,9 +125,7 @@ $suspicious_fingerprints = array(
 '036bedfc8b7bc46374f895c9673a2dca',    //  BM - Windows XP    - Firefox 3.0.7
 'e589d8a655a5ba4f71f11128e6aeba8d',    //  BM - Windows 2003  - Firefox 3.0.6
 '561440dbfdff525f24210ab3b34202db',    //  BM - Windows Vista - Firefox 3.0.8
-'6f0e54a31a8f0d3d034a68992c84108f',    //  BM - Windows XP    - Firefox 3.0.6
 'ed267132b191ab450717e155e558cb54',    //  BM - Windows XP    - Firefox 3.0.10
-'464ad59abcf3e7adca9ccc8f09eee82b',    //  BM - Windows Vista - Firefox 3.0.1    (US - theplanet.com + DE - 82.140)
 '1c784cefba12a813271b02cbd28e8e01',    //  BM - Ubuntu        - Firefox 3.0.10
 '3a17ee0aa964b2fa5e1b074634906ded',    //  BM - Windows XP    - Firefox 3.6.8
 '98a1c8b514f2c9a80b7fbb989a3d831e',    //  BM - Windows XP    - Firefox 3.0.4

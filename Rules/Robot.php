@@ -240,6 +240,9 @@ class Bouncer_Rules_Robot
             case 'yahoo-china':
                 $score += strpos($host, 'aliyun.com') === false && strpos($host, 'yahoo.net') === false ? -5 : 2.5;
                 break;
+            case 'sitesell':
+                $score += strpos($host, 'sitebuildit.com') === false ? -5 : 2.5;
+                break;
         }
 
         if ($score >= 1) {

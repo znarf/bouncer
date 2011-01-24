@@ -10,6 +10,9 @@ $known_fingerprints = array(
 '72604be2402cd5d1cfc84a413516a0da',  // Bingbot
 '6dcd83439ea1c096a43b0f06811e64d2',  // Bingbot
 'ab12474fbc997f8655ca93952784393b',  // Yandex
+'43d28f2be01110e87ffe3cb9d62d1f44',  // Mj12
+'51a89973db58d37e29a07b0823157318',  // Mj12
+'1ba3e09e05c3a64578777e53d4f20a3c',  // DotBot
 // Facebook
 '22a5eee46083360de8bc4beca9c8fe2d',  // http://www.facebook.com/externalhit_uatext.php
 'ddb1e86b32cf145e05a6e0a52e92f174',  // FacebookFeedParser
@@ -21,11 +24,14 @@ $known_fingerprints = array(
 // Google
 '6f82b98fc53efbaca170d51e67469860',  //  * - Google Translate
 'e06615d3118241037d7314f5b9411105',  //  * - Google Desktop
+'3ae6cc7f31314756b846e1b49bf2f09c',  //  * - Google Web Preview
 '11f6da515b0304a457a4e449c6053127',  // urlresolver
 // MSN / Bing
 '34f895d7de2f45b4ee2a57a6ece95518',
 'f546324447d3ea14f88b35dc4083454f',
 '84c29cf970522cd3727c8627bd01a949',
+'788ac1a26b08052bc106a19dc505e3c9',
+'55a3ca444259a2b25c0072a7454ab99c',
 // App Engine Apps
 'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
 'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha

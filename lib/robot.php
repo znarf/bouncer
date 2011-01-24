@@ -4376,7 +4376,8 @@ $robot = array(
     "title" => "Sogou",
     "rule" => array(
       "Sogou web spider[ /]([0-9.]{1,10})" => "\\1",
-      "Sogou-Test-Spider[ /]([0-9.]{1,10})" => "\\1"
+      "Sogou-Test-Spider[ /]([0-9.]{1,10})" => "\\1",
+      "Sogou Pic Spider[ /]([0-9.]{1,10})" => "\\1",
     ),
     "uri" => "http://www.sogou.com/docs/help/webmasters.htm#07"
   ),
@@ -4785,6 +4786,7 @@ $robot = array(
     ),
     "uri" => "http://www.thumbshots.de"
   ),
+  /*
   "thunderbird" => array(
     "icon" => "thunderbird",
     "title" => "Thunderbird",
@@ -4792,6 +4794,7 @@ $robot = array(
       "Thunderbird[ /]([0-9a-z.]{1,10})" => "\\1"
     )
   ),
+  */
   "thunderstone" => array(
     "icon" => "thunderstone",
     "title" => "Thunderstone",

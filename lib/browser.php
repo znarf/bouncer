@@ -1320,6 +1320,13 @@ $browser = array(
     ),
     "uri" => "http://sourceforge.net/projects/syndirella/"
   ),
+  "thunderbird" => array(
+    "icon" => "thunderbird",
+    "title" => "Thunderbird",
+    "rule" => array(
+      "Thunderbird[ /]([0-9a-z.]{1,10})" => "\\1"
+    )
+  ),
   "tonline" => array(
     "icon" => "tonline",
     "title" => "T-Online",

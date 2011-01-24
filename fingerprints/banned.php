@@ -43,6 +43,8 @@ $banned_fingerprints = array(
 '5d5185a11ffe776821edd761a57f87ad', //  * - SunOS 5.7 - Netscape 4.76
 '84b22310b79b5acf19637583f88e56a5', //  * - kmccrew Bot Search
 '56cb5aa3bc50560382d31c887cde3696', //  * - MaMa CyBer
+// Security scanning
+'3b8cad698673d7c3815ebce2c26477d6', //  Made by ZmEu @ WhiteHat Team - www.whitehat.ro
 // Fake Google
 'a8c59cca16eb7d753659ae07aa6745bb',
 '834f20c97f18fc1fa04ddd63f11ec2e8',
@@ -123,6 +125,7 @@ $banned_fingerprints = array(
 'cd0e52f56c70ca6b149c9d41af4f698b', // Java/1.6.0_20
 '7b8a8409e605ab281c8efc7c4366fd02', // Java/1.6.0_21
 '19bce80c4af0e5cae656fff133f7902a', // Java/1.6.0_22
+'eb7dd1e8517441fef20e59bdf8931d98', // Java/1.6.0_23
 '615f3cb1f1a256d34e0c99cd389bb784', // Java/1.7.0-ea
 // Various
 '69c914f8638b73983cc50aaad91257f1', // Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
