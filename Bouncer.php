@@ -83,11 +83,15 @@ class Bouncer
         $addr = $_SERVER['REMOTE_ADDR'];
 
         // Local Proxy
-        if ($addr === '127.0.0.1' || $addr == '::1') {
-            $headers = self::getHeaders();
-            if (isset($headers['X-Forwarded-For'])) {
-                return $headers['X-Forwarded-For'];
-            }
+        if ($addr === '127.0.0.1' ||
+            $addr == '::1' ||
+            strpos($addr, '172.') === 0 ||
+            strpos($addr, '192.') === 0 ||
+            strpos($addr, '10.')  === 0) {
+                $headers = self::getHeaders();
+                if (isset($headers['X-Forwarded-For'])) {
+                    return $headers['X-Forwarded-For'];
+                }
         }
 
         // Opera Mini
