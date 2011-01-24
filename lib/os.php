@@ -1,18 +1,26 @@
 <?php
-/* This file is part of BBClone (The PHP web counter on steroids)
+/* This file is part of BBClone (A PHP based Web Counter on Steroids)
  *
- * $Header: /srv/cvs/bbclone/bbclone/lib/os.php,v 1.90 2009/10/27 23:14:32 joku Exp $
+ * CVS FILE $Id: os.php,v 1.110 2010/12/31 23:00:28 joku Exp $
  *
- * Copyright (C) 2001-2009, the BBClone Team (see file doc/authors.txt
- * distributed with this library)
+ * Copyright (C) 2001-2011, the BBClone Team (see doc/authors.txt for details)
  *
- * This program is free software; you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
  *
  * See doc/copying.txt for details
  */
+
+/////////////////////////////////////
+// OS (Operation System) Detection //
+/////////////////////////////////////
 
 $os = array(
   "aix"=> array(
@@ -21,7 +29,8 @@ $os = array(
     "rule" => array(
       "-aix([0-9.]{1,10})" => "\\1",
       "[ ;\(]aix" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "amiga" => array(
     "icon" => "amiga",
@@ -29,53 +38,65 @@ $os = array(
     "rule" => array(
       "Amiga[ ]?OS[ /]([0-9.V]{1,10})" => "\\1",
       "amiga" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "android" => array(
-    "icon" => "linux",
+    "icon" => "android",
     "title" => "Android",
     "rule" => array(
-      "Android[ /]([0-9.b]{1,10})" => "\\1",
+      "Android ([0-9.]{1,10})" => "\\1",
       "Android" => ""
-    )
+    ),
+    "uri" => "http://www.android.com/"
+  ),
+  "arch" => array(
+    "icon" => "arch",
+    "title" => "Arch Linux",
+    "rule" => array(
+      "Arch Linux" => ""
+    ),
+    "uri" => "http://www.archlinux.org/"
   ),
   "atari" => array(
-    "icon" => "other",
+    "icon" => "question",
     "title" => "Atari",
     "rule" => array(
       "atari[ /]([0-9.b]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => "http://www.atari.com/"
   ),
   "atheos" => array(
     "icon" => "atheos",
     "title" => "AtheOS",
     "rule" => array(
       "atheos" => ""
-    )
-  ),
-  //must stay here before BeOS
-  "haiku" => array(
-    "icon" => "haiku",
-    "title" => "Haiku",
-    "rule" => array(
-      "Haiku BePC" => ""
     ),
-    "uri" => "http://www.haiku-os.org/"
+    "uri" => ""
   ),
-  "beos" => array(
-    "icon" => "be",
-    "title" => "BeOS",
+  "bada" => array(
+    "icon" => "bada",
+    "title" => "Bada",
     "rule" => array(
-      "beos[ a-z]*([0-9.]{1,10})" => "\\1",
-      "beos" => ""
-    )
+      "Bada[ /]([0-9]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.bada.com/"
+  ),
+  "blackberry" => array(
+    "icon" => "blackberry",
+    "title" => "BlackBerry OS",
+    "rule" => array(
+      "BlackBerry" => ""
+    ),
+    "uri" => "http://www.blackberry.com/"
   ),
   "bluecoat" => array(
     "icon" => "bluecoat",
     "title" => "Bluecoat DRTR",
     "rule" => array(
       "bluecoat drtr" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "centos" => array(
     "icon" => "centos",
@@ -92,14 +113,16 @@ $os = array(
     "title" => "Cerberian DRTR",
     "rule" => array(
       "Cerberian Drtrs Version[ /\-]([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "c64" => array(
     "icon" => "c64",
     "title" => "Commodore 64",
     "rule" => array(
       "Commodore[ ]?64" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "darwin" => array(
     "icon" => "darwin",
@@ -107,14 +130,16 @@ $os = array(
     "rule" => array(
       "Darwin[ ]?([0-9.]{1,10})" => "\\1",
       "Darwin" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "digital" => array(
     "icon" => "digital",
     "title" => "Digital",
     "rule" => array(
       "OSF[0-9][ ]?V(4[0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "dreamcast" => array(
     "icon" => "dreamcast",
@@ -132,21 +157,25 @@ $os = array(
     "title" => "Embedix",
     "rule" => array(
      "Embedix" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "fedora" => array(
     "icon" => "fedora",
-    "title" => "fedora",
+    "title" => "Fedora Linux",
     "rule" => array(
+     "Fedora/[0-9.-]+fc([0-9]+)" => "\\1",
      "fedora" => ""
-    )
+    ),
+    "uri" => "http://fedoraproject.org/"
   ),
   "fenix" => array(
     "icon" => "question",
     "title" => "Fenix",
     "rule" => array(
      "Fenix" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "freebsd" => array(
     "icon" => "freebsd",
@@ -154,7 +183,8 @@ $os = array(
     "rule" => array(
      "free[ \-]?bsd[ /]([a-z0-9._]{1,10})" => "\\1",
      "free[ \-]?bsd" => ""
-    )
+    ),
+    "uri" => "http://www.freebsd.org/"
   ),
   "gentoo" => array(
     "icon" => "gentoo",
@@ -164,29 +194,38 @@ $os = array(
     ),
     "uri" => "http://www.gentoo.org/"
   ),
+  "haiku" => array(
+    "icon" => "haiku",
+    "title" => "Haiku",
+    "rule" => array(
+      "Haiku BePC" => ""
+    ),
+    "uri" => "http://www.haiku-os.org/"
+  ),
   "hiptop" => array(
     "icon" => "question",
     "title" => "hiptop",
     "rule" => array(
       "Danger hiptop ([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "hpux" => array(
     "icon" => "hp",
     "title" => "HPUX",
     "rule" => array(
       "hp[ \-]?ux[ /]([a-z0-9._]{1,10})" => "\\1"
-    )
-  ),
-  "iphone" => array(
-    "icon" => "iphone",
-    "title" => "iPhone OS",
-    "rule" => array(
-      "iPhone[ /]OS[ /]([0-9]{1,10})_([0-9]{1,10})" => "\\1.\\2",
-      "iPad; U; CPU[ /]OS[ /]([0-9]{1,10})_([0-9]{1,10})" => "\\1.\\2",
-      "iPhone" => ""
     ),
-    "uri" => "http://www.apple.com/iphone/"
+    "uri" => ""
+  ),
+  "ios" => array(
+    "icon" => "ios",
+    "title" => "iOS",
+    "rule" => array(
+      "i(Phone|Pod|Pad).*OS[ /]([0-9]{1,10})_([0-9]{1,10})" => "\\2.\\3",
+      "i(Phone|Pod|Pad)" => ""
+    ),
+    "uri" => "http://www.apple.com/ios/"
   ),
   "irix" => array(
     "icon" => "irix",
@@ -194,7 +233,8 @@ $os = array(
     "rule" => array(
       "irix[0-9]*[ /]([0-9.]{1,10})" => "\\1",
       "irix" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "macosx" => array(
     "icon" => "macosx",
@@ -212,23 +252,26 @@ $os = array(
     "title" => "MacOS PPC",
     "rule" => array(
       "Mac(_Power|intosh.+P)PC" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "mandriva" => array(
     "icon" => "mandriva",
     "title" => "Mandriva",
     "rule" => array(
       "Mandriva[ /]([0-9.]{1,10})" => "\\1",
-      "Linux[ /\-]([0-9.-]{1,10}).mdk" => ""
+      "Linux[ /\-]([0-9.-]{1,10}).mdk" => "",
+      "Linux[ /\-]([0-9.-]{1,10}).mdv" => "\\1"
     ),
-    "uri" => "http://www2.mandriva.com/"
+    "uri" => "http://www.mandriva.com/"
   ),
   "mint" => array(
     "icon" => "mint",
     "title" => "Linux Mint",
     "rule" => array(
       "Linux Mint[/ ]?([0-9.]{1,10})?" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "morphos" => array(
     "icon" => "morphos",
@@ -236,7 +279,8 @@ $os = array(
     "rule" => array(
       "MorphOS[ /]([0-9.]{1,10})" => "\\1",
       "MorphOS" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "netbsd" => array(
     "icon" => "netbsd",
@@ -244,14 +288,16 @@ $os = array(
     "rule" => array(
       "net[ \-]?bsd[ /]([a-z0-9._]{1,10})" => "\\1",
       "net[ \-]?bsd" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "nintendods" => array(
     "icon" => "ds",
     "title" => "Nintento DS",
     "rule" => array(
       "Nintendo DS v([0-9.]{1,10})" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "openbsd" => array(
     "icon" => "openbsd",
@@ -259,7 +305,8 @@ $os = array(
     "rule" => array(
       "open[ \-]?bsd[ /]([a-z0-9._]{1,10})" => "\\1",
       "open[ \-]?bsd" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "openvms" => array(
     "icon" => "openvms",
@@ -267,7 +314,8 @@ $os = array(
     "rule" => array(
       "Open[ \-]?VMS[ /]([a-z0-9._]{1,10})" => "\\1",
       "Open[ \-]?VMS" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "palm" => array(
     "icon" => "palm",
@@ -275,7 +323,8 @@ $os = array(
     "rule" => array(
       "Palm[ \-]?(Source|OS)[ /]?([0-9.]{1,10})" => "\\2",
       "Palm[ \-]?(Source|OS)" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "pclinux" => array(
     "icon" => "pclinux",
@@ -289,16 +338,19 @@ $os = array(
     "icon" => "qnx",
     "title" => "QNX Photon",
     "rule" => array(
-      "photon" => ""
-    )
+      "photon" => "",
+      "QNX" => ""
+    ),
+    "uri" => "http://www.qnx.com/"
   ),
   "psp" => array(
     "icon" => "playstation",
-    "title" => "PSP",
+    "title" => "PlayStation Portable",
     "rule" => array(
       "PlayStation Portable.* ([0-9._]{1,10})" => "\\1",
       "PlayStation Portable" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "playstation" => array(
     "icon" => "playstation",
@@ -306,7 +358,17 @@ $os = array(
     "rule" => array(
       "PlayStation" => "",
       "PS2" => ""
-    )
+    ),
+    "uri" => ""
+  ),
+  "pld" => array(
+    "icon" => "pld",
+    "title" => "PLD Linux",
+    "rule" => array(
+      "PLD[ /]?([0-9.]{1,10})" => "\\1",
+      "PLD" => ""
+    ),
+    "uri" => "http://www.pld-linux.org/"
   ),
   "reactos" => array(
     "icon" => "reactos",
@@ -314,7 +376,17 @@ $os = array(
     "rule" => array(
       "ReactOS[ /]?([0-9.]{1,10})" => "\\1",
       "ReactOS" => ""
-    )
+    ),
+    "uri" => "http://www.reactos.org/"
+  ),
+  "redhat" => array(
+    "icon" => "redhat",
+    "title" => "RedHat",
+    "rule" => array(
+      "Red Hat[ /]?([0-9.]{1,10})" => "\\1",
+      "RedHat" => ""
+    ),
+    "uri" => "http://www.redhat.com/"
   ),
   "risc" => array(
     "icon" => "risc",
@@ -322,15 +394,24 @@ $os = array(
     "rule" => array(
       "risc[ \-]?os[ /]?([0-9.]{1,10})" => "\\1",
       "risc[ \-]?os" => ""
-    )
+    ),
+    "uri" => ""
+  ),
+  "slitaz" => array(
+    "icon" => "slitaz",
+    "title" => "SliTaz Linux",
+    "rule" => array(
+      "SliTaz" => ""
+    ),
+    "uri" => "http://www.slitaz.org/"
   ),
   "suse" => array(
     "icon" => "suse",
-    "title" => "SuSE",
+    "title" => "SuSE Linux",
     "rule" => array(
       "suse" => ""
     ),
-    "uri" => ""
+    "uri" => "http://www.novell.com/linux/"
   ),
   "sun" => array(
     "icon" => "sun",
@@ -347,8 +428,10 @@ $os = array(
     "title" => "Symbian OS",
     "rule"  => array(
       "symbian[ \-]?os[ /]?([0-9.]{1,10})" => "\\1",
+      "symbOS" => "",
       "symbian" => ""
-    )
+    ),
+    "uri" => ""
   ),
  "trisquel" => array(
     "icon" => "trisquel",
@@ -363,12 +446,14 @@ $os = array(
     "title" => "Tru64",
     "rule" => array(
       "OSF[0-9][ ]?V(5[0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "ubuntu" => array(
     "icon" => "ubuntu",
     "title" => "Ubuntu Linux",
     "rule" => array(
+      "ubuntu/([0-9.]+)" => "\\1",
       "ubuntu" => ""
     ),
     "uri" => "http://www.ubuntu.com/"
@@ -379,7 +464,8 @@ $os = array(
     "rule" => array(
       "unixware[ /]?([0-9.]{1,10})" => "\\1",
       "unixware" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "wii" => array(
     "icon" => "wii",
@@ -390,16 +476,6 @@ $os = array(
     ),
     "uri" => "http://www.wii.com/"
   ),
-  /*
-  "windowsmc" => array(
-    "icon" => "windowsxp",
-    "title" => "Windows Media Center",
-    "rule" => array(
-      "Media Center PC[ /]([0-9.]{1,10})" => "\\1"
-    ),
-    "uri" => "http://www.microsoft.com/windowsxp/mediacenter/"
-  ),
-  */
   "windowsxp64" => array(
     "icon" => "windowsxp",
     "title" => "Windows XP (64-bit)",
@@ -442,7 +518,7 @@ $os = array(
     "uri" => "http://www.microsoft.com/windows95/"
   ),
   "windowsce" => array(
-    "icon" => "windows",
+    "icon" => "windowsce",
     "title" => "Windows CE",
     "rule" => array(
       "wi(n|ndows)[ \-]?ce" => "",
@@ -452,7 +528,7 @@ $os = array(
     "uri" => "http://www.microsoft.com/windows/embedded/"
   ),
   "windowsme" => array(
-    "icon" => "windows",
+    "icon" => "windowsme",
     "title" => "Windows ME",
     "rule" => array(
       "win 9x 4\.90" => "",
@@ -471,13 +547,23 @@ $os = array(
     "uri" => "http://www.microsoft.com/windowsvista/"
   ),
   "windows7" => array(
-    "icon" => "windowsvista",
+    "icon" => "windows7",
     "title" => "Windows 7",
     "rule" => array(
       "wi(n|ndows)[ \-]?nt[ /]?6\.1" => ""
     ),
     "uri" => "http://www.microsoft.com/windows/windows-7/"
   ),
+  /*
+  "windowsmc" => array(
+    "icon" => "windowsxp",
+    "title" => "Windows Media Center",
+    "rule" => array(
+      "Media Center PC[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.microsoft.com/windowsxp/mediacenter/"
+  ),
+  */
   "windowsxp" => array(
     "icon" => "windowsxp",
     "title" => "Windows XP",
@@ -495,7 +581,7 @@ $os = array(
     ),
     "uri" => "http://www.zenwalk.org/"
   ),
-// The following ones are catch ups, they got to stay here.
+  // Catch up for the originals, they got to stay in that order.
   "debian" => array(
     "icon" => "debian",
     "title" => "Debian Linux",
@@ -504,12 +590,22 @@ $os = array(
     ),
     "uri" => "http://www.debian.org/"
   ),
+  "beos" => array(
+    "icon" => "be",
+    "title" => "BeOS",
+    "rule" => array(
+      "beos[ a-z]*([0-9.]{1,10})" => "\\1",
+      "beos" => ""
+    ),
+    "uri" => ""
+  ),
   "bsd" => array(
     "icon" => "bsd",
     "title" => "BSD",
     "rule" => array(
       "bsd" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "linux" => array(
     "icon" => "linux",
@@ -526,7 +622,8 @@ $os = array(
     "rule" => array(
       "warp[ /]?([0-9.]{1,10})" => "\\1",
       "os[ /]?2" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "mac" => array(
     "icon" => "mac",
@@ -558,9 +655,9 @@ $os = array(
     "icon" => "windows",
     "title" => "Windows",
     "rule" => array(
-      "wi(n|n32|n64|ndows)" => "",
-      "Microsoft" => "" //FIXME: might be a bit insane ...
-    )
+      "wi(n|n32|n64|ndows)" => ""
+    ),
+    "uri" => ""
   ),
   "java" => array(
     "icon" => "java",
@@ -570,27 +667,25 @@ $os = array(
     ),
     "uri" => "http://java.sun.com/"
   ),
-// catch up mobiles
   "mobile" => array(
     "icon" => "mobile",
     "title" => "Mobile",
     "rule" => array(
-      "LG[ /]([0-9A-Z]{1,10})" => "", // LG mobiles
-      "MOT[ /\-]([0-9A-Z]{1,10})" => "", // Motorola mobiles
-      "SonyEricsson([0-9A-Z]{1,10})" => "", // Sony Ericsson mobiles
-      "SIE([0-9A-Z]{1,10})" => "", // Siemens BenQ mobiles
-      "Nokia([0-9A-Z]{1,10})" => "", // Nokia mobiles
-      "KDDI-([0-9A-Z]{1,10})" => "", // Samsung mobiles
-      "Blackberry([0-9A-Z]{1,10})" => "", // Samsung mobiles
+      "LG[ /]([0-9A-Z]{1,10})" => "",
+      "MOT[ /\-]([0-9A-Z]{1,10})" => "",
+      "SonyEricsson([0-9A-Z]{1,10})" => "",
+      "SIE([0-9A-Z]{1,10})" => "",
+      "Nokia([0-9A-Z]{1,10})" => "",
+      "KDDI-([0-9A-Z]{1,10})" => "",
       "^[A-Z]([0-9]{1,3}) " => "",
       "Configuration[ /]CLDC([0-9.]{1,10})" => "\\1",
       "MIDP" => "",
       "UP\.(Browser|Link)" => "",
-      "NF([0-9A-Z]{1,10})" => "", // TravelPilot
       "ibisBrowser" => ""
-   )
+   ),
+   "uri" => ""
   ),
-// things we don't know by now
+  // Things we don't know by now
   "other" => array(
     "icon" => "question",
     "title" => "other",
@@ -599,3 +694,4 @@ $os = array(
     )
   )
 );
+?>
