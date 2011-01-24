@@ -9,6 +9,8 @@ class Bouncer_Rules_Browser
 
     public static $webkit_browsers = array('safari', 'chrome', 'chromium', 'webkit', 'midori', 'maxthon');
 
+    public static $rss_browsers = array('netnewswire', 'reeder', 'liferea', 'vienna');
+
     public static function load()
     {
         Bouncer::addRule('browser_identity', array('Bouncer_Rules_Browser', 'browser_identity'));

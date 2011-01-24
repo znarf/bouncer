@@ -98,7 +98,7 @@ class Bouncer_Stats
          }
 
          $cssRules = array();
-         $cssRules['unknown'] = 'background-image:url(' . self::$_base_static_url . '/images/os_question.png)';
+         $cssRules['unknown'] = 'background-image:url(' . self::$_base_static_url . '/images/os/question.png)';
 
          $count = 0;
 
@@ -183,10 +183,13 @@ class Bouncer_Stats
              $proxy = ($bluecoat || $squid || $proxy1) ? 1 : 0;
 
              $xmoz = isset($last['request']['headers']['X-Moz']) ? $last['request']['headers']['X-Moz'] : 'none';
+             $xpurpose = isset($last['request']['headers']['X-Purpose']) ? $last['request']['headers']['X-Purpose'] : 'none';
              $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 'none';
              $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
              $pc = isset($last['request']['headers']['Proxy-Connection']) ? $last['request']['headers']['Proxy-Connection'] : 'none';
              $pa = isset($last['request']['headers']['Proxy-Authentication']) ? $last['request']['headers']['Proxy-Authentication'] : 'none';
+
+             $prefetch = (isset($xmoz) && $xmoz == 'prefetch') || (isset($xpurpose) && $xpurpose == 'prefetch');
 
              $accept = isset($identity['headers']['Accept']) ? $identity['headers']['Accept'] : 'none';
              $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : 'none';
@@ -199,6 +202,9 @@ class Bouncer_Stats
 
              $ie = $name == 'explorer' || in_array($name, Bouncer_Rules_Browser::$explorer_browsers) ? 1 : 0;
              $gecko = $name == 'firefox' || in_array($name, Bouncer_Rules_Browser::$gecko_browsers) ? 1 : 0;
+             $webkit = in_array($name, Bouncer_Rules_Browser::$webkit_browsers) ? 1 : 0;
+
+             $rss = in_array($name, Bouncer_Rules_Browser::$rss_browsers) ? 1 : 0;
 
              $js = isset($identity['features']['javascript']) && $identity['features']['javascript'] != 0 ? (int)($identity['features']['javascript'] > 0) : '';
              $img = isset($identity['features']['image']) && $identity['features']['image'] != 0 ? (int)($identity['features']['image'] > 0) : '';
@@ -435,6 +441,10 @@ class Bouncer_Stats
 
             echo '<tr>', '<td>', 'Network Org Name', '</td>', '<td>';
             echo $network['org-name'];
+            echo '</td>', '</tr>';
+
+            echo '<tr>', '<td>', 'Network Net Name', '</td>', '<td>';
+            echo $network['net-name'];
             echo '</td>', '</tr>';
 
         }
