@@ -211,10 +211,14 @@ class Bouncer
     protected static function getHeaders($keys = array())
     {
         if (!is_callable('getallheaders')) {
+            // from http://www.php.net/manual/en/function.getallheaders.php
             $headers = array();
-            foreach ($_SERVER as $h => $v)
-                if (ereg('HTTP_(.+)', $h, $hp))
-                    $headers[str_replace("_", "-", uc_all($hp[1]))] = $v;
+            foreach ($_SERVER as $key => $value) {
+                if (substr($key,0,5)=="HTTP_") {
+                    $key = str_replace(" ","-",ucwords(strtolower(str_replace("_"," ",substr($key,5)))));
+                    $headers[$key] = $value;
+                }
+            }
         } else {
             $headers = getallheaders();
         }
