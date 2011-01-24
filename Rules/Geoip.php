@@ -23,11 +23,21 @@ class Bouncer_Rules_Geoip extends Bouncer
 
     public static function country_code_by_addr($addr)
     {
-        if (empty(self::$_gi)) {
+        // first run without geoip extension
+        if (empty(self::$_gi) && !function_exists('geoip_country_code_by_addr')) {
             require_once dirname(__FILE__) . "/../lib/geoip.inc";
             self::$_gi = geoip_open(dirname(__FILE__) . "/../lib/geoip.dat", GEOIP_STANDARD);
         }
-        $code = geoip_country_code_by_addr(self::$_gi, $addr);
+
+        // without geoip extension
+        if (isset(self::$_gi) && function_exists('geoip_country_code_by_addr')) {
+            $code = geoip_country_code_by_addr(self::$_gi, $addr);
+
+        // with geoip extension
+        } elseif (function_exists('geoip_country_code_by_addr')) {
+            $code = geoip_country_code_by_addr($addr);
+        }
+
         if (empty($code) || $code == 'AP' || $code == 'A1' || $code == 'A2') {
             $code = 'numeric';
         }
