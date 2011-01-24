@@ -595,13 +595,17 @@ class Bouncer
                     $options = array('namespace' => self::$_prefix);
                     if (!empty(self::$_servers)) {
                         $options['servers'] = array();
-                        foreach (self::$_servers as $server) {
-                            if (strpos($server, ':')) {
-                                list($server, $port) = explode(':', $server);
-                                $options['servers'][] = array('host' => $server, 'port' => $port);
-                            } else {
-                                $options['servers'][] = array('host' => $server);
+                        foreach (self::$_servers as $host) {
+                            if (strpos($host, '@')) {
+                                list($password, $host) = explode('@', $host);
+                                if (strpos($password, ':')) {
+                                    list($username, $password) = explode(':', $password);
+                                }
                             }
+                            if (strpos($host, ':')) {
+                                list($host, $port) = explode(':', $host);
+                            }
+                            $options['servers'][] = compact('host', 'port', 'username', 'password');
                         }
                     }
                     self::$_backendInstance = new Bouncer_Backend_Redis($options);
