@@ -13,6 +13,7 @@ $known_fingerprints = array(
 '43d28f2be01110e87ffe3cb9d62d1f44',  // Mj12
 '51a89973db58d37e29a07b0823157318',  // Mj12
 '1ba3e09e05c3a64578777e53d4f20a3c',  // DotBot
+'a86f74048055ff8ea8a8570615c478f4',  // Sogou
 // Facebook
 '22a5eee46083360de8bc4beca9c8fe2d',  // http://www.facebook.com/externalhit_uatext.php
 'ddb1e86b32cf145e05a6e0a52e92f174',  // FacebookFeedParser
