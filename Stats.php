@@ -17,6 +17,8 @@ class Bouncer_Stats
 
     protected static $_detailed_host = false;
 
+    protected static $_max_items = 100;
+
     protected static $_base_static_url = 'http://h6e.net/bouncer';
 
     public static function stats(array $options = array())
@@ -58,6 +60,9 @@ class Bouncer_Stats
         }
         if (isset($options['detailed_host'])) {
             self::$_detailed_host = $options['detailed_host'];
+        }
+        if (isset($options['max_items'])) {
+            self::$_max_items = $options['max_items'];
         }
         if (isset($options['base_static_url'])) {
             self::$_base_static_url = $options['base_static_url'];
@@ -350,7 +355,7 @@ class Bouncer_Stats
              echo '</tr>' . "\n";
 
              $count ++;
-             if ($count >= 100) {
+             if ($count >= self::$_max_items) {
                  break;
              }
 
