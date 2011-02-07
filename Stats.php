@@ -325,7 +325,7 @@ class Bouncer_Stats
                           echo '<td>' . $identity['features']['image'] . '</td>';
                           echo '<td>' . $identity['features']['iframe'] . '</td>';
                           echo '<td>' . $identity['features']['javascript'] . '</td>';
-                          echo '<td>' . $identity['features']['link'] . '</td>';
+                          // echo '<td>' . $identity['features']['link'] . '</td>';
                       } else {
                           echo '<td colspan="4">', '&nbsp;', '</td>';
                       }

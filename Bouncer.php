@@ -571,13 +571,13 @@ class Bouncer
                 $identity['features']['javascript'] = $identity['features']['javascript'] - 1;
                 $store = true;
             }
-            if ($identity['features']['link'] < 5 && $identity['features']['link'] > -5) {
-                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=link&t=' . mktime();
-                $style = 'display:block;position:absolute;border:0;width:1px;height:1px;left:3px;top:0;background:black;';
-                echo '<a rel="nofollow" style="' . $style . '" href="' . $url  . '"><span style="display:none;">ok cowboy</span></a>';
-                $identity['features']['link'] = $identity['features']['link'] - 1;
-                $store = true;
-            }
+            // if ($identity['features']['link'] < 5 && $identity['features']['link'] > -5) {
+            //     $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=link&t=' . mktime();
+            //     $style = 'display:block;position:absolute;border:0;width:1px;height:1px;left:3px;top:0;background:black;';
+            //     echo '<a rel="nofollow" style="' . $style . '" href="' . $url  . '"><span style="display:none;">ok cowboy</span></a>';
+            //     $identity['features']['link'] = $identity['features']['link'] - 1;
+            //     $store = true;
+            // }
             if ($store) {
                 self::setIdentity($identity['id'], $identity);
             }
