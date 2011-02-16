@@ -327,7 +327,7 @@ class Bouncer_Stats
                           echo '<td>' . $identity['features']['javascript'] . '</td>';
                           // echo '<td>' . $identity['features']['link'] . '</td>';
                       } else {
-                          echo '<td colspan="4">', '&nbsp;', '</td>';
+                          echo '<td colspan="3">', '&nbsp;', '</td>';
                       }
                  } else if ($key == 'host') {
                      echo '<td class="ic ' . $extension . '">', $host, '</td>';
