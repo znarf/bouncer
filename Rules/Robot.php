@@ -136,7 +136,10 @@ class Bouncer_Rules_Robot
                 // $score += $identity['fingerprint'] != '6fdbdebe4a4e159db61b246974a63efb' ? -5 : 2.5;
                 break;
             case 'radian6':
-                $score += strpos($addr, '142.166.') === false && strpos($addr, '142.166.') === false ? -5 : 2.5;
+                $score += strpos($addr, '142.166.') === false &&
+                          strpos($addr, '207.34.25') === false &&
+                          strpos($host, 'amazonaws.com') === false &&
+                          strpos($host, 'softlayer.com') === false ? -5 : 2.5;
                 break;
             case 'socialmention':
                 $score += $identity['fingerprint'] != 'a9b11c963519135d4b07c6b6ad36c0de' ? -5 : 2.5;
@@ -242,6 +245,9 @@ class Bouncer_Rules_Robot
                 break;
             case 'sitesell':
                 $score += strpos($host, 'sitebuildit.com') === false ? -5 : 2.5;
+                break;
+            case 'yottaa':
+                $score += strpos($host, 'amazonaws.com') === false && strpos($host, 'linode.com') === false ? -5 : 2.5;
                 break;
         }
 

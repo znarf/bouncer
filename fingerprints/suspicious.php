@@ -23,6 +23,8 @@ $suspicious_fingerprints = array(
 '04ddfa686115af0c3306828f9572591b', // Accept:text/html
 '8d0c98829565508d1da3fdaf38dedb2b', // Mozilla/5.0 - Accept-Encoding:gzip,deflate
 'ebcb99603c2fc2706bb8d2098e4ceba1', // Mozilla/5.0 - Accept:*/* - Accept-Encoding:deflate, gzip
+'ab22831f067a00592826609ce4453410', // Mozilla/4.0 - Accept:*/* - Accept-Encoding:gzip,deflate - Accept-Language:zh-cn, zh - Accept-Charset:GB2312,utf-8;q=0.7,*;q=0.7
+'982301312ae692bbf1eab93007cd823f', // Mozilla/4.0 (compatible;) - Accept:*/*, */* - Accept-Language:nl,en,*
 // Programming languages defaults
 'd7c338fc5292ac8b15bacd0808ee1245', // Ruby
 'e92acd969162f34aaac2099466e58464', // Ruby/1.8.7
