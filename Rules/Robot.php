@@ -90,7 +90,8 @@ class Bouncer_Rules_Robot
                 $score += empty($headers['From']) ? -5 : 1;
                 break;
             case 'daum':
-                $score += $identity['fingerprint'] != 'c566ee1e58e2bfc09389b1d4f5790574' ? -5 : 1;
+                $score += $identity['fingerprint'] != 'c566ee1e58e2bfc09389b1d4f5790574' &&
+                          $identity['fingerprint'] != '536cb87617e5a9ffdfae53365f116d89' ? -5 : 2.5;
                 $score += $identity['extension'] != 'kr' ? -5 : 1;
                 break;
             case 'soso':

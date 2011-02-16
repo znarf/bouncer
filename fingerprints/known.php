@@ -14,6 +14,8 @@ $known_fingerprints = array(
 '51a89973db58d37e29a07b0823157318',  // Mj12
 '1ba3e09e05c3a64578777e53d4f20a3c',  // DotBot
 'a86f74048055ff8ea8a8570615c478f4',  // Sogou
+'d970c6ffb8d5547d9f6052207200b0dd',  // ScoutJet
+'62f42b9e966080ce33cdaef257458dd7',  // Spinn3r
 // Facebook
 '22a5eee46083360de8bc4beca9c8fe2d',  // http://www.facebook.com/externalhit_uatext.php
 'ddb1e86b32cf145e05a6e0a52e92f174',  // FacebookFeedParser
@@ -145,6 +147,9 @@ $known_fingerprints = array(
 '66c3e3add8b34e15cc1d48aea1b7919b',  // US - AppleSyndication/56.1
 '6687a5f945ec7dcd34bb8cf5ec050baa',  // PT - AppleSyndication/56.1
 'b214c600f9febae38b24a81608f1428a',  // ES - AppleSyndication/56.1
+// Reeder
+'2794356c8fa75873666f9eb796a252b7',  // Reeder/1.4 CFNetwork/485.12.7 Darwin/10.4.0
+'c731f9328e05afdd157996f032288166',  // Reeder/2.3 CFNetwork/485.12.7 Darwin/10.4.0
 );
 return $known_fingerprints;
 ?>
