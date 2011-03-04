@@ -17,6 +17,8 @@ class Bouncer
     protected static $_backend = 'memcache';
     protected static $_backendInstance = null;
 
+    protected static $_challenged = false;
+
     public static $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
 
     public static $identity_headers = array('User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From');
@@ -526,6 +528,10 @@ class Bouncer
             exit;
         }
 
+        if (self::$_challenged == true) {
+            return;
+        }
+
         $method = strtoupper($_SERVER['REQUEST_METHOD']);
         if ($method == 'HEAD' || $method == 'OPTIONS') {
             return;
@@ -543,11 +549,11 @@ class Bouncer
         if ($identity['type'] == self::BROWSER) {
             $store = false;
             if (empty($identity['features'])) {
-                $identity['features'] = array('iframe' => 0, 'javascript' => 0, 'image' => 0, 'link' => 0);
+                $identity['features'] = array('iframe' => 0, 'javascript' => 0, 'image' => 0 /*, 'link' => 0 */);
             }
-            if (empty($identity['features']['link'])) {
-                $identity['features']['link'] = 0;
-            }
+            // if (empty($identity['features']['link'])) {
+            //     $identity['features']['link'] = 0;
+            // }
             if ($identity['features']['image'] < 1 && $identity['features']['image'] > -5) {
                 $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=image&t=' . mktime();
                 $style = 'position:absolute;border:0;width:1px;height:1px;left:0;top:0;background:red;';
@@ -581,6 +587,7 @@ class Bouncer
             if ($store) {
                 self::setIdentity($identity['id'], $identity);
             }
+            self::$_challenged = true;
         }
     }
 
