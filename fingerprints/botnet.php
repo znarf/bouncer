@@ -109,6 +109,9 @@ $botnet_fingerprints = array(
 'b274e4316fce849fcfb84995cb0cab41', // 1
 '2b51f701127cecf2d054c1702edca5c2', // 1
 '3ec82568b5e6ae54689dc926d3b5d15a', // 1
+'2648eb70ba57fd8cf1f4f09aafa547a3', // 1
+'6a06b6f98c911996dba60fa613a0eea5', // 1
+'2f072c3095762a20039e591b914d35aa', // 1
 // From hosts:
 // 46.118.133.235  - UA
 // 74.118.193.22   - US
@@ -499,6 +502,7 @@ $botnet_fingerprints = array(
 // New New Manual entries
 '01a599a87904a8ffe77c88b10d51d3d9', // Mozilla/5.0 (Windows; U; Windows NT 5.0; ca; rv:1.8.0.8) Gecko/20061025 Firefox/1.5.0.8
 'bb50f4841cadd5c82daa3da46d403cc3', // Mozilla/4.0 (compatible; MSIE 4.02; Windows CE; Smartphone; SDA/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)
+'b6b642fbdc1eb70c2dbbc7afdfe32174', // Mozilla/5.0 (X11; Linux x86_64; rv:2.0b7) Gecko/20100101 Firefox/4.0b7
 );
 return $botnet_fingerprints;
 ?>

@@ -108,6 +108,11 @@ $suspicious_fingerprints = array(
 '215918d9c55686ac9e03690fd29b41d1',    // BM  - Windows XP    - Explorer 6.0
 '8e697fdd503a58332e6c2d83fb68dbb4',    // BM  - Windows XP    - Explorer 6.0
 'e9a534838bc9cfe4e62d9138e809fe34',    // LD  - Windows XP    - Explorer 6.0
+'db53522067b6eb10190cef2c5423e506',    // BM  - Windows NT    - Explorer 5.5
+'f4729cd0668887add1040b489565ffea',    // BM  - Windows XP    - Explorer 7.0
+'a0ce16be2e2cec3a3d8a8d7bd75f997d',    // BM  - Windows NT    - Explorer 7.0
+'29bbd4fb83ba06d25a22ba81951b11de',    // BM  - Windows XP    - Explorer 6.0
+'9af86456abb3ec6e781c614083fe90a0',    // BM  - No Agent
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
