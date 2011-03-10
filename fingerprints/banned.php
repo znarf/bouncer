@@ -18,7 +18,6 @@ $banned_fingerprints = array(
 '863791545df8ec86ddda02d961fb332c', //  US - Windows XP    - Explorer 6.0
 '476f7382c6de03533d1d84302a3c16d6', //  PL - Windows 7     - Explorer 7.0
 '36b92335e826e9c7a6e615fa34073a86', //  US - Windows XP    - Firefox 2.0.0.6
-'d87616417f6659d290c46a9e246d54f8', //  *  - Windows XP    - Firefox 3.6
 // BM Spam
 '2d427eaca8980ae196a9c003780057c8', //  *  - Windows 2000  - Explorer 6.0
 // Bots
@@ -43,7 +42,13 @@ $banned_fingerprints = array(
 '5d5185a11ffe776821edd761a57f87ad', //  * - SunOS 5.7 - Netscape 4.76
 '84b22310b79b5acf19637583f88e56a5', //  * - kmccrew Bot Search
 '56cb5aa3bc50560382d31c887cde3696', //  * - MaMa CyBer
+// Suspicious activity
 '1f0e4f862cf58552f6baac73dd4ba8c5', //  * - Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.8pre) Gecko/20070928 Firefox/2.0.0.7 Navigator/9.0RC1
+'24de86d2b5724dc78f54e0b32090ea36', //  * - Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.9.0.16) Gecko/2009122206 Firefox/3.0.16 Flock/2.5.6
+'15ce7cf8c7cce857ea7cd660986f1f42', //  * - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12
+'b8ddf76402a2a11761ce8309f18cf510', //  * - Mozilla/5.0 (Windows; U; Windows NT 5.1; pl-PL; rv:1.8.1.24pre) Gecko/20100228 K-Meleon/1.5.4
+'d87616417f6659d290c46a9e246d54f8', //  * - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6
+'1b7abe56a5ceabaea486b0ed609eb17f', //  * - Mozilla/4.0 (compatible; MSIE 6.0; America Online Browser 1.1; rev1.1; Windows NT 5.1;)
 // Security scanning
 '3b8cad698673d7c3815ebce2c26477d6', //  Made by ZmEu @ WhiteHat Team - www.whitehat.ro
 // Fake Google
