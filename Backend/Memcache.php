@@ -99,6 +99,20 @@ class Bouncer_Backend_Memcache
         return $agents;
     }
 
+    public static function getAgentsIndexFingerprint($fingerprint, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
+        $agentsIndex = self::get($indexKey);
+        return $agentsIndex;
+    }
+
+    public static function getAgentsIndexHost($haddr, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
+        $agentsIndex = self::get($indexKey);
+        return $agentsIndex;
+    }
+
     public static function countAgentsFingerprint($fingerprint, $namespace = '')
     {
         return 0;
