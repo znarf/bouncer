@@ -20,6 +20,8 @@ $browsers_fingerprints = array(
 '737cd429654a52e5fe35a3607abb1b35', // */* - en-US - Windows XP - Chrome 9.0.597.107
 '9e2e60f5f1d9266e5c47be30b9115386', // en-US - Windows XP - Chrome 10.0.648.127
 'e451c872e1f53d16fd12fffaaac93877', // */* - en-US - Windows XP - Chrome 10.0.648.127
+'c09aa9a059ca15c017fcc63494b37833', // en-US - Windows XP - Chrome 10.0.648.133
+'364e7513b032e4caf752ce1fdddc2082', // */* - en-US - Windows XP - Chrome 10.0.648.133
 '0358f0b350848391a2d748401c74d201', // en-US - Windows 2003 - Chrome 8.0.552.215
 '92a0f6c8346506c810b1617a605110d2', // */* - en-US - Windows 2003 - Chrome 8.0.552.215
 'ade20cabc49f2d4b7f9ec4797818359c', // en-US - Windows 2003 - Chrome 8.0.552.224
@@ -40,6 +42,8 @@ $browsers_fingerprints = array(
 '6874a8f9636633103771384a1e548029', // */* - en-US - Windows 2003 - Chrome 9.0.597.107
 '740ae3aecc357661bd9d64c85dedc163', // en-US - Windows 2003 - Chrome 10.0.648.127
 'c81cb4d0f5141f093e0b26ed6b8dd7eb', // */* - en-US - Windows 2003 - Chrome 10.0.648.127
+'c4f10c331b64c5246303b23816e0a8e5', // en-US - Windows 2003 - Chrome 10.0.648.133
+'dc17367f171fe3cad82b1b53b0b5b3fe', // */* - en-US - Windows 2003 - Chrome 10.0.648.133
 '208f90f0b02a8d02d36ced62560ab653', // en-US - Windows Vista - Chrome 8.0.552.215
 '5f7ce38817ef98f28228f37dd4b990e3', // */* - en-US - Windows Vista - Chrome 8.0.552.215
 '5bc82f427db738f0516baf8d0e28054a', // en-US - Windows Vista - Chrome 8.0.552.224
@@ -60,6 +64,8 @@ $browsers_fingerprints = array(
 '3590c8d71daa214cbdc264720422f775', // */* - en-US - Windows Vista - Chrome 9.0.597.107
 '676f4578493b46e12156a2ad2cc88683', // en-US - Windows Vista - Chrome 10.0.648.127
 '6784166193268659c7c20626e3cc544f', // */* - en-US - Windows Vista - Chrome 10.0.648.127
+'50fb1ab1a634c69de3aaaf72f5f64f4f', // en-US - Windows Vista - Chrome 10.0.648.133
+'c4c47f0f583d06bed061fe9ae125e982', // */* - en-US - Windows Vista - Chrome 10.0.648.133
 'fdae6ab46f72f24b0580665c73f32603', // en-US - Windows 7 - Chrome 8.0.552.215
 '8fa536e8a0eb9113bc0776a2cfc631e1', // */* - en-US - Windows 7 - Chrome 8.0.552.215
 '7d5d58a4ef9b98ca120140f5ce1368ee', // en-US - Windows 7 - Chrome 8.0.552.224
@@ -80,6 +86,8 @@ $browsers_fingerprints = array(
 '9d72e2aa506afafea5f4b009ab78e759', // */* - en-US - Windows 7 - Chrome 9.0.597.107
 '7bae4835f351be58e4b8abcd96612f43', // en-US - Windows 7 - Chrome 10.0.648.127
 'c0f78afafcdd4fbdabecba65b5fdb619', // */* - en-US - Windows 7 - Chrome 10.0.648.127
+'47666f4cd85915b036d95a871f992813', // en-US - Windows 7 - Chrome 10.0.648.133
+'05b089c45bb3d7c187d7316332b9dfe1', // */* - en-US - Windows 7 - Chrome 10.0.648.133
 '562ca5e2ad743b4d8487bd537d3cb9c0', // en-US - MacOS X 10.5.8 - Chrome 8.0.552.215
 'a7a4def59ccbd14299dff1edd1495a36', // */* - en-US - MacOS X 10.5.8 - Chrome 8.0.552.215
 '71c0a252d02c78a7395613aff1bd022e', // en-US - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -100,6 +108,8 @@ $browsers_fingerprints = array(
 '640ccceb4e000169def30e407254b054', // */* - en-US - MacOS X 10.5.8 - Chrome 9.0.597.107
 '608324308d25ef1e0c07166070ed65b3', // en-US - MacOS X 10.5.8 - Chrome 10.0.648.127
 '533aaa81b5d46a4df829b1b000ef0f56', // */* - en-US - MacOS X 10.5.8 - Chrome 10.0.648.127
+'d1781e81d7f1825411f463d0cdd92ee5', // en-US - MacOS X 10.5.8 - Chrome 10.0.648.133
+'de101e67d734b65c5d62474f06c8d979', // */* - en-US - MacOS X 10.5.8 - Chrome 10.0.648.133
 'fbd57c6497567b700160b3c6191bd318', // en-US - MacOS X 10.6.0 - Chrome 8.0.552.215
 '7b14b5a2c60be51030a673d4a4a05522', // */* - en-US - MacOS X 10.6.0 - Chrome 8.0.552.215
 '5ef06a4c02a14cffae3e4262bd829cae', // en-US - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -120,6 +130,8 @@ $browsers_fingerprints = array(
 '69ef8d2fba0849b6e7ec737ce5a64379', // */* - en-US - MacOS X 10.6.0 - Chrome 9.0.597.107
 'a68bcd9dbd2b10df8dcbd9dc67056c8a', // en-US - MacOS X 10.6.0 - Chrome 10.0.648.127
 'e92d2f2322575c0bf621ca3634e76411', // */* - en-US - MacOS X 10.6.0 - Chrome 10.0.648.127
+'9ad5602d0e26792dba777117e763ef22', // en-US - MacOS X 10.6.0 - Chrome 10.0.648.133
+'64e2ae715a70839fc0584a665c450dd6', // */* - en-US - MacOS X 10.6.0 - Chrome 10.0.648.133
 'bfc1c093c760b296647cb1842f3c5333', // en-US - MacOS X 10.6.1 - Chrome 8.0.552.215
 '50e3fc33ca656027d9c9d6a8b3076a07', // */* - en-US - MacOS X 10.6.1 - Chrome 8.0.552.215
 'fe7eafa94f7cbf4673c134e93085d095', // en-US - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -140,6 +152,8 @@ $browsers_fingerprints = array(
 '187ba5c88ebea933fd0126202704e4fe', // */* - en-US - MacOS X 10.6.1 - Chrome 9.0.597.107
 '3c041fbd0098c3e7e8a7aebe9d064fd4', // en-US - MacOS X 10.6.1 - Chrome 10.0.648.127
 'd075cefb0530acc382160ca461d0ef4a', // */* - en-US - MacOS X 10.6.1 - Chrome 10.0.648.127
+'fb6f9970175642bc6e8196c30bbd35bc', // en-US - MacOS X 10.6.1 - Chrome 10.0.648.133
+'b4ab5845b0e1bee4c1c1a674ee3f7770', // */* - en-US - MacOS X 10.6.1 - Chrome 10.0.648.133
 'bfc1c093c760b296647cb1842f3c5333', // en-US - MacOS X 10.6.2 - Chrome 8.0.552.215
 '50e3fc33ca656027d9c9d6a8b3076a07', // */* - en-US - MacOS X 10.6.2 - Chrome 8.0.552.215
 'fe7eafa94f7cbf4673c134e93085d095', // en-US - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -160,6 +174,8 @@ $browsers_fingerprints = array(
 '187ba5c88ebea933fd0126202704e4fe', // */* - en-US - MacOS X 10.6.2 - Chrome 9.0.597.107
 '3c041fbd0098c3e7e8a7aebe9d064fd4', // en-US - MacOS X 10.6.2 - Chrome 10.0.648.127
 'd075cefb0530acc382160ca461d0ef4a', // */* - en-US - MacOS X 10.6.2 - Chrome 10.0.648.127
+'fb6f9970175642bc6e8196c30bbd35bc', // en-US - MacOS X 10.6.2 - Chrome 10.0.648.133
+'b4ab5845b0e1bee4c1c1a674ee3f7770', // */* - en-US - MacOS X 10.6.2 - Chrome 10.0.648.133
 '432ec173f1705a1f29cf00bdb4f6cb11', // en-US - MacOS X 10.6.3 - Chrome 8.0.552.215
 'e87fe4b27964bdeea1af9f52bc4121eb', // */* - en-US - MacOS X 10.6.3 - Chrome 8.0.552.215
 '5e2b3b87fbdb14370f9f353522a68c60', // en-US - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -180,6 +196,8 @@ $browsers_fingerprints = array(
 '1f3df06bcae04dabaf98f73873d440ea', // */* - en-US - MacOS X 10.6.3 - Chrome 9.0.597.107
 '76fdadeac2cbfc147932aa5a4bd39d07', // en-US - MacOS X 10.6.3 - Chrome 10.0.648.127
 '39d132dd0298af1df437849ccfa7098a', // */* - en-US - MacOS X 10.6.3 - Chrome 10.0.648.127
+'c0983b0ab449d81f48eaec9dbdb7fb80', // en-US - MacOS X 10.6.3 - Chrome 10.0.648.133
+'e6cfa32714768fa4a8ed34f11cf69382', // */* - en-US - MacOS X 10.6.3 - Chrome 10.0.648.133
 '81e5f82ca53fd126134f4204de8a69d6', // en-US - MacOS X 10.6.4 - Chrome 8.0.552.215
 '357cf3638fb1e63a55ed0c6287a5e248', // */* - en-US - MacOS X 10.6.4 - Chrome 8.0.552.215
 'bbbc5ec119388112af08a155c7e44760', // en-US - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -200,6 +218,8 @@ $browsers_fingerprints = array(
 '3629ac687837dfc50a7c411a793bb1ad', // */* - en-US - MacOS X 10.6.4 - Chrome 9.0.597.107
 '69c6b22824badfd4c6a00f6d97a45adc', // en-US - MacOS X 10.6.4 - Chrome 10.0.648.127
 '80243d1fee697b1fc92378096835fcc4', // */* - en-US - MacOS X 10.6.4 - Chrome 10.0.648.127
+'24e9590db2e55d23bb88d8fee5f2d1b4', // en-US - MacOS X 10.6.4 - Chrome 10.0.648.133
+'3225e194c7145236159a211fc4952cc6', // */* - en-US - MacOS X 10.6.4 - Chrome 10.0.648.133
 '8c3e41b374bebfd9a8ce1600d711cd91', // en-US - MacOS X 10.6.5 - Chrome 8.0.552.215
 'ab8fb6e4858ceb006fb4bc74399672ce', // */* - en-US - MacOS X 10.6.5 - Chrome 8.0.552.215
 '82b0bad148fdfcbe0d83a3c417c33633', // en-US - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -220,6 +240,8 @@ $browsers_fingerprints = array(
 '44ea8c57ee067121c4ebd9a03fc4a173', // */* - en-US - MacOS X 10.6.5 - Chrome 9.0.597.107
 '84282cdbde1dcf372d7a396c62c43f84', // en-US - MacOS X 10.6.5 - Chrome 10.0.648.127
 '451a8fd099bc89d2cf50fab037fe1a1a', // */* - en-US - MacOS X 10.6.5 - Chrome 10.0.648.127
+'64e8d2e662e0237f2c6aa75f14d69f3d', // en-US - MacOS X 10.6.5 - Chrome 10.0.648.133
+'ccaf9a39dd3295e7276f684f5e784f86', // */* - en-US - MacOS X 10.6.5 - Chrome 10.0.648.133
 'f8af3b89887fea79674cf9b5c93b2667', // en-US - MacOS X 10.6.6 - Chrome 8.0.552.215
 '2eb7206dd5948d947d44476f830c36fa', // */* - en-US - MacOS X 10.6.6 - Chrome 8.0.552.215
 'a5bba03cca52a3939999e43c90d1e2f5', // en-US - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -240,6 +262,8 @@ $browsers_fingerprints = array(
 'e352886b4275640938ce95d2522b67ed', // */* - en-US - MacOS X 10.6.6 - Chrome 9.0.597.107
 '1ca755d2cb6139fe43a0e0b6a9844fd6', // en-US - MacOS X 10.6.6 - Chrome 10.0.648.127
 'caf8395b2c8871881b0b8b9599d3d69f', // */* - en-US - MacOS X 10.6.6 - Chrome 10.0.648.127
+'1bb1aa1d44c89668b7ed6c683180c71c', // en-US - MacOS X 10.6.6 - Chrome 10.0.648.133
+'42602e8395c9c3b9a7d990af62b87d5a', // */* - en-US - MacOS X 10.6.6 - Chrome 10.0.648.133
 '1d2186195d3dbf7066116803eb259f92', // en-US - Linux - Chrome 8.0.552.215
 'adbb1d215f0ab6cb949ea0e05ef5c741', // */* - en-US - Linux - Chrome 8.0.552.215
 'aa9fff20e98f5a0c61eb10a75c14bd64', // en-US - Linux - Chrome 8.0.552.224
@@ -260,6 +284,8 @@ $browsers_fingerprints = array(
 '11fc4f38dfaa1751feb4b59a78130b26', // */* - en-US - Linux - Chrome 9.0.597.107
 '53dca43d9c15d9eeb22c213a08557ee6', // en-US - Linux - Chrome 10.0.648.127
 'cf79f35d03afeba905329f6a2d8da89b', // */* - en-US - Linux - Chrome 10.0.648.127
+'d7c7c9a656ee69b20b07eb9d37787720', // en-US - Linux - Chrome 10.0.648.133
+'ffb2785801ae4954fe4f78f3039ae1dc', // */* - en-US - Linux - Chrome 10.0.648.133
 'cc32fcdfd441d2cd55841a1c0f7f18a1', // en-US - Linux 64 - Chrome 8.0.552.215
 '113b07580ebbf6ac34986d54dec8702e', // */* - en-US - Linux 64 - Chrome 8.0.552.215
 '6a42fd906626e18e3c72cbb48bc2c2fb', // en-US - Linux 64 - Chrome 8.0.552.224
@@ -280,6 +306,8 @@ $browsers_fingerprints = array(
 '18f9bd90231a5a00483c8c257b7b5e67', // */* - en-US - Linux 64 - Chrome 9.0.597.107
 '51e42bf2562e713cadc4802f25953d59', // en-US - Linux 64 - Chrome 10.0.648.127
 '9176c7167ee2dd3efe5445a8a79df253', // */* - en-US - Linux 64 - Chrome 10.0.648.127
+'8b16351ce0753f5841d09fae69311b5f', // en-US - Linux 64 - Chrome 10.0.648.133
+'52b2caf20a066f1ad8585a70defaa0f6', // */* - en-US - Linux 64 - Chrome 10.0.648.133
 '037d588f0700bc7e484411886622131a', // en-GB - Windows XP - Chrome 8.0.552.215
 '6d176820e0874f3c7943b65869025ce8', // */* - en-GB - Windows XP - Chrome 8.0.552.215
 '4966e74a1091ae670b3bc16b68184806', // en-GB - Windows XP - Chrome 8.0.552.224
@@ -300,6 +328,8 @@ $browsers_fingerprints = array(
 'a6f9b176127169a5d31e81de7df46556', // */* - en-GB - Windows XP - Chrome 9.0.597.107
 '042b4b196b895d1a6596ecac7d841cb7', // en-GB - Windows XP - Chrome 10.0.648.127
 'ca1afeea9bdb6e2d3a87a772669b3279', // */* - en-GB - Windows XP - Chrome 10.0.648.127
+'c0cacf1931c0524cd5afda35a4807ff6', // en-GB - Windows XP - Chrome 10.0.648.133
+'1162755f5d33ff3a6ab8e3cec1b12210', // */* - en-GB - Windows XP - Chrome 10.0.648.133
 '9b4c8d3460144a883f7be6780d91182d', // en-GB - Windows 2003 - Chrome 8.0.552.215
 '14dbdf781d71c434f113e7a61609a5ca', // */* - en-GB - Windows 2003 - Chrome 8.0.552.215
 'a22cfca293f4ecbef89d69271c82e2cc', // en-GB - Windows 2003 - Chrome 8.0.552.224
@@ -320,6 +350,8 @@ $browsers_fingerprints = array(
 '6af4e77622bbcc4a4c50ecd0a647dd27', // */* - en-GB - Windows 2003 - Chrome 9.0.597.107
 '5c9fa750c5a184da89438352dcdf0448', // en-GB - Windows 2003 - Chrome 10.0.648.127
 '44c6043b30f53c99d98b84c74356fa02', // */* - en-GB - Windows 2003 - Chrome 10.0.648.127
+'fb378b1c443e81cca54e7aa2ce6a7379', // en-GB - Windows 2003 - Chrome 10.0.648.133
+'c74a12bb0b107d0b95d9fc55d4113078', // */* - en-GB - Windows 2003 - Chrome 10.0.648.133
 '12001cf765800d2977829b339a3f58d6', // en-GB - Windows Vista - Chrome 8.0.552.215
 'c117617bcb2a46a9e2cba6d68513fb1a', // */* - en-GB - Windows Vista - Chrome 8.0.552.215
 '0cb58174776ade6d8c550070aa9fa8e2', // en-GB - Windows Vista - Chrome 8.0.552.224
@@ -340,6 +372,8 @@ $browsers_fingerprints = array(
 '7df8b7fbbfff05ec624b15f28d6f3d59', // */* - en-GB - Windows Vista - Chrome 9.0.597.107
 '1ac6110b6f591e510efceae6bfc68f42', // en-GB - Windows Vista - Chrome 10.0.648.127
 '6fbd821e3fd20ce7840fd6b4b0ae9a6f', // */* - en-GB - Windows Vista - Chrome 10.0.648.127
+'feedf36d795a77de1ee726c49a37248f', // en-GB - Windows Vista - Chrome 10.0.648.133
+'cf6901a5e954a7c01edef73252ff575e', // */* - en-GB - Windows Vista - Chrome 10.0.648.133
 '9349710226b9da00994dc312b58bb95e', // en-GB - Windows 7 - Chrome 8.0.552.215
 'dfac07e896694c3f3d2a1d7cfcf95de6', // */* - en-GB - Windows 7 - Chrome 8.0.552.215
 'fccde033e69424128622069c0edd0370', // en-GB - Windows 7 - Chrome 8.0.552.224
@@ -360,6 +394,8 @@ $browsers_fingerprints = array(
 '268edd0a57c48e5b70fd9f4e0769b316', // */* - en-GB - Windows 7 - Chrome 9.0.597.107
 '2e799d92587846bc37af73360ccadd71', // en-GB - Windows 7 - Chrome 10.0.648.127
 '3098b2b6fe4c0f11104d58561e9f38b5', // */* - en-GB - Windows 7 - Chrome 10.0.648.127
+'1e983ec1058dec24b40b879d1e2e0a47', // en-GB - Windows 7 - Chrome 10.0.648.133
+'f5fc9f2ea798f53b65cbbf0f7ebca563', // */* - en-GB - Windows 7 - Chrome 10.0.648.133
 'f34728d162b039e889954daf27387e05', // en-GB - MacOS X 10.5.8 - Chrome 8.0.552.215
 'e507748b73c5ab220d8a1b1864212ec9', // */* - en-GB - MacOS X 10.5.8 - Chrome 8.0.552.215
 '63687dd62a66b7cc7f6d33503752eb16', // en-GB - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -380,6 +416,8 @@ $browsers_fingerprints = array(
 'fd7c6eae1dc4fc181dcdf991fab715fe', // */* - en-GB - MacOS X 10.5.8 - Chrome 9.0.597.107
 '66729a26a0a2f1cecac7c6c9b505ad60', // en-GB - MacOS X 10.5.8 - Chrome 10.0.648.127
 'bdc3d4bb47d37568f1077afb5614c908', // */* - en-GB - MacOS X 10.5.8 - Chrome 10.0.648.127
+'b9d2d829902692d936782adceb38dffb', // en-GB - MacOS X 10.5.8 - Chrome 10.0.648.133
+'996902b378824db60a4fc0b3ca030aae', // */* - en-GB - MacOS X 10.5.8 - Chrome 10.0.648.133
 '8b3892eb0da2c2f8e4cc1a31b45d9918', // en-GB - MacOS X 10.6.0 - Chrome 8.0.552.215
 '17bcb54f5b9d15d3fe3ef7983fa0c217', // */* - en-GB - MacOS X 10.6.0 - Chrome 8.0.552.215
 'e0257105808542ac62d16322ba230a5c', // en-GB - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -400,6 +438,8 @@ $browsers_fingerprints = array(
 'eb0f3f7584dac8706041ac6fef7ad876', // */* - en-GB - MacOS X 10.6.0 - Chrome 9.0.597.107
 'a31da1d5dfa5dd513989103cfd3c7be8', // en-GB - MacOS X 10.6.0 - Chrome 10.0.648.127
 '875152576eca159eef845873fb8189be', // */* - en-GB - MacOS X 10.6.0 - Chrome 10.0.648.127
+'f0a889a49ab0c58ff991305b859232f6', // en-GB - MacOS X 10.6.0 - Chrome 10.0.648.133
+'6e5929847055bf2fe7d102543cbf3cb8', // */* - en-GB - MacOS X 10.6.0 - Chrome 10.0.648.133
 '1d0a6e552aa27287a6f6fdc12e152292', // en-GB - MacOS X 10.6.1 - Chrome 8.0.552.215
 '2c40a0841ca2d3cddbca9445c685b2c1', // */* - en-GB - MacOS X 10.6.1 - Chrome 8.0.552.215
 '065357dfd48720a5e44e2bb2039e17c5', // en-GB - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -420,6 +460,8 @@ $browsers_fingerprints = array(
 '063a9af66fafaa79e73b8b768b8f88f4', // */* - en-GB - MacOS X 10.6.1 - Chrome 9.0.597.107
 '3e642ffe52837ed78b74d411590c4545', // en-GB - MacOS X 10.6.1 - Chrome 10.0.648.127
 '24face02ece3672185da47dbc6a3e47c', // */* - en-GB - MacOS X 10.6.1 - Chrome 10.0.648.127
+'0418998153aa56bd94a76ba62c657bf9', // en-GB - MacOS X 10.6.1 - Chrome 10.0.648.133
+'e005d2abf4d4b8b4397ce94c9be3c325', // */* - en-GB - MacOS X 10.6.1 - Chrome 10.0.648.133
 '1d0a6e552aa27287a6f6fdc12e152292', // en-GB - MacOS X 10.6.2 - Chrome 8.0.552.215
 '2c40a0841ca2d3cddbca9445c685b2c1', // */* - en-GB - MacOS X 10.6.2 - Chrome 8.0.552.215
 '065357dfd48720a5e44e2bb2039e17c5', // en-GB - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -440,6 +482,8 @@ $browsers_fingerprints = array(
 '063a9af66fafaa79e73b8b768b8f88f4', // */* - en-GB - MacOS X 10.6.2 - Chrome 9.0.597.107
 '3e642ffe52837ed78b74d411590c4545', // en-GB - MacOS X 10.6.2 - Chrome 10.0.648.127
 '24face02ece3672185da47dbc6a3e47c', // */* - en-GB - MacOS X 10.6.2 - Chrome 10.0.648.127
+'0418998153aa56bd94a76ba62c657bf9', // en-GB - MacOS X 10.6.2 - Chrome 10.0.648.133
+'e005d2abf4d4b8b4397ce94c9be3c325', // */* - en-GB - MacOS X 10.6.2 - Chrome 10.0.648.133
 '12ba180ecedf5c0cf30f2b22641760dd', // en-GB - MacOS X 10.6.3 - Chrome 8.0.552.215
 'd7aa4d7ec87d8b971f9fc016dda043e7', // */* - en-GB - MacOS X 10.6.3 - Chrome 8.0.552.215
 'f8c76c86a3548a39f46c4b5d2288af52', // en-GB - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -460,6 +504,8 @@ $browsers_fingerprints = array(
 'c83f010d1dbfe0a5d2b899fa16d1a674', // */* - en-GB - MacOS X 10.6.3 - Chrome 9.0.597.107
 '7ff2daef39fff4b33709ebed63ed73ba', // en-GB - MacOS X 10.6.3 - Chrome 10.0.648.127
 '667b49c19bf87fdfb88c958d225b0994', // */* - en-GB - MacOS X 10.6.3 - Chrome 10.0.648.127
+'5da28990515dc8242936d6bf4a8a4257', // en-GB - MacOS X 10.6.3 - Chrome 10.0.648.133
+'f1956e80b0d34cc713834a44744047a3', // */* - en-GB - MacOS X 10.6.3 - Chrome 10.0.648.133
 'b099954e286661b5842678493dbb007d', // en-GB - MacOS X 10.6.4 - Chrome 8.0.552.215
 'f5db4a546e98aa2ddbab8e1e77b3fb39', // */* - en-GB - MacOS X 10.6.4 - Chrome 8.0.552.215
 '516149a044f6a4316d20b0da2cf4c9f0', // en-GB - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -480,6 +526,8 @@ $browsers_fingerprints = array(
 'cd74f82bdfe605c73740dfd0358d32b3', // */* - en-GB - MacOS X 10.6.4 - Chrome 9.0.597.107
 '5aab06240ffac49b6cac7ea2a5148e3d', // en-GB - MacOS X 10.6.4 - Chrome 10.0.648.127
 'ce39801676903198bc8d2696075d18c3', // */* - en-GB - MacOS X 10.6.4 - Chrome 10.0.648.127
+'b5121105e8f02f852272e6d5729dc39a', // en-GB - MacOS X 10.6.4 - Chrome 10.0.648.133
+'5d8d743f868a6d2697aba5169eb2f58e', // */* - en-GB - MacOS X 10.6.4 - Chrome 10.0.648.133
 '7ffb347aac6c8d3470aebb2c99547560', // en-GB - MacOS X 10.6.5 - Chrome 8.0.552.215
 '87c010d86004abf88fe7c0eaabc3d135', // */* - en-GB - MacOS X 10.6.5 - Chrome 8.0.552.215
 '993c8cdc71347011199e5316fb92ee74', // en-GB - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -500,6 +548,8 @@ $browsers_fingerprints = array(
 '5a70991f9b19352357c12b11ab2dc69b', // */* - en-GB - MacOS X 10.6.5 - Chrome 9.0.597.107
 'e7e1858980b68d08e92a8f6be2802f0a', // en-GB - MacOS X 10.6.5 - Chrome 10.0.648.127
 'a227f388785cbe211929d2ee064f18f8', // */* - en-GB - MacOS X 10.6.5 - Chrome 10.0.648.127
+'404326d6602fc49ac87dfe864d5a61c0', // en-GB - MacOS X 10.6.5 - Chrome 10.0.648.133
+'fbeb15b2480617bc20303b5d7b9dbed6', // */* - en-GB - MacOS X 10.6.5 - Chrome 10.0.648.133
 'a9157a03ddce94e07e228964d6f74dbb', // en-GB - MacOS X 10.6.6 - Chrome 8.0.552.215
 '415bfbd7c35aaf04a86ef892ca6c2099', // */* - en-GB - MacOS X 10.6.6 - Chrome 8.0.552.215
 'f36dd8bbc7b04a589018d785faa1c178', // en-GB - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -520,6 +570,8 @@ $browsers_fingerprints = array(
 'e3134cbe0fdf254de0e3fb7511e1966f', // */* - en-GB - MacOS X 10.6.6 - Chrome 9.0.597.107
 '84f22189c5a1eb124858fac4bc9633d3', // en-GB - MacOS X 10.6.6 - Chrome 10.0.648.127
 'd6a03d87ee95dbe314041ed7b1cf28be', // */* - en-GB - MacOS X 10.6.6 - Chrome 10.0.648.127
+'58aa57f639d9a264f2fcdb81550f464b', // en-GB - MacOS X 10.6.6 - Chrome 10.0.648.133
+'c86e7bcbd0d7f7d2ede5b8df87877e66', // */* - en-GB - MacOS X 10.6.6 - Chrome 10.0.648.133
 'e4aed800b22a6f1b158c0dc84c6aa2ff', // en-GB - Linux - Chrome 8.0.552.215
 '969efa66d9d35e05f5924c63549b53f5', // */* - en-GB - Linux - Chrome 8.0.552.215
 '1333cf6b6c530c277e5ccb732583d3d9', // en-GB - Linux - Chrome 8.0.552.224
@@ -540,6 +592,8 @@ $browsers_fingerprints = array(
 '55b867e21d8ea53b6bf518bc5a018ff2', // */* - en-GB - Linux - Chrome 9.0.597.107
 'd08de3364143e44b567273cdfbe2c2b8', // en-GB - Linux - Chrome 10.0.648.127
 '1874664e1172cdb5138d7e52a1347cdc', // */* - en-GB - Linux - Chrome 10.0.648.127
+'b377ac21907bb9fce401ac3640fcb8bf', // en-GB - Linux - Chrome 10.0.648.133
+'e43c1a3c41a093ffb6dcb9883cea334c', // */* - en-GB - Linux - Chrome 10.0.648.133
 '283e37b5c253eacac3b0b1dd7df4a46b', // en-GB - Linux 64 - Chrome 8.0.552.215
 '42caa8a092b83fa4da7d48356cff3882', // */* - en-GB - Linux 64 - Chrome 8.0.552.215
 'b4beb8fd5c3dd870b15c112b8aaf1e80', // en-GB - Linux 64 - Chrome 8.0.552.224
@@ -560,6 +614,8 @@ $browsers_fingerprints = array(
 '74f7a9c6a2349fdfb02593ef6ee39136', // */* - en-GB - Linux 64 - Chrome 9.0.597.107
 'dfd48ec408d42161b72ebc4ea56a2005', // en-GB - Linux 64 - Chrome 10.0.648.127
 '69bdc4a70315f09801c6e53ad42f8f7b', // */* - en-GB - Linux 64 - Chrome 10.0.648.127
+'9036ad9bf3073fd186b8926aa5b27d4f', // en-GB - Linux 64 - Chrome 10.0.648.133
+'820cd3017248261f2ba1c2e3faa0cf93', // */* - en-GB - Linux 64 - Chrome 10.0.648.133
 'de828594a7cd207f2fc7858ac6a6e382', // fr-FR - Windows XP - Chrome 8.0.552.215
 '851cca389d058923720488de816dd193', // */* - fr-FR - Windows XP - Chrome 8.0.552.215
 'ffbeae8c077e131149c39929864a6187', // fr-FR - Windows XP - Chrome 8.0.552.224
@@ -580,6 +636,8 @@ $browsers_fingerprints = array(
 '8628d0f01deaa5e81b817017ee8e00f7', // */* - fr-FR - Windows XP - Chrome 9.0.597.107
 '755d7cf9c935d6d776eac0fbb89d74ae', // fr-FR - Windows XP - Chrome 10.0.648.127
 '979ae0fa52553d7f70dd56456e4141aa', // */* - fr-FR - Windows XP - Chrome 10.0.648.127
+'bdbfda392cdec3b471fd7d606a8414eb', // fr-FR - Windows XP - Chrome 10.0.648.133
+'4cd93e27d694fd6f7fafbee5e1fa5f72', // */* - fr-FR - Windows XP - Chrome 10.0.648.133
 '1dcb1107dbdad31f64e4eb361b9d356b', // fr-FR - Windows 2003 - Chrome 8.0.552.215
 '506353c10d07bdbbe401887b520fdddd', // */* - fr-FR - Windows 2003 - Chrome 8.0.552.215
 '7a427dc02b906b446268a9c59188ab8d', // fr-FR - Windows 2003 - Chrome 8.0.552.224
@@ -600,6 +658,8 @@ $browsers_fingerprints = array(
 'd740dadf8afd013628b3e6a18060cd60', // */* - fr-FR - Windows 2003 - Chrome 9.0.597.107
 '0eb74739919f2ff9f274c9b698027820', // fr-FR - Windows 2003 - Chrome 10.0.648.127
 '1026537e422342514bc380dd66cf8273', // */* - fr-FR - Windows 2003 - Chrome 10.0.648.127
+'7e34583ca9ed1f5f0fcbaf2d5f971318', // fr-FR - Windows 2003 - Chrome 10.0.648.133
+'f82f2bbd7363c255f662fe6acada6495', // */* - fr-FR - Windows 2003 - Chrome 10.0.648.133
 '6f99b81276e32d0656aa04ed0d63587e', // fr-FR - Windows Vista - Chrome 8.0.552.215
 '24623acd6a551811a4d5891795229c25', // */* - fr-FR - Windows Vista - Chrome 8.0.552.215
 'c162cfddd96bfb2a3cbd014d73e6d1c8', // fr-FR - Windows Vista - Chrome 8.0.552.224
@@ -620,6 +680,8 @@ $browsers_fingerprints = array(
 '861594330154c78f3dde2d80192dc891', // */* - fr-FR - Windows Vista - Chrome 9.0.597.107
 '5a223b50711710123c8036a8016a719c', // fr-FR - Windows Vista - Chrome 10.0.648.127
 'ede08eab2cdbc472b8ac8b4cf96eb2a1', // */* - fr-FR - Windows Vista - Chrome 10.0.648.127
+'da16616fbd34cc61c74c100eefc15872', // fr-FR - Windows Vista - Chrome 10.0.648.133
+'4f04341646df74bf9b46d761dd2bee33', // */* - fr-FR - Windows Vista - Chrome 10.0.648.133
 '31fa939d1ec8d5bc3e1cf39e6e94b7f8', // fr-FR - Windows 7 - Chrome 8.0.552.215
 '604b04f2a238964f99f93eee591e4ee5', // */* - fr-FR - Windows 7 - Chrome 8.0.552.215
 'd7967163c7e98f338f9d82b798a78b1b', // fr-FR - Windows 7 - Chrome 8.0.552.224
@@ -640,6 +702,8 @@ $browsers_fingerprints = array(
 '492f6c844a6b9b5a7c63ee88c8758c99', // */* - fr-FR - Windows 7 - Chrome 9.0.597.107
 'fd45c4d120a9a0448e8fce083b4f691d', // fr-FR - Windows 7 - Chrome 10.0.648.127
 '31e2c53ed3e842b3c02668f4bf6877e7', // */* - fr-FR - Windows 7 - Chrome 10.0.648.127
+'0ac37d5bb62d3fbff77a5500db2014cd', // fr-FR - Windows 7 - Chrome 10.0.648.133
+'51f9a9b4240eef9d2f5a2673475ab26a', // */* - fr-FR - Windows 7 - Chrome 10.0.648.133
 'a1579f736aa6f834c5335af978c17a6e', // fr-FR - MacOS X 10.5.8 - Chrome 8.0.552.215
 '37b1a5de356bc927b2dbf7a44900d3fb', // */* - fr-FR - MacOS X 10.5.8 - Chrome 8.0.552.215
 '1cc343cfc957bc050d456172041753e8', // fr-FR - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -660,6 +724,8 @@ $browsers_fingerprints = array(
 '720a6ecacef884b627ce5681d97e51b2', // */* - fr-FR - MacOS X 10.5.8 - Chrome 9.0.597.107
 'a59d933990547c312d683daf59777e9d', // fr-FR - MacOS X 10.5.8 - Chrome 10.0.648.127
 '5e112c7720207dba5b8aa614673fb4db', // */* - fr-FR - MacOS X 10.5.8 - Chrome 10.0.648.127
+'cee17053dc936b1913e1561de9728c55', // fr-FR - MacOS X 10.5.8 - Chrome 10.0.648.133
+'3b0194bc576d48dc3076e647896a8b62', // */* - fr-FR - MacOS X 10.5.8 - Chrome 10.0.648.133
 '73a09fe7ef9f40af9f0b35d1c1ed4bdf', // fr-FR - MacOS X 10.6.0 - Chrome 8.0.552.215
 '64616beda7a748072bf53e5768a8aeb8', // */* - fr-FR - MacOS X 10.6.0 - Chrome 8.0.552.215
 '31b65104e70f3fbd2a316b344035e920', // fr-FR - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -680,6 +746,8 @@ $browsers_fingerprints = array(
 'b78e78cf0852be9c5e501735339af034', // */* - fr-FR - MacOS X 10.6.0 - Chrome 9.0.597.107
 '7077abb2e757c6d0a43986a4cbfebe7b', // fr-FR - MacOS X 10.6.0 - Chrome 10.0.648.127
 'efc790003c0cbe8385a75061ae1ebcb1', // */* - fr-FR - MacOS X 10.6.0 - Chrome 10.0.648.127
+'4e31914df79032952aa683bc915d31fe', // fr-FR - MacOS X 10.6.0 - Chrome 10.0.648.133
+'b9eea2a6b1443c3c64a5cccb4f6c94cf', // */* - fr-FR - MacOS X 10.6.0 - Chrome 10.0.648.133
 '66b027260d153ceca5342c210f7b9f28', // fr-FR - MacOS X 10.6.1 - Chrome 8.0.552.215
 '0479c48dca9c967ae87802604f173a6e', // */* - fr-FR - MacOS X 10.6.1 - Chrome 8.0.552.215
 '86f0281efe416ea45803ed1ec7fdaa3d', // fr-FR - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -700,6 +768,8 @@ $browsers_fingerprints = array(
 '98228c915c03335752bfa7230184999d', // */* - fr-FR - MacOS X 10.6.1 - Chrome 9.0.597.107
 '69fb40f8872df32c6b81a4fa38b5f5ab', // fr-FR - MacOS X 10.6.1 - Chrome 10.0.648.127
 'ab0543498d5cd2a9b32809f1d4ddae76', // */* - fr-FR - MacOS X 10.6.1 - Chrome 10.0.648.127
+'aab2596a9c2f09b4f4681f8ec1c9a78a', // fr-FR - MacOS X 10.6.1 - Chrome 10.0.648.133
+'3dea39613c9359372d47a68d587bd722', // */* - fr-FR - MacOS X 10.6.1 - Chrome 10.0.648.133
 '66b027260d153ceca5342c210f7b9f28', // fr-FR - MacOS X 10.6.2 - Chrome 8.0.552.215
 '0479c48dca9c967ae87802604f173a6e', // */* - fr-FR - MacOS X 10.6.2 - Chrome 8.0.552.215
 '86f0281efe416ea45803ed1ec7fdaa3d', // fr-FR - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -720,6 +790,8 @@ $browsers_fingerprints = array(
 '98228c915c03335752bfa7230184999d', // */* - fr-FR - MacOS X 10.6.2 - Chrome 9.0.597.107
 '69fb40f8872df32c6b81a4fa38b5f5ab', // fr-FR - MacOS X 10.6.2 - Chrome 10.0.648.127
 'ab0543498d5cd2a9b32809f1d4ddae76', // */* - fr-FR - MacOS X 10.6.2 - Chrome 10.0.648.127
+'aab2596a9c2f09b4f4681f8ec1c9a78a', // fr-FR - MacOS X 10.6.2 - Chrome 10.0.648.133
+'3dea39613c9359372d47a68d587bd722', // */* - fr-FR - MacOS X 10.6.2 - Chrome 10.0.648.133
 'b0e437e4b7cccd138429ce92dbf5749a', // fr-FR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '9a4e3adfac10d31296b21bc0283710ca', // */* - fr-FR - MacOS X 10.6.3 - Chrome 8.0.552.215
 'a2a53e97d687aa3971e867ee66e7aae3', // fr-FR - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -740,6 +812,8 @@ $browsers_fingerprints = array(
 'e3a358feac96554e82096f1429e5ed5a', // */* - fr-FR - MacOS X 10.6.3 - Chrome 9.0.597.107
 'c24442695b119addc18358a835118dc1', // fr-FR - MacOS X 10.6.3 - Chrome 10.0.648.127
 '15bcb7bf1640df57da41eb180a3df1d3', // */* - fr-FR - MacOS X 10.6.3 - Chrome 10.0.648.127
+'35cbaaf9681369bf035cf9c2c5c1f828', // fr-FR - MacOS X 10.6.3 - Chrome 10.0.648.133
+'19f75ba98e5ecb2ce240b89ac6a5b6a5', // */* - fr-FR - MacOS X 10.6.3 - Chrome 10.0.648.133
 '76b017c15e87f0c11d9e14ca46e4a75d', // fr-FR - MacOS X 10.6.4 - Chrome 8.0.552.215
 '89cdb77e7dfe73aa6b54d2644880b01e', // */* - fr-FR - MacOS X 10.6.4 - Chrome 8.0.552.215
 'ca13d63d1abef809e2140af32bb51903', // fr-FR - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -760,6 +834,8 @@ $browsers_fingerprints = array(
 '837f0dacf43cbaf588934e697940769f', // */* - fr-FR - MacOS X 10.6.4 - Chrome 9.0.597.107
 '35f4e8a821781be922404ef4f4b41c3a', // fr-FR - MacOS X 10.6.4 - Chrome 10.0.648.127
 '63a372ec96de21879332cec1333416bc', // */* - fr-FR - MacOS X 10.6.4 - Chrome 10.0.648.127
+'ea070db5d77d923a8f7ac771b8cc56d6', // fr-FR - MacOS X 10.6.4 - Chrome 10.0.648.133
+'eafdf2955917a4dbe9105fe0158d0807', // */* - fr-FR - MacOS X 10.6.4 - Chrome 10.0.648.133
 'acd4fb173209044851664a86ad05e825', // fr-FR - MacOS X 10.6.5 - Chrome 8.0.552.215
 '3b740e8931d78af265b2c571147662e1', // */* - fr-FR - MacOS X 10.6.5 - Chrome 8.0.552.215
 'e30fd30fd16cc01e79d85e7484d71a01', // fr-FR - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -780,6 +856,8 @@ $browsers_fingerprints = array(
 '7bceb8e56978e6d588e8af9e096cfcd3', // */* - fr-FR - MacOS X 10.6.5 - Chrome 9.0.597.107
 '2b9d1683a8591b4d7132d46ab77b90d4', // fr-FR - MacOS X 10.6.5 - Chrome 10.0.648.127
 '6ca30b38887ca7bef623c0369e4116e2', // */* - fr-FR - MacOS X 10.6.5 - Chrome 10.0.648.127
+'de351443e27189e27a0ae8d17462c652', // fr-FR - MacOS X 10.6.5 - Chrome 10.0.648.133
+'cc2dc11bfe256b76ddd64ea012892c19', // */* - fr-FR - MacOS X 10.6.5 - Chrome 10.0.648.133
 '2b3c870668178332cd28caa28ae91cf7', // fr-FR - MacOS X 10.6.6 - Chrome 8.0.552.215
 '760dda9088eedb6bc27e917b0bc74e05', // */* - fr-FR - MacOS X 10.6.6 - Chrome 8.0.552.215
 '954cc8b922b14a8eeff9e8552e9ef779', // fr-FR - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -800,6 +878,8 @@ $browsers_fingerprints = array(
 '5bece6d45ea23f9b2c1de252c7f33faa', // */* - fr-FR - MacOS X 10.6.6 - Chrome 9.0.597.107
 '57f6ee54b4325e175cfb9f52253fd9fa', // fr-FR - MacOS X 10.6.6 - Chrome 10.0.648.127
 'b2a1ca8420e8f1261951b56b11cb408b', // */* - fr-FR - MacOS X 10.6.6 - Chrome 10.0.648.127
+'ebdc442098ba87c016e5e3af234b1857', // fr-FR - MacOS X 10.6.6 - Chrome 10.0.648.133
+'e29e9f70ca722c769ff21c2210c040b2', // */* - fr-FR - MacOS X 10.6.6 - Chrome 10.0.648.133
 '7455326b5c69dccbe9946b9fd0b062e1', // fr-FR - Linux - Chrome 8.0.552.215
 '2bf5fd3b6b7d4d0a43b9f05d2aa26223', // */* - fr-FR - Linux - Chrome 8.0.552.215
 '06bd28423afd9ff45b15eb22a113a0a0', // fr-FR - Linux - Chrome 8.0.552.224
@@ -820,6 +900,8 @@ $browsers_fingerprints = array(
 '20168b24a7f81e7421439039dd123de9', // */* - fr-FR - Linux - Chrome 9.0.597.107
 'a37cb6eb62a48cf8595a47c57572d505', // fr-FR - Linux - Chrome 10.0.648.127
 '3e8c862c7aa1bd672043cb641a152b8f', // */* - fr-FR - Linux - Chrome 10.0.648.127
+'dabfa87e01fb034a04d92d7b6adf6669', // fr-FR - Linux - Chrome 10.0.648.133
+'9c4468cdc2b78f11cecd6b62c50f6c9d', // */* - fr-FR - Linux - Chrome 10.0.648.133
 'beb8303d15333f5d8d800d48fd04c325', // fr-FR - Linux 64 - Chrome 8.0.552.215
 '8d5dfbb930d8fd16418e5f00d41e6c63', // */* - fr-FR - Linux 64 - Chrome 8.0.552.215
 '12a0c8f8347ad321a8261c76fb12fb74', // fr-FR - Linux 64 - Chrome 8.0.552.224
@@ -840,6 +922,8 @@ $browsers_fingerprints = array(
 '97bc1ef42f583f3206737a6c7874ca63', // */* - fr-FR - Linux 64 - Chrome 9.0.597.107
 '58834aada2d1a2ed05e16bfe9de8f6b2', // fr-FR - Linux 64 - Chrome 10.0.648.127
 '6e88420f3fb85c9fdba4a3a85434bfe8', // */* - fr-FR - Linux 64 - Chrome 10.0.648.127
+'3bf3a73a53b51b415a7492fce3704d6c', // fr-FR - Linux 64 - Chrome 10.0.648.133
+'f9f498f6818f8a7fcec028ff9dd0907d', // */* - fr-FR - Linux 64 - Chrome 10.0.648.133
 '30bc8de0dd0fea2e91775b97077ada33', // pt-PT - Windows XP - Chrome 8.0.552.215
 'fada452866336a479abd9f4b6dbbbc8f', // */* - pt-PT - Windows XP - Chrome 8.0.552.215
 '163042d4e8378e86c67e4a55f9baca96', // pt-PT - Windows XP - Chrome 8.0.552.224
@@ -860,6 +944,8 @@ $browsers_fingerprints = array(
 '0ec01763d4111c89603359c7c1a5ae3d', // */* - pt-PT - Windows XP - Chrome 9.0.597.107
 '1f08420f83f5bb807e36c94587fe9332', // pt-PT - Windows XP - Chrome 10.0.648.127
 '18199d56115f7e3911c863b5745999cc', // */* - pt-PT - Windows XP - Chrome 10.0.648.127
+'f27c073cc1521b00a1a93e1183024058', // pt-PT - Windows XP - Chrome 10.0.648.133
+'7b96f0198563401787d667d24b24da84', // */* - pt-PT - Windows XP - Chrome 10.0.648.133
 'bf4b932170ea3bf608a617808146a8df', // pt-PT - Windows 2003 - Chrome 8.0.552.215
 'e3f95c2417fc7d79932b85aeb59e1284', // */* - pt-PT - Windows 2003 - Chrome 8.0.552.215
 '6f4237e5db1e7975b33ced4a0f8b3047', // pt-PT - Windows 2003 - Chrome 8.0.552.224
@@ -880,6 +966,8 @@ $browsers_fingerprints = array(
 '103e2cbfe6e939234c9599093faccaa7', // */* - pt-PT - Windows 2003 - Chrome 9.0.597.107
 '0d2dcde89e080380bc356ad42702d1cf', // pt-PT - Windows 2003 - Chrome 10.0.648.127
 'a26f7380b188c565cb7c9a55dc196390', // */* - pt-PT - Windows 2003 - Chrome 10.0.648.127
+'265a7ef874c43fd7da29cf9ccab38519', // pt-PT - Windows 2003 - Chrome 10.0.648.133
+'3c458b60cd9bc490c65d679494695008', // */* - pt-PT - Windows 2003 - Chrome 10.0.648.133
 '71a90e2d7346f3f47de0007405861fbf', // pt-PT - Windows Vista - Chrome 8.0.552.215
 '9c0c51668a5126f7865af8d78247b092', // */* - pt-PT - Windows Vista - Chrome 8.0.552.215
 'fd23d77146050434be4a09dbf85220fb', // pt-PT - Windows Vista - Chrome 8.0.552.224
@@ -900,6 +988,8 @@ $browsers_fingerprints = array(
 '1f36009eca8523e1916c392046b780a9', // */* - pt-PT - Windows Vista - Chrome 9.0.597.107
 '8e32d0b965aea03bfbe4a843dad9e0b5', // pt-PT - Windows Vista - Chrome 10.0.648.127
 'b47cbfb45bf87c69e59d5b2661367c5d', // */* - pt-PT - Windows Vista - Chrome 10.0.648.127
+'e2f180f360be58d3c95c8e4dda00e476', // pt-PT - Windows Vista - Chrome 10.0.648.133
+'5038b39a24dce9584b012e97921ed814', // */* - pt-PT - Windows Vista - Chrome 10.0.648.133
 '3c5cb7616d0520ef1da247ced8383826', // pt-PT - Windows 7 - Chrome 8.0.552.215
 '75278811e9493424c97425d27dbd1aac', // */* - pt-PT - Windows 7 - Chrome 8.0.552.215
 '12f3ab2ac3535589441840ff3e191f52', // pt-PT - Windows 7 - Chrome 8.0.552.224
@@ -920,6 +1010,8 @@ $browsers_fingerprints = array(
 '12ac2f7e8bac632ea299c8d4b7046f53', // */* - pt-PT - Windows 7 - Chrome 9.0.597.107
 '2b38236be3dfc46efe36fec8360b10f5', // pt-PT - Windows 7 - Chrome 10.0.648.127
 '17fa9cc40a47979677596bb1e121cc32', // */* - pt-PT - Windows 7 - Chrome 10.0.648.127
+'e39cb068ffae1d59790efadb674b8e0e', // pt-PT - Windows 7 - Chrome 10.0.648.133
+'4f0fa84bc29c3f04677593a9501c2566', // */* - pt-PT - Windows 7 - Chrome 10.0.648.133
 '915f0b27a64113d8528f2b022859af32', // pt-PT - MacOS X 10.5.8 - Chrome 8.0.552.215
 'e3ab9d314b1d462d80483df9c27d1335', // */* - pt-PT - MacOS X 10.5.8 - Chrome 8.0.552.215
 '8cbdf8cc9085486092a3d9056b65cff9', // pt-PT - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -940,6 +1032,8 @@ $browsers_fingerprints = array(
 '34efadfad866e3558ced3ba10e86515f', // */* - pt-PT - MacOS X 10.5.8 - Chrome 9.0.597.107
 '8a5499d2602309386ae50c99b054cdcb', // pt-PT - MacOS X 10.5.8 - Chrome 10.0.648.127
 '236167090bb94274caa3db522fca36c0', // */* - pt-PT - MacOS X 10.5.8 - Chrome 10.0.648.127
+'ed1be929466ea01db224cc641b3ec238', // pt-PT - MacOS X 10.5.8 - Chrome 10.0.648.133
+'b52a2c0f7c8dec0affe6f583ce1d5f77', // */* - pt-PT - MacOS X 10.5.8 - Chrome 10.0.648.133
 'dc2d26efe32558ea1f31b96bc30b53c6', // pt-PT - MacOS X 10.6.0 - Chrome 8.0.552.215
 'ec2d6a86056b87523180302bf6870fad', // */* - pt-PT - MacOS X 10.6.0 - Chrome 8.0.552.215
 'fea0657b0bdb3e713b1e1a00eb3f2a3d', // pt-PT - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -960,6 +1054,8 @@ $browsers_fingerprints = array(
 'c1a629b88dcd5e60b6e46ba9651c0811', // */* - pt-PT - MacOS X 10.6.0 - Chrome 9.0.597.107
 '2503417761bb8b6e1169d5dc18629986', // pt-PT - MacOS X 10.6.0 - Chrome 10.0.648.127
 'de5e60743bcb0e45a433199e736b4444', // */* - pt-PT - MacOS X 10.6.0 - Chrome 10.0.648.127
+'a884ca8d0fadb73749d80bc7bc1bdf9a', // pt-PT - MacOS X 10.6.0 - Chrome 10.0.648.133
+'246efb49a52ac5eaf1b3b9d22e4f56db', // */* - pt-PT - MacOS X 10.6.0 - Chrome 10.0.648.133
 'a0dc5aa528101c6ee9b417a1d91f695f', // pt-PT - MacOS X 10.6.1 - Chrome 8.0.552.215
 'd2be52e7c9ac345d73cb847d0490f07e', // */* - pt-PT - MacOS X 10.6.1 - Chrome 8.0.552.215
 '1cb7588c02d8ccd0dcf6c9ea05044af8', // pt-PT - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -980,6 +1076,8 @@ $browsers_fingerprints = array(
 '482d125794c97c00485d5c12765d0127', // */* - pt-PT - MacOS X 10.6.1 - Chrome 9.0.597.107
 'e15f7149c8d260c5fc37f3685b270e97', // pt-PT - MacOS X 10.6.1 - Chrome 10.0.648.127
 '628d206778556531cf0fda5136605081', // */* - pt-PT - MacOS X 10.6.1 - Chrome 10.0.648.127
+'21a2cc7be2b90018d407b2a9b75bd813', // pt-PT - MacOS X 10.6.1 - Chrome 10.0.648.133
+'cec569296773b91dbd533d4fdfd06af4', // */* - pt-PT - MacOS X 10.6.1 - Chrome 10.0.648.133
 'a0dc5aa528101c6ee9b417a1d91f695f', // pt-PT - MacOS X 10.6.2 - Chrome 8.0.552.215
 'd2be52e7c9ac345d73cb847d0490f07e', // */* - pt-PT - MacOS X 10.6.2 - Chrome 8.0.552.215
 '1cb7588c02d8ccd0dcf6c9ea05044af8', // pt-PT - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -1000,6 +1098,8 @@ $browsers_fingerprints = array(
 '482d125794c97c00485d5c12765d0127', // */* - pt-PT - MacOS X 10.6.2 - Chrome 9.0.597.107
 'e15f7149c8d260c5fc37f3685b270e97', // pt-PT - MacOS X 10.6.2 - Chrome 10.0.648.127
 '628d206778556531cf0fda5136605081', // */* - pt-PT - MacOS X 10.6.2 - Chrome 10.0.648.127
+'21a2cc7be2b90018d407b2a9b75bd813', // pt-PT - MacOS X 10.6.2 - Chrome 10.0.648.133
+'cec569296773b91dbd533d4fdfd06af4', // */* - pt-PT - MacOS X 10.6.2 - Chrome 10.0.648.133
 '6a95635e86683fd53f13a7459abce219', // pt-PT - MacOS X 10.6.3 - Chrome 8.0.552.215
 '26677ae96e2acb0c8a2da27bb73fcb74', // */* - pt-PT - MacOS X 10.6.3 - Chrome 8.0.552.215
 '935a4fb8bdce912aef6eb3faa4100bcf', // pt-PT - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -1020,6 +1120,8 @@ $browsers_fingerprints = array(
 '607d1790f40148b0e891ea84e6722147', // */* - pt-PT - MacOS X 10.6.3 - Chrome 9.0.597.107
 '5af549c6856430915bb7bba6e51da25f', // pt-PT - MacOS X 10.6.3 - Chrome 10.0.648.127
 'b087d2e46deea5a8561d8a5e0aaf5023', // */* - pt-PT - MacOS X 10.6.3 - Chrome 10.0.648.127
+'1358761bcbfe847debb6660479464f67', // pt-PT - MacOS X 10.6.3 - Chrome 10.0.648.133
+'40e41eaea8ca804284c15b81765730cb', // */* - pt-PT - MacOS X 10.6.3 - Chrome 10.0.648.133
 '4b14826025765666fefd7343b254564b', // pt-PT - MacOS X 10.6.4 - Chrome 8.0.552.215
 '52ae74f424a7ecfde08c055177b7adde', // */* - pt-PT - MacOS X 10.6.4 - Chrome 8.0.552.215
 'eab2d297f9eb54a5fdad06492ae89a26', // pt-PT - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -1040,6 +1142,8 @@ $browsers_fingerprints = array(
 '58387c404530bbc7fa247ac9d064bdfc', // */* - pt-PT - MacOS X 10.6.4 - Chrome 9.0.597.107
 '2bb58718c3f9868dda98f9a037333726', // pt-PT - MacOS X 10.6.4 - Chrome 10.0.648.127
 'e04c67ac82611acc16017a612c9635bb', // */* - pt-PT - MacOS X 10.6.4 - Chrome 10.0.648.127
+'02e0e59071d4acc01e2b41e8aa648c9c', // pt-PT - MacOS X 10.6.4 - Chrome 10.0.648.133
+'423154f1f981cda666344d06d769855c', // */* - pt-PT - MacOS X 10.6.4 - Chrome 10.0.648.133
 'cd3282563bc055969cfb606d8fb506d5', // pt-PT - MacOS X 10.6.5 - Chrome 8.0.552.215
 '1357ab7bbf1cbd9ef056c0c54d445d2f', // */* - pt-PT - MacOS X 10.6.5 - Chrome 8.0.552.215
 '68c3a4d603560b207348cb9ee6a1a4ee', // pt-PT - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -1060,6 +1164,8 @@ $browsers_fingerprints = array(
 '60a616ab0f97dc3354875183b6071141', // */* - pt-PT - MacOS X 10.6.5 - Chrome 9.0.597.107
 '067e32ed2b2a0566fda0e792e3c36877', // pt-PT - MacOS X 10.6.5 - Chrome 10.0.648.127
 '14add57e7f2998b1df378a0c9aec04fe', // */* - pt-PT - MacOS X 10.6.5 - Chrome 10.0.648.127
+'cea0607a54ed7d0ba531dad9425f1569', // pt-PT - MacOS X 10.6.5 - Chrome 10.0.648.133
+'01807519945a05db937e0f9878d79f2f', // */* - pt-PT - MacOS X 10.6.5 - Chrome 10.0.648.133
 '39d8af45ad98bb2f4278ce707f0090ce', // pt-PT - MacOS X 10.6.6 - Chrome 8.0.552.215
 'cfcd506187802f21a82968c511cf75fe', // */* - pt-PT - MacOS X 10.6.6 - Chrome 8.0.552.215
 '4cfc955d1da85bad30127614edeb75a3', // pt-PT - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -1080,6 +1186,8 @@ $browsers_fingerprints = array(
 'c831909abcc35d8675f8f1b1ca4bfd5a', // */* - pt-PT - MacOS X 10.6.6 - Chrome 9.0.597.107
 '23900813a178ff5a19b1c1d91f5b3cc9', // pt-PT - MacOS X 10.6.6 - Chrome 10.0.648.127
 '36c584e4fa928a0ada5380fd8222533e', // */* - pt-PT - MacOS X 10.6.6 - Chrome 10.0.648.127
+'b568fecf9880ec5bb61bd4acaed5e690', // pt-PT - MacOS X 10.6.6 - Chrome 10.0.648.133
+'0daf9f8844519a041e2d35f53b5a9ff3', // */* - pt-PT - MacOS X 10.6.6 - Chrome 10.0.648.133
 '6c473651a9a0294f8ce02486cec0aa10', // pt-PT - Linux - Chrome 8.0.552.215
 '7a2172cd0a68b9ca6180e5ae6d3d5384', // */* - pt-PT - Linux - Chrome 8.0.552.215
 '619635be0dd8b99c24a0412870b2b17e', // pt-PT - Linux - Chrome 8.0.552.224
@@ -1100,6 +1208,8 @@ $browsers_fingerprints = array(
 '3c27e19465d120418ca02ac7feb186ce', // */* - pt-PT - Linux - Chrome 9.0.597.107
 'e227d5bef1bf30a8e9770202c3322fad', // pt-PT - Linux - Chrome 10.0.648.127
 'd3cba2d3a3397878af2440b2c131b015', // */* - pt-PT - Linux - Chrome 10.0.648.127
+'49c1f470f89d3415ff2663f2ad0bd38e', // pt-PT - Linux - Chrome 10.0.648.133
+'df9d2265af715ab245d0e6216a78c216', // */* - pt-PT - Linux - Chrome 10.0.648.133
 '76859106123a8cdd9bdea857745b184c', // pt-PT - Linux 64 - Chrome 8.0.552.215
 '85400197724bcc752f399def5371bf35', // */* - pt-PT - Linux 64 - Chrome 8.0.552.215
 'e389095611e1541aa55a5fb5af0efef2', // pt-PT - Linux 64 - Chrome 8.0.552.224
@@ -1120,6 +1230,8 @@ $browsers_fingerprints = array(
 '4f550815c1f3318ff86277b27933c702', // */* - pt-PT - Linux 64 - Chrome 9.0.597.107
 'd354de9f33833a4a9045cca8af6c3bf5', // pt-PT - Linux 64 - Chrome 10.0.648.127
 '5b5c62826fcdf2c9d2c649a61921f5b4', // */* - pt-PT - Linux 64 - Chrome 10.0.648.127
+'a4aacb0842c49b66da1c6f962bc578da', // pt-PT - Linux 64 - Chrome 10.0.648.133
+'ea9e67dafac1cd85532b50726294830a', // */* - pt-PT - Linux 64 - Chrome 10.0.648.133
 '1bdb62796245fe2f24fd6fe3ccdb872a', // pt-BR - Windows XP - Chrome 8.0.552.215
 'e23b0a0bcd047bdfd935b9d30d431f86', // */* - pt-BR - Windows XP - Chrome 8.0.552.215
 'd7a7bdc88787590181212ceb73802e1b', // pt-BR - Windows XP - Chrome 8.0.552.224
@@ -1140,6 +1252,8 @@ $browsers_fingerprints = array(
 '2e048a54103a6e8e5342866fae554321', // */* - pt-BR - Windows XP - Chrome 9.0.597.107
 '0a38299cfbc0b0bf624d1581d3c37168', // pt-BR - Windows XP - Chrome 10.0.648.127
 'e19181e195ffb80755d5f7317d60a6d4', // */* - pt-BR - Windows XP - Chrome 10.0.648.127
+'b0616267f1c6e42ce572f0a7d5a768a8', // pt-BR - Windows XP - Chrome 10.0.648.133
+'d7dfe1fe43d9f83ebf0ef4a44c66e5fd', // */* - pt-BR - Windows XP - Chrome 10.0.648.133
 'bbce2925e44bdfe2a2c5f25d8346de72', // pt-BR - Windows 2003 - Chrome 8.0.552.215
 '0b45344f372de2ed4a5779fb22169bec', // */* - pt-BR - Windows 2003 - Chrome 8.0.552.215
 '734f898cb27a7e4ebd6c02eec3d5c6e3', // pt-BR - Windows 2003 - Chrome 8.0.552.224
@@ -1160,6 +1274,8 @@ $browsers_fingerprints = array(
 'c73da96d48fef69b573489940ba0d994', // */* - pt-BR - Windows 2003 - Chrome 9.0.597.107
 'a9026664ee0ef7580a88d25b25b4f9ab', // pt-BR - Windows 2003 - Chrome 10.0.648.127
 '28831dd10a303af663ad49c1930ad466', // */* - pt-BR - Windows 2003 - Chrome 10.0.648.127
+'0eb0f265662e7b8dc825be90e8ad10b0', // pt-BR - Windows 2003 - Chrome 10.0.648.133
+'71a072db5e6211ea8386e14beb795e4b', // */* - pt-BR - Windows 2003 - Chrome 10.0.648.133
 'b672bb872df90383f1dcdee6d6bcd71d', // pt-BR - Windows Vista - Chrome 8.0.552.215
 '0943912781ec6e42ae73170eb9984856', // */* - pt-BR - Windows Vista - Chrome 8.0.552.215
 'f7f90cc824e483a9617bd9968b28abef', // pt-BR - Windows Vista - Chrome 8.0.552.224
@@ -1180,6 +1296,8 @@ $browsers_fingerprints = array(
 'd2c2f7014c64b51d9b265e0e5941beda', // */* - pt-BR - Windows Vista - Chrome 9.0.597.107
 '0b5927c8014b69e4d81df93026c32609', // pt-BR - Windows Vista - Chrome 10.0.648.127
 '22c3867dcf993f1b35f8f57522e37a54', // */* - pt-BR - Windows Vista - Chrome 10.0.648.127
+'1ebe801ad8088bbf20d8e532f65e56b0', // pt-BR - Windows Vista - Chrome 10.0.648.133
+'a8c10b39f68f2f0b3e14d3b44a10b16a', // */* - pt-BR - Windows Vista - Chrome 10.0.648.133
 'c983ae2016265f02bbda8788e7ed5e77', // pt-BR - Windows 7 - Chrome 8.0.552.215
 'e5722306a2a7545214643842499a4645', // */* - pt-BR - Windows 7 - Chrome 8.0.552.215
 '33c0a9a6bcbe09fd3d5c1c6f43ee44c6', // pt-BR - Windows 7 - Chrome 8.0.552.224
@@ -1200,6 +1318,8 @@ $browsers_fingerprints = array(
 '76416d740fdd29538da2e25d51a84421', // */* - pt-BR - Windows 7 - Chrome 9.0.597.107
 'bf9df111069d6d6b88d4f01a36682336', // pt-BR - Windows 7 - Chrome 10.0.648.127
 '9d0f34063f938dd26be6cb7c2e52db4c', // */* - pt-BR - Windows 7 - Chrome 10.0.648.127
+'bbc175665f18092788a9c2e855d45792', // pt-BR - Windows 7 - Chrome 10.0.648.133
+'1a2eaa1bb2c718c78296269023241e36', // */* - pt-BR - Windows 7 - Chrome 10.0.648.133
 '1dc6b44eae24656e26d190373ecabd8d', // pt-BR - MacOS X 10.5.8 - Chrome 8.0.552.215
 '0a1de2b3bde25c6f9384a6e9c2145062', // */* - pt-BR - MacOS X 10.5.8 - Chrome 8.0.552.215
 '0728c01d9773bfa86f708c345e9bf91d', // pt-BR - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -1220,6 +1340,8 @@ $browsers_fingerprints = array(
 'fa78adcd3063754368d68ca5e8fa37ec', // */* - pt-BR - MacOS X 10.5.8 - Chrome 9.0.597.107
 '445d2cef41e5dc601751f5d6d5cc3bb0', // pt-BR - MacOS X 10.5.8 - Chrome 10.0.648.127
 'a7789290ce0a919e3fff98c2cd0a0b8d', // */* - pt-BR - MacOS X 10.5.8 - Chrome 10.0.648.127
+'908b236d76167e427c4c96dcff29c7ce', // pt-BR - MacOS X 10.5.8 - Chrome 10.0.648.133
+'f66980e55fa2cd42e3d72e827ae41da0', // */* - pt-BR - MacOS X 10.5.8 - Chrome 10.0.648.133
 '4ef4a6305ffb96e6a7aa5bf2e89ab444', // pt-BR - MacOS X 10.6.0 - Chrome 8.0.552.215
 '99c3c3fbdd02e3d68673eb3be0461fc0', // */* - pt-BR - MacOS X 10.6.0 - Chrome 8.0.552.215
 '99697d1e8d6cde94af47aa14123a438e', // pt-BR - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -1240,6 +1362,8 @@ $browsers_fingerprints = array(
 'af6da9e2ab42a5d2ba76427a78aa8f3a', // */* - pt-BR - MacOS X 10.6.0 - Chrome 9.0.597.107
 '095eb99012e0362804940aa9e2cb19c9', // pt-BR - MacOS X 10.6.0 - Chrome 10.0.648.127
 '465f4b668a90da17bc94e29c9db76c88', // */* - pt-BR - MacOS X 10.6.0 - Chrome 10.0.648.127
+'fdbf811882b80937718ec06274d69db8', // pt-BR - MacOS X 10.6.0 - Chrome 10.0.648.133
+'d3ded16531611e9d3638abab3b9019f9', // */* - pt-BR - MacOS X 10.6.0 - Chrome 10.0.648.133
 '5777e3dedb86a5f9889017358282184e', // pt-BR - MacOS X 10.6.1 - Chrome 8.0.552.215
 '16f080769f9d1492921cedd05ee854ab', // */* - pt-BR - MacOS X 10.6.1 - Chrome 8.0.552.215
 'a9a43ad5a8fafdacc5dcc547658c3166', // pt-BR - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -1260,6 +1384,8 @@ $browsers_fingerprints = array(
 '0d23be52b0b63899cb92c6c592dd90eb', // */* - pt-BR - MacOS X 10.6.1 - Chrome 9.0.597.107
 '1b5d4dcc68656e212b74adb20aa5593c', // pt-BR - MacOS X 10.6.1 - Chrome 10.0.648.127
 '5d0ffdba62ac3ad646604fa423bfc150', // */* - pt-BR - MacOS X 10.6.1 - Chrome 10.0.648.127
+'d24f08660f314c47be2b7ac59f084363', // pt-BR - MacOS X 10.6.1 - Chrome 10.0.648.133
+'95c4f53d1393be420d57f7ceef98c24b', // */* - pt-BR - MacOS X 10.6.1 - Chrome 10.0.648.133
 '5777e3dedb86a5f9889017358282184e', // pt-BR - MacOS X 10.6.2 - Chrome 8.0.552.215
 '16f080769f9d1492921cedd05ee854ab', // */* - pt-BR - MacOS X 10.6.2 - Chrome 8.0.552.215
 'a9a43ad5a8fafdacc5dcc547658c3166', // pt-BR - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -1280,6 +1406,8 @@ $browsers_fingerprints = array(
 '0d23be52b0b63899cb92c6c592dd90eb', // */* - pt-BR - MacOS X 10.6.2 - Chrome 9.0.597.107
 '1b5d4dcc68656e212b74adb20aa5593c', // pt-BR - MacOS X 10.6.2 - Chrome 10.0.648.127
 '5d0ffdba62ac3ad646604fa423bfc150', // */* - pt-BR - MacOS X 10.6.2 - Chrome 10.0.648.127
+'d24f08660f314c47be2b7ac59f084363', // pt-BR - MacOS X 10.6.2 - Chrome 10.0.648.133
+'95c4f53d1393be420d57f7ceef98c24b', // */* - pt-BR - MacOS X 10.6.2 - Chrome 10.0.648.133
 '395be55046450bf831ca955f6dd2e30e', // pt-BR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '2798a195f2e7812c4bef263810f7702d', // */* - pt-BR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '3e79e734f70a8d331095a87a654f2a7b', // pt-BR - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -1300,6 +1428,8 @@ $browsers_fingerprints = array(
 '5704b242bf17cfb4d167d2f5a2ae22ab', // */* - pt-BR - MacOS X 10.6.3 - Chrome 9.0.597.107
 'bef329351e9d031bbfcc83ad6f4e4c6c', // pt-BR - MacOS X 10.6.3 - Chrome 10.0.648.127
 '9b6ec600314799a7bc3486d6e878514d', // */* - pt-BR - MacOS X 10.6.3 - Chrome 10.0.648.127
+'5aa6ea38263dd66c37d19eab66a46aa4', // pt-BR - MacOS X 10.6.3 - Chrome 10.0.648.133
+'73dddc68af04ced1e6f41c8b17a5e6d4', // */* - pt-BR - MacOS X 10.6.3 - Chrome 10.0.648.133
 '213432d37c4d38ac7f0f66e2f27c5e3b', // pt-BR - MacOS X 10.6.4 - Chrome 8.0.552.215
 'c234103cf948de63826a40f3972e9e2f', // */* - pt-BR - MacOS X 10.6.4 - Chrome 8.0.552.215
 '5c8ea69056bb70de3c851b2955d4e429', // pt-BR - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -1320,6 +1450,8 @@ $browsers_fingerprints = array(
 'd9477b43a280b7b86f95f925b2b79c0c', // */* - pt-BR - MacOS X 10.6.4 - Chrome 9.0.597.107
 'f1088660ecdb8df75289d8c224342bf7', // pt-BR - MacOS X 10.6.4 - Chrome 10.0.648.127
 '681e319f180bedd7de9df13d86ab75ea', // */* - pt-BR - MacOS X 10.6.4 - Chrome 10.0.648.127
+'22c5e1a708d239307c5a2d57c4d1e19a', // pt-BR - MacOS X 10.6.4 - Chrome 10.0.648.133
+'575b621c30b6ab1b54b2e87b9ac4dd48', // */* - pt-BR - MacOS X 10.6.4 - Chrome 10.0.648.133
 '08b6ddb28dd9cfb79920c8a77552db37', // pt-BR - MacOS X 10.6.5 - Chrome 8.0.552.215
 '9e9a2aee35e2e46d1700c10c25aa1d74', // */* - pt-BR - MacOS X 10.6.5 - Chrome 8.0.552.215
 '34bed36e5a1a975ad2f92fb8fa08a2b3', // pt-BR - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -1340,6 +1472,8 @@ $browsers_fingerprints = array(
 'b5979bec496fe7d8076eb352364b6586', // */* - pt-BR - MacOS X 10.6.5 - Chrome 9.0.597.107
 '7ba1b932d969b37d09770bb8ee90be90', // pt-BR - MacOS X 10.6.5 - Chrome 10.0.648.127
 '0ad0c0f4618f6ddcf60c156dbc27d43e', // */* - pt-BR - MacOS X 10.6.5 - Chrome 10.0.648.127
+'740372052a2d765ccfc05544cafef46b', // pt-BR - MacOS X 10.6.5 - Chrome 10.0.648.133
+'dccf30b98dc736a7c2721db16e534bd0', // */* - pt-BR - MacOS X 10.6.5 - Chrome 10.0.648.133
 '0c3f514eca217deefa67c412254162c2', // pt-BR - MacOS X 10.6.6 - Chrome 8.0.552.215
 '11d4100fd433ca692793c9cf97fdbdcf', // */* - pt-BR - MacOS X 10.6.6 - Chrome 8.0.552.215
 '23241a1c430fad2a9d1f56a343c5d49c', // pt-BR - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -1360,6 +1494,8 @@ $browsers_fingerprints = array(
 'ab7c67eb9ffa0d79ef0bb1f7a7d36ea8', // */* - pt-BR - MacOS X 10.6.6 - Chrome 9.0.597.107
 '319a570dc5c8e19cb7f3c1885a4d8860', // pt-BR - MacOS X 10.6.6 - Chrome 10.0.648.127
 '6d2f1e4b52b44afda31bca13375fdf09', // */* - pt-BR - MacOS X 10.6.6 - Chrome 10.0.648.127
+'8a20eea50730ad981ee42a287e60a022', // pt-BR - MacOS X 10.6.6 - Chrome 10.0.648.133
+'92c665aae45d1f5bee49e81a92bd50a5', // */* - pt-BR - MacOS X 10.6.6 - Chrome 10.0.648.133
 'cbd98ad8b96548a2f373dcb08a4f79a5', // pt-BR - Linux - Chrome 8.0.552.215
 'dee82176cd6edc61dd5ad9782490e32e', // */* - pt-BR - Linux - Chrome 8.0.552.215
 '07f90ae48459c204ad783a602fc0adc8', // pt-BR - Linux - Chrome 8.0.552.224
@@ -1380,6 +1516,8 @@ $browsers_fingerprints = array(
 'f6a0d32b8c3c3529258161835a156981', // */* - pt-BR - Linux - Chrome 9.0.597.107
 '8e3f093b1beab42143589c5400b8bd0f', // pt-BR - Linux - Chrome 10.0.648.127
 '94fdf3e5bf4308a1370bf58f8be21f6a', // */* - pt-BR - Linux - Chrome 10.0.648.127
+'97c8043b8c50f73651e536925d961f04', // pt-BR - Linux - Chrome 10.0.648.133
+'8cd332afcee702f6887578b2f42478ff', // */* - pt-BR - Linux - Chrome 10.0.648.133
 '193522be0a3170a5894898446265e667', // pt-BR - Linux 64 - Chrome 8.0.552.215
 '2ec8286d6c439af71fabd35bb5902000', // */* - pt-BR - Linux 64 - Chrome 8.0.552.215
 '6b43f31cff376e36b7072a076b394895', // pt-BR - Linux 64 - Chrome 8.0.552.224
@@ -1400,6 +1538,8 @@ $browsers_fingerprints = array(
 '68a85530a1d3c303554b24cf03d40ee4', // */* - pt-BR - Linux 64 - Chrome 9.0.597.107
 'd8ae1096a84751783a90eee2f8bd92b3', // pt-BR - Linux 64 - Chrome 10.0.648.127
 'f37f78777ccd2cbbf829d73c7fe18dd3', // */* - pt-BR - Linux 64 - Chrome 10.0.648.127
+'6c8eba84de65690b2ac9dbc3a11c6385', // pt-BR - Linux 64 - Chrome 10.0.648.133
+'5667068fe080d5e32454ff9104e4117b', // */* - pt-BR - Linux 64 - Chrome 10.0.648.133
 '4339e470c5f33a0903f3df4d7c41c2ab', // de-DE - Windows XP - Chrome 8.0.552.215
 '43598ea07320480e0b45bc5c8ff3f77a', // */* - de-DE - Windows XP - Chrome 8.0.552.215
 '1e857fe614c9d5df3d6cd89e29984ef0', // de-DE - Windows XP - Chrome 8.0.552.224
@@ -1420,6 +1560,8 @@ $browsers_fingerprints = array(
 'f58447dac1aafb8e36069f6faf9e2db7', // */* - de-DE - Windows XP - Chrome 9.0.597.107
 '53610ad4da724bded1e0cda6fea10807', // de-DE - Windows XP - Chrome 10.0.648.127
 'edb2ab5215c52db028a7a2d0d6b39306', // */* - de-DE - Windows XP - Chrome 10.0.648.127
+'60e3083a8cbabfa24587e9828bc570d6', // de-DE - Windows XP - Chrome 10.0.648.133
+'0549f8b4e32b76910ed7f636009b27c1', // */* - de-DE - Windows XP - Chrome 10.0.648.133
 '7a4ae666f9792ec3ae7e5d8983ab25c7', // de-DE - Windows 2003 - Chrome 8.0.552.215
 '2b2d6bb9c4e7c8783e273c6b3623c779', // */* - de-DE - Windows 2003 - Chrome 8.0.552.215
 '7929f7217dbbd9b4f94e025e2839adb4', // de-DE - Windows 2003 - Chrome 8.0.552.224
@@ -1440,6 +1582,8 @@ $browsers_fingerprints = array(
 '94d910b2f77f889b5f4cb430a073ecaa', // */* - de-DE - Windows 2003 - Chrome 9.0.597.107
 '1b037ba015fb268b86785037cc8b8dd6', // de-DE - Windows 2003 - Chrome 10.0.648.127
 'decca6c65b9490f7c65d5dce372dd1b9', // */* - de-DE - Windows 2003 - Chrome 10.0.648.127
+'edfe48a4c0b79d02835297bb711314d0', // de-DE - Windows 2003 - Chrome 10.0.648.133
+'affc5dac15dc39cbdbc4e6e889ed8d97', // */* - de-DE - Windows 2003 - Chrome 10.0.648.133
 '7da3ec860980c0b16e0782725fa7aa31', // de-DE - Windows Vista - Chrome 8.0.552.215
 'e40c2baa2e90fbe8a3737554cbfcf6d1', // */* - de-DE - Windows Vista - Chrome 8.0.552.215
 'd79701ca1752f0dd9108f8535502b6ac', // de-DE - Windows Vista - Chrome 8.0.552.224
@@ -1460,6 +1604,8 @@ $browsers_fingerprints = array(
 '8c1419fe40b2e785b0efa56d313c7b1f', // */* - de-DE - Windows Vista - Chrome 9.0.597.107
 'cb0a9ecbc827947141b735c575b0a796', // de-DE - Windows Vista - Chrome 10.0.648.127
 'c6282b1a7a2d3f319b0b00a300f3b544', // */* - de-DE - Windows Vista - Chrome 10.0.648.127
+'29bcefd04e04ec01f6e34b9969d97bb6', // de-DE - Windows Vista - Chrome 10.0.648.133
+'843d0a47d160888fada00a6e2daf38cc', // */* - de-DE - Windows Vista - Chrome 10.0.648.133
 '12a075e6fcdfc860fe8b34469e83ba44', // de-DE - Windows 7 - Chrome 8.0.552.215
 '0bb35819d28076782c3af958b678286d', // */* - de-DE - Windows 7 - Chrome 8.0.552.215
 'dc28ee33d06b58f75df4801da25c6176', // de-DE - Windows 7 - Chrome 8.0.552.224
@@ -1480,6 +1626,8 @@ $browsers_fingerprints = array(
 'f7ebecd793dec21f1bcc23ef5064c9d8', // */* - de-DE - Windows 7 - Chrome 9.0.597.107
 '7cf4f581feb228ec12531fbddb5ef9d4', // de-DE - Windows 7 - Chrome 10.0.648.127
 '846d5c1f8e12ce43044546283cce9e12', // */* - de-DE - Windows 7 - Chrome 10.0.648.127
+'4c3d59753ad6d3568d6ac7afc95da54c', // de-DE - Windows 7 - Chrome 10.0.648.133
+'73dddd6dd522b5ffde7637154d9b31b0', // */* - de-DE - Windows 7 - Chrome 10.0.648.133
 '9d778210f3ba920bcfbaed7cdf7159a8', // de-DE - MacOS X 10.5.8 - Chrome 8.0.552.215
 '73471cd75085860602a8a25f09d87a15', // */* - de-DE - MacOS X 10.5.8 - Chrome 8.0.552.215
 '288dde87209de5f768b791865a0e338f', // de-DE - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -1500,6 +1648,8 @@ $browsers_fingerprints = array(
 '9ccb4f92de81ed734e793c7bbdeac059', // */* - de-DE - MacOS X 10.5.8 - Chrome 9.0.597.107
 '77188c5d62a4b62273ec05cca2d1e0bf', // de-DE - MacOS X 10.5.8 - Chrome 10.0.648.127
 '84608b5ae8a945c1958adf77b6a87e59', // */* - de-DE - MacOS X 10.5.8 - Chrome 10.0.648.127
+'852c9e6321855b3f61c5defac89372bb', // de-DE - MacOS X 10.5.8 - Chrome 10.0.648.133
+'8c8bb0b3bd5073a93b7f0ccbda997bf6', // */* - de-DE - MacOS X 10.5.8 - Chrome 10.0.648.133
 '13d0df0afc9a065de7b470c8df1f52c5', // de-DE - MacOS X 10.6.0 - Chrome 8.0.552.215
 'db9f89103c6d2f159b18c0b0107908e2', // */* - de-DE - MacOS X 10.6.0 - Chrome 8.0.552.215
 '904f35c6d72c85014709afed44b6b6b5', // de-DE - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -1520,6 +1670,8 @@ $browsers_fingerprints = array(
 '5de67d38afc6b64b30fb8947df24bd33', // */* - de-DE - MacOS X 10.6.0 - Chrome 9.0.597.107
 '38af10df9817280ebc6a553aa80c3ca6', // de-DE - MacOS X 10.6.0 - Chrome 10.0.648.127
 'ecd0bb5c769231d52e7d9e7b72557913', // */* - de-DE - MacOS X 10.6.0 - Chrome 10.0.648.127
+'fd3aae5cba7d14b449e38116a0483e7b', // de-DE - MacOS X 10.6.0 - Chrome 10.0.648.133
+'6627afbe88ef33e42bfcfa00e84aa73c', // */* - de-DE - MacOS X 10.6.0 - Chrome 10.0.648.133
 '3d0352a4cce7bd4ed1add7267fb27cf7', // de-DE - MacOS X 10.6.1 - Chrome 8.0.552.215
 '7a0e1ac71ae1659f4b9c8d0e7cf704c2', // */* - de-DE - MacOS X 10.6.1 - Chrome 8.0.552.215
 'f93edd8f20070ee2be8d5d1f6b408846', // de-DE - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -1540,6 +1692,8 @@ $browsers_fingerprints = array(
 'e2ad7a5376a67a47cabfbd95d0a2f850', // */* - de-DE - MacOS X 10.6.1 - Chrome 9.0.597.107
 '953f07e1eece2c8b787ae8a8c149684e', // de-DE - MacOS X 10.6.1 - Chrome 10.0.648.127
 '4a0c3be9f120867be210d7ff7273ebac', // */* - de-DE - MacOS X 10.6.1 - Chrome 10.0.648.127
+'6d6ccb4639f2b1daed74057b4a920203', // de-DE - MacOS X 10.6.1 - Chrome 10.0.648.133
+'a7c78162ae8a697758c1358fbb611158', // */* - de-DE - MacOS X 10.6.1 - Chrome 10.0.648.133
 '3d0352a4cce7bd4ed1add7267fb27cf7', // de-DE - MacOS X 10.6.2 - Chrome 8.0.552.215
 '7a0e1ac71ae1659f4b9c8d0e7cf704c2', // */* - de-DE - MacOS X 10.6.2 - Chrome 8.0.552.215
 'f93edd8f20070ee2be8d5d1f6b408846', // de-DE - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -1560,6 +1714,8 @@ $browsers_fingerprints = array(
 'e2ad7a5376a67a47cabfbd95d0a2f850', // */* - de-DE - MacOS X 10.6.2 - Chrome 9.0.597.107
 '953f07e1eece2c8b787ae8a8c149684e', // de-DE - MacOS X 10.6.2 - Chrome 10.0.648.127
 '4a0c3be9f120867be210d7ff7273ebac', // */* - de-DE - MacOS X 10.6.2 - Chrome 10.0.648.127
+'6d6ccb4639f2b1daed74057b4a920203', // de-DE - MacOS X 10.6.2 - Chrome 10.0.648.133
+'a7c78162ae8a697758c1358fbb611158', // */* - de-DE - MacOS X 10.6.2 - Chrome 10.0.648.133
 '0e377bf6759b6276a3ed39397b9c67e3', // de-DE - MacOS X 10.6.3 - Chrome 8.0.552.215
 '8a6958e596f6944d05e7ee2f8d1efafd', // */* - de-DE - MacOS X 10.6.3 - Chrome 8.0.552.215
 'efa8d1fd5339d67021f6a258480b3acc', // de-DE - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -1580,6 +1736,8 @@ $browsers_fingerprints = array(
 '31d7a1670f0c315e7a245d21b6c5e04b', // */* - de-DE - MacOS X 10.6.3 - Chrome 9.0.597.107
 '7307d3ebe30bc6334f61c1b051fd7252', // de-DE - MacOS X 10.6.3 - Chrome 10.0.648.127
 '36f2ee7f4324d420a737c2437c9ce23c', // */* - de-DE - MacOS X 10.6.3 - Chrome 10.0.648.127
+'58c276087c0cdafc321c4f566899792d', // de-DE - MacOS X 10.6.3 - Chrome 10.0.648.133
+'d3233bc19c886b92319174c44124efd5', // */* - de-DE - MacOS X 10.6.3 - Chrome 10.0.648.133
 '06b352b70437c4fb667783733f37a897', // de-DE - MacOS X 10.6.4 - Chrome 8.0.552.215
 'b0df82e620ffa42bf7064f58771cf6fa', // */* - de-DE - MacOS X 10.6.4 - Chrome 8.0.552.215
 '27fd4461cad328f4620ac9aa6fd511d0', // de-DE - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -1600,6 +1758,8 @@ $browsers_fingerprints = array(
 '1c73384dc4059f800a05d8687ab3d069', // */* - de-DE - MacOS X 10.6.4 - Chrome 9.0.597.107
 'ff2e0ca7bb4bef02ea3868b2f54f269f', // de-DE - MacOS X 10.6.4 - Chrome 10.0.648.127
 '1aa24533609d31c732f1568aefa3b665', // */* - de-DE - MacOS X 10.6.4 - Chrome 10.0.648.127
+'6ebf3056adfa8ee93853a6d18aa5c975', // de-DE - MacOS X 10.6.4 - Chrome 10.0.648.133
+'c077cfa94af7d98fbe3fdd2418f35473', // */* - de-DE - MacOS X 10.6.4 - Chrome 10.0.648.133
 '28aa6934a17117d83235e60ffbe40fce', // de-DE - MacOS X 10.6.5 - Chrome 8.0.552.215
 '0265fb5386fcd355cbace668cbfa9bb9', // */* - de-DE - MacOS X 10.6.5 - Chrome 8.0.552.215
 'b92a50d533bcbf89c06e53cba02111af', // de-DE - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -1620,6 +1780,8 @@ $browsers_fingerprints = array(
 '7951fb0079b9e859f4baf88b339896d6', // */* - de-DE - MacOS X 10.6.5 - Chrome 9.0.597.107
 'ee688a968e6b68c56f665863bad2d18f', // de-DE - MacOS X 10.6.5 - Chrome 10.0.648.127
 'a4c9e51e3a03eaf170c133c7c3ace1e6', // */* - de-DE - MacOS X 10.6.5 - Chrome 10.0.648.127
+'309baf6d6ca5bd557810f0c03cce091d', // de-DE - MacOS X 10.6.5 - Chrome 10.0.648.133
+'7f2d1227c02f169d07b1937796a4f58c', // */* - de-DE - MacOS X 10.6.5 - Chrome 10.0.648.133
 '49e60792be7b7945f3f4dee99a2eff29', // de-DE - MacOS X 10.6.6 - Chrome 8.0.552.215
 'dd6aca94410a5856e65173b12a6178de', // */* - de-DE - MacOS X 10.6.6 - Chrome 8.0.552.215
 '18900c0ade3b860b168add57e48dcf8f', // de-DE - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -1640,6 +1802,8 @@ $browsers_fingerprints = array(
 'a9595bb83c83164dd5d08bb7779a5105', // */* - de-DE - MacOS X 10.6.6 - Chrome 9.0.597.107
 '76e90e5f5b6ff2757836d153902e8d47', // de-DE - MacOS X 10.6.6 - Chrome 10.0.648.127
 '23c8adae733a30bcb2b1f568e51e5da0', // */* - de-DE - MacOS X 10.6.6 - Chrome 10.0.648.127
+'f36de9e64482012aedbd360238f2462a', // de-DE - MacOS X 10.6.6 - Chrome 10.0.648.133
+'39a4be367448e8768899f2ce65abf593', // */* - de-DE - MacOS X 10.6.6 - Chrome 10.0.648.133
 '99646b321cc41e513e17e3d83b8e719c', // de-DE - Linux - Chrome 8.0.552.215
 'ab7e8a1c69847ea36cbc61daf10ef03e', // */* - de-DE - Linux - Chrome 8.0.552.215
 '772743f48ed979c8d1b75961361a2cca', // de-DE - Linux - Chrome 8.0.552.224
@@ -1660,6 +1824,8 @@ $browsers_fingerprints = array(
 '50196a297deed38cf7182253192d2c22', // */* - de-DE - Linux - Chrome 9.0.597.107
 'e5510769f90d5842fd701300baef56ab', // de-DE - Linux - Chrome 10.0.648.127
 '1c1c5c15fbb8face2ee6434be06030e3', // */* - de-DE - Linux - Chrome 10.0.648.127
+'8d91f945ca92ff9cb6c46ed54069aed7', // de-DE - Linux - Chrome 10.0.648.133
+'88dd24339b4b97c882c5f8b9f1c7201d', // */* - de-DE - Linux - Chrome 10.0.648.133
 '556e893dd2cef30799f4dde01d413138', // de-DE - Linux 64 - Chrome 8.0.552.215
 '48d69f4867b6d04cc08ae351c045ef4e', // */* - de-DE - Linux 64 - Chrome 8.0.552.215
 '8bc1978e5ea616c3bdd49c4e8c046d01', // de-DE - Linux 64 - Chrome 8.0.552.224
@@ -1680,6 +1846,8 @@ $browsers_fingerprints = array(
 'dd411fcca07ab99e4007d2def3db24ea', // */* - de-DE - Linux 64 - Chrome 9.0.597.107
 '91841b9e2bd19d35497e8399a69cfb84', // de-DE - Linux 64 - Chrome 10.0.648.127
 '6b384682fa09a26ffd86a1fd3bacae00', // */* - de-DE - Linux 64 - Chrome 10.0.648.127
+'643f867c430c1d1231d30364ff267b8c', // de-DE - Linux 64 - Chrome 10.0.648.133
+'1cc4802bee84545d1c169c9c872ed53a', // */* - de-DE - Linux 64 - Chrome 10.0.648.133
 'ced5ae2accda9a814a0b625a1654004d', // it-IT - Windows XP - Chrome 8.0.552.215
 'b9649984dab953cc1939999a210d7243', // */* - it-IT - Windows XP - Chrome 8.0.552.215
 'e12e952c035a834c892714ee7430e209', // it-IT - Windows XP - Chrome 8.0.552.224
@@ -1700,6 +1868,8 @@ $browsers_fingerprints = array(
 '3e9e3b860f9e209ad3dbf71a4413a749', // */* - it-IT - Windows XP - Chrome 9.0.597.107
 '78bf1191407e139a563cfa84a597f86c', // it-IT - Windows XP - Chrome 10.0.648.127
 'a5160fe074d426c0506017c84121cf6e', // */* - it-IT - Windows XP - Chrome 10.0.648.127
+'9e7dc407ce695bdf1e4cda652af5fdb1', // it-IT - Windows XP - Chrome 10.0.648.133
+'e1917877cb513278b4d9f2fd26bb8692', // */* - it-IT - Windows XP - Chrome 10.0.648.133
 'ce26805f640c50300456dd4991f9070b', // it-IT - Windows 2003 - Chrome 8.0.552.215
 'adb3e8fa307e855c669462629502ede7', // */* - it-IT - Windows 2003 - Chrome 8.0.552.215
 'ede2159b1264ea257a659ae9710710de', // it-IT - Windows 2003 - Chrome 8.0.552.224
@@ -1720,6 +1890,8 @@ $browsers_fingerprints = array(
 'ede877fa112cfc77f72a798eb0b7667d', // */* - it-IT - Windows 2003 - Chrome 9.0.597.107
 '9fab6d6f6fb1874e7dc86a576f86a295', // it-IT - Windows 2003 - Chrome 10.0.648.127
 'eddbf62849a9c9c05e799555463f291e', // */* - it-IT - Windows 2003 - Chrome 10.0.648.127
+'e92df6885bcd374c903ee436279dc71b', // it-IT - Windows 2003 - Chrome 10.0.648.133
+'2712b14595f6d4caeba15958c32f2795', // */* - it-IT - Windows 2003 - Chrome 10.0.648.133
 '830727651c0a56cffc0de08498e33f63', // it-IT - Windows Vista - Chrome 8.0.552.215
 'a4122457bb3aae6309e92daa896b0a73', // */* - it-IT - Windows Vista - Chrome 8.0.552.215
 '7015405f5f53084f025b67c2ccc783ae', // it-IT - Windows Vista - Chrome 8.0.552.224
@@ -1740,6 +1912,8 @@ $browsers_fingerprints = array(
 'cc4b2f3f0f3c9e824c95b91bd54417ab', // */* - it-IT - Windows Vista - Chrome 9.0.597.107
 'e53da190cffb8ad1e296b20d73611716', // it-IT - Windows Vista - Chrome 10.0.648.127
 '4b72cfb65d9f74606a62674fcae88446', // */* - it-IT - Windows Vista - Chrome 10.0.648.127
+'c9654c01218023e252037657feb9721a', // it-IT - Windows Vista - Chrome 10.0.648.133
+'3b697d2b6efd1b4c1bced02e2b0c23a0', // */* - it-IT - Windows Vista - Chrome 10.0.648.133
 'd2790307a1491b3f9aa84224afdf2a67', // it-IT - Windows 7 - Chrome 8.0.552.215
 '3a3187a7a2a6e80a4964f29d60506a5e', // */* - it-IT - Windows 7 - Chrome 8.0.552.215
 '21c52d2f870fe9e630e06616b461458f', // it-IT - Windows 7 - Chrome 8.0.552.224
@@ -1760,6 +1934,8 @@ $browsers_fingerprints = array(
 'afd240810de75bd61c8941a122c5f1d3', // */* - it-IT - Windows 7 - Chrome 9.0.597.107
 '94fea45c94f21e8f997032ff491dbfd9', // it-IT - Windows 7 - Chrome 10.0.648.127
 '4e9c06e23c04a425f9984ab926ac451c', // */* - it-IT - Windows 7 - Chrome 10.0.648.127
+'5cabe1a3e4448f43abb4b8f89423867c', // it-IT - Windows 7 - Chrome 10.0.648.133
+'f6062820d986c9af3250dd8ec36dc399', // */* - it-IT - Windows 7 - Chrome 10.0.648.133
 '9e69a64c4b63210443c28b58ec0bbd49', // it-IT - MacOS X 10.5.8 - Chrome 8.0.552.215
 'c6125b2ac5b99a1ec561db18a6d58655', // */* - it-IT - MacOS X 10.5.8 - Chrome 8.0.552.215
 '5f9f9be01ce0266bb8ea0e438a22446f', // it-IT - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -1780,6 +1956,8 @@ $browsers_fingerprints = array(
 '7558df451ea4db14414a414df0c5182b', // */* - it-IT - MacOS X 10.5.8 - Chrome 9.0.597.107
 '8ad91004b37e4db9ac59097ef01b3805', // it-IT - MacOS X 10.5.8 - Chrome 10.0.648.127
 '90c10492887380d140a9baa343a7f8e2', // */* - it-IT - MacOS X 10.5.8 - Chrome 10.0.648.127
+'bdca713d9f5d6f66f2a2813029c87661', // it-IT - MacOS X 10.5.8 - Chrome 10.0.648.133
+'7490102eade1f8a9f5ca50b307b85882', // */* - it-IT - MacOS X 10.5.8 - Chrome 10.0.648.133
 '973c5d6b668adac7d3e76dc2c22eb747', // it-IT - MacOS X 10.6.0 - Chrome 8.0.552.215
 'ba7d1c9173c8e7aa5afb1770a2702b30', // */* - it-IT - MacOS X 10.6.0 - Chrome 8.0.552.215
 '3b0be3e88e67d903373df2ce9d472875', // it-IT - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -1800,6 +1978,8 @@ $browsers_fingerprints = array(
 'fa3bb962fa646b5ff62b7d3305417534', // */* - it-IT - MacOS X 10.6.0 - Chrome 9.0.597.107
 'aeb44ebc05c02364e5eb7e86a60ef66c', // it-IT - MacOS X 10.6.0 - Chrome 10.0.648.127
 'f4a5aef0b3f53e20804677340cf9b5c5', // */* - it-IT - MacOS X 10.6.0 - Chrome 10.0.648.127
+'e5e863596a87dcd45de6e3c311d350ea', // it-IT - MacOS X 10.6.0 - Chrome 10.0.648.133
+'d8e432e088d897bba0004cf793a280fe', // */* - it-IT - MacOS X 10.6.0 - Chrome 10.0.648.133
 '31a0aa57a7a96b099f8934b4d559fdc4', // it-IT - MacOS X 10.6.1 - Chrome 8.0.552.215
 '4b3cd38c8ecfcd6fde02b07e4201f1a4', // */* - it-IT - MacOS X 10.6.1 - Chrome 8.0.552.215
 'f169227f488de54e21c2dc17d8d87f0d', // it-IT - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -1820,6 +2000,8 @@ $browsers_fingerprints = array(
 '48045d1dc62dc49f1b380f750fb1308d', // */* - it-IT - MacOS X 10.6.1 - Chrome 9.0.597.107
 '6bbe5d3694d2a10c0f7a082571ae06b0', // it-IT - MacOS X 10.6.1 - Chrome 10.0.648.127
 '77057706c1af49e0ae149b00ebd5a879', // */* - it-IT - MacOS X 10.6.1 - Chrome 10.0.648.127
+'40f834d38cc2ca425273da54408afa3b', // it-IT - MacOS X 10.6.1 - Chrome 10.0.648.133
+'19be87b32dd5b7838d7880b0412bccfd', // */* - it-IT - MacOS X 10.6.1 - Chrome 10.0.648.133
 '31a0aa57a7a96b099f8934b4d559fdc4', // it-IT - MacOS X 10.6.2 - Chrome 8.0.552.215
 '4b3cd38c8ecfcd6fde02b07e4201f1a4', // */* - it-IT - MacOS X 10.6.2 - Chrome 8.0.552.215
 'f169227f488de54e21c2dc17d8d87f0d', // it-IT - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -1840,6 +2022,8 @@ $browsers_fingerprints = array(
 '48045d1dc62dc49f1b380f750fb1308d', // */* - it-IT - MacOS X 10.6.2 - Chrome 9.0.597.107
 '6bbe5d3694d2a10c0f7a082571ae06b0', // it-IT - MacOS X 10.6.2 - Chrome 10.0.648.127
 '77057706c1af49e0ae149b00ebd5a879', // */* - it-IT - MacOS X 10.6.2 - Chrome 10.0.648.127
+'40f834d38cc2ca425273da54408afa3b', // it-IT - MacOS X 10.6.2 - Chrome 10.0.648.133
+'19be87b32dd5b7838d7880b0412bccfd', // */* - it-IT - MacOS X 10.6.2 - Chrome 10.0.648.133
 '4d08e884b4a2baf395c09759cf081169', // it-IT - MacOS X 10.6.3 - Chrome 8.0.552.215
 'fc1d9d723fdaec5d4706a422b78cf792', // */* - it-IT - MacOS X 10.6.3 - Chrome 8.0.552.215
 '550fcc8a0c4c499bcdf64618d725f4e7', // it-IT - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -1860,6 +2044,8 @@ $browsers_fingerprints = array(
 '4877f7b798487d53d4c05ce86bb170a1', // */* - it-IT - MacOS X 10.6.3 - Chrome 9.0.597.107
 'e7ce68d6c2de12cb5995933b168d9803', // it-IT - MacOS X 10.6.3 - Chrome 10.0.648.127
 'dad0d90359de0d61d59ce0dd2ab5a2ef', // */* - it-IT - MacOS X 10.6.3 - Chrome 10.0.648.127
+'3e06b7ea68ae2908fba3e7b6d5579e40', // it-IT - MacOS X 10.6.3 - Chrome 10.0.648.133
+'412c9aa99a4cb823e1d41978e627719e', // */* - it-IT - MacOS X 10.6.3 - Chrome 10.0.648.133
 'bfa2f631e27ed1587275aaf028c66b0b', // it-IT - MacOS X 10.6.4 - Chrome 8.0.552.215
 'ccea4c3627c51cf66e94425a0b2b2287', // */* - it-IT - MacOS X 10.6.4 - Chrome 8.0.552.215
 'bbcce1f29a3a9f5c4a503712805143b7', // it-IT - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -1880,6 +2066,8 @@ $browsers_fingerprints = array(
 'b83389f7035809d4b29ac3f038997982', // */* - it-IT - MacOS X 10.6.4 - Chrome 9.0.597.107
 'bf8ac8e6f8a893e788a34b2f79a4a10a', // it-IT - MacOS X 10.6.4 - Chrome 10.0.648.127
 '2141a011aa119c57496da1cedc454dcd', // */* - it-IT - MacOS X 10.6.4 - Chrome 10.0.648.127
+'543734dd197dcf865d272150fd7139df', // it-IT - MacOS X 10.6.4 - Chrome 10.0.648.133
+'41cd84f1331598a2c8985e58db1f6c73', // */* - it-IT - MacOS X 10.6.4 - Chrome 10.0.648.133
 '4b36e0f28132924d7f95d66395d1af34', // it-IT - MacOS X 10.6.5 - Chrome 8.0.552.215
 '96618b50a68d7e9b35785c89f3d53e27', // */* - it-IT - MacOS X 10.6.5 - Chrome 8.0.552.215
 '7a83efa1f8dd3ed0fd7573a2a877858d', // it-IT - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -1900,6 +2088,8 @@ $browsers_fingerprints = array(
 'db06dbccfa56b986e46fd86aa0bd4b73', // */* - it-IT - MacOS X 10.6.5 - Chrome 9.0.597.107
 'ba2ba5c9919339f14912da493b0989a6', // it-IT - MacOS X 10.6.5 - Chrome 10.0.648.127
 'f0daa6f3de946d31381529171e84cfce', // */* - it-IT - MacOS X 10.6.5 - Chrome 10.0.648.127
+'8d2bc41615309c157cfef051cd5d54a1', // it-IT - MacOS X 10.6.5 - Chrome 10.0.648.133
+'9d1ba5ac364874aedadf59433c7d97dc', // */* - it-IT - MacOS X 10.6.5 - Chrome 10.0.648.133
 '0ffc814004116d3f319a716023df4a0e', // it-IT - MacOS X 10.6.6 - Chrome 8.0.552.215
 '2cee138f698145bf20064eaf1efc14e8', // */* - it-IT - MacOS X 10.6.6 - Chrome 8.0.552.215
 '95f6cebf773f89315866b1dab3d3b981', // it-IT - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -1920,6 +2110,8 @@ $browsers_fingerprints = array(
 'f0afc5601013951ce98b9c3b32ea9395', // */* - it-IT - MacOS X 10.6.6 - Chrome 9.0.597.107
 '793d3e53f6b01039ec684abb89ae124d', // it-IT - MacOS X 10.6.6 - Chrome 10.0.648.127
 '899c540b8ec01d6fc5d96fe2278dc3af', // */* - it-IT - MacOS X 10.6.6 - Chrome 10.0.648.127
+'e4dd9f1ab869123e525037a73cf09fa3', // it-IT - MacOS X 10.6.6 - Chrome 10.0.648.133
+'957b60fee623d50c48a7403001f9250d', // */* - it-IT - MacOS X 10.6.6 - Chrome 10.0.648.133
 '422e123ea94731d39741241362a79515', // it-IT - Linux - Chrome 8.0.552.215
 'f2532fd72e2fdda05ff0e4d1a34914ff', // */* - it-IT - Linux - Chrome 8.0.552.215
 '821020c6fa148a35fc09186753c4e073', // it-IT - Linux - Chrome 8.0.552.224
@@ -1940,6 +2132,8 @@ $browsers_fingerprints = array(
 'ea54dfe5286e8a9dfbc31fd490caf8b1', // */* - it-IT - Linux - Chrome 9.0.597.107
 '450aa9844fd68d02905b62a38e3c43b1', // it-IT - Linux - Chrome 10.0.648.127
 'dab1ae01cec2152e65d665675287dfb4', // */* - it-IT - Linux - Chrome 10.0.648.127
+'17870eac285cb32879e94761f4a08c37', // it-IT - Linux - Chrome 10.0.648.133
+'931949ff2faa091f9f9ded05e9c55dac', // */* - it-IT - Linux - Chrome 10.0.648.133
 '21bce677ec287aadca47d4d24d4d1e0e', // it-IT - Linux 64 - Chrome 8.0.552.215
 '3f79d9a4df4d6619b005b66598dc942d', // */* - it-IT - Linux 64 - Chrome 8.0.552.215
 '3e8b1383c49d09dbe70f67123f9e7a1f', // it-IT - Linux 64 - Chrome 8.0.552.224
@@ -1960,6 +2154,8 @@ $browsers_fingerprints = array(
 '37da8262c01957874216c27ab45a2807', // */* - it-IT - Linux 64 - Chrome 9.0.597.107
 '647f8185a3de7e6f690cb6bf9e635cc5', // it-IT - Linux 64 - Chrome 10.0.648.127
 'a76d6508685fe343e8e2b9c164ba124d', // */* - it-IT - Linux 64 - Chrome 10.0.648.127
+'21bd484f4456462a4995c6fbbe43552e', // it-IT - Linux 64 - Chrome 10.0.648.133
+'b72d76d9626414512f3f252a3d75cec1', // */* - it-IT - Linux 64 - Chrome 10.0.648.133
 '2ae38f9fc123ad471c9e35c15882a8ad', // he-IL - Windows XP - Chrome 8.0.552.215
 '507ff26a3e43af9fd864d9c5632155c9', // */* - he-IL - Windows XP - Chrome 8.0.552.215
 '03bc456003c68b170cd8718d8ba23f97', // he-IL - Windows XP - Chrome 8.0.552.224
@@ -1980,6 +2176,8 @@ $browsers_fingerprints = array(
 '648996303134593aa203aa7bfb7a1efb', // */* - he-IL - Windows XP - Chrome 9.0.597.107
 'a94f7fce7b95848887fa48da34ffd921', // he-IL - Windows XP - Chrome 10.0.648.127
 '7705653700c0e426baff6336324f7241', // */* - he-IL - Windows XP - Chrome 10.0.648.127
+'f0cc06e62211cc0717af501342f8dbe2', // he-IL - Windows XP - Chrome 10.0.648.133
+'1f7aad5dcbf52ddba0217372b99764c3', // */* - he-IL - Windows XP - Chrome 10.0.648.133
 '743ddd32cfe0922d7c6f6841b5031050', // he-IL - Windows 2003 - Chrome 8.0.552.215
 'ac593c9a69934e0d44b485433442b20d', // */* - he-IL - Windows 2003 - Chrome 8.0.552.215
 '3ffb0bc387bee3a8f1a94d190f5683d3', // he-IL - Windows 2003 - Chrome 8.0.552.224
@@ -2000,6 +2198,8 @@ $browsers_fingerprints = array(
 '80e714e505e58f6aac06daab4f042132', // */* - he-IL - Windows 2003 - Chrome 9.0.597.107
 '31b437c25104ec93bee0bf95d2ca439d', // he-IL - Windows 2003 - Chrome 10.0.648.127
 'e58d2a142423a3346e43d6e8cfb24e34', // */* - he-IL - Windows 2003 - Chrome 10.0.648.127
+'5aad9467bb38655554d2b53f83bcc3ef', // he-IL - Windows 2003 - Chrome 10.0.648.133
+'50e5dba706a7f4663eadb0f2f069d00a', // */* - he-IL - Windows 2003 - Chrome 10.0.648.133
 'a3736884312664b429689e2b0abf141a', // he-IL - Windows Vista - Chrome 8.0.552.215
 '371785d16dbaaabe5f5d72719da0a219', // */* - he-IL - Windows Vista - Chrome 8.0.552.215
 '251565f8957a610f030a12785edef1e1', // he-IL - Windows Vista - Chrome 8.0.552.224
@@ -2020,6 +2220,8 @@ $browsers_fingerprints = array(
 '8660de388199d34b327e6a55421ef3cf', // */* - he-IL - Windows Vista - Chrome 9.0.597.107
 'f078d80a5b7ac438cdbcb476ef6fd666', // he-IL - Windows Vista - Chrome 10.0.648.127
 '05f5d057d7c650269bab900805289910', // */* - he-IL - Windows Vista - Chrome 10.0.648.127
+'14759d43d38207c49c081489e5278f83', // he-IL - Windows Vista - Chrome 10.0.648.133
+'beee289145ab4a655a7958a5f50059f2', // */* - he-IL - Windows Vista - Chrome 10.0.648.133
 '1ebed794fc1921a315fe7b848e0c7a9d', // he-IL - Windows 7 - Chrome 8.0.552.215
 '3529ec1b79ab3ce4e094b90a14106035', // */* - he-IL - Windows 7 - Chrome 8.0.552.215
 '3d1271d4ae0581856be6b13dab0c8ac9', // he-IL - Windows 7 - Chrome 8.0.552.224
@@ -2040,6 +2242,8 @@ $browsers_fingerprints = array(
 'c3126ab02b554348fd3dc62963f486b4', // */* - he-IL - Windows 7 - Chrome 9.0.597.107
 'ed31ff403055c110dfb9b7d61430170c', // he-IL - Windows 7 - Chrome 10.0.648.127
 '46b2321d34ffd52d2bd4e7c01ddab3c3', // */* - he-IL - Windows 7 - Chrome 10.0.648.127
+'b0f2a7117ea73decc800960e5ce7ca24', // he-IL - Windows 7 - Chrome 10.0.648.133
+'42d688c1b5acf391b5f0510693e2ab1b', // */* - he-IL - Windows 7 - Chrome 10.0.648.133
 '9bf6f8afa708c522535ee2d18b323193', // he-IL - MacOS X 10.5.8 - Chrome 8.0.552.215
 '5e836afc86c2b24f5658983d2e1d126c', // */* - he-IL - MacOS X 10.5.8 - Chrome 8.0.552.215
 'e85cd96994fa419294f9cfabd664e30b', // he-IL - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -2060,6 +2264,8 @@ $browsers_fingerprints = array(
 '7b52e518959487d8dfb6a7002210ba8f', // */* - he-IL - MacOS X 10.5.8 - Chrome 9.0.597.107
 'e1701f5f73c41dd7b1048e60293b7b59', // he-IL - MacOS X 10.5.8 - Chrome 10.0.648.127
 '21d4e752181fb59d3805d14657261da5', // */* - he-IL - MacOS X 10.5.8 - Chrome 10.0.648.127
+'4ab90dc935721728825c7bb823b0c1c0', // he-IL - MacOS X 10.5.8 - Chrome 10.0.648.133
+'7d613b9a29913a046fb4946cf6009bb8', // */* - he-IL - MacOS X 10.5.8 - Chrome 10.0.648.133
 '0ce83c1c01d99255b4b77020b128a079', // he-IL - MacOS X 10.6.0 - Chrome 8.0.552.215
 'ae9808f5d28ec3134e61450967004168', // */* - he-IL - MacOS X 10.6.0 - Chrome 8.0.552.215
 '549b9807eb961b80da25e9c4de969f1a', // he-IL - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -2080,6 +2286,8 @@ $browsers_fingerprints = array(
 'a6a857c6a0d4dca060c9229577c5e860', // */* - he-IL - MacOS X 10.6.0 - Chrome 9.0.597.107
 '2d259fdea0b35c3e361dfb031780b901', // he-IL - MacOS X 10.6.0 - Chrome 10.0.648.127
 '75ba2ad5f82cb88baba8fd512accf4fd', // */* - he-IL - MacOS X 10.6.0 - Chrome 10.0.648.127
+'87cc375234bfcb6ca1b4ce053097dfdc', // he-IL - MacOS X 10.6.0 - Chrome 10.0.648.133
+'82d2331456dfc44942b749c46b89a09e', // */* - he-IL - MacOS X 10.6.0 - Chrome 10.0.648.133
 'dc85e9ad6639a774c036105b83d03108', // he-IL - MacOS X 10.6.1 - Chrome 8.0.552.215
 '68f46f9e4f0655c77e3d3f31a2cdb0f4', // */* - he-IL - MacOS X 10.6.1 - Chrome 8.0.552.215
 '31274a36195d03e0fc1639394e242a1e', // he-IL - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -2100,6 +2308,8 @@ $browsers_fingerprints = array(
 '1a3a31f344fa1a557779aa2c5aa2c74d', // */* - he-IL - MacOS X 10.6.1 - Chrome 9.0.597.107
 '9b09f0b7ca2207c5896488d20311185d', // he-IL - MacOS X 10.6.1 - Chrome 10.0.648.127
 '77d89e31a0ac326cb313c671dab445ed', // */* - he-IL - MacOS X 10.6.1 - Chrome 10.0.648.127
+'af5d0de15d614ae57e2d9b04c6a7db77', // he-IL - MacOS X 10.6.1 - Chrome 10.0.648.133
+'60403388efe409082c1e4ecd4c4359f3', // */* - he-IL - MacOS X 10.6.1 - Chrome 10.0.648.133
 'dc85e9ad6639a774c036105b83d03108', // he-IL - MacOS X 10.6.2 - Chrome 8.0.552.215
 '68f46f9e4f0655c77e3d3f31a2cdb0f4', // */* - he-IL - MacOS X 10.6.2 - Chrome 8.0.552.215
 '31274a36195d03e0fc1639394e242a1e', // he-IL - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -2120,6 +2330,8 @@ $browsers_fingerprints = array(
 '1a3a31f344fa1a557779aa2c5aa2c74d', // */* - he-IL - MacOS X 10.6.2 - Chrome 9.0.597.107
 '9b09f0b7ca2207c5896488d20311185d', // he-IL - MacOS X 10.6.2 - Chrome 10.0.648.127
 '77d89e31a0ac326cb313c671dab445ed', // */* - he-IL - MacOS X 10.6.2 - Chrome 10.0.648.127
+'af5d0de15d614ae57e2d9b04c6a7db77', // he-IL - MacOS X 10.6.2 - Chrome 10.0.648.133
+'60403388efe409082c1e4ecd4c4359f3', // */* - he-IL - MacOS X 10.6.2 - Chrome 10.0.648.133
 'db1dfe7fff5fd06cf51edce51fe8db1a', // he-IL - MacOS X 10.6.3 - Chrome 8.0.552.215
 'f9b15588846bef95c5ceeb12aec77027', // */* - he-IL - MacOS X 10.6.3 - Chrome 8.0.552.215
 'e42ec220a0e0a4bdf693fa2e6c4cfe48', // he-IL - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -2140,6 +2352,8 @@ $browsers_fingerprints = array(
 '368184736b176e7f11f779bee1687196', // */* - he-IL - MacOS X 10.6.3 - Chrome 9.0.597.107
 'fbd72c4f12836a5fcef059f0924f59a8', // he-IL - MacOS X 10.6.3 - Chrome 10.0.648.127
 'bd273a2cc0175ea7dfb158f4a9e0ce9d', // */* - he-IL - MacOS X 10.6.3 - Chrome 10.0.648.127
+'65021e2a289035930a3aeca429930453', // he-IL - MacOS X 10.6.3 - Chrome 10.0.648.133
+'1b22dba3bcf6cd869a5df2b78b3d5c29', // */* - he-IL - MacOS X 10.6.3 - Chrome 10.0.648.133
 '6181da8422c499b93d71ac697b99e3d0', // he-IL - MacOS X 10.6.4 - Chrome 8.0.552.215
 'c95383d16bd600b295951e093dba8bf7', // */* - he-IL - MacOS X 10.6.4 - Chrome 8.0.552.215
 '0808a884ea4152ffe9a3e6b7c4977dbc', // he-IL - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -2160,6 +2374,8 @@ $browsers_fingerprints = array(
 'f3d249504e2595aadef4f6fbf931acf4', // */* - he-IL - MacOS X 10.6.4 - Chrome 9.0.597.107
 '276d67b8a1486777ae24eaf96798c093', // he-IL - MacOS X 10.6.4 - Chrome 10.0.648.127
 '19dc09bfd85f9374c5d54807532fcace', // */* - he-IL - MacOS X 10.6.4 - Chrome 10.0.648.127
+'b28f8e227d229f3d040616ef21ceca79', // he-IL - MacOS X 10.6.4 - Chrome 10.0.648.133
+'0187d5f2fdf24263ccb45111b5a9c030', // */* - he-IL - MacOS X 10.6.4 - Chrome 10.0.648.133
 '8749910d6cb853953465fc4153bf2a4b', // he-IL - MacOS X 10.6.5 - Chrome 8.0.552.215
 'd26d7c251f9d7392e1e096fd82f0c325', // */* - he-IL - MacOS X 10.6.5 - Chrome 8.0.552.215
 'e48efefec43ef2f6e1c5356708e76212', // he-IL - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -2180,6 +2396,8 @@ $browsers_fingerprints = array(
 '58fe6b5b659cafb4da454f7935b36621', // */* - he-IL - MacOS X 10.6.5 - Chrome 9.0.597.107
 'a84390c87e92dc0a29400b22ee9036ba', // he-IL - MacOS X 10.6.5 - Chrome 10.0.648.127
 '4fdd058b4356cd47f3de372125357933', // */* - he-IL - MacOS X 10.6.5 - Chrome 10.0.648.127
+'958ceb530a4460b4108713f51349401e', // he-IL - MacOS X 10.6.5 - Chrome 10.0.648.133
+'660b86ec230a20b56ec97028d1b12cfb', // */* - he-IL - MacOS X 10.6.5 - Chrome 10.0.648.133
 '25c9c4a3f87025e2164c58663551a854', // he-IL - MacOS X 10.6.6 - Chrome 8.0.552.215
 'f50c87f9fbba429ce07e9679609a3fa7', // */* - he-IL - MacOS X 10.6.6 - Chrome 8.0.552.215
 '1c33e5254f20c8d1ead3fa8d3367a66e', // he-IL - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -2200,6 +2418,8 @@ $browsers_fingerprints = array(
 '5e5d7dc6cd83f481f84016f1e244e14c', // */* - he-IL - MacOS X 10.6.6 - Chrome 9.0.597.107
 '282bdcb94fdc48ad43a9799ed609b388', // he-IL - MacOS X 10.6.6 - Chrome 10.0.648.127
 '4513e6164259e3e06ec67d2833228250', // */* - he-IL - MacOS X 10.6.6 - Chrome 10.0.648.127
+'a6a29366aa9b5a9fdff25693473c2e3c', // he-IL - MacOS X 10.6.6 - Chrome 10.0.648.133
+'c999f625a1b5749058306d930194a64c', // */* - he-IL - MacOS X 10.6.6 - Chrome 10.0.648.133
 'c23d6072bfb6f85e357381985a904f97', // he-IL - Linux - Chrome 8.0.552.215
 'cd60508fdf2d77e4bda566c1f347243e', // */* - he-IL - Linux - Chrome 8.0.552.215
 'fe72774b3382fc42543da1573266c98b', // he-IL - Linux - Chrome 8.0.552.224
@@ -2220,6 +2440,8 @@ $browsers_fingerprints = array(
 '1b7a30e4c5d52f96c47e848ea2626367', // */* - he-IL - Linux - Chrome 9.0.597.107
 'ece483922fef04081e3803a7e8ed1fb0', // he-IL - Linux - Chrome 10.0.648.127
 'fac5fa23b73be12af28e2e3d2c192fe1', // */* - he-IL - Linux - Chrome 10.0.648.127
+'7037c5a7bc6f008616100c6d6b994756', // he-IL - Linux - Chrome 10.0.648.133
+'cc2d2bb6a3fdf6ef9dfa379885464a06', // */* - he-IL - Linux - Chrome 10.0.648.133
 '10189d875e1193b271ff55c9bc9110d4', // he-IL - Linux 64 - Chrome 8.0.552.215
 'c44c9e4236a35b519d00f10fb1585e09', // */* - he-IL - Linux 64 - Chrome 8.0.552.215
 '9e3700069688a64eb0107a792e3376d5', // he-IL - Linux 64 - Chrome 8.0.552.224
@@ -2240,6 +2462,8 @@ $browsers_fingerprints = array(
 'c31254f8df017d8ebc22f8c7ad2bf954', // */* - he-IL - Linux 64 - Chrome 9.0.597.107
 '4fc159cae423f259ac8786d9cf50220a', // he-IL - Linux 64 - Chrome 10.0.648.127
 '016ad8c694f7d978ab9834acb6ebf8bd', // */* - he-IL - Linux 64 - Chrome 10.0.648.127
+'eabf98a7ebda3c2f66611e24e00235dd', // he-IL - Linux 64 - Chrome 10.0.648.133
+'4c9a9fabe469d5f84eddc08ead5bf06c', // */* - he-IL - Linux 64 - Chrome 10.0.648.133
 '77f933e5bcb0fd8c46cbbaab7fff6307', // nl-NL - Windows XP - Chrome 8.0.552.215
 'b3eb6b3a1a46fa0b80a718c8de864d8a', // */* - nl-NL - Windows XP - Chrome 8.0.552.215
 'a25a6c50f0d8a1e052ddcea1c17de7ff', // nl-NL - Windows XP - Chrome 8.0.552.224
@@ -2260,6 +2484,8 @@ $browsers_fingerprints = array(
 'fc9aab7f2157bde80bf924a559c59f3c', // */* - nl-NL - Windows XP - Chrome 9.0.597.107
 'd662acca85f1ace2ba6b797aa3777b88', // nl-NL - Windows XP - Chrome 10.0.648.127
 'c37b2dda2b3a82c080a48df4cc08a905', // */* - nl-NL - Windows XP - Chrome 10.0.648.127
+'d4735b14abd86e6539f6038410f3d6fe', // nl-NL - Windows XP - Chrome 10.0.648.133
+'5009709cf2d3fe118e38975b20928570', // */* - nl-NL - Windows XP - Chrome 10.0.648.133
 'b84bcc2174e1559190e7334065bcd832', // nl-NL - Windows 2003 - Chrome 8.0.552.215
 'faa430fec1659ad15752ba56b9483eb7', // */* - nl-NL - Windows 2003 - Chrome 8.0.552.215
 'c28583b860d1793cb80632dedaad196d', // nl-NL - Windows 2003 - Chrome 8.0.552.224
@@ -2280,6 +2506,8 @@ $browsers_fingerprints = array(
 'db3f5f6807769fe866155038710c162c', // */* - nl-NL - Windows 2003 - Chrome 9.0.597.107
 '736ae514e4f236ec069a5d4306927a38', // nl-NL - Windows 2003 - Chrome 10.0.648.127
 'ba15a8570e2771f92dc6ef2e42799343', // */* - nl-NL - Windows 2003 - Chrome 10.0.648.127
+'af80633971cb7863f9aea82303308f24', // nl-NL - Windows 2003 - Chrome 10.0.648.133
+'bfab28e97183ca22c41b71cb223cac6a', // */* - nl-NL - Windows 2003 - Chrome 10.0.648.133
 '84c81d74e2e249b06c32cf527f9bbccd', // nl-NL - Windows Vista - Chrome 8.0.552.215
 '0953eb728785136fd02a3b2137f7aacb', // */* - nl-NL - Windows Vista - Chrome 8.0.552.215
 'ee66085d4636630e8a0c87be02ba7c5a', // nl-NL - Windows Vista - Chrome 8.0.552.224
@@ -2300,6 +2528,8 @@ $browsers_fingerprints = array(
 '0c9a270b211ca8d5060b2def88e8ac8f', // */* - nl-NL - Windows Vista - Chrome 9.0.597.107
 '7c432ab98e2c29d4cc502aced225a9fa', // nl-NL - Windows Vista - Chrome 10.0.648.127
 '0002b58e6dacd11452422ecb45058b07', // */* - nl-NL - Windows Vista - Chrome 10.0.648.127
+'270f68eb8a246cad453da282b3177e12', // nl-NL - Windows Vista - Chrome 10.0.648.133
+'56775028314424a0a19923f37cfd05d0', // */* - nl-NL - Windows Vista - Chrome 10.0.648.133
 '62ec0ca0577f4874cf55855b983713a7', // nl-NL - Windows 7 - Chrome 8.0.552.215
 '4f98cd5862a87aa777ad1da8abfc35b4', // */* - nl-NL - Windows 7 - Chrome 8.0.552.215
 '6de1de491a07eacda2e5b4bea7b9b2e0', // nl-NL - Windows 7 - Chrome 8.0.552.224
@@ -2320,6 +2550,8 @@ $browsers_fingerprints = array(
 'efd665fbf143554365a72329f28a01ce', // */* - nl-NL - Windows 7 - Chrome 9.0.597.107
 'bd9b9814aef7bb826f275aee84368f34', // nl-NL - Windows 7 - Chrome 10.0.648.127
 'c7a1de1864ca1d13d7c6925ed246cf85', // */* - nl-NL - Windows 7 - Chrome 10.0.648.127
+'3dd321a82f62500103e6fab67bfb73aa', // nl-NL - Windows 7 - Chrome 10.0.648.133
+'84d085c4cac4632efa4790f5360212c0', // */* - nl-NL - Windows 7 - Chrome 10.0.648.133
 '82016ba318cebce281ccf73478a1edc5', // nl-NL - MacOS X 10.5.8 - Chrome 8.0.552.215
 '16a6dafee177d2550ecc96429d6def55', // */* - nl-NL - MacOS X 10.5.8 - Chrome 8.0.552.215
 'a2eddf60e309314472114a2cbe2684a7', // nl-NL - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -2340,6 +2572,8 @@ $browsers_fingerprints = array(
 'a83d81c62564fc571529ef20b18b5be2', // */* - nl-NL - MacOS X 10.5.8 - Chrome 9.0.597.107
 '246db9b38cd9a844281404a789fc753c', // nl-NL - MacOS X 10.5.8 - Chrome 10.0.648.127
 '18ef35d9a7ae6d46910e0862a092dbb6', // */* - nl-NL - MacOS X 10.5.8 - Chrome 10.0.648.127
+'f12fc54b9d2921cf2c9216966d0df2ec', // nl-NL - MacOS X 10.5.8 - Chrome 10.0.648.133
+'1ffbcbb6f650be1f49d6a80c90af1e2b', // */* - nl-NL - MacOS X 10.5.8 - Chrome 10.0.648.133
 '172d1479e0bab6f079276e0ddca3dfaf', // nl-NL - MacOS X 10.6.0 - Chrome 8.0.552.215
 'b2bc524f6d8275902d27335ecd92b770', // */* - nl-NL - MacOS X 10.6.0 - Chrome 8.0.552.215
 '900b43189b631f9342db1f22aa27daf8', // nl-NL - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -2360,6 +2594,8 @@ $browsers_fingerprints = array(
 '6f026848f33494a672cb18622c9fd6e0', // */* - nl-NL - MacOS X 10.6.0 - Chrome 9.0.597.107
 'acb2fe9683f6ae2c39cfbdff4e598c9f', // nl-NL - MacOS X 10.6.0 - Chrome 10.0.648.127
 '62e41faa07cd828a6927fec3ed632eb2', // */* - nl-NL - MacOS X 10.6.0 - Chrome 10.0.648.127
+'c83d5e89cc34c2c8fadecbb3b6076b35', // nl-NL - MacOS X 10.6.0 - Chrome 10.0.648.133
+'b1c4442d9477bd88896085549b0a26e9', // */* - nl-NL - MacOS X 10.6.0 - Chrome 10.0.648.133
 'c1dba2eecb55c5c513f8365dd7b4a0d5', // nl-NL - MacOS X 10.6.1 - Chrome 8.0.552.215
 '80e367d9b80b1bcae1c0437302638b00', // */* - nl-NL - MacOS X 10.6.1 - Chrome 8.0.552.215
 '9e9bc158ead671ed0cb5538fde725e18', // nl-NL - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -2380,6 +2616,8 @@ $browsers_fingerprints = array(
 'e86f1058458a9714f5394948bdf0d6dd', // */* - nl-NL - MacOS X 10.6.1 - Chrome 9.0.597.107
 'f2d95d4853d1d1e9f00beea4f302358f', // nl-NL - MacOS X 10.6.1 - Chrome 10.0.648.127
 '951eb49a8313d18a38f10347dee54969', // */* - nl-NL - MacOS X 10.6.1 - Chrome 10.0.648.127
+'e36e92a8bd76fd3604ec3e8de93530b9', // nl-NL - MacOS X 10.6.1 - Chrome 10.0.648.133
+'869abff61304136192a2ef741d2057b3', // */* - nl-NL - MacOS X 10.6.1 - Chrome 10.0.648.133
 'c1dba2eecb55c5c513f8365dd7b4a0d5', // nl-NL - MacOS X 10.6.2 - Chrome 8.0.552.215
 '80e367d9b80b1bcae1c0437302638b00', // */* - nl-NL - MacOS X 10.6.2 - Chrome 8.0.552.215
 '9e9bc158ead671ed0cb5538fde725e18', // nl-NL - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -2400,6 +2638,8 @@ $browsers_fingerprints = array(
 'e86f1058458a9714f5394948bdf0d6dd', // */* - nl-NL - MacOS X 10.6.2 - Chrome 9.0.597.107
 'f2d95d4853d1d1e9f00beea4f302358f', // nl-NL - MacOS X 10.6.2 - Chrome 10.0.648.127
 '951eb49a8313d18a38f10347dee54969', // */* - nl-NL - MacOS X 10.6.2 - Chrome 10.0.648.127
+'e36e92a8bd76fd3604ec3e8de93530b9', // nl-NL - MacOS X 10.6.2 - Chrome 10.0.648.133
+'869abff61304136192a2ef741d2057b3', // */* - nl-NL - MacOS X 10.6.2 - Chrome 10.0.648.133
 '82524dd814400e0f97a74fe6107d76e7', // nl-NL - MacOS X 10.6.3 - Chrome 8.0.552.215
 '088a4350aca996d4174a1a78683cf1f6', // */* - nl-NL - MacOS X 10.6.3 - Chrome 8.0.552.215
 'a937011655ab0a237259a1f12b641ccc', // nl-NL - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -2420,6 +2660,8 @@ $browsers_fingerprints = array(
 'd603e67ed50b32957fd2f963fc4a183f', // */* - nl-NL - MacOS X 10.6.3 - Chrome 9.0.597.107
 '855d8226cae2b8224c9b834490d6e56b', // nl-NL - MacOS X 10.6.3 - Chrome 10.0.648.127
 '6659ceac6574d06885bcdcefc6814e0e', // */* - nl-NL - MacOS X 10.6.3 - Chrome 10.0.648.127
+'f13584018c8768359fc13bca039c8554', // nl-NL - MacOS X 10.6.3 - Chrome 10.0.648.133
+'588fa7629f369c4ae58370a950a12a7d', // */* - nl-NL - MacOS X 10.6.3 - Chrome 10.0.648.133
 'c0081fff8e165ac64404532968064642', // nl-NL - MacOS X 10.6.4 - Chrome 8.0.552.215
 '7aef5c974571b07172b36a590cfe0152', // */* - nl-NL - MacOS X 10.6.4 - Chrome 8.0.552.215
 '6ea538722c57fdabbfda02e910896155', // nl-NL - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -2440,6 +2682,8 @@ $browsers_fingerprints = array(
 '1643f4b14120e9dbb871a79df86febf4', // */* - nl-NL - MacOS X 10.6.4 - Chrome 9.0.597.107
 'd9e8a60cc6ef25f1e4463f0f6a9ac21f', // nl-NL - MacOS X 10.6.4 - Chrome 10.0.648.127
 'da029b3c6fa0ef820ad8067de77cd27e', // */* - nl-NL - MacOS X 10.6.4 - Chrome 10.0.648.127
+'9924541a1759845990ff670a76ce2b17', // nl-NL - MacOS X 10.6.4 - Chrome 10.0.648.133
+'0c483f3285518feb3789f4c41c53d213', // */* - nl-NL - MacOS X 10.6.4 - Chrome 10.0.648.133
 'fab01f5c0e9b31f02f94bd6c35d20dc7', // nl-NL - MacOS X 10.6.5 - Chrome 8.0.552.215
 '8d4ce751cf9525f4a6a86cbd9de61c9f', // */* - nl-NL - MacOS X 10.6.5 - Chrome 8.0.552.215
 '3427e3554a0a6850cdd49944eff53aae', // nl-NL - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -2460,6 +2704,8 @@ $browsers_fingerprints = array(
 '830a90e6f002ef21cf15495bd4d2a969', // */* - nl-NL - MacOS X 10.6.5 - Chrome 9.0.597.107
 '02aa2bc21aa5b0fd3ac5b5750462e5e6', // nl-NL - MacOS X 10.6.5 - Chrome 10.0.648.127
 'eaa8bf66e5f983d645c98f0613897178', // */* - nl-NL - MacOS X 10.6.5 - Chrome 10.0.648.127
+'27357bc0e9e6eea51181e89d1a0cdc05', // nl-NL - MacOS X 10.6.5 - Chrome 10.0.648.133
+'fcc2ce82a673b36138bfe2e2fdeaf290', // */* - nl-NL - MacOS X 10.6.5 - Chrome 10.0.648.133
 'f3145015883a42ffa563606c8d971423', // nl-NL - MacOS X 10.6.6 - Chrome 8.0.552.215
 'b050a6b4fceaaa856afd468ec21e2249', // */* - nl-NL - MacOS X 10.6.6 - Chrome 8.0.552.215
 '7b99c62f899bd22fd971e727bedca1eb', // nl-NL - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -2480,6 +2726,8 @@ $browsers_fingerprints = array(
 '08193f30d82e89ce203f0735af29f2a1', // */* - nl-NL - MacOS X 10.6.6 - Chrome 9.0.597.107
 '6d19926e37649a668f10c41c84c99d16', // nl-NL - MacOS X 10.6.6 - Chrome 10.0.648.127
 'c013cc688ac206265dc581cfeda9e30c', // */* - nl-NL - MacOS X 10.6.6 - Chrome 10.0.648.127
+'16f8d1da7a9977f93f7d9730e2e75740', // nl-NL - MacOS X 10.6.6 - Chrome 10.0.648.133
+'2a0cd28bd90bd9dc78e570f7635ad699', // */* - nl-NL - MacOS X 10.6.6 - Chrome 10.0.648.133
 'fac08975d432510293543755179ed363', // nl-NL - Linux - Chrome 8.0.552.215
 'ee895c462f719e8777b839a858fc7ee7', // */* - nl-NL - Linux - Chrome 8.0.552.215
 '303864434f3a2dec9c655fee3b003025', // nl-NL - Linux - Chrome 8.0.552.224
@@ -2500,6 +2748,8 @@ $browsers_fingerprints = array(
 '211403dcd6664e6b421b9e55cd1ad95e', // */* - nl-NL - Linux - Chrome 9.0.597.107
 'd6855fabbea6931227cb7b0ab0d42921', // nl-NL - Linux - Chrome 10.0.648.127
 '57e0eb0c461df6796209859f5057c616', // */* - nl-NL - Linux - Chrome 10.0.648.127
+'a480157a9bb1959125d5251649c4428f', // nl-NL - Linux - Chrome 10.0.648.133
+'894bb0ae1df7a429490d2fbaa6ec5f5d', // */* - nl-NL - Linux - Chrome 10.0.648.133
 'cdf28d7ea5022f908e4fc07334b68e35', // nl-NL - Linux 64 - Chrome 8.0.552.215
 '16c83cd14ac81327334e4801c1bda333', // */* - nl-NL - Linux 64 - Chrome 8.0.552.215
 'ef1c0d251429bdc30776392b30c872b1', // nl-NL - Linux 64 - Chrome 8.0.552.224
@@ -2520,6 +2770,8 @@ $browsers_fingerprints = array(
 '1186ef63327265bab2dd43e7d0851054', // */* - nl-NL - Linux 64 - Chrome 9.0.597.107
 '468e34ce3eed3abbaebf695371328f0b', // nl-NL - Linux 64 - Chrome 10.0.648.127
 'e4d493a0efea82e9bcd28994bfb7f794', // */* - nl-NL - Linux 64 - Chrome 10.0.648.127
+'92673f6f36626db9bc810d8ff2c5e84e', // nl-NL - Linux 64 - Chrome 10.0.648.133
+'69c831d4609db65721e550e271a12f58', // */* - nl-NL - Linux 64 - Chrome 10.0.648.133
 '4f3e688522af13e3e9a3a07059843b98', // es-ES - Windows XP - Chrome 8.0.552.215
 '85cef5918b25459d6777bd1c51237683', // */* - es-ES - Windows XP - Chrome 8.0.552.215
 '5b2d3c5cfab5bce8e8f098ce198572c2', // es-ES - Windows XP - Chrome 8.0.552.224
@@ -2540,6 +2792,8 @@ $browsers_fingerprints = array(
 '1784b9c9ac805765ceea5a099063b991', // */* - es-ES - Windows XP - Chrome 9.0.597.107
 '6b4ec26d64a79c74c8ea857d3f982080', // es-ES - Windows XP - Chrome 10.0.648.127
 '943436a6a4471bc52992427a2e75d240', // */* - es-ES - Windows XP - Chrome 10.0.648.127
+'5c97a9d79344fffcc9e7c99e2bcbf61f', // es-ES - Windows XP - Chrome 10.0.648.133
+'6d0ffa93c89fe8a73b06f50ce530a4b3', // */* - es-ES - Windows XP - Chrome 10.0.648.133
 '2ea2e5e3c4e3192b3d8cb50d28931c4e', // es-ES - Windows 2003 - Chrome 8.0.552.215
 '73e2a13668113e098ac8e9eb5ffb48fc', // */* - es-ES - Windows 2003 - Chrome 8.0.552.215
 '5d27f75f3d5695fdb78c63bce7f3d800', // es-ES - Windows 2003 - Chrome 8.0.552.224
@@ -2560,6 +2814,8 @@ $browsers_fingerprints = array(
 '4f54a0d571ee0dd026c39ebd8ac25f71', // */* - es-ES - Windows 2003 - Chrome 9.0.597.107
 'f1aa7c541b869ac67473477504f12af8', // es-ES - Windows 2003 - Chrome 10.0.648.127
 'd2a4d09c2cda8acfe033976c2130ddd6', // */* - es-ES - Windows 2003 - Chrome 10.0.648.127
+'ef4f6409e2bb9c2a4b4fb6dda6d57c0c', // es-ES - Windows 2003 - Chrome 10.0.648.133
+'156e125a35d956ed552f4d3cf6a529f0', // */* - es-ES - Windows 2003 - Chrome 10.0.648.133
 '8ee0fb6ecb677db7b55ab0909be0859d', // es-ES - Windows Vista - Chrome 8.0.552.215
 '5441ba8dd55cb44a935fdcf6aeb39301', // */* - es-ES - Windows Vista - Chrome 8.0.552.215
 'd12026e9dd5ecae32819a84e1416ca92', // es-ES - Windows Vista - Chrome 8.0.552.224
@@ -2580,6 +2836,8 @@ $browsers_fingerprints = array(
 'ebdde1d9bca84a6709d85ca9bfd87e64', // */* - es-ES - Windows Vista - Chrome 9.0.597.107
 'a34495a24b2704d672afd14faf1af7d0', // es-ES - Windows Vista - Chrome 10.0.648.127
 '2654d5e3bacad6f6e1bbba6ea54bb198', // */* - es-ES - Windows Vista - Chrome 10.0.648.127
+'32848f67d63aebf6145e0085b81d4550', // es-ES - Windows Vista - Chrome 10.0.648.133
+'d36f4d442bd083f50ffdd275aa76aa05', // */* - es-ES - Windows Vista - Chrome 10.0.648.133
 '348a2753e1c3a7f1eafe3081b4f069e0', // es-ES - Windows 7 - Chrome 8.0.552.215
 '2896fefabf368f6804ca9b23c7a1e08d', // */* - es-ES - Windows 7 - Chrome 8.0.552.215
 'a30f191105ec6a33d727486adb91ae23', // es-ES - Windows 7 - Chrome 8.0.552.224
@@ -2600,6 +2858,8 @@ $browsers_fingerprints = array(
 'cd0e14a75b2062af723be5259d00452e', // */* - es-ES - Windows 7 - Chrome 9.0.597.107
 'e521b351b1da7d2c358ce8b2274ecc70', // es-ES - Windows 7 - Chrome 10.0.648.127
 '5af6fafef6b06399084e7e3ebd8a00a7', // */* - es-ES - Windows 7 - Chrome 10.0.648.127
+'feede256ab213ab98891559a7987ea35', // es-ES - Windows 7 - Chrome 10.0.648.133
+'97bd9d6bf070bcf78a6318a1ef23d909', // */* - es-ES - Windows 7 - Chrome 10.0.648.133
 '5ab53381a80ab980d71828fd153224f3', // es-ES - MacOS X 10.5.8 - Chrome 8.0.552.215
 '5d72602ece456204130846849bca0d8f', // */* - es-ES - MacOS X 10.5.8 - Chrome 8.0.552.215
 'd98d0c5f46dde2fc68d174795715479f', // es-ES - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -2620,6 +2880,8 @@ $browsers_fingerprints = array(
 'fed4c1336e8ad36d641a22744687379c', // */* - es-ES - MacOS X 10.5.8 - Chrome 9.0.597.107
 'fdc3f0a03883e8f562400435c3952b19', // es-ES - MacOS X 10.5.8 - Chrome 10.0.648.127
 '4d6a2792101f19e6ba20d27eecbbac16', // */* - es-ES - MacOS X 10.5.8 - Chrome 10.0.648.127
+'2bcb7fc76a03230f8ed7f14fe1efc497', // es-ES - MacOS X 10.5.8 - Chrome 10.0.648.133
+'fba3104953bfb07b2f910763224c2d5a', // */* - es-ES - MacOS X 10.5.8 - Chrome 10.0.648.133
 'bbc6a6d41c1548fc5f712bf08d5266e9', // es-ES - MacOS X 10.6.0 - Chrome 8.0.552.215
 '561190eace8e085c4414c70c0620e7d0', // */* - es-ES - MacOS X 10.6.0 - Chrome 8.0.552.215
 '79a6ec42b9f949b590448a347aa068a3', // es-ES - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -2640,6 +2902,8 @@ $browsers_fingerprints = array(
 'd99041f91982679c94f67e260d44cce6', // */* - es-ES - MacOS X 10.6.0 - Chrome 9.0.597.107
 '99cb1e47846e972c1f010e7cfa27e15c', // es-ES - MacOS X 10.6.0 - Chrome 10.0.648.127
 'fa54ca7fb135ee7959788f9ee116d186', // */* - es-ES - MacOS X 10.6.0 - Chrome 10.0.648.127
+'b25a45753c342b34e65f3590241cff9f', // es-ES - MacOS X 10.6.0 - Chrome 10.0.648.133
+'07e518858a9413d0e39245ae1b2870bf', // */* - es-ES - MacOS X 10.6.0 - Chrome 10.0.648.133
 '24e92d715f32b80b9c0434629bde7927', // es-ES - MacOS X 10.6.1 - Chrome 8.0.552.215
 '4a2a0cce2776082969a05b37c5b118e1', // */* - es-ES - MacOS X 10.6.1 - Chrome 8.0.552.215
 '819a9d214c93c6c5b99c6bcc465d9bac', // es-ES - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -2660,6 +2924,8 @@ $browsers_fingerprints = array(
 'e97d72fa7119aa5157ca258836835b71', // */* - es-ES - MacOS X 10.6.1 - Chrome 9.0.597.107
 '0741455d0bc53428e356b80beb1a8371', // es-ES - MacOS X 10.6.1 - Chrome 10.0.648.127
 'b58b469255eebeb4daa6b94ac16d4bc5', // */* - es-ES - MacOS X 10.6.1 - Chrome 10.0.648.127
+'863409298a659fea0c85fddada4ef355', // es-ES - MacOS X 10.6.1 - Chrome 10.0.648.133
+'19cca14fe296237505b472675702501c', // */* - es-ES - MacOS X 10.6.1 - Chrome 10.0.648.133
 '24e92d715f32b80b9c0434629bde7927', // es-ES - MacOS X 10.6.2 - Chrome 8.0.552.215
 '4a2a0cce2776082969a05b37c5b118e1', // */* - es-ES - MacOS X 10.6.2 - Chrome 8.0.552.215
 '819a9d214c93c6c5b99c6bcc465d9bac', // es-ES - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -2680,6 +2946,8 @@ $browsers_fingerprints = array(
 'e97d72fa7119aa5157ca258836835b71', // */* - es-ES - MacOS X 10.6.2 - Chrome 9.0.597.107
 '0741455d0bc53428e356b80beb1a8371', // es-ES - MacOS X 10.6.2 - Chrome 10.0.648.127
 'b58b469255eebeb4daa6b94ac16d4bc5', // */* - es-ES - MacOS X 10.6.2 - Chrome 10.0.648.127
+'863409298a659fea0c85fddada4ef355', // es-ES - MacOS X 10.6.2 - Chrome 10.0.648.133
+'19cca14fe296237505b472675702501c', // */* - es-ES - MacOS X 10.6.2 - Chrome 10.0.648.133
 'ffb299d7ea0a7398cd77e77ae6869d06', // es-ES - MacOS X 10.6.3 - Chrome 8.0.552.215
 '066e7d51c21de3a9e6eb1373e18e82f9', // */* - es-ES - MacOS X 10.6.3 - Chrome 8.0.552.215
 '5dfb3916578cc39011facae6ce805300', // es-ES - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -2700,6 +2968,8 @@ $browsers_fingerprints = array(
 'c6c19513ba1c98999ecae9b5129715d3', // */* - es-ES - MacOS X 10.6.3 - Chrome 9.0.597.107
 '483649e14ec8d4afd958d88fa9ffbfcd', // es-ES - MacOS X 10.6.3 - Chrome 10.0.648.127
 '9705d39cb2ca00bca40a9569019607ad', // */* - es-ES - MacOS X 10.6.3 - Chrome 10.0.648.127
+'b6c29c4ef9e66b22f87950fce0f1031d', // es-ES - MacOS X 10.6.3 - Chrome 10.0.648.133
+'3f5e630169d7507070f82de040529528', // */* - es-ES - MacOS X 10.6.3 - Chrome 10.0.648.133
 '964a15909781f1eba88c57598d994bf2', // es-ES - MacOS X 10.6.4 - Chrome 8.0.552.215
 '5f99eba0de625991d283f1c7d549925a', // */* - es-ES - MacOS X 10.6.4 - Chrome 8.0.552.215
 '83c679a0b8ff8cbf9292a22c0a6a4dc6', // es-ES - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -2720,6 +2990,8 @@ $browsers_fingerprints = array(
 '6f130d3cd935fc1d1c5d1e1b79625a74', // */* - es-ES - MacOS X 10.6.4 - Chrome 9.0.597.107
 '99eb968ad259fc0037281a219472f9aa', // es-ES - MacOS X 10.6.4 - Chrome 10.0.648.127
 '667af6f351ddb2d0b195f95dfea296fe', // */* - es-ES - MacOS X 10.6.4 - Chrome 10.0.648.127
+'6dca7ac7b15e32c9389bc6d02c3ea9ed', // es-ES - MacOS X 10.6.4 - Chrome 10.0.648.133
+'d3b91a04b6c6ef92060f612890f4cef8', // */* - es-ES - MacOS X 10.6.4 - Chrome 10.0.648.133
 'f9ac7d3ea6d3d5bf703984cf2989857d', // es-ES - MacOS X 10.6.5 - Chrome 8.0.552.215
 '614f1c45e37191a950a7de46f05e1db9', // */* - es-ES - MacOS X 10.6.5 - Chrome 8.0.552.215
 'df201b114df7faca14861885b7004511', // es-ES - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -2740,6 +3012,8 @@ $browsers_fingerprints = array(
 '1bc40a656cb2936ed4823c61733aec0d', // */* - es-ES - MacOS X 10.6.5 - Chrome 9.0.597.107
 '21601a5ccd72ccf92b3e97690798a936', // es-ES - MacOS X 10.6.5 - Chrome 10.0.648.127
 'bdb8ae990035675b086566d8e38b9ef6', // */* - es-ES - MacOS X 10.6.5 - Chrome 10.0.648.127
+'efed3f0d45f32a6eb9baf0c1e6af0560', // es-ES - MacOS X 10.6.5 - Chrome 10.0.648.133
+'51da9cf906d189e4fdcd089220489811', // */* - es-ES - MacOS X 10.6.5 - Chrome 10.0.648.133
 'a06ab991aa2078635c400c318922440f', // es-ES - MacOS X 10.6.6 - Chrome 8.0.552.215
 'b0ac06ddb70f301ff98cc670cc7eda58', // */* - es-ES - MacOS X 10.6.6 - Chrome 8.0.552.215
 '2797147284ab70bf69346c078409af7a', // es-ES - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -2760,6 +3034,8 @@ $browsers_fingerprints = array(
 '6a2066b77581dc3ee7f52b229f4bc818', // */* - es-ES - MacOS X 10.6.6 - Chrome 9.0.597.107
 '5673430943c2ac732bb81cca6926fc17', // es-ES - MacOS X 10.6.6 - Chrome 10.0.648.127
 'fefe497662a8998e62ed4b8a2a48d659', // */* - es-ES - MacOS X 10.6.6 - Chrome 10.0.648.127
+'75407d73c4485cc4c53cd4a92c2963e3', // es-ES - MacOS X 10.6.6 - Chrome 10.0.648.133
+'026540ecd75f1b7868df547705be92c3', // */* - es-ES - MacOS X 10.6.6 - Chrome 10.0.648.133
 '05d6c9218a084499aa19d6de4db4b940', // es-ES - Linux - Chrome 8.0.552.215
 'a01fec02eb47b1904497ffa0a722b037', // */* - es-ES - Linux - Chrome 8.0.552.215
 '47b76c1c1f11ea451676a9bb01de881d', // es-ES - Linux - Chrome 8.0.552.224
@@ -2780,6 +3056,8 @@ $browsers_fingerprints = array(
 '3e581f27d7251311c64199597d30ffdb', // */* - es-ES - Linux - Chrome 9.0.597.107
 '73a63578f292c80fa879aa725c6cd67b', // es-ES - Linux - Chrome 10.0.648.127
 '39cdf1a5d5d4ab6e61b9f9f98c540fbc', // */* - es-ES - Linux - Chrome 10.0.648.127
+'645b94332c3233c77e315ba30dfdcc66', // es-ES - Linux - Chrome 10.0.648.133
+'84afc79c683d8165f9cf31abdd8ec393', // */* - es-ES - Linux - Chrome 10.0.648.133
 'bcf0cf8425fcbfa111b07819480ad98f', // es-ES - Linux 64 - Chrome 8.0.552.215
 '187eb6af6940b74f531749356690daea', // */* - es-ES - Linux 64 - Chrome 8.0.552.215
 '73e84e7f2b7eadff5332c7883cfec61f', // es-ES - Linux 64 - Chrome 8.0.552.224
@@ -2800,6 +3078,8 @@ $browsers_fingerprints = array(
 'f0a0e78a35111ed2ca18719ca4ec66b8', // */* - es-ES - Linux 64 - Chrome 9.0.597.107
 'bf080c6ced1121dcbfd42e2aedc788ec', // es-ES - Linux 64 - Chrome 10.0.648.127
 'ea4d22408d99ec2ffa234e2d706b991e', // */* - es-ES - Linux 64 - Chrome 10.0.648.127
+'eba5a06dc598cf1268db8a5d88faa78c', // es-ES - Linux 64 - Chrome 10.0.648.133
+'726d5ba3cac297fa1acdf32136014957', // */* - es-ES - Linux 64 - Chrome 10.0.648.133
 'b65c78b4b74ffdd2c68188636eca4e72', // ca-ES - Windows XP - Chrome 8.0.552.215
 '7e05e1d301cb69a3f89487bc26cabb02', // */* - ca-ES - Windows XP - Chrome 8.0.552.215
 '210d26ec8ddd090c56c72c5864244db5', // ca-ES - Windows XP - Chrome 8.0.552.224
@@ -2820,6 +3100,8 @@ $browsers_fingerprints = array(
 '009451e49e1159b7a6711709907585ad', // */* - ca-ES - Windows XP - Chrome 9.0.597.107
 '86be491dda60d1d0ec34f9749f9b5a9c', // ca-ES - Windows XP - Chrome 10.0.648.127
 '6ff310e146e2f6b348c13d71d1b895c8', // */* - ca-ES - Windows XP - Chrome 10.0.648.127
+'0f832a300d7d08c64b144fe77f8d5aba', // ca-ES - Windows XP - Chrome 10.0.648.133
+'f8c887f96c629b64c74a54735e4b60cc', // */* - ca-ES - Windows XP - Chrome 10.0.648.133
 'c70cb57d8eb6d7086f48e1a8fcccc25b', // ca-ES - Windows 2003 - Chrome 8.0.552.215
 '95cd7ccb690121329a748914e7aebb2e', // */* - ca-ES - Windows 2003 - Chrome 8.0.552.215
 'cefb0e92619af4c189a1eef01e736bfc', // ca-ES - Windows 2003 - Chrome 8.0.552.224
@@ -2840,6 +3122,8 @@ $browsers_fingerprints = array(
 '4b1976980be4e9b4dfa59b21bb9f52f7', // */* - ca-ES - Windows 2003 - Chrome 9.0.597.107
 '90c405a7f7b6575a4dc82ed6e4d484a1', // ca-ES - Windows 2003 - Chrome 10.0.648.127
 '79b34157a78e66cb82d14500a0fc4c2a', // */* - ca-ES - Windows 2003 - Chrome 10.0.648.127
+'1b39d62056fb617593aeb602d09f6349', // ca-ES - Windows 2003 - Chrome 10.0.648.133
+'f7a7a18d9d5ddfbd9946837d1a1d2921', // */* - ca-ES - Windows 2003 - Chrome 10.0.648.133
 'a1e3fba9df5ec5fcc4936f2666c42e4a', // ca-ES - Windows Vista - Chrome 8.0.552.215
 '9da2952da72a40295f31dbad3e5d2e65', // */* - ca-ES - Windows Vista - Chrome 8.0.552.215
 'c6999253309edb390a2aa26547591a14', // ca-ES - Windows Vista - Chrome 8.0.552.224
@@ -2860,6 +3144,8 @@ $browsers_fingerprints = array(
 '1c7eeda3562d67b1e8f4bf117df4ce37', // */* - ca-ES - Windows Vista - Chrome 9.0.597.107
 'baf396f0dfd532f43937362d2f028ae1', // ca-ES - Windows Vista - Chrome 10.0.648.127
 '503e684559fe5549a7098878d711369c', // */* - ca-ES - Windows Vista - Chrome 10.0.648.127
+'8a4b80519505b88a2e92900fdeba2b49', // ca-ES - Windows Vista - Chrome 10.0.648.133
+'fffc3b428957b6ac1daa2d63f37c8ab3', // */* - ca-ES - Windows Vista - Chrome 10.0.648.133
 '737b1d136a532b2d07b838521b996417', // ca-ES - Windows 7 - Chrome 8.0.552.215
 'f8649d9c1f37fd1f08effee82ffd1890', // */* - ca-ES - Windows 7 - Chrome 8.0.552.215
 'cfb0ae806baf78aa09b1797bae5b3989', // ca-ES - Windows 7 - Chrome 8.0.552.224
@@ -2880,6 +3166,8 @@ $browsers_fingerprints = array(
 'd919e483fec4b4f1f7c234553847da6f', // */* - ca-ES - Windows 7 - Chrome 9.0.597.107
 '02c28d2f322cb14d7d8575af0a36fdb1', // ca-ES - Windows 7 - Chrome 10.0.648.127
 'ab75a5659d87899ba0b639bc10306530', // */* - ca-ES - Windows 7 - Chrome 10.0.648.127
+'549b3a7ce5c59460293e9d92adb666bd', // ca-ES - Windows 7 - Chrome 10.0.648.133
+'7ee505d3ac27b394c53439e327ed0819', // */* - ca-ES - Windows 7 - Chrome 10.0.648.133
 'c2efbcacf1361827ca59315b13cc14e1', // ca-ES - MacOS X 10.5.8 - Chrome 8.0.552.215
 '786c833f0f3615714d0f133c56da867d', // */* - ca-ES - MacOS X 10.5.8 - Chrome 8.0.552.215
 '1826ca4b9d1e8bdd4f34f0fa502d2e34', // ca-ES - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -2900,6 +3188,8 @@ $browsers_fingerprints = array(
 '2a5d524996c53691e3374bb0fcd79e00', // */* - ca-ES - MacOS X 10.5.8 - Chrome 9.0.597.107
 '7dd4de71d781df480dbdcb157f2d9252', // ca-ES - MacOS X 10.5.8 - Chrome 10.0.648.127
 'c286e0a12ee3cf7e8cee3c61410f6b51', // */* - ca-ES - MacOS X 10.5.8 - Chrome 10.0.648.127
+'c2ab6bc8ebec81fc2d3ead8590f2c734', // ca-ES - MacOS X 10.5.8 - Chrome 10.0.648.133
+'8f37ab458895e0161467383f320c9b4e', // */* - ca-ES - MacOS X 10.5.8 - Chrome 10.0.648.133
 '555e36e13ac782580ccb902613b94ebc', // ca-ES - MacOS X 10.6.0 - Chrome 8.0.552.215
 '804a260888c850ad23965225f216f382', // */* - ca-ES - MacOS X 10.6.0 - Chrome 8.0.552.215
 'dd242e7be4dbabd1dd06cf8e03ac41f5', // ca-ES - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -2920,6 +3210,8 @@ $browsers_fingerprints = array(
 '68d7077418ec925bb2a263bab08bb9de', // */* - ca-ES - MacOS X 10.6.0 - Chrome 9.0.597.107
 'c135805db567ee420b0e149d5647b10d', // ca-ES - MacOS X 10.6.0 - Chrome 10.0.648.127
 'f1c7fe6c1f34d02a8bf1aa31871d164d', // */* - ca-ES - MacOS X 10.6.0 - Chrome 10.0.648.127
+'7e69581c0ef2170b60ae4b9df7f882f3', // ca-ES - MacOS X 10.6.0 - Chrome 10.0.648.133
+'a5bf98744e37af1a9ffa4770ad750bf4', // */* - ca-ES - MacOS X 10.6.0 - Chrome 10.0.648.133
 '7f3ce356fa46e5d97519c60897cc96e4', // ca-ES - MacOS X 10.6.1 - Chrome 8.0.552.215
 '33a606e25499dca0b2b721b46d26244e', // */* - ca-ES - MacOS X 10.6.1 - Chrome 8.0.552.215
 'f74b774c3bd31200b6bee65af5ff9b97', // ca-ES - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -2940,6 +3232,8 @@ $browsers_fingerprints = array(
 '8799ac832bb80fc04c29116013598343', // */* - ca-ES - MacOS X 10.6.1 - Chrome 9.0.597.107
 '0d14cb341fe17372ffb4ecd7fee748a7', // ca-ES - MacOS X 10.6.1 - Chrome 10.0.648.127
 'baaebf7b50e3647f5c9ef886ec05267a', // */* - ca-ES - MacOS X 10.6.1 - Chrome 10.0.648.127
+'f752a98499392056b5f7cf6ae82aeb57', // ca-ES - MacOS X 10.6.1 - Chrome 10.0.648.133
+'e7bc728b3e918268d70e53fca5778a03', // */* - ca-ES - MacOS X 10.6.1 - Chrome 10.0.648.133
 '7f3ce356fa46e5d97519c60897cc96e4', // ca-ES - MacOS X 10.6.2 - Chrome 8.0.552.215
 '33a606e25499dca0b2b721b46d26244e', // */* - ca-ES - MacOS X 10.6.2 - Chrome 8.0.552.215
 'f74b774c3bd31200b6bee65af5ff9b97', // ca-ES - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -2960,6 +3254,8 @@ $browsers_fingerprints = array(
 '8799ac832bb80fc04c29116013598343', // */* - ca-ES - MacOS X 10.6.2 - Chrome 9.0.597.107
 '0d14cb341fe17372ffb4ecd7fee748a7', // ca-ES - MacOS X 10.6.2 - Chrome 10.0.648.127
 'baaebf7b50e3647f5c9ef886ec05267a', // */* - ca-ES - MacOS X 10.6.2 - Chrome 10.0.648.127
+'f752a98499392056b5f7cf6ae82aeb57', // ca-ES - MacOS X 10.6.2 - Chrome 10.0.648.133
+'e7bc728b3e918268d70e53fca5778a03', // */* - ca-ES - MacOS X 10.6.2 - Chrome 10.0.648.133
 'a663b95e90f8752e58ecb2125b6d2b7b', // ca-ES - MacOS X 10.6.3 - Chrome 8.0.552.215
 'bd5a6cbb49ad9179fe4766b4144c7b17', // */* - ca-ES - MacOS X 10.6.3 - Chrome 8.0.552.215
 '098222704640c8b14de5d167f75ae0a8', // ca-ES - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -2980,6 +3276,8 @@ $browsers_fingerprints = array(
 '4b37b7e1a485987da4e311757fa41769', // */* - ca-ES - MacOS X 10.6.3 - Chrome 9.0.597.107
 '865109c1960a662c189661a708660d3c', // ca-ES - MacOS X 10.6.3 - Chrome 10.0.648.127
 'a36f5a1d1d87ab7249de9fdccc0b3be3', // */* - ca-ES - MacOS X 10.6.3 - Chrome 10.0.648.127
+'09599cb6df9f3e7c0b5a193fdd5ee9d2', // ca-ES - MacOS X 10.6.3 - Chrome 10.0.648.133
+'cfbe87c891a9db119e6ce9082e6d39c6', // */* - ca-ES - MacOS X 10.6.3 - Chrome 10.0.648.133
 '31e806578b1ca53887318e1477130f31', // ca-ES - MacOS X 10.6.4 - Chrome 8.0.552.215
 'b0d95a30142464e6a6298b982ed51b8c', // */* - ca-ES - MacOS X 10.6.4 - Chrome 8.0.552.215
 '1b3f4d2484c1f3a1a2c0ebb36be9972b', // ca-ES - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -3000,6 +3298,8 @@ $browsers_fingerprints = array(
 '7beafa2c1b454354ed3ce0b1af4f0b99', // */* - ca-ES - MacOS X 10.6.4 - Chrome 9.0.597.107
 '0dc4d3ca1b67949362592e6f4b86a927', // ca-ES - MacOS X 10.6.4 - Chrome 10.0.648.127
 'a9cb3031ad9234e3a118d9341a18ba92', // */* - ca-ES - MacOS X 10.6.4 - Chrome 10.0.648.127
+'ed7b0695772d4787a9029ff8d019896b', // ca-ES - MacOS X 10.6.4 - Chrome 10.0.648.133
+'58f6fa6670b7b6ef4a94ffc62016bb71', // */* - ca-ES - MacOS X 10.6.4 - Chrome 10.0.648.133
 'b886599f6b4d0b4604b5230909ab9572', // ca-ES - MacOS X 10.6.5 - Chrome 8.0.552.215
 'e8aceeb84b2cac0ff9fe17afebd86f6b', // */* - ca-ES - MacOS X 10.6.5 - Chrome 8.0.552.215
 'e13221db501644510a79677091f1dc9a', // ca-ES - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -3020,6 +3320,8 @@ $browsers_fingerprints = array(
 '0c3a74b86dbd95aa673e70168e220bcc', // */* - ca-ES - MacOS X 10.6.5 - Chrome 9.0.597.107
 '356727c6e15f84144701e1b326559aec', // ca-ES - MacOS X 10.6.5 - Chrome 10.0.648.127
 'e5c277afefd054d21e5a69298c9fb0f9', // */* - ca-ES - MacOS X 10.6.5 - Chrome 10.0.648.127
+'d40e3800cbc100e37352ce13c949d614', // ca-ES - MacOS X 10.6.5 - Chrome 10.0.648.133
+'5baf214ed87ed24aeb04cabe123da6a4', // */* - ca-ES - MacOS X 10.6.5 - Chrome 10.0.648.133
 '2ad00afdcf3ca89d6cef4cef31f44029', // ca-ES - MacOS X 10.6.6 - Chrome 8.0.552.215
 '06e28b4138aec9441612854675a20e7b', // */* - ca-ES - MacOS X 10.6.6 - Chrome 8.0.552.215
 '490a836c132487aa011e916a506958f6', // ca-ES - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -3040,6 +3342,8 @@ $browsers_fingerprints = array(
 '03fb5e640ee5ce3db46d7a07458cf8f6', // */* - ca-ES - MacOS X 10.6.6 - Chrome 9.0.597.107
 '4e6846e1b625f883dfe904a0a9284aff', // ca-ES - MacOS X 10.6.6 - Chrome 10.0.648.127
 'cda97cd19fc004933b9efa568174e6b8', // */* - ca-ES - MacOS X 10.6.6 - Chrome 10.0.648.127
+'ab68c1b803a3b16c9944e9ec5b80b2ed', // ca-ES - MacOS X 10.6.6 - Chrome 10.0.648.133
+'13502df10759913c2e95e0dfbb12a4fe', // */* - ca-ES - MacOS X 10.6.6 - Chrome 10.0.648.133
 'e744fdd8623958f6bdc57c44d6d4e923', // ca-ES - Linux - Chrome 8.0.552.215
 '178c0c40bb03d698224c2bfc6c802d1c', // */* - ca-ES - Linux - Chrome 8.0.552.215
 'caae609656d8815c2b3ff5141c1a4b54', // ca-ES - Linux - Chrome 8.0.552.224
@@ -3060,6 +3364,8 @@ $browsers_fingerprints = array(
 'a5b7fea4fd233987ca1ed456f248ffb1', // */* - ca-ES - Linux - Chrome 9.0.597.107
 '3a9ed44dcc3028f0574a7cb38fb7a769', // ca-ES - Linux - Chrome 10.0.648.127
 '31fbe96eb1f23b99131e5f42aa5a4c5e', // */* - ca-ES - Linux - Chrome 10.0.648.127
+'1c84ef7b2e8576b9ece10f80fb2805a2', // ca-ES - Linux - Chrome 10.0.648.133
+'2ef36ec2fe0851f63f6fc62090868e9a', // */* - ca-ES - Linux - Chrome 10.0.648.133
 '3fd382ae64ed970d2016069c8279ef0e', // ca-ES - Linux 64 - Chrome 8.0.552.215
 'db5e454b53bc72c6104fafe57c9df122', // */* - ca-ES - Linux 64 - Chrome 8.0.552.215
 '6467451bbbe52e4c0752cb5741d53281', // ca-ES - Linux 64 - Chrome 8.0.552.224
@@ -3080,6 +3386,8 @@ $browsers_fingerprints = array(
 'a7fcdac4bedc5e6f68e8e0568ac34e80', // */* - ca-ES - Linux 64 - Chrome 9.0.597.107
 '1fc8ffc648e332e8318e5643245b4a00', // ca-ES - Linux 64 - Chrome 10.0.648.127
 '5edb808a84f346722a234ebeb11b997a', // */* - ca-ES - Linux 64 - Chrome 10.0.648.127
+'771cc37c8badf59a613e836bfbb377b9', // ca-ES - Linux 64 - Chrome 10.0.648.133
+'7f229d132be9810eb5bea7b2508783f9', // */* - ca-ES - Linux 64 - Chrome 10.0.648.133
 '40f7f380d3e7a5646e9651df75729330', // es-419 - Windows XP - Chrome 8.0.552.215
 '31645c06e9d3e4f0abbbb6be29b99d9d', // */* - es-419 - Windows XP - Chrome 8.0.552.215
 'c43b61ba9681ed7cac4efe374c3c4be1', // es-419 - Windows XP - Chrome 8.0.552.224
@@ -3100,6 +3408,8 @@ $browsers_fingerprints = array(
 'a5323d435fcf242eb526177ec483d1c4', // */* - es-419 - Windows XP - Chrome 9.0.597.107
 'fb5e056427277d98202ccbcf3a4353be', // es-419 - Windows XP - Chrome 10.0.648.127
 '45a0e444ae8a1898dcdd2f2e672ef2f5', // */* - es-419 - Windows XP - Chrome 10.0.648.127
+'6d3fecb126df90aa56f7cdd3713552f2', // es-419 - Windows XP - Chrome 10.0.648.133
+'d8096a3a68cae472e027959bee6da38c', // */* - es-419 - Windows XP - Chrome 10.0.648.133
 '532f25326cbcc055a6750fd5c6c2d001', // es-419 - Windows 2003 - Chrome 8.0.552.215
 'f34255253ff45deb1193b5a3587be1d1', // */* - es-419 - Windows 2003 - Chrome 8.0.552.215
 '0d521b957c23f502d27163aad9c0fc7e', // es-419 - Windows 2003 - Chrome 8.0.552.224
@@ -3120,6 +3430,8 @@ $browsers_fingerprints = array(
 'a209ef15f2fb82da97a85188e94889dd', // */* - es-419 - Windows 2003 - Chrome 9.0.597.107
 '7e45846551af2d942acc7f6e02ec6a9a', // es-419 - Windows 2003 - Chrome 10.0.648.127
 '8ad23c3fc7f4f15fb40b1c0db7db094e', // */* - es-419 - Windows 2003 - Chrome 10.0.648.127
+'ac2cb2a780b884a26ce7b39dfdf1f82c', // es-419 - Windows 2003 - Chrome 10.0.648.133
+'97a548b4bba691b3d56a94e698d8264c', // */* - es-419 - Windows 2003 - Chrome 10.0.648.133
 'c96a065777a496204cea06f9f1167b44', // es-419 - Windows Vista - Chrome 8.0.552.215
 'e1a84d7d8180bcd4589e92b1973f4edd', // */* - es-419 - Windows Vista - Chrome 8.0.552.215
 '4b2166ca5e325fd713eff924eed2918a', // es-419 - Windows Vista - Chrome 8.0.552.224
@@ -3140,6 +3452,8 @@ $browsers_fingerprints = array(
 '67682b81e4ffd493103876dbb5f65c37', // */* - es-419 - Windows Vista - Chrome 9.0.597.107
 'dc3d029f1507667765118bd4407a8626', // es-419 - Windows Vista - Chrome 10.0.648.127
 '5ef130eb846130939099742581612e94', // */* - es-419 - Windows Vista - Chrome 10.0.648.127
+'18b2a866d8ba73a582c8529d86637609', // es-419 - Windows Vista - Chrome 10.0.648.133
+'e571aa61bef59c51b93a34810228a393', // */* - es-419 - Windows Vista - Chrome 10.0.648.133
 '15b134848d2b86efa52f10356a428758', // es-419 - Windows 7 - Chrome 8.0.552.215
 'd4122fa9f620d42f6847859e38bd59d5', // */* - es-419 - Windows 7 - Chrome 8.0.552.215
 '868eb9bda31daadce32470cac12b48cc', // es-419 - Windows 7 - Chrome 8.0.552.224
@@ -3160,6 +3474,8 @@ $browsers_fingerprints = array(
 'a3fe4fb021367ef09396e79d0b5d57b2', // */* - es-419 - Windows 7 - Chrome 9.0.597.107
 'ab31b31dea2bda6a1d30ebae3a6c93bd', // es-419 - Windows 7 - Chrome 10.0.648.127
 '90c1ee41c198782caec5d71b041e79b9', // */* - es-419 - Windows 7 - Chrome 10.0.648.127
+'18a5bed39e722add17a799d68fe9e43b', // es-419 - Windows 7 - Chrome 10.0.648.133
+'17d17e2dfe8ada3f3d9ad77e837f1890', // */* - es-419 - Windows 7 - Chrome 10.0.648.133
 '99b0ed191b4e350afe5b354b33e3f514', // es-419 - MacOS X 10.5.8 - Chrome 8.0.552.215
 'c0603f27eb7892cb04d5ae5c14b0a6e2', // */* - es-419 - MacOS X 10.5.8 - Chrome 8.0.552.215
 'a0b05ccea61fb4cd477c45a3b3d1f47b', // es-419 - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -3180,6 +3496,8 @@ $browsers_fingerprints = array(
 '54cb4494a042d6b174211dbce96861e3', // */* - es-419 - MacOS X 10.5.8 - Chrome 9.0.597.107
 '1566a06de13021fca00f78260bae95e6', // es-419 - MacOS X 10.5.8 - Chrome 10.0.648.127
 '8b7c21f950150722889d054481623b12', // */* - es-419 - MacOS X 10.5.8 - Chrome 10.0.648.127
+'7adc8abed612ff5e3c4713ffc72b0d28', // es-419 - MacOS X 10.5.8 - Chrome 10.0.648.133
+'833f614c0f3f658ce9579813eeae9476', // */* - es-419 - MacOS X 10.5.8 - Chrome 10.0.648.133
 '9366fc443f123b05c2b5cb3a7727a1da', // es-419 - MacOS X 10.6.0 - Chrome 8.0.552.215
 'dfb3f5367f69c7da14bda6e23e5971c8', // */* - es-419 - MacOS X 10.6.0 - Chrome 8.0.552.215
 'b926c3358102e4e78258aee8f3049acb', // es-419 - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -3200,6 +3518,8 @@ $browsers_fingerprints = array(
 '7087c2bfb4a29b33ff15690e399ddf97', // */* - es-419 - MacOS X 10.6.0 - Chrome 9.0.597.107
 '7f85b4a606333c7a005f0cab0e0674ff', // es-419 - MacOS X 10.6.0 - Chrome 10.0.648.127
 '2cf359077a9794d4b00101f0d7325cce', // */* - es-419 - MacOS X 10.6.0 - Chrome 10.0.648.127
+'b9d9beb76e5cc6ea6a2e371c5e0f8261', // es-419 - MacOS X 10.6.0 - Chrome 10.0.648.133
+'c998c2b181da413fd0dbef51b5e8b859', // */* - es-419 - MacOS X 10.6.0 - Chrome 10.0.648.133
 'd9fbf51b9ab91080098c910f4aa29824', // es-419 - MacOS X 10.6.1 - Chrome 8.0.552.215
 '1bc4b4b1ce35615d56dca67eca96de76', // */* - es-419 - MacOS X 10.6.1 - Chrome 8.0.552.215
 'dc815aab75da86ebda71f37e3bd733f7', // es-419 - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -3220,6 +3540,8 @@ $browsers_fingerprints = array(
 '6e908a70034e58f3fc1784d78d3406d1', // */* - es-419 - MacOS X 10.6.1 - Chrome 9.0.597.107
 '2f9da57e713d78a4cb47b14ca402ec2f', // es-419 - MacOS X 10.6.1 - Chrome 10.0.648.127
 '2be827f27e68261fcdc715b0dc30ead8', // */* - es-419 - MacOS X 10.6.1 - Chrome 10.0.648.127
+'2893c656f6d12d7d5a2462aa6158eab2', // es-419 - MacOS X 10.6.1 - Chrome 10.0.648.133
+'ef52bb87a7afda6b50bbb83d3bc7bdd1', // */* - es-419 - MacOS X 10.6.1 - Chrome 10.0.648.133
 'd9fbf51b9ab91080098c910f4aa29824', // es-419 - MacOS X 10.6.2 - Chrome 8.0.552.215
 '1bc4b4b1ce35615d56dca67eca96de76', // */* - es-419 - MacOS X 10.6.2 - Chrome 8.0.552.215
 'dc815aab75da86ebda71f37e3bd733f7', // es-419 - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -3240,6 +3562,8 @@ $browsers_fingerprints = array(
 '6e908a70034e58f3fc1784d78d3406d1', // */* - es-419 - MacOS X 10.6.2 - Chrome 9.0.597.107
 '2f9da57e713d78a4cb47b14ca402ec2f', // es-419 - MacOS X 10.6.2 - Chrome 10.0.648.127
 '2be827f27e68261fcdc715b0dc30ead8', // */* - es-419 - MacOS X 10.6.2 - Chrome 10.0.648.127
+'2893c656f6d12d7d5a2462aa6158eab2', // es-419 - MacOS X 10.6.2 - Chrome 10.0.648.133
+'ef52bb87a7afda6b50bbb83d3bc7bdd1', // */* - es-419 - MacOS X 10.6.2 - Chrome 10.0.648.133
 'd1f8cbff5634d46e33e972a9b39f228a', // es-419 - MacOS X 10.6.3 - Chrome 8.0.552.215
 '54b350934f64b0232dbae1ff27e55307', // */* - es-419 - MacOS X 10.6.3 - Chrome 8.0.552.215
 'bdcc315d3c2ceb0cf976939d52cb58a2', // es-419 - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -3260,6 +3584,8 @@ $browsers_fingerprints = array(
 '8c694d080601f2895932101dc39d41f1', // */* - es-419 - MacOS X 10.6.3 - Chrome 9.0.597.107
 '0a0ab7825081ccad0bac42a9538eb3c7', // es-419 - MacOS X 10.6.3 - Chrome 10.0.648.127
 'ab5cdc1d15fcf62fabd4315779869f4b', // */* - es-419 - MacOS X 10.6.3 - Chrome 10.0.648.127
+'badb85ad3f814876c5fa7d3b529cbddf', // es-419 - MacOS X 10.6.3 - Chrome 10.0.648.133
+'9b1816449a52744ee1861bcfb035b7be', // */* - es-419 - MacOS X 10.6.3 - Chrome 10.0.648.133
 '129b175ba43d85e5c92bd81508414986', // es-419 - MacOS X 10.6.4 - Chrome 8.0.552.215
 '57d2869788070ab84b43ef2a7885097a', // */* - es-419 - MacOS X 10.6.4 - Chrome 8.0.552.215
 '7ab32872a8671f0f8b6d6436312264e2', // es-419 - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -3280,6 +3606,8 @@ $browsers_fingerprints = array(
 'e2e09d8db9742a9117a981b9b293fbd3', // */* - es-419 - MacOS X 10.6.4 - Chrome 9.0.597.107
 '30756d116cc9b4f1102dbadba02b9e72', // es-419 - MacOS X 10.6.4 - Chrome 10.0.648.127
 '401bc6f2af973dccb9da0a3b5db74cd8', // */* - es-419 - MacOS X 10.6.4 - Chrome 10.0.648.127
+'b0a372476ba06386adf771143cee9b0c', // es-419 - MacOS X 10.6.4 - Chrome 10.0.648.133
+'e7281c91f31758fa5ca2588727d44749', // */* - es-419 - MacOS X 10.6.4 - Chrome 10.0.648.133
 '159b9d0a550fb61d7f506df87dd4aa87', // es-419 - MacOS X 10.6.5 - Chrome 8.0.552.215
 'edc3263577de10548a430ffbccaef6c4', // */* - es-419 - MacOS X 10.6.5 - Chrome 8.0.552.215
 '9e8a6c63faa1d28cba0b31d6e8749653', // es-419 - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -3300,6 +3628,8 @@ $browsers_fingerprints = array(
 '3cbe0c2a91eb4bae24258b115a462d21', // */* - es-419 - MacOS X 10.6.5 - Chrome 9.0.597.107
 '6b14ed0cb99d328fdeb5086fffdcd2d0', // es-419 - MacOS X 10.6.5 - Chrome 10.0.648.127
 '1c77fab1e395c56a117c4dac0bd4613c', // */* - es-419 - MacOS X 10.6.5 - Chrome 10.0.648.127
+'581f0de6ae1a115944900923e53e815f', // es-419 - MacOS X 10.6.5 - Chrome 10.0.648.133
+'a65c7be761f82b7d66263c83f0822dc3', // */* - es-419 - MacOS X 10.6.5 - Chrome 10.0.648.133
 'b0f95fc66a4103111dc523133b0401af', // es-419 - MacOS X 10.6.6 - Chrome 8.0.552.215
 '7b8cced6e57b62df2218a4c85372e2b7', // */* - es-419 - MacOS X 10.6.6 - Chrome 8.0.552.215
 '52b9fc7eb7e551327ef288f1a60a2e74', // es-419 - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -3320,6 +3650,8 @@ $browsers_fingerprints = array(
 '120483765f3c489e143d90e6231722c2', // */* - es-419 - MacOS X 10.6.6 - Chrome 9.0.597.107
 'f794aa23eb437fdc4cc0b0f1baff09d9', // es-419 - MacOS X 10.6.6 - Chrome 10.0.648.127
 'a6c68a8555e38b855c4b03cd61c6cb78', // */* - es-419 - MacOS X 10.6.6 - Chrome 10.0.648.127
+'d9f4e63f5604f1bc433582615fca5f12', // es-419 - MacOS X 10.6.6 - Chrome 10.0.648.133
+'30c339a347c2f60b3edba5efce1a3d6b', // */* - es-419 - MacOS X 10.6.6 - Chrome 10.0.648.133
 '8df6987f8665537799ae49ec8951ad0a', // es-419 - Linux - Chrome 8.0.552.215
 'd619830332e9b01908e111b27d9702f9', // */* - es-419 - Linux - Chrome 8.0.552.215
 'c63300022e054f430dfefdb5779c7784', // es-419 - Linux - Chrome 8.0.552.224
@@ -3340,6 +3672,8 @@ $browsers_fingerprints = array(
 'e62cdf130eeeefc44296c0e4c20ddcf5', // */* - es-419 - Linux - Chrome 9.0.597.107
 'e5c5d42e0f7bf11e49ac52bea245083d', // es-419 - Linux - Chrome 10.0.648.127
 'ae6c5657023cda5b066ad57d11cdb167', // */* - es-419 - Linux - Chrome 10.0.648.127
+'68faf0952a5ded33c794567fd6fe7c21', // es-419 - Linux - Chrome 10.0.648.133
+'7eef2f31ea5bfc44adb82002746b6722', // */* - es-419 - Linux - Chrome 10.0.648.133
 'd87bc1935165de1a9dba857c470f053b', // es-419 - Linux 64 - Chrome 8.0.552.215
 'c92cc7a846837c681d36cb43a7d3d2f8', // */* - es-419 - Linux 64 - Chrome 8.0.552.215
 '44e3486fb1c31700a8c0db93afcb0e25', // es-419 - Linux 64 - Chrome 8.0.552.224
@@ -3360,6 +3694,8 @@ $browsers_fingerprints = array(
 '0dbaea5d2c2547b41a6da000de1cee3d', // */* - es-419 - Linux 64 - Chrome 9.0.597.107
 'c65dc13d0fba43dffa28ccd89ffa13cd', // es-419 - Linux 64 - Chrome 10.0.648.127
 '9e9ab54740562b944f5d1362e0e60fb1', // */* - es-419 - Linux 64 - Chrome 10.0.648.127
+'2ddcb78c38c9f0e2e2f13d25d68f21e3', // es-419 - Linux 64 - Chrome 10.0.648.133
+'321e520eeb7a78e238790433647cce02', // */* - es-419 - Linux 64 - Chrome 10.0.648.133
 '74afd49a0de8015c1bcd5fd202cb739f', // es-ES - Windows XP - Chrome 8.0.552.215
 'c15e14e80f8f0eb2606f75aee97a9a99', // */* - es-ES - Windows XP - Chrome 8.0.552.215
 '04c7643181740dd8fcdec0ef4e3f4ad5', // es-ES - Windows XP - Chrome 8.0.552.224
@@ -3380,6 +3716,8 @@ $browsers_fingerprints = array(
 '932b288ffb88d4ac67e28e144504e438', // */* - es-ES - Windows XP - Chrome 9.0.597.107
 '5c08bccb0160da4e839dce179fdb7382', // es-ES - Windows XP - Chrome 10.0.648.127
 '6b796972aebe4b7e2b944e9f4213bfcc', // */* - es-ES - Windows XP - Chrome 10.0.648.127
+'6b74374d1491312d9ccf99acd6e89c21', // es-ES - Windows XP - Chrome 10.0.648.133
+'89cbc9124ca98f62485b2457b2c7e247', // */* - es-ES - Windows XP - Chrome 10.0.648.133
 'df6776c595ab813e36559a411529c8e5', // es-ES - Windows 2003 - Chrome 8.0.552.215
 '02c907874580d54b79e19b71146e7f73', // */* - es-ES - Windows 2003 - Chrome 8.0.552.215
 '4c7005018679e4b795e12febcab3668d', // es-ES - Windows 2003 - Chrome 8.0.552.224
@@ -3400,6 +3738,8 @@ $browsers_fingerprints = array(
 'cd4eac76ff16b3ffa91ef84d7eddcc3d', // */* - es-ES - Windows 2003 - Chrome 9.0.597.107
 'af11c29332e6ab0180a0241e1c9e3e5f', // es-ES - Windows 2003 - Chrome 10.0.648.127
 '9b6d79392f652b137c28bf02adffbed0', // */* - es-ES - Windows 2003 - Chrome 10.0.648.127
+'d737b330ebb3449c26cb9a830f6e9ef4', // es-ES - Windows 2003 - Chrome 10.0.648.133
+'7ea4bdcedf234c050cd429ba3be136d3', // */* - es-ES - Windows 2003 - Chrome 10.0.648.133
 'e1f3abd1ba58c9a6b8ce7132349c0654', // es-ES - Windows Vista - Chrome 8.0.552.215
 'cb6dfff422c981f1b0d67e061c5386c1', // */* - es-ES - Windows Vista - Chrome 8.0.552.215
 'ce70c1d9e11283bcc9bcabc1bd5ae740', // es-ES - Windows Vista - Chrome 8.0.552.224
@@ -3420,6 +3760,8 @@ $browsers_fingerprints = array(
 'd0518c108d9601c1679d03008ce03819', // */* - es-ES - Windows Vista - Chrome 9.0.597.107
 'e8636ff6f02ebcb259b46ebcdc129ca0', // es-ES - Windows Vista - Chrome 10.0.648.127
 'd1cca68d3aef124909c2c8c28cccff0b', // */* - es-ES - Windows Vista - Chrome 10.0.648.127
+'2decf8c7ca9d053cb4aadbc176cf5460', // es-ES - Windows Vista - Chrome 10.0.648.133
+'be1cbd550ab8554d8de2f35b67bdca73', // */* - es-ES - Windows Vista - Chrome 10.0.648.133
 '4a496f00c921bd9a65ab5487d33d753a', // es-ES - Windows 7 - Chrome 8.0.552.215
 '1166afd1105bb4f2faf9b2cecdeed29b', // */* - es-ES - Windows 7 - Chrome 8.0.552.215
 'c87b6c5ce30bb6a6e1da295b20e97b15', // es-ES - Windows 7 - Chrome 8.0.552.224
@@ -3440,6 +3782,8 @@ $browsers_fingerprints = array(
 '25a86503e6c65499fb440445edddbc61', // */* - es-ES - Windows 7 - Chrome 9.0.597.107
 '988630d6fb4af87cb1588f142cad38e1', // es-ES - Windows 7 - Chrome 10.0.648.127
 'a8200df1317997ce9b14eb82810e6e0b', // */* - es-ES - Windows 7 - Chrome 10.0.648.127
+'43e5962efaeabb36407dcd186a88ae86', // es-ES - Windows 7 - Chrome 10.0.648.133
+'7904af01c58617168ed1d3dd0d520728', // */* - es-ES - Windows 7 - Chrome 10.0.648.133
 'cd53d5fd68c4777202603d21c5a741f8', // es-ES - MacOS X 10.5.8 - Chrome 8.0.552.215
 '435bf610c35f2c4c9603fa0149cd0e03', // */* - es-ES - MacOS X 10.5.8 - Chrome 8.0.552.215
 '16b21fa127f82ca344b9c71dfc678d3a', // es-ES - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -3460,6 +3804,8 @@ $browsers_fingerprints = array(
 '7378ed2d8d4afe426e15d1cd96cf6c57', // */* - es-ES - MacOS X 10.5.8 - Chrome 9.0.597.107
 'c413f078dc15321ec57df79d8ad3f231', // es-ES - MacOS X 10.5.8 - Chrome 10.0.648.127
 '3ad79a60cf88445a445999302f12e095', // */* - es-ES - MacOS X 10.5.8 - Chrome 10.0.648.127
+'276376302c799dd517f213b173a3bd27', // es-ES - MacOS X 10.5.8 - Chrome 10.0.648.133
+'90a3f43fb6cc81140a8cc1a15c0d12f5', // */* - es-ES - MacOS X 10.5.8 - Chrome 10.0.648.133
 'de777a90cdbebb1695fe110496bfd3e7', // es-ES - MacOS X 10.6.0 - Chrome 8.0.552.215
 '3a14ccb15dcc73f50f5925a418f8e3d1', // */* - es-ES - MacOS X 10.6.0 - Chrome 8.0.552.215
 '6f2d1bbfe821895f76d21e6eaddeab9c', // es-ES - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -3480,6 +3826,8 @@ $browsers_fingerprints = array(
 'e14d248a1eb18ee294a873840123c24f', // */* - es-ES - MacOS X 10.6.0 - Chrome 9.0.597.107
 '56a39f8c4945693808c22581890ecfec', // es-ES - MacOS X 10.6.0 - Chrome 10.0.648.127
 '8e3f8e5f3e4458b183a9bc1ce1c90f2e', // */* - es-ES - MacOS X 10.6.0 - Chrome 10.0.648.127
+'748bd5e0ee45214674678724f0db348d', // es-ES - MacOS X 10.6.0 - Chrome 10.0.648.133
+'f230c399b0d0688e58bab6c5bf6a6e10', // */* - es-ES - MacOS X 10.6.0 - Chrome 10.0.648.133
 'f74f8818a6862ed2a41ae79231e325f8', // es-ES - MacOS X 10.6.1 - Chrome 8.0.552.215
 'd96f444ed5d84e34e16c96adbc8b023e', // */* - es-ES - MacOS X 10.6.1 - Chrome 8.0.552.215
 '9f0ddfa18eddaefbd0a861b87dad9ae0', // es-ES - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -3500,6 +3848,8 @@ $browsers_fingerprints = array(
 'fa70f3684a9890c12de64aa23ced335d', // */* - es-ES - MacOS X 10.6.1 - Chrome 9.0.597.107
 '42f8d58ae04651eec6fdf59145ae5075', // es-ES - MacOS X 10.6.1 - Chrome 10.0.648.127
 'ca83d0d55dd4d1b09e6e83a3ada8a03e', // */* - es-ES - MacOS X 10.6.1 - Chrome 10.0.648.127
+'2492bf7d7f4c50a91a46c654d7543335', // es-ES - MacOS X 10.6.1 - Chrome 10.0.648.133
+'cb70028b1c822025b1913aad83525d31', // */* - es-ES - MacOS X 10.6.1 - Chrome 10.0.648.133
 'f74f8818a6862ed2a41ae79231e325f8', // es-ES - MacOS X 10.6.2 - Chrome 8.0.552.215
 'd96f444ed5d84e34e16c96adbc8b023e', // */* - es-ES - MacOS X 10.6.2 - Chrome 8.0.552.215
 '9f0ddfa18eddaefbd0a861b87dad9ae0', // es-ES - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -3520,6 +3870,8 @@ $browsers_fingerprints = array(
 'fa70f3684a9890c12de64aa23ced335d', // */* - es-ES - MacOS X 10.6.2 - Chrome 9.0.597.107
 '42f8d58ae04651eec6fdf59145ae5075', // es-ES - MacOS X 10.6.2 - Chrome 10.0.648.127
 'ca83d0d55dd4d1b09e6e83a3ada8a03e', // */* - es-ES - MacOS X 10.6.2 - Chrome 10.0.648.127
+'2492bf7d7f4c50a91a46c654d7543335', // es-ES - MacOS X 10.6.2 - Chrome 10.0.648.133
+'cb70028b1c822025b1913aad83525d31', // */* - es-ES - MacOS X 10.6.2 - Chrome 10.0.648.133
 '664339cebc7e5fa770cddcb97a7c13a2', // es-ES - MacOS X 10.6.3 - Chrome 8.0.552.215
 'a8c3192a44c5e23ab7ebd3ca21c650df', // */* - es-ES - MacOS X 10.6.3 - Chrome 8.0.552.215
 '1c93ee43cd300a1bb61d9d1574c32fa9', // es-ES - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -3540,6 +3892,8 @@ $browsers_fingerprints = array(
 '5f7f8786df8b513285131b7901cc0978', // */* - es-ES - MacOS X 10.6.3 - Chrome 9.0.597.107
 '69a2c1214dc71dbfddb1736ef169415e', // es-ES - MacOS X 10.6.3 - Chrome 10.0.648.127
 'd5daef87156b4bf81b748ae9dff3583b', // */* - es-ES - MacOS X 10.6.3 - Chrome 10.0.648.127
+'8670f929368afcec73b0e1fd8f5c74ea', // es-ES - MacOS X 10.6.3 - Chrome 10.0.648.133
+'f1fa2cd38a6f6ab1722a610a881c01bc', // */* - es-ES - MacOS X 10.6.3 - Chrome 10.0.648.133
 '075ba4975459afd4d2651ed9b9d4c1d1', // es-ES - MacOS X 10.6.4 - Chrome 8.0.552.215
 'bfb72fa6c8f8b2c8d6a06b461537a79e', // */* - es-ES - MacOS X 10.6.4 - Chrome 8.0.552.215
 'be8e0cc50d0a2d436cf9ced49a82cdae', // es-ES - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -3560,6 +3914,8 @@ $browsers_fingerprints = array(
 'c4714037fed1319a0acff9ecbc81bc16', // */* - es-ES - MacOS X 10.6.4 - Chrome 9.0.597.107
 '13d2f2e031dda2cd5d61e2aa2628d1ea', // es-ES - MacOS X 10.6.4 - Chrome 10.0.648.127
 '50be966b3521c3646a1e7f8ae9ea7aef', // */* - es-ES - MacOS X 10.6.4 - Chrome 10.0.648.127
+'0b887164319a4a3a4f8b9f40ca3f4090', // es-ES - MacOS X 10.6.4 - Chrome 10.0.648.133
+'8252fec0d6afd09dc3e25066de3de7f4', // */* - es-ES - MacOS X 10.6.4 - Chrome 10.0.648.133
 '3e3a5ccf2c90342685a1f527d0afb1ac', // es-ES - MacOS X 10.6.5 - Chrome 8.0.552.215
 'fb1b262d7aef6b584f4895b9641a40ca', // */* - es-ES - MacOS X 10.6.5 - Chrome 8.0.552.215
 'f501ed0e69f1194a4202972e0337d622', // es-ES - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -3580,6 +3936,8 @@ $browsers_fingerprints = array(
 'f0af751971f773c99470b242c8f7cfd6', // */* - es-ES - MacOS X 10.6.5 - Chrome 9.0.597.107
 'ad0f659cdfbc36d0200cfda54112af38', // es-ES - MacOS X 10.6.5 - Chrome 10.0.648.127
 '0b7880a67c0e9ba91d56fe04f6df18c3', // */* - es-ES - MacOS X 10.6.5 - Chrome 10.0.648.127
+'801f85f391a199b60e55259ae5b24c83', // es-ES - MacOS X 10.6.5 - Chrome 10.0.648.133
+'584cdac14f0341bf6e11fe0bc34dddde', // */* - es-ES - MacOS X 10.6.5 - Chrome 10.0.648.133
 'aae8b5dfc34eda6fdad8073c03c9eb23', // es-ES - MacOS X 10.6.6 - Chrome 8.0.552.215
 '4bc63666672ba6f2673d0aec6458dc4b', // */* - es-ES - MacOS X 10.6.6 - Chrome 8.0.552.215
 '999da4d9169d674487f7804f0e2dc2e9', // es-ES - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -3600,6 +3958,8 @@ $browsers_fingerprints = array(
 '188b042ba1b5becf2d0ea07c68a6e15a', // */* - es-ES - MacOS X 10.6.6 - Chrome 9.0.597.107
 'ef9f4a1556ea2e99ea72184bfe39722a', // es-ES - MacOS X 10.6.6 - Chrome 10.0.648.127
 '998ac4984471f1bf98e206c808a9fafe', // */* - es-ES - MacOS X 10.6.6 - Chrome 10.0.648.127
+'e26ce2169bf29eb2ff3dc082892260f1', // es-ES - MacOS X 10.6.6 - Chrome 10.0.648.133
+'8eb16e65bfb718cdf7ec8ffb17d3f284', // */* - es-ES - MacOS X 10.6.6 - Chrome 10.0.648.133
 '814fabfa1acfa17352d32ba68fe6e504', // es-ES - Linux - Chrome 8.0.552.215
 '9c8713ebeadaaf243f14d459043b1013', // */* - es-ES - Linux - Chrome 8.0.552.215
 '120536862b211e6dbcef7dc98247d514', // es-ES - Linux - Chrome 8.0.552.224
@@ -3620,6 +3980,8 @@ $browsers_fingerprints = array(
 '9570a1d267aeec27935f1b7d8b4e9cbe', // */* - es-ES - Linux - Chrome 9.0.597.107
 '30d3b3771135076da9ec7fccbb64630d', // es-ES - Linux - Chrome 10.0.648.127
 'b7adce0dceb4a0d7ba201a9737a632dc', // */* - es-ES - Linux - Chrome 10.0.648.127
+'2a5d948a953bbc678ac1d154d193d225', // es-ES - Linux - Chrome 10.0.648.133
+'fc8c369b99622044d02198e5b0a2f5b2', // */* - es-ES - Linux - Chrome 10.0.648.133
 '2d19518def0d6907b1b65aed2e31968e', // es-ES - Linux 64 - Chrome 8.0.552.215
 '5402b345b7ee7c7c2ace674a06a7c151', // */* - es-ES - Linux 64 - Chrome 8.0.552.215
 'ed1791adf079a1a5dc05d587a1f71626', // es-ES - Linux 64 - Chrome 8.0.552.224
@@ -3640,6 +4002,8 @@ $browsers_fingerprints = array(
 '2186ce771723a78139b7b8d706461012', // */* - es-ES - Linux 64 - Chrome 9.0.597.107
 '6dfd07dfc75b5a7464687a84824a72f8', // es-ES - Linux 64 - Chrome 10.0.648.127
 '4b4855f665ce7055afe915e8478d3539', // */* - es-ES - Linux 64 - Chrome 10.0.648.127
+'581cb150d6d1a8b69fd06046668a79f6', // es-ES - Linux 64 - Chrome 10.0.648.133
+'8ad30c82b5163ba8bdd3728c2e588f8c', // */* - es-ES - Linux 64 - Chrome 10.0.648.133
 'ac786642aace475d81873d3def7a0624', // fi-FI - Windows XP - Chrome 8.0.552.215
 'c61f685045a1aca8f58ff6f23e5028f4', // */* - fi-FI - Windows XP - Chrome 8.0.552.215
 '3e0d67981fe2964d4ba9cc1af755a083', // fi-FI - Windows XP - Chrome 8.0.552.224
@@ -3660,6 +4024,8 @@ $browsers_fingerprints = array(
 '90630ba91c4c5cac8d941b76718abf88', // */* - fi-FI - Windows XP - Chrome 9.0.597.107
 '685a4d90f00b24912e40cd7ae7e30e30', // fi-FI - Windows XP - Chrome 10.0.648.127
 '8b924b077f44270d9f793c0b87229315', // */* - fi-FI - Windows XP - Chrome 10.0.648.127
+'7c1ce85d96d179f43c78fb6159828dc8', // fi-FI - Windows XP - Chrome 10.0.648.133
+'f6a78dc36f8f07d4cccaf026a0e20328', // */* - fi-FI - Windows XP - Chrome 10.0.648.133
 '9300dfdc43ff7a36ee0ff8d9e1e5d84c', // fi-FI - Windows 2003 - Chrome 8.0.552.215
 '4dfb78f9fbfb4c14566004091000c1d2', // */* - fi-FI - Windows 2003 - Chrome 8.0.552.215
 'ef6d9a38641a5fe849bddb63b6c61913', // fi-FI - Windows 2003 - Chrome 8.0.552.224
@@ -3680,6 +4046,8 @@ $browsers_fingerprints = array(
 '472f0c3b015adddf3b8fa2cda3db1c4e', // */* - fi-FI - Windows 2003 - Chrome 9.0.597.107
 'ba6db4f9e1330244c426eded80b99c0a', // fi-FI - Windows 2003 - Chrome 10.0.648.127
 '3794c30f8bca8272f7b18e45148fa2b5', // */* - fi-FI - Windows 2003 - Chrome 10.0.648.127
+'766cbbb399181b2f2a272785e6146d0a', // fi-FI - Windows 2003 - Chrome 10.0.648.133
+'ca4f4661f7945acff3b481f2fb43a47a', // */* - fi-FI - Windows 2003 - Chrome 10.0.648.133
 '9de4a977fc3d5fbda4b46ad9e383474d', // fi-FI - Windows Vista - Chrome 8.0.552.215
 '4de7147b6f2534cfd5977867f973b424', // */* - fi-FI - Windows Vista - Chrome 8.0.552.215
 '500a575af8cb61f48629fb409c9b6980', // fi-FI - Windows Vista - Chrome 8.0.552.224
@@ -3700,6 +4068,8 @@ $browsers_fingerprints = array(
 '521dc98ad11684e753b589dc06d0dcba', // */* - fi-FI - Windows Vista - Chrome 9.0.597.107
 '69b6e9b9534a404b117be566e35c43a6', // fi-FI - Windows Vista - Chrome 10.0.648.127
 '899463d582e63da9103f7ba0bb033f22', // */* - fi-FI - Windows Vista - Chrome 10.0.648.127
+'9d40139460c588aa576d4e2bbeea0fdd', // fi-FI - Windows Vista - Chrome 10.0.648.133
+'c93e7132ab9e851b497606843175defa', // */* - fi-FI - Windows Vista - Chrome 10.0.648.133
 '4f4375ac0d3ada31f4974621f70d7641', // fi-FI - Windows 7 - Chrome 8.0.552.215
 '0287ad0e3aa778247d8f6c1e3be73196', // */* - fi-FI - Windows 7 - Chrome 8.0.552.215
 'e3ab3473fa904895e83f9928edc6328d', // fi-FI - Windows 7 - Chrome 8.0.552.224
@@ -3720,6 +4090,8 @@ $browsers_fingerprints = array(
 '508f81c94297cd60071508d5bcc37955', // */* - fi-FI - Windows 7 - Chrome 9.0.597.107
 'cc8415ee760b8c6c0b31e347ad90b4a5', // fi-FI - Windows 7 - Chrome 10.0.648.127
 '4de827e2fedea0376741689beceb0263', // */* - fi-FI - Windows 7 - Chrome 10.0.648.127
+'1488d603b57abfd91c3329305172f057', // fi-FI - Windows 7 - Chrome 10.0.648.133
+'f8c1246519939e57ac9277e57de6a8bb', // */* - fi-FI - Windows 7 - Chrome 10.0.648.133
 'bb23e45340e40c73dea585e3a8a22ea6', // fi-FI - MacOS X 10.5.8 - Chrome 8.0.552.215
 '74a3a4b7df49dab49816d5436e58e49e', // */* - fi-FI - MacOS X 10.5.8 - Chrome 8.0.552.215
 '678784f3301ca95fa1f7c7ef3cfe2f3e', // fi-FI - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -3740,6 +4112,8 @@ $browsers_fingerprints = array(
 'a992ab24b4f1bceb04324ad4e7740cd3', // */* - fi-FI - MacOS X 10.5.8 - Chrome 9.0.597.107
 'cf54aa104575692ff3e0c41643866818', // fi-FI - MacOS X 10.5.8 - Chrome 10.0.648.127
 'ae1536e24d88f63029ec6390d5d5bd97', // */* - fi-FI - MacOS X 10.5.8 - Chrome 10.0.648.127
+'a074276dbe02f6fcde132d9f790d121f', // fi-FI - MacOS X 10.5.8 - Chrome 10.0.648.133
+'f03327960f6179766a1b618a7b576ee6', // */* - fi-FI - MacOS X 10.5.8 - Chrome 10.0.648.133
 'f9c0935635dda6499a1cbe88dac9ee8e', // fi-FI - MacOS X 10.6.0 - Chrome 8.0.552.215
 '06e9bd68e9571d7a32e6dc16256130ff', // */* - fi-FI - MacOS X 10.6.0 - Chrome 8.0.552.215
 '16705097e116069ba96af4985d5e743b', // fi-FI - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -3760,6 +4134,8 @@ $browsers_fingerprints = array(
 '6d78a50410f5fe1ee65d37557e8a7603', // */* - fi-FI - MacOS X 10.6.0 - Chrome 9.0.597.107
 'bc001438990a5d46c26bd7d1b6fd9687', // fi-FI - MacOS X 10.6.0 - Chrome 10.0.648.127
 '4429cbfa439df2ed1e2095274021e73b', // */* - fi-FI - MacOS X 10.6.0 - Chrome 10.0.648.127
+'0166595e45b2558a000d4f82b76df682', // fi-FI - MacOS X 10.6.0 - Chrome 10.0.648.133
+'085f8665895e24741549e7b8368024da', // */* - fi-FI - MacOS X 10.6.0 - Chrome 10.0.648.133
 'df6d21965f0be608bbd5651e0fd3a639', // fi-FI - MacOS X 10.6.1 - Chrome 8.0.552.215
 'b90d7342edf3421d2ca369f082b85b06', // */* - fi-FI - MacOS X 10.6.1 - Chrome 8.0.552.215
 '650dde6906265242e790fa2f2b1d1506', // fi-FI - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -3780,6 +4156,8 @@ $browsers_fingerprints = array(
 '06bfb790600864e2383cf9aeca5791bd', // */* - fi-FI - MacOS X 10.6.1 - Chrome 9.0.597.107
 'a5d3b664925192d8d4fb82b390cff3d6', // fi-FI - MacOS X 10.6.1 - Chrome 10.0.648.127
 'd53e570b5970c8f36b95d163d3bc372d', // */* - fi-FI - MacOS X 10.6.1 - Chrome 10.0.648.127
+'fd6402a6f48d9a8ae57da1b2cf5f5bf1', // fi-FI - MacOS X 10.6.1 - Chrome 10.0.648.133
+'c592858964eee88d7e966c3ab692f715', // */* - fi-FI - MacOS X 10.6.1 - Chrome 10.0.648.133
 'df6d21965f0be608bbd5651e0fd3a639', // fi-FI - MacOS X 10.6.2 - Chrome 8.0.552.215
 'b90d7342edf3421d2ca369f082b85b06', // */* - fi-FI - MacOS X 10.6.2 - Chrome 8.0.552.215
 '650dde6906265242e790fa2f2b1d1506', // fi-FI - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -3800,6 +4178,8 @@ $browsers_fingerprints = array(
 '06bfb790600864e2383cf9aeca5791bd', // */* - fi-FI - MacOS X 10.6.2 - Chrome 9.0.597.107
 'a5d3b664925192d8d4fb82b390cff3d6', // fi-FI - MacOS X 10.6.2 - Chrome 10.0.648.127
 'd53e570b5970c8f36b95d163d3bc372d', // */* - fi-FI - MacOS X 10.6.2 - Chrome 10.0.648.127
+'fd6402a6f48d9a8ae57da1b2cf5f5bf1', // fi-FI - MacOS X 10.6.2 - Chrome 10.0.648.133
+'c592858964eee88d7e966c3ab692f715', // */* - fi-FI - MacOS X 10.6.2 - Chrome 10.0.648.133
 'd058fb3d218f9252c8ca41f73dfea4cd', // fi-FI - MacOS X 10.6.3 - Chrome 8.0.552.215
 '1262e2ab6d54c95d21df093bf242088b', // */* - fi-FI - MacOS X 10.6.3 - Chrome 8.0.552.215
 '392c1c56182216c6fdf3cca19f086a2b', // fi-FI - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -3820,6 +4200,8 @@ $browsers_fingerprints = array(
 '72471103145f68d661d105a3ceac8702', // */* - fi-FI - MacOS X 10.6.3 - Chrome 9.0.597.107
 'f2606a54809fe81bae03945ff8954427', // fi-FI - MacOS X 10.6.3 - Chrome 10.0.648.127
 '0922f0e0675574ebcd824ded8de571f0', // */* - fi-FI - MacOS X 10.6.3 - Chrome 10.0.648.127
+'4df4375e7b591e2130947390198896ec', // fi-FI - MacOS X 10.6.3 - Chrome 10.0.648.133
+'3b03a20e7aa65c9b25a0fe796adb4ab3', // */* - fi-FI - MacOS X 10.6.3 - Chrome 10.0.648.133
 'bc75ee9d77e2ab924b4177ae991c8b17', // fi-FI - MacOS X 10.6.4 - Chrome 8.0.552.215
 'bda176b717155e6b1718d787910cbadf', // */* - fi-FI - MacOS X 10.6.4 - Chrome 8.0.552.215
 '129ecbea3d092adadee9a1b1498c4b08', // fi-FI - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -3840,6 +4222,8 @@ $browsers_fingerprints = array(
 'ebdc1ff6e8a856a2228bd81feed3fea4', // */* - fi-FI - MacOS X 10.6.4 - Chrome 9.0.597.107
 '4cc4acd9b7865a0c49228beb8c74f3db', // fi-FI - MacOS X 10.6.4 - Chrome 10.0.648.127
 '34bc620122eddf2322cb0a387cb79f14', // */* - fi-FI - MacOS X 10.6.4 - Chrome 10.0.648.127
+'49d4d28c0fa53f02905153a538dc0074', // fi-FI - MacOS X 10.6.4 - Chrome 10.0.648.133
+'649bcee27f2384397688aa8802d524a5', // */* - fi-FI - MacOS X 10.6.4 - Chrome 10.0.648.133
 'b70a1007c13d765af28c77fdcc56d82b', // fi-FI - MacOS X 10.6.5 - Chrome 8.0.552.215
 'e393c31aeab6b3c66dc8610bc3833f8c', // */* - fi-FI - MacOS X 10.6.5 - Chrome 8.0.552.215
 '74460c151aebe743b974ef00547a2f0a', // fi-FI - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -3860,6 +4244,8 @@ $browsers_fingerprints = array(
 '1c64cde9c1a044a5daf537ee0f153bff', // */* - fi-FI - MacOS X 10.6.5 - Chrome 9.0.597.107
 '4d50cadae6e84f3f94ca2c7db6d65a0a', // fi-FI - MacOS X 10.6.5 - Chrome 10.0.648.127
 'c7d27ca897cc8589ac5839359cd8c1a3', // */* - fi-FI - MacOS X 10.6.5 - Chrome 10.0.648.127
+'e344fb53e9aa304f9001a90227e6a77b', // fi-FI - MacOS X 10.6.5 - Chrome 10.0.648.133
+'c023eac4be29be8f4c85d3750388800a', // */* - fi-FI - MacOS X 10.6.5 - Chrome 10.0.648.133
 '971968d2a01e750cb68042278c7e6e22', // fi-FI - MacOS X 10.6.6 - Chrome 8.0.552.215
 '548c7965c103ede8e893fc861eb94329', // */* - fi-FI - MacOS X 10.6.6 - Chrome 8.0.552.215
 'abcced610b10727206c980ab675df361', // fi-FI - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -3880,6 +4266,8 @@ $browsers_fingerprints = array(
 '3f8652374cb560dd621df9c44b19a390', // */* - fi-FI - MacOS X 10.6.6 - Chrome 9.0.597.107
 '44f044691e40659e8134387ca29f70a1', // fi-FI - MacOS X 10.6.6 - Chrome 10.0.648.127
 '8d3a597ebe3069f380a962a10a848b7d', // */* - fi-FI - MacOS X 10.6.6 - Chrome 10.0.648.127
+'cf724c8ce63086e7545964c119b3b90e', // fi-FI - MacOS X 10.6.6 - Chrome 10.0.648.133
+'e644da69a8f846a6612e1925a9388edc', // */* - fi-FI - MacOS X 10.6.6 - Chrome 10.0.648.133
 'c1c268d185d7ddf3b0029c0d0cfe0a70', // fi-FI - Linux - Chrome 8.0.552.215
 '6b0e9c57569abfdcc789658ca074434e', // */* - fi-FI - Linux - Chrome 8.0.552.215
 '9f3ea6a0ec297368873ac7035886c19c', // fi-FI - Linux - Chrome 8.0.552.224
@@ -3900,6 +4288,8 @@ $browsers_fingerprints = array(
 'f7c195adffcf0dccbe2eb1f6e77031c6', // */* - fi-FI - Linux - Chrome 9.0.597.107
 'c2f81e18b70ed37d3546c35e471ebbf8', // fi-FI - Linux - Chrome 10.0.648.127
 '39537847e25caa2b7dd9775ba3bea0ad', // */* - fi-FI - Linux - Chrome 10.0.648.127
+'3125b968f4fee8b6fcbb4239056cc57e', // fi-FI - Linux - Chrome 10.0.648.133
+'4183cf0deea1ef9777e0bdbb9a087118', // */* - fi-FI - Linux - Chrome 10.0.648.133
 'de6f6cab41d669046cb6a57b188a0b68', // fi-FI - Linux 64 - Chrome 8.0.552.215
 '5913c6baa9a76664b8684b3674742940', // */* - fi-FI - Linux 64 - Chrome 8.0.552.215
 'cab2538b8a96d52e04513128f077d3e0', // fi-FI - Linux 64 - Chrome 8.0.552.224
@@ -3920,6 +4310,8 @@ $browsers_fingerprints = array(
 'e9b7aef41ee0d9bc10daef68c58b2ac7', // */* - fi-FI - Linux 64 - Chrome 9.0.597.107
 'c21669cffdb5f33e049da0e87a742beb', // fi-FI - Linux 64 - Chrome 10.0.648.127
 '8e3af50503c1598b71f6f14ea3157bf0', // */* - fi-FI - Linux 64 - Chrome 10.0.648.127
+'963491fe366dbcc805e68026796a25f0', // fi-FI - Linux 64 - Chrome 10.0.648.133
+'dc9d1b1df6f614213b89d0d17901101e', // */* - fi-FI - Linux 64 - Chrome 10.0.648.133
 'a7e521f0231016be941079f1f0c3fbe1', // sv-SE - Windows XP - Chrome 8.0.552.215
 'afba11e95488789289e89957765a3e70', // */* - sv-SE - Windows XP - Chrome 8.0.552.215
 '509b536911a752203c31aa2e2e52defd', // sv-SE - Windows XP - Chrome 8.0.552.224
@@ -3940,6 +4332,8 @@ $browsers_fingerprints = array(
 '786de3c6c363e138532c6cfd6db0effa', // */* - sv-SE - Windows XP - Chrome 9.0.597.107
 '77c857d3c885b1a9a0ee97c9bbe4f2f5', // sv-SE - Windows XP - Chrome 10.0.648.127
 '19b2140bf3107e0705e192ec79055c3c', // */* - sv-SE - Windows XP - Chrome 10.0.648.127
+'44b08c785539da0c927ac848edf2c4d6', // sv-SE - Windows XP - Chrome 10.0.648.133
+'89c27ac82878faa7b3c46026da2114a7', // */* - sv-SE - Windows XP - Chrome 10.0.648.133
 '0fb686bb6e7fd582b2093d704c11e836', // sv-SE - Windows 2003 - Chrome 8.0.552.215
 'ebaf1d653ee0736112c26c98c63a333f', // */* - sv-SE - Windows 2003 - Chrome 8.0.552.215
 '90b0232415fd0fd9eb32c2538a14653d', // sv-SE - Windows 2003 - Chrome 8.0.552.224
@@ -3960,6 +4354,8 @@ $browsers_fingerprints = array(
 '09e03c3694abac29013c651598f45dbb', // */* - sv-SE - Windows 2003 - Chrome 9.0.597.107
 '84617d5f804c0c3242891477201ef57a', // sv-SE - Windows 2003 - Chrome 10.0.648.127
 'a82f80165bf45d9f48a8fcfad9f60202', // */* - sv-SE - Windows 2003 - Chrome 10.0.648.127
+'b13f5a39460ebe6569bc22eddfb218b0', // sv-SE - Windows 2003 - Chrome 10.0.648.133
+'f80aa486cea17b30787c50753c9e2cf2', // */* - sv-SE - Windows 2003 - Chrome 10.0.648.133
 '9cd2ce4188ddb1a36593aa5413d33d41', // sv-SE - Windows Vista - Chrome 8.0.552.215
 '6f6b3f9b25ad58a8e04b953991326fd6', // */* - sv-SE - Windows Vista - Chrome 8.0.552.215
 'c13f05b21a8e9d1bdbd0ad14aecd36d0', // sv-SE - Windows Vista - Chrome 8.0.552.224
@@ -3980,6 +4376,8 @@ $browsers_fingerprints = array(
 'ad1579f41a37018090c3f9ca33912b8a', // */* - sv-SE - Windows Vista - Chrome 9.0.597.107
 '033d601432a33eb9be0450f7abef77c2', // sv-SE - Windows Vista - Chrome 10.0.648.127
 '3dfe7716c84ec8eaa6577b75e29b15a1', // */* - sv-SE - Windows Vista - Chrome 10.0.648.127
+'3184dd1b6cfdad720668ca69eab3e853', // sv-SE - Windows Vista - Chrome 10.0.648.133
+'b620d0d3df7dc34f5058598104fb8e88', // */* - sv-SE - Windows Vista - Chrome 10.0.648.133
 '2707df0cff51f5dc4b433af574d2b71a', // sv-SE - Windows 7 - Chrome 8.0.552.215
 'e67967aa60fc25634fcfdac3f21d2236', // */* - sv-SE - Windows 7 - Chrome 8.0.552.215
 '50b15b2b17b27a3164b0731275468a81', // sv-SE - Windows 7 - Chrome 8.0.552.224
@@ -4000,6 +4398,8 @@ $browsers_fingerprints = array(
 '7923cb7af594f1976440f06e2077689e', // */* - sv-SE - Windows 7 - Chrome 9.0.597.107
 '28f083ecf4fcfc49ec4200c1246c71fb', // sv-SE - Windows 7 - Chrome 10.0.648.127
 'ccd73b0ab1abb4e045f9cafb0657fa5d', // */* - sv-SE - Windows 7 - Chrome 10.0.648.127
+'0b89cf69b168c370e74664bef8f95729', // sv-SE - Windows 7 - Chrome 10.0.648.133
+'7cbae13611e997bde3467a3fe6d0a6eb', // */* - sv-SE - Windows 7 - Chrome 10.0.648.133
 '3f78657aa6365f7e8d1d9986e46634ad', // sv-SE - MacOS X 10.5.8 - Chrome 8.0.552.215
 '6ac6dac734bcad173a63dbf8f8f85c81', // */* - sv-SE - MacOS X 10.5.8 - Chrome 8.0.552.215
 '564843c628ba2c9024a37a83e63b47d3', // sv-SE - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -4020,6 +4420,8 @@ $browsers_fingerprints = array(
 'a3a660b70185bd9f00173d3cbb49b0b7', // */* - sv-SE - MacOS X 10.5.8 - Chrome 9.0.597.107
 '66ba0beeb1565c1967de94391ec81f35', // sv-SE - MacOS X 10.5.8 - Chrome 10.0.648.127
 'b969135286e95b1cf4cd5f6b8915ec61', // */* - sv-SE - MacOS X 10.5.8 - Chrome 10.0.648.127
+'c67ee930f3cd658842047836f1f34ce3', // sv-SE - MacOS X 10.5.8 - Chrome 10.0.648.133
+'d2b00d6918ebbb0f8492cb9e93923846', // */* - sv-SE - MacOS X 10.5.8 - Chrome 10.0.648.133
 '358eba6ebaae62d5838e9709acd45a85', // sv-SE - MacOS X 10.6.0 - Chrome 8.0.552.215
 '2ef43c66931bf30006522d70f5f6f4d4', // */* - sv-SE - MacOS X 10.6.0 - Chrome 8.0.552.215
 '4c85d2b671724fa2e932bac24e471d0b', // sv-SE - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -4040,6 +4442,8 @@ $browsers_fingerprints = array(
 '0ee370282b1c3e66e72d999aff229243', // */* - sv-SE - MacOS X 10.6.0 - Chrome 9.0.597.107
 '67a37026517be95ecbf8d705f4eb9af9', // sv-SE - MacOS X 10.6.0 - Chrome 10.0.648.127
 '06c78f0afe9270c173cf6aa3c9035b4d', // */* - sv-SE - MacOS X 10.6.0 - Chrome 10.0.648.127
+'834881ea2f597c1d18e9aecbf7e0974a', // sv-SE - MacOS X 10.6.0 - Chrome 10.0.648.133
+'20022fda932a939db02332122ad49bfe', // */* - sv-SE - MacOS X 10.6.0 - Chrome 10.0.648.133
 '25f1cd0702a974a9daa33cbcb73d355f', // sv-SE - MacOS X 10.6.1 - Chrome 8.0.552.215
 '752ba76eb827c39739618239c53a2fb2', // */* - sv-SE - MacOS X 10.6.1 - Chrome 8.0.552.215
 '2bc790c125aac84ec8f0c6cd64d2a199', // sv-SE - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -4060,6 +4464,8 @@ $browsers_fingerprints = array(
 '69d3045869aadaec5a670b5262102fa6', // */* - sv-SE - MacOS X 10.6.1 - Chrome 9.0.597.107
 'b66cd039d5786837abdd4fcd3ba65267', // sv-SE - MacOS X 10.6.1 - Chrome 10.0.648.127
 '7a800ec4631eefb4427c5d800b1a3ce5', // */* - sv-SE - MacOS X 10.6.1 - Chrome 10.0.648.127
+'76ada9d3eb49084acee5ee323113a6b7', // sv-SE - MacOS X 10.6.1 - Chrome 10.0.648.133
+'2ac16b43357f832aabe258cd263c87c9', // */* - sv-SE - MacOS X 10.6.1 - Chrome 10.0.648.133
 '25f1cd0702a974a9daa33cbcb73d355f', // sv-SE - MacOS X 10.6.2 - Chrome 8.0.552.215
 '752ba76eb827c39739618239c53a2fb2', // */* - sv-SE - MacOS X 10.6.2 - Chrome 8.0.552.215
 '2bc790c125aac84ec8f0c6cd64d2a199', // sv-SE - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -4080,6 +4486,8 @@ $browsers_fingerprints = array(
 '69d3045869aadaec5a670b5262102fa6', // */* - sv-SE - MacOS X 10.6.2 - Chrome 9.0.597.107
 'b66cd039d5786837abdd4fcd3ba65267', // sv-SE - MacOS X 10.6.2 - Chrome 10.0.648.127
 '7a800ec4631eefb4427c5d800b1a3ce5', // */* - sv-SE - MacOS X 10.6.2 - Chrome 10.0.648.127
+'76ada9d3eb49084acee5ee323113a6b7', // sv-SE - MacOS X 10.6.2 - Chrome 10.0.648.133
+'2ac16b43357f832aabe258cd263c87c9', // */* - sv-SE - MacOS X 10.6.2 - Chrome 10.0.648.133
 '58afbbb8dde3fca47e1e4077b6961546', // sv-SE - MacOS X 10.6.3 - Chrome 8.0.552.215
 '9130df767f4b69774b7dbb4f6e9e77b3', // */* - sv-SE - MacOS X 10.6.3 - Chrome 8.0.552.215
 '212191e739cd1869f757830ecf6cc74f', // sv-SE - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -4100,6 +4508,8 @@ $browsers_fingerprints = array(
 'b241e0227714b1ebb32e463812cff680', // */* - sv-SE - MacOS X 10.6.3 - Chrome 9.0.597.107
 'bc35b30d261e28204f12138d00f400d2', // sv-SE - MacOS X 10.6.3 - Chrome 10.0.648.127
 '2d81b02a63404bf04c8c6e02c432629b', // */* - sv-SE - MacOS X 10.6.3 - Chrome 10.0.648.127
+'d8a7b78839b197b46583350242816c90', // sv-SE - MacOS X 10.6.3 - Chrome 10.0.648.133
+'277e1897a3c7c2d3e50f52e5129297c7', // */* - sv-SE - MacOS X 10.6.3 - Chrome 10.0.648.133
 'dc15ffcbfb021ff9ed8b9631c68f53ec', // sv-SE - MacOS X 10.6.4 - Chrome 8.0.552.215
 'e2d26bfecf9fddf9bd6ceaa58e7dbcdc', // */* - sv-SE - MacOS X 10.6.4 - Chrome 8.0.552.215
 '3802c88b6f1aea96e8eeba78583a9443', // sv-SE - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -4120,6 +4530,8 @@ $browsers_fingerprints = array(
 '93f00f0c4800b16327e4bafb7771e9b5', // */* - sv-SE - MacOS X 10.6.4 - Chrome 9.0.597.107
 '50b32e7a6154766e7db938b1bdb1e19d', // sv-SE - MacOS X 10.6.4 - Chrome 10.0.648.127
 'f7d7f0af11a9de4be3982cb6752df441', // */* - sv-SE - MacOS X 10.6.4 - Chrome 10.0.648.127
+'c7800d23b3c60f186139768725eafc7e', // sv-SE - MacOS X 10.6.4 - Chrome 10.0.648.133
+'2157489d9132a964c7c8c084fab9ee72', // */* - sv-SE - MacOS X 10.6.4 - Chrome 10.0.648.133
 'a5db5af0899867c6deb497b8ddd851de', // sv-SE - MacOS X 10.6.5 - Chrome 8.0.552.215
 '5d01b04daa7fb597c2fd13e66b85168a', // */* - sv-SE - MacOS X 10.6.5 - Chrome 8.0.552.215
 'e3d8aa749e4f47a76ca4f5b1ea84799d', // sv-SE - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -4140,6 +4552,8 @@ $browsers_fingerprints = array(
 '86588df17b1306cf874574883fc44897', // */* - sv-SE - MacOS X 10.6.5 - Chrome 9.0.597.107
 '9213bf97d1f748af478fe88d177b00be', // sv-SE - MacOS X 10.6.5 - Chrome 10.0.648.127
 '1a2f2857deab5682cde2a2d4b8f84334', // */* - sv-SE - MacOS X 10.6.5 - Chrome 10.0.648.127
+'235370fb7bf4304647528883ce81c8dd', // sv-SE - MacOS X 10.6.5 - Chrome 10.0.648.133
+'6baf7d5e06b6dbc40b270a8e099ee18d', // */* - sv-SE - MacOS X 10.6.5 - Chrome 10.0.648.133
 'c1efccedda7c49ab2a06c1102e40df67', // sv-SE - MacOS X 10.6.6 - Chrome 8.0.552.215
 '2ecb13e8e24a5d7adf086ab91e458fb6', // */* - sv-SE - MacOS X 10.6.6 - Chrome 8.0.552.215
 '35a38403068865c6b3b3d025f5cfb188', // sv-SE - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -4160,6 +4574,8 @@ $browsers_fingerprints = array(
 '654c9ca3dcb730915c331e68037b3ca6', // */* - sv-SE - MacOS X 10.6.6 - Chrome 9.0.597.107
 'd313bdd902904ba388421cccc346d159', // sv-SE - MacOS X 10.6.6 - Chrome 10.0.648.127
 '220af1ccb4deef6f71502fd20a233343', // */* - sv-SE - MacOS X 10.6.6 - Chrome 10.0.648.127
+'9bd8c747635c06fb7aeef7ad8d508d07', // sv-SE - MacOS X 10.6.6 - Chrome 10.0.648.133
+'71e15ca6dbaf6facbccce9f533daf612', // */* - sv-SE - MacOS X 10.6.6 - Chrome 10.0.648.133
 'e58092aedb1d463c5b7f40e4930957ed', // sv-SE - Linux - Chrome 8.0.552.215
 'e92a18dcfcf47c66ad6d84fecc2e0f52', // */* - sv-SE - Linux - Chrome 8.0.552.215
 'b9e7d593fda446f1e5dbcac3843bc3bb', // sv-SE - Linux - Chrome 8.0.552.224
@@ -4180,6 +4596,8 @@ $browsers_fingerprints = array(
 '2d7254fe5b65a4c04e38dc15baf847bf', // */* - sv-SE - Linux - Chrome 9.0.597.107
 '8376d4a8355762410e0d6b42fe27dbba', // sv-SE - Linux - Chrome 10.0.648.127
 '47d0f28166cf25770f85469b48b510cb', // */* - sv-SE - Linux - Chrome 10.0.648.127
+'a73b9e91a1275ce8d1d68b00ec035d27', // sv-SE - Linux - Chrome 10.0.648.133
+'c49404cc5fc9d22f518c00930bc51fb9', // */* - sv-SE - Linux - Chrome 10.0.648.133
 '4b005e5e51a68732457baa6dcf95d56b', // sv-SE - Linux 64 - Chrome 8.0.552.215
 'ab169a416a2690262dbfa428264f904e', // */* - sv-SE - Linux 64 - Chrome 8.0.552.215
 '47f29225af305c50605961e65d631722', // sv-SE - Linux 64 - Chrome 8.0.552.224
@@ -4200,6 +4618,8 @@ $browsers_fingerprints = array(
 '63c6f7205cb4f03c25b9ae9d1a043a86', // */* - sv-SE - Linux 64 - Chrome 9.0.597.107
 '083dd5fbc2bdbb2a5ded8b3b7a030755', // sv-SE - Linux 64 - Chrome 10.0.648.127
 '8bd831e4c250b9bd2071bcb594f11f26', // */* - sv-SE - Linux 64 - Chrome 10.0.648.127
+'21f2c81e04efc4dd6494c1b0ac7ad0ae', // sv-SE - Linux 64 - Chrome 10.0.648.133
+'14436f97f3c2f8fbd47b95a808b2deaa', // */* - sv-SE - Linux 64 - Chrome 10.0.648.133
 '0395a227e8f047ac7aaa86d0acaf0124', // da-DK - Windows XP - Chrome 8.0.552.215
 'f3aa0c4a9844575c9ab9c41ef3c368fb', // */* - da-DK - Windows XP - Chrome 8.0.552.215
 '66a2943367c9ca3d52686ea17399222e', // da-DK - Windows XP - Chrome 8.0.552.224
@@ -4220,6 +4640,8 @@ $browsers_fingerprints = array(
 '736ec91c66c729b2eefea0f51b698e8a', // */* - da-DK - Windows XP - Chrome 9.0.597.107
 '09807e78c60f6151b369c3110b4d897d', // da-DK - Windows XP - Chrome 10.0.648.127
 '2446e73fae7cc74bed9db4a3017977b7', // */* - da-DK - Windows XP - Chrome 10.0.648.127
+'a8b507fb6a14fa9fb32fb9c36f701e74', // da-DK - Windows XP - Chrome 10.0.648.133
+'aee272429c79c30cde7b09584a8015ad', // */* - da-DK - Windows XP - Chrome 10.0.648.133
 'a3e0516f52c51f87d0112f974ca53a86', // da-DK - Windows 2003 - Chrome 8.0.552.215
 '77d187e25eccaf975d164100cb6c7c52', // */* - da-DK - Windows 2003 - Chrome 8.0.552.215
 '4b994d030f3a37ca931784f351e9fa07', // da-DK - Windows 2003 - Chrome 8.0.552.224
@@ -4240,6 +4662,8 @@ $browsers_fingerprints = array(
 '10e14ffa05963b62db8d4beb98d5443a', // */* - da-DK - Windows 2003 - Chrome 9.0.597.107
 'b4c5b42f5ef514876f748db035d78350', // da-DK - Windows 2003 - Chrome 10.0.648.127
 'ce0080665f1d53b057efb17d9d6f568c', // */* - da-DK - Windows 2003 - Chrome 10.0.648.127
+'e9af26876047b6d60a1cf1645463ede3', // da-DK - Windows 2003 - Chrome 10.0.648.133
+'e0eb87257dfa9894473663531abb0323', // */* - da-DK - Windows 2003 - Chrome 10.0.648.133
 '6d3cb581bf6a23966353899ae85b1a1c', // da-DK - Windows Vista - Chrome 8.0.552.215
 '06f3ceac3b41eddb1c1a988f6e52e43e', // */* - da-DK - Windows Vista - Chrome 8.0.552.215
 'abadff18cc5d8b53915ab7a1eb5404d2', // da-DK - Windows Vista - Chrome 8.0.552.224
@@ -4260,6 +4684,8 @@ $browsers_fingerprints = array(
 '7d7934def4efd2efaf21ed9026834a78', // */* - da-DK - Windows Vista - Chrome 9.0.597.107
 'eeeb65354a9a73b059e3db45a03e5574', // da-DK - Windows Vista - Chrome 10.0.648.127
 '7e6ab912f8eb7d5b4a487843ea55c14c', // */* - da-DK - Windows Vista - Chrome 10.0.648.127
+'a8ccf4de5b44c37608df7a7f581b4a66', // da-DK - Windows Vista - Chrome 10.0.648.133
+'79eb58419f2f62d9b6a3d6d7a4f01e17', // */* - da-DK - Windows Vista - Chrome 10.0.648.133
 '6b505f56a09b6ab9bb856b29817dfc19', // da-DK - Windows 7 - Chrome 8.0.552.215
 '89fc69524af3d9756476d3cac4a9780d', // */* - da-DK - Windows 7 - Chrome 8.0.552.215
 '7cd42260c6fda96227641bd2ab50f8a9', // da-DK - Windows 7 - Chrome 8.0.552.224
@@ -4280,6 +4706,8 @@ $browsers_fingerprints = array(
 '5a67e1b60b8899d5659a18a61fabed3a', // */* - da-DK - Windows 7 - Chrome 9.0.597.107
 '0f3c49cee8da43bea7253189617f511c', // da-DK - Windows 7 - Chrome 10.0.648.127
 '8937a4ad46533f0438400436dc92928b', // */* - da-DK - Windows 7 - Chrome 10.0.648.127
+'0725b1f2f961c5d04e1681e793d689db', // da-DK - Windows 7 - Chrome 10.0.648.133
+'42a03639320b531841d6c09660e308b7', // */* - da-DK - Windows 7 - Chrome 10.0.648.133
 'eee24113d5ef474f98f4a1d80932574f', // da-DK - MacOS X 10.5.8 - Chrome 8.0.552.215
 '0e880e2ae7d995a86b0b0654d3ba8d0b', // */* - da-DK - MacOS X 10.5.8 - Chrome 8.0.552.215
 '4f4dd6aaca100fb89d028824b12665d6', // da-DK - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -4300,6 +4728,8 @@ $browsers_fingerprints = array(
 '7a73888d781923c3130effc5d5af0f97', // */* - da-DK - MacOS X 10.5.8 - Chrome 9.0.597.107
 '719d04f9d1f4d7fa8a6317a009f115ea', // da-DK - MacOS X 10.5.8 - Chrome 10.0.648.127
 '7929aa22fa8c1b6c4479e2eccb796429', // */* - da-DK - MacOS X 10.5.8 - Chrome 10.0.648.127
+'c72fa70ec4975307310adb4e7a44c87a', // da-DK - MacOS X 10.5.8 - Chrome 10.0.648.133
+'ac2c495b6ee24bf8a7a74f7e975a5db2', // */* - da-DK - MacOS X 10.5.8 - Chrome 10.0.648.133
 'bdc9fea644f1c9e1d735d0dd339b5cf4', // da-DK - MacOS X 10.6.0 - Chrome 8.0.552.215
 'bb972c9cbafb5bafce38ead7a22f56fd', // */* - da-DK - MacOS X 10.6.0 - Chrome 8.0.552.215
 'df3765e62b9d35f15fdef7549e0e9e8c', // da-DK - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -4320,6 +4750,8 @@ $browsers_fingerprints = array(
 '263a2f2ebfdfcc3c9cd3f35996db7ae7', // */* - da-DK - MacOS X 10.6.0 - Chrome 9.0.597.107
 '2f4076e6e0f8a674cee5080a32ce0d16', // da-DK - MacOS X 10.6.0 - Chrome 10.0.648.127
 '20de7187628bcd655ae44b193487f5f7', // */* - da-DK - MacOS X 10.6.0 - Chrome 10.0.648.127
+'7e65d8097306842b1172aeac24036efd', // da-DK - MacOS X 10.6.0 - Chrome 10.0.648.133
+'4b0497b4ef3059ad7a0ad2d5b2eb9796', // */* - da-DK - MacOS X 10.6.0 - Chrome 10.0.648.133
 '56ff139103aeb39d24f4c4630184a2dd', // da-DK - MacOS X 10.6.1 - Chrome 8.0.552.215
 '7d2577e5fb83cc7136bc194c6c059736', // */* - da-DK - MacOS X 10.6.1 - Chrome 8.0.552.215
 '714e59ed5e62380bb02204708dce1ea4', // da-DK - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -4340,6 +4772,8 @@ $browsers_fingerprints = array(
 '80e1df3f6809da45f51cdab1f06c137f', // */* - da-DK - MacOS X 10.6.1 - Chrome 9.0.597.107
 'de86e07952fe2b3977c32638974dd8a3', // da-DK - MacOS X 10.6.1 - Chrome 10.0.648.127
 'aa293ef816d071f6d31b9bfdd44558bd', // */* - da-DK - MacOS X 10.6.1 - Chrome 10.0.648.127
+'d7f63805a88423edbf2514cd01ce9f5d', // da-DK - MacOS X 10.6.1 - Chrome 10.0.648.133
+'d7caef789e9e486c8d4d9853b021c71d', // */* - da-DK - MacOS X 10.6.1 - Chrome 10.0.648.133
 '56ff139103aeb39d24f4c4630184a2dd', // da-DK - MacOS X 10.6.2 - Chrome 8.0.552.215
 '7d2577e5fb83cc7136bc194c6c059736', // */* - da-DK - MacOS X 10.6.2 - Chrome 8.0.552.215
 '714e59ed5e62380bb02204708dce1ea4', // da-DK - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -4360,6 +4794,8 @@ $browsers_fingerprints = array(
 '80e1df3f6809da45f51cdab1f06c137f', // */* - da-DK - MacOS X 10.6.2 - Chrome 9.0.597.107
 'de86e07952fe2b3977c32638974dd8a3', // da-DK - MacOS X 10.6.2 - Chrome 10.0.648.127
 'aa293ef816d071f6d31b9bfdd44558bd', // */* - da-DK - MacOS X 10.6.2 - Chrome 10.0.648.127
+'d7f63805a88423edbf2514cd01ce9f5d', // da-DK - MacOS X 10.6.2 - Chrome 10.0.648.133
+'d7caef789e9e486c8d4d9853b021c71d', // */* - da-DK - MacOS X 10.6.2 - Chrome 10.0.648.133
 '13b76a0368c29a266e7908e04f040ab7', // da-DK - MacOS X 10.6.3 - Chrome 8.0.552.215
 '21ad0ebaa3ab65b97f7a8c53e0f5f7d2', // */* - da-DK - MacOS X 10.6.3 - Chrome 8.0.552.215
 '74829c12ee062b5e6564094af41ca810', // da-DK - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -4380,6 +4816,8 @@ $browsers_fingerprints = array(
 '7c79f4d389b2af00344ecfa076ee2182', // */* - da-DK - MacOS X 10.6.3 - Chrome 9.0.597.107
 '4dd19ad9af241eba7c44db4b3a30b954', // da-DK - MacOS X 10.6.3 - Chrome 10.0.648.127
 '69a0cb696769262cab55f5ab9688df58', // */* - da-DK - MacOS X 10.6.3 - Chrome 10.0.648.127
+'cc603d01fde2a4206fd6b30d00b8c298', // da-DK - MacOS X 10.6.3 - Chrome 10.0.648.133
+'f4a100201aee1a265cfcabfc2465faba', // */* - da-DK - MacOS X 10.6.3 - Chrome 10.0.648.133
 '72b4500d3f43b97545d4a4e489ca0dea', // da-DK - MacOS X 10.6.4 - Chrome 8.0.552.215
 '1299c42be0c05afd9f0243e8b287ad10', // */* - da-DK - MacOS X 10.6.4 - Chrome 8.0.552.215
 'a453f41a45b41f14f112bcf298a6be4c', // da-DK - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -4400,6 +4838,8 @@ $browsers_fingerprints = array(
 '521ff48efdca9f74d96015cd84524cbb', // */* - da-DK - MacOS X 10.6.4 - Chrome 9.0.597.107
 '33287dff882cedb9327f30ad65fc49e6', // da-DK - MacOS X 10.6.4 - Chrome 10.0.648.127
 'f90b8f1da6ea1fe9b820e2335dfa776d', // */* - da-DK - MacOS X 10.6.4 - Chrome 10.0.648.127
+'9fcf45a611ced205e30801527185ba23', // da-DK - MacOS X 10.6.4 - Chrome 10.0.648.133
+'589fb6830dcc818d7301c884d78c3d32', // */* - da-DK - MacOS X 10.6.4 - Chrome 10.0.648.133
 'd1f86eef65af12f445636aa653f5f387', // da-DK - MacOS X 10.6.5 - Chrome 8.0.552.215
 '2fb4335da8271f2e05e70a371ead9419', // */* - da-DK - MacOS X 10.6.5 - Chrome 8.0.552.215
 '3d56b2a6c37168895abd3cf10dc37dce', // da-DK - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -4420,6 +4860,8 @@ $browsers_fingerprints = array(
 'c186dc1553a0ca2ccc98d39b1745d072', // */* - da-DK - MacOS X 10.6.5 - Chrome 9.0.597.107
 '049dbb10ed022bd1a6bbf7c83de89883', // da-DK - MacOS X 10.6.5 - Chrome 10.0.648.127
 '715f14e5ae1cfa75f900e7746ed84510', // */* - da-DK - MacOS X 10.6.5 - Chrome 10.0.648.127
+'45a68b6ba37a71d9260b1ae3549c1acc', // da-DK - MacOS X 10.6.5 - Chrome 10.0.648.133
+'3495bb08bba5cc4a7005fbf906fc46fe', // */* - da-DK - MacOS X 10.6.5 - Chrome 10.0.648.133
 'f62def095ddfcaab91073c7885faca94', // da-DK - MacOS X 10.6.6 - Chrome 8.0.552.215
 '6e6272eaf0a1c059c9a5f762ebf2c5f4', // */* - da-DK - MacOS X 10.6.6 - Chrome 8.0.552.215
 'c8521785e7341b27b8be73df7e44fea9', // da-DK - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -4440,6 +4882,8 @@ $browsers_fingerprints = array(
 '8f8a4a0cca0b05b3835628124a9efb54', // */* - da-DK - MacOS X 10.6.6 - Chrome 9.0.597.107
 'e36612399f82d5d1cc498a69d75480c6', // da-DK - MacOS X 10.6.6 - Chrome 10.0.648.127
 'af5cd74ad635a4a137b247ff311a8ea2', // */* - da-DK - MacOS X 10.6.6 - Chrome 10.0.648.127
+'17802ae5b6670dff9b92bb4f219a7293', // da-DK - MacOS X 10.6.6 - Chrome 10.0.648.133
+'62db71f0825b803db52ba49922982be5', // */* - da-DK - MacOS X 10.6.6 - Chrome 10.0.648.133
 'df47281d4b83428ad56fdd13dd101497', // da-DK - Linux - Chrome 8.0.552.215
 'ebe8949126b323190f21428f14e31d3f', // */* - da-DK - Linux - Chrome 8.0.552.215
 'cc5ad558f8953435a4e3782c1dcca079', // da-DK - Linux - Chrome 8.0.552.224
@@ -4460,6 +4904,8 @@ $browsers_fingerprints = array(
 '1c978b380134aede4a872f104bf0cd66', // */* - da-DK - Linux - Chrome 9.0.597.107
 'bb203eb89fe38333cf4792648e42b0ba', // da-DK - Linux - Chrome 10.0.648.127
 '8af1496ba1c77f2d2ef0e4504211f431', // */* - da-DK - Linux - Chrome 10.0.648.127
+'e85a5218b0e288aa7452c37af2c207a5', // da-DK - Linux - Chrome 10.0.648.133
+'3933ea99b9fd52fd13448a03743617b1', // */* - da-DK - Linux - Chrome 10.0.648.133
 'f94652aca95545e6f2ee369207cd96d1', // da-DK - Linux 64 - Chrome 8.0.552.215
 'adfa2109c609b72a5cf562b9888b6e41', // */* - da-DK - Linux 64 - Chrome 8.0.552.215
 '8d90d98af2ef734190734aae7dd60e77', // da-DK - Linux 64 - Chrome 8.0.552.224
@@ -4480,6 +4926,8 @@ $browsers_fingerprints = array(
 '2fa172f44b003c521e3a673245250552', // */* - da-DK - Linux 64 - Chrome 9.0.597.107
 'd42cd13ed8754a464942c49b258c1a1f', // da-DK - Linux 64 - Chrome 10.0.648.127
 '4fe6ea56675bf07a7f6be67b31363248', // */* - da-DK - Linux 64 - Chrome 10.0.648.127
+'0a71cedf6518907d90d5b5772bf7f8b3', // da-DK - Linux 64 - Chrome 10.0.648.133
+'0a036793f10a1dc5499d8430628458c7', // */* - da-DK - Linux 64 - Chrome 10.0.648.133
 '66b25a4b242202b9b925f1393ce3eb66', // nb-NO - Windows XP - Chrome 8.0.552.215
 '379cf5856c0957ed18b53cce40831291', // */* - nb-NO - Windows XP - Chrome 8.0.552.215
 'dd7a2546b81a1b336a143c4e983252c6', // nb-NO - Windows XP - Chrome 8.0.552.224
@@ -4500,6 +4948,8 @@ $browsers_fingerprints = array(
 '3969b74561bc65b93eabd7fe8bef16e5', // */* - nb-NO - Windows XP - Chrome 9.0.597.107
 '8220b97f9c0929ed06998e68ef150fd7', // nb-NO - Windows XP - Chrome 10.0.648.127
 'c3ec486300ba4d27051ceff449caa49d', // */* - nb-NO - Windows XP - Chrome 10.0.648.127
+'cda5e7082a064748a0cca7dc87eb8bd5', // nb-NO - Windows XP - Chrome 10.0.648.133
+'a3c2ef3f592777f23598f336e1b170da', // */* - nb-NO - Windows XP - Chrome 10.0.648.133
 'cc69fec41d7a8d18e8acfaa79d203bab', // nb-NO - Windows 2003 - Chrome 8.0.552.215
 'cfe6142cb614b6231166c73ea7bf4a08', // */* - nb-NO - Windows 2003 - Chrome 8.0.552.215
 'b99f012c291aa0bd9e705b1078ce8c0c', // nb-NO - Windows 2003 - Chrome 8.0.552.224
@@ -4520,6 +4970,8 @@ $browsers_fingerprints = array(
 'ba035b4a3f382e8a70de217b69ff1d48', // */* - nb-NO - Windows 2003 - Chrome 9.0.597.107
 'd14b018c8f4c07903d54784923e8fb93', // nb-NO - Windows 2003 - Chrome 10.0.648.127
 'e2f063f88d9e1b5cbb1fc3065cce782b', // */* - nb-NO - Windows 2003 - Chrome 10.0.648.127
+'ddcc2b553d0cee934a28f4d4463be0c4', // nb-NO - Windows 2003 - Chrome 10.0.648.133
+'7997360a604a0f5a5f1ea7ef82f9fce9', // */* - nb-NO - Windows 2003 - Chrome 10.0.648.133
 'cf48eaa228c4bfe2f51b9f269a6954f6', // nb-NO - Windows Vista - Chrome 8.0.552.215
 '5a62e6a5f61b7a7035173b2307100a25', // */* - nb-NO - Windows Vista - Chrome 8.0.552.215
 '8aa11a14e7d7181099c5baadbbd115b6', // nb-NO - Windows Vista - Chrome 8.0.552.224
@@ -4540,6 +4992,8 @@ $browsers_fingerprints = array(
 '507f7ff1be1a855a1342c50d37fb3a12', // */* - nb-NO - Windows Vista - Chrome 9.0.597.107
 'a7b5750afa4d8a0f42b28f4f359b1cc5', // nb-NO - Windows Vista - Chrome 10.0.648.127
 'e512f9f22e77ba2337c8e89a82433492', // */* - nb-NO - Windows Vista - Chrome 10.0.648.127
+'4d71d160f88f3faa5cff3679c20a145d', // nb-NO - Windows Vista - Chrome 10.0.648.133
+'12bbd928b74534e28e429ac8629c56d1', // */* - nb-NO - Windows Vista - Chrome 10.0.648.133
 'b78dbbb141cf0d94dbff8821f9157756', // nb-NO - Windows 7 - Chrome 8.0.552.215
 'eacbeb51c4360fbe67bfe6062dad043a', // */* - nb-NO - Windows 7 - Chrome 8.0.552.215
 '747f4c005238c995adc52475c719eb61', // nb-NO - Windows 7 - Chrome 8.0.552.224
@@ -4560,6 +5014,8 @@ $browsers_fingerprints = array(
 '4414f05fe2432009ecb576e223ef6f02', // */* - nb-NO - Windows 7 - Chrome 9.0.597.107
 '535b74f2ed1dcc3264e9353494d35275', // nb-NO - Windows 7 - Chrome 10.0.648.127
 'c466aa501821c82aadb7b2bc9d98d812', // */* - nb-NO - Windows 7 - Chrome 10.0.648.127
+'50e9989edbde9aa46c497c6aab8728b7', // nb-NO - Windows 7 - Chrome 10.0.648.133
+'327106933a3d7ceabaf1482faa772bb0', // */* - nb-NO - Windows 7 - Chrome 10.0.648.133
 'd8299fd4e5c3f05c1142bbddada9ee57', // nb-NO - MacOS X 10.5.8 - Chrome 8.0.552.215
 '0d84693fb93245c6af387d0d0a9b7b99', // */* - nb-NO - MacOS X 10.5.8 - Chrome 8.0.552.215
 '853e375b7d4ad3bf8857117e1f42ac69', // nb-NO - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -4580,6 +5036,8 @@ $browsers_fingerprints = array(
 'd3769fd38db27c96830807d2cdde0843', // */* - nb-NO - MacOS X 10.5.8 - Chrome 9.0.597.107
 '0d9e88699dc4bef6d1f6e193456141da', // nb-NO - MacOS X 10.5.8 - Chrome 10.0.648.127
 '5bd71b37d3a7bcba26ca4d5f051e84e1', // */* - nb-NO - MacOS X 10.5.8 - Chrome 10.0.648.127
+'a867a2554d49a89532fcc9094e4a9c8e', // nb-NO - MacOS X 10.5.8 - Chrome 10.0.648.133
+'c8486f220bec102d025bd30fbedbea17', // */* - nb-NO - MacOS X 10.5.8 - Chrome 10.0.648.133
 '88ef85f48906cf36db926c4eaee64775', // nb-NO - MacOS X 10.6.0 - Chrome 8.0.552.215
 '3eeda35abe5e8c5b4f251c26d3dbc038', // */* - nb-NO - MacOS X 10.6.0 - Chrome 8.0.552.215
 'e2718771e062c9615686a3ecd5ae46af', // nb-NO - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -4600,6 +5058,8 @@ $browsers_fingerprints = array(
 '18cb76525e82f4bdd38b4fa615faface', // */* - nb-NO - MacOS X 10.6.0 - Chrome 9.0.597.107
 '7ea83d3eb81077b8c5c97f60a2bdc449', // nb-NO - MacOS X 10.6.0 - Chrome 10.0.648.127
 'aafd5928b631e22023f19a4967d5722e', // */* - nb-NO - MacOS X 10.6.0 - Chrome 10.0.648.127
+'1a1fbf86da2c40667fe3862d3000c83d', // nb-NO - MacOS X 10.6.0 - Chrome 10.0.648.133
+'f6d2068094aeaa8470488ab3b20f08e7', // */* - nb-NO - MacOS X 10.6.0 - Chrome 10.0.648.133
 '6d1a7d81951b367a9deb0fb5c43243c5', // nb-NO - MacOS X 10.6.1 - Chrome 8.0.552.215
 'd126a13466e57b28546a5be26fc61434', // */* - nb-NO - MacOS X 10.6.1 - Chrome 8.0.552.215
 '4f8111b5337b5c376ebab84d048bd11b', // nb-NO - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -4620,6 +5080,8 @@ $browsers_fingerprints = array(
 '2b4241f6f4504b5a69999967f130a04e', // */* - nb-NO - MacOS X 10.6.1 - Chrome 9.0.597.107
 'c613133024504a7e351c121d314922b9', // nb-NO - MacOS X 10.6.1 - Chrome 10.0.648.127
 'b21760d2236dc7b963acb831078566f2', // */* - nb-NO - MacOS X 10.6.1 - Chrome 10.0.648.127
+'1f6828d2e0986832355551a799c4af63', // nb-NO - MacOS X 10.6.1 - Chrome 10.0.648.133
+'663a1f5679ff61c11e2306dbfa17c552', // */* - nb-NO - MacOS X 10.6.1 - Chrome 10.0.648.133
 '6d1a7d81951b367a9deb0fb5c43243c5', // nb-NO - MacOS X 10.6.2 - Chrome 8.0.552.215
 'd126a13466e57b28546a5be26fc61434', // */* - nb-NO - MacOS X 10.6.2 - Chrome 8.0.552.215
 '4f8111b5337b5c376ebab84d048bd11b', // nb-NO - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -4640,6 +5102,8 @@ $browsers_fingerprints = array(
 '2b4241f6f4504b5a69999967f130a04e', // */* - nb-NO - MacOS X 10.6.2 - Chrome 9.0.597.107
 'c613133024504a7e351c121d314922b9', // nb-NO - MacOS X 10.6.2 - Chrome 10.0.648.127
 'b21760d2236dc7b963acb831078566f2', // */* - nb-NO - MacOS X 10.6.2 - Chrome 10.0.648.127
+'1f6828d2e0986832355551a799c4af63', // nb-NO - MacOS X 10.6.2 - Chrome 10.0.648.133
+'663a1f5679ff61c11e2306dbfa17c552', // */* - nb-NO - MacOS X 10.6.2 - Chrome 10.0.648.133
 '783a87da7c04f152e2c17ec825a5f2ff', // nb-NO - MacOS X 10.6.3 - Chrome 8.0.552.215
 'b405698424d1d87f615c2cef16de3802', // */* - nb-NO - MacOS X 10.6.3 - Chrome 8.0.552.215
 '73d9f0fff1ac2224020a637572bc19c0', // nb-NO - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -4660,6 +5124,8 @@ $browsers_fingerprints = array(
 '7b29f25c1526f4e55ca451c728abe768', // */* - nb-NO - MacOS X 10.6.3 - Chrome 9.0.597.107
 'dd19f3d59aead8feb469ef15dcd78431', // nb-NO - MacOS X 10.6.3 - Chrome 10.0.648.127
 '87ccd59a8f847c7da6d07942388bca5b', // */* - nb-NO - MacOS X 10.6.3 - Chrome 10.0.648.127
+'1c8386d03fd05b3aec78a4db322beec2', // nb-NO - MacOS X 10.6.3 - Chrome 10.0.648.133
+'e08099cff8d5cfe7d93179bdd78e76d1', // */* - nb-NO - MacOS X 10.6.3 - Chrome 10.0.648.133
 '5c6dc3e1940ca8bbc1d8735e6fa8ace3', // nb-NO - MacOS X 10.6.4 - Chrome 8.0.552.215
 '10ce143be3369092c2d4151163830674', // */* - nb-NO - MacOS X 10.6.4 - Chrome 8.0.552.215
 '5200c457a4631ceac212325067d71304', // nb-NO - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -4680,6 +5146,8 @@ $browsers_fingerprints = array(
 '9efec46a014b6c50685115b618a5dbd9', // */* - nb-NO - MacOS X 10.6.4 - Chrome 9.0.597.107
 'a28f5a9dc3e823cb50d0b712ac9cd12b', // nb-NO - MacOS X 10.6.4 - Chrome 10.0.648.127
 'd277b71f92db9c768e225c88ba8c8cc6', // */* - nb-NO - MacOS X 10.6.4 - Chrome 10.0.648.127
+'495a5d4437563551d4cf646e37e3ee18', // nb-NO - MacOS X 10.6.4 - Chrome 10.0.648.133
+'47cab1c20d2fd87b4c8c84f9c96e2da1', // */* - nb-NO - MacOS X 10.6.4 - Chrome 10.0.648.133
 '3998d1cbc14315a481a2e62d8951bfe3', // nb-NO - MacOS X 10.6.5 - Chrome 8.0.552.215
 'cc4e4824aa2b17920be3e88545d0979e', // */* - nb-NO - MacOS X 10.6.5 - Chrome 8.0.552.215
 '2bef70c1b8708bd12d00448e9b53ba3e', // nb-NO - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -4700,6 +5168,8 @@ $browsers_fingerprints = array(
 'eaf6bd66009d1780cb96be42d94b2bfc', // */* - nb-NO - MacOS X 10.6.5 - Chrome 9.0.597.107
 '795b0433559059fd3bece53e66675235', // nb-NO - MacOS X 10.6.5 - Chrome 10.0.648.127
 'f94b5658dd8456c4e286996133413023', // */* - nb-NO - MacOS X 10.6.5 - Chrome 10.0.648.127
+'9552fe187719c80df49231253c10b3a9', // nb-NO - MacOS X 10.6.5 - Chrome 10.0.648.133
+'96d7d2bd21f58dfdf08958ae80ab1d0c', // */* - nb-NO - MacOS X 10.6.5 - Chrome 10.0.648.133
 '638adc3a3da8736db587bd31d8ece6fd', // nb-NO - MacOS X 10.6.6 - Chrome 8.0.552.215
 '0f32984f360575bbf97fd0c31c297013', // */* - nb-NO - MacOS X 10.6.6 - Chrome 8.0.552.215
 '4308cbb59059d9f81c04c749272f64df', // nb-NO - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -4720,6 +5190,8 @@ $browsers_fingerprints = array(
 '46779bee4cd657f942c30acb58b633e4', // */* - nb-NO - MacOS X 10.6.6 - Chrome 9.0.597.107
 'ffa761754048293c3533dca516dd6fe9', // nb-NO - MacOS X 10.6.6 - Chrome 10.0.648.127
 'c45b6af45939796797bad0040149237a', // */* - nb-NO - MacOS X 10.6.6 - Chrome 10.0.648.127
+'ef0beb8f516b723e7003a713041ef27c', // nb-NO - MacOS X 10.6.6 - Chrome 10.0.648.133
+'1b534d637d6e20a96e9bca8c2f2be60f', // */* - nb-NO - MacOS X 10.6.6 - Chrome 10.0.648.133
 'c6cf27728e9c73bdd5e7b00c8073d23a', // nb-NO - Linux - Chrome 8.0.552.215
 'c3cfc1c706f3d7c5a9f2ea41d93da186', // */* - nb-NO - Linux - Chrome 8.0.552.215
 'aed5209ee77422681f290fc479804c99', // nb-NO - Linux - Chrome 8.0.552.224
@@ -4740,6 +5212,8 @@ $browsers_fingerprints = array(
 '481b979657ca59f5c77f97c4fd9fe0ce', // */* - nb-NO - Linux - Chrome 9.0.597.107
 '2fede634bee87a1eee03aef4a61a95fa', // nb-NO - Linux - Chrome 10.0.648.127
 'ac67b3dccf5fdaf25399907d7761ad38', // */* - nb-NO - Linux - Chrome 10.0.648.127
+'ccf9481ee0b84894984406977e643f5f', // nb-NO - Linux - Chrome 10.0.648.133
+'59efb33be34f50a9b3c1fdc235bd278a', // */* - nb-NO - Linux - Chrome 10.0.648.133
 '8b4d702933f71549e8438ffa024363da', // nb-NO - Linux 64 - Chrome 8.0.552.215
 'c81d684532fdf1f419653ea46abf228b', // */* - nb-NO - Linux 64 - Chrome 8.0.552.215
 '485d60a0fcb032c15cdf2331bdffa09d', // nb-NO - Linux 64 - Chrome 8.0.552.224
@@ -4760,6 +5234,8 @@ $browsers_fingerprints = array(
 '6486fefddd9cc50fc4c8c26c901400ba', // */* - nb-NO - Linux 64 - Chrome 9.0.597.107
 '69d4c0c5a908977ad237f1db00b9df5c', // nb-NO - Linux 64 - Chrome 10.0.648.127
 'ff131f9f36c23b3b33d91b611423ba66', // */* - nb-NO - Linux 64 - Chrome 10.0.648.127
+'f85d55d00e2df7e88f1dea91045902e8', // nb-NO - Linux 64 - Chrome 10.0.648.133
+'8137a9c259ab8359b4f292e49eeb67f4', // */* - nb-NO - Linux 64 - Chrome 10.0.648.133
 '10dd7a753c137c32f4175837d66dcb0a', // hu-HU - Windows XP - Chrome 8.0.552.215
 '7972b15346093e4c7800c5648d1f2136', // */* - hu-HU - Windows XP - Chrome 8.0.552.215
 '2c167351ce449abe86f6b5cea79b5109', // hu-HU - Windows XP - Chrome 8.0.552.224
@@ -4780,6 +5256,8 @@ $browsers_fingerprints = array(
 '75060625e33cd707600d0e8bc548dea6', // */* - hu-HU - Windows XP - Chrome 9.0.597.107
 'cb7f4f79cb8faaf95838419869ccabbb', // hu-HU - Windows XP - Chrome 10.0.648.127
 'fe1d7d9d33893505d00eb4f73bd69308', // */* - hu-HU - Windows XP - Chrome 10.0.648.127
+'a2be34fa536af05c983b913716264da0', // hu-HU - Windows XP - Chrome 10.0.648.133
+'6b4441e5c3b7628084f40a7c66fc8f34', // */* - hu-HU - Windows XP - Chrome 10.0.648.133
 'e556da11377daeeefa95252ebca4fb78', // hu-HU - Windows 2003 - Chrome 8.0.552.215
 'e5a3d4a7aff6de98b995eef91d8294c6', // */* - hu-HU - Windows 2003 - Chrome 8.0.552.215
 '2e79840835e491219a0fc6c2e6eec30f', // hu-HU - Windows 2003 - Chrome 8.0.552.224
@@ -4800,6 +5278,8 @@ $browsers_fingerprints = array(
 '903cd3b4e9eaffcb9f8f17b56c7129ae', // */* - hu-HU - Windows 2003 - Chrome 9.0.597.107
 'd53c4a8a6e7d6ed26c5657213f8261af', // hu-HU - Windows 2003 - Chrome 10.0.648.127
 'e6094b826ac8a722f784c3970ff6fba9', // */* - hu-HU - Windows 2003 - Chrome 10.0.648.127
+'36316b28727e7bc54e3330e864243bf3', // hu-HU - Windows 2003 - Chrome 10.0.648.133
+'d4a4615a54db0f0a1e2cd6db7a076673', // */* - hu-HU - Windows 2003 - Chrome 10.0.648.133
 '588ed1f38a8622607ccca780fef728b8', // hu-HU - Windows Vista - Chrome 8.0.552.215
 'c6b69a3d9e1eaea4232280159409a382', // */* - hu-HU - Windows Vista - Chrome 8.0.552.215
 '59162ba03a90dbd8eac683ff49067dff', // hu-HU - Windows Vista - Chrome 8.0.552.224
@@ -4820,6 +5300,8 @@ $browsers_fingerprints = array(
 'bd39e25cb95a4928f5b83524e92a953e', // */* - hu-HU - Windows Vista - Chrome 9.0.597.107
 'c15ba878f522fca248a71209b1c60328', // hu-HU - Windows Vista - Chrome 10.0.648.127
 '4c7004f7bae343c68b1bfe2a3c92e5ca', // */* - hu-HU - Windows Vista - Chrome 10.0.648.127
+'305f6f27a0264e19039cd8833496bbb7', // hu-HU - Windows Vista - Chrome 10.0.648.133
+'acea3ddad5f9d37041e322f258e0e198', // */* - hu-HU - Windows Vista - Chrome 10.0.648.133
 '4c982bd4d62575b56cc35395aedb7770', // hu-HU - Windows 7 - Chrome 8.0.552.215
 '7f5d12a8525b11e75d6b9444391aaded', // */* - hu-HU - Windows 7 - Chrome 8.0.552.215
 '1927da23f8d3340cc091c8a8fe40c1d8', // hu-HU - Windows 7 - Chrome 8.0.552.224
@@ -4840,6 +5322,8 @@ $browsers_fingerprints = array(
 '87bcaa0b69c2927136cea99a20a5fb93', // */* - hu-HU - Windows 7 - Chrome 9.0.597.107
 'a0f2594f64d7d5cc874869da62f0efb1', // hu-HU - Windows 7 - Chrome 10.0.648.127
 'a538f02310d805300ec742a3426a31a8', // */* - hu-HU - Windows 7 - Chrome 10.0.648.127
+'1d2165665715b293af77c05baddbeca4', // hu-HU - Windows 7 - Chrome 10.0.648.133
+'af16c326b79f0ec402d12340f3d8e6f1', // */* - hu-HU - Windows 7 - Chrome 10.0.648.133
 '1ce5ae28f8b3ef5d051db907e25fee00', // hu-HU - MacOS X 10.5.8 - Chrome 8.0.552.215
 'c3043e2f07e13323537e09df8d6bb8d4', // */* - hu-HU - MacOS X 10.5.8 - Chrome 8.0.552.215
 '11a5f2cf1735403494ef1e7a5d1378dc', // hu-HU - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -4860,6 +5344,8 @@ $browsers_fingerprints = array(
 '242aff5741dd66f060ca2dfdc44f41f6', // */* - hu-HU - MacOS X 10.5.8 - Chrome 9.0.597.107
 'c5f350686b424297fdaa37353d38052e', // hu-HU - MacOS X 10.5.8 - Chrome 10.0.648.127
 'f92cc00d16eca22b57989a0382f3bfde', // */* - hu-HU - MacOS X 10.5.8 - Chrome 10.0.648.127
+'4a3e5f2efd3b27879f33ccef969d08e9', // hu-HU - MacOS X 10.5.8 - Chrome 10.0.648.133
+'5189b0b96507df14b3a1ac09890f3ef2', // */* - hu-HU - MacOS X 10.5.8 - Chrome 10.0.648.133
 '94f150b6f96563febc26f6b3e83ab008', // hu-HU - MacOS X 10.6.0 - Chrome 8.0.552.215
 'e2c79ddd4a20666496db5f18a50f3fc1', // */* - hu-HU - MacOS X 10.6.0 - Chrome 8.0.552.215
 'eeb581b3f42a51eb8e61e575638f3c30', // hu-HU - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -4880,6 +5366,8 @@ $browsers_fingerprints = array(
 'd50202c44c2253ac01b067bf68b218fb', // */* - hu-HU - MacOS X 10.6.0 - Chrome 9.0.597.107
 'f6c515bcffd2a44b6bdd897cee870b94', // hu-HU - MacOS X 10.6.0 - Chrome 10.0.648.127
 '61321c9468223d9ba579da39f04f2b5c', // */* - hu-HU - MacOS X 10.6.0 - Chrome 10.0.648.127
+'9c3449eb888412e541cbe69fcdb45831', // hu-HU - MacOS X 10.6.0 - Chrome 10.0.648.133
+'f1665532d51b8bf19148b2e777b5fad1', // */* - hu-HU - MacOS X 10.6.0 - Chrome 10.0.648.133
 '5a62bcecc1b525ff103262904e3f0cd6', // hu-HU - MacOS X 10.6.1 - Chrome 8.0.552.215
 'cf580b228fc3778b05c4b4030b881353', // */* - hu-HU - MacOS X 10.6.1 - Chrome 8.0.552.215
 '42847fae89b5c51f99f568d7192b1d2d', // hu-HU - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -4900,6 +5388,8 @@ $browsers_fingerprints = array(
 'ebadd601e77535a63793ba0e4d4bf1d4', // */* - hu-HU - MacOS X 10.6.1 - Chrome 9.0.597.107
 '87f49968b5e91517659e6d8c5ce97c01', // hu-HU - MacOS X 10.6.1 - Chrome 10.0.648.127
 '78a87f0b579052a7e99bb7fa41935150', // */* - hu-HU - MacOS X 10.6.1 - Chrome 10.0.648.127
+'021025fbfc276df1d64f2489068207eb', // hu-HU - MacOS X 10.6.1 - Chrome 10.0.648.133
+'cbfd4b79ead848dc6a7c7eafd2f4a8b4', // */* - hu-HU - MacOS X 10.6.1 - Chrome 10.0.648.133
 '5a62bcecc1b525ff103262904e3f0cd6', // hu-HU - MacOS X 10.6.2 - Chrome 8.0.552.215
 'cf580b228fc3778b05c4b4030b881353', // */* - hu-HU - MacOS X 10.6.2 - Chrome 8.0.552.215
 '42847fae89b5c51f99f568d7192b1d2d', // hu-HU - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -4920,6 +5410,8 @@ $browsers_fingerprints = array(
 'ebadd601e77535a63793ba0e4d4bf1d4', // */* - hu-HU - MacOS X 10.6.2 - Chrome 9.0.597.107
 '87f49968b5e91517659e6d8c5ce97c01', // hu-HU - MacOS X 10.6.2 - Chrome 10.0.648.127
 '78a87f0b579052a7e99bb7fa41935150', // */* - hu-HU - MacOS X 10.6.2 - Chrome 10.0.648.127
+'021025fbfc276df1d64f2489068207eb', // hu-HU - MacOS X 10.6.2 - Chrome 10.0.648.133
+'cbfd4b79ead848dc6a7c7eafd2f4a8b4', // */* - hu-HU - MacOS X 10.6.2 - Chrome 10.0.648.133
 '70a7706a0ab44c46d4bc2ee2b8b8f615', // hu-HU - MacOS X 10.6.3 - Chrome 8.0.552.215
 '79e25f8ca2bf0525dcddbae6a62a6518', // */* - hu-HU - MacOS X 10.6.3 - Chrome 8.0.552.215
 '1152afdbfb1a0618214890f72b6da537', // hu-HU - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -4940,6 +5432,8 @@ $browsers_fingerprints = array(
 '1d1ca95e2961fe161a0c17d779ad75f8', // */* - hu-HU - MacOS X 10.6.3 - Chrome 9.0.597.107
 '945661610b5ed0d77121209a5dc03bd3', // hu-HU - MacOS X 10.6.3 - Chrome 10.0.648.127
 '3fcaacf0dc984a641f96c61f16672c99', // */* - hu-HU - MacOS X 10.6.3 - Chrome 10.0.648.127
+'02a1f2de6ee66c5f04d23d52de4dec89', // hu-HU - MacOS X 10.6.3 - Chrome 10.0.648.133
+'8a6c6c4b4a9d04f56606a05a5e407618', // */* - hu-HU - MacOS X 10.6.3 - Chrome 10.0.648.133
 '6e4e7c0a6fb263a0f2080dc7bfd14bfb', // hu-HU - MacOS X 10.6.4 - Chrome 8.0.552.215
 '2bd3bd3aa825e25653b597137eb02701', // */* - hu-HU - MacOS X 10.6.4 - Chrome 8.0.552.215
 '1b40fe7f537a183ca9f062a8be1aef1f', // hu-HU - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -4960,6 +5454,8 @@ $browsers_fingerprints = array(
 'd53eddf1a8e9aa5495840e791aaa7b5c', // */* - hu-HU - MacOS X 10.6.4 - Chrome 9.0.597.107
 'a83a37deb5c5d0a6767b1717c93eea71', // hu-HU - MacOS X 10.6.4 - Chrome 10.0.648.127
 '287abdb4664bb85441ff28693a2110f2', // */* - hu-HU - MacOS X 10.6.4 - Chrome 10.0.648.127
+'aa8442e19fabd1dfbadcc909b9b5f874', // hu-HU - MacOS X 10.6.4 - Chrome 10.0.648.133
+'de98eb67be50699ced41b5cd1a08b8ab', // */* - hu-HU - MacOS X 10.6.4 - Chrome 10.0.648.133
 'deb49498251bbaba8fba4819a46ab98c', // hu-HU - MacOS X 10.6.5 - Chrome 8.0.552.215
 'a5bc0671255cef0ceba6aa8e1a2ed4b2', // */* - hu-HU - MacOS X 10.6.5 - Chrome 8.0.552.215
 '5edd673e0c53ecd8ca03cfd2ca016890', // hu-HU - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -4980,6 +5476,8 @@ $browsers_fingerprints = array(
 'f483a8d0604131a5f5f7eadde9e2b7f7', // */* - hu-HU - MacOS X 10.6.5 - Chrome 9.0.597.107
 '52a87f98b1fd34d9b94ca0f252026912', // hu-HU - MacOS X 10.6.5 - Chrome 10.0.648.127
 'ec46adc82839baed803072045a59b01d', // */* - hu-HU - MacOS X 10.6.5 - Chrome 10.0.648.127
+'3e9a1db8ff30ec13310d603e9d124b53', // hu-HU - MacOS X 10.6.5 - Chrome 10.0.648.133
+'034986c942c61c99a39da3bd319bdf5a', // */* - hu-HU - MacOS X 10.6.5 - Chrome 10.0.648.133
 'd663d287cd6cbbeef295c13355277b7b', // hu-HU - MacOS X 10.6.6 - Chrome 8.0.552.215
 '9303a9f291b604dbf2a90406d944ec13', // */* - hu-HU - MacOS X 10.6.6 - Chrome 8.0.552.215
 '15684f2bd5c60ebe6368a45d1b047e68', // hu-HU - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -5000,6 +5498,8 @@ $browsers_fingerprints = array(
 '3f173c23bc3aaa8ff218ad1099c573a9', // */* - hu-HU - MacOS X 10.6.6 - Chrome 9.0.597.107
 'ab52b649017b7653f8057dfb0fcd7933', // hu-HU - MacOS X 10.6.6 - Chrome 10.0.648.127
 '0bdec8e3fa1ae88d2b98c8ff803f4cd4', // */* - hu-HU - MacOS X 10.6.6 - Chrome 10.0.648.127
+'2a3959221c23f5140bd8a50b61a35482', // hu-HU - MacOS X 10.6.6 - Chrome 10.0.648.133
+'f5430b4a84718d62d67896780fe83d69', // */* - hu-HU - MacOS X 10.6.6 - Chrome 10.0.648.133
 '12c45e30bb8d62c8b1d8cb7a87447735', // hu-HU - Linux - Chrome 8.0.552.215
 '749e59a4c92c99fddc0c30238cf64b5f', // */* - hu-HU - Linux - Chrome 8.0.552.215
 'd08b710c7db88dd78c9eda7680378f16', // hu-HU - Linux - Chrome 8.0.552.224
@@ -5020,6 +5520,8 @@ $browsers_fingerprints = array(
 '6c0d19dd88ead5f7906cc3ab20401a72', // */* - hu-HU - Linux - Chrome 9.0.597.107
 'aa2de5f784d79100cfd8d272fae0604f', // hu-HU - Linux - Chrome 10.0.648.127
 'a669cf284c2a73212592aa2c805f17ab', // */* - hu-HU - Linux - Chrome 10.0.648.127
+'5fd3f2cf2f956e6815c2de667e2eff4e', // hu-HU - Linux - Chrome 10.0.648.133
+'86426dd17325be41d9d92e8ef8635d4d', // */* - hu-HU - Linux - Chrome 10.0.648.133
 '245c8381cce46ac952e05a9ea4a0c2d0', // hu-HU - Linux 64 - Chrome 8.0.552.215
 '022b843f04d8f996a8257d768a5ccf56', // */* - hu-HU - Linux 64 - Chrome 8.0.552.215
 '22717f5f25016d946237b6b68c738492', // hu-HU - Linux 64 - Chrome 8.0.552.224
@@ -5040,6 +5542,8 @@ $browsers_fingerprints = array(
 '56e9d5895a0c90c7259d3b8da978c2de', // */* - hu-HU - Linux 64 - Chrome 9.0.597.107
 'd4b1cdda3863861779e61c9e0050dd41', // hu-HU - Linux 64 - Chrome 10.0.648.127
 '81d86d9000a77186257ae31f6f57ea95', // */* - hu-HU - Linux 64 - Chrome 10.0.648.127
+'15351e3a25bdab31b3f77549cd9fa3d6', // hu-HU - Linux 64 - Chrome 10.0.648.133
+'4d35b51a05c7ec862b26dd01788c5746', // */* - hu-HU - Linux 64 - Chrome 10.0.648.133
 '5a0b57610764abdb6d86c2010dcace2a', // pl-PL - Windows XP - Chrome 8.0.552.215
 'cca9d6a19629427407067b6fa4cbd589', // */* - pl-PL - Windows XP - Chrome 8.0.552.215
 'def29d47915c19d1cb11e7a3e6699093', // pl-PL - Windows XP - Chrome 8.0.552.224
@@ -5060,6 +5564,8 @@ $browsers_fingerprints = array(
 'cede5b0abbf337cdbac1d72b3f75d8f0', // */* - pl-PL - Windows XP - Chrome 9.0.597.107
 '42c20a05a9e935a41623f60ea6f43af6', // pl-PL - Windows XP - Chrome 10.0.648.127
 'e1b6edc39635705d8460b38319c54223', // */* - pl-PL - Windows XP - Chrome 10.0.648.127
+'35d95262766176cb3579523af16b5920', // pl-PL - Windows XP - Chrome 10.0.648.133
+'096de2ebd119d374e92a82bb2419fae2', // */* - pl-PL - Windows XP - Chrome 10.0.648.133
 '3308187afc20b23cedb35cfd4204f568', // pl-PL - Windows 2003 - Chrome 8.0.552.215
 'c3d96363c7f30f1019810b337b1ade0c', // */* - pl-PL - Windows 2003 - Chrome 8.0.552.215
 'a942e422f968d438cf9ba929badcc0c9', // pl-PL - Windows 2003 - Chrome 8.0.552.224
@@ -5080,6 +5586,8 @@ $browsers_fingerprints = array(
 '418b59aab037da267fbe5d43546ff6a0', // */* - pl-PL - Windows 2003 - Chrome 9.0.597.107
 '40622849acba63d748a9861adbdb00e6', // pl-PL - Windows 2003 - Chrome 10.0.648.127
 '9d80d0adbf658483b8ba451b56eff4e0', // */* - pl-PL - Windows 2003 - Chrome 10.0.648.127
+'b4da4511a9b8feba3720451254579804', // pl-PL - Windows 2003 - Chrome 10.0.648.133
+'97d3abf3b0ac6fc4396b16724760c97d', // */* - pl-PL - Windows 2003 - Chrome 10.0.648.133
 '895170736c2b56a88577b0d60437af87', // pl-PL - Windows Vista - Chrome 8.0.552.215
 '1993d0ec11d341afa613e8640346d497', // */* - pl-PL - Windows Vista - Chrome 8.0.552.215
 '089f47dba8c8fd84b85f1a28f4431beb', // pl-PL - Windows Vista - Chrome 8.0.552.224
@@ -5100,6 +5608,8 @@ $browsers_fingerprints = array(
 '1c72ea8746a6e47cc95936f7156895c0', // */* - pl-PL - Windows Vista - Chrome 9.0.597.107
 'ee1bf2b810949e77cc79142dc6182d17', // pl-PL - Windows Vista - Chrome 10.0.648.127
 '2003cffef6d8ad9d5dc27099323ca37a', // */* - pl-PL - Windows Vista - Chrome 10.0.648.127
+'e879c1abb1a54e2629ea8f41a8bfcd14', // pl-PL - Windows Vista - Chrome 10.0.648.133
+'be1dd037944fd84458ff827c9d5d4bdc', // */* - pl-PL - Windows Vista - Chrome 10.0.648.133
 '74801c2dec236ced3c52610a7d2e9b52', // pl-PL - Windows 7 - Chrome 8.0.552.215
 'f23be8a499de2cecc650568164045df6', // */* - pl-PL - Windows 7 - Chrome 8.0.552.215
 'd53f5f25dd73e4dd8db7ffe6b09ebe9f', // pl-PL - Windows 7 - Chrome 8.0.552.224
@@ -5120,6 +5630,8 @@ $browsers_fingerprints = array(
 'caa5f42c1bcc11a0e7b269766641cffa', // */* - pl-PL - Windows 7 - Chrome 9.0.597.107
 '239d5fef78a70a32272ea4aa8106ef9f', // pl-PL - Windows 7 - Chrome 10.0.648.127
 '60efa64bf4c85c933d60fe60dea442c8', // */* - pl-PL - Windows 7 - Chrome 10.0.648.127
+'74dcbeb1b76b82f9f4122a85b24bdea3', // pl-PL - Windows 7 - Chrome 10.0.648.133
+'0fce2c71b25d4ebe115218546181d942', // */* - pl-PL - Windows 7 - Chrome 10.0.648.133
 'c87bba0748c2021566d76b0fbbcd43cb', // pl-PL - MacOS X 10.5.8 - Chrome 8.0.552.215
 'b0ef702faed79315401d2c6a8d0bdfec', // */* - pl-PL - MacOS X 10.5.8 - Chrome 8.0.552.215
 'ceaf39f8f020f13b8d6c813ecc72afe5', // pl-PL - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -5140,6 +5652,8 @@ $browsers_fingerprints = array(
 '9620cc70c63b2a5215b29e16e9e213d5', // */* - pl-PL - MacOS X 10.5.8 - Chrome 9.0.597.107
 '2123ac7127523a58d04753c2605a346b', // pl-PL - MacOS X 10.5.8 - Chrome 10.0.648.127
 '0450d7888b5754dd27ba1f9402cec779', // */* - pl-PL - MacOS X 10.5.8 - Chrome 10.0.648.127
+'eee6cda3b71f5e13e4dd7fc8fbc0cb10', // pl-PL - MacOS X 10.5.8 - Chrome 10.0.648.133
+'c5c785797fac4f9ee0d5cfb9e591d769', // */* - pl-PL - MacOS X 10.5.8 - Chrome 10.0.648.133
 '3769272ac9ea45de281143df868453bc', // pl-PL - MacOS X 10.6.0 - Chrome 8.0.552.215
 'd0ed6a2a33c47ba56366d1e8a2c3d978', // */* - pl-PL - MacOS X 10.6.0 - Chrome 8.0.552.215
 'a32c6833d8d3d1b8837d86376f46ade9', // pl-PL - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -5160,6 +5674,8 @@ $browsers_fingerprints = array(
 '69e760443630161b20192dca4f82942a', // */* - pl-PL - MacOS X 10.6.0 - Chrome 9.0.597.107
 'e9e353eaa3c3d8fca276d47b45a511b3', // pl-PL - MacOS X 10.6.0 - Chrome 10.0.648.127
 'd357dbc1193864a3abeeab6a611264c9', // */* - pl-PL - MacOS X 10.6.0 - Chrome 10.0.648.127
+'bfc208e387d2351ef4b224de391623f7', // pl-PL - MacOS X 10.6.0 - Chrome 10.0.648.133
+'97d1e338954dc38b8b51bf1b647f5c1c', // */* - pl-PL - MacOS X 10.6.0 - Chrome 10.0.648.133
 '5ec3b5cb57fe6a5cae2f85543962f2f1', // pl-PL - MacOS X 10.6.1 - Chrome 8.0.552.215
 'bdd9f9e2025c1cc20e952ee647c9b249', // */* - pl-PL - MacOS X 10.6.1 - Chrome 8.0.552.215
 'db9c316059ad705106b8d12ccb9f5056', // pl-PL - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -5180,6 +5696,8 @@ $browsers_fingerprints = array(
 '7f5263c9484eda44f5d3140a72996bf3', // */* - pl-PL - MacOS X 10.6.1 - Chrome 9.0.597.107
 'e6c39647667e93077b9f812be3d20ccd', // pl-PL - MacOS X 10.6.1 - Chrome 10.0.648.127
 '2fd09673ba0879aa5749ae93609cbc44', // */* - pl-PL - MacOS X 10.6.1 - Chrome 10.0.648.127
+'24c4b186d258897be545980f7f36916e', // pl-PL - MacOS X 10.6.1 - Chrome 10.0.648.133
+'57abdc4d27c260da99d2d98accd44950', // */* - pl-PL - MacOS X 10.6.1 - Chrome 10.0.648.133
 '5ec3b5cb57fe6a5cae2f85543962f2f1', // pl-PL - MacOS X 10.6.2 - Chrome 8.0.552.215
 'bdd9f9e2025c1cc20e952ee647c9b249', // */* - pl-PL - MacOS X 10.6.2 - Chrome 8.0.552.215
 'db9c316059ad705106b8d12ccb9f5056', // pl-PL - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -5200,6 +5718,8 @@ $browsers_fingerprints = array(
 '7f5263c9484eda44f5d3140a72996bf3', // */* - pl-PL - MacOS X 10.6.2 - Chrome 9.0.597.107
 'e6c39647667e93077b9f812be3d20ccd', // pl-PL - MacOS X 10.6.2 - Chrome 10.0.648.127
 '2fd09673ba0879aa5749ae93609cbc44', // */* - pl-PL - MacOS X 10.6.2 - Chrome 10.0.648.127
+'24c4b186d258897be545980f7f36916e', // pl-PL - MacOS X 10.6.2 - Chrome 10.0.648.133
+'57abdc4d27c260da99d2d98accd44950', // */* - pl-PL - MacOS X 10.6.2 - Chrome 10.0.648.133
 '897d29c38447c6943964f9cbae9f18d5', // pl-PL - MacOS X 10.6.3 - Chrome 8.0.552.215
 'a5d4d382fccddbfd812796a8d556f656', // */* - pl-PL - MacOS X 10.6.3 - Chrome 8.0.552.215
 '662ac4b7b2dc890ff86c4b67f318052c', // pl-PL - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -5220,6 +5740,8 @@ $browsers_fingerprints = array(
 '475b8e538c5d13884ac925afe9789743', // */* - pl-PL - MacOS X 10.6.3 - Chrome 9.0.597.107
 '3ec8a0d135a5010f92e2f4676ff25fad', // pl-PL - MacOS X 10.6.3 - Chrome 10.0.648.127
 '1dd1144cb580d1f452af8dc458c2f657', // */* - pl-PL - MacOS X 10.6.3 - Chrome 10.0.648.127
+'b5b649a5f54fe93e72d39b3ed9ae7c3a', // pl-PL - MacOS X 10.6.3 - Chrome 10.0.648.133
+'ef8082b7d1ddb014587dca9f794373f5', // */* - pl-PL - MacOS X 10.6.3 - Chrome 10.0.648.133
 'af3a38a4369acce7b86df0e2c083ebd9', // pl-PL - MacOS X 10.6.4 - Chrome 8.0.552.215
 'b30a91f1a025c093296dcfe1e6c8bc97', // */* - pl-PL - MacOS X 10.6.4 - Chrome 8.0.552.215
 '514af0a0a9395f9dad9737f999bd4951', // pl-PL - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -5240,6 +5762,8 @@ $browsers_fingerprints = array(
 'd6bd84989cd32a78db8de065c8fecda8', // */* - pl-PL - MacOS X 10.6.4 - Chrome 9.0.597.107
 '04a0f951e48fdc67ce033c4c180b5a04', // pl-PL - MacOS X 10.6.4 - Chrome 10.0.648.127
 '62778d006d4b299791e723666fd013e9', // */* - pl-PL - MacOS X 10.6.4 - Chrome 10.0.648.127
+'0718871e5c674c6777d7cb8f0c0fcbbb', // pl-PL - MacOS X 10.6.4 - Chrome 10.0.648.133
+'c0e3c2648d43b44146dfb0c535f046c5', // */* - pl-PL - MacOS X 10.6.4 - Chrome 10.0.648.133
 'b7683d1c6716826ec6d910f31d601bf5', // pl-PL - MacOS X 10.6.5 - Chrome 8.0.552.215
 '7e50bbe4eaff8f6f7ceb07237d203e31', // */* - pl-PL - MacOS X 10.6.5 - Chrome 8.0.552.215
 'cb2138796b33ef6fead18c047f3c64e0', // pl-PL - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -5260,6 +5784,8 @@ $browsers_fingerprints = array(
 '9008a7580bae39cff617ca89c0efff8e', // */* - pl-PL - MacOS X 10.6.5 - Chrome 9.0.597.107
 'a2d7838d89451476b4adb8fddf2a911e', // pl-PL - MacOS X 10.6.5 - Chrome 10.0.648.127
 '6b878d7fe7c435011fef2a070387a50d', // */* - pl-PL - MacOS X 10.6.5 - Chrome 10.0.648.127
+'69c23eaf9f041791985cd3b38e312eb7', // pl-PL - MacOS X 10.6.5 - Chrome 10.0.648.133
+'5d495540f37bbd147914e8d9b1380ee7', // */* - pl-PL - MacOS X 10.6.5 - Chrome 10.0.648.133
 '27c42b349e34059573e5dc23f7123739', // pl-PL - MacOS X 10.6.6 - Chrome 8.0.552.215
 'c85ae6fc0bde59286704c9cfb6a99b7a', // */* - pl-PL - MacOS X 10.6.6 - Chrome 8.0.552.215
 '065e2991b4a4dbdc105f0dfeafd6cc19', // pl-PL - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -5280,6 +5806,8 @@ $browsers_fingerprints = array(
 '2d6493dab0f611f6fab8321e92786dc7', // */* - pl-PL - MacOS X 10.6.6 - Chrome 9.0.597.107
 '547ef09e54d48f9d20694b054457bf78', // pl-PL - MacOS X 10.6.6 - Chrome 10.0.648.127
 '732f688d27fe28e176bb78ac86feb04d', // */* - pl-PL - MacOS X 10.6.6 - Chrome 10.0.648.127
+'5d83fc088d975e6c885b6b85924787b4', // pl-PL - MacOS X 10.6.6 - Chrome 10.0.648.133
+'4291ce508700132b2305ef34d0f48279', // */* - pl-PL - MacOS X 10.6.6 - Chrome 10.0.648.133
 'a6440d2c28d6677ce3076a4947562975', // pl-PL - Linux - Chrome 8.0.552.215
 '462dd3e3c85a3161583cbeb24a4a4f46', // */* - pl-PL - Linux - Chrome 8.0.552.215
 'f820579a335665a31774653345b9043d', // pl-PL - Linux - Chrome 8.0.552.224
@@ -5300,6 +5828,8 @@ $browsers_fingerprints = array(
 '04a0f8e3d5203fd79c87699a5a84ef98', // */* - pl-PL - Linux - Chrome 9.0.597.107
 'bea6521115617ab6be725b2b9728d91b', // pl-PL - Linux - Chrome 10.0.648.127
 'f123b560874ce4241aee069bf442e0dc', // */* - pl-PL - Linux - Chrome 10.0.648.127
+'b147d5125225092c5dc52a762fa2f627', // pl-PL - Linux - Chrome 10.0.648.133
+'547f13aa3b69f1b2f9e99643147386e8', // */* - pl-PL - Linux - Chrome 10.0.648.133
 '2f687fdae5357163e6409e9bdeb412ef', // pl-PL - Linux 64 - Chrome 8.0.552.215
 '83e2dd317331532738d3803b461c4842', // */* - pl-PL - Linux 64 - Chrome 8.0.552.215
 '5489387be8513e653626bca6ecfe0c30', // pl-PL - Linux 64 - Chrome 8.0.552.224
@@ -5320,6 +5850,8 @@ $browsers_fingerprints = array(
 '62cefce6a8cb69ddb64c36c6771c12cc', // */* - pl-PL - Linux 64 - Chrome 9.0.597.107
 'e3067957e5570a93034f0f770b218f34', // pl-PL - Linux 64 - Chrome 10.0.648.127
 'd8f249a3db157236565c0b412a680fd4', // */* - pl-PL - Linux 64 - Chrome 10.0.648.127
+'4df14f4601ec2587ee08479696439c75', // pl-PL - Linux 64 - Chrome 10.0.648.133
+'b847851ebc51b01f2e3a181989a47f0f', // */* - pl-PL - Linux 64 - Chrome 10.0.648.133
 'bb02277d564f5938bac72634846caac0', // el-GR - Windows XP - Chrome 8.0.552.215
 '2e401dd1f4dd3270a5166a1170a1ebfd', // */* - el-GR - Windows XP - Chrome 8.0.552.215
 '2d52f7f6dab7f988343d83bffa0f615f', // el-GR - Windows XP - Chrome 8.0.552.224
@@ -5340,6 +5872,8 @@ $browsers_fingerprints = array(
 '438f4e45403032946e7c6d93aa2aa18c', // */* - el-GR - Windows XP - Chrome 9.0.597.107
 '60f9c8fbd36e01b0d163bca1ab08b076', // el-GR - Windows XP - Chrome 10.0.648.127
 '3ac188922c403af7797ff6c3449dbf01', // */* - el-GR - Windows XP - Chrome 10.0.648.127
+'41aa9dad572538487cc263d20e7a75da', // el-GR - Windows XP - Chrome 10.0.648.133
+'7070b1deed977043b0bf3b97795630e3', // */* - el-GR - Windows XP - Chrome 10.0.648.133
 'a406b363f60099220caf05ef5b1f0bfd', // el-GR - Windows 2003 - Chrome 8.0.552.215
 '07abeaaec54c2542050d45fb77e6ff55', // */* - el-GR - Windows 2003 - Chrome 8.0.552.215
 'cb038e0be73e40e4e8dc6ed911d16306', // el-GR - Windows 2003 - Chrome 8.0.552.224
@@ -5360,6 +5894,8 @@ $browsers_fingerprints = array(
 '575ab54d53f596d06f86a322b1bc6b19', // */* - el-GR - Windows 2003 - Chrome 9.0.597.107
 'cd0cff3add126d3930a7a7f79b2851a0', // el-GR - Windows 2003 - Chrome 10.0.648.127
 '0754f181636c4eea7b653c451d1239f5', // */* - el-GR - Windows 2003 - Chrome 10.0.648.127
+'f6e531c42dd37c8871d52908f10657ae', // el-GR - Windows 2003 - Chrome 10.0.648.133
+'ddc6393dbd16dabce36750000a005dc7', // */* - el-GR - Windows 2003 - Chrome 10.0.648.133
 '27393b837f94ac7dbe5be33334bb396f', // el-GR - Windows Vista - Chrome 8.0.552.215
 '6024b9e35ea6b22d142451e5aa4d0140', // */* - el-GR - Windows Vista - Chrome 8.0.552.215
 '5a2cba37308190d0c75cf5565539b9a1', // el-GR - Windows Vista - Chrome 8.0.552.224
@@ -5380,6 +5916,8 @@ $browsers_fingerprints = array(
 'c3d6a63abdbfe8475b9682155795eb56', // */* - el-GR - Windows Vista - Chrome 9.0.597.107
 '2ce65719f5fbd5a3b3a1c162bacfa515', // el-GR - Windows Vista - Chrome 10.0.648.127
 '656aa2a950b0287a01fd5e226d7cc4d7', // */* - el-GR - Windows Vista - Chrome 10.0.648.127
+'76b9bbb871d474b439461ee7688b6419', // el-GR - Windows Vista - Chrome 10.0.648.133
+'613902ac4d1bdda78cf31fea6a2c6e1c', // */* - el-GR - Windows Vista - Chrome 10.0.648.133
 '2f3a36a234b9f30e49ae5e472960b35b', // el-GR - Windows 7 - Chrome 8.0.552.215
 'fee99234401bfe9a27acffc95ac4865f', // */* - el-GR - Windows 7 - Chrome 8.0.552.215
 'dcb725a0e182aa527738a01e0de461d9', // el-GR - Windows 7 - Chrome 8.0.552.224
@@ -5400,6 +5938,8 @@ $browsers_fingerprints = array(
 '1c37fcccd2494d626acf5783ec8b8aeb', // */* - el-GR - Windows 7 - Chrome 9.0.597.107
 'e8d438925883f0d2f9c84d675bd58ac0', // el-GR - Windows 7 - Chrome 10.0.648.127
 '1078372aca0d335f0487a36d0e68b5fc', // */* - el-GR - Windows 7 - Chrome 10.0.648.127
+'18ab0c73c6a2af92c4a8fcbafa819d7b', // el-GR - Windows 7 - Chrome 10.0.648.133
+'85f1ec6c5989171a6483211b32d68acf', // */* - el-GR - Windows 7 - Chrome 10.0.648.133
 'b1d62b1b37d9a368b1967c98440b02c0', // el-GR - MacOS X 10.5.8 - Chrome 8.0.552.215
 '1abcd1ca235b187019af8726d2c16965', // */* - el-GR - MacOS X 10.5.8 - Chrome 8.0.552.215
 'b688ac7af7d8737bff73767367528484', // el-GR - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -5420,6 +5960,8 @@ $browsers_fingerprints = array(
 'dcf9f3a2876d699595be5006d97bafa5', // */* - el-GR - MacOS X 10.5.8 - Chrome 9.0.597.107
 '7128d405d0b8f2a511aaf1c7fbbe071e', // el-GR - MacOS X 10.5.8 - Chrome 10.0.648.127
 'a43079bf41acb55e239f587550a35efd', // */* - el-GR - MacOS X 10.5.8 - Chrome 10.0.648.127
+'84149b7982fccee628db78f0db171a48', // el-GR - MacOS X 10.5.8 - Chrome 10.0.648.133
+'8b41961bd115f408a703f37c0378236d', // */* - el-GR - MacOS X 10.5.8 - Chrome 10.0.648.133
 '7cf6265e662ad912505a0a9851e25b32', // el-GR - MacOS X 10.6.0 - Chrome 8.0.552.215
 'bcd8cf5b266db77c184a523404d2fd7b', // */* - el-GR - MacOS X 10.6.0 - Chrome 8.0.552.215
 'ecd118f41794ad31e878ad9edb14a4c2', // el-GR - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -5440,6 +5982,8 @@ $browsers_fingerprints = array(
 'cd98ccd31ee7cabcf115911b72ef8f99', // */* - el-GR - MacOS X 10.6.0 - Chrome 9.0.597.107
 '3407a66684ecf19e5d06f7e0078f0ef3', // el-GR - MacOS X 10.6.0 - Chrome 10.0.648.127
 '968a3bcfec14d238b62e230886d10896', // */* - el-GR - MacOS X 10.6.0 - Chrome 10.0.648.127
+'d0e88ddf70e7e6c299da84792cbeb0d7', // el-GR - MacOS X 10.6.0 - Chrome 10.0.648.133
+'54d516215f08cbd638638b002eda2bea', // */* - el-GR - MacOS X 10.6.0 - Chrome 10.0.648.133
 'b87f81aa70d131763354cf9bc87f25ef', // el-GR - MacOS X 10.6.1 - Chrome 8.0.552.215
 'dcefb9b42d5713d87348c27aa7929020', // */* - el-GR - MacOS X 10.6.1 - Chrome 8.0.552.215
 '76507f966e2186100bb258b0559d8291', // el-GR - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -5460,6 +6004,8 @@ $browsers_fingerprints = array(
 'b39f6c63417bed495b6fcd30cf186c30', // */* - el-GR - MacOS X 10.6.1 - Chrome 9.0.597.107
 '3e3b60b05dca72dbf422b2ef877882a7', // el-GR - MacOS X 10.6.1 - Chrome 10.0.648.127
 '7b877cb6d35adfc2ec413f2ce75a374c', // */* - el-GR - MacOS X 10.6.1 - Chrome 10.0.648.127
+'5a737b32bfbcc39203caa57ea0ee4221', // el-GR - MacOS X 10.6.1 - Chrome 10.0.648.133
+'0869c3fb47b808390280f43eaeecac39', // */* - el-GR - MacOS X 10.6.1 - Chrome 10.0.648.133
 'b87f81aa70d131763354cf9bc87f25ef', // el-GR - MacOS X 10.6.2 - Chrome 8.0.552.215
 'dcefb9b42d5713d87348c27aa7929020', // */* - el-GR - MacOS X 10.6.2 - Chrome 8.0.552.215
 '76507f966e2186100bb258b0559d8291', // el-GR - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -5480,6 +6026,8 @@ $browsers_fingerprints = array(
 'b39f6c63417bed495b6fcd30cf186c30', // */* - el-GR - MacOS X 10.6.2 - Chrome 9.0.597.107
 '3e3b60b05dca72dbf422b2ef877882a7', // el-GR - MacOS X 10.6.2 - Chrome 10.0.648.127
 '7b877cb6d35adfc2ec413f2ce75a374c', // */* - el-GR - MacOS X 10.6.2 - Chrome 10.0.648.127
+'5a737b32bfbcc39203caa57ea0ee4221', // el-GR - MacOS X 10.6.2 - Chrome 10.0.648.133
+'0869c3fb47b808390280f43eaeecac39', // */* - el-GR - MacOS X 10.6.2 - Chrome 10.0.648.133
 'bf99b1bbeefef1379c037333fe3e9570', // el-GR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '75c8b386222723e9c57fdfb27a1a63ce', // */* - el-GR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '0b8923f19b7282957fb831558e320e0c', // el-GR - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -5500,6 +6048,8 @@ $browsers_fingerprints = array(
 'dbcbd381bd736f2817c7613a7dab67e5', // */* - el-GR - MacOS X 10.6.3 - Chrome 9.0.597.107
 '4b388bed3d4169d43c4af097ff878253', // el-GR - MacOS X 10.6.3 - Chrome 10.0.648.127
 '0c3dcbacb28e45cc9d53577339b81eb0', // */* - el-GR - MacOS X 10.6.3 - Chrome 10.0.648.127
+'2d7645b2f04632d2448e566b8ad8dbcf', // el-GR - MacOS X 10.6.3 - Chrome 10.0.648.133
+'1e0e63b93ced0ee9611878f40b2bd53d', // */* - el-GR - MacOS X 10.6.3 - Chrome 10.0.648.133
 '9eeb9f8bdae05445d1173ac25622c13d', // el-GR - MacOS X 10.6.4 - Chrome 8.0.552.215
 'c83de2548cf350c41d74907edb8c30b3', // */* - el-GR - MacOS X 10.6.4 - Chrome 8.0.552.215
 'a68f64c769c214a9a0facb13b671ee10', // el-GR - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -5520,6 +6070,8 @@ $browsers_fingerprints = array(
 'e1bcc551b5c285991854e16605f83f1d', // */* - el-GR - MacOS X 10.6.4 - Chrome 9.0.597.107
 '1f826f11afc47c1e66fe2a5685157628', // el-GR - MacOS X 10.6.4 - Chrome 10.0.648.127
 'ff7d5e74227d385e41b7a839806d4f87', // */* - el-GR - MacOS X 10.6.4 - Chrome 10.0.648.127
+'66ed1409bfd3a83b1eaf1f9c5beb93e6', // el-GR - MacOS X 10.6.4 - Chrome 10.0.648.133
+'0109d47e12f48bc79f0da50263227a80', // */* - el-GR - MacOS X 10.6.4 - Chrome 10.0.648.133
 '2c8608a233b8a05f613b3ec6cbe0ac1c', // el-GR - MacOS X 10.6.5 - Chrome 8.0.552.215
 'd9fe8cf425ecaf776af736cf972ecb19', // */* - el-GR - MacOS X 10.6.5 - Chrome 8.0.552.215
 'ea06f70416451608d921baaf64e9fd6e', // el-GR - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -5540,6 +6092,8 @@ $browsers_fingerprints = array(
 'ef1c2f22a027e1212f70932ad878b497', // */* - el-GR - MacOS X 10.6.5 - Chrome 9.0.597.107
 '52eebd72e7245ad953e819771416b0ec', // el-GR - MacOS X 10.6.5 - Chrome 10.0.648.127
 'b719f2c7e659ffe7da7effb54ea7e38f', // */* - el-GR - MacOS X 10.6.5 - Chrome 10.0.648.127
+'ec7cd79d79310b79f1dda9bdb95462c7', // el-GR - MacOS X 10.6.5 - Chrome 10.0.648.133
+'38508954a99263b4bed55989983c0514', // */* - el-GR - MacOS X 10.6.5 - Chrome 10.0.648.133
 'd0c3b270d463f0eb52afe2f31628b511', // el-GR - MacOS X 10.6.6 - Chrome 8.0.552.215
 '42cd29a3372c08305849f79d79eabd6e', // */* - el-GR - MacOS X 10.6.6 - Chrome 8.0.552.215
 'd834554f3e3676a19edb9fac5dfbf484', // el-GR - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -5560,6 +6114,8 @@ $browsers_fingerprints = array(
 'bbe4a01ea4582e7c01ddf9598ed2986c', // */* - el-GR - MacOS X 10.6.6 - Chrome 9.0.597.107
 '92b3b4cdd19212eeee2b3c3bb332d668', // el-GR - MacOS X 10.6.6 - Chrome 10.0.648.127
 '2ea8dfa33ad06dd5d4a2a75ee9f9ebd8', // */* - el-GR - MacOS X 10.6.6 - Chrome 10.0.648.127
+'81c843a802dd0b7f850de354809d7c77', // el-GR - MacOS X 10.6.6 - Chrome 10.0.648.133
+'7f4e180c8767cc9a44bcc464c51709c6', // */* - el-GR - MacOS X 10.6.6 - Chrome 10.0.648.133
 'f5dabe0d8be4dc43c8621ca8ebc87a07', // el-GR - Linux - Chrome 8.0.552.215
 '6324e2cabe660f68f6866b27f4439c97', // */* - el-GR - Linux - Chrome 8.0.552.215
 '2b16c4faa2f2dbea7f09a58d88ea0cac', // el-GR - Linux - Chrome 8.0.552.224
@@ -5580,6 +6136,8 @@ $browsers_fingerprints = array(
 '145c6745940943e052057ec5f2544e3e', // */* - el-GR - Linux - Chrome 9.0.597.107
 '03c4cdff17fff47c8fdeeda41734761a', // el-GR - Linux - Chrome 10.0.648.127
 '76cf38a1bfb81881196d6a83f44d43dc', // */* - el-GR - Linux - Chrome 10.0.648.127
+'3c80ac178981a504db6a1eeb7fd44e11', // el-GR - Linux - Chrome 10.0.648.133
+'33ebcdc9b09917079dfdd6f290fb1fde', // */* - el-GR - Linux - Chrome 10.0.648.133
 '3edf4211451ee742b5e73ef6c16ed804', // el-GR - Linux 64 - Chrome 8.0.552.215
 'b8fe1f29d5f60ca8b4b8dd23305ed961', // */* - el-GR - Linux 64 - Chrome 8.0.552.215
 '7c2bedd54708ec377eb626d1476ed9e9', // el-GR - Linux 64 - Chrome 8.0.552.224
@@ -5600,6 +6158,8 @@ $browsers_fingerprints = array(
 'db4219e74ba18a16928109df0a251d82', // */* - el-GR - Linux 64 - Chrome 9.0.597.107
 'f13a98069398729635f5c4b4bd5ab321', // el-GR - Linux 64 - Chrome 10.0.648.127
 '826a289d3303f8ba1930a999319d867e', // */* - el-GR - Linux 64 - Chrome 10.0.648.127
+'16b8f0a9c74ad9b2aedcbceaa6216191', // el-GR - Linux 64 - Chrome 10.0.648.133
+'cb20e9a052664de82f279e6f12b6d97e', // */* - el-GR - Linux 64 - Chrome 10.0.648.133
 'c21fe4bcf40d69534a41643dd0207fd4', // tr-TR - Windows XP - Chrome 8.0.552.215
 'c1e78c080da8b7043be84dae4756d7ac', // */* - tr-TR - Windows XP - Chrome 8.0.552.215
 'ce9100fef6c5b79445f67cdfddcd8563', // tr-TR - Windows XP - Chrome 8.0.552.224
@@ -5620,6 +6180,8 @@ $browsers_fingerprints = array(
 '212bad4d83df722e4f1784a520d7ebac', // */* - tr-TR - Windows XP - Chrome 9.0.597.107
 '06a04502a1bc2a3384a263f8f5c3720e', // tr-TR - Windows XP - Chrome 10.0.648.127
 'f8dc283f53afc45598c2313c4db7517b', // */* - tr-TR - Windows XP - Chrome 10.0.648.127
+'c65fd7ac0b1c0c14c1ae51efd4de6a45', // tr-TR - Windows XP - Chrome 10.0.648.133
+'6a4f3842e274df5593529643ed186992', // */* - tr-TR - Windows XP - Chrome 10.0.648.133
 '684e289b09fe2aa13ccbefc741801ecc', // tr-TR - Windows 2003 - Chrome 8.0.552.215
 'df1f68608dbdbf0f119e77206c45a0d2', // */* - tr-TR - Windows 2003 - Chrome 8.0.552.215
 '9d20db0b00d3a6a639775cdb20fd7b92', // tr-TR - Windows 2003 - Chrome 8.0.552.224
@@ -5640,6 +6202,8 @@ $browsers_fingerprints = array(
 'ec4594b5fa5c0adad76a383de16df8c5', // */* - tr-TR - Windows 2003 - Chrome 9.0.597.107
 '93a90e8b6a01e8db6c153ca1caa46434', // tr-TR - Windows 2003 - Chrome 10.0.648.127
 'bf39dd1020f7c0bb43c7f135c9acc043', // */* - tr-TR - Windows 2003 - Chrome 10.0.648.127
+'6b1f5830f6e880fdd5dc498bd521b25d', // tr-TR - Windows 2003 - Chrome 10.0.648.133
+'fa2b5114cbb999679633972550b4d3c1', // */* - tr-TR - Windows 2003 - Chrome 10.0.648.133
 '69f434ed9ea355ad3314cb0d975dbab6', // tr-TR - Windows Vista - Chrome 8.0.552.215
 '19c35da1820f0046f71cff390a4dcf55', // */* - tr-TR - Windows Vista - Chrome 8.0.552.215
 '20999ed02fd3a65c8a207805def62df1', // tr-TR - Windows Vista - Chrome 8.0.552.224
@@ -5660,6 +6224,8 @@ $browsers_fingerprints = array(
 '98deec3f57aa0a31bf460aa0439ed8cf', // */* - tr-TR - Windows Vista - Chrome 9.0.597.107
 'b1755795aff14baf6c2780f25267b8fa', // tr-TR - Windows Vista - Chrome 10.0.648.127
 '1f34c9023636b7a5b377604a9df8f6e8', // */* - tr-TR - Windows Vista - Chrome 10.0.648.127
+'674e33856d33564bf6bbc744a177b584', // tr-TR - Windows Vista - Chrome 10.0.648.133
+'a9240b5a6f1d7b86884d4b41d0e8ea9b', // */* - tr-TR - Windows Vista - Chrome 10.0.648.133
 '3fc91749b9c8d54c94ad1952b3ebbfca', // tr-TR - Windows 7 - Chrome 8.0.552.215
 'aadfdd8295904fe07b3e9c149395e288', // */* - tr-TR - Windows 7 - Chrome 8.0.552.215
 '79f2e13d7486d6dfecb2d3866b6bd48b', // tr-TR - Windows 7 - Chrome 8.0.552.224
@@ -5680,6 +6246,8 @@ $browsers_fingerprints = array(
 '604ae8eed2152f29c7ab221d6c6ba679', // */* - tr-TR - Windows 7 - Chrome 9.0.597.107
 'eff4ba32b387542bba4f63633fc666ab', // tr-TR - Windows 7 - Chrome 10.0.648.127
 'c20d4197ad462c202066db5af8262d9f', // */* - tr-TR - Windows 7 - Chrome 10.0.648.127
+'05c4f5c239b9f08795680277b6516f72', // tr-TR - Windows 7 - Chrome 10.0.648.133
+'3aebecf45a7f8f21077f099a5ca90ab4', // */* - tr-TR - Windows 7 - Chrome 10.0.648.133
 'ab8e8bf3f59409d2a1ca003579755e4d', // tr-TR - MacOS X 10.5.8 - Chrome 8.0.552.215
 '7b1aba7a03ca005e7f431ef45a001ca3', // */* - tr-TR - MacOS X 10.5.8 - Chrome 8.0.552.215
 'ca50c47fb4b8a6178cd08a4863748e50', // tr-TR - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -5700,6 +6268,8 @@ $browsers_fingerprints = array(
 'a3d365d93450cd3284d173fdddc3cee8', // */* - tr-TR - MacOS X 10.5.8 - Chrome 9.0.597.107
 '0265217fb9177dd872582e4039292629', // tr-TR - MacOS X 10.5.8 - Chrome 10.0.648.127
 '505dfec39faca3dc0d85736b143410d7', // */* - tr-TR - MacOS X 10.5.8 - Chrome 10.0.648.127
+'0f8dc8f408d1b9a8f73ff7ec0f631cb9', // tr-TR - MacOS X 10.5.8 - Chrome 10.0.648.133
+'369869848cffc2c1dfb7b2eae5928cf3', // */* - tr-TR - MacOS X 10.5.8 - Chrome 10.0.648.133
 'b0fe8ee10374110d7fd4ae042b61a768', // tr-TR - MacOS X 10.6.0 - Chrome 8.0.552.215
 'a1a1243c6466782f355915a6c79f6610', // */* - tr-TR - MacOS X 10.6.0 - Chrome 8.0.552.215
 'c37b367918a351463f9991667c74f875', // tr-TR - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -5720,6 +6290,8 @@ $browsers_fingerprints = array(
 '49a824a07287efe24fc74faf9ceae1e4', // */* - tr-TR - MacOS X 10.6.0 - Chrome 9.0.597.107
 '3366da6f68ac9c006cb143074744b750', // tr-TR - MacOS X 10.6.0 - Chrome 10.0.648.127
 'b084184431396e8ddbfe8cc367433004', // */* - tr-TR - MacOS X 10.6.0 - Chrome 10.0.648.127
+'2e00d6b7e45e1e774f0dc3df38b1b433', // tr-TR - MacOS X 10.6.0 - Chrome 10.0.648.133
+'a658daeb40ad6d9096ac43278ce3a7cc', // */* - tr-TR - MacOS X 10.6.0 - Chrome 10.0.648.133
 '561076acfca14bfe615276ff95d393d6', // tr-TR - MacOS X 10.6.1 - Chrome 8.0.552.215
 '28fdff883167b255e44f6d1faf06d97c', // */* - tr-TR - MacOS X 10.6.1 - Chrome 8.0.552.215
 '7a99811700f0667c968c5769d35ff99a', // tr-TR - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -5740,6 +6312,8 @@ $browsers_fingerprints = array(
 'f319eba50aa173e66fe74f9888dc40e2', // */* - tr-TR - MacOS X 10.6.1 - Chrome 9.0.597.107
 '2ab4dff9ca9d76ca6a0d29c794a63bae', // tr-TR - MacOS X 10.6.1 - Chrome 10.0.648.127
 'dc46da6cd95d6a33257c7d7603220413', // */* - tr-TR - MacOS X 10.6.1 - Chrome 10.0.648.127
+'16fe185e4122c6cf1dffb7b28258f56f', // tr-TR - MacOS X 10.6.1 - Chrome 10.0.648.133
+'3a9c0385b10d345a67ee6155dbc01af5', // */* - tr-TR - MacOS X 10.6.1 - Chrome 10.0.648.133
 '561076acfca14bfe615276ff95d393d6', // tr-TR - MacOS X 10.6.2 - Chrome 8.0.552.215
 '28fdff883167b255e44f6d1faf06d97c', // */* - tr-TR - MacOS X 10.6.2 - Chrome 8.0.552.215
 '7a99811700f0667c968c5769d35ff99a', // tr-TR - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -5760,6 +6334,8 @@ $browsers_fingerprints = array(
 'f319eba50aa173e66fe74f9888dc40e2', // */* - tr-TR - MacOS X 10.6.2 - Chrome 9.0.597.107
 '2ab4dff9ca9d76ca6a0d29c794a63bae', // tr-TR - MacOS X 10.6.2 - Chrome 10.0.648.127
 'dc46da6cd95d6a33257c7d7603220413', // */* - tr-TR - MacOS X 10.6.2 - Chrome 10.0.648.127
+'16fe185e4122c6cf1dffb7b28258f56f', // tr-TR - MacOS X 10.6.2 - Chrome 10.0.648.133
+'3a9c0385b10d345a67ee6155dbc01af5', // */* - tr-TR - MacOS X 10.6.2 - Chrome 10.0.648.133
 'a0b015ef4fdca41670cdb006968be332', // tr-TR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '7c429743f3a1ed81f60681ce3f3a7cd8', // */* - tr-TR - MacOS X 10.6.3 - Chrome 8.0.552.215
 'd338ad11a2bfa16c56d68d8b530704ba', // tr-TR - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -5780,6 +6356,8 @@ $browsers_fingerprints = array(
 '5149e188572754004c972fd4593382c1', // */* - tr-TR - MacOS X 10.6.3 - Chrome 9.0.597.107
 '310150e723b3c8e4a85107c69aa3b333', // tr-TR - MacOS X 10.6.3 - Chrome 10.0.648.127
 'e3e539503935cf8b0306549123edb1f4', // */* - tr-TR - MacOS X 10.6.3 - Chrome 10.0.648.127
+'15db305867ee1d622dcd1b7cc80dd380', // tr-TR - MacOS X 10.6.3 - Chrome 10.0.648.133
+'4c8cc3f66e10020cf7ce04aca157ef73', // */* - tr-TR - MacOS X 10.6.3 - Chrome 10.0.648.133
 'eac7c6558b3fe2d8b34fcf69e0bdcd70', // tr-TR - MacOS X 10.6.4 - Chrome 8.0.552.215
 'e01e559cf461d5e48b2a89410990f14c', // */* - tr-TR - MacOS X 10.6.4 - Chrome 8.0.552.215
 '1131f238aef7afd43181c5382e80ea4f', // tr-TR - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -5800,6 +6378,8 @@ $browsers_fingerprints = array(
 'a9d9a6dea1f66e4bc8a2e8f894807621', // */* - tr-TR - MacOS X 10.6.4 - Chrome 9.0.597.107
 '8ec10ab7ecef89a69c4ff540f2a0798b', // tr-TR - MacOS X 10.6.4 - Chrome 10.0.648.127
 'e0049f751116fa7a2d293b8c2bf13f46', // */* - tr-TR - MacOS X 10.6.4 - Chrome 10.0.648.127
+'03479031472361cab92de4e63fa17c05', // tr-TR - MacOS X 10.6.4 - Chrome 10.0.648.133
+'e9bb2836dcccce55efdd919be9b4fe50', // */* - tr-TR - MacOS X 10.6.4 - Chrome 10.0.648.133
 'b667b389343b4ee3bca07110c8a9c74c', // tr-TR - MacOS X 10.6.5 - Chrome 8.0.552.215
 '0e976b85dcd28578ac140f6c421c8346', // */* - tr-TR - MacOS X 10.6.5 - Chrome 8.0.552.215
 '0762ed89ede1dc39194866ed8c164851', // tr-TR - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -5820,6 +6400,8 @@ $browsers_fingerprints = array(
 'c085a76171911f19ab89572d89d0992e', // */* - tr-TR - MacOS X 10.6.5 - Chrome 9.0.597.107
 '795a29e87101727fa060be1ebbfc7062', // tr-TR - MacOS X 10.6.5 - Chrome 10.0.648.127
 'cf68b5cf6980854b99398d42b66ca17e', // */* - tr-TR - MacOS X 10.6.5 - Chrome 10.0.648.127
+'58f03c8d5a1346c1b7d8bef1006a24d2', // tr-TR - MacOS X 10.6.5 - Chrome 10.0.648.133
+'0ef7367ef6ebbf8d0ccf6fff5ce5d216', // */* - tr-TR - MacOS X 10.6.5 - Chrome 10.0.648.133
 'a7548c8d96f0e3091a2804f72b422ff5', // tr-TR - MacOS X 10.6.6 - Chrome 8.0.552.215
 'd0aad243d3b34024ab8bc41210cec3ca', // */* - tr-TR - MacOS X 10.6.6 - Chrome 8.0.552.215
 'f53fe8d0b5bc2edf60af67998cd13261', // tr-TR - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -5840,6 +6422,8 @@ $browsers_fingerprints = array(
 '414acc1f61920591dbcf1b7ad69f5f95', // */* - tr-TR - MacOS X 10.6.6 - Chrome 9.0.597.107
 '7a47a59e7a1ffbb9f66790bfad4356d3', // tr-TR - MacOS X 10.6.6 - Chrome 10.0.648.127
 '2bd6540750d6a1e736c631255a6180f6', // */* - tr-TR - MacOS X 10.6.6 - Chrome 10.0.648.127
+'134392b4aa804f507639d9bdc1131c4d', // tr-TR - MacOS X 10.6.6 - Chrome 10.0.648.133
+'fb3f97ccc5cc706467315f0c413f3317', // */* - tr-TR - MacOS X 10.6.6 - Chrome 10.0.648.133
 '13723bd4873b629b64b92f8c903ac0cd', // tr-TR - Linux - Chrome 8.0.552.215
 'b453b4a3a7820800df2cd92091bfcfca', // */* - tr-TR - Linux - Chrome 8.0.552.215
 '25da94c352dd1d741f85cf3def8c5ba8', // tr-TR - Linux - Chrome 8.0.552.224
@@ -5860,6 +6444,8 @@ $browsers_fingerprints = array(
 'b867abefac32e755b04b879e8a0d85da', // */* - tr-TR - Linux - Chrome 9.0.597.107
 'b5c65a0e1cc371abc774a80c4649790a', // tr-TR - Linux - Chrome 10.0.648.127
 'fa1fd40c2a9c04696d8be56ef42d9b4f', // */* - tr-TR - Linux - Chrome 10.0.648.127
+'700575e8e4d4043b1a3536c4f2c89781', // tr-TR - Linux - Chrome 10.0.648.133
+'98e08f28d5469212aefafe653e17e697', // */* - tr-TR - Linux - Chrome 10.0.648.133
 '47ec9e6ceebd9737de1ecdb8e97d111d', // tr-TR - Linux 64 - Chrome 8.0.552.215
 'e63765808acfa213ed472c114cc1cd5a', // */* - tr-TR - Linux 64 - Chrome 8.0.552.215
 '12cf8dcde45b51384351f6711a3e3b19', // tr-TR - Linux 64 - Chrome 8.0.552.224
@@ -5880,6 +6466,8 @@ $browsers_fingerprints = array(
 'c4a4cd1d357b76a67823650e95fe16b1', // */* - tr-TR - Linux 64 - Chrome 9.0.597.107
 '082a7f611f52ac3b57b00465b36577fc', // tr-TR - Linux 64 - Chrome 10.0.648.127
 '211bcd48d0988b12a3d99bca9ec30a70', // */* - tr-TR - Linux 64 - Chrome 10.0.648.127
+'328270202b67427e924242a6732f064e', // tr-TR - Linux 64 - Chrome 10.0.648.133
+'46b5b4f710d2f2d7cd2ab9e60b0f281d', // */* - tr-TR - Linux 64 - Chrome 10.0.648.133
 '9d89f4bdd0001446a372702f2ad05c01', // cs-CZ - Windows XP - Chrome 8.0.552.215
 'e100a78ab839e8e9f45f4a81b899f712', // */* - cs-CZ - Windows XP - Chrome 8.0.552.215
 '04dae60dad5b3d266b55b4d339f7d750', // cs-CZ - Windows XP - Chrome 8.0.552.224
@@ -5900,6 +6488,8 @@ $browsers_fingerprints = array(
 '4c1cb0bc2a784140af5f99315151e806', // */* - cs-CZ - Windows XP - Chrome 9.0.597.107
 '02c85bcdd1678ead4d0cc97b01a38333', // cs-CZ - Windows XP - Chrome 10.0.648.127
 'cadb3ee62564593b5ead4abee58a2afb', // */* - cs-CZ - Windows XP - Chrome 10.0.648.127
+'6047601c4a17ab1104d21c9954909408', // cs-CZ - Windows XP - Chrome 10.0.648.133
+'3afe5f7e4b73adc5c79c2ac16d32b591', // */* - cs-CZ - Windows XP - Chrome 10.0.648.133
 '98d1d5742c61ffd59eb149de80fb7a6a', // cs-CZ - Windows 2003 - Chrome 8.0.552.215
 '74a352fe19d948c8c7561fa4a9d49766', // */* - cs-CZ - Windows 2003 - Chrome 8.0.552.215
 '416f9846b224a231defbafb03de11bd5', // cs-CZ - Windows 2003 - Chrome 8.0.552.224
@@ -5920,6 +6510,8 @@ $browsers_fingerprints = array(
 'ba5f12a539b44439359e5dba6d511ecc', // */* - cs-CZ - Windows 2003 - Chrome 9.0.597.107
 '22ce4833174000d718c981f14645ad4d', // cs-CZ - Windows 2003 - Chrome 10.0.648.127
 '30cbf745d39da4c1d053adc72a443a07', // */* - cs-CZ - Windows 2003 - Chrome 10.0.648.127
+'94ad24985f5c9c87a194345ee693cef3', // cs-CZ - Windows 2003 - Chrome 10.0.648.133
+'a4cf5082c3ca701394e5d6ff32e6912b', // */* - cs-CZ - Windows 2003 - Chrome 10.0.648.133
 '90d4f7e71f3b1195dcc7780c881e2e7b', // cs-CZ - Windows Vista - Chrome 8.0.552.215
 '14c237555c01a8f97d5901f77fe14bbc', // */* - cs-CZ - Windows Vista - Chrome 8.0.552.215
 '8afc9976f5759c82be529d9bf1cca387', // cs-CZ - Windows Vista - Chrome 8.0.552.224
@@ -5940,6 +6532,8 @@ $browsers_fingerprints = array(
 'dac47c65936b4a0cae0cd7f219576027', // */* - cs-CZ - Windows Vista - Chrome 9.0.597.107
 'faf98dba2f069f8578f6d52a111b1526', // cs-CZ - Windows Vista - Chrome 10.0.648.127
 '67e00bbe5a1a8a2cae5218374165289a', // */* - cs-CZ - Windows Vista - Chrome 10.0.648.127
+'11ced909b8738ab0bf5150662cf9032a', // cs-CZ - Windows Vista - Chrome 10.0.648.133
+'b7ddf2474068cbe1d0cfac3fddc2ef79', // */* - cs-CZ - Windows Vista - Chrome 10.0.648.133
 'b324327170443902e4232841bdfd2630', // cs-CZ - Windows 7 - Chrome 8.0.552.215
 '37a7c3d38adca2b06e9253bbd0fcef0f', // */* - cs-CZ - Windows 7 - Chrome 8.0.552.215
 'e89aef7abacf9c52445fa3f6621b667d', // cs-CZ - Windows 7 - Chrome 8.0.552.224
@@ -5960,6 +6554,8 @@ $browsers_fingerprints = array(
 'c0c318aeb39833d9e2ab1982c03134c3', // */* - cs-CZ - Windows 7 - Chrome 9.0.597.107
 'aa375316c3f9314abd93e3ea74b86615', // cs-CZ - Windows 7 - Chrome 10.0.648.127
 '8a7daeb0b7c2e506c3b07eb10259b14f', // */* - cs-CZ - Windows 7 - Chrome 10.0.648.127
+'94f94c46552a89b1a2dbc10a774ae454', // cs-CZ - Windows 7 - Chrome 10.0.648.133
+'945d82f2f1d6282bef6f74a2ba193404', // */* - cs-CZ - Windows 7 - Chrome 10.0.648.133
 '8a05294cce3f515f08ee9f16e9f72c53', // cs-CZ - MacOS X 10.5.8 - Chrome 8.0.552.215
 'e59a97da92a4db58c8e19296296c0cfe', // */* - cs-CZ - MacOS X 10.5.8 - Chrome 8.0.552.215
 'a60eaede3d3d91e4899234b323f0ad0f', // cs-CZ - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -5980,6 +6576,8 @@ $browsers_fingerprints = array(
 'ac988861e15677543f161d527700897c', // */* - cs-CZ - MacOS X 10.5.8 - Chrome 9.0.597.107
 '8188f33aa631699ed4d48d227d73396e', // cs-CZ - MacOS X 10.5.8 - Chrome 10.0.648.127
 '07281234e2b25d37bdf35215f1293eff', // */* - cs-CZ - MacOS X 10.5.8 - Chrome 10.0.648.127
+'ed7e8c73be40d5d46986cdb430450559', // cs-CZ - MacOS X 10.5.8 - Chrome 10.0.648.133
+'a5eb6884fbceb42236f0718b582edcc2', // */* - cs-CZ - MacOS X 10.5.8 - Chrome 10.0.648.133
 '5d58d3dfb2f335b22e6adf6755eef590', // cs-CZ - MacOS X 10.6.0 - Chrome 8.0.552.215
 '0c39f2be29d0a6fb4afc7ded9f157175', // */* - cs-CZ - MacOS X 10.6.0 - Chrome 8.0.552.215
 '6dc98c7b924b246c1b4a04b78ae8fcfe', // cs-CZ - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -6000,6 +6598,8 @@ $browsers_fingerprints = array(
 '50a97a63d153e476daaebc374d519407', // */* - cs-CZ - MacOS X 10.6.0 - Chrome 9.0.597.107
 'ce1e6c42b4cf9ab1f119b62dd61510ec', // cs-CZ - MacOS X 10.6.0 - Chrome 10.0.648.127
 '705c46ae79f33a9bffc212182269fcdc', // */* - cs-CZ - MacOS X 10.6.0 - Chrome 10.0.648.127
+'497b65d1aae99c4837a47d91b30adc7f', // cs-CZ - MacOS X 10.6.0 - Chrome 10.0.648.133
+'526e528d66798e3567b4a1d0b7788bf0', // */* - cs-CZ - MacOS X 10.6.0 - Chrome 10.0.648.133
 '4b4683065172ec84c8554d01653def27', // cs-CZ - MacOS X 10.6.1 - Chrome 8.0.552.215
 '8d444b431ccf85f68042d176e2986329', // */* - cs-CZ - MacOS X 10.6.1 - Chrome 8.0.552.215
 '285aa99012a9253b0df592f0a7840236', // cs-CZ - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -6020,6 +6620,8 @@ $browsers_fingerprints = array(
 '7d7350f20e84b4a358e87723a995815c', // */* - cs-CZ - MacOS X 10.6.1 - Chrome 9.0.597.107
 '5abc6b4148a045523e6054f8e4e189ad', // cs-CZ - MacOS X 10.6.1 - Chrome 10.0.648.127
 'e95364354b31d9e4af852e25769042f0', // */* - cs-CZ - MacOS X 10.6.1 - Chrome 10.0.648.127
+'ac2667f58bc2846965c42342e076e599', // cs-CZ - MacOS X 10.6.1 - Chrome 10.0.648.133
+'4e054cc749dbf3e1164094efd054bccc', // */* - cs-CZ - MacOS X 10.6.1 - Chrome 10.0.648.133
 '4b4683065172ec84c8554d01653def27', // cs-CZ - MacOS X 10.6.2 - Chrome 8.0.552.215
 '8d444b431ccf85f68042d176e2986329', // */* - cs-CZ - MacOS X 10.6.2 - Chrome 8.0.552.215
 '285aa99012a9253b0df592f0a7840236', // cs-CZ - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -6040,6 +6642,8 @@ $browsers_fingerprints = array(
 '7d7350f20e84b4a358e87723a995815c', // */* - cs-CZ - MacOS X 10.6.2 - Chrome 9.0.597.107
 '5abc6b4148a045523e6054f8e4e189ad', // cs-CZ - MacOS X 10.6.2 - Chrome 10.0.648.127
 'e95364354b31d9e4af852e25769042f0', // */* - cs-CZ - MacOS X 10.6.2 - Chrome 10.0.648.127
+'ac2667f58bc2846965c42342e076e599', // cs-CZ - MacOS X 10.6.2 - Chrome 10.0.648.133
+'4e054cc749dbf3e1164094efd054bccc', // */* - cs-CZ - MacOS X 10.6.2 - Chrome 10.0.648.133
 '639eb17a8690bad9c6ddcbd69e1328a9', // cs-CZ - MacOS X 10.6.3 - Chrome 8.0.552.215
 '4ff30d30b7fd753a9c3a8f1193cbcdd2', // */* - cs-CZ - MacOS X 10.6.3 - Chrome 8.0.552.215
 '5ff586c8ad6024a6cca9ea040dedc5e2', // cs-CZ - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -6060,6 +6664,8 @@ $browsers_fingerprints = array(
 '1fee935bf48ec3dc6e62bf8af454bed9', // */* - cs-CZ - MacOS X 10.6.3 - Chrome 9.0.597.107
 '2d1e11f407ee8db345d90e6ade1cf315', // cs-CZ - MacOS X 10.6.3 - Chrome 10.0.648.127
 '238584ba1a64233beba1672597b37551', // */* - cs-CZ - MacOS X 10.6.3 - Chrome 10.0.648.127
+'88db1fce114ad20bb83f05ddc0a0a97e', // cs-CZ - MacOS X 10.6.3 - Chrome 10.0.648.133
+'ce88a1ee95a9325e4ee8d2c16dd7720d', // */* - cs-CZ - MacOS X 10.6.3 - Chrome 10.0.648.133
 '4d3ac128d070ae98b9a32d87c65bdd1a', // cs-CZ - MacOS X 10.6.4 - Chrome 8.0.552.215
 'cd97c7a460db87c722750ea610d17ba0', // */* - cs-CZ - MacOS X 10.6.4 - Chrome 8.0.552.215
 'a80881fb47094073ede1ef1cc5896d60', // cs-CZ - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -6080,6 +6686,8 @@ $browsers_fingerprints = array(
 'b51ef359370b4888e6132c7037e62f5d', // */* - cs-CZ - MacOS X 10.6.4 - Chrome 9.0.597.107
 'c959f701296eff42c6d5489d458f3a3c', // cs-CZ - MacOS X 10.6.4 - Chrome 10.0.648.127
 '9c72550756900357c58f99a50b6ff763', // */* - cs-CZ - MacOS X 10.6.4 - Chrome 10.0.648.127
+'39e7882c95e5e10bad9021f875585657', // cs-CZ - MacOS X 10.6.4 - Chrome 10.0.648.133
+'772db277cd77870b619381e5669e20ec', // */* - cs-CZ - MacOS X 10.6.4 - Chrome 10.0.648.133
 'd5a0098b5daafbe7c62a0de435bff747', // cs-CZ - MacOS X 10.6.5 - Chrome 8.0.552.215
 'ccc63b625be94e41d151b6ec7891e755', // */* - cs-CZ - MacOS X 10.6.5 - Chrome 8.0.552.215
 'a2c081b5167ff8fb21bc46ba6bab07ef', // cs-CZ - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -6100,6 +6708,8 @@ $browsers_fingerprints = array(
 '9ba2495580be7030bedc6ad0064a054b', // */* - cs-CZ - MacOS X 10.6.5 - Chrome 9.0.597.107
 '19a1725a0aab35da599fd51f7d5e5d49', // cs-CZ - MacOS X 10.6.5 - Chrome 10.0.648.127
 'ef83749684bc44cc2aeaf5c77d19e336', // */* - cs-CZ - MacOS X 10.6.5 - Chrome 10.0.648.127
+'4f89d6f37f0cdc7cc2ccba0611facc9b', // cs-CZ - MacOS X 10.6.5 - Chrome 10.0.648.133
+'03a697b7853561d318891a1f1de2be41', // */* - cs-CZ - MacOS X 10.6.5 - Chrome 10.0.648.133
 'c60ba980b19e6f4af09f52dfbfc78762', // cs-CZ - MacOS X 10.6.6 - Chrome 8.0.552.215
 '49517d3e0540d0b69fa70ea17db66be5', // */* - cs-CZ - MacOS X 10.6.6 - Chrome 8.0.552.215
 '2df1f59267ce1ad1d38dd3df008509fc', // cs-CZ - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -6120,6 +6730,8 @@ $browsers_fingerprints = array(
 '612d2ed545e2b1163cdc5783489a9e3d', // */* - cs-CZ - MacOS X 10.6.6 - Chrome 9.0.597.107
 'db9e7b84f2cdbfa80d7424c3462e9201', // cs-CZ - MacOS X 10.6.6 - Chrome 10.0.648.127
 '4c8da858f1a71b20d7ea3ae100f7c071', // */* - cs-CZ - MacOS X 10.6.6 - Chrome 10.0.648.127
+'86a864ee8457823c5d06a4c38500b097', // cs-CZ - MacOS X 10.6.6 - Chrome 10.0.648.133
+'234d3bae4da3c363f50b0abc48693ef9', // */* - cs-CZ - MacOS X 10.6.6 - Chrome 10.0.648.133
 '277c4db309c5133c9dc1bd5ac2c5406d', // cs-CZ - Linux - Chrome 8.0.552.215
 '2ea980a5c4f0dc01ca714c46d83b8ed0', // */* - cs-CZ - Linux - Chrome 8.0.552.215
 '2dbe66637d22c0bc2771f6f774c2d04d', // cs-CZ - Linux - Chrome 8.0.552.224
@@ -6140,6 +6752,8 @@ $browsers_fingerprints = array(
 'a9303de0ca6c425c7549aed8066df89a', // */* - cs-CZ - Linux - Chrome 9.0.597.107
 '2f128871974aff48c83fe8f6806db091', // cs-CZ - Linux - Chrome 10.0.648.127
 '8f5112285ae22ca769cfa7530777dd8d', // */* - cs-CZ - Linux - Chrome 10.0.648.127
+'f85d5b7660cdce711bf67e3b82900475', // cs-CZ - Linux - Chrome 10.0.648.133
+'6cab6b5e4f7657a45a0404c3671aa7b3', // */* - cs-CZ - Linux - Chrome 10.0.648.133
 'bdbfb9134f91028adcb52b8fa43615ef', // cs-CZ - Linux 64 - Chrome 8.0.552.215
 'b9f862dc22d2a30c2e6342fa20e7d1e1', // */* - cs-CZ - Linux 64 - Chrome 8.0.552.215
 '5540ed65827b96c37f6398b7b9d6619f', // cs-CZ - Linux 64 - Chrome 8.0.552.224
@@ -6160,6 +6774,8 @@ $browsers_fingerprints = array(
 'cdde8913034c5b3d6692748ac939087d', // */* - cs-CZ - Linux 64 - Chrome 9.0.597.107
 '4989af3093a08bdff0e9511c67e36439', // cs-CZ - Linux 64 - Chrome 10.0.648.127
 '6c70b3f5b6c356cd1e8b6c7b2bc964b8', // */* - cs-CZ - Linux 64 - Chrome 10.0.648.127
+'c1599f9e5c87ce619dd9e599006caff8', // cs-CZ - Linux 64 - Chrome 10.0.648.133
+'b20dfd82e2ed0c63ef88a370aa6366c9', // */* - cs-CZ - Linux 64 - Chrome 10.0.648.133
 'f8b70305d96fc81b1c08b6c21dc9a1a3', // sk-SK - Windows XP - Chrome 8.0.552.215
 'b451e2fec939e26539273af510fd56ff', // */* - sk-SK - Windows XP - Chrome 8.0.552.215
 'bed1a86180da29b7c5d051c1b482c160', // sk-SK - Windows XP - Chrome 8.0.552.224
@@ -6180,6 +6796,8 @@ $browsers_fingerprints = array(
 '128be51d557d72cdb5f93fa322e0d0a6', // */* - sk-SK - Windows XP - Chrome 9.0.597.107
 'c78009b75a8e23ffd63a90d45de5a4b5', // sk-SK - Windows XP - Chrome 10.0.648.127
 '2a212c5823f06f4bec3f0482cfaefa73', // */* - sk-SK - Windows XP - Chrome 10.0.648.127
+'a74adc8b10083726b1fb74b1832326e6', // sk-SK - Windows XP - Chrome 10.0.648.133
+'b864dc0cfeebae3b7bd3e32af15482be', // */* - sk-SK - Windows XP - Chrome 10.0.648.133
 '901cfcd0fd7644e611e022669e7dad86', // sk-SK - Windows 2003 - Chrome 8.0.552.215
 'baf1978887d692c446b0e9df1e9773ba', // */* - sk-SK - Windows 2003 - Chrome 8.0.552.215
 '0d98846d9c40b9c3c2d71cdcb1e63296', // sk-SK - Windows 2003 - Chrome 8.0.552.224
@@ -6200,6 +6818,8 @@ $browsers_fingerprints = array(
 '56bc6c4f3434c33395718e05cc5eabb4', // */* - sk-SK - Windows 2003 - Chrome 9.0.597.107
 'd0fdd9e2674461d3a07468183e0092eb', // sk-SK - Windows 2003 - Chrome 10.0.648.127
 '2c14a4ca77de249d89d26febf7def578', // */* - sk-SK - Windows 2003 - Chrome 10.0.648.127
+'928728a26a7614a99895aae873a5a5b8', // sk-SK - Windows 2003 - Chrome 10.0.648.133
+'f759146ff624474cf1602ab004a4cf3e', // */* - sk-SK - Windows 2003 - Chrome 10.0.648.133
 '231487872598346bb2998ac65594e2a0', // sk-SK - Windows Vista - Chrome 8.0.552.215
 '4f758f7804fda751686395c38c166b62', // */* - sk-SK - Windows Vista - Chrome 8.0.552.215
 'c8139228e7fabb25b6f038cace43b5af', // sk-SK - Windows Vista - Chrome 8.0.552.224
@@ -6220,6 +6840,8 @@ $browsers_fingerprints = array(
 '342da39b9ad01acaf3ab6352bbf971df', // */* - sk-SK - Windows Vista - Chrome 9.0.597.107
 'f3678b3d6f59cf8d83efae4508ee701c', // sk-SK - Windows Vista - Chrome 10.0.648.127
 '607f2ef52490e3d8111cdfd4be671ab8', // */* - sk-SK - Windows Vista - Chrome 10.0.648.127
+'8278b142876eb8a055af875b11ec7059', // sk-SK - Windows Vista - Chrome 10.0.648.133
+'17c3a2be0841650fc9729c66563cb495', // */* - sk-SK - Windows Vista - Chrome 10.0.648.133
 '423ec60884cd680cb7f44b9d850253bc', // sk-SK - Windows 7 - Chrome 8.0.552.215
 'bcb154ea762ed58698f8b70ef281d8ab', // */* - sk-SK - Windows 7 - Chrome 8.0.552.215
 '04494adef8ad863cfd47a1dcc3eecedd', // sk-SK - Windows 7 - Chrome 8.0.552.224
@@ -6240,6 +6862,8 @@ $browsers_fingerprints = array(
 'e1edfa94a2fb7f7bfbfe0479f6dbb73f', // */* - sk-SK - Windows 7 - Chrome 9.0.597.107
 '80a03b314deaa0c161b194310ab7aacf', // sk-SK - Windows 7 - Chrome 10.0.648.127
 '613b9ff49c9b42b57774c27b7c04e4d1', // */* - sk-SK - Windows 7 - Chrome 10.0.648.127
+'813c9004d9fb3972a646f07c5658c310', // sk-SK - Windows 7 - Chrome 10.0.648.133
+'5419ccf75f220893b2a574768ed8e90d', // */* - sk-SK - Windows 7 - Chrome 10.0.648.133
 'f20bcf4f7db1a720b2d1e7d8664a150b', // sk-SK - MacOS X 10.5.8 - Chrome 8.0.552.215
 '4ac561b61ccb4d10465abe9820ec08d8', // */* - sk-SK - MacOS X 10.5.8 - Chrome 8.0.552.215
 '61d839cf6f0b9cf9c5fd9d702085ed44', // sk-SK - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -6260,6 +6884,8 @@ $browsers_fingerprints = array(
 '02fc4b4d732583a080e75841fc5b5de9', // */* - sk-SK - MacOS X 10.5.8 - Chrome 9.0.597.107
 '8b058b71035686a9b5b7752e7722fe73', // sk-SK - MacOS X 10.5.8 - Chrome 10.0.648.127
 '2736b3867bf16f18758459777d6de9da', // */* - sk-SK - MacOS X 10.5.8 - Chrome 10.0.648.127
+'2fc9c748ecda7350537786665068af33', // sk-SK - MacOS X 10.5.8 - Chrome 10.0.648.133
+'30888919803debc47501b1c01feeda30', // */* - sk-SK - MacOS X 10.5.8 - Chrome 10.0.648.133
 '1e2c8bb63462f87311cd24c6800e6d22', // sk-SK - MacOS X 10.6.0 - Chrome 8.0.552.215
 '6d4ec84ec4d4c65c97cd72777d4b1d7c', // */* - sk-SK - MacOS X 10.6.0 - Chrome 8.0.552.215
 'c7860e5bcb38ec42e87f96cf780f55ed', // sk-SK - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -6280,6 +6906,8 @@ $browsers_fingerprints = array(
 'a006dfcfd09826faa3ec689bceb1a8c5', // */* - sk-SK - MacOS X 10.6.0 - Chrome 9.0.597.107
 '2ea0e452be8aa06cf5a0f227023587f4', // sk-SK - MacOS X 10.6.0 - Chrome 10.0.648.127
 'be90f16b2d0faee6849fd428345a015e', // */* - sk-SK - MacOS X 10.6.0 - Chrome 10.0.648.127
+'8b772cbaa5abff7babb1548641b9de8e', // sk-SK - MacOS X 10.6.0 - Chrome 10.0.648.133
+'86cfb0fbe129e0a6ce77c28d1b7cb4ab', // */* - sk-SK - MacOS X 10.6.0 - Chrome 10.0.648.133
 'ae22ec7a9ea75ad1feb2265f69086cbe', // sk-SK - MacOS X 10.6.1 - Chrome 8.0.552.215
 'd4db1ba9ed4336b507eefe2ef008436f', // */* - sk-SK - MacOS X 10.6.1 - Chrome 8.0.552.215
 'f4e7207c7ecbe0ffcd697bbea6ecfefb', // sk-SK - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -6300,6 +6928,8 @@ $browsers_fingerprints = array(
 '4f5b4a82cacf4259652279cdc1ab7c87', // */* - sk-SK - MacOS X 10.6.1 - Chrome 9.0.597.107
 'fa2c1317cd1410127173000ed4d1d07d', // sk-SK - MacOS X 10.6.1 - Chrome 10.0.648.127
 'f151eaa5a28af6fcfc066eb32ea322d7', // */* - sk-SK - MacOS X 10.6.1 - Chrome 10.0.648.127
+'067d4440b549b3302ad117643136a280', // sk-SK - MacOS X 10.6.1 - Chrome 10.0.648.133
+'3597ce8712eaea6e752a11bd8470c9df', // */* - sk-SK - MacOS X 10.6.1 - Chrome 10.0.648.133
 'ae22ec7a9ea75ad1feb2265f69086cbe', // sk-SK - MacOS X 10.6.2 - Chrome 8.0.552.215
 'd4db1ba9ed4336b507eefe2ef008436f', // */* - sk-SK - MacOS X 10.6.2 - Chrome 8.0.552.215
 'f4e7207c7ecbe0ffcd697bbea6ecfefb', // sk-SK - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -6320,6 +6950,8 @@ $browsers_fingerprints = array(
 '4f5b4a82cacf4259652279cdc1ab7c87', // */* - sk-SK - MacOS X 10.6.2 - Chrome 9.0.597.107
 'fa2c1317cd1410127173000ed4d1d07d', // sk-SK - MacOS X 10.6.2 - Chrome 10.0.648.127
 'f151eaa5a28af6fcfc066eb32ea322d7', // */* - sk-SK - MacOS X 10.6.2 - Chrome 10.0.648.127
+'067d4440b549b3302ad117643136a280', // sk-SK - MacOS X 10.6.2 - Chrome 10.0.648.133
+'3597ce8712eaea6e752a11bd8470c9df', // */* - sk-SK - MacOS X 10.6.2 - Chrome 10.0.648.133
 '6113008afaa2d73e001a53ea2d2cbf79', // sk-SK - MacOS X 10.6.3 - Chrome 8.0.552.215
 'dec143ffd9b471e2f3599799a486268a', // */* - sk-SK - MacOS X 10.6.3 - Chrome 8.0.552.215
 '20b6a099a9d2859be23013901ae34cdf', // sk-SK - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -6340,6 +6972,8 @@ $browsers_fingerprints = array(
 '9270c2a2d838e5f37b7877f99ed79bb5', // */* - sk-SK - MacOS X 10.6.3 - Chrome 9.0.597.107
 'd5aedd291894f7b352c159fb2a52bcd3', // sk-SK - MacOS X 10.6.3 - Chrome 10.0.648.127
 '82421b24659fa573259167cf01252c31', // */* - sk-SK - MacOS X 10.6.3 - Chrome 10.0.648.127
+'48c5b00f00eba4fc2872ae22a0d817e9', // sk-SK - MacOS X 10.6.3 - Chrome 10.0.648.133
+'49a8feb1622c61d2d3f4b9efc679435b', // */* - sk-SK - MacOS X 10.6.3 - Chrome 10.0.648.133
 '1cc6bc4ff56d9ecce610a308d92918ff', // sk-SK - MacOS X 10.6.4 - Chrome 8.0.552.215
 '39b3c48c6cc8f3fe4e41a865a2ba6076', // */* - sk-SK - MacOS X 10.6.4 - Chrome 8.0.552.215
 'e488a0355e8a510ee3913475a6660cec', // sk-SK - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -6360,6 +6994,8 @@ $browsers_fingerprints = array(
 '9edfad7c93eca5703c1bd37672810856', // */* - sk-SK - MacOS X 10.6.4 - Chrome 9.0.597.107
 '66b5fb81edc93c0a77b5986f32200104', // sk-SK - MacOS X 10.6.4 - Chrome 10.0.648.127
 '8636e5341ff90fb8f0534ff7ace168af', // */* - sk-SK - MacOS X 10.6.4 - Chrome 10.0.648.127
+'b371ced8c296b0932974d17424ea76a4', // sk-SK - MacOS X 10.6.4 - Chrome 10.0.648.133
+'8ce4220c41e1b8a594d29396e058c897', // */* - sk-SK - MacOS X 10.6.4 - Chrome 10.0.648.133
 '2bf0dec60f1262782d76710482d88dab', // sk-SK - MacOS X 10.6.5 - Chrome 8.0.552.215
 '1728a953b7e2729dea634e3033b31987', // */* - sk-SK - MacOS X 10.6.5 - Chrome 8.0.552.215
 '4728a25726b12991f79df843800da869', // sk-SK - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -6380,6 +7016,8 @@ $browsers_fingerprints = array(
 '88c0c4dc5ae2bfa57e62a2630453f771', // */* - sk-SK - MacOS X 10.6.5 - Chrome 9.0.597.107
 'a690f2f9d89ef462405a7a52e305eaff', // sk-SK - MacOS X 10.6.5 - Chrome 10.0.648.127
 'e478e2cbe5e2eabcfcf9af6bf9f27f29', // */* - sk-SK - MacOS X 10.6.5 - Chrome 10.0.648.127
+'daa598346cfb490db1a45518de3ac751', // sk-SK - MacOS X 10.6.5 - Chrome 10.0.648.133
+'74275c78e4ee6dd018b3761a9f01ddc0', // */* - sk-SK - MacOS X 10.6.5 - Chrome 10.0.648.133
 'f2bf63d21178ec6ce7db88ac9d1c5a5c', // sk-SK - MacOS X 10.6.6 - Chrome 8.0.552.215
 '6cf0254dbae7cb8c45d5bac0c8834cfb', // */* - sk-SK - MacOS X 10.6.6 - Chrome 8.0.552.215
 '23249c3e3643aeb363af374a7a19d1c4', // sk-SK - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -6400,6 +7038,8 @@ $browsers_fingerprints = array(
 '33cf3dda5886c6154950a9f3c9be0cb2', // */* - sk-SK - MacOS X 10.6.6 - Chrome 9.0.597.107
 'e56b6c26854a89c3e7991bdbdf8b9069', // sk-SK - MacOS X 10.6.6 - Chrome 10.0.648.127
 '26a59d4aad7311cd68c6c2b02b736bbc', // */* - sk-SK - MacOS X 10.6.6 - Chrome 10.0.648.127
+'fc11132eba52eecc6a141ec13ad4418e', // sk-SK - MacOS X 10.6.6 - Chrome 10.0.648.133
+'4327f9b35e6ee538c11b014de70b249f', // */* - sk-SK - MacOS X 10.6.6 - Chrome 10.0.648.133
 '1cce21e77feb6007c943dfa5ff1625d6', // sk-SK - Linux - Chrome 8.0.552.215
 '8bbc4667efee6ebddcc877d78ffeb93f', // */* - sk-SK - Linux - Chrome 8.0.552.215
 'cb3e71a7ed250e3e9325abe5b95ed28f', // sk-SK - Linux - Chrome 8.0.552.224
@@ -6420,6 +7060,8 @@ $browsers_fingerprints = array(
 'c8ca047c09650d0e64f88434e76f4fd1', // */* - sk-SK - Linux - Chrome 9.0.597.107
 '90d7297b0a9ac7a0f2ab754dcec8208e', // sk-SK - Linux - Chrome 10.0.648.127
 '2c494b365d426ce3a300a3077bd8b7f0', // */* - sk-SK - Linux - Chrome 10.0.648.127
+'07b0ead16e8086e1bcdc86ab3c3c9012', // sk-SK - Linux - Chrome 10.0.648.133
+'3c0c239a0b19df268070b2ef745f662b', // */* - sk-SK - Linux - Chrome 10.0.648.133
 '9c35a18e352b12201579c31e4945e269', // sk-SK - Linux 64 - Chrome 8.0.552.215
 '633c0543e7e83db7bed1ae22ac34cd69', // */* - sk-SK - Linux 64 - Chrome 8.0.552.215
 'd6ef28bd7f0e5acdfc2bd8de94b33c34', // sk-SK - Linux 64 - Chrome 8.0.552.224
@@ -6440,6 +7082,8 @@ $browsers_fingerprints = array(
 '640754901601fc2e190e1df4520ae3f3', // */* - sk-SK - Linux 64 - Chrome 9.0.597.107
 'd905b2a5304ffb83b78b7d58633380e4', // sk-SK - Linux 64 - Chrome 10.0.648.127
 '3a7f24bce99e7d93642207d9b61bc2e6', // */* - sk-SK - Linux 64 - Chrome 10.0.648.127
+'6bcf4d5b9bbf14b7792838e59af525b6', // sk-SK - Linux 64 - Chrome 10.0.648.133
+'364a0b5a9d5d1e3b9c373ca211a4f277', // */* - sk-SK - Linux 64 - Chrome 10.0.648.133
 'a9dc078bacdda27e8ebd20790a8d7e97', // hr-HR - Windows XP - Chrome 8.0.552.215
 '79d2fd32eeb39e521dfd1e4147e404fa', // */* - hr-HR - Windows XP - Chrome 8.0.552.215
 '2ca363e8a3c5935241298a38127ebbce', // hr-HR - Windows XP - Chrome 8.0.552.224
@@ -6460,6 +7104,8 @@ $browsers_fingerprints = array(
 'f62fb08b9674519ad7e33f7e08ae28a1', // */* - hr-HR - Windows XP - Chrome 9.0.597.107
 '0419fba2fde13c7bb161505aa33e20de', // hr-HR - Windows XP - Chrome 10.0.648.127
 '156a1f14eb0e98083532fe2d136054da', // */* - hr-HR - Windows XP - Chrome 10.0.648.127
+'b33ca0c0007c4a9b84d8d40952fb66c1', // hr-HR - Windows XP - Chrome 10.0.648.133
+'6e1961e1785a13ecfc97f11f638153e1', // */* - hr-HR - Windows XP - Chrome 10.0.648.133
 'ac73455459e13ea2cf77066367cd5f91', // hr-HR - Windows 2003 - Chrome 8.0.552.215
 'f88da9c508d1b833e47560ec5bf85e20', // */* - hr-HR - Windows 2003 - Chrome 8.0.552.215
 '0be212291c1e11bcb303e98d7c821343', // hr-HR - Windows 2003 - Chrome 8.0.552.224
@@ -6480,6 +7126,8 @@ $browsers_fingerprints = array(
 '70a368d4e2b8284cf95f1346f9aa67cd', // */* - hr-HR - Windows 2003 - Chrome 9.0.597.107
 'd299b80a0ed13821c4965bb6d250cbc4', // hr-HR - Windows 2003 - Chrome 10.0.648.127
 '26bf36ce2f4b9c5f191d9e5315b508c2', // */* - hr-HR - Windows 2003 - Chrome 10.0.648.127
+'fc78b54dc1982db54a9e89287604aa92', // hr-HR - Windows 2003 - Chrome 10.0.648.133
+'5febbeb2fb63fc6b5624299e6ceb5980', // */* - hr-HR - Windows 2003 - Chrome 10.0.648.133
 'd4dbeeee9a124623210ca9e097d55f37', // hr-HR - Windows Vista - Chrome 8.0.552.215
 '2a7ac82ba6d0340619f0640cb444a00f', // */* - hr-HR - Windows Vista - Chrome 8.0.552.215
 '55ec79859cd66ec9b8a2c5f2f73658b1', // hr-HR - Windows Vista - Chrome 8.0.552.224
@@ -6500,6 +7148,8 @@ $browsers_fingerprints = array(
 'db2fd5d52730a16ad9c8d6037b0d09d3', // */* - hr-HR - Windows Vista - Chrome 9.0.597.107
 '062b7fe12e86da9b0ab9f28be4803cd2', // hr-HR - Windows Vista - Chrome 10.0.648.127
 '1620d9cfbd926dbc5f4c3010698eb485', // */* - hr-HR - Windows Vista - Chrome 10.0.648.127
+'c0bd4c3c51ffda0c31c159e1ac6e7cd6', // hr-HR - Windows Vista - Chrome 10.0.648.133
+'4b06ea9dffd9c31f2b623b4a0952fa54', // */* - hr-HR - Windows Vista - Chrome 10.0.648.133
 'ebdae42ac66adccda3214296b9db4c57', // hr-HR - Windows 7 - Chrome 8.0.552.215
 '919092df78df8892360d934d4d699243', // */* - hr-HR - Windows 7 - Chrome 8.0.552.215
 '1f4eea73b1cb85e404cfdf86713b98d7', // hr-HR - Windows 7 - Chrome 8.0.552.224
@@ -6520,6 +7170,8 @@ $browsers_fingerprints = array(
 '06bc324540a68963fc682b4bc55e2afc', // */* - hr-HR - Windows 7 - Chrome 9.0.597.107
 'd673de7c927d4d32541a3d0e3c7b24d2', // hr-HR - Windows 7 - Chrome 10.0.648.127
 '3bd8983358e44702ffb43a4c967e48fe', // */* - hr-HR - Windows 7 - Chrome 10.0.648.127
+'409d0c7e25ed1a207e64c7821df6e0e0', // hr-HR - Windows 7 - Chrome 10.0.648.133
+'1e23f7e7c8d041df2b929fc520e234aa', // */* - hr-HR - Windows 7 - Chrome 10.0.648.133
 '3e6a1ab96e0c44312bb6c8a7a3d30ef0', // hr-HR - MacOS X 10.5.8 - Chrome 8.0.552.215
 'ff39476684d8e2ab3d2bf3ff76143646', // */* - hr-HR - MacOS X 10.5.8 - Chrome 8.0.552.215
 '838a17f4a4587c6dc1a5213a71d30b81', // hr-HR - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -6540,6 +7192,8 @@ $browsers_fingerprints = array(
 'd01eb50ff4bd54eca68dd6b01b9f5920', // */* - hr-HR - MacOS X 10.5.8 - Chrome 9.0.597.107
 'a17fdcfe2e105f86b673443ec63876a6', // hr-HR - MacOS X 10.5.8 - Chrome 10.0.648.127
 '37951c287a7561bd0c4fb1043308d562', // */* - hr-HR - MacOS X 10.5.8 - Chrome 10.0.648.127
+'78f71b37fba992f8b43a57b369d01510', // hr-HR - MacOS X 10.5.8 - Chrome 10.0.648.133
+'87c313c8c3d14888a4aded0593ea2149', // */* - hr-HR - MacOS X 10.5.8 - Chrome 10.0.648.133
 'cca831bee61b2901b0e704f7a7d74c81', // hr-HR - MacOS X 10.6.0 - Chrome 8.0.552.215
 'ed0b9e92f7ab4b6070dffd89df13cf0b', // */* - hr-HR - MacOS X 10.6.0 - Chrome 8.0.552.215
 'c676db4f8dac0fb8ca1372819e2a6dc6', // hr-HR - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -6560,6 +7214,8 @@ $browsers_fingerprints = array(
 '35329af608f68caa4279a70d0c0b02af', // */* - hr-HR - MacOS X 10.6.0 - Chrome 9.0.597.107
 'b0b3befad25adfba393a5fa2377fd428', // hr-HR - MacOS X 10.6.0 - Chrome 10.0.648.127
 'd3c19fb72d59a33fe46f972785b57578', // */* - hr-HR - MacOS X 10.6.0 - Chrome 10.0.648.127
+'2e3b80ac0dd0aeaeac4b8e753a96923e', // hr-HR - MacOS X 10.6.0 - Chrome 10.0.648.133
+'0e43eb2b4578ec0146a9e7b313e66c77', // */* - hr-HR - MacOS X 10.6.0 - Chrome 10.0.648.133
 'a561c904025f3da8e6f02404afe267ba', // hr-HR - MacOS X 10.6.1 - Chrome 8.0.552.215
 '1a7266670206bb43c4c30ade6927790f', // */* - hr-HR - MacOS X 10.6.1 - Chrome 8.0.552.215
 'b677675fa83e18a58c314538d348a361', // hr-HR - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -6580,6 +7236,8 @@ $browsers_fingerprints = array(
 '0721b43fdd8efdae29fdcfeb40a3bf77', // */* - hr-HR - MacOS X 10.6.1 - Chrome 9.0.597.107
 '97c1cb2d81bdc2c9250e13c739de80bf', // hr-HR - MacOS X 10.6.1 - Chrome 10.0.648.127
 'c2f68e884f2525d5da6d9b67a68e160f', // */* - hr-HR - MacOS X 10.6.1 - Chrome 10.0.648.127
+'ffba121049dad06b9ff2359777c975f3', // hr-HR - MacOS X 10.6.1 - Chrome 10.0.648.133
+'de30d58cc38723e4b406abc92b4b94f6', // */* - hr-HR - MacOS X 10.6.1 - Chrome 10.0.648.133
 'a561c904025f3da8e6f02404afe267ba', // hr-HR - MacOS X 10.6.2 - Chrome 8.0.552.215
 '1a7266670206bb43c4c30ade6927790f', // */* - hr-HR - MacOS X 10.6.2 - Chrome 8.0.552.215
 'b677675fa83e18a58c314538d348a361', // hr-HR - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -6600,6 +7258,8 @@ $browsers_fingerprints = array(
 '0721b43fdd8efdae29fdcfeb40a3bf77', // */* - hr-HR - MacOS X 10.6.2 - Chrome 9.0.597.107
 '97c1cb2d81bdc2c9250e13c739de80bf', // hr-HR - MacOS X 10.6.2 - Chrome 10.0.648.127
 'c2f68e884f2525d5da6d9b67a68e160f', // */* - hr-HR - MacOS X 10.6.2 - Chrome 10.0.648.127
+'ffba121049dad06b9ff2359777c975f3', // hr-HR - MacOS X 10.6.2 - Chrome 10.0.648.133
+'de30d58cc38723e4b406abc92b4b94f6', // */* - hr-HR - MacOS X 10.6.2 - Chrome 10.0.648.133
 'd55530e9a1cb025cc898a0540ef7215e', // hr-HR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '27ea673d2f529ef098c5d2b8ab0c2130', // */* - hr-HR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '58bc19a7bc0eb26855b466b21dbe2ed0', // hr-HR - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -6620,6 +7280,8 @@ $browsers_fingerprints = array(
 '7ea3705600d187713ff7eb7f5d5eb28d', // */* - hr-HR - MacOS X 10.6.3 - Chrome 9.0.597.107
 'f1f5906cecfaf89ca0fbc090ddeff63a', // hr-HR - MacOS X 10.6.3 - Chrome 10.0.648.127
 'faf00e96cd4c1418f31b8456f7228eae', // */* - hr-HR - MacOS X 10.6.3 - Chrome 10.0.648.127
+'a69f39e6ba616ee72f2401e65922e7d8', // hr-HR - MacOS X 10.6.3 - Chrome 10.0.648.133
+'7061808029f36b52e3c07067fd931ec2', // */* - hr-HR - MacOS X 10.6.3 - Chrome 10.0.648.133
 '2fa8bfa62ff2b7d03d8442901a7c50f7', // hr-HR - MacOS X 10.6.4 - Chrome 8.0.552.215
 '0c93fb05e7e26caa79e52643c5535b95', // */* - hr-HR - MacOS X 10.6.4 - Chrome 8.0.552.215
 '9781b90cbc348f9e914c42be6db359d5', // hr-HR - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -6640,6 +7302,8 @@ $browsers_fingerprints = array(
 '1d30b22e8f01a7183bc7af6479d38c3f', // */* - hr-HR - MacOS X 10.6.4 - Chrome 9.0.597.107
 'd835e585593997fadf9704453269787b', // hr-HR - MacOS X 10.6.4 - Chrome 10.0.648.127
 '8e466a6ff6476702a869cc6b3ac416d4', // */* - hr-HR - MacOS X 10.6.4 - Chrome 10.0.648.127
+'17ce4e81552e0786ebf15e3444a9d698', // hr-HR - MacOS X 10.6.4 - Chrome 10.0.648.133
+'cd11d60567e641e2053ba252aa640ff9', // */* - hr-HR - MacOS X 10.6.4 - Chrome 10.0.648.133
 '24f5229361acd3155bc6ddfaee4155ee', // hr-HR - MacOS X 10.6.5 - Chrome 8.0.552.215
 'c925a690593db05de045360282f5c86d', // */* - hr-HR - MacOS X 10.6.5 - Chrome 8.0.552.215
 'ed610d07293a71ca138d124f51642fe2', // hr-HR - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -6660,6 +7324,8 @@ $browsers_fingerprints = array(
 'd7429ae288323433545d94cce30ef0f2', // */* - hr-HR - MacOS X 10.6.5 - Chrome 9.0.597.107
 'c7a7fd00478c994a1843af9acd4ca6f7', // hr-HR - MacOS X 10.6.5 - Chrome 10.0.648.127
 'd5b4de2e69226b05187918579671a8dc', // */* - hr-HR - MacOS X 10.6.5 - Chrome 10.0.648.127
+'fe61035c34d2df694375177a302879c3', // hr-HR - MacOS X 10.6.5 - Chrome 10.0.648.133
+'bc2054dbd627ab37092f06fcc0ba4867', // */* - hr-HR - MacOS X 10.6.5 - Chrome 10.0.648.133
 'a2338b0439c6119c525c3718c7ed3f82', // hr-HR - MacOS X 10.6.6 - Chrome 8.0.552.215
 'a7177cd23cdb7e5be254ad70568dfd60', // */* - hr-HR - MacOS X 10.6.6 - Chrome 8.0.552.215
 '14366b444bc78a9cb7c698d13247f459', // hr-HR - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -6680,6 +7346,8 @@ $browsers_fingerprints = array(
 'b34b00ae115d304a249f97fa93a10810', // */* - hr-HR - MacOS X 10.6.6 - Chrome 9.0.597.107
 '5dd65b9ad2264fc95e6bdde7e00257de', // hr-HR - MacOS X 10.6.6 - Chrome 10.0.648.127
 '1f48bea7494c262a9d6f96134551011e', // */* - hr-HR - MacOS X 10.6.6 - Chrome 10.0.648.127
+'5695ae3a41ae1c6eafcfc81585aae1de', // hr-HR - MacOS X 10.6.6 - Chrome 10.0.648.133
+'b3db8d2c73dd92341087916047a6c3c6', // */* - hr-HR - MacOS X 10.6.6 - Chrome 10.0.648.133
 '34f5336c6c1b1241c84bd0d48d2b8a46', // hr-HR - Linux - Chrome 8.0.552.215
 '2236d37b78d5b54c3fa40208c8899dd3', // */* - hr-HR - Linux - Chrome 8.0.552.215
 '5460b0aa9c0ad348cbb144b3a1cc61ce', // hr-HR - Linux - Chrome 8.0.552.224
@@ -6700,6 +7368,8 @@ $browsers_fingerprints = array(
 '10619a59d0f3c646d935264a1112e2e2', // */* - hr-HR - Linux - Chrome 9.0.597.107
 '4eb5dbc4550da2a80836e1871d926f2c', // hr-HR - Linux - Chrome 10.0.648.127
 'faf3e3209516b48fac396bb956d692e3', // */* - hr-HR - Linux - Chrome 10.0.648.127
+'52869aab5ec53c968b6512c2ed22fca3', // hr-HR - Linux - Chrome 10.0.648.133
+'a50ce82a5f280d029eac7829bf2c7c16', // */* - hr-HR - Linux - Chrome 10.0.648.133
 '64307db558be2e4624f929a628d7a219', // hr-HR - Linux 64 - Chrome 8.0.552.215
 '25b111f8a9595c4d8ab5f4943771e7c3', // */* - hr-HR - Linux 64 - Chrome 8.0.552.215
 '9f477ebccfd02ba8cc0fc0d93a541b98', // hr-HR - Linux 64 - Chrome 8.0.552.224
@@ -6720,6 +7390,8 @@ $browsers_fingerprints = array(
 'b28a002b775488696f6b6376251c97ee', // */* - hr-HR - Linux 64 - Chrome 9.0.597.107
 '8120a08076e7538253de610b1ffbc5f9', // hr-HR - Linux 64 - Chrome 10.0.648.127
 '15a96040e727121ce36b1f8ef4fe53f1', // */* - hr-HR - Linux 64 - Chrome 10.0.648.127
+'382d141a6be144eaca0b91d598131412', // hr-HR - Linux 64 - Chrome 10.0.648.133
+'79c2f7745604bf9871e1afe7ee1450bf', // */* - hr-HR - Linux 64 - Chrome 10.0.648.133
 '0f34a13d8694a8d9b204cd4fe7b865ed', // ru-RU - Windows XP - Chrome 8.0.552.215
 '9da7a16a91496595233889eb34b6c92b', // */* - ru-RU - Windows XP - Chrome 8.0.552.215
 'f5dbb7782f8301694167c74e881f96da', // ru-RU - Windows XP - Chrome 8.0.552.224
@@ -6740,6 +7412,8 @@ $browsers_fingerprints = array(
 'cb6a3cdd5edbc13a29d463d456d75713', // */* - ru-RU - Windows XP - Chrome 9.0.597.107
 '1722e29f4c980d5fe0f5ab0e63438657', // ru-RU - Windows XP - Chrome 10.0.648.127
 'acbeeb046ebb740ae5fad1aea30e066a', // */* - ru-RU - Windows XP - Chrome 10.0.648.127
+'506e9f0a0ad6ca061a109c9fac6308f8', // ru-RU - Windows XP - Chrome 10.0.648.133
+'c864eecdf80fcefe981a943e9ad761e6', // */* - ru-RU - Windows XP - Chrome 10.0.648.133
 'a05d12b4f0178007a4279e717226b2ed', // ru-RU - Windows 2003 - Chrome 8.0.552.215
 '4751608b4a3d9ab8f8d986d2ab9dbfc7', // */* - ru-RU - Windows 2003 - Chrome 8.0.552.215
 '6fcfa140b0d07f56c095aa4dd465e551', // ru-RU - Windows 2003 - Chrome 8.0.552.224
@@ -6760,6 +7434,8 @@ $browsers_fingerprints = array(
 '2173438e8961af9ab19f6c318b04043b', // */* - ru-RU - Windows 2003 - Chrome 9.0.597.107
 'e1d991887a7acef71518e34a3f8357e5', // ru-RU - Windows 2003 - Chrome 10.0.648.127
 'c3baf9c9e137015b947e4a7a8d479b28', // */* - ru-RU - Windows 2003 - Chrome 10.0.648.127
+'777fa2092ce898a887a1b3a03fc2ada6', // ru-RU - Windows 2003 - Chrome 10.0.648.133
+'5c7b3d7111bf20b54adfefc17ebeaaea', // */* - ru-RU - Windows 2003 - Chrome 10.0.648.133
 'b87e7e57c95d7e5fe31a04588f4ed15c', // ru-RU - Windows Vista - Chrome 8.0.552.215
 'eb8f72a6b03bcb22642f6221c16233f6', // */* - ru-RU - Windows Vista - Chrome 8.0.552.215
 'aa4d0ab5a75e22f1b0cb20b886bc738f', // ru-RU - Windows Vista - Chrome 8.0.552.224
@@ -6780,6 +7456,8 @@ $browsers_fingerprints = array(
 '3050d8b29fa795f55c39c1a0a85881e2', // */* - ru-RU - Windows Vista - Chrome 9.0.597.107
 '72793b6672bdeeb2cb592c93ee8b304d', // ru-RU - Windows Vista - Chrome 10.0.648.127
 '6f96450a18c40fbeccab5c699c209574', // */* - ru-RU - Windows Vista - Chrome 10.0.648.127
+'e720bfaf3d34a40896aa0d4c715bb08f', // ru-RU - Windows Vista - Chrome 10.0.648.133
+'cc62a169cdf18a18d19d5089590717c9', // */* - ru-RU - Windows Vista - Chrome 10.0.648.133
 '0005c9bb8ee48c5535d8589ec15ac17a', // ru-RU - Windows 7 - Chrome 8.0.552.215
 '6faf47b675b66ab6548703ff97012983', // */* - ru-RU - Windows 7 - Chrome 8.0.552.215
 '13c6e6758a53f936ce8be681ff271cca', // ru-RU - Windows 7 - Chrome 8.0.552.224
@@ -6800,6 +7478,8 @@ $browsers_fingerprints = array(
 '5885a32d4146def5731dc5728b970e8d', // */* - ru-RU - Windows 7 - Chrome 9.0.597.107
 'b026c705f67e9f9d4100104d12b3f79b', // ru-RU - Windows 7 - Chrome 10.0.648.127
 '23f9ff8b4f5552a16dd2a07d9b166791', // */* - ru-RU - Windows 7 - Chrome 10.0.648.127
+'79d9c8aa79cf0e8003e2d7469ad5afd4', // ru-RU - Windows 7 - Chrome 10.0.648.133
+'9db24c2f1f235bd58a0531b47d57df27', // */* - ru-RU - Windows 7 - Chrome 10.0.648.133
 '54462b7a5094b2c52cf7e75f3c341bcd', // ru-RU - MacOS X 10.5.8 - Chrome 8.0.552.215
 '9322e9d4c9694b5841f80da006229160', // */* - ru-RU - MacOS X 10.5.8 - Chrome 8.0.552.215
 '760992e4ec3881107626588495c01576', // ru-RU - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -6820,6 +7500,8 @@ $browsers_fingerprints = array(
 'fa597e6a39b357d01385373ec8e28351', // */* - ru-RU - MacOS X 10.5.8 - Chrome 9.0.597.107
 'ed3f3c8fe6c62c4d3a6a7b0c8f18aba3', // ru-RU - MacOS X 10.5.8 - Chrome 10.0.648.127
 '215c7e56c1681d620f8c0142f336d73a', // */* - ru-RU - MacOS X 10.5.8 - Chrome 10.0.648.127
+'766ddf305096dcd2bb176431a029d9b4', // ru-RU - MacOS X 10.5.8 - Chrome 10.0.648.133
+'a15332e293112e0d0e872b86fb5738a9', // */* - ru-RU - MacOS X 10.5.8 - Chrome 10.0.648.133
 '11ccd1982701e3e34d8882a6127f0a7b', // ru-RU - MacOS X 10.6.0 - Chrome 8.0.552.215
 'e5d438d0445ab85a3fac754881bf2409', // */* - ru-RU - MacOS X 10.6.0 - Chrome 8.0.552.215
 'b44e8ba91c331835488336124fec565d', // ru-RU - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -6840,6 +7522,8 @@ $browsers_fingerprints = array(
 'eb1cc8af625c2578b75eee298d97d35a', // */* - ru-RU - MacOS X 10.6.0 - Chrome 9.0.597.107
 'c96000e6fb55076b45623f8888549023', // ru-RU - MacOS X 10.6.0 - Chrome 10.0.648.127
 '4bd3aec13c7cff1719244d297d3d34d7', // */* - ru-RU - MacOS X 10.6.0 - Chrome 10.0.648.127
+'5eb809fb48a01033697edf4943605175', // ru-RU - MacOS X 10.6.0 - Chrome 10.0.648.133
+'56e1a7c5a7bf16ef1aa3363c14460783', // */* - ru-RU - MacOS X 10.6.0 - Chrome 10.0.648.133
 'd541391be4fb776645fb79ce18ebff8b', // ru-RU - MacOS X 10.6.1 - Chrome 8.0.552.215
 '5bab1140ba5b183258b4817f7227223d', // */* - ru-RU - MacOS X 10.6.1 - Chrome 8.0.552.215
 'bb7e10c71eac9e313e77777a5f7c9989', // ru-RU - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -6860,6 +7544,8 @@ $browsers_fingerprints = array(
 'be3b251bdb3987a934d5fcc3b60910d9', // */* - ru-RU - MacOS X 10.6.1 - Chrome 9.0.597.107
 'a85e51e33a36a0a7f745176360614d79', // ru-RU - MacOS X 10.6.1 - Chrome 10.0.648.127
 '3cdc83b127341cca0d16087822e77399', // */* - ru-RU - MacOS X 10.6.1 - Chrome 10.0.648.127
+'94f22ee2038da6af13f70d9214e82ab0', // ru-RU - MacOS X 10.6.1 - Chrome 10.0.648.133
+'34676a02b643d47263d31065a79ac97c', // */* - ru-RU - MacOS X 10.6.1 - Chrome 10.0.648.133
 'd541391be4fb776645fb79ce18ebff8b', // ru-RU - MacOS X 10.6.2 - Chrome 8.0.552.215
 '5bab1140ba5b183258b4817f7227223d', // */* - ru-RU - MacOS X 10.6.2 - Chrome 8.0.552.215
 'bb7e10c71eac9e313e77777a5f7c9989', // ru-RU - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -6880,6 +7566,8 @@ $browsers_fingerprints = array(
 'be3b251bdb3987a934d5fcc3b60910d9', // */* - ru-RU - MacOS X 10.6.2 - Chrome 9.0.597.107
 'a85e51e33a36a0a7f745176360614d79', // ru-RU - MacOS X 10.6.2 - Chrome 10.0.648.127
 '3cdc83b127341cca0d16087822e77399', // */* - ru-RU - MacOS X 10.6.2 - Chrome 10.0.648.127
+'94f22ee2038da6af13f70d9214e82ab0', // ru-RU - MacOS X 10.6.2 - Chrome 10.0.648.133
+'34676a02b643d47263d31065a79ac97c', // */* - ru-RU - MacOS X 10.6.2 - Chrome 10.0.648.133
 '07a6bdcd229d6bd2ab65358e06b65297', // ru-RU - MacOS X 10.6.3 - Chrome 8.0.552.215
 '9aa2d68c247d9e37d84c9b26c69796ce', // */* - ru-RU - MacOS X 10.6.3 - Chrome 8.0.552.215
 '22e9a27687fb6f063c2ffc47d24b657c', // ru-RU - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -6900,6 +7588,8 @@ $browsers_fingerprints = array(
 'be3cf0ef09d880c08acbac56567a6e9e', // */* - ru-RU - MacOS X 10.6.3 - Chrome 9.0.597.107
 'e5f78e41aea9b12dcbc78c940b035358', // ru-RU - MacOS X 10.6.3 - Chrome 10.0.648.127
 '086e0939c73df24bf68abbc3f95a7e0e', // */* - ru-RU - MacOS X 10.6.3 - Chrome 10.0.648.127
+'4a54d38f2179d974b61073b43b39ba0e', // ru-RU - MacOS X 10.6.3 - Chrome 10.0.648.133
+'b886fe732f23af3788bf56c9e61b538f', // */* - ru-RU - MacOS X 10.6.3 - Chrome 10.0.648.133
 '7d897f8d55d74a96cc02e9a9a2b2e4f2', // ru-RU - MacOS X 10.6.4 - Chrome 8.0.552.215
 '38cae076b614bf78395376882dc65eb0', // */* - ru-RU - MacOS X 10.6.4 - Chrome 8.0.552.215
 '91c2c0c4bc60b19881e719a2d7c3749a', // ru-RU - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -6920,6 +7610,8 @@ $browsers_fingerprints = array(
 'dab96360eab3118af4c2774c8213cd95', // */* - ru-RU - MacOS X 10.6.4 - Chrome 9.0.597.107
 '9d67d89dc82b4f293db0d1a9f840df49', // ru-RU - MacOS X 10.6.4 - Chrome 10.0.648.127
 'b58afe9b44d4cd79d0bc0643937704e2', // */* - ru-RU - MacOS X 10.6.4 - Chrome 10.0.648.127
+'bade3d8e3d906cbed3bf3425888030ac', // ru-RU - MacOS X 10.6.4 - Chrome 10.0.648.133
+'869ae4f709e6d8187b2bad32dfa6bebf', // */* - ru-RU - MacOS X 10.6.4 - Chrome 10.0.648.133
 '58220a2e5babe097f4bb76cacbfde3f3', // ru-RU - MacOS X 10.6.5 - Chrome 8.0.552.215
 'ed00654165036687b65b00f33dab6827', // */* - ru-RU - MacOS X 10.6.5 - Chrome 8.0.552.215
 '5288c6b4174c3f6890051a72c4559e12', // ru-RU - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -6940,6 +7632,8 @@ $browsers_fingerprints = array(
 '4cba095fa75ab61838b4b49d738902fd', // */* - ru-RU - MacOS X 10.6.5 - Chrome 9.0.597.107
 '12c77fc5f73450aa7806dfa8b0af95b0', // ru-RU - MacOS X 10.6.5 - Chrome 10.0.648.127
 '539840e566f39817051f233552b2caf1', // */* - ru-RU - MacOS X 10.6.5 - Chrome 10.0.648.127
+'efddad2e8e213a745ff58841ba36ec95', // ru-RU - MacOS X 10.6.5 - Chrome 10.0.648.133
+'53a9bd9b0c5dbbe48d29800917c38877', // */* - ru-RU - MacOS X 10.6.5 - Chrome 10.0.648.133
 '9bf9f3263414367a49c2dda4406080d4', // ru-RU - MacOS X 10.6.6 - Chrome 8.0.552.215
 '1c3bbd92c6050403fa2d13af36dacf40', // */* - ru-RU - MacOS X 10.6.6 - Chrome 8.0.552.215
 '0aa5d06b7b5b2b6c7161dcc21903ca50', // ru-RU - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -6960,6 +7654,8 @@ $browsers_fingerprints = array(
 '64f93208405583b50c9ee6327f4c1418', // */* - ru-RU - MacOS X 10.6.6 - Chrome 9.0.597.107
 '658dca35ff7768f590a208a3a029778e', // ru-RU - MacOS X 10.6.6 - Chrome 10.0.648.127
 'c6285fe6a65ea8d61c51afc57e7aa421', // */* - ru-RU - MacOS X 10.6.6 - Chrome 10.0.648.127
+'b80b694d2d0be3103fb7d2c430671d27', // ru-RU - MacOS X 10.6.6 - Chrome 10.0.648.133
+'e4375129913dacf5122ad3d4e441cb93', // */* - ru-RU - MacOS X 10.6.6 - Chrome 10.0.648.133
 'ef21ca0ee744904227f1f69a4e3e8c95', // ru-RU - Linux - Chrome 8.0.552.215
 '01b3cccbd9362d0948c74e22ae50caca', // */* - ru-RU - Linux - Chrome 8.0.552.215
 '81b3b948bdaf2fd88050aa1431a7b4ce', // ru-RU - Linux - Chrome 8.0.552.224
@@ -6980,6 +7676,8 @@ $browsers_fingerprints = array(
 '4ef2e6b333422b06868f3aa2e93b772e', // */* - ru-RU - Linux - Chrome 9.0.597.107
 '21c72f98e91dadeee121e223121e6bdc', // ru-RU - Linux - Chrome 10.0.648.127
 '5124a5f0423c0168d221e2881e5bb90b', // */* - ru-RU - Linux - Chrome 10.0.648.127
+'ae1048df4b6236ed250bab1c32a4c7c1', // ru-RU - Linux - Chrome 10.0.648.133
+'ae11ce81e24dd0129c20a421eb001f9b', // */* - ru-RU - Linux - Chrome 10.0.648.133
 'a5a7e4611e24923f364e9e81f0fe60b8', // ru-RU - Linux 64 - Chrome 8.0.552.215
 'ba9dcb2a67a44d9533d01a2316f58783', // */* - ru-RU - Linux 64 - Chrome 8.0.552.215
 '94e75bc6a319eb539acc52ab89047813', // ru-RU - Linux 64 - Chrome 8.0.552.224
@@ -7000,6 +7698,8 @@ $browsers_fingerprints = array(
 '2c97c62cbf87f794456438c257d8bbd1', // */* - ru-RU - Linux 64 - Chrome 9.0.597.107
 'a90ca8d893719dea671865f82dd52c76', // ru-RU - Linux 64 - Chrome 10.0.648.127
 'd7cd394c39297688fc08e661a0ff4046', // */* - ru-RU - Linux 64 - Chrome 10.0.648.127
+'b994ecf59c6db168d9261460522e1a47', // ru-RU - Linux 64 - Chrome 10.0.648.133
+'8ed69dff3721af25b0624bc9874aad04', // */* - ru-RU - Linux 64 - Chrome 10.0.648.133
 'd2dccc379cb6c9bd1697958de442e00c', // uk-UA - Windows XP - Chrome 8.0.552.215
 '712a0059d8dc78e8c8490135bac6a264', // */* - uk-UA - Windows XP - Chrome 8.0.552.215
 '6295245a19e82335843465bdab03cc58', // uk-UA - Windows XP - Chrome 8.0.552.224
@@ -7020,6 +7720,8 @@ $browsers_fingerprints = array(
 '5f9a869f863e05bcc167ea1d70e87132', // */* - uk-UA - Windows XP - Chrome 9.0.597.107
 '5deb1b6e25d6382ebc109325ccbbe752', // uk-UA - Windows XP - Chrome 10.0.648.127
 '2f6fc025cbcf616f22e182ca200cc8cc', // */* - uk-UA - Windows XP - Chrome 10.0.648.127
+'d39d4cac090635a450f905814b9b7a73', // uk-UA - Windows XP - Chrome 10.0.648.133
+'7902bdbfb3936c2d6cc1c1d12fc05d94', // */* - uk-UA - Windows XP - Chrome 10.0.648.133
 'dc8395f2f236985a414a7c8cce1bc51f', // uk-UA - Windows 2003 - Chrome 8.0.552.215
 '1393d52f5c499ea9cc23d7b617c48e78', // */* - uk-UA - Windows 2003 - Chrome 8.0.552.215
 '7e024203d737618607ccd34df68b75aa', // uk-UA - Windows 2003 - Chrome 8.0.552.224
@@ -7040,6 +7742,8 @@ $browsers_fingerprints = array(
 'b7968c20269ca06e088fa7ce5f9db856', // */* - uk-UA - Windows 2003 - Chrome 9.0.597.107
 'a73118b2c5cf816ccea95fa43fc0b8ac', // uk-UA - Windows 2003 - Chrome 10.0.648.127
 'e17e2c96d398d406cd13b310c9abda4d', // */* - uk-UA - Windows 2003 - Chrome 10.0.648.127
+'e79ab3a9f9500b73977ae5fe04cf56a8', // uk-UA - Windows 2003 - Chrome 10.0.648.133
+'131856abaa53c13f9042dbb066b6abc9', // */* - uk-UA - Windows 2003 - Chrome 10.0.648.133
 'a5a225205e20d2a9e53b0fb158178040', // uk-UA - Windows Vista - Chrome 8.0.552.215
 'd8758afe1b97196033e57a1f6186b920', // */* - uk-UA - Windows Vista - Chrome 8.0.552.215
 'dfbc10cb8bb8dbe04ab83798892ede56', // uk-UA - Windows Vista - Chrome 8.0.552.224
@@ -7060,6 +7764,8 @@ $browsers_fingerprints = array(
 '79bc99855082d8d174cbd4aac3175d11', // */* - uk-UA - Windows Vista - Chrome 9.0.597.107
 'ad0cab1e26baca4680ed945705176433', // uk-UA - Windows Vista - Chrome 10.0.648.127
 'e8e7da56b0e578eeb4ba28300eba6606', // */* - uk-UA - Windows Vista - Chrome 10.0.648.127
+'ab6103fc2cfd5395b5b6bc7a025f5a46', // uk-UA - Windows Vista - Chrome 10.0.648.133
+'e7a15b0e9ce476a6be860c860d080772', // */* - uk-UA - Windows Vista - Chrome 10.0.648.133
 '218653fec55e2e2249911cb7ce75320e', // uk-UA - Windows 7 - Chrome 8.0.552.215
 '5f3e760f684d84d448e7095fe057a46a', // */* - uk-UA - Windows 7 - Chrome 8.0.552.215
 'dfb23b8b90441fe10eca0289b9e7d64b', // uk-UA - Windows 7 - Chrome 8.0.552.224
@@ -7080,6 +7786,8 @@ $browsers_fingerprints = array(
 'df1925bcb7feb4b315ac446abb6c9c86', // */* - uk-UA - Windows 7 - Chrome 9.0.597.107
 '0d4273345d5d74af4689790004e3afc0', // uk-UA - Windows 7 - Chrome 10.0.648.127
 '88d7828feea5e55a0011fd96f457bedd', // */* - uk-UA - Windows 7 - Chrome 10.0.648.127
+'0d0125edddc809c1ddb728a8edf2f5d8', // uk-UA - Windows 7 - Chrome 10.0.648.133
+'c9983c8d7ed0079b31da4cfd526d765c', // */* - uk-UA - Windows 7 - Chrome 10.0.648.133
 '416446bd3be12035b9e51668f2a4c77f', // uk-UA - MacOS X 10.5.8 - Chrome 8.0.552.215
 '87028420f8f8b5e64e3d1c5584f05e17', // */* - uk-UA - MacOS X 10.5.8 - Chrome 8.0.552.215
 'cc0340e8745a4ab55fa1563b46c26522', // uk-UA - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -7100,6 +7808,8 @@ $browsers_fingerprints = array(
 '421477e10e380dc424b42c5e20893f26', // */* - uk-UA - MacOS X 10.5.8 - Chrome 9.0.597.107
 'f8606e2c32a69582b41a3a35c4f6d15f', // uk-UA - MacOS X 10.5.8 - Chrome 10.0.648.127
 'e15f63b46b152eb860025a06302543e1', // */* - uk-UA - MacOS X 10.5.8 - Chrome 10.0.648.127
+'075da25d1a9cc2ea241c097fb9f3cfc0', // uk-UA - MacOS X 10.5.8 - Chrome 10.0.648.133
+'646392e6ccd0b4c65fdc7e1247d4d1a8', // */* - uk-UA - MacOS X 10.5.8 - Chrome 10.0.648.133
 '64c4849f655f0d694d96ea6f1660a773', // uk-UA - MacOS X 10.6.0 - Chrome 8.0.552.215
 '6a65a0728c9b13fa66e94d0a3a74811a', // */* - uk-UA - MacOS X 10.6.0 - Chrome 8.0.552.215
 'dac975903da6c748780562dc32ee0c68', // uk-UA - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -7120,6 +7830,8 @@ $browsers_fingerprints = array(
 '722de13fccbc4435b84f7d6c79e9e1fe', // */* - uk-UA - MacOS X 10.6.0 - Chrome 9.0.597.107
 '26d0fd2a339c0d3e2e92cbc0878cec45', // uk-UA - MacOS X 10.6.0 - Chrome 10.0.648.127
 '186dc23602ef5eb088754fba28fab26a', // */* - uk-UA - MacOS X 10.6.0 - Chrome 10.0.648.127
+'62993cdc75ef5d8a1d1010a9dd48a30f', // uk-UA - MacOS X 10.6.0 - Chrome 10.0.648.133
+'521ac8016382b2cd9642ce7db21e902d', // */* - uk-UA - MacOS X 10.6.0 - Chrome 10.0.648.133
 '64d6011ef3bbc37180bf7b8a7ffe9352', // uk-UA - MacOS X 10.6.1 - Chrome 8.0.552.215
 'b8a781a3341d3b4efa9f82c3542c6e9b', // */* - uk-UA - MacOS X 10.6.1 - Chrome 8.0.552.215
 '41c563c78ea6592e23eb14fd743f1a29', // uk-UA - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -7140,6 +7852,8 @@ $browsers_fingerprints = array(
 '9fd818c41e47ca0480469ddabb8b0d6c', // */* - uk-UA - MacOS X 10.6.1 - Chrome 9.0.597.107
 '06d5a057de80195fd72d4adbecb263cd', // uk-UA - MacOS X 10.6.1 - Chrome 10.0.648.127
 'd411a361bbf90d042dc80a9bdb1d017a', // */* - uk-UA - MacOS X 10.6.1 - Chrome 10.0.648.127
+'7297f217a1306de89cdea622861599d5', // uk-UA - MacOS X 10.6.1 - Chrome 10.0.648.133
+'dbf9d17484b713eb5885dd63d08f40dc', // */* - uk-UA - MacOS X 10.6.1 - Chrome 10.0.648.133
 '64d6011ef3bbc37180bf7b8a7ffe9352', // uk-UA - MacOS X 10.6.2 - Chrome 8.0.552.215
 'b8a781a3341d3b4efa9f82c3542c6e9b', // */* - uk-UA - MacOS X 10.6.2 - Chrome 8.0.552.215
 '41c563c78ea6592e23eb14fd743f1a29', // uk-UA - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -7160,6 +7874,8 @@ $browsers_fingerprints = array(
 '9fd818c41e47ca0480469ddabb8b0d6c', // */* - uk-UA - MacOS X 10.6.2 - Chrome 9.0.597.107
 '06d5a057de80195fd72d4adbecb263cd', // uk-UA - MacOS X 10.6.2 - Chrome 10.0.648.127
 'd411a361bbf90d042dc80a9bdb1d017a', // */* - uk-UA - MacOS X 10.6.2 - Chrome 10.0.648.127
+'7297f217a1306de89cdea622861599d5', // uk-UA - MacOS X 10.6.2 - Chrome 10.0.648.133
+'dbf9d17484b713eb5885dd63d08f40dc', // */* - uk-UA - MacOS X 10.6.2 - Chrome 10.0.648.133
 '6e94d173fa0bfc51f2cec2989ecd1f3c', // uk-UA - MacOS X 10.6.3 - Chrome 8.0.552.215
 '1ae09b596ed379824977449b00ee00b6', // */* - uk-UA - MacOS X 10.6.3 - Chrome 8.0.552.215
 '77ffb6916f121369a9de22ced1b13415', // uk-UA - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -7180,6 +7896,8 @@ $browsers_fingerprints = array(
 '4079e0c4729607b7696b37e8e919e105', // */* - uk-UA - MacOS X 10.6.3 - Chrome 9.0.597.107
 '3e9fa2cca74e70ea840b697a615a4882', // uk-UA - MacOS X 10.6.3 - Chrome 10.0.648.127
 '5f110fe3e8589169f3179da42ada2267', // */* - uk-UA - MacOS X 10.6.3 - Chrome 10.0.648.127
+'870107e8415ff80a7b08d76c06236aea', // uk-UA - MacOS X 10.6.3 - Chrome 10.0.648.133
+'495c2d23a35c06aff61f480da4e0bb81', // */* - uk-UA - MacOS X 10.6.3 - Chrome 10.0.648.133
 '2aed7cded32ed5973dcb793e66bfe417', // uk-UA - MacOS X 10.6.4 - Chrome 8.0.552.215
 '10b6a7d089dddb728af0b8787e275738', // */* - uk-UA - MacOS X 10.6.4 - Chrome 8.0.552.215
 '474095490a54fb2a57ad8a7394495f58', // uk-UA - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -7200,6 +7918,8 @@ $browsers_fingerprints = array(
 'e9b8dc6bdc05553eaa9b5557488d2b39', // */* - uk-UA - MacOS X 10.6.4 - Chrome 9.0.597.107
 '50bdc36fdeb090f4bbc5147c423348c7', // uk-UA - MacOS X 10.6.4 - Chrome 10.0.648.127
 '1e5300fa9a46e7507a8ff37605cd7f99', // */* - uk-UA - MacOS X 10.6.4 - Chrome 10.0.648.127
+'02cba8723237584911b1ed3c256d5544', // uk-UA - MacOS X 10.6.4 - Chrome 10.0.648.133
+'e15b491b4a6caefe8ff2aa459a920797', // */* - uk-UA - MacOS X 10.6.4 - Chrome 10.0.648.133
 '3debe48fef326dab6827ce5c0fb75a11', // uk-UA - MacOS X 10.6.5 - Chrome 8.0.552.215
 'b5a19f97beb0700489f84d1bb8123984', // */* - uk-UA - MacOS X 10.6.5 - Chrome 8.0.552.215
 '40d9fb1a11c10a0b6af84e5d6f6dda56', // uk-UA - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -7220,6 +7940,8 @@ $browsers_fingerprints = array(
 '751d3cc3b811f0fe98bb3a5b4bb074cb', // */* - uk-UA - MacOS X 10.6.5 - Chrome 9.0.597.107
 '2dd22758711e88f64df05bf9467f84c0', // uk-UA - MacOS X 10.6.5 - Chrome 10.0.648.127
 '34806a30b2f605a2249e338fa6d1925c', // */* - uk-UA - MacOS X 10.6.5 - Chrome 10.0.648.127
+'7214fdf6bf9bd90ecc811443a6f6cbf7', // uk-UA - MacOS X 10.6.5 - Chrome 10.0.648.133
+'21a0e4eb63b9e5e78b4dbfe47c77e009', // */* - uk-UA - MacOS X 10.6.5 - Chrome 10.0.648.133
 '63bb7ff0386fb458e7c2a28e15f9a103', // uk-UA - MacOS X 10.6.6 - Chrome 8.0.552.215
 '3a6e11a14b76bdddcfb84287c493cede', // */* - uk-UA - MacOS X 10.6.6 - Chrome 8.0.552.215
 '3214e01b682b49341cc621af0b207fb5', // uk-UA - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -7240,6 +7962,8 @@ $browsers_fingerprints = array(
 'ee6434625b436405728892114a375b10', // */* - uk-UA - MacOS X 10.6.6 - Chrome 9.0.597.107
 '3405f0066126a5d9fe56c6463df67332', // uk-UA - MacOS X 10.6.6 - Chrome 10.0.648.127
 '42a034c022debc4ffe77f23af8f80e6e', // */* - uk-UA - MacOS X 10.6.6 - Chrome 10.0.648.127
+'d78f4b818bbe5f2dd9c2effe44bc14b5', // uk-UA - MacOS X 10.6.6 - Chrome 10.0.648.133
+'6246a96a5ab85632611403684264c1e5', // */* - uk-UA - MacOS X 10.6.6 - Chrome 10.0.648.133
 '7fde7af43463c20778d3f77953cf0cae', // uk-UA - Linux - Chrome 8.0.552.215
 '20618d5f0da7b8e753dfa0359c852006', // */* - uk-UA - Linux - Chrome 8.0.552.215
 '599eda908948574fee3e7cfa770c96b1', // uk-UA - Linux - Chrome 8.0.552.224
@@ -7260,6 +7984,8 @@ $browsers_fingerprints = array(
 '99f60289e2701b58b68c62f46a0ea44b', // */* - uk-UA - Linux - Chrome 9.0.597.107
 'd31c39b62a4dcb533bd47607f3f1d9cb', // uk-UA - Linux - Chrome 10.0.648.127
 '4a5d8c3787870b6ce00092bfddbe133f', // */* - uk-UA - Linux - Chrome 10.0.648.127
+'7f3c4f54bcc8dcd814b12636a68eba30', // uk-UA - Linux - Chrome 10.0.648.133
+'357d0b643581612c875257596a898738', // */* - uk-UA - Linux - Chrome 10.0.648.133
 '62e4ff79ea9d70f1f1f8a8264cc89d2f', // uk-UA - Linux 64 - Chrome 8.0.552.215
 '4aa7240a366a01900711ec35edff1200', // */* - uk-UA - Linux 64 - Chrome 8.0.552.215
 '93c1b5cf289649753ccad391a7b0e7d6', // uk-UA - Linux 64 - Chrome 8.0.552.224
@@ -7280,6 +8006,8 @@ $browsers_fingerprints = array(
 'cec6b5ac95086d3fae1fa0d1945a27f4', // */* - uk-UA - Linux 64 - Chrome 9.0.597.107
 '0aa6e0be33e1ec631cd9c8918a7f4419', // uk-UA - Linux 64 - Chrome 10.0.648.127
 '1ff8dc516f96f3e5c359144f4f0ff5fe', // */* - uk-UA - Linux 64 - Chrome 10.0.648.127
+'c8eaae8b2f35f4e3ba1a67fa8f29706b', // uk-UA - Linux 64 - Chrome 10.0.648.133
+'4df33b8e5eb754f93efedf05552dec7a', // */* - uk-UA - Linux 64 - Chrome 10.0.648.133
 'c084d1479446f5f9483947e5001f7957', // sr-RS - Windows XP - Chrome 8.0.552.215
 '23050834b67fd8d8e9f4bac42b2cf002', // */* - sr-RS - Windows XP - Chrome 8.0.552.215
 '986dacc144e35cada65bf58d7b09bf74', // sr-RS - Windows XP - Chrome 8.0.552.224
@@ -7300,6 +8028,8 @@ $browsers_fingerprints = array(
 '49bb95a19223b6625556e89ce9785616', // */* - sr-RS - Windows XP - Chrome 9.0.597.107
 'ce37eca0d2e730153c4bfa28f6412145', // sr-RS - Windows XP - Chrome 10.0.648.127
 '3d31b16b82fb66baa87d748353b993cc', // */* - sr-RS - Windows XP - Chrome 10.0.648.127
+'9038c0f37fa59336cc8717561f934258', // sr-RS - Windows XP - Chrome 10.0.648.133
+'2d65f8b55132df4861dbb229228b5907', // */* - sr-RS - Windows XP - Chrome 10.0.648.133
 'c536c2f784a83bdaad282aec65901f73', // sr-RS - Windows 2003 - Chrome 8.0.552.215
 '13e5808f90b3014cb18f9a32fe1a1209', // */* - sr-RS - Windows 2003 - Chrome 8.0.552.215
 '3a7c122725b651a17ffdbb76b42090bd', // sr-RS - Windows 2003 - Chrome 8.0.552.224
@@ -7320,6 +8050,8 @@ $browsers_fingerprints = array(
 'c788bd6abefbbd049eb1fcada60eef3e', // */* - sr-RS - Windows 2003 - Chrome 9.0.597.107
 'b6850a7a36a28ffe0c3c7eb9e19a2752', // sr-RS - Windows 2003 - Chrome 10.0.648.127
 'd357956bb2409109a5764b1e28447daf', // */* - sr-RS - Windows 2003 - Chrome 10.0.648.127
+'b075197b359343c1d511eaa5a40f283e', // sr-RS - Windows 2003 - Chrome 10.0.648.133
+'89e2aee9cb3778c0d648ff66de9da887', // */* - sr-RS - Windows 2003 - Chrome 10.0.648.133
 'c2565ddfcf5fad1913d41c5979ad5a4f', // sr-RS - Windows Vista - Chrome 8.0.552.215
 'efa242d75f3041c84777c5171e306fd0', // */* - sr-RS - Windows Vista - Chrome 8.0.552.215
 'b13ee9a2e5c76f9de1c73f339988f3d5', // sr-RS - Windows Vista - Chrome 8.0.552.224
@@ -7340,6 +8072,8 @@ $browsers_fingerprints = array(
 '72b0c32f3135d4a940654aaccc3685d7', // */* - sr-RS - Windows Vista - Chrome 9.0.597.107
 '4f0e1a8969c0b93316542b3c1c061fe9', // sr-RS - Windows Vista - Chrome 10.0.648.127
 '9b30baf4fe0071edd13a509686d6c902', // */* - sr-RS - Windows Vista - Chrome 10.0.648.127
+'e29b774c0992684c18ec68b5b36f9f23', // sr-RS - Windows Vista - Chrome 10.0.648.133
+'b5a9fde5cf7be22dde213b3081071f6d', // */* - sr-RS - Windows Vista - Chrome 10.0.648.133
 'b5a9fef865f5a254852dcdaaae70cd36', // sr-RS - Windows 7 - Chrome 8.0.552.215
 '5ad4e30d6d16a71a85ab32c09b0ee80f', // */* - sr-RS - Windows 7 - Chrome 8.0.552.215
 '5c221918f827e6e9e387813845fcf9cc', // sr-RS - Windows 7 - Chrome 8.0.552.224
@@ -7360,6 +8094,8 @@ $browsers_fingerprints = array(
 '4203ffdace69a2ac6d1cdbdfadb8224b', // */* - sr-RS - Windows 7 - Chrome 9.0.597.107
 '0e12ff62556d307c36702eb209aeca5b', // sr-RS - Windows 7 - Chrome 10.0.648.127
 '760db661b8abf0f933f65a72c50a024e', // */* - sr-RS - Windows 7 - Chrome 10.0.648.127
+'7bc03e655751b4a84d8e039f2d50f2df', // sr-RS - Windows 7 - Chrome 10.0.648.133
+'cd160a24df595ec423d8bf117924beb6', // */* - sr-RS - Windows 7 - Chrome 10.0.648.133
 'c7e5ab0d47e4d5630b004639211adfe7', // sr-RS - MacOS X 10.5.8 - Chrome 8.0.552.215
 '5d989610bbce5ced31289eb0933f6e18', // */* - sr-RS - MacOS X 10.5.8 - Chrome 8.0.552.215
 '7fc304f8c64949c0d58bc34faa15b0f3', // sr-RS - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -7380,6 +8116,8 @@ $browsers_fingerprints = array(
 '4f7172ff00ff65e907044b14898b81a2', // */* - sr-RS - MacOS X 10.5.8 - Chrome 9.0.597.107
 'f8d0a6df47f0e490df9e90f069cfe81d', // sr-RS - MacOS X 10.5.8 - Chrome 10.0.648.127
 '2db76a7d99f44319181f146ff8926a86', // */* - sr-RS - MacOS X 10.5.8 - Chrome 10.0.648.127
+'75562e25338f26e49edf5498f06a214c', // sr-RS - MacOS X 10.5.8 - Chrome 10.0.648.133
+'38423655ddac09b0df19b621f5a4dfae', // */* - sr-RS - MacOS X 10.5.8 - Chrome 10.0.648.133
 '236b8cc132310e1057e86d392eadeb57', // sr-RS - MacOS X 10.6.0 - Chrome 8.0.552.215
 'b14f307eddc4e9cfb26ddf671e603416', // */* - sr-RS - MacOS X 10.6.0 - Chrome 8.0.552.215
 'ebccfd3af2234a5ed63cdfaa0311c627', // sr-RS - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -7400,6 +8138,8 @@ $browsers_fingerprints = array(
 'c49b7159697d81f0f9950e45993e2b1f', // */* - sr-RS - MacOS X 10.6.0 - Chrome 9.0.597.107
 'bc482a3fef0cfc0af850947e70a97279', // sr-RS - MacOS X 10.6.0 - Chrome 10.0.648.127
 'fcf1b5d24a66fa4590c66e582b3ff45f', // */* - sr-RS - MacOS X 10.6.0 - Chrome 10.0.648.127
+'6d0276ae1f6a68fe46fa4f58dddbb845', // sr-RS - MacOS X 10.6.0 - Chrome 10.0.648.133
+'5a8d78ba88e36739e71e2cf6b7c83bf2', // */* - sr-RS - MacOS X 10.6.0 - Chrome 10.0.648.133
 'bf066ce691119e659e39786d09447a4d', // sr-RS - MacOS X 10.6.1 - Chrome 8.0.552.215
 '2ef4fdc4eb106a8190f6bff0e920ee71', // */* - sr-RS - MacOS X 10.6.1 - Chrome 8.0.552.215
 '599a74f9afc7926512142dcfe8418535', // sr-RS - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -7420,6 +8160,8 @@ $browsers_fingerprints = array(
 '492e53e8c5055cf1baa922a97ee6525d', // */* - sr-RS - MacOS X 10.6.1 - Chrome 9.0.597.107
 '5d9922e8c0aa4b471799b64459d7c080', // sr-RS - MacOS X 10.6.1 - Chrome 10.0.648.127
 '29bc79e31c293e3d6ce670c2c66c0334', // */* - sr-RS - MacOS X 10.6.1 - Chrome 10.0.648.127
+'39ef0b75d5fb30b9a53b8a854e010160', // sr-RS - MacOS X 10.6.1 - Chrome 10.0.648.133
+'52985cd22953680458fde4cc7fcdd550', // */* - sr-RS - MacOS X 10.6.1 - Chrome 10.0.648.133
 'bf066ce691119e659e39786d09447a4d', // sr-RS - MacOS X 10.6.2 - Chrome 8.0.552.215
 '2ef4fdc4eb106a8190f6bff0e920ee71', // */* - sr-RS - MacOS X 10.6.2 - Chrome 8.0.552.215
 '599a74f9afc7926512142dcfe8418535', // sr-RS - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -7440,6 +8182,8 @@ $browsers_fingerprints = array(
 '492e53e8c5055cf1baa922a97ee6525d', // */* - sr-RS - MacOS X 10.6.2 - Chrome 9.0.597.107
 '5d9922e8c0aa4b471799b64459d7c080', // sr-RS - MacOS X 10.6.2 - Chrome 10.0.648.127
 '29bc79e31c293e3d6ce670c2c66c0334', // */* - sr-RS - MacOS X 10.6.2 - Chrome 10.0.648.127
+'39ef0b75d5fb30b9a53b8a854e010160', // sr-RS - MacOS X 10.6.2 - Chrome 10.0.648.133
+'52985cd22953680458fde4cc7fcdd550', // */* - sr-RS - MacOS X 10.6.2 - Chrome 10.0.648.133
 '05dae731c190c45c8dade4a22c82181a', // sr-RS - MacOS X 10.6.3 - Chrome 8.0.552.215
 '43b2c2479ab5f96be5d4c0ea84c96d0c', // */* - sr-RS - MacOS X 10.6.3 - Chrome 8.0.552.215
 'ae7029e47da87f6dceb368fef4377be8', // sr-RS - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -7460,6 +8204,8 @@ $browsers_fingerprints = array(
 '66bade01eef319face209b02ac147d14', // */* - sr-RS - MacOS X 10.6.3 - Chrome 9.0.597.107
 '529513083194ea495831c9e4128dda0d', // sr-RS - MacOS X 10.6.3 - Chrome 10.0.648.127
 '60671615c0a1ad4a7f513fbeb7f25310', // */* - sr-RS - MacOS X 10.6.3 - Chrome 10.0.648.127
+'0199c750d97012650a959e290279c298', // sr-RS - MacOS X 10.6.3 - Chrome 10.0.648.133
+'5b85e5867c9cc514fe01e2b1f3f82e89', // */* - sr-RS - MacOS X 10.6.3 - Chrome 10.0.648.133
 '0eb4e2197cb2a3eba4bbb7042ac69ad1', // sr-RS - MacOS X 10.6.4 - Chrome 8.0.552.215
 '79ed8e38b1fa3b1784afe6bee5b1c0bc', // */* - sr-RS - MacOS X 10.6.4 - Chrome 8.0.552.215
 'cd10ce502a9d174fafa4607ea2a92b02', // sr-RS - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -7480,6 +8226,8 @@ $browsers_fingerprints = array(
 '9cfc4f5e8304b1228d65d694680985e3', // */* - sr-RS - MacOS X 10.6.4 - Chrome 9.0.597.107
 '4d4c03af9ff92d8bc2cfe355fddb1c79', // sr-RS - MacOS X 10.6.4 - Chrome 10.0.648.127
 '4d077c3211d590dc2ea0b85ffcf7ac01', // */* - sr-RS - MacOS X 10.6.4 - Chrome 10.0.648.127
+'24465336ab36a029748c08c204e992a5', // sr-RS - MacOS X 10.6.4 - Chrome 10.0.648.133
+'3c201559821c05c8faede552c87a802d', // */* - sr-RS - MacOS X 10.6.4 - Chrome 10.0.648.133
 'c3d233295220eee62a1d3b3f23decc0a', // sr-RS - MacOS X 10.6.5 - Chrome 8.0.552.215
 'e7b589f06fa1ed05dbc6be4b83ce84c7', // */* - sr-RS - MacOS X 10.6.5 - Chrome 8.0.552.215
 '8e5bed4ad0e9788a0a619b9fabc279b2', // sr-RS - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -7500,6 +8248,8 @@ $browsers_fingerprints = array(
 '438fd904dbfdbd461d91e9e9aa2cad46', // */* - sr-RS - MacOS X 10.6.5 - Chrome 9.0.597.107
 'bfaedafeda4726922f07508a14e4fae6', // sr-RS - MacOS X 10.6.5 - Chrome 10.0.648.127
 'bf9243592ad30a492dbcb810cfb78611', // */* - sr-RS - MacOS X 10.6.5 - Chrome 10.0.648.127
+'6bded400492b084aae9a277d05326cb6', // sr-RS - MacOS X 10.6.5 - Chrome 10.0.648.133
+'07fbe1f83246031a9153f86352d5a45f', // */* - sr-RS - MacOS X 10.6.5 - Chrome 10.0.648.133
 '3e25d47c730788f3884569e4496578cf', // sr-RS - MacOS X 10.6.6 - Chrome 8.0.552.215
 'bde2b41b0bcff6389b2241a69b095f6a', // */* - sr-RS - MacOS X 10.6.6 - Chrome 8.0.552.215
 '913f852ce103b8fa74855407ffd6e6e4', // sr-RS - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -7520,6 +8270,8 @@ $browsers_fingerprints = array(
 '3ed0639021ebc2e3ee85cc90ee51d2a2', // */* - sr-RS - MacOS X 10.6.6 - Chrome 9.0.597.107
 '33c999c1e746c2e0c3f7f3be4517684e', // sr-RS - MacOS X 10.6.6 - Chrome 10.0.648.127
 '29db03f2c2b0e2ab0cd80bea0f4a6cb0', // */* - sr-RS - MacOS X 10.6.6 - Chrome 10.0.648.127
+'9ad564e74ab15516e90a0976a9cbb61f', // sr-RS - MacOS X 10.6.6 - Chrome 10.0.648.133
+'fd79d2769e668e12651d82dc01e1e283', // */* - sr-RS - MacOS X 10.6.6 - Chrome 10.0.648.133
 '775373b02626de04fdaf3c0a7365ae1e', // sr-RS - Linux - Chrome 8.0.552.215
 'a8fa28716260bdac75479106e56ed098', // */* - sr-RS - Linux - Chrome 8.0.552.215
 'd9ffac8ca8d3c8a1b99e077c68d44fe5', // sr-RS - Linux - Chrome 8.0.552.224
@@ -7540,6 +8292,8 @@ $browsers_fingerprints = array(
 '5834ea466393887f5df3e2088eef5bcf', // */* - sr-RS - Linux - Chrome 9.0.597.107
 '4546290e4b22b36048bf0c5e003e062d', // sr-RS - Linux - Chrome 10.0.648.127
 'fcdd60abc68e3c9dc23764bd88aceb4c', // */* - sr-RS - Linux - Chrome 10.0.648.127
+'fbe4dad791f3d04c4bb8c35403a8b5e7', // sr-RS - Linux - Chrome 10.0.648.133
+'94f08f9d714c42d06eb530abdefd9b43', // */* - sr-RS - Linux - Chrome 10.0.648.133
 'c087338cf6e4e53f9563f7b3c10c98cb', // sr-RS - Linux 64 - Chrome 8.0.552.215
 '156738b69b3bfcfa8dbd0cf4ce95e309', // */* - sr-RS - Linux 64 - Chrome 8.0.552.215
 '3bf5698a43013a53ee8d7e5010245fbc', // sr-RS - Linux 64 - Chrome 8.0.552.224
@@ -7560,6 +8314,8 @@ $browsers_fingerprints = array(
 'f149a432e01ad54381819c4bc31f4d02', // */* - sr-RS - Linux 64 - Chrome 9.0.597.107
 '3e47f9b60e24547fc66de5d23d18f2d6', // sr-RS - Linux 64 - Chrome 10.0.648.127
 'a25c802ec8072a67f1301d60dc052146', // */* - sr-RS - Linux 64 - Chrome 10.0.648.127
+'f722813a29aa6b64f90ef91ff65a56c9', // sr-RS - Linux 64 - Chrome 10.0.648.133
+'22d88a1c67c64583334a02056d4c0530', // */* - sr-RS - Linux 64 - Chrome 10.0.648.133
 '9738c09c017dfc1d4fd8510bf344dd21', // ko-KR - Windows XP - Chrome 8.0.552.215
 '639b6ac6159d20011c7a86ce007b35e1', // */* - ko-KR - Windows XP - Chrome 8.0.552.215
 '7d799426e19254c7335332510608fd5a', // ko-KR - Windows XP - Chrome 8.0.552.224
@@ -7580,6 +8336,8 @@ $browsers_fingerprints = array(
 'c9c1ca2284f0605e56e025ab96013d6d', // */* - ko-KR - Windows XP - Chrome 9.0.597.107
 '1a5797c160fee33a081c278d7cf2dd82', // ko-KR - Windows XP - Chrome 10.0.648.127
 '184ee611658b17a31555fa82a1e93add', // */* - ko-KR - Windows XP - Chrome 10.0.648.127
+'9a29f07ac6fde0a38ae2fab899aefc57', // ko-KR - Windows XP - Chrome 10.0.648.133
+'c54cb964faa05e1a0cb2ef66225cf593', // */* - ko-KR - Windows XP - Chrome 10.0.648.133
 '193e129d9873ddcfb7ba736c0453b7e8', // ko-KR - Windows 2003 - Chrome 8.0.552.215
 '8ac5a113d7bb8e801edab419c7ba7d28', // */* - ko-KR - Windows 2003 - Chrome 8.0.552.215
 '9be8e2f5054f21111b5ecafc958efed6', // ko-KR - Windows 2003 - Chrome 8.0.552.224
@@ -7600,6 +8358,8 @@ $browsers_fingerprints = array(
 'dae0f230c53d17ce93066fbb4fea41da', // */* - ko-KR - Windows 2003 - Chrome 9.0.597.107
 '1ef71ad07128682dba091821583f0d0c', // ko-KR - Windows 2003 - Chrome 10.0.648.127
 '5d827feac2b13031cdd51776961b1668', // */* - ko-KR - Windows 2003 - Chrome 10.0.648.127
+'6583627f233284b3432962c1a5ba4350', // ko-KR - Windows 2003 - Chrome 10.0.648.133
+'4b071a95b169a57d8970e92288806bba', // */* - ko-KR - Windows 2003 - Chrome 10.0.648.133
 '9ebf9bad3fecc2e512ae4e5d8d7b45d1', // ko-KR - Windows Vista - Chrome 8.0.552.215
 'b2375f1d3ca95050088582a55580599a', // */* - ko-KR - Windows Vista - Chrome 8.0.552.215
 '301dcc2e0723f0fb6fe298e1c49b1d05', // ko-KR - Windows Vista - Chrome 8.0.552.224
@@ -7620,6 +8380,8 @@ $browsers_fingerprints = array(
 '3afaa23edec88e60c855f026db1fc079', // */* - ko-KR - Windows Vista - Chrome 9.0.597.107
 '8cef46f89debf62204815e5903bb2809', // ko-KR - Windows Vista - Chrome 10.0.648.127
 'f2ac8ec254d4fe7f10620adef7fb8cde', // */* - ko-KR - Windows Vista - Chrome 10.0.648.127
+'0a55b659decefa65527d341914ea817d', // ko-KR - Windows Vista - Chrome 10.0.648.133
+'5a77b59a3d173bd22adbd0871c325488', // */* - ko-KR - Windows Vista - Chrome 10.0.648.133
 '937c0978f9db52188aacf99d7928f2cf', // ko-KR - Windows 7 - Chrome 8.0.552.215
 '26e2597c36e196582f8ca0bd871e9157', // */* - ko-KR - Windows 7 - Chrome 8.0.552.215
 '88b914e70013c3ffa702faab92fadd5a', // ko-KR - Windows 7 - Chrome 8.0.552.224
@@ -7640,6 +8402,8 @@ $browsers_fingerprints = array(
 '6e7615d9f9dcbd1e27d1c9a0f129f1ed', // */* - ko-KR - Windows 7 - Chrome 9.0.597.107
 '7a750406658dc49aab28ccb0437d7b17', // ko-KR - Windows 7 - Chrome 10.0.648.127
 '04511954c24ca38ec0fad0c3a2162d41', // */* - ko-KR - Windows 7 - Chrome 10.0.648.127
+'bee076ee776fb274d349899d75eed22e', // ko-KR - Windows 7 - Chrome 10.0.648.133
+'8d8cf88b82c4eb0c3dc0b127b3b4b27b', // */* - ko-KR - Windows 7 - Chrome 10.0.648.133
 '2dfd9d9eb1f12defa08885854d29d8c1', // ko-KR - MacOS X 10.5.8 - Chrome 8.0.552.215
 'c1123f94e7cb997417e0a2783371a481', // */* - ko-KR - MacOS X 10.5.8 - Chrome 8.0.552.215
 'ad1d95aeea601c605c8cd3be78430c6d', // ko-KR - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -7660,6 +8424,8 @@ $browsers_fingerprints = array(
 '03c522a1fa09c1baf8e17da7f8e169ce', // */* - ko-KR - MacOS X 10.5.8 - Chrome 9.0.597.107
 'fec41c16c4b0b8f3468f11241fd236ee', // ko-KR - MacOS X 10.5.8 - Chrome 10.0.648.127
 '5adecf291060b17be6955bb9050b7d8f', // */* - ko-KR - MacOS X 10.5.8 - Chrome 10.0.648.127
+'6d9ab524b8d5babf1f97d3a9c130316f', // ko-KR - MacOS X 10.5.8 - Chrome 10.0.648.133
+'0426165f67e3c9c9c20e8b077dd0bad6', // */* - ko-KR - MacOS X 10.5.8 - Chrome 10.0.648.133
 '38e3c6c1db92856f3eea7a20a8e566cf', // ko-KR - MacOS X 10.6.0 - Chrome 8.0.552.215
 'de67ebccd7e87545b4e036cc77347c17', // */* - ko-KR - MacOS X 10.6.0 - Chrome 8.0.552.215
 'c534546a52a38d017f23e61a1193f06c', // ko-KR - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -7680,6 +8446,8 @@ $browsers_fingerprints = array(
 '60e8e06321987ac3cbfbf1b42b5965d1', // */* - ko-KR - MacOS X 10.6.0 - Chrome 9.0.597.107
 'bfc77391661e1954ce3c7234206e6b33', // ko-KR - MacOS X 10.6.0 - Chrome 10.0.648.127
 '74bf60213a705ba9354214e9ef3d68c0', // */* - ko-KR - MacOS X 10.6.0 - Chrome 10.0.648.127
+'3ef7f4cf6f6d0a11d648f8c84c4ce2ae', // ko-KR - MacOS X 10.6.0 - Chrome 10.0.648.133
+'4ab4d2e96d3cc152313af3c90f9ed418', // */* - ko-KR - MacOS X 10.6.0 - Chrome 10.0.648.133
 '4664a8337e66cdd032d604900a16da0b', // ko-KR - MacOS X 10.6.1 - Chrome 8.0.552.215
 'd89213ccf246c42cec7b5285fe292fce', // */* - ko-KR - MacOS X 10.6.1 - Chrome 8.0.552.215
 '8fc0a9fe590dc56bd9e90174ceded60d', // ko-KR - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -7700,6 +8468,8 @@ $browsers_fingerprints = array(
 '17292b732a311fbb998d9573d33f10ba', // */* - ko-KR - MacOS X 10.6.1 - Chrome 9.0.597.107
 'd73d840d64a4166ff275c98f54431437', // ko-KR - MacOS X 10.6.1 - Chrome 10.0.648.127
 'c34f85bbecab0958d271c8fd5ab3e906', // */* - ko-KR - MacOS X 10.6.1 - Chrome 10.0.648.127
+'1f96e45ee3a099668aad4638cb8f4800', // ko-KR - MacOS X 10.6.1 - Chrome 10.0.648.133
+'0ad3408eddb90f03b3dceacf08a1d603', // */* - ko-KR - MacOS X 10.6.1 - Chrome 10.0.648.133
 '4664a8337e66cdd032d604900a16da0b', // ko-KR - MacOS X 10.6.2 - Chrome 8.0.552.215
 'd89213ccf246c42cec7b5285fe292fce', // */* - ko-KR - MacOS X 10.6.2 - Chrome 8.0.552.215
 '8fc0a9fe590dc56bd9e90174ceded60d', // ko-KR - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -7720,6 +8490,8 @@ $browsers_fingerprints = array(
 '17292b732a311fbb998d9573d33f10ba', // */* - ko-KR - MacOS X 10.6.2 - Chrome 9.0.597.107
 'd73d840d64a4166ff275c98f54431437', // ko-KR - MacOS X 10.6.2 - Chrome 10.0.648.127
 'c34f85bbecab0958d271c8fd5ab3e906', // */* - ko-KR - MacOS X 10.6.2 - Chrome 10.0.648.127
+'1f96e45ee3a099668aad4638cb8f4800', // ko-KR - MacOS X 10.6.2 - Chrome 10.0.648.133
+'0ad3408eddb90f03b3dceacf08a1d603', // */* - ko-KR - MacOS X 10.6.2 - Chrome 10.0.648.133
 '89a032e0501568fc410666321e09df33', // ko-KR - MacOS X 10.6.3 - Chrome 8.0.552.215
 'cc6ecd3f94186bdcd425c752cdecfe9b', // */* - ko-KR - MacOS X 10.6.3 - Chrome 8.0.552.215
 '813fdaf78cbf998d1b333c050dc8797f', // ko-KR - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -7740,6 +8512,8 @@ $browsers_fingerprints = array(
 '4235c91378298129d275c385affad4a2', // */* - ko-KR - MacOS X 10.6.3 - Chrome 9.0.597.107
 '6492194eba563d2a9de9772225b82898', // ko-KR - MacOS X 10.6.3 - Chrome 10.0.648.127
 '08500d4870a445e34979cb3056b22a51', // */* - ko-KR - MacOS X 10.6.3 - Chrome 10.0.648.127
+'ee2b5c0abd919eeb97d8069dbd064343', // ko-KR - MacOS X 10.6.3 - Chrome 10.0.648.133
+'af946a5a910eb1d7dcc65ddd129a7eb1', // */* - ko-KR - MacOS X 10.6.3 - Chrome 10.0.648.133
 '94d200ace4708a477b96295cfe6e0d95', // ko-KR - MacOS X 10.6.4 - Chrome 8.0.552.215
 'd3fa41754b68916badf23974dc83bf76', // */* - ko-KR - MacOS X 10.6.4 - Chrome 8.0.552.215
 '19857ef5a999839c1e720338db899296', // ko-KR - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -7760,6 +8534,8 @@ $browsers_fingerprints = array(
 '42253382ee7e788a926fa6327d7a89da', // */* - ko-KR - MacOS X 10.6.4 - Chrome 9.0.597.107
 'c51ab4835d9e7323d7fb6b580601bfb9', // ko-KR - MacOS X 10.6.4 - Chrome 10.0.648.127
 'f235254f301de4a9ab70358dcd9d9652', // */* - ko-KR - MacOS X 10.6.4 - Chrome 10.0.648.127
+'de424891da865b4ba4d5b61f92ede7a5', // ko-KR - MacOS X 10.6.4 - Chrome 10.0.648.133
+'7fe822a8377102ac883fe927748f2542', // */* - ko-KR - MacOS X 10.6.4 - Chrome 10.0.648.133
 '57d888b6068e3d63f37e167caa685d45', // ko-KR - MacOS X 10.6.5 - Chrome 8.0.552.215
 '65016a1f516637910e236b53ea9bfb32', // */* - ko-KR - MacOS X 10.6.5 - Chrome 8.0.552.215
 'c80d958f48d38bff578bdd706aa3d383', // ko-KR - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -7780,6 +8556,8 @@ $browsers_fingerprints = array(
 '0bac17470a2e540e51741333e6b69b98', // */* - ko-KR - MacOS X 10.6.5 - Chrome 9.0.597.107
 '1854a11c953d51ee36caf85bff12ba50', // ko-KR - MacOS X 10.6.5 - Chrome 10.0.648.127
 '495e3146d4b5bc53db2609e6a88bcca5', // */* - ko-KR - MacOS X 10.6.5 - Chrome 10.0.648.127
+'85df725840f6da8630e16a569ffcf6bb', // ko-KR - MacOS X 10.6.5 - Chrome 10.0.648.133
+'1bd7b9cd3bf9faa265d9409dfabb7762', // */* - ko-KR - MacOS X 10.6.5 - Chrome 10.0.648.133
 '7e255f4adab6f05cc42c99a2d5b49ecf', // ko-KR - MacOS X 10.6.6 - Chrome 8.0.552.215
 'a1cd9e2f06672833572464da9ff8d78a', // */* - ko-KR - MacOS X 10.6.6 - Chrome 8.0.552.215
 'a08a4a31039460c40ecb5b4fa0842447', // ko-KR - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -7800,6 +8578,8 @@ $browsers_fingerprints = array(
 'e572c40388b7988749089d553d7388d9', // */* - ko-KR - MacOS X 10.6.6 - Chrome 9.0.597.107
 'b510e8717c08e7787a15decce99a02e4', // ko-KR - MacOS X 10.6.6 - Chrome 10.0.648.127
 'b56cf9970eb4a3706294b4398a127855', // */* - ko-KR - MacOS X 10.6.6 - Chrome 10.0.648.127
+'e31b28d63194e5036a72523d236083d6', // ko-KR - MacOS X 10.6.6 - Chrome 10.0.648.133
+'0b74ea698babe9cdbb82002f824dd20e', // */* - ko-KR - MacOS X 10.6.6 - Chrome 10.0.648.133
 '246aa9ae13c37afbb2114f6cc84d9ed3', // ko-KR - Linux - Chrome 8.0.552.215
 '9b283b24e9c03c9ca24935703fce7b71', // */* - ko-KR - Linux - Chrome 8.0.552.215
 'e503f6967bb52ce6cf34af0f2299c301', // ko-KR - Linux - Chrome 8.0.552.224
@@ -7820,6 +8600,8 @@ $browsers_fingerprints = array(
 '1aa2923b40e83c741cf1d7fbded8fe19', // */* - ko-KR - Linux - Chrome 9.0.597.107
 '85dffc586936ce0a047260500f178d37', // ko-KR - Linux - Chrome 10.0.648.127
 'e8537cc24b1e916d1c841df880c391a8', // */* - ko-KR - Linux - Chrome 10.0.648.127
+'431a50597f2733512e492a4296383f71', // ko-KR - Linux - Chrome 10.0.648.133
+'84a2322e377d73ab6913e81759c40c5e', // */* - ko-KR - Linux - Chrome 10.0.648.133
 '258dd95618dbedb20827add45ef412c0', // ko-KR - Linux 64 - Chrome 8.0.552.215
 'fe0b0247428ceb3cd776303759020beb', // */* - ko-KR - Linux 64 - Chrome 8.0.552.215
 'b700167dcde540ad111227b79d84e255', // ko-KR - Linux 64 - Chrome 8.0.552.224
@@ -7840,6 +8622,8 @@ $browsers_fingerprints = array(
 '69e76472dcb5a28b4c152d2e22a26895', // */* - ko-KR - Linux 64 - Chrome 9.0.597.107
 '1f7caaecd16bb8f464b50e925522ba1e', // ko-KR - Linux 64 - Chrome 10.0.648.127
 '5551956eeade60d31a2dcb237aa76e7d', // */* - ko-KR - Linux 64 - Chrome 10.0.648.127
+'03dd60190dd0e0f7b914c7c8e56a6c67', // ko-KR - Linux 64 - Chrome 10.0.648.133
+'39bf4e6a539da723a873d2faf5f25403', // */* - ko-KR - Linux 64 - Chrome 10.0.648.133
 '3f3d82df922c6971eff72e19e6f2dada', // zh-TW - Windows XP - Chrome 8.0.552.215
 'c4f6ad01c72466afe2b54bd35ab1c3ae', // */* - zh-TW - Windows XP - Chrome 8.0.552.215
 'edf1e5a4fff1464ae9f6017f06a2d768', // zh-TW - Windows XP - Chrome 8.0.552.224
@@ -7860,6 +8644,8 @@ $browsers_fingerprints = array(
 'd8cdeea75f0aa04e56169e7008466287', // */* - zh-TW - Windows XP - Chrome 9.0.597.107
 '9b449b8b3b14027af094ea4ca2b3e7a7', // zh-TW - Windows XP - Chrome 10.0.648.127
 '9a759180c62c6f4beda95f46a8669883', // */* - zh-TW - Windows XP - Chrome 10.0.648.127
+'b79d9822cb8b4ce0d7357b027b16e50f', // zh-TW - Windows XP - Chrome 10.0.648.133
+'175319ba0e88efa6c6737070611dadc0', // */* - zh-TW - Windows XP - Chrome 10.0.648.133
 '38cf4e357e32a8f0614f068a3c6ea301', // zh-TW - Windows 2003 - Chrome 8.0.552.215
 '5a646e7d27063dd146128f0c4af9e336', // */* - zh-TW - Windows 2003 - Chrome 8.0.552.215
 'a6fe891b568c54beac3b35e61377a87d', // zh-TW - Windows 2003 - Chrome 8.0.552.224
@@ -7880,6 +8666,8 @@ $browsers_fingerprints = array(
 '69fa8f57d6a2c469bacb61f289484504', // */* - zh-TW - Windows 2003 - Chrome 9.0.597.107
 '817c712894c4a730f25ba71e450e52bd', // zh-TW - Windows 2003 - Chrome 10.0.648.127
 '6d2907c5158e51ac9568f3038bb96a83', // */* - zh-TW - Windows 2003 - Chrome 10.0.648.127
+'16ebe8a82b2a162ecbf869b6fe335e6e', // zh-TW - Windows 2003 - Chrome 10.0.648.133
+'04d35362541a47984bf349f68626f895', // */* - zh-TW - Windows 2003 - Chrome 10.0.648.133
 '200c0361a353d729440d7d878362aa17', // zh-TW - Windows Vista - Chrome 8.0.552.215
 '37595f322432340cd3be4635d859929d', // */* - zh-TW - Windows Vista - Chrome 8.0.552.215
 'fb3a951df493fb84fb11059c5f8df5ca', // zh-TW - Windows Vista - Chrome 8.0.552.224
@@ -7900,6 +8688,8 @@ $browsers_fingerprints = array(
 'd86bbd1781e55cb8c127178643cd5a5f', // */* - zh-TW - Windows Vista - Chrome 9.0.597.107
 '418b404a2c39df3c1e604618a93b25a6', // zh-TW - Windows Vista - Chrome 10.0.648.127
 '2b9eb913ab7f33d2d4fda68619f39f06', // */* - zh-TW - Windows Vista - Chrome 10.0.648.127
+'710d7dfe0d8dceac3ba77c85d1879edb', // zh-TW - Windows Vista - Chrome 10.0.648.133
+'9beecf7d00650b3a9756fa35d3f729c7', // */* - zh-TW - Windows Vista - Chrome 10.0.648.133
 '3929c5507c9eb600fcadd9aba2f7e2d5', // zh-TW - Windows 7 - Chrome 8.0.552.215
 '66345e29d2fea07b97133409a759b14d', // */* - zh-TW - Windows 7 - Chrome 8.0.552.215
 '6a1390cd27878e36f9b760f06138dd83', // zh-TW - Windows 7 - Chrome 8.0.552.224
@@ -7920,6 +8710,8 @@ $browsers_fingerprints = array(
 '628953346c57756dfdf8d0aadb54b5ff', // */* - zh-TW - Windows 7 - Chrome 9.0.597.107
 '27d77fe03f809d915800ebecacb8c133', // zh-TW - Windows 7 - Chrome 10.0.648.127
 '8bca4faae5123d28a08452cb7faa8f8f', // */* - zh-TW - Windows 7 - Chrome 10.0.648.127
+'99513d003bebc42ea5b600b3dbc3d3d9', // zh-TW - Windows 7 - Chrome 10.0.648.133
+'f7235ae80ce1388f6838cc528db0837e', // */* - zh-TW - Windows 7 - Chrome 10.0.648.133
 'a4501bc110e1421cbe5ff8a1925bb30a', // zh-TW - MacOS X 10.5.8 - Chrome 8.0.552.215
 '163c4647a399af6be9ee89b8860559f6', // */* - zh-TW - MacOS X 10.5.8 - Chrome 8.0.552.215
 '7530a61204051c75ac73668d6511a514', // zh-TW - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -7940,6 +8732,8 @@ $browsers_fingerprints = array(
 '6903314f5b68c1ebfbaceec4d4a0dd8f', // */* - zh-TW - MacOS X 10.5.8 - Chrome 9.0.597.107
 'aae068476988935df306e41d552620ac', // zh-TW - MacOS X 10.5.8 - Chrome 10.0.648.127
 '557078a1e04a03d16d717e52ba8793b7', // */* - zh-TW - MacOS X 10.5.8 - Chrome 10.0.648.127
+'a2a7e38b6e5e57e9e0459579e8985d35', // zh-TW - MacOS X 10.5.8 - Chrome 10.0.648.133
+'79e52e9347ee60a9256a22d5547929ed', // */* - zh-TW - MacOS X 10.5.8 - Chrome 10.0.648.133
 '6cc8e72cebb5dd84a7c7d3e4d9c87904', // zh-TW - MacOS X 10.6.0 - Chrome 8.0.552.215
 '1e52b16212e629d0c88977eec15392a5', // */* - zh-TW - MacOS X 10.6.0 - Chrome 8.0.552.215
 '8f419514f85035d20d4dc3fb02a04984', // zh-TW - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -7960,6 +8754,8 @@ $browsers_fingerprints = array(
 'bc98f2d094e410d79ea241a397d6ed0e', // */* - zh-TW - MacOS X 10.6.0 - Chrome 9.0.597.107
 'a3a1e3902c19df94130577bb3a753de8', // zh-TW - MacOS X 10.6.0 - Chrome 10.0.648.127
 '72c5396b1c6f82a5d1e059cea356a6a9', // */* - zh-TW - MacOS X 10.6.0 - Chrome 10.0.648.127
+'26fb97cca7d1019de6e5e2e32905493a', // zh-TW - MacOS X 10.6.0 - Chrome 10.0.648.133
+'2f71d0d2d07efeed3a6eb01dd2f1c21f', // */* - zh-TW - MacOS X 10.6.0 - Chrome 10.0.648.133
 '242c92b9454a555141a99cca7b60c88b', // zh-TW - MacOS X 10.6.1 - Chrome 8.0.552.215
 '63d2ba251801e90e9d0c39aa48755f65', // */* - zh-TW - MacOS X 10.6.1 - Chrome 8.0.552.215
 'f3f2ddb6d28f596ef929da011025424b', // zh-TW - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -7980,6 +8776,8 @@ $browsers_fingerprints = array(
 '47fd874ef0fae00d35c89127cbc09477', // */* - zh-TW - MacOS X 10.6.1 - Chrome 9.0.597.107
 'f3d63f566fbae77f12cc893bed32302b', // zh-TW - MacOS X 10.6.1 - Chrome 10.0.648.127
 'c61d9958757080fb33574d5da553c6a5', // */* - zh-TW - MacOS X 10.6.1 - Chrome 10.0.648.127
+'6a4281f4f7ecf9bcbbd2a48788b9810b', // zh-TW - MacOS X 10.6.1 - Chrome 10.0.648.133
+'ca221509acd907c2b9589557b49e54cd', // */* - zh-TW - MacOS X 10.6.1 - Chrome 10.0.648.133
 '242c92b9454a555141a99cca7b60c88b', // zh-TW - MacOS X 10.6.2 - Chrome 8.0.552.215
 '63d2ba251801e90e9d0c39aa48755f65', // */* - zh-TW - MacOS X 10.6.2 - Chrome 8.0.552.215
 'f3f2ddb6d28f596ef929da011025424b', // zh-TW - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -8000,6 +8798,8 @@ $browsers_fingerprints = array(
 '47fd874ef0fae00d35c89127cbc09477', // */* - zh-TW - MacOS X 10.6.2 - Chrome 9.0.597.107
 'f3d63f566fbae77f12cc893bed32302b', // zh-TW - MacOS X 10.6.2 - Chrome 10.0.648.127
 'c61d9958757080fb33574d5da553c6a5', // */* - zh-TW - MacOS X 10.6.2 - Chrome 10.0.648.127
+'6a4281f4f7ecf9bcbbd2a48788b9810b', // zh-TW - MacOS X 10.6.2 - Chrome 10.0.648.133
+'ca221509acd907c2b9589557b49e54cd', // */* - zh-TW - MacOS X 10.6.2 - Chrome 10.0.648.133
 '5b72818ed3ac7bcf5f8af779be11a4cd', // zh-TW - MacOS X 10.6.3 - Chrome 8.0.552.215
 '225586f75c7206034b5005ca5a687086', // */* - zh-TW - MacOS X 10.6.3 - Chrome 8.0.552.215
 '7869511826875f2f0e7a54a1d443c5f1', // zh-TW - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -8020,6 +8820,8 @@ $browsers_fingerprints = array(
 '77a879ef2edca13b8c3ad07f5309ae88', // */* - zh-TW - MacOS X 10.6.3 - Chrome 9.0.597.107
 'd0175e61066976cd18e873e8a0c18eaa', // zh-TW - MacOS X 10.6.3 - Chrome 10.0.648.127
 '06e89c0c019ae5d2ce7624cd518ea879', // */* - zh-TW - MacOS X 10.6.3 - Chrome 10.0.648.127
+'26e90d52b7878ef9433d5ca8038ba596', // zh-TW - MacOS X 10.6.3 - Chrome 10.0.648.133
+'c4a60a5a91dae4e439f82d83a49e09bb', // */* - zh-TW - MacOS X 10.6.3 - Chrome 10.0.648.133
 '2a072f450883e551fb39b643cfaa4a09', // zh-TW - MacOS X 10.6.4 - Chrome 8.0.552.215
 'f3dfbac036cda0ddeac42cde0ffe45dd', // */* - zh-TW - MacOS X 10.6.4 - Chrome 8.0.552.215
 '673cb3aa596a281e37d6f7435855c780', // zh-TW - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -8040,6 +8842,8 @@ $browsers_fingerprints = array(
 'e55b1023df815941df5f644159d76ae1', // */* - zh-TW - MacOS X 10.6.4 - Chrome 9.0.597.107
 '16db66f16a04af5c55452fb6f59c1534', // zh-TW - MacOS X 10.6.4 - Chrome 10.0.648.127
 'db6b050c31d152cb9c71003c2f1f01e6', // */* - zh-TW - MacOS X 10.6.4 - Chrome 10.0.648.127
+'92a5729040a04fc3298334d910ecda7d', // zh-TW - MacOS X 10.6.4 - Chrome 10.0.648.133
+'d79a3bd7b9530ffa2fb00d4cbb9c15ab', // */* - zh-TW - MacOS X 10.6.4 - Chrome 10.0.648.133
 '2380fe22226fd19031be34a7a9d074ff', // zh-TW - MacOS X 10.6.5 - Chrome 8.0.552.215
 '853849dd0dc436a9767b2a8862dfd07f', // */* - zh-TW - MacOS X 10.6.5 - Chrome 8.0.552.215
 'd425e14c58c2e4446f74d46d90ffde9f', // zh-TW - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -8060,6 +8864,8 @@ $browsers_fingerprints = array(
 '30477b60b7e4488e6ea46e0d5d962c56', // */* - zh-TW - MacOS X 10.6.5 - Chrome 9.0.597.107
 '5cd0cdffb37150c0c8e700bfaa6af4a8', // zh-TW - MacOS X 10.6.5 - Chrome 10.0.648.127
 '70aee0cf38ce85221a1bb1b3a87462d4', // */* - zh-TW - MacOS X 10.6.5 - Chrome 10.0.648.127
+'bbab48132c583edfd4249a422d08bbc1', // zh-TW - MacOS X 10.6.5 - Chrome 10.0.648.133
+'2455201ded53f0fa85b2998d305a556c', // */* - zh-TW - MacOS X 10.6.5 - Chrome 10.0.648.133
 'baff0e1b609de56db892c84232a27f9f', // zh-TW - MacOS X 10.6.6 - Chrome 8.0.552.215
 '2677ca56206d7c60f050f39c8b8aa0c6', // */* - zh-TW - MacOS X 10.6.6 - Chrome 8.0.552.215
 '027d1bb92fb39da13fdac61ab19eb4ef', // zh-TW - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -8080,6 +8886,8 @@ $browsers_fingerprints = array(
 'c69bb645abf7cf61e22303c8ce3cdab3', // */* - zh-TW - MacOS X 10.6.6 - Chrome 9.0.597.107
 '54a7e88749ca095f9fc991d126a96517', // zh-TW - MacOS X 10.6.6 - Chrome 10.0.648.127
 '2d901efe5765c3126b9e5962449eb735', // */* - zh-TW - MacOS X 10.6.6 - Chrome 10.0.648.127
+'0b5506b5fae4ec22e94f3e100d406a69', // zh-TW - MacOS X 10.6.6 - Chrome 10.0.648.133
+'31d6e29d8803479545935912ee4f39d4', // */* - zh-TW - MacOS X 10.6.6 - Chrome 10.0.648.133
 '697d60f7bea4c7122303fbcaf53c91f0', // zh-TW - Linux - Chrome 8.0.552.215
 'de520a9241a19c5c9f9e0afcb935cd81', // */* - zh-TW - Linux - Chrome 8.0.552.215
 '2d102ee14815e9836bc7645d69e4c62b', // zh-TW - Linux - Chrome 8.0.552.224
@@ -8100,6 +8908,8 @@ $browsers_fingerprints = array(
 'cb22a89316554aa7d0348b054fb57416', // */* - zh-TW - Linux - Chrome 9.0.597.107
 'a9437be5b35fda943166d21fdcb649ac', // zh-TW - Linux - Chrome 10.0.648.127
 '97bd59277813a3648f9abc1bb6c76ff4', // */* - zh-TW - Linux - Chrome 10.0.648.127
+'574eff48455a7fb7633abbba9a950108', // zh-TW - Linux - Chrome 10.0.648.133
+'bff0f1632fcaf471bbda14be1534c8ad', // */* - zh-TW - Linux - Chrome 10.0.648.133
 '9a6ecacf370a50e9c333829c29161f7c', // zh-TW - Linux 64 - Chrome 8.0.552.215
 '0ca9634bff40057cacbb823993497fb1', // */* - zh-TW - Linux 64 - Chrome 8.0.552.215
 'f674bcf4f1b6f326a03b5cf962731223', // zh-TW - Linux 64 - Chrome 8.0.552.224
@@ -8120,6 +8930,8 @@ $browsers_fingerprints = array(
 'e4a512b54b0fee30704526b089d4a27f', // */* - zh-TW - Linux 64 - Chrome 9.0.597.107
 '4d560e6889b527af7950f8ac31fe47b4', // zh-TW - Linux 64 - Chrome 10.0.648.127
 'a3423e9ec654c00fe5ac84a2b8552e19', // */* - zh-TW - Linux 64 - Chrome 10.0.648.127
+'d16ff45f6ca754d561fd158b6be2ed5a', // zh-TW - Linux 64 - Chrome 10.0.648.133
+'af9a8769519757f699f682f0fbb7b031', // */* - zh-TW - Linux 64 - Chrome 10.0.648.133
 '12091e6ee5e579328c7cc97ce8772bd5', // zh-CN - Windows XP - Chrome 8.0.552.215
 '9c62b92b3d008816e21a9b10ee7c3f63', // */* - zh-CN - Windows XP - Chrome 8.0.552.215
 'b3c4206a0f3c7d7c51ea9258a4934882', // zh-CN - Windows XP - Chrome 8.0.552.224
@@ -8140,6 +8952,8 @@ $browsers_fingerprints = array(
 'e6ee4b7a4f8549e3f0b6e5b9d984bc8e', // */* - zh-CN - Windows XP - Chrome 9.0.597.107
 'e1e1597ea1f049ad8c691164534e666c', // zh-CN - Windows XP - Chrome 10.0.648.127
 'a7bfb5c9350a578cf8f3e2bde2f882d4', // */* - zh-CN - Windows XP - Chrome 10.0.648.127
+'648d9988c94f6665a40c540909401fa0', // zh-CN - Windows XP - Chrome 10.0.648.133
+'56efa4098ee971cf718eeb6d9721214a', // */* - zh-CN - Windows XP - Chrome 10.0.648.133
 'afbc787e524a518b97ec629f5eb6a982', // zh-CN - Windows 2003 - Chrome 8.0.552.215
 '6c61bb6216662bf0d9f9cf4b115525bc', // */* - zh-CN - Windows 2003 - Chrome 8.0.552.215
 'b6d4be1ee11d2b392aefe3baf09bac27', // zh-CN - Windows 2003 - Chrome 8.0.552.224
@@ -8160,6 +8974,8 @@ $browsers_fingerprints = array(
 '920f80df9a1be0e89d3028d0432c52ec', // */* - zh-CN - Windows 2003 - Chrome 9.0.597.107
 'f2c2838a3a40c826fcdab13ff3234ec8', // zh-CN - Windows 2003 - Chrome 10.0.648.127
 'eb68a98ee1577ab327a4aebbc372caf1', // */* - zh-CN - Windows 2003 - Chrome 10.0.648.127
+'a7a2d6985ad6045c5bfb4d29d69196ec', // zh-CN - Windows 2003 - Chrome 10.0.648.133
+'bdbc6b51f5bc2505b9977da97682550c', // */* - zh-CN - Windows 2003 - Chrome 10.0.648.133
 '58e19fcb98677544cf4cb466fa6ef094', // zh-CN - Windows Vista - Chrome 8.0.552.215
 '1a8ddc95770611fb4b6bba0e201fb174', // */* - zh-CN - Windows Vista - Chrome 8.0.552.215
 'eb0c553ffddd9e24fcc028414768a185', // zh-CN - Windows Vista - Chrome 8.0.552.224
@@ -8180,6 +8996,8 @@ $browsers_fingerprints = array(
 '4533aea60c72519fd5f85d5d8d0e7300', // */* - zh-CN - Windows Vista - Chrome 9.0.597.107
 'b86944ce5d284fb1558a515018444069', // zh-CN - Windows Vista - Chrome 10.0.648.127
 'bc6a910bdfb024fbe87b18a3ae1b63dd', // */* - zh-CN - Windows Vista - Chrome 10.0.648.127
+'07086a2afcaaa19ea3bb85c7dc65487f', // zh-CN - Windows Vista - Chrome 10.0.648.133
+'6d3bde0386bdb708aa5394f1b17dcad2', // */* - zh-CN - Windows Vista - Chrome 10.0.648.133
 '281ecfe6aab1152f01eb732bf485ceb7', // zh-CN - Windows 7 - Chrome 8.0.552.215
 'f9dd3e7fab89f80e738b25d983c83e0b', // */* - zh-CN - Windows 7 - Chrome 8.0.552.215
 '9ffc804bc0bc2663e572143d8ad9e4f0', // zh-CN - Windows 7 - Chrome 8.0.552.224
@@ -8200,6 +9018,8 @@ $browsers_fingerprints = array(
 '40e2577356bc0bcd6e33c8a16029638a', // */* - zh-CN - Windows 7 - Chrome 9.0.597.107
 'a484324738391521557016cead8f9c9e', // zh-CN - Windows 7 - Chrome 10.0.648.127
 '7f343661e5b2b96b227af380feabd91f', // */* - zh-CN - Windows 7 - Chrome 10.0.648.127
+'f23ac14dcd407ddcbf390fb0bb14c5b4', // zh-CN - Windows 7 - Chrome 10.0.648.133
+'48f428224d6b660208fa56f9a88bcc7a', // */* - zh-CN - Windows 7 - Chrome 10.0.648.133
 '675c1c654f92fe0cfadb39bc9fa73a31', // zh-CN - MacOS X 10.5.8 - Chrome 8.0.552.215
 '8792397f0ee4d72b64b4f7dca23295d6', // */* - zh-CN - MacOS X 10.5.8 - Chrome 8.0.552.215
 'c0b65d0fbf9a93077c1c50b8557deefc', // zh-CN - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -8220,6 +9040,8 @@ $browsers_fingerprints = array(
 '8f666fdf7433320dca851375a7bcf71a', // */* - zh-CN - MacOS X 10.5.8 - Chrome 9.0.597.107
 '6f59b6418401dc53978a9093bdea9c43', // zh-CN - MacOS X 10.5.8 - Chrome 10.0.648.127
 '8b639ecc8a7cf215ae8e1b0c838e957e', // */* - zh-CN - MacOS X 10.5.8 - Chrome 10.0.648.127
+'186fe6b018a3fa301240de6e77e44a0c', // zh-CN - MacOS X 10.5.8 - Chrome 10.0.648.133
+'1edb27426699c9e9a9817b5c00c96a21', // */* - zh-CN - MacOS X 10.5.8 - Chrome 10.0.648.133
 '8fafeead8c5b9c79f90c06a31c7718dc', // zh-CN - MacOS X 10.6.0 - Chrome 8.0.552.215
 '702820fd2868a2446f5d37b32d735230', // */* - zh-CN - MacOS X 10.6.0 - Chrome 8.0.552.215
 'f8e79f98e3615d7468dad95d0d13ae18', // zh-CN - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -8240,6 +9062,8 @@ $browsers_fingerprints = array(
 '8f064d14fd28a158246d8c4331d7c3ef', // */* - zh-CN - MacOS X 10.6.0 - Chrome 9.0.597.107
 '28e9ea49a8014f913b5ab7d09b70851d', // zh-CN - MacOS X 10.6.0 - Chrome 10.0.648.127
 '1defd090e875bff48221c57dd7c4ccdf', // */* - zh-CN - MacOS X 10.6.0 - Chrome 10.0.648.127
+'8071f4aeb87ded81e8a220b7c2a6f27a', // zh-CN - MacOS X 10.6.0 - Chrome 10.0.648.133
+'d4053e8756b1db336a17cf8e2e8bb4c5', // */* - zh-CN - MacOS X 10.6.0 - Chrome 10.0.648.133
 '6c069a6eb20414fa2a3fc786956e4cd3', // zh-CN - MacOS X 10.6.1 - Chrome 8.0.552.215
 'ff657c2ec89c6de2a87f8a185dbc9069', // */* - zh-CN - MacOS X 10.6.1 - Chrome 8.0.552.215
 '64c71a922725d3f4e1c093091861bf49', // zh-CN - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -8260,6 +9084,8 @@ $browsers_fingerprints = array(
 'a07a72ac81e2f0ddd7eaa8a695e1a4f1', // */* - zh-CN - MacOS X 10.6.1 - Chrome 9.0.597.107
 '419148475a05bd9bbc5af142ed69eb3c', // zh-CN - MacOS X 10.6.1 - Chrome 10.0.648.127
 '5a4e98341fb3722de04a18a5c9097fe5', // */* - zh-CN - MacOS X 10.6.1 - Chrome 10.0.648.127
+'fe487cc20e4738ab0a1b951e3ddcbb47', // zh-CN - MacOS X 10.6.1 - Chrome 10.0.648.133
+'09a8171b72484163f2f4299834ba4445', // */* - zh-CN - MacOS X 10.6.1 - Chrome 10.0.648.133
 '6c069a6eb20414fa2a3fc786956e4cd3', // zh-CN - MacOS X 10.6.2 - Chrome 8.0.552.215
 'ff657c2ec89c6de2a87f8a185dbc9069', // */* - zh-CN - MacOS X 10.6.2 - Chrome 8.0.552.215
 '64c71a922725d3f4e1c093091861bf49', // zh-CN - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -8280,6 +9106,8 @@ $browsers_fingerprints = array(
 'a07a72ac81e2f0ddd7eaa8a695e1a4f1', // */* - zh-CN - MacOS X 10.6.2 - Chrome 9.0.597.107
 '419148475a05bd9bbc5af142ed69eb3c', // zh-CN - MacOS X 10.6.2 - Chrome 10.0.648.127
 '5a4e98341fb3722de04a18a5c9097fe5', // */* - zh-CN - MacOS X 10.6.2 - Chrome 10.0.648.127
+'fe487cc20e4738ab0a1b951e3ddcbb47', // zh-CN - MacOS X 10.6.2 - Chrome 10.0.648.133
+'09a8171b72484163f2f4299834ba4445', // */* - zh-CN - MacOS X 10.6.2 - Chrome 10.0.648.133
 'b3881e41f41bc46b1c48992b4851bcfd', // zh-CN - MacOS X 10.6.3 - Chrome 8.0.552.215
 '094832487341ffd427be43300ec741bf', // */* - zh-CN - MacOS X 10.6.3 - Chrome 8.0.552.215
 'c82169837a2feecd7790839df218633b', // zh-CN - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -8300,6 +9128,8 @@ $browsers_fingerprints = array(
 'fb86ec51000496ba79822fef644b8700', // */* - zh-CN - MacOS X 10.6.3 - Chrome 9.0.597.107
 '24b02290a091ebf0bcc360028eedafc8', // zh-CN - MacOS X 10.6.3 - Chrome 10.0.648.127
 'b9bde628b844d7b57c02e879e8ee0875', // */* - zh-CN - MacOS X 10.6.3 - Chrome 10.0.648.127
+'4e08581cbee1b0bfdc9849de59f6e8eb', // zh-CN - MacOS X 10.6.3 - Chrome 10.0.648.133
+'2c9ae000a844e692188aaf8f818b1c60', // */* - zh-CN - MacOS X 10.6.3 - Chrome 10.0.648.133
 '5de471c709422a74a1c33a35fb9766d9', // zh-CN - MacOS X 10.6.4 - Chrome 8.0.552.215
 '4a643d6cd01232c3875cc54b79d5125f', // */* - zh-CN - MacOS X 10.6.4 - Chrome 8.0.552.215
 '19dda21a5fb6e46d5649de49806d914f', // zh-CN - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -8320,6 +9150,8 @@ $browsers_fingerprints = array(
 'c6e7e93dea7a730850e06fafe8f8e707', // */* - zh-CN - MacOS X 10.6.4 - Chrome 9.0.597.107
 'dd6e5c9673d8c6e09be8a065f5a7f934', // zh-CN - MacOS X 10.6.4 - Chrome 10.0.648.127
 'c7606d31333fbf9aee2814e9ee29f79f', // */* - zh-CN - MacOS X 10.6.4 - Chrome 10.0.648.127
+'7b7ecfd4c0d587f32275c8c6ebf5c6af', // zh-CN - MacOS X 10.6.4 - Chrome 10.0.648.133
+'ce8710a239ba23399511396355de5225', // */* - zh-CN - MacOS X 10.6.4 - Chrome 10.0.648.133
 '731d322d4541d8700e4145be1b0f64a2', // zh-CN - MacOS X 10.6.5 - Chrome 8.0.552.215
 'c328a7ebec5c2be9a8503d4afc9d9a6d', // */* - zh-CN - MacOS X 10.6.5 - Chrome 8.0.552.215
 '3336e310c1aac8fd7ca3b6b3b56ae812', // zh-CN - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -8340,6 +9172,8 @@ $browsers_fingerprints = array(
 'c4dc08c7901e2b30bde642231f3bfb6e', // */* - zh-CN - MacOS X 10.6.5 - Chrome 9.0.597.107
 '339895608f4ea59ec1bdd8c28923ef0a', // zh-CN - MacOS X 10.6.5 - Chrome 10.0.648.127
 'f47746555b16bc97bd53ab87f84ea4c9', // */* - zh-CN - MacOS X 10.6.5 - Chrome 10.0.648.127
+'c0fbcfe9a662e175c32dc011f442e758', // zh-CN - MacOS X 10.6.5 - Chrome 10.0.648.133
+'f775c29326a037875d8b64d485c9109e', // */* - zh-CN - MacOS X 10.6.5 - Chrome 10.0.648.133
 '3f2ee6305cb056c42aca6f49019660d1', // zh-CN - MacOS X 10.6.6 - Chrome 8.0.552.215
 '4272aa660502bc4d404b4faa76909755', // */* - zh-CN - MacOS X 10.6.6 - Chrome 8.0.552.215
 '31a7aa9e1dad4af5bd555e9df1e499ed', // zh-CN - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -8360,6 +9194,8 @@ $browsers_fingerprints = array(
 '57026eee047d30dec94215f5df1c29cc', // */* - zh-CN - MacOS X 10.6.6 - Chrome 9.0.597.107
 'ba7c4f56ce907478ad71a2f4793dd49c', // zh-CN - MacOS X 10.6.6 - Chrome 10.0.648.127
 'ef6a74ac6677f0e6d90461ab252a43cc', // */* - zh-CN - MacOS X 10.6.6 - Chrome 10.0.648.127
+'250b333ecd5de17b0c18900e533f0ae8', // zh-CN - MacOS X 10.6.6 - Chrome 10.0.648.133
+'b25633229003a936a9e8849247bce8f1', // */* - zh-CN - MacOS X 10.6.6 - Chrome 10.0.648.133
 '3aefaa7a7d9a263e844f3dbb422d84d8', // zh-CN - Linux - Chrome 8.0.552.215
 '1e9c29e8b14065c17ab09ee9515a24ea', // */* - zh-CN - Linux - Chrome 8.0.552.215
 '6ea263d474c2c96061c089fd1aaec660', // zh-CN - Linux - Chrome 8.0.552.224
@@ -8380,6 +9216,8 @@ $browsers_fingerprints = array(
 'bc68d2deac05468f9062bdf321ebe0fc', // */* - zh-CN - Linux - Chrome 9.0.597.107
 '2567b6ee7963b2053ff6ad243f884bc5', // zh-CN - Linux - Chrome 10.0.648.127
 '21d6e66553f3188a38bfe600221b02f1', // */* - zh-CN - Linux - Chrome 10.0.648.127
+'8625409538bb006248693eb3b482c69a', // zh-CN - Linux - Chrome 10.0.648.133
+'c7d82f9f789ee59c0ac374848b647a78', // */* - zh-CN - Linux - Chrome 10.0.648.133
 '22f38834928af228d2ff4c0c8f4d7c35', // zh-CN - Linux 64 - Chrome 8.0.552.215
 '8e727eec81b2bca1be7ba8ada1fafae5', // */* - zh-CN - Linux 64 - Chrome 8.0.552.215
 '1d359ab06f9e20afa18f1d3b52e0d426', // zh-CN - Linux 64 - Chrome 8.0.552.224
@@ -8400,6 +9238,8 @@ $browsers_fingerprints = array(
 'a4773b53ff5c63b149ac15874feff8a4', // */* - zh-CN - Linux 64 - Chrome 9.0.597.107
 '7829bfcb616984f30170e601fc9599d3', // zh-CN - Linux 64 - Chrome 10.0.648.127
 '0c6950396c93c281b317000b93288b02', // */* - zh-CN - Linux 64 - Chrome 10.0.648.127
+'6df3581614689d2ec0a05b454adb64bf', // zh-CN - Linux 64 - Chrome 10.0.648.133
+'52ed473acaac6996bf2163cdd5820ca0', // */* - zh-CN - Linux 64 - Chrome 10.0.648.133
 'f369ab8ea145aba6cc188e062cd81ec9', // ja - Windows XP - Chrome 8.0.552.215
 '6b8ec6f45faffda332f501a6f0cc9511', // */* - ja - Windows XP - Chrome 8.0.552.215
 'eaec38571d64847ca01e02099f36b524', // ja - Windows XP - Chrome 8.0.552.224
@@ -8420,6 +9260,8 @@ $browsers_fingerprints = array(
 '5715da3a94e49d5835f94ecdd94ab304', // */* - ja - Windows XP - Chrome 9.0.597.107
 '494fca3686a46a1dde602b2351e713f7', // ja - Windows XP - Chrome 10.0.648.127
 '4b15a6aedc1e1d2492462d984833e1c9', // */* - ja - Windows XP - Chrome 10.0.648.127
+'72e63ccba8d2f63908cfe698712a06b1', // ja - Windows XP - Chrome 10.0.648.133
+'792da679c0c573f79c955b735f429380', // */* - ja - Windows XP - Chrome 10.0.648.133
 'a55068f3f99f9374e6dc5b10b2be05a6', // ja - Windows 2003 - Chrome 8.0.552.215
 '372efe944a6869f8080c690a8f9fa839', // */* - ja - Windows 2003 - Chrome 8.0.552.215
 'd17c02d49b705da912413454215431ad', // ja - Windows 2003 - Chrome 8.0.552.224
@@ -8440,6 +9282,8 @@ $browsers_fingerprints = array(
 'b4898f2f9712f122d73a129a708b8f3a', // */* - ja - Windows 2003 - Chrome 9.0.597.107
 '95417290840603ee2931a9eae1b137c5', // ja - Windows 2003 - Chrome 10.0.648.127
 '90d8d031c2804be905ff6c0576e35999', // */* - ja - Windows 2003 - Chrome 10.0.648.127
+'aa37d2c8a3e8708634adfcc6218c1645', // ja - Windows 2003 - Chrome 10.0.648.133
+'87b2f27b137e25132ed82fb93c33845c', // */* - ja - Windows 2003 - Chrome 10.0.648.133
 '7d3b4c8acf41d8a469d91078e6ff4d7f', // ja - Windows Vista - Chrome 8.0.552.215
 '7ff882c410ba553a18c97ed664f0c7f4', // */* - ja - Windows Vista - Chrome 8.0.552.215
 '7bfb6b120762ebc0c2477ee8181285ba', // ja - Windows Vista - Chrome 8.0.552.224
@@ -8460,6 +9304,8 @@ $browsers_fingerprints = array(
 '662819a7a7e1e44831a7e283e1747d50', // */* - ja - Windows Vista - Chrome 9.0.597.107
 '35fbc0e19a725b5c3a24f2d3d0596359', // ja - Windows Vista - Chrome 10.0.648.127
 '90331a3e89a58caee5170d0cc3558e78', // */* - ja - Windows Vista - Chrome 10.0.648.127
+'0ee62775ba71c477e5ea187b12f29030', // ja - Windows Vista - Chrome 10.0.648.133
+'c30d4a74ff2c225795d6a343a1a82539', // */* - ja - Windows Vista - Chrome 10.0.648.133
 '0979d78fd57c23f0afecae8bf0228278', // ja - Windows 7 - Chrome 8.0.552.215
 '23bdbd8a5b813ae5e1bdbccbc1ca7f72', // */* - ja - Windows 7 - Chrome 8.0.552.215
 '980e935e53d9675272c8f65836c2441b', // ja - Windows 7 - Chrome 8.0.552.224
@@ -8480,6 +9326,8 @@ $browsers_fingerprints = array(
 '52e1c5555089a9f7a2e935329adad2c6', // */* - ja - Windows 7 - Chrome 9.0.597.107
 'f2eb0921d3d07455ccb81e5960244693', // ja - Windows 7 - Chrome 10.0.648.127
 '6314045637c03ec5291702c059ebd054', // */* - ja - Windows 7 - Chrome 10.0.648.127
+'ddd00c0ca7a50add122f36597b95d09c', // ja - Windows 7 - Chrome 10.0.648.133
+'5392d0f863d1a72f84f1821ec8278a04', // */* - ja - Windows 7 - Chrome 10.0.648.133
 'bfc7656ba5de31daeacc8ca220c4acd8', // ja - MacOS X 10.5.8 - Chrome 8.0.552.215
 '8821656fd410e86fd73ee88fad9fa306', // */* - ja - MacOS X 10.5.8 - Chrome 8.0.552.215
 'fd416516b13e94e7571ebf21b125823f', // ja - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -8500,6 +9348,8 @@ $browsers_fingerprints = array(
 '75cb93bedd62bcf867a5fbfe58ed4b15', // */* - ja - MacOS X 10.5.8 - Chrome 9.0.597.107
 'c32aae26bf58d945d610ff604cb48469', // ja - MacOS X 10.5.8 - Chrome 10.0.648.127
 '77cdf011f654d50d5c29be12b62cf536', // */* - ja - MacOS X 10.5.8 - Chrome 10.0.648.127
+'68749538cf0f28effb55ba689c8ee317', // ja - MacOS X 10.5.8 - Chrome 10.0.648.133
+'6429671d9b436cad47642899107b3f7f', // */* - ja - MacOS X 10.5.8 - Chrome 10.0.648.133
 'fdbe9e5bdbc1f9a3bf19670acd564254', // ja - MacOS X 10.6.0 - Chrome 8.0.552.215
 '9e14a3eb4e2498a5ea21c5c26cb5805b', // */* - ja - MacOS X 10.6.0 - Chrome 8.0.552.215
 '303684fb3eb9908240c8dca78867d3d8', // ja - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -8520,6 +9370,8 @@ $browsers_fingerprints = array(
 'c755ddef03870764bb034faa5894e39d', // */* - ja - MacOS X 10.6.0 - Chrome 9.0.597.107
 '488fd1791a869181a649064a648baa84', // ja - MacOS X 10.6.0 - Chrome 10.0.648.127
 'cc10ca14c1915471b9317fef23fd7b82', // */* - ja - MacOS X 10.6.0 - Chrome 10.0.648.127
+'f8f4e7e4795ee1033b35ada6ce94c7e7', // ja - MacOS X 10.6.0 - Chrome 10.0.648.133
+'28f6a7a3b7d0118d64cd7043dafb0110', // */* - ja - MacOS X 10.6.0 - Chrome 10.0.648.133
 '61d1f791b3bfa41cc485fac79624e16c', // ja - MacOS X 10.6.1 - Chrome 8.0.552.215
 '65893fea7879d64f68df18dd566d9ce0', // */* - ja - MacOS X 10.6.1 - Chrome 8.0.552.215
 '336b365cd5ffa0701b5e7ff989233ab8', // ja - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -8540,6 +9392,8 @@ $browsers_fingerprints = array(
 '5ad7114f261ec13039fb65f89c89e596', // */* - ja - MacOS X 10.6.1 - Chrome 9.0.597.107
 '3da085d44bfd59bc022f466c25aa70ae', // ja - MacOS X 10.6.1 - Chrome 10.0.648.127
 '96768a7d90f7e651f5b8ff7ab8e58374', // */* - ja - MacOS X 10.6.1 - Chrome 10.0.648.127
+'82aa8db9fc7863c77615987ba1155875', // ja - MacOS X 10.6.1 - Chrome 10.0.648.133
+'4f47a004219b1993a445b0dae272e415', // */* - ja - MacOS X 10.6.1 - Chrome 10.0.648.133
 '61d1f791b3bfa41cc485fac79624e16c', // ja - MacOS X 10.6.2 - Chrome 8.0.552.215
 '65893fea7879d64f68df18dd566d9ce0', // */* - ja - MacOS X 10.6.2 - Chrome 8.0.552.215
 '336b365cd5ffa0701b5e7ff989233ab8', // ja - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -8560,6 +9414,8 @@ $browsers_fingerprints = array(
 '5ad7114f261ec13039fb65f89c89e596', // */* - ja - MacOS X 10.6.2 - Chrome 9.0.597.107
 '3da085d44bfd59bc022f466c25aa70ae', // ja - MacOS X 10.6.2 - Chrome 10.0.648.127
 '96768a7d90f7e651f5b8ff7ab8e58374', // */* - ja - MacOS X 10.6.2 - Chrome 10.0.648.127
+'82aa8db9fc7863c77615987ba1155875', // ja - MacOS X 10.6.2 - Chrome 10.0.648.133
+'4f47a004219b1993a445b0dae272e415', // */* - ja - MacOS X 10.6.2 - Chrome 10.0.648.133
 '39644528ab44478549eeaac2d0cfda77', // ja - MacOS X 10.6.3 - Chrome 8.0.552.215
 'fc647a849ca7ccb945f4eae4425a72b6', // */* - ja - MacOS X 10.6.3 - Chrome 8.0.552.215
 'fd2033d1fc20f7efcbb022ff8a5a5c2f', // ja - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -8580,6 +9436,8 @@ $browsers_fingerprints = array(
 '1b4e6f5baa975ddb946031e5dfca55aa', // */* - ja - MacOS X 10.6.3 - Chrome 9.0.597.107
 '75ee8d0eea5db5974eec417670f641b6', // ja - MacOS X 10.6.3 - Chrome 10.0.648.127
 '13142ce522365e5d6a47d3bdddd09fed', // */* - ja - MacOS X 10.6.3 - Chrome 10.0.648.127
+'31d7ed86f4c42cb0162a59bf79892714', // ja - MacOS X 10.6.3 - Chrome 10.0.648.133
+'fbc2d3a4532f99a76245404528fc6943', // */* - ja - MacOS X 10.6.3 - Chrome 10.0.648.133
 '766ca27f7f5ecf32b157b9407eb4d615', // ja - MacOS X 10.6.4 - Chrome 8.0.552.215
 'b753e13d4eb5734769d1a74113fc6039', // */* - ja - MacOS X 10.6.4 - Chrome 8.0.552.215
 'b4a4a3f6995dac527966db470a04d30e', // ja - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -8600,6 +9458,8 @@ $browsers_fingerprints = array(
 'fff6cccd246417e7e6e72113587fc3e1', // */* - ja - MacOS X 10.6.4 - Chrome 9.0.597.107
 'fd809a212232c22fa9f88cf75c51aade', // ja - MacOS X 10.6.4 - Chrome 10.0.648.127
 'feb8631f508f7b7cc937015936381093', // */* - ja - MacOS X 10.6.4 - Chrome 10.0.648.127
+'137322a65703427c1c3f1bf39c082198', // ja - MacOS X 10.6.4 - Chrome 10.0.648.133
+'9d8972f53f02baa5b5b9d6d308ec811b', // */* - ja - MacOS X 10.6.4 - Chrome 10.0.648.133
 'c5c7435e4d00d9ebb8764c899c4b1d79', // ja - MacOS X 10.6.5 - Chrome 8.0.552.215
 '31eb07034d60a23ab97c609b34b4b7f7', // */* - ja - MacOS X 10.6.5 - Chrome 8.0.552.215
 '51ca3a5f7a98473f85f9b364da6e2ecc', // ja - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -8620,6 +9480,8 @@ $browsers_fingerprints = array(
 '5addb25a26cf52edc397a703bbd29b95', // */* - ja - MacOS X 10.6.5 - Chrome 9.0.597.107
 'fcec6add92dd6d43f2d0fc48bd9f1830', // ja - MacOS X 10.6.5 - Chrome 10.0.648.127
 '34646b5601b95fd6f8da19406a28233d', // */* - ja - MacOS X 10.6.5 - Chrome 10.0.648.127
+'492ed48a17b7686422503313cd19b5fe', // ja - MacOS X 10.6.5 - Chrome 10.0.648.133
+'fae063e49b75f4e56fc1ef474b0e7485', // */* - ja - MacOS X 10.6.5 - Chrome 10.0.648.133
 'cce381bc6675528f3fb1b43bb6e445a2', // ja - MacOS X 10.6.6 - Chrome 8.0.552.215
 'cf9aa533ba4b78af1891c9dd01650444', // */* - ja - MacOS X 10.6.6 - Chrome 8.0.552.215
 '8789d1b452c20e6282a056a123a6d10f', // ja - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -8640,6 +9502,8 @@ $browsers_fingerprints = array(
 '8eae70ba65235556563459ce4fe387a5', // */* - ja - MacOS X 10.6.6 - Chrome 9.0.597.107
 '984c861ad102beecd3bdc6a62c6c81c3', // ja - MacOS X 10.6.6 - Chrome 10.0.648.127
 '70b449950a90b13bce7468c66bde758f', // */* - ja - MacOS X 10.6.6 - Chrome 10.0.648.127
+'26badddb6cec9c2bd1cd1ce4822610ce', // ja - MacOS X 10.6.6 - Chrome 10.0.648.133
+'4fb3be405dc5a7782b445a96c84c3fa1', // */* - ja - MacOS X 10.6.6 - Chrome 10.0.648.133
 '918e5af39c895113e1251b93d999087a', // ja - Linux - Chrome 8.0.552.215
 'd9121906fb4a06ed23e867ae70ef2de0', // */* - ja - Linux - Chrome 8.0.552.215
 'dc7a755d7d78f5afaaea588b74ea5ca7', // ja - Linux - Chrome 8.0.552.224
@@ -8660,6 +9524,8 @@ $browsers_fingerprints = array(
 '37c8b3f89ca07998ba48c07929d13cc2', // */* - ja - Linux - Chrome 9.0.597.107
 'c935dc63809b29e7a7388c3d13cb8302', // ja - Linux - Chrome 10.0.648.127
 'dfe1bdbb23dfe39e5c3569ba4e231053', // */* - ja - Linux - Chrome 10.0.648.127
+'9e4e293d443bee77aa27d2fb7cd3e1a6', // ja - Linux - Chrome 10.0.648.133
+'e777c25984c7e9671c1075b7343baa98', // */* - ja - Linux - Chrome 10.0.648.133
 'f6b588ba146ac5a262a112043c3b3e57', // ja - Linux 64 - Chrome 8.0.552.215
 'e9427466a03abcb62750ad61aca19ae7', // */* - ja - Linux 64 - Chrome 8.0.552.215
 'c7cf6966b2e75652c6479be4f61d911b', // ja - Linux 64 - Chrome 8.0.552.224
@@ -8680,6 +9546,8 @@ $browsers_fingerprints = array(
 '1068f4d066254aa634f33fa5478aca39', // */* - ja - Linux 64 - Chrome 9.0.597.107
 'a586fd3d8ae64efd0ea662290eddf5eb', // ja - Linux 64 - Chrome 10.0.648.127
 '18a2cc44d4bba197fbdadbb0a806e2cc', // */* - ja - Linux 64 - Chrome 10.0.648.127
+'e8c57767241d0d63e9b28a9f176ec0e4', // ja - Linux 64 - Chrome 10.0.648.133
+'02738e3309ce54898d93100eb38f0596', // */* - ja - Linux 64 - Chrome 10.0.648.133
 '5310c31028bd2c084be9ee9fd854e6e6', // ar - Windows XP - Chrome 8.0.552.215
 '6210e9add18aedeb91eaba8de7dc62ba', // */* - ar - Windows XP - Chrome 8.0.552.215
 '3471919b15231014defbeb77c968e4be', // ar - Windows XP - Chrome 8.0.552.224
@@ -8700,6 +9568,8 @@ $browsers_fingerprints = array(
 '46d61e4fc7eb1f4d04018e7af80b9501', // */* - ar - Windows XP - Chrome 9.0.597.107
 '2ec34af49bae05f5f37ed7b97033e9ff', // ar - Windows XP - Chrome 10.0.648.127
 '698f71d61b94f57c9e831d722faf2885', // */* - ar - Windows XP - Chrome 10.0.648.127
+'747946b81a449f76c95650550fad73f8', // ar - Windows XP - Chrome 10.0.648.133
+'ccb8aeecdd37544228c6268f0ea6527e', // */* - ar - Windows XP - Chrome 10.0.648.133
 '4d199f8098e188db56a6f54bc4e66e21', // ar - Windows 2003 - Chrome 8.0.552.215
 'd6989afb401fcc84d4bfac0dc6a4356d', // */* - ar - Windows 2003 - Chrome 8.0.552.215
 '82548b541c31404577179a3647418fc8', // ar - Windows 2003 - Chrome 8.0.552.224
@@ -8720,6 +9590,8 @@ $browsers_fingerprints = array(
 '47edb62e2618c27f047553afedef9c6c', // */* - ar - Windows 2003 - Chrome 9.0.597.107
 '708026b368679e121b95411acf9633e2', // ar - Windows 2003 - Chrome 10.0.648.127
 '2e646d767eff7127443a748359670eef', // */* - ar - Windows 2003 - Chrome 10.0.648.127
+'1751c72f1003ef85d96ddca5db646765', // ar - Windows 2003 - Chrome 10.0.648.133
+'e7c177521fdf82eb44033502a908888a', // */* - ar - Windows 2003 - Chrome 10.0.648.133
 '246b08d88a2fbf2c44dbc9c6f69e40e1', // ar - Windows Vista - Chrome 8.0.552.215
 'c5f35d6865ba8dbabebfb46b59dfd3ec', // */* - ar - Windows Vista - Chrome 8.0.552.215
 'd1ddc8c6ceef3fdc0d92ce4fc966aab5', // ar - Windows Vista - Chrome 8.0.552.224
@@ -8740,6 +9612,8 @@ $browsers_fingerprints = array(
 '1c303e97325f47a6514dcaf909e0f3bf', // */* - ar - Windows Vista - Chrome 9.0.597.107
 '8be82737befcc0f602d854239b21539f', // ar - Windows Vista - Chrome 10.0.648.127
 'a764a932e5288510ae155a7c87125a7a', // */* - ar - Windows Vista - Chrome 10.0.648.127
+'3f7f80f3b26f28ca552a39f5635fcb90', // ar - Windows Vista - Chrome 10.0.648.133
+'195615f71f941d6ef00cee45aa951591', // */* - ar - Windows Vista - Chrome 10.0.648.133
 '4406ae0d5a88d0bf66bd79ea8185333c', // ar - Windows 7 - Chrome 8.0.552.215
 '173486767506fbea4638257ecd743011', // */* - ar - Windows 7 - Chrome 8.0.552.215
 'd87d7b8b5cdfa7a12a6fa5e2b8ce592c', // ar - Windows 7 - Chrome 8.0.552.224
@@ -8760,6 +9634,8 @@ $browsers_fingerprints = array(
 'f03f43219c617c22deeb4e661dc9b4b1', // */* - ar - Windows 7 - Chrome 9.0.597.107
 'b764346d68200829931b77b82b70e03e', // ar - Windows 7 - Chrome 10.0.648.127
 'd9b7d52ae954ee7698fa9bdd1c551ed6', // */* - ar - Windows 7 - Chrome 10.0.648.127
+'dfb7cafa98298d6645df601cdb27ae87', // ar - Windows 7 - Chrome 10.0.648.133
+'c5c89dd9ac313edea6ede4290c15c784', // */* - ar - Windows 7 - Chrome 10.0.648.133
 'd612ed8c6b68edd05f460b7cb8269cb0', // ar - MacOS X 10.5.8 - Chrome 8.0.552.215
 '73eea2cd6d06b79c7cba807372d7ee5f', // */* - ar - MacOS X 10.5.8 - Chrome 8.0.552.215
 'ad316a0d87e3aaa17fabc746196ca88b', // ar - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -8780,6 +9656,8 @@ $browsers_fingerprints = array(
 '68db53124c774f0c8b8a5fbaa1a393af', // */* - ar - MacOS X 10.5.8 - Chrome 9.0.597.107
 'c992bbb6879db575df70c8f16ba233c6', // ar - MacOS X 10.5.8 - Chrome 10.0.648.127
 '820e0cdefa2a6cac071ec4d5aa2ba2ea', // */* - ar - MacOS X 10.5.8 - Chrome 10.0.648.127
+'59d26d98472db0ae3d1f379ab5cab2f4', // ar - MacOS X 10.5.8 - Chrome 10.0.648.133
+'a63f56a5db9761bf9058328cfa89f47b', // */* - ar - MacOS X 10.5.8 - Chrome 10.0.648.133
 '7842aecb6a825529706f32f6ef9e7d90', // ar - MacOS X 10.6.0 - Chrome 8.0.552.215
 '2ce37d15e55f10e06aff1a3fc0270b33', // */* - ar - MacOS X 10.6.0 - Chrome 8.0.552.215
 '0c5c32ea3a4ce941dbe1dd1c0eecccdb', // ar - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -8800,6 +9678,8 @@ $browsers_fingerprints = array(
 'fc2bdccd936cfca0e3833620e07a9905', // */* - ar - MacOS X 10.6.0 - Chrome 9.0.597.107
 '03513a8afc6b8c99f4acca4bd886cf8e', // ar - MacOS X 10.6.0 - Chrome 10.0.648.127
 'b246e5cc51acb612ec6bf33139185793', // */* - ar - MacOS X 10.6.0 - Chrome 10.0.648.127
+'cc6c975701290c325111411a0013cfe8', // ar - MacOS X 10.6.0 - Chrome 10.0.648.133
+'05085b25a60a106c17a19c8e0307aa95', // */* - ar - MacOS X 10.6.0 - Chrome 10.0.648.133
 'bc7c078f918ca497dbbafebafcb421fb', // ar - MacOS X 10.6.1 - Chrome 8.0.552.215
 '681db3cf0fc6e5d6eff28235dcbf60ab', // */* - ar - MacOS X 10.6.1 - Chrome 8.0.552.215
 '58fa700dbc810183193beeecb32abb5f', // ar - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -8820,6 +9700,8 @@ $browsers_fingerprints = array(
 '82890638584166423a12bbc066a9163b', // */* - ar - MacOS X 10.6.1 - Chrome 9.0.597.107
 '02f14bfd5db627afa2172668d85f9ba5', // ar - MacOS X 10.6.1 - Chrome 10.0.648.127
 '269da7ce329d4064c67c43e3c91726e6', // */* - ar - MacOS X 10.6.1 - Chrome 10.0.648.127
+'e7f4c71a58c0ca14b2dac1c2d0611c9d', // ar - MacOS X 10.6.1 - Chrome 10.0.648.133
+'a44e4a6d292e597cc8eb47e334ce0d45', // */* - ar - MacOS X 10.6.1 - Chrome 10.0.648.133
 'bc7c078f918ca497dbbafebafcb421fb', // ar - MacOS X 10.6.2 - Chrome 8.0.552.215
 '681db3cf0fc6e5d6eff28235dcbf60ab', // */* - ar - MacOS X 10.6.2 - Chrome 8.0.552.215
 '58fa700dbc810183193beeecb32abb5f', // ar - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -8840,6 +9722,8 @@ $browsers_fingerprints = array(
 '82890638584166423a12bbc066a9163b', // */* - ar - MacOS X 10.6.2 - Chrome 9.0.597.107
 '02f14bfd5db627afa2172668d85f9ba5', // ar - MacOS X 10.6.2 - Chrome 10.0.648.127
 '269da7ce329d4064c67c43e3c91726e6', // */* - ar - MacOS X 10.6.2 - Chrome 10.0.648.127
+'e7f4c71a58c0ca14b2dac1c2d0611c9d', // ar - MacOS X 10.6.2 - Chrome 10.0.648.133
+'a44e4a6d292e597cc8eb47e334ce0d45', // */* - ar - MacOS X 10.6.2 - Chrome 10.0.648.133
 '769ef70a5afdb46f8d5c5c8aef0045a4', // ar - MacOS X 10.6.3 - Chrome 8.0.552.215
 '6c1d92e7bb275ca88c8305c2bc47904e', // */* - ar - MacOS X 10.6.3 - Chrome 8.0.552.215
 'd858d41658d0e78df7a607e7f0a71f50', // ar - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -8860,6 +9744,8 @@ $browsers_fingerprints = array(
 '93e4ea85c584e08564c1236fcd7e3d19', // */* - ar - MacOS X 10.6.3 - Chrome 9.0.597.107
 '92342e7e81464fbae289ed7985f2c98d', // ar - MacOS X 10.6.3 - Chrome 10.0.648.127
 '76b7cd2e8e6555c55beb7ed584d2399c', // */* - ar - MacOS X 10.6.3 - Chrome 10.0.648.127
+'e410865ab357fa365910e7a31f2662f6', // ar - MacOS X 10.6.3 - Chrome 10.0.648.133
+'078510631495606ebd87a1dad7d1aedc', // */* - ar - MacOS X 10.6.3 - Chrome 10.0.648.133
 '832b94fce5d7c36f63646032328b0ba2', // ar - MacOS X 10.6.4 - Chrome 8.0.552.215
 '6ad8b524a90b2fa2d2b56c7c310f1931', // */* - ar - MacOS X 10.6.4 - Chrome 8.0.552.215
 '0a858556347da2cc3242d5e9b8af48bb', // ar - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -8880,6 +9766,8 @@ $browsers_fingerprints = array(
 '2e57d27d6b8899d055e632de353d0864', // */* - ar - MacOS X 10.6.4 - Chrome 9.0.597.107
 'b277028e2ee8d1667b7a4a3e4ec05a30', // ar - MacOS X 10.6.4 - Chrome 10.0.648.127
 'b32a823c95761644648c4fe3257b350f', // */* - ar - MacOS X 10.6.4 - Chrome 10.0.648.127
+'7043acd64ec47ca2ced2d7562fa452ea', // ar - MacOS X 10.6.4 - Chrome 10.0.648.133
+'8771412ab3a56247a1fa89bc7710d884', // */* - ar - MacOS X 10.6.4 - Chrome 10.0.648.133
 '5cdcf3b3c70279ce5e9b69cf5d7fc8b9', // ar - MacOS X 10.6.5 - Chrome 8.0.552.215
 '892182f65e4f9d4918dcf092d6305873', // */* - ar - MacOS X 10.6.5 - Chrome 8.0.552.215
 '5bcf7c962b7064700ab9d2ee58e571a0', // ar - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -8900,6 +9788,8 @@ $browsers_fingerprints = array(
 '5c07278c82ce6c7b9621bc662de72278', // */* - ar - MacOS X 10.6.5 - Chrome 9.0.597.107
 '2ff88da3c966066819821c88f054f268', // ar - MacOS X 10.6.5 - Chrome 10.0.648.127
 '75a09d3066b549ea7880f4cde5364fae', // */* - ar - MacOS X 10.6.5 - Chrome 10.0.648.127
+'d7b17cddf315dcd31fe9dff226212088', // ar - MacOS X 10.6.5 - Chrome 10.0.648.133
+'35575a7b8dc48b2f6bd40a93ff9db7d2', // */* - ar - MacOS X 10.6.5 - Chrome 10.0.648.133
 '30871cbea836b95f37e3e95b5c394f07', // ar - MacOS X 10.6.6 - Chrome 8.0.552.215
 'df4ffa316220cc35722e7da6f9f49c34', // */* - ar - MacOS X 10.6.6 - Chrome 8.0.552.215
 'e0fd38128ff4f8dec9b6f170b6c37c35', // ar - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -8920,6 +9810,8 @@ $browsers_fingerprints = array(
 '8d73dcc1c073f5d75c6d7564796d3db3', // */* - ar - MacOS X 10.6.6 - Chrome 9.0.597.107
 '847a5cd74fd1802b7e11e0b270493fa7', // ar - MacOS X 10.6.6 - Chrome 10.0.648.127
 'd0de416e1215a189592087d9196483d4', // */* - ar - MacOS X 10.6.6 - Chrome 10.0.648.127
+'97ec392a3b8a49e9cd2be64809723965', // ar - MacOS X 10.6.6 - Chrome 10.0.648.133
+'c3484558548659807abdd9cf4f23856a', // */* - ar - MacOS X 10.6.6 - Chrome 10.0.648.133
 'fab07a3ad99bd8b19b4f51088bbceff4', // ar - Linux - Chrome 8.0.552.215
 '6b9a2f4c00087f27faa7344eaabcc018', // */* - ar - Linux - Chrome 8.0.552.215
 'e0590e4a691c709ec7d1eeacf4f5c6d7', // ar - Linux - Chrome 8.0.552.224
@@ -8940,6 +9832,8 @@ $browsers_fingerprints = array(
 'c24ac808de95059c6286a106ad994bbb', // */* - ar - Linux - Chrome 9.0.597.107
 '519ca97cf6b4ffbf197c47898ec73019', // ar - Linux - Chrome 10.0.648.127
 'c198bdbb9d515f6731572938137f18c3', // */* - ar - Linux - Chrome 10.0.648.127
+'7936155fc2d63bdaad3318fbe3095c41', // ar - Linux - Chrome 10.0.648.133
+'b074265bf7dc9c2f24f34f6d616a7a44', // */* - ar - Linux - Chrome 10.0.648.133
 '187d11a9b45727a693e636ba05286abb', // ar - Linux 64 - Chrome 8.0.552.215
 'c87c1eed4a0f479214c9520d086bc375', // */* - ar - Linux 64 - Chrome 8.0.552.215
 '997b5cccc2d621b6dfa447fa56706c88', // ar - Linux 64 - Chrome 8.0.552.224
@@ -8960,6 +9854,8 @@ $browsers_fingerprints = array(
 '759ae053e3450ae3af45719f6b6e4989', // */* - ar - Linux 64 - Chrome 9.0.597.107
 'e13d42f707248ee02463ef96d6ac61ac', // ar - Linux 64 - Chrome 10.0.648.127
 'b337792b4c988f01011d300ee4db0e3d', // */* - ar - Linux 64 - Chrome 10.0.648.127
+'76a35bc68c8135989cf804ba586fd0a1', // ar - Linux 64 - Chrome 10.0.648.133
+'2d6c1cee4d78360de60f6db4596d1f66', // */* - ar - Linux 64 - Chrome 10.0.648.133
 '3be10ae09a901a65fb5baffb17df38e0', // th-TH - Windows XP - Chrome 8.0.552.215
 'cae9386197561a23438f3935d1b9f320', // */* - th-TH - Windows XP - Chrome 8.0.552.215
 '55b63c27c48a69f239adf64efe6f558a', // th-TH - Windows XP - Chrome 8.0.552.224
@@ -8980,6 +9876,8 @@ $browsers_fingerprints = array(
 'dacff97093339991550db3b499fd7268', // */* - th-TH - Windows XP - Chrome 9.0.597.107
 'bf3b886159bc88e9e274e8bc6d863c14', // th-TH - Windows XP - Chrome 10.0.648.127
 '8c44f0a83365ef675546518c0fd87fa5', // */* - th-TH - Windows XP - Chrome 10.0.648.127
+'6fce05b788fd7e116a0d881c34592161', // th-TH - Windows XP - Chrome 10.0.648.133
+'00e8678d8a6fe2dd6d1e9b67a2e30ecb', // */* - th-TH - Windows XP - Chrome 10.0.648.133
 'fa0501491eca14ec36a158190be8fb34', // th-TH - Windows 2003 - Chrome 8.0.552.215
 '3087d195a1b61e7eb76d1818826fced4', // */* - th-TH - Windows 2003 - Chrome 8.0.552.215
 '71948f9fdd904ddd0bc4d171b69c3021', // th-TH - Windows 2003 - Chrome 8.0.552.224
@@ -9000,6 +9898,8 @@ $browsers_fingerprints = array(
 '7a12ba5e18d0c7dd2588f5354519c7df', // */* - th-TH - Windows 2003 - Chrome 9.0.597.107
 'ba7a576b0dfb92c26b7c00c86a49fa10', // th-TH - Windows 2003 - Chrome 10.0.648.127
 'f7dd19489cdfaffc00179adfd17bfca3', // */* - th-TH - Windows 2003 - Chrome 10.0.648.127
+'1311c96143824d7e047043012ed34785', // th-TH - Windows 2003 - Chrome 10.0.648.133
+'23dc837148a21796326b3dadb67577f1', // */* - th-TH - Windows 2003 - Chrome 10.0.648.133
 '31ea7fc55cf474d6f661c84b0875417a', // th-TH - Windows Vista - Chrome 8.0.552.215
 'a89a77a3adb4c67ee1d31cd43a825604', // */* - th-TH - Windows Vista - Chrome 8.0.552.215
 '04063e49ab0abba4fa6fee3f6e83914d', // th-TH - Windows Vista - Chrome 8.0.552.224
@@ -9020,6 +9920,8 @@ $browsers_fingerprints = array(
 '5430482f5f7970203c3a1759b3cd293b', // */* - th-TH - Windows Vista - Chrome 9.0.597.107
 '4833c38ba0c98339e9c93fb12121b359', // th-TH - Windows Vista - Chrome 10.0.648.127
 '5953ee9c8e18e88da7e3e07bb42acf01', // */* - th-TH - Windows Vista - Chrome 10.0.648.127
+'48f0f67a6a214f1d664d3744e7445af9', // th-TH - Windows Vista - Chrome 10.0.648.133
+'3f36028e2e9a2433e4683f03841ac017', // */* - th-TH - Windows Vista - Chrome 10.0.648.133
 'bd12350839675bf196dfa001da49613c', // th-TH - Windows 7 - Chrome 8.0.552.215
 '6308a217758458362bc08a5dadca6644', // */* - th-TH - Windows 7 - Chrome 8.0.552.215
 '487f1890df33da7a0ab313e08186f48d', // th-TH - Windows 7 - Chrome 8.0.552.224
@@ -9040,6 +9942,8 @@ $browsers_fingerprints = array(
 '5d7d8ac77e0fd34a7f51778a14353912', // */* - th-TH - Windows 7 - Chrome 9.0.597.107
 '65b16107a2d09aa7eaa9c6aaa658d28d', // th-TH - Windows 7 - Chrome 10.0.648.127
 'da38cdb76aa4acccea2894dfdbba79a4', // */* - th-TH - Windows 7 - Chrome 10.0.648.127
+'a3507b2320bf2db0d2f07c30fd91a72f', // th-TH - Windows 7 - Chrome 10.0.648.133
+'9fa9107858a6f1bb14a1c2d0393b8bed', // */* - th-TH - Windows 7 - Chrome 10.0.648.133
 'da0c3b907a64abf9eedd7cef2cad7f4d', // th-TH - MacOS X 10.5.8 - Chrome 8.0.552.215
 '3249fc0a1c06a861b496ab24d4cf1546', // */* - th-TH - MacOS X 10.5.8 - Chrome 8.0.552.215
 'f62cde55ded00f085b06dde10a30482a', // th-TH - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -9060,6 +9964,8 @@ $browsers_fingerprints = array(
 'c674cb573573277b57b64841e7cef294', // */* - th-TH - MacOS X 10.5.8 - Chrome 9.0.597.107
 'ddbb95fb328c66d4f27a00e8e754789f', // th-TH - MacOS X 10.5.8 - Chrome 10.0.648.127
 '0b8dace1e4d87e0b589c59d3f4d72bbd', // */* - th-TH - MacOS X 10.5.8 - Chrome 10.0.648.127
+'19a82f39dfd09898df6d3a7a1fa44bbf', // th-TH - MacOS X 10.5.8 - Chrome 10.0.648.133
+'e486a71365cb677231a25f794ddf5f8b', // */* - th-TH - MacOS X 10.5.8 - Chrome 10.0.648.133
 'd1b722cbb6e721a48abf8b374189ede6', // th-TH - MacOS X 10.6.0 - Chrome 8.0.552.215
 '7423786975057d7f6782153fbcb50be0', // */* - th-TH - MacOS X 10.6.0 - Chrome 8.0.552.215
 'cda916eefb6a37f4f2c7a6dd05ca63cb', // th-TH - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -9080,6 +9986,8 @@ $browsers_fingerprints = array(
 'a5398d638e928033494c88176977ab4c', // */* - th-TH - MacOS X 10.6.0 - Chrome 9.0.597.107
 'ef252915b369642e32c2b3c03f9169a8', // th-TH - MacOS X 10.6.0 - Chrome 10.0.648.127
 '6ea65b9b526129869cec3a36dc85512c', // */* - th-TH - MacOS X 10.6.0 - Chrome 10.0.648.127
+'4bbae220c5ceb91bc0ec8613c117ef35', // th-TH - MacOS X 10.6.0 - Chrome 10.0.648.133
+'8a0d45dcdf248608fdce857cf39e264a', // */* - th-TH - MacOS X 10.6.0 - Chrome 10.0.648.133
 'd6133a9f8251527c1cafe0df3004d9d7', // th-TH - MacOS X 10.6.1 - Chrome 8.0.552.215
 '6d308b42b3ff52d19f4ce2fd6ed38e9b', // */* - th-TH - MacOS X 10.6.1 - Chrome 8.0.552.215
 'd5f55d6bce2669f0ad3d6d7303ca85a5', // th-TH - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -9100,6 +10008,8 @@ $browsers_fingerprints = array(
 'bf11549cff5ed346cc4003a44049e353', // */* - th-TH - MacOS X 10.6.1 - Chrome 9.0.597.107
 '61e3999a677c30c6ca2f162fb8e4e215', // th-TH - MacOS X 10.6.1 - Chrome 10.0.648.127
 '7d860efffc4f518d69ffcbb49e977558', // */* - th-TH - MacOS X 10.6.1 - Chrome 10.0.648.127
+'a9fd53d0f082f3cbfb0b64f6ef0407db', // th-TH - MacOS X 10.6.1 - Chrome 10.0.648.133
+'860872452933028879fe52dcb6580dff', // */* - th-TH - MacOS X 10.6.1 - Chrome 10.0.648.133
 'd6133a9f8251527c1cafe0df3004d9d7', // th-TH - MacOS X 10.6.2 - Chrome 8.0.552.215
 '6d308b42b3ff52d19f4ce2fd6ed38e9b', // */* - th-TH - MacOS X 10.6.2 - Chrome 8.0.552.215
 'd5f55d6bce2669f0ad3d6d7303ca85a5', // th-TH - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -9120,6 +10030,8 @@ $browsers_fingerprints = array(
 'bf11549cff5ed346cc4003a44049e353', // */* - th-TH - MacOS X 10.6.2 - Chrome 9.0.597.107
 '61e3999a677c30c6ca2f162fb8e4e215', // th-TH - MacOS X 10.6.2 - Chrome 10.0.648.127
 '7d860efffc4f518d69ffcbb49e977558', // */* - th-TH - MacOS X 10.6.2 - Chrome 10.0.648.127
+'a9fd53d0f082f3cbfb0b64f6ef0407db', // th-TH - MacOS X 10.6.2 - Chrome 10.0.648.133
+'860872452933028879fe52dcb6580dff', // */* - th-TH - MacOS X 10.6.2 - Chrome 10.0.648.133
 'a2627f8b7e0d57db167a7f446f690877', // th-TH - MacOS X 10.6.3 - Chrome 8.0.552.215
 '03c3e77bf0b6f2cac72aab5a0862f153', // */* - th-TH - MacOS X 10.6.3 - Chrome 8.0.552.215
 'cd28ef4bddfaf2454a68009b3e5c6825', // th-TH - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -9140,6 +10052,8 @@ $browsers_fingerprints = array(
 '510b28c1c3bfdb034d3bfca6e9a9bc0e', // */* - th-TH - MacOS X 10.6.3 - Chrome 9.0.597.107
 '7c86a53eb3d4f2fc8f183e39515da611', // th-TH - MacOS X 10.6.3 - Chrome 10.0.648.127
 'bb9f25b5f3a416b4890864ae6b9283c4', // */* - th-TH - MacOS X 10.6.3 - Chrome 10.0.648.127
+'3e62fc00323845007ef41339715b127a', // th-TH - MacOS X 10.6.3 - Chrome 10.0.648.133
+'3ba905842aaf629856b14716899fb3a8', // */* - th-TH - MacOS X 10.6.3 - Chrome 10.0.648.133
 'cf08640f65c3b8e7c7479b42e77be802', // th-TH - MacOS X 10.6.4 - Chrome 8.0.552.215
 'c71560d0d095db6f40c1a9140a3f86a1', // */* - th-TH - MacOS X 10.6.4 - Chrome 8.0.552.215
 '807fe0d186b6be103e8c268173517f64', // th-TH - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -9160,6 +10074,8 @@ $browsers_fingerprints = array(
 '7b9f2647b7255b2da446907489ab1b52', // */* - th-TH - MacOS X 10.6.4 - Chrome 9.0.597.107
 '255fc9d2d5be13e339b3def452eb30b7', // th-TH - MacOS X 10.6.4 - Chrome 10.0.648.127
 'ebe41cededc9a65a0b5a70fe4ff921ce', // */* - th-TH - MacOS X 10.6.4 - Chrome 10.0.648.127
+'ccccba0318bc475e4a550985e85b901a', // th-TH - MacOS X 10.6.4 - Chrome 10.0.648.133
+'e3e648a03257434a1f71689f93533506', // */* - th-TH - MacOS X 10.6.4 - Chrome 10.0.648.133
 'd344b426ca5832f712a02ed5fc9f6d0d', // th-TH - MacOS X 10.6.5 - Chrome 8.0.552.215
 'aaae0f1a116a7c8259624fa084ca04db', // */* - th-TH - MacOS X 10.6.5 - Chrome 8.0.552.215
 'db9f350e913d72261144fc724b419235', // th-TH - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -9180,6 +10096,8 @@ $browsers_fingerprints = array(
 '19302d2f0df868aec70b8c7993fdd1a5', // */* - th-TH - MacOS X 10.6.5 - Chrome 9.0.597.107
 '2b88b4cd3726a49ce9282e78490e6e68', // th-TH - MacOS X 10.6.5 - Chrome 10.0.648.127
 'fd28159712d5d49f3af7192338c15b3e', // */* - th-TH - MacOS X 10.6.5 - Chrome 10.0.648.127
+'5a394bc4d09b0b61148305bcf2667cca', // th-TH - MacOS X 10.6.5 - Chrome 10.0.648.133
+'25dcf08c015c6c1e836ba87b12635008', // */* - th-TH - MacOS X 10.6.5 - Chrome 10.0.648.133
 '4ecfa3b05a4bc867f75ffbd9ea9b270b', // th-TH - MacOS X 10.6.6 - Chrome 8.0.552.215
 'b072d18c9787f5fa8d70ffe6de69ddf2', // */* - th-TH - MacOS X 10.6.6 - Chrome 8.0.552.215
 '401820049f3310cccf397d8913a43c63', // th-TH - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -9200,6 +10118,8 @@ $browsers_fingerprints = array(
 'b24066eb61cdbec764c67fb41589db71', // */* - th-TH - MacOS X 10.6.6 - Chrome 9.0.597.107
 '8af527740bc1d7111a4e8f9a54ebb17b', // th-TH - MacOS X 10.6.6 - Chrome 10.0.648.127
 '103f4257c15dd55ceca8ff99863fe9bc', // */* - th-TH - MacOS X 10.6.6 - Chrome 10.0.648.127
+'1cf0c6cdcf8c581e0e5e58de736c4d89', // th-TH - MacOS X 10.6.6 - Chrome 10.0.648.133
+'763b23c6ea0663b5cb7ef63d6a2ac5b8', // */* - th-TH - MacOS X 10.6.6 - Chrome 10.0.648.133
 '0b21e7e32db17bcaa9d266dd89ee8089', // th-TH - Linux - Chrome 8.0.552.215
 '6fa403c1963873d9152a5c62930b2414', // */* - th-TH - Linux - Chrome 8.0.552.215
 '02d41c7fdccd399213924a3976540592', // th-TH - Linux - Chrome 8.0.552.224
@@ -9220,6 +10140,8 @@ $browsers_fingerprints = array(
 '7a0763e77d25c1dcbd8b3d7e5beb3ace', // */* - th-TH - Linux - Chrome 9.0.597.107
 'e149209adf488a1cbb502a9973d673e9', // th-TH - Linux - Chrome 10.0.648.127
 '228cd3a62af8cbed055f48d3022ef49b', // */* - th-TH - Linux - Chrome 10.0.648.127
+'06b78dda20b2a27842ec43b0cb795505', // th-TH - Linux - Chrome 10.0.648.133
+'b75a07de023e41bda48a00d745ed6e30', // */* - th-TH - Linux - Chrome 10.0.648.133
 '32f53ddf55ba30b5c640b2c4d81790e8', // th-TH - Linux 64 - Chrome 8.0.552.215
 '978fc5dc97d6ea4275640c000d2cfe3c', // */* - th-TH - Linux 64 - Chrome 8.0.552.215
 'ee6e9b3be56172974ceea8ce0b103359', // th-TH - Linux 64 - Chrome 8.0.552.224
@@ -9240,6 +10162,8 @@ $browsers_fingerprints = array(
 '6d1b337948edcfd8371d7ed3727be83d', // */* - th-TH - Linux 64 - Chrome 9.0.597.107
 '0ad55b5891d351e651b49e5ab5b36c51', // th-TH - Linux 64 - Chrome 10.0.648.127
 'd2094b742b14176bf557344972403253', // */* - th-TH - Linux 64 - Chrome 10.0.648.127
+'8d35e31784acc7109e884e73f4ded097', // th-TH - Linux 64 - Chrome 10.0.648.133
+'17a1cc9bd611900034fdc9fced3ffdcd', // */* - th-TH - Linux 64 - Chrome 10.0.648.133
 'f2952e47da20bb06d9252c001dc07e3d', // lv-LV - Windows XP - Chrome 8.0.552.215
 '540433f9c3204e5f6ddf05946632c7c9', // */* - lv-LV - Windows XP - Chrome 8.0.552.215
 '51eab4f328cf03824ca73c332cd89d96', // lv-LV - Windows XP - Chrome 8.0.552.224
@@ -9260,6 +10184,8 @@ $browsers_fingerprints = array(
 '95a3e189c3d8f7fd37dd3e4a9dab8f24', // */* - lv-LV - Windows XP - Chrome 9.0.597.107
 '30cc0d6cad9d15a01529217223e1fd17', // lv-LV - Windows XP - Chrome 10.0.648.127
 'd0a086ef22bc1b2a82f233c9ff29ff25', // */* - lv-LV - Windows XP - Chrome 10.0.648.127
+'281401aa4daed4bf765a22c124b28b6b', // lv-LV - Windows XP - Chrome 10.0.648.133
+'081a4de6aade7d129b5a38b52ab21f5e', // */* - lv-LV - Windows XP - Chrome 10.0.648.133
 '107ea672af5d8fde2f7076489e9f4bf4', // lv-LV - Windows 2003 - Chrome 8.0.552.215
 '001e614c562a3c7640115fdca42f2ac7', // */* - lv-LV - Windows 2003 - Chrome 8.0.552.215
 '8799444a6fa168131a5b06e6149bfba9', // lv-LV - Windows 2003 - Chrome 8.0.552.224
@@ -9280,6 +10206,8 @@ $browsers_fingerprints = array(
 '65e0fca8a6e0ea2031ab8edbe326b6fd', // */* - lv-LV - Windows 2003 - Chrome 9.0.597.107
 '8c4b97a0f382be05d03d48f45d6d9e4c', // lv-LV - Windows 2003 - Chrome 10.0.648.127
 '8b2e57cd4cd8451cb2c138755e23c649', // */* - lv-LV - Windows 2003 - Chrome 10.0.648.127
+'452c617a770e60807eeef9450a87ddec', // lv-LV - Windows 2003 - Chrome 10.0.648.133
+'b9c22f6d08e86996312d7418132f0c61', // */* - lv-LV - Windows 2003 - Chrome 10.0.648.133
 '685f9c45d6a06f257e766d7f0c6d2666', // lv-LV - Windows Vista - Chrome 8.0.552.215
 '5d1bedaafd5ba6f6a8b62f7443f53465', // */* - lv-LV - Windows Vista - Chrome 8.0.552.215
 '24f11dcfd3bcc038bc4e1d54e6bc91ab', // lv-LV - Windows Vista - Chrome 8.0.552.224
@@ -9300,6 +10228,8 @@ $browsers_fingerprints = array(
 '61f921bb5188f3df685b8189da6ea875', // */* - lv-LV - Windows Vista - Chrome 9.0.597.107
 'a4bf9760ab02d1ded33164baa13a5bfc', // lv-LV - Windows Vista - Chrome 10.0.648.127
 '10c6d82ae1d9d711918d068630da3d11', // */* - lv-LV - Windows Vista - Chrome 10.0.648.127
+'084a768d16a33e1bfadd557ed016a1ec', // lv-LV - Windows Vista - Chrome 10.0.648.133
+'9032390241b499c92779f4010edf3b68', // */* - lv-LV - Windows Vista - Chrome 10.0.648.133
 '98fd4886939095f92121a558f3ef6b7a', // lv-LV - Windows 7 - Chrome 8.0.552.215
 'b4d66e19dea9566079d4b2026a1c83d9', // */* - lv-LV - Windows 7 - Chrome 8.0.552.215
 '33bc008ab8fbc56780718efc5f3675a6', // lv-LV - Windows 7 - Chrome 8.0.552.224
@@ -9320,6 +10250,8 @@ $browsers_fingerprints = array(
 'c1a3fcd323aa25fe7e7ea95132b94e5a', // */* - lv-LV - Windows 7 - Chrome 9.0.597.107
 '30743d562952a9816662e798dfc2d0a9', // lv-LV - Windows 7 - Chrome 10.0.648.127
 'f7906e2f456a1d9a53fc23a1a29df5fe', // */* - lv-LV - Windows 7 - Chrome 10.0.648.127
+'3ad56a9cb289f943bf8574b48814efda', // lv-LV - Windows 7 - Chrome 10.0.648.133
+'2807b1e55b649477bffa6b8ad8800803', // */* - lv-LV - Windows 7 - Chrome 10.0.648.133
 'e94443cdeacfc5021e607fd051c903a4', // lv-LV - MacOS X 10.5.8 - Chrome 8.0.552.215
 '8582283ae241197ce8017e6188d60278', // */* - lv-LV - MacOS X 10.5.8 - Chrome 8.0.552.215
 'a14bbd2e396ce33c877ed45cfbb96d47', // lv-LV - MacOS X 10.5.8 - Chrome 8.0.552.224
@@ -9340,6 +10272,8 @@ $browsers_fingerprints = array(
 '3fb3d0d856dffcc2901fca1554227f3f', // */* - lv-LV - MacOS X 10.5.8 - Chrome 9.0.597.107
 'c26482a6d2a0c55f50dc8e4814faac24', // lv-LV - MacOS X 10.5.8 - Chrome 10.0.648.127
 '325e13fae049e2c8c1d22fa29384e207', // */* - lv-LV - MacOS X 10.5.8 - Chrome 10.0.648.127
+'7d8dcfc6d06f655561ad03c987985ed4', // lv-LV - MacOS X 10.5.8 - Chrome 10.0.648.133
+'cdbd8c06c9bc737b1069d2c87845f784', // */* - lv-LV - MacOS X 10.5.8 - Chrome 10.0.648.133
 '5fe2f2bf8835c9f55b5677ea23835dce', // lv-LV - MacOS X 10.6.0 - Chrome 8.0.552.215
 '25a84c61d433a557b69d84fde505a683', // */* - lv-LV - MacOS X 10.6.0 - Chrome 8.0.552.215
 '102827e6127678f0bfa74df035be58e1', // lv-LV - MacOS X 10.6.0 - Chrome 8.0.552.224
@@ -9360,6 +10294,8 @@ $browsers_fingerprints = array(
 '16740023878af5f3c89f1f8a17e2f361', // */* - lv-LV - MacOS X 10.6.0 - Chrome 9.0.597.107
 '009a075ef820abfc265467b366eea444', // lv-LV - MacOS X 10.6.0 - Chrome 10.0.648.127
 'e6563870de04a592ffa2afc8c1aeb3cc', // */* - lv-LV - MacOS X 10.6.0 - Chrome 10.0.648.127
+'feb9f3896e166864d2ddcfbfd09b071a', // lv-LV - MacOS X 10.6.0 - Chrome 10.0.648.133
+'d468c8befc0d7c42d15183750a9a14b0', // */* - lv-LV - MacOS X 10.6.0 - Chrome 10.0.648.133
 '27901369a0f78b9aa12b027307fac017', // lv-LV - MacOS X 10.6.1 - Chrome 8.0.552.215
 '7fdd8ae8dd1ed098715f50a4b39e180f', // */* - lv-LV - MacOS X 10.6.1 - Chrome 8.0.552.215
 'a7b933f9c2cc67b6159aff26a9046aed', // lv-LV - MacOS X 10.6.1 - Chrome 8.0.552.224
@@ -9380,6 +10316,8 @@ $browsers_fingerprints = array(
 '3dc08090ce35f90da51daeea4e14d7de', // */* - lv-LV - MacOS X 10.6.1 - Chrome 9.0.597.107
 'd96ecdc5f0435624c71a4f468307fd2b', // lv-LV - MacOS X 10.6.1 - Chrome 10.0.648.127
 '4cca0b423b4a9de11fcff9273219918c', // */* - lv-LV - MacOS X 10.6.1 - Chrome 10.0.648.127
+'8408ee16d2ff366fe23d8ca6f91780fa', // lv-LV - MacOS X 10.6.1 - Chrome 10.0.648.133
+'f88dd67849c0c9c4de5d4247e4d69016', // */* - lv-LV - MacOS X 10.6.1 - Chrome 10.0.648.133
 '27901369a0f78b9aa12b027307fac017', // lv-LV - MacOS X 10.6.2 - Chrome 8.0.552.215
 '7fdd8ae8dd1ed098715f50a4b39e180f', // */* - lv-LV - MacOS X 10.6.2 - Chrome 8.0.552.215
 'a7b933f9c2cc67b6159aff26a9046aed', // lv-LV - MacOS X 10.6.2 - Chrome 8.0.552.224
@@ -9400,6 +10338,8 @@ $browsers_fingerprints = array(
 '3dc08090ce35f90da51daeea4e14d7de', // */* - lv-LV - MacOS X 10.6.2 - Chrome 9.0.597.107
 'd96ecdc5f0435624c71a4f468307fd2b', // lv-LV - MacOS X 10.6.2 - Chrome 10.0.648.127
 '4cca0b423b4a9de11fcff9273219918c', // */* - lv-LV - MacOS X 10.6.2 - Chrome 10.0.648.127
+'8408ee16d2ff366fe23d8ca6f91780fa', // lv-LV - MacOS X 10.6.2 - Chrome 10.0.648.133
+'f88dd67849c0c9c4de5d4247e4d69016', // */* - lv-LV - MacOS X 10.6.2 - Chrome 10.0.648.133
 '256846e2425b882c128bbdd382e40812', // lv-LV - MacOS X 10.6.3 - Chrome 8.0.552.215
 '0024750556fdf79c9ae12f856f888b3f', // */* - lv-LV - MacOS X 10.6.3 - Chrome 8.0.552.215
 'ce36c2a6975218d680b712a23d11bf08', // lv-LV - MacOS X 10.6.3 - Chrome 8.0.552.224
@@ -9420,6 +10360,8 @@ $browsers_fingerprints = array(
 '837358ddf455d777d1368d8a6fff28b9', // */* - lv-LV - MacOS X 10.6.3 - Chrome 9.0.597.107
 '4dba15b8aa9f1059892996313193844b', // lv-LV - MacOS X 10.6.3 - Chrome 10.0.648.127
 '46eec9cb05cfb11a3e427fc1360b9461', // */* - lv-LV - MacOS X 10.6.3 - Chrome 10.0.648.127
+'6c0a88bfe5630ac623c29ad1ff4f9080', // lv-LV - MacOS X 10.6.3 - Chrome 10.0.648.133
+'ab4ed4996959fab7b81772f4aed6c7fb', // */* - lv-LV - MacOS X 10.6.3 - Chrome 10.0.648.133
 '89be5c12d01e8ef07b00cb0303ddc32b', // lv-LV - MacOS X 10.6.4 - Chrome 8.0.552.215
 '0077f79da2d949cc727402ea51340d00', // */* - lv-LV - MacOS X 10.6.4 - Chrome 8.0.552.215
 'f15f8c6228314e268f745688d82ee767', // lv-LV - MacOS X 10.6.4 - Chrome 8.0.552.224
@@ -9440,6 +10382,8 @@ $browsers_fingerprints = array(
 'c6c4160da7763226b998a440c1d70110', // */* - lv-LV - MacOS X 10.6.4 - Chrome 9.0.597.107
 '9c1c647dcbcf30dc0a22bf4b4bad5cc6', // lv-LV - MacOS X 10.6.4 - Chrome 10.0.648.127
 'c08e73558f128d5707f8e092863d7d37', // */* - lv-LV - MacOS X 10.6.4 - Chrome 10.0.648.127
+'bb57ee6ec4b5b20b0748bd554f9408da', // lv-LV - MacOS X 10.6.4 - Chrome 10.0.648.133
+'82bdadf5ed65f1c49e61d073e548eaf8', // */* - lv-LV - MacOS X 10.6.4 - Chrome 10.0.648.133
 'c120c11c2446bfd3d0cebc36d2f81b72', // lv-LV - MacOS X 10.6.5 - Chrome 8.0.552.215
 '199fcd9cb15039bb1051cd9a19e91523', // */* - lv-LV - MacOS X 10.6.5 - Chrome 8.0.552.215
 '01e099f3a2bdf9046aba6424d90c95cf', // lv-LV - MacOS X 10.6.5 - Chrome 8.0.552.224
@@ -9460,6 +10404,8 @@ $browsers_fingerprints = array(
 '14ed65bbfffeebe493a6da14f9bff0b5', // */* - lv-LV - MacOS X 10.6.5 - Chrome 9.0.597.107
 'cfac671f4dd4d798f265c3b280647b53', // lv-LV - MacOS X 10.6.5 - Chrome 10.0.648.127
 '6237fc1b1f145802375b5f13cb1f6a91', // */* - lv-LV - MacOS X 10.6.5 - Chrome 10.0.648.127
+'d80c326936a88436838b65e95102246f', // lv-LV - MacOS X 10.6.5 - Chrome 10.0.648.133
+'a69c114f54ebb93461fd32d1abb2b52f', // */* - lv-LV - MacOS X 10.6.5 - Chrome 10.0.648.133
 '9a85d4d9e28dc47faefb9a1c6b53edb2', // lv-LV - MacOS X 10.6.6 - Chrome 8.0.552.215
 'b63018ecdcccc6ad3ba29eff544e9f39', // */* - lv-LV - MacOS X 10.6.6 - Chrome 8.0.552.215
 '9e8b37df443870cbac51ce90e97bf286', // lv-LV - MacOS X 10.6.6 - Chrome 8.0.552.224
@@ -9480,6 +10426,8 @@ $browsers_fingerprints = array(
 '053b15f12c44181635f77deca61d6b9a', // */* - lv-LV - MacOS X 10.6.6 - Chrome 9.0.597.107
 '00f92b90053e8b1bd6badedddd970365', // lv-LV - MacOS X 10.6.6 - Chrome 10.0.648.127
 'f45f2ef0794f05ed3b30c65be74cb322', // */* - lv-LV - MacOS X 10.6.6 - Chrome 10.0.648.127
+'d3a9e5c3f93d6692a968330c3b830703', // lv-LV - MacOS X 10.6.6 - Chrome 10.0.648.133
+'8e0ada680d26a6ee5ad4a60199c08858', // */* - lv-LV - MacOS X 10.6.6 - Chrome 10.0.648.133
 '7b5f472c7c3f67e67dd4ffcf7de3d1da', // lv-LV - Linux - Chrome 8.0.552.215
 '266d84f476895813dfef3f7859632c30', // */* - lv-LV - Linux - Chrome 8.0.552.215
 'af4a0051edf0cfd68b319bb9d4f198d4', // lv-LV - Linux - Chrome 8.0.552.224
@@ -9500,6 +10448,8 @@ $browsers_fingerprints = array(
 'cd1d8f751cbe518ec9362548536adf4c', // */* - lv-LV - Linux - Chrome 9.0.597.107
 '2596737eb2e9d652e6ab4070f30c19c6', // lv-LV - Linux - Chrome 10.0.648.127
 'e4c604e1a6e30d741a7d6e64c76900d8', // */* - lv-LV - Linux - Chrome 10.0.648.127
+'9159081bb2e0c842f812a2b4b2a2480f', // lv-LV - Linux - Chrome 10.0.648.133
+'c8f807396e86d9d4ed67296b5da2f400', // */* - lv-LV - Linux - Chrome 10.0.648.133
 '4af347082de847ec9fac4b3f65943113', // lv-LV - Linux 64 - Chrome 8.0.552.215
 '005e7ee177f6d0fcaac110daefa5952a', // */* - lv-LV - Linux 64 - Chrome 8.0.552.215
 '3117da64867466648559a591b43e021e', // lv-LV - Linux 64 - Chrome 8.0.552.224
@@ -9520,6 +10470,8 @@ $browsers_fingerprints = array(
 '29dcbeb518a5f0d42fba6d69204086c6', // */* - lv-LV - Linux 64 - Chrome 9.0.597.107
 '8698cfb0f3532d145da5c68210cac2c3', // lv-LV - Linux 64 - Chrome 10.0.648.127
 '5fca8db685d4bf01402c528e199c46d7', // */* - lv-LV - Linux 64 - Chrome 10.0.648.127
+'23f5da8a6d021a0c7565ac112da9e8f9', // lv-LV - Linux 64 - Chrome 10.0.648.133
+'42ef66bd3df840de10252d6edd19eff4', // */* - lv-LV - Linux 64 - Chrome 10.0.648.133
 );
 return $browsers_fingerprints;
 ?>

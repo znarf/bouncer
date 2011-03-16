@@ -99,6 +99,8 @@ $known_fingerprints = array(
 // RSS
 '5b2361fdf1c6e31b99a55def5adfea6e',  // SimplePie/1.1.1 (Moonmoon)
 '09e5ec4c2fb7c5fcdced58de35f6e289',  // FR - Windows-RSS-Platform/2.0 (MSIE 8.0; Windows NT 5.1)
+'672d83bd134d933f94213e574809e979',  // US - Apple-PubSub 65.21
+'38e1732d732fe5a8713ef5777d7cd1e9',  // FR - Apple-PubSub 65.21
 '48f48b60e48af65e9fc20bc99971e76d',  // US - Apple-PubSub 65.20
 '7322bf08f0f24445f48613e0c3488610',  // FR - Apple-PubSub 65.20
 '1d50ef3c11cbeb999a8aa3ab5dfbe966',  // EN - Apple-PubSub 65.20
