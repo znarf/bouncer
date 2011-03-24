@@ -555,21 +555,21 @@ class Bouncer
             //     $identity['features']['link'] = 0;
             // }
             if ($identity['features']['image'] < 1 && $identity['features']['image'] > -5) {
-                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=image&t=' . mktime();
+                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=image&t=' . time();
                 $style = 'position:absolute;border:0;width:1px;height:1px;left:0;top:0;background:red;';
                 echo '<img style="' . $style . '" src="' . $url  . '"/>';
                 $identity['features']['image'] = $identity['features']['image'] - 1;
                 $store = true;
             }
             if ($identity['features']['iframe'] < 1 && $identity['features']['iframe'] > -5) {
-                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=iframe&t=' . mktime();
+                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=iframe&t=' . time();
                 $style = 'position:absolute;border:0;width:1px;height:1px;left:2px;top:0;background:blue;';
                 echo '<iframe style="' . $style . '" src="' . $url  . '"></iframe>';
                 $identity['features']['iframe'] = $identity['features']['iframe'] - 1;
                 $store = true;
             }
             if ($identity['features']['javascript'] < 1 && $identity['features']['javascript'] > -5) {
-                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=javascript&t=' . mktime();
+                $url = '?bouncer-challenge=1&bouncer-identity=' . $identity['id']  . '&bouncer-feature=javascript&t=' . time();
                 $style = 'position:absolute;border:0;width:1px;height:1px;left:1px;top:0;background:lime;';
                 echo '<script type="text/javascript">';
                 echo 'document.write(\'<img style="' . $style . '" src="' . $url  . '"/>\');';
