@@ -593,7 +593,7 @@ class Bouncer
 
     // Backend
 
-    protected static function backend()
+    public static function backend()
     {
         if (empty(self::$_backendInstance)) {
             switch (self::$_backend) {

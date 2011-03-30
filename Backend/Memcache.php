@@ -24,8 +24,12 @@ class Bouncer_Backend_Memcache
     public static function memcache()
     {
         if (empty(self::$memcache)) {
-            if (class_exists('Memcache')) {
+            if (class_exists('Memcached')) {
                 $memcache = new Memcache();
+            } elseif (class_exists('Memcache')) {
+                $memcache = new Memcached();
+            }
+            if (isset($memcache)) {
                 foreach (self::$_servers as $server) {
                     $memcache->addServer($server);
                 }
@@ -38,7 +42,9 @@ class Bouncer_Backend_Memcache
     public static function clean()
     {
         if (isset(self::$memcache)) {
-            self::$memcache->close();
+            if (method_exists(self::$memcache, 'close')) {
+                self::$memcache->close();
+            }
             self::$memcache = null;
         }
     }
