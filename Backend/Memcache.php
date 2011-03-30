@@ -31,7 +31,11 @@ class Bouncer_Backend_Memcache
             }
             if (isset($memcache)) {
                 foreach (self::$_servers as $server) {
-                    $memcache->addServer($server);
+                    list($node, $port) = explode(':', trim($server));
+                    $port = empty($port) ? 11211 : intval($port);
+                    if (!empty($node)) {
+                        $memcache->addServer($node, $port);
+                    }
                 }
                 self::$memcache = $memcache;
             }
