@@ -24,9 +24,9 @@ class Bouncer_Backend_Memcache
     public static function memcache()
     {
         if (empty(self::$memcache)) {
-            if (class_exists('Memcached')) {
+            if (class_exists('Memcache')) {
                 $memcache = new Memcache();
-            } elseif (class_exists('Memcache')) {
+            } elseif (class_exists('Memcached')) {
                 $memcache = new Memcached();
             }
             if (isset($memcache)) {
