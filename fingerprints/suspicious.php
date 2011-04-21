@@ -72,6 +72,7 @@ $suspicious_fingerprints = array(
 '485b4542bb733fe4474fa2a51681712a', //  BM  - Windows Vista - Explorer 7.0     (US - theplanet.com + DE - 82.140)
 '54b2f182c6c9e764fbb75e40624f50f4', //  BM  - MacOS X       - Safari 3.0.2     (US - theplanet.com + DE - 82.140)
 '3321732e13739fcdd7c727f11bf87623', //  BM  - MacOS X       - Safari 3.0.2     (US - theplanet.com + DE - 82.140)
+'e51ea93b3fa9c835eaecf9541c59e58b', //  BM  - Ubuntu/9.25   - Firefox/3.8
 // Explorer
 '201b89a0f2a212c9f6b73dab58ab9db3',    //  *  - Windows XP    - Explorer 6.0     (Default IE - User Agent only)
 '21f73ced1ec3fc21bd9d74eb037ec189',    //  *  - Windows XP    - Explorer 6.0     (US - yahoo.com)
