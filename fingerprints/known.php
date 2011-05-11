@@ -35,6 +35,7 @@ $known_fingerprints = array(
 '84c29cf970522cd3727c8627bd01a949',
 '788ac1a26b08052bc106a19dc505e3c9',
 '55a3ca444259a2b25c0072a7454ab99c',
+'fb110bdfa8428eddce25cc1af28d31a9',
 // App Engine Apps
 'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
 'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha
@@ -49,6 +50,7 @@ $known_fingerprints = array(
 '55971403dc3cbdd67d3dcf3ad872d5ca',  // twitter-trending-topics
 '8c1bfd4e130c5ae33d180bea4d96b5a6',  // botanyfree
 '2254fbea58cd0557c6ac4e08fdc7aad1',  // kiwi78
+'f6f862dec6c2c9fdc14f7cdf4f29d547',  // buyitnw
 // Crawlers
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)

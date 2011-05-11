@@ -51,6 +51,8 @@ $banned_fingerprints = array(
 '1b7abe56a5ceabaea486b0ed609eb17f', //  * - Mozilla/4.0 (compatible; MSIE 6.0; America Online Browser 1.1; rev1.1; Windows NT 5.1;)
 // Security scanning
 '3b8cad698673d7c3815ebce2c26477d6', //  Made by ZmEu @ WhiteHat Team - www.whitehat.ro
+// wp-login
+'e921c7d1289c87235c4aeeba2a3ca8b6',
 // Massive Attack
 'd56853b3188c81b077f48b8338d43442',
 'e03c20f8830c412f45c7e5c9598685ff',
