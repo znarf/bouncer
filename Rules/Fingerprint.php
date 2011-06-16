@@ -20,7 +20,7 @@ class Bouncer_Rules_Fingerprint
 
         if (in_array($name, Bouncer::$known_browsers)) {
             if (in_array($fingerprint, self::get("browser.$name"))) {
-                $scores[] = array(5, 'Browser Fingerprint');
+                $scores[] = array(10, 'Browser Fingerprint');
                 return $scores;
             }
         }

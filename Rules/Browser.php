@@ -85,7 +85,9 @@ class Bouncer_Rules_Browser
             // Only Gecko/Firefox send this headers
             if ($name != 'firefox') {
                 if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
-                    $scores[] = array(-5, 'current Firefox Accept header');
+                    if ($name != 'safari' && $name != 'chrome') { // chrome 12 send this header, maybe safari soon
+                        $scores[] = array(-5, 'current Firefox Accept header');
+                    }
                 }
                 if (isset($headers['Accept']) && $headers['Accept'] == 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
                     if ($name != 'safari' && $name != 'chrome') { // safari 3.0.x can send this header, also chrome 1.0
