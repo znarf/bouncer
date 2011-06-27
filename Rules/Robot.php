@@ -43,7 +43,7 @@ class Bouncer_Rules_Robot
                 break;
             case 'voila':
                 $score += strpos($host, 'fti.net') === false ? -5 : 2.5;
-                $score += $identity['fingerprint'] != '2e593407134622b8cab54d30e1efb9d9' ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '6c0b28de5758f39928fa7a0075ff8786' ? -5 : 2.5;
             case 'orange':
                 $score += strpos($host, 'fti.net') === false ? -5 : 2.5;
                 break;
