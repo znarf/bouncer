@@ -24,6 +24,7 @@ $suspicious_fingerprints = array(
 '8d0c98829565508d1da3fdaf38dedb2b', // Mozilla/5.0 - Accept-Encoding:gzip,deflate
 'ebcb99603c2fc2706bb8d2098e4ceba1', // Mozilla/5.0 - Accept:*/* - Accept-Encoding:deflate, gzip
 'ab22831f067a00592826609ce4453410', // Mozilla/4.0 - Accept:*/* - Accept-Encoding:gzip,deflate - Accept-Language:zh-cn, zh - Accept-Charset:GB2312,utf-8;q=0.7,*;q=0.7
+'56e43867f63d0728e66efc91b717d3cc', // Mozilla/4.0 - Accept:*/* - Accept-Language:zh-cn, zh - Accept-Charset:GB2312,utf-8;q=0.7,*;q=0.7
 '982301312ae692bbf1eab93007cd823f', // Mozilla/4.0 (compatible;) - Accept:*/*, */* - Accept-Language:nl,en,*
 // Programming languages defaults
 'd7c338fc5292ac8b15bacd0808ee1245', // Ruby
@@ -154,6 +155,7 @@ $suspicious_fingerprints = array(
 'a1f1d332025979db7ea517f4d51a07bc',    //  BM - Windows XP    - Firefox 3.0.1    (US - theplanet.com)
 '0e8ac149f40d409683b80470ecce4225',    //  BM - Windows Vista - Firefox 3.5.7    (JP)
 'f82f849c1705c8850c75f3753c1131fc',    //  BM - Windows Vista - Firefox 3.6.11
+'ffc0201b91b0518b7993eb768393f2db',    //  LD - Windows 7     - Firefox 3.6.13
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
