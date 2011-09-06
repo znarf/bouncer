@@ -61,6 +61,9 @@ class Bouncer_Rules_Fingerprint
             return 'suspicious';
         } else if (in_array($fingerprint, self::get('botnet'))) {
             return 'botnet';
+
+        } else if (in_array($fingerprint, self::get('browser.safari'))) {
+            return 'known';
         }
 
         return '';

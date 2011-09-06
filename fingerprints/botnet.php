@@ -502,6 +502,8 @@ $botnet_fingerprints = array(
 '01a599a87904a8ffe77c88b10d51d3d9', // Mozilla/5.0 (Windows; U; Windows NT 5.0; ca; rv:1.8.0.8) Gecko/20061025 Firefox/1.5.0.8
 'bb50f4841cadd5c82daa3da46d403cc3', // Mozilla/4.0 (compatible; MSIE 4.02; Windows CE; Smartphone; SDA/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)
 'b6b642fbdc1eb70c2dbbc7afdfe32174', // Mozilla/5.0 (X11; Linux x86_64; rv:2.0b7) Gecko/20100101 Firefox/4.0b7
+'ffdfdda42f0386fc17071c030fe2a93c', // Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10
+'33db1c583a1322032049e14359f72a38', // Mozilla/5.0 (Windows NT 5.1; U; en) Opera 8.01
 );
 return $botnet_fingerprints;
 ?>

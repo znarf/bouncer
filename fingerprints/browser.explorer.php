@@ -27,6 +27,12 @@ $browsers_fingerprints = array(
 'b9a6a3c0a37e7e51a4550fe6078bf75d',
 '910823cd0953fa3813861157de1c9633',
 '4181339b33a133ea8fda57528b7ec984',
+/* Manual */
+'1564cc2d7fa2cf04721c633ba7ba3a42', // Windows Vista - Explorer 9.0 - FR
+'509d1ccd064f99c2245b0b50815a5dc8', // Windows Vista - Explorer 9.0 - DE
+'5bef47aff11ea6110fec2c354ca410d5', // Windows 7 - Explorer 9.0 - FR
+'dbd9a631a1e2f2d844443227525cc16d', // Windows 7 64 - Explorer 9.0 - FR
+'3ff41e09884b8fa54f00bb3f59c74f90', // Windows 7 64 - Explorer 9.0 - KR
 );
 return $browsers_fingerprints;
 ?>

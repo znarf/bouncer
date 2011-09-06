@@ -51,6 +51,7 @@ $known_fingerprints = array(
 '8c1bfd4e130c5ae33d180bea4d96b5a6',  // botanyfree
 '2254fbea58cd0557c6ac4e08fdc7aad1',  // kiwi78
 'f6f862dec6c2c9fdc14f7cdf4f29d547',  // buyitnw
+'cb9190df67e4213f8064e62287228bf6',  // networkedhub
 // Crawlers
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
@@ -103,6 +104,7 @@ $known_fingerprints = array(
 '09e5ec4c2fb7c5fcdced58de35f6e289',  // FR - Windows-RSS-Platform/2.0 (MSIE 8.0; Windows NT 5.1)
 '6a744e4970bcbee3ea74d602fec329cd',  // US - Apple-PubSub 65.28
 'aaa4fad0218564475f60e26b34b309fd',  // FR - Apple-PubSub 65.28
+'899be7abd2ee5c4245fa0165d8e24b0c',  // FR - Apple-PubSub 65.23
 '672d83bd134d933f94213e574809e979',  // US - Apple-PubSub 65.21
 '38e1732d732fe5a8713ef5777d7cd1e9',  // FR - Apple-PubSub 65.21
 '7b472e49a23538d70cf75623e6de1bd5',  // ES - Apple-PubSub 65.21

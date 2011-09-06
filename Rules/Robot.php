@@ -57,6 +57,7 @@ class Bouncer_Rules_Robot
                 break;
             case 'baidu':
                 $score += (strpos($host, 'baidu.') === false
+                        && strpos($addr, '180.76.') === false
                         && strpos($addr, '123.125.') === false
                         && strpos($addr, '119.63.') === false) ? -5 : 2.5;
                 break;
