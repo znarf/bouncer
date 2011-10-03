@@ -156,6 +156,9 @@ $suspicious_fingerprints = array(
 '0e8ac149f40d409683b80470ecce4225',    //  BM - Windows Vista - Firefox 3.5.7    (JP)
 'f82f849c1705c8850c75f3753c1131fc',    //  BM - Windows Vista - Firefox 3.6.11
 'ffc0201b91b0518b7993eb768393f2db',    //  LD - Windows 7     - Firefox 3.6.13
+'57417bceacc348011a85eeb895542db8',    //  LD - Windows 7     - Firefox 5.0
+'89332f3219e26c9c712033f120b54760',    //  LD - Windows XP    - Firefox 3.5.1
+'32360d92eb25c64ea114ec628eecb511',    //  LD - Windows XP    - Firefox 3.5.1
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28

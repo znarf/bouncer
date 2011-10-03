@@ -104,6 +104,9 @@ $known_fingerprints = array(
 '09e5ec4c2fb7c5fcdced58de35f6e289',  // FR - Windows-RSS-Platform/2.0 (MSIE 8.0; Windows NT 5.1)
 '6a744e4970bcbee3ea74d602fec329cd',  // US - Apple-PubSub 65.28
 'aaa4fad0218564475f60e26b34b309fd',  // FR - Apple-PubSub 65.28
+'0ba66e754671a39fa506b096a71c37c5',  // DE - Apple-PubSub 65.28
+'225ba9dc02d58c2859a8a8f853eec1cc',  // IT - Apple-PubSub 65.28
+'59b1deab8d1a5222ef1319c8e9033e0d',  // US - Apple-PubSub 65.23
 '899be7abd2ee5c4245fa0165d8e24b0c',  // FR - Apple-PubSub 65.23
 '672d83bd134d933f94213e574809e979',  // US - Apple-PubSub 65.21
 '38e1732d732fe5a8713ef5777d7cd1e9',  // FR - Apple-PubSub 65.21

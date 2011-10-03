@@ -30,9 +30,15 @@ $browsers_fingerprints = array(
 /* Manual */
 '1564cc2d7fa2cf04721c633ba7ba3a42', // Windows Vista - Explorer 9.0 - FR
 '509d1ccd064f99c2245b0b50815a5dc8', // Windows Vista - Explorer 9.0 - DE
+'a6c10274d79fb493f3e9dfdb8970743b', // Windows Vista - Explorer 9.0 - US
 '5bef47aff11ea6110fec2c354ca410d5', // Windows 7 - Explorer 9.0 - FR
+'4634ec6ca71536a91466b47cdbb897b5', // Windows 7 - Explorer 9.0 - US
 'dbd9a631a1e2f2d844443227525cc16d', // Windows 7 64 - Explorer 9.0 - FR
+'43c2f75d73e3bdf7ccd720bb21586b01', // Windows 7 64 - Explorer 9.0 - CH
 '3ff41e09884b8fa54f00bb3f59c74f90', // Windows 7 64 - Explorer 9.0 - KR
+'c1adacb6bb9d7dff2dc194078655d7f0', // Windows 7 64 - Explorer 9.0 - US
+'2e97f5beccbacd09f8e0714386e85641', // Windows 7 64 - Explorer 9.0 - US
+'b8614b858feb2449013e17f52613f249', // Windows 7 64 - Explorer 9.0 - CA
 );
 return $browsers_fingerprints;
 ?>
