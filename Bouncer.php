@@ -620,7 +620,9 @@ class Bouncer
                             if (strpos($host, ':')) {
                                 list($host, $port) = explode(':', $host);
                             }
-                            $options['servers'][] = compact('host', 'port', 'username', 'password');
+                            $timeout = 1;
+                            $readTimeout = 1;
+                            $options['servers'][] = compact('host', 'port', 'username', 'password', 'timeout', 'readTimeout');
                         }
                     }
                     self::$_backendInstance = new Bouncer_Backend_Redis($options);
