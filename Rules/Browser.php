@@ -26,6 +26,7 @@ class Bouncer_Rules_Browser
         }
 
         $name = $identity['name'];
+        $version = $identity['version'];
         $headers = $identity['headers'];
 
         // Identify Explorer derivatives
@@ -148,8 +149,15 @@ class Bouncer_Rules_Browser
             if (isset($headers['Accept'])) {
                 if ($headers['Accept'] == '*/*') {
                     $scores[] = array(-2.5, '*/* Accept header (explorer)');
-                } elseif (strpos($headers['Accept'], 'image/pjpeg') === false) {
+                }
+                elseif ($version != '9.0' && strpos($headers['Accept'], 'image/pjpeg') === false) {
                     $scores[] = array(-5, 'Bad Accept header (explorer)');
+                }
+                elseif ($version == '9.0' && $headers['Accept'] != 'text/html, application/xhtml+xml, */*') {
+                    $scores[] = array(-5, 'Bad Accept header (explorer)');
+                }
+                elseif ($version == '9.0' && $headers['Accept'] == 'text/html, application/xhtml+xml, */*') {
+                    $scores[] = array(5, 'Good Accept header (explorer)');
                 }
             }
             if (isset($headers['Accept-Charset'])) {
