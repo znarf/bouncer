@@ -10,6 +10,8 @@ class Bouncer_Backend_Redis
 
     protected static $_rediska = null;
 
+    protected static $_keys = array();
+
     public function __construct(array $options = array())
     {
         $defaults = array(
@@ -19,6 +21,11 @@ class Bouncer_Backend_Redis
         self::$_rediska = new Rediska($options);
     }
 
+    public static function rediska()
+    {
+        return self::$_rediska;
+    }
+
     public function clean()
     {
         self::$_rediska = null;
@@ -26,38 +33,48 @@ class Bouncer_Backend_Redis
 
     public static function get($keyname)
     {
-        $key = new Rediska_Key($keyname);
-        return $key->getValue();
+        if (empty(self::$_keys[$keyname])) {
+            $key = new Rediska_Key($keyname);
+            self::$_keys[$keyname] = $key->getValue();
+        }
+        return self::$_keys[$keyname];
     }
 
     public static function set($keyname, $value = null)
     {
+        self::$_keys[$keyname] = $value;
         $key = new Rediska_Key($keyname);
         return $key->setValue($value);
+    }
+
+    public static function index($indexKey, $value)
+    {
+        // $agentsIndex = new Rediska_Key_List($indexKey);
+        // $agentsIndex->remove($value);
+        // $agentsIndex->prepend($value);
+        self::rediska()
+                ->transaction()
+                ->deleteFromList($indexKey, $value)
+                ->prependToList($indexKey, $value)
+                ->execute();
     }
 
     public static function indexAgent($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? 'agents' : "agents-$namespace";
-        $agentsIndex = new Rediska_Key_List($indexKey);
-        $agentsIndex->remove($agent);
-        $agentsIndex->prepend($agent);
+        self::index($indexKey, $agent);
     }
 
     public static function indexAgentFingerprint($agent, $fingerprint, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
-        $agentsIndex = new Rediska_Key_List($indexKey);
-        $agentsIndex->remove($agent);
-        $agentsIndex->prepend($agent);
+        self::index($indexKey, $agent);
     }
 
     public static function indexAgentHost($agent, $haddr, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
-        $agentsIndex = new Rediska_Key_List($indexKey);
-        $agentsIndex->remove($agent);
-        $agentsIndex->prepend($agent);
+        self::index($indexKey, $agent);
     }
 
     public static function getAgentsIndex($namespace = '')
