@@ -140,6 +140,20 @@ class Bouncer_Backend_Redis
         $agentConnections->prepend($key);
     }
 
+    public static function getConnections($namespace = '')
+    {
+        $connections = self::getConnectionsKeyList($namespace);
+        $keys = $connections->toArray(0, 250);
+        $result = array();
+        if (empty($keys)) {
+            return null;
+        }
+        foreach ($keys as $key) {
+            $result[$key] = self::get("connection-" . $key);
+        }
+        return $result;
+    }
+
     public static function getAgentConnections($agent, $namespace = '')
     {
         $connections = self::getAgentConnectionsKeyList($agent, $namespace);

@@ -37,6 +37,10 @@ class Bouncer
 
     protected static $_servers = array();
 
+    protected static $_connection = null;
+
+    protected static $_connectionKey = null;
+
     public static function run(array $options = array())
     {
         self::setOptions($options);
@@ -440,11 +444,14 @@ class Bouncer
         $connection['time'] = $time;
         $connection['result'] = $result;
 
+        $connection['start'] = microtime(true);
+
         // don't store connection details
         unset($connection['result'][2]);
 
         // Log connection
-        $connectionKey = self::backend()->storeConnection($connection);
+        self::$_connection = $connection;
+        self::$_connectionKey = self::backend()->storeConnection($connection);
 
         foreach (self::$_namespaces as $ns) {
             $backend = self::backend();
@@ -457,7 +464,7 @@ class Bouncer
             if (method_exists($backend, 'indexAgentHost'))
                 $backend->indexAgentHost($agent, $haddr, $ns);
             // Add connection to index
-            self::backend()->indexConnection($connectionKey, $agent, $ns);
+            self::backend()->indexConnection(self::$_connectionKey, $agent, $ns);
         }
     }
 
@@ -471,6 +478,14 @@ class Bouncer
     {
         header("HTTP/1.0 503 Service Unavailable");
         die('Service Unavailable');
+    }
+
+    public static function end()
+    {
+        self::$_connection['end'] = microtime(true);
+        self::$_connection['exec_time'] = round(self::$_connection['end'] - self::$_connection['start'], 3);
+        self::$_connection['memory'] = memory_get_peak_usage();
+        self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
     }
 
     // Utils
@@ -641,6 +656,7 @@ class Bouncer
     public static function getAgentsIndexHost($host, $ns = '') { return self::backend()->getAgentsIndexHost($host, $ns); }
     public static function countAgentsFingerprint($fg, $ns = '') { return self::backend()->countAgentsFingerprint($fg, $ns); }
     public static function countAgentsHost($host, $ns = '') { return self::backend()->countAgentsHost($host, $ns); }
+    public static function getConnections($agent, $ns = '') { return self::backend()->getConnections($agent, $ns); }
     public static function getAgentConnections($agent, $ns = '') { return self::backend()->getAgentConnections($agent, $ns); }
     public static function getLastAgentConnection($agent, $ns = '') { return self::backend()->getLastAgentConnection($agent, $ns); }
     public static function getFirstAgentConnection($agent, $ns = '') { return self::backend()->getFirstAgentConnection($agent, $ns); }

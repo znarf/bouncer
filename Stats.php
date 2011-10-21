@@ -29,6 +29,8 @@ class Bouncer_Stats
             self::extract();
         } else if (isset($_GET['stats'])) {
             self::charts();
+        } else if (isset($_GET['connections'])) {
+            self::connections();
         } else if (isset($_GET['connection'])) {
             self::connection();
         } else if (isset($_GET['agent'])) {
@@ -478,6 +480,21 @@ class Bouncer_Stats
             $connections = array();
         }
 
+        self::_displayConnections($connections);
+    }
+
+    public static function connections()
+    {
+        $connections = Bouncer::backend()->getConnections(self::$_namespace);
+        if (empty($connections)) {
+            $connections = array();
+        }
+
+        self::_displayConnections($connections);
+    }
+
+    protected static function _displayConnections($connections)
+    {
         echo '<table class="bouncer-table bouncer-table-connections">';
         echo '<tr>';
         if (self::$_detailed_connections) {
@@ -490,6 +507,8 @@ class Bouncer_Stats
         echo '<th>', 'Referer', '</th>';
         if (self::$_detailed_connections) {
             echo '<th>', 'Score', '</th>';
+            echo '<th>', 'Exec Time', '</th>';
+            echo '<th>', 'Memory', '</th>';
         }
         echo '</tr>';
         foreach ($connections as $id => $connection) {
@@ -517,6 +536,18 @@ class Bouncer_Stats
             if (self::$_detailed_connections) {
                 if (isset($connection['result'])) {
                     echo '<td>' , $connection['result'][1], '</td>';
+                } else {
+                    echo '<td>', '</td>';
+                }
+                if (isset($connection['exec_time'])) {
+                    echo '<td>' , $connection['exec_time'] . 's', '</td>';
+                } else {
+                    echo '<td>', '</td>';
+                }
+                if (isset($connection['memory'])) {
+                    echo '<td>' , round($connection['memory']/1024/1024) . 'M', '</td>';
+                } else {
+                    echo '<td>', '</td>';
                 }
             }
             echo '</tr>';
