@@ -42,7 +42,7 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'msn.com') === false && empty($headers['From']) ? -5 : 1;
                 break;
             case 'voila':
-                $score += strpos($host, 'fti.net') === false ? -5 : 2.5;
+                $score += strpos($host, 'fti.net') === false && strpos($host, 'voilabot.orange.fr') === false ? -5 : 2.5;
                 $score += $identity['fingerprint'] != '6c0b28de5758f39928fa7a0075ff8786' ? -5 : 2.5;
                 break;
             case 'orange':
