@@ -56,10 +56,12 @@ class Bouncer_Rules_Robot
                 $score += $identity['fingerprint'] != 'd970c6ffb8d5547d9f6052207200b0dd' ? -5 : 2.5;
                 break;
             case 'baidu':
-                $score += (strpos($host, 'baidu.') === false
-                        && strpos($addr, '180.76.') === false
+                $score += (strpos($host, 'baidu.')   === false
+                        && strpos($addr, '119.63.')  === false
                         && strpos($addr, '123.125.') === false
-                        && strpos($addr, '119.63.') === false) ? -5 : 2.5;
+                        && strpos($addr, '125.39.')  === false
+                        && strpos($addr, '180.76.')  === false
+                        && strpos($addr, '220.181.') === false) ? -5 : 2.5;
                 break;
             case 'ask':
                 $score += strpos($host, 'ask.com') === false ? -5 : 2.5;
@@ -73,7 +75,7 @@ class Bouncer_Rules_Robot
                 $score += $identity['fingerprint'] != 'b90c08ff5b5c8265dbfd9c6fa65f2e09' ? -5 : 2.5;
                 break;
             case 'spinn3r':
-                $score += strpos($host, 'spinn3r.com') === false ? -5 : 1;
+                $score += strpos($host, 'spinn3r.com') === false && strpos($host, 'softlayer.com') === false ? -5 : 1;
                 break;
             case 'picsearch':
                 $score += strpos($host, 'picsearch.com') === false ? -5 : 2.5;

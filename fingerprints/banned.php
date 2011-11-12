@@ -18,6 +18,7 @@ $banned_fingerprints = array(
 '863791545df8ec86ddda02d961fb332c', //  US - Windows XP    - Explorer 6.0
 '476f7382c6de03533d1d84302a3c16d6', //  PL - Windows 7     - Explorer 7.0
 '36b92335e826e9c7a6e615fa34073a86', //  US - Windows XP    - Firefox 2.0.0.6
+'5246b6ff2d368042bd44d5b99419d014', //  CN - Linux x86_64  - Opera 10.63
 // BM Spam
 '2d427eaca8980ae196a9c003780057c8', //  *  - Windows 2000  - Explorer 6.0
 // Bots
