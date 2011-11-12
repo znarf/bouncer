@@ -113,8 +113,8 @@ class Bouncer_Rules_Browser
             }
         }
 
-        // Legitimates Opera/Chrome/Firefox Browsers send Accept-Charset header
-        if (in_array($name, array('opera', 'chrome', 'firefox'))) {
+        // Legitimates Chrome/Firefox Browsers send Accept-Charset header
+        if (in_array($name, array('chrome', 'firefox'))) {
             if (empty($headers['Accept-Charset'])) {
                 $scores[] = array(-2.5, 'Accept-Charset header missing');
             }
