@@ -772,8 +772,8 @@ class Bouncer_Stats
         .bouncer-table tr.suspicious { background-color:#f2e8e0; }
         .bouncer-table tr.nice { background-color:#e2f2e0; }
         .ic { padding-left:24px; background:4px 2px no-repeat }
-        .fr { background-image:url(<?php echo self::$_base_static_url ?>/images/ext_fr.png) }
-        .unknown  { background-image:url(<?php echo self::$_base_static_url ?>/images/os_question.png) }
+        .fr { background-image:url(<?php echo self::$_base_static_url ?>/images/ext/fr.png) }
+        .unknown  { background-image:url(<?php echo self::$_base_static_url ?>/images/os/question.png) }
         .explorer { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/explorer.png) }
         .firefox  { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/firefox.png) }
         .safari   { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/safari.png) }
