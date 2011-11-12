@@ -105,7 +105,8 @@ class Bouncer
             strpos($addr, '80.239')  === 0 ||
             strpos($addr, '82.145')  === 0 ||
             strpos($addr, '94.246')  === 0 ||
-            strpos($addr, '195.189') === 0) {
+            strpos($addr, '195.189') === 0 ||
+            strpos($addr, '217.212') === 0) {
                  $headers = self::getHeaders();
                  // TODO: case insensitive, split multiple value
                  if (isset($headers['x-forwarded-for'])) {
