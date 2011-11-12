@@ -26,6 +26,7 @@ $suspicious_fingerprints = array(
 'ab22831f067a00592826609ce4453410', // Mozilla/4.0 - Accept:*/* - Accept-Encoding:gzip,deflate - Accept-Language:zh-cn, zh - Accept-Charset:GB2312,utf-8;q=0.7,*;q=0.7
 '56e43867f63d0728e66efc91b717d3cc', // Mozilla/4.0 - Accept:*/* - Accept-Language:zh-cn, zh - Accept-Charset:GB2312,utf-8;q=0.7,*;q=0.7
 '982301312ae692bbf1eab93007cd823f', // Mozilla/4.0 (compatible;) - Accept:*/*, */* - Accept-Language:nl,en,*
+'6df194c3ff781bb9d84fca6a3ad4a5e1', // HttpClient
 // Programming languages defaults
 'd7c338fc5292ac8b15bacd0808ee1245', // Ruby
 'e92acd969162f34aaac2099466e58464', // Ruby/1.8.7
@@ -118,6 +119,12 @@ $suspicious_fingerprints = array(
 '40e2fb5111fb728262b98774e15ce71c',    // LD  - Windows XP    - Explorer 7.0
 '9441add20f6fea624fc7e57765bb8df2',    // BM  - Windows XP    - Explorer 6.0
 '935aae45218ca5f6468675517ea5b4f8',    // BM  - Windows XP    - Explorer 6.0     (DE)
+'a09b8a9d4adcd428c1f7abace41b2b02',    // BM  - Windows Vista - Explorer 7.0
+'a60fcb5f0917340328204fb7c181f4d4',    // BM  - Windows NT    - Explorer 7.0     (FR)
+'314bebd09a5bf6aab9b54fd3fdf9ae80',    // LD  - Windows XP    - Explorer 6.0     (CN)
+'7bd7ccc4b5f36dc99a15e53fb1914bf0',    // LD  - Windows XP    - Explorer 6.0     (CN)
+'ae1d576c5c68a6fb8580c37e0e2af7ee',    // BM  - Windows XP    - Explorer 6.0     (CN)
+'a09b8a9d4adcd428c1f7abace41b2b02',    // BM  - Windows Vista - Explorer 7.0
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
