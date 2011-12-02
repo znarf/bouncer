@@ -216,7 +216,6 @@ class Bouncer_Stats
              $js = isset($identity['features']['javascript']) && $identity['features']['javascript'] != 0 ? (int)($identity['features']['javascript'] > 0) : '';
              $img = isset($identity['features']['image']) && $identity['features']['image'] != 0 ? (int)($identity['features']['image'] > 0) : '';
              $iframe = isset($identity['features']['iframe']) && $identity['features']['iframe'] != 0 ? (int)($identity['features']['iframe'] > 0) : '';
-             $link = isset($identity['features']['link']) && $identity['features']['link'] != 0 ? (int)($identity['features']['link'] > 0) : '';
 
              $ref = 0;
              if (!empty($first['request']['headers']['Referer'])) {
