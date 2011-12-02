@@ -24,14 +24,14 @@ class Bouncer_Rules_Basic
 
         // plus
              if ($name == 'safari'   && strpos($version, '5.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'chrome'   && strpos($version, '13.') === 0)   $scores[] = array(1, 'Recent Browser');
         else if ($name == 'chrome'   && strpos($version, '14.') === 0)   $scores[] = array(1, 'Recent Browser');
         else if ($name == 'chrome'   && strpos($version, '15.') === 0)   $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '4.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '5.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '6.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'chrome'   && strpos($version, '16.') === 0)   $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'chrome'   && strpos($version, '17.') === 0)   $scores[] = array(1, 'Recent Browser');
         else if ($name == 'firefox'  && strpos($version, '7.') === 0)    $scores[] = array(1, 'Recent Browser');
         else if ($name == 'firefox'  && strpos($version, '8.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'firefox'  && strpos($version, '9.') === 0)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'firefox'  && strpos($version, '10.') === 0)   $scores[] = array(1, 'Recent Browser');
         else if ($name == 'explorer' && strpos($version, '8.') === 0)    $scores[] = array(1, 'Recent Browser');
         else if ($name == 'explorer' && strpos($version, '9.') === 0)    $scores[] = array(1, 'Recent Browser');
         else if ($name == 'opera'    && strpos($version, '11.') === 0)   $scores[] = array(1, 'Recent Browser');

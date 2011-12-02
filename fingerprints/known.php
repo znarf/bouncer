@@ -7,8 +7,10 @@ $known_fingerprints = array(
 '273cf731218cee6bbea75c880c6de3c3',  // Baidu (cn)
 '8f810bd4a1eec86aec316f2245500d47',  // Baidu (jp)
 '35d55b760b985cf233ad9466fd38dee8',  // Baidu (jp - mobile)
+'48ccff437f6e7f403f79b7500eb253d6',  // Baidu (tr)
 '72604be2402cd5d1cfc84a413516a0da',  // Bingbot
 '6dcd83439ea1c096a43b0f06811e64d2',  // Bingbot
+'375716bc42342febd3f74e7270b466eb',  // Bingbot
 'ab12474fbc997f8655ca93952784393b',  // Yandex
 '43d28f2be01110e87ffe3cb9d62d1f44',  // Mj12
 '51a89973db58d37e29a07b0823157318',  // Mj12
@@ -23,11 +25,12 @@ $known_fingerprints = array(
 'afa4788739136af0b8de6d47868ee2f7',  // http://friendfeed.com/about/bot
 '9e717c7cb2cddb32396c2cd53c06080d',  // facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)
 '09f23681d71f4a667432fa11c8465f5c',  // facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+'3052960d06b87f641a542a51eca19536',  // facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
 '656fbf00aebce50ee22eb07b115c6395',  // Facebook share follower
 // Google
-'6f82b98fc53efbaca170d51e67469860',  //  * - Google Translate
+'3ede60576b2077bd6d2819e604fcc7e6',  //  * - Google Translate
 'e06615d3118241037d7314f5b9411105',  //  * - Google Desktop
-'3ae6cc7f31314756b846e1b49bf2f09c',  //  * - Google Web Preview
+'d8f03304c1f0a07e3a62b549e5aadb52',  //  * - Google Web Preview
 '11f6da515b0304a457a4e449c6053127',  // urlresolver
 // MSN / Bing
 '34f895d7de2f45b4ee2a57a6ece95518',
@@ -36,6 +39,7 @@ $known_fingerprints = array(
 '788ac1a26b08052bc106a19dc505e3c9',
 '55a3ca444259a2b25c0072a7454ab99c',
 'fb110bdfa8428eddce25cc1af28d31a9',
+'0acd3fc69e859054a39fefff8df82b08',
 // App Engine Apps
 'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
 'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha
@@ -52,6 +56,7 @@ $known_fingerprints = array(
 '2254fbea58cd0557c6ac4e08fdc7aad1',  // kiwi78
 'f6f862dec6c2c9fdc14f7cdf4f29d547',  // buyitnw
 'cb9190df67e4213f8064e62287228bf6',  // networkedhub
+'cedb49f360645df3b40903a9b406ec93',  // s~shanthuyeinmongnai
 // Crawlers
 '2e3e78982b709fcee9558e17726c7638',  // BNF
 '0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
@@ -91,14 +96,6 @@ $known_fingerprints = array(
 // Nagios
 'f13c1c8a68a515732ff72cc498f66dc4',
 '5bffca1b20894579bd276a36a6f5ca86',
-// Browsers
-'c54cc4c78527d6b3d1a6c4e2c7985b2d',  // FR - Windows XP - Explorer 6.0
-'f60a395ee95725480e2f56a68dbf6521',  // FR - Windows XP - Explorer 6.0
-'ec0ca634072614e1a83522e857a6e0b7',  // ES - Windows XP - Explorer 6.0
-'14387686ae699c119579e09342d35c65',  // IN - Windows XP - Explorer 6.0
-'b5f86f22b42c905d30ecd11d0e767bb1',  // FR - Windows XP - Explorer 8.0
-'98382a7339a5175ad37a386a5bf74b89',  // BR - Windows XP - Explorer 7.0
-'98382a7339a5175ad37a386a5bf74b89',  // BR - Windows XP - Explorer 6.0
 // RSS
 '5b2361fdf1c6e31b99a55def5adfea6e',  // SimplePie/1.1.1 (Moonmoon)
 '09e5ec4c2fb7c5fcdced58de35f6e289',  // FR - Windows-RSS-Platform/2.0 (MSIE 8.0; Windows NT 5.1)
@@ -106,8 +103,11 @@ $known_fingerprints = array(
 'aaa4fad0218564475f60e26b34b309fd',  // FR - Apple-PubSub 65.28
 '0ba66e754671a39fa506b096a71c37c5',  // DE - Apple-PubSub 65.28
 '225ba9dc02d58c2859a8a8f853eec1cc',  // IT - Apple-PubSub 65.28
+'9e4feb495cd9e5887406fd7005311ec3',  // ES - Apple-PubSub 65.28
+'9c8f70686dd900abb23dca1d4f5d8df7',  // PL - Apple-PubSub 65.28
 '59b1deab8d1a5222ef1319c8e9033e0d',  // US - Apple-PubSub 65.23
 '899be7abd2ee5c4245fa0165d8e24b0c',  // FR - Apple-PubSub 65.23
+'eff845fce6f3420f696230f0d2d130b7',  // IT - Apple-PubSub 65.23
 '672d83bd134d933f94213e574809e979',  // US - Apple-PubSub 65.21
 '38e1732d732fe5a8713ef5777d7cd1e9',  // FR - Apple-PubSub 65.21
 '7b472e49a23538d70cf75623e6de1bd5',  // ES - Apple-PubSub 65.21
@@ -164,6 +164,7 @@ $known_fingerprints = array(
 'b214c600f9febae38b24a81608f1428a',  // ES - AppleSyndication/56.1
 // Reeder
 '2794356c8fa75873666f9eb796a252b7',  // Reeder/1.4 CFNetwork/485.12.7 Darwin/10.4.0
+'26ad4ec68025a437bd6a160e64e96b62',  // Reeder/1.5.4 CFNetwork/548.0.4 Darwin/11.0.0
 'c731f9328e05afdd157996f032288166',  // Reeder/2.3 CFNetwork/485.12.7 Darwin/10.4.0
 );
 return $known_fingerprints;

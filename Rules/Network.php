@@ -21,7 +21,8 @@ class Bouncer_Rules_Network
         'static.vdc.vn',
         'no-revers-dns.set',
         'place.holder',
-        'unassigned.syndtech.net'
+        'unassigned.syndtech.net',
+        'domain.not.configured'
     );
 
     public static function load(array $options = array())

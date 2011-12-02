@@ -45,6 +45,8 @@ $suspicious_fingerprints = array(
 // Security / Brand / Media bots
 '1db826142acf332a4aadefe24c1c1bf4', // MacOS X 10.6.4 - Safari 5.0.1 (MediaDefender)
 '448c515c192c8292a77b980803bec31d', // Windows 7 - Explorer 8.0 (brandprotect)
+// Fake Baidu
+'0d142662353cd3aaa1a721f526e7f27c',
 // Popular
 '3dfed844dc126275d6d535bd0128a037', //  BM  - Windows XP    - Firefox 3.0.5
 '9f2c5a729cf256ae7df689a153233397', //  BM  - Windows XP    - Firefox 3.0.10
@@ -172,6 +174,7 @@ $suspicious_fingerprints = array(
 '5a5844afbdf782d2e4bd7240bf59f53c',    //  BM - Windows 7     - Firefox 3.6
 '7c4ee903e8447cea3dcf6c1329aacaa7',    //  BM - Windows XP    - Firefox 3.0.10   (FR)
 '3b26ae8b430f3157b5a0efa80a589b66',    //  BM - Windows 7     - Firefox 7.0.1    (CN)
+'713e9e917b8c8cac0fc44f3fa29822cf',    //  LD - Windows XP    - Firefox 3.5.3
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
