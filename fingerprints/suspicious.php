@@ -173,7 +173,6 @@ $suspicious_fingerprints = array(
 '1b5fe6fb6398c4e9191165e204e2d947',    //  BM - Windows XP    - Firefox 6.0
 '5a5844afbdf782d2e4bd7240bf59f53c',    //  BM - Windows 7     - Firefox 3.6
 '7c4ee903e8447cea3dcf6c1329aacaa7',    //  BM - Windows XP    - Firefox 3.0.10   (FR)
-'3b26ae8b430f3157b5a0efa80a589b66',    //  BM - Windows 7     - Firefox 7.0.1    (CN)
 '713e9e917b8c8cac0fc44f3fa29822cf',    //  LD - Windows XP    - Firefox 3.5.3
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27

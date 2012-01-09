@@ -21,6 +21,7 @@ $banned_fingerprints = array(
 '5246b6ff2d368042bd44d5b99419d014', //  CN - Linux x86_64  - Opera 10.63
 '7b3fa1faada4feb8d0615d7565db58a0', //  US - Windows Vista - Firefox 3.6.13 (ubiquity.io, ipvnow.com)
 '74eac35b1b467e7293f6a95301ec26b2', //  US - Windows 7     - Firefox 3.6.16 (ubiquity.io, ipvnow.com)
+'3b26ae8b430f3157b5a0efa80a589b66', //  CN - Windows 7     - Firefox 7.0.1
 // BM Spam
 '2d427eaca8980ae196a9c003780057c8', //  *  - Windows 2000  - Explorer 6.0
 // WP Login attack

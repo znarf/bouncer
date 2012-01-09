@@ -13,8 +13,10 @@ $browsers_fingerprints = array(
 'f93edb840ce696173400b6c000a42d73', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; NP06)
 '6a2b3b35c7f374f1b74714228059b0c3', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MAAU)
 '6ce4a3912e8c27ad7c30cb9c720eced2', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MATM)
+'d15c6520b93b322cf72cb925c6459747', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; BOIE9;FRFR)
 
 '2e97f5beccbacd09f8e0714386e85641', // Windows 7 - en-US - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
+'000a96fc69db98793f4162c222529cfe', // Windows 7 - en-US - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
 
 'a7a949687446980c49edcd2ef52d1806', // Windows 7 - it-IT - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
 
