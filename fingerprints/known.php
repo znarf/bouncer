@@ -18,6 +18,12 @@ $known_fingerprints = array(
 'a86f74048055ff8ea8a8570615c478f4',  // Sogou
 'd970c6ffb8d5547d9f6052207200b0dd',  // ScoutJet
 '62f42b9e966080ce33cdaef257458dd7',  // Spinn3r
+// Majestic (1.4.0 & 1.4.1)
+'070c89e54103b715e0e7a3d40189fa95',
+'4c977cbcc56b76f9f4602595219a7d60',
+'c17e642c1765e8ae567f793766e93505',
+'9d1303341856c65ca4899a5a36dfe6f4',
+'c7d322788217fb26aed67976841fa76e',
 // Facebook
 '22a5eee46083360de8bc4beca9c8fe2d',  // http://www.facebook.com/externalhit_uatext.php
 'ddb1e86b32cf145e05a6e0a52e92f174',  // FacebookFeedParser
