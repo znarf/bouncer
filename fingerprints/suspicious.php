@@ -191,6 +191,7 @@ $suspicious_fingerprints = array(
 '8524ec628d095062da5c063a8bbf5405',    //  BM - MacOS X 10.6.4 - Safari 5.0.1
 'a0847fb857a6c7bd4a630a3501d4e5fa',    //  BM - Mozilla/5.0 (compatible; OpenWeb 5.7.4-09)
 '58664eafbfb3f5860f1ee61af3f71a3d',    //  LD - Windows XP     - Opera 11.01
+'410dc1512a2a9c1537af6f935f1f1882',    //  BM - Windows XP     - Opera 11.60
 // BM - inferno.name
 'a19471cdfd5262b77d9c2edb6ebc1510', // Windows 2003 - Opera 7.60
 'b6a988533111b50e812790f44de838aa', // Windows XP   - Explorer 6.0

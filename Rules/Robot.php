@@ -184,7 +184,7 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'archive.org') === false ? -5 : 2.5;
                 break;
             case 'ccbot':
-                $score += strpos($addr, '38.107.191.') !== 0 ? -5 : 2.5;
+                $score += (strpos($addr, '38.107.191.') !== 0 && strpos($addr, '38.107.179.') !== 0) ? -5 : 2.5;
                 break;
             case 'postrank':
                 $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;

@@ -14,9 +14,14 @@ $browsers_fingerprints = array(
 '6a2b3b35c7f374f1b74714228059b0c3', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MAAU)
 '6ce4a3912e8c27ad7c30cb9c720eced2', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MATM)
 'd15c6520b93b322cf72cb925c6459747', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; BOIE9;FRFR)
+'6592e13ae4b7200f5e631a1b586e7b96', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
 
 '2e97f5beccbacd09f8e0714386e85641', // Windows 7 - en-US - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
 '000a96fc69db98793f4162c222529cfe', // Windows 7 - en-US - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
+
+'21bf08d28f4e903441509773248c2088', // Windows 7 - en-GB - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
+
+'89a70967bf2b2f1236183bdcaf7b3fd9', // Windows 7 - nl-BE - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
 
 'a7a949687446980c49edcd2ef52d1806', // Windows 7 - it-IT - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
 
