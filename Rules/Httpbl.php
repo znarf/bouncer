@@ -82,11 +82,11 @@ class Bouncer_Rules_Httpbl
         }
         $result = $identity['httpbl'];
         switch ($result['type']) {
-            case 0: return 'search engine';
-            case 1: return 'suspicious';
-            case 2: return 'harvester';
+            case 0: return 'search';
+            case 1: return 'susp';
+            case 2: return 'harv';
             case 3: return 'susp + harv';
-            case 4: return 'comment spam';
+            case 4: return 'spam';
             case 5: return 'susp + spam';
             case 6: return 'harv + spam';
             case 7: return 'susp + harv + spam';
