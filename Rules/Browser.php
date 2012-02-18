@@ -113,8 +113,7 @@ class Bouncer_Rules_Browser
             }
         }
 
-        // Legitimates Chrome/Firefox Browsers send Accept-Charset header
-        if (in_array($name, array('chrome', 'firefox'))) {
+        if ($name == 'chrome') {
             if (empty($headers['Accept-Charset'])) {
                 $scores[] = array(-2.5, 'Accept-Charset header missing');
             }
@@ -129,6 +128,9 @@ class Bouncer_Rules_Browser
             }
             if (strpos($identity['user_agent'], 'rv:') === false) {
                 $scores[] = array(-5, 'No Mozilla platform token (firefox)');
+            }
+            if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
+                $scores[] = array(2.5, 'All Accept-* headers detected');
             }
         }
 

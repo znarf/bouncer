@@ -2,10 +2,11 @@
 $known_fingerprints = array(
 // Top Bots
 '793f840d86e2554135283d9aef58c7ff',  // Googlebot
+'edd490c87038defcd73e2497d3c969c0',  // Googlebot-Image
 'c81a634f3f75e335030284bf4c72bd2f',  // Yahoo! Slurp
 'cabf78b12c02f825861abeeacc4882fa',  // Yahoo! Slurp
 '273cf731218cee6bbea75c880c6de3c3',  // Baidu (cn)
-'8f810bd4a1eec86aec316f2245500d47',  // Baidu (jp)
+'88f5936db6554981ceae9e360aeb59bf',  // Baidu (jp)
 '35d55b760b985cf233ad9466fd38dee8',  // Baidu (jp - mobile)
 '48ccff437f6e7f403f79b7500eb253d6',  // Baidu (tr)
 '72604be2402cd5d1cfc84a413516a0da',  // Bingbot
@@ -18,12 +19,12 @@ $known_fingerprints = array(
 'a86f74048055ff8ea8a8570615c478f4',  // Sogou
 'd970c6ffb8d5547d9f6052207200b0dd',  // ScoutJet
 '62f42b9e966080ce33cdaef257458dd7',  // Spinn3r
-// Majestic (1.4.0 & 1.4.1)
-'070c89e54103b715e0e7a3d40189fa95',
-'4c977cbcc56b76f9f4602595219a7d60',
-'c17e642c1765e8ae567f793766e93505',
-'9d1303341856c65ca4899a5a36dfe6f4',
-'c7d322788217fb26aed67976841fa76e',
+// Majestic (1.4.0 & 1.4.1 & 1.4.2)
+'4c977cbcc56b76f9f4602595219a7d60', // 1.4.1
+'070c89e54103b715e0e7a3d40189fa95', // 1.4.1
+'bdad0d7e441c26e66023a03d1b83368b', // 1.4.2
+'f6bee05f0f974a698fbe072fc94d7fe4', // 1.4.2
+'655879b48a97e62e4c24f976ed70692e', // 1.4.2
 // Facebook
 '22a5eee46083360de8bc4beca9c8fe2d',  // http://www.facebook.com/externalhit_uatext.php
 'ddb1e86b32cf145e05a6e0a52e92f174',  // FacebookFeedParser

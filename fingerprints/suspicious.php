@@ -47,6 +47,8 @@ $suspicious_fingerprints = array(
 '448c515c192c8292a77b980803bec31d', // Windows 7 - Explorer 8.0 (brandprotect)
 // Fake Baidu
 '0d142662353cd3aaa1a721f526e7f27c',
+// Fake Bing
+'843d3953350bea1411f9fbd587bbb2e0',
 // Popular
 '3dfed844dc126275d6d535bd0128a037', //  BM  - Windows XP    - Firefox 3.0.5
 '9f2c5a729cf256ae7df689a153233397', //  BM  - Windows XP    - Firefox 3.0.10
