@@ -188,6 +188,13 @@ $robot = array(
       "^agadine[/ ]([0-9.]{1,10})" => "\\1"
     )
   ),
+  "ahrefs" => array(
+    "icon" => "robot",
+    "title" => "Ahrefs",
+    "rule" => array(
+      "AhrefsBot[/ ]([0-9.]{1,10})" => "\\1"
+    )
+  ),
   "aibot" => array(
     "icon" => "robot",
     "title" => "Aibot",
@@ -1583,6 +1590,13 @@ $robot = array(
       "^Windows-RSS-Platform[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => ""
+  ),
+  "ezooms" => array(
+    "icon" => "robot",
+    "title" => "Ezooms",
+    "rule" => array(
+      "Ezooms[ /]([0-9.]{1,10})" => "\\1"
+    )
   ),
   "facebook" => array(
     "icon" => "facebook",

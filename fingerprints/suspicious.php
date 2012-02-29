@@ -42,6 +42,8 @@ $suspicious_fingerprints = array(
 '8ec0b03883d2aa93b6de3ac919701912', // Quipply V1 RT
 'c1ad0a278f5ce9abff581debb14273de', // UCANN2_CRAWLER
 '4bc612ee1ba0b0fa110b0171b88acd2b', // FDM 3.x
+'7a03e06dc5f0f49c087bca0fb4d3a567', // itim
+'0a79ab3e72ba0d7223959a96115eb52c', // "Mozilla/5.0
 // Security / Brand / Media bots
 '1db826142acf332a4aadefe24c1c1bf4', // MacOS X 10.6.4 - Safari 5.0.1 (MediaDefender)
 '448c515c192c8292a77b980803bec31d', // Windows 7 - Explorer 8.0 (brandprotect)
@@ -177,6 +179,7 @@ $suspicious_fingerprints = array(
 '7c4ee903e8447cea3dcf6c1329aacaa7',    //  BM - Windows XP    - Firefox 3.0.10   (FR)
 '713e9e917b8c8cac0fc44f3fa29822cf',    //  LD - Windows XP    - Firefox 3.5.3
 'eff37db635f6d0851adbfe2ffc54f403',    //  BM - Windows Vista - Firefox 3.0.3
+'e1979284bf2212cac09420dd01be0978',    //  BM - Fedora 9      - Firefox 3.0.1
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
