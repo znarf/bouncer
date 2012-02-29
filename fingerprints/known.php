@@ -5,6 +5,7 @@ $known_fingerprints = array(
 'edd490c87038defcd73e2497d3c969c0',  // Googlebot-Image
 'c81a634f3f75e335030284bf4c72bd2f',  // Yahoo! Slurp
 'cabf78b12c02f825861abeeacc4882fa',  // Yahoo! Slurp
+'af57c97e1b1b387a93e1614f93145866',  // Yahoo! Slurp (China)
 '273cf731218cee6bbea75c880c6de3c3',  // Baidu (cn)
 '88f5936db6554981ceae9e360aeb59bf',  // Baidu (jp)
 '35d55b760b985cf233ad9466fd38dee8',  // Baidu (jp - mobile)
@@ -13,12 +14,13 @@ $known_fingerprints = array(
 '6dcd83439ea1c096a43b0f06811e64d2',  // Bingbot
 '375716bc42342febd3f74e7270b466eb',  // Bingbot
 'ab12474fbc997f8655ca93952784393b',  // Yandex
-'43d28f2be01110e87ffe3cb9d62d1f44',  // Mj12
-'51a89973db58d37e29a07b0823157318',  // Mj12
 '1ba3e09e05c3a64578777e53d4f20a3c',  // DotBot
 'a86f74048055ff8ea8a8570615c478f4',  // Sogou
 'd970c6ffb8d5547d9f6052207200b0dd',  // ScoutJet
 '62f42b9e966080ce33cdaef257458dd7',  // Spinn3r
+'bb7668eafa60dba90c42c489251b6d19',  // mail.ru
+'6c0b28de5758f39928fa7a0075ff8786',  // Voila
+'6824162f534f437c70ba13a487aec6fd',  // Exabot
 // Majestic (1.4.0 & 1.4.1 & 1.4.2)
 '4c977cbcc56b76f9f4602595219a7d60', // 1.4.1
 '070c89e54103b715e0e7a3d40189fa95', // 1.4.1
@@ -47,6 +49,7 @@ $known_fingerprints = array(
 '55a3ca444259a2b25c0072a7454ab99c',
 'fb110bdfa8428eddce25cc1af28d31a9',
 '0acd3fc69e859054a39fefff8df82b08',
+'afb4bcd1a8bf846b4fda636d55b6d87f', // Windows XP - Explorer 8.0 (msnbot-*.search.msn.com)
 // App Engine Apps
 'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
 'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha
