@@ -180,6 +180,7 @@ $suspicious_fingerprints = array(
 '713e9e917b8c8cac0fc44f3fa29822cf',    //  LD - Windows XP    - Firefox 3.5.3
 'eff37db635f6d0851adbfe2ffc54f403',    //  BM - Windows Vista - Firefox 3.0.3
 'e1979284bf2212cac09420dd01be0978',    //  BM - Fedora 9      - Firefox 3.0.1
+'7fb5d67a5d4563587f3b470f3dfc69e5',    //  BM - Windows Vista - Firefox 3.5.5
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28

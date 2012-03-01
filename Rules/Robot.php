@@ -255,6 +255,14 @@ class Bouncer_Rules_Robot
             case 'yottaa':
                 $score += strpos($host, 'amazonaws.com') === false && strpos($host, 'linode.com') === false ? -5 : 2.5;
                 break;
+            case 'ezooms':
+                $score += (strpos($addr, '208.115.111.') !== 0 && strpos($addr, '208.115.113.') !== 0) ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '7be77a95f238abe91d1891bbe787fdb3' ? -5 : 2.5;
+                break;
+            case 'ahrefs':
+                $score += (strpos($addr, '213.186.127.') !== 0 && strpos($addr, '213.186.119.') !== 0) ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '9ea719f12db582a62aac760bb7225865' ? -5 : 2.5;
+                break;
         }
 
         if ($score >= 1) {

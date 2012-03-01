@@ -25,7 +25,8 @@ $known_fingerprints = array(
 '6824162f534f437c70ba13a487aec6fd',  // Exabot
 'cdcb44c8464c40d53a6f5635ee66d642',  // Feedburner
 'c2bff0ebec4c3dab9da8035e5219a0fd',  // Entireweb
-'123153a2352ae8af25b8944eadb38fcb',  // Youdao
+'9ea719f12db582a62aac760bb7225865',  // Ahrefs
+'7be77a95f238abe91d1891bbe787fdb3',  // Ezooms
 // Majestic (1.4.0 & 1.4.1 & 1.4.2)
 '4c977cbcc56b76f9f4602595219a7d60', // 1.4.1
 '070c89e54103b715e0e7a3d40189fa95', // 1.4.1
