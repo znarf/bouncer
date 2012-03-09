@@ -115,6 +115,11 @@ class Bouncer
                  }
          }
 
+         if ($addr == '78.109.84.222') {
+             $headers = self::getHeaders();
+             return $headers['X-Forwarded-For'];
+         }
+
          return $addr;
     }
 
