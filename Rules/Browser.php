@@ -9,7 +9,7 @@ class Bouncer_Rules_Browser
 
     public static $webkit_browsers = array('safari', 'chrome', 'chromium', 'webkit', 'midori', 'maxthon');
 
-    public static $rss_browsers = array('netnewswire', 'reeder', 'liferea', 'vienna', 'thunderbird', 'akregator', 'rss-atom');
+    public static $rss_browsers = array('netnewswire', 'reeder', 'liferea', 'vienna', 'thunderbird', 'akregator', 'rss-atom', 'explorerrss');
 
     public static function load()
     {
