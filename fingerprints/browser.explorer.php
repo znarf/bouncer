@@ -27,6 +27,7 @@ $browsers_fingerprints = array(
 
 '83a988ca1558bbba4347c225825027d9', // Windows 7 - en-AU - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
 
+'6a02d02d3496d9037b23783a010672d1', // Windows 7 - de-DE - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
 
 '4634ec6ca71536a91466b47cdbb897b5', // Windows 7 - Explorer 9.0 - US
 '43c2f75d73e3bdf7ccd720bb21586b01', // Windows 7 64 - Explorer 9.0 - CH

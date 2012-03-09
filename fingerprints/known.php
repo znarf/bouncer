@@ -24,9 +24,13 @@ $known_fingerprints = array(
 '6c0b28de5758f39928fa7a0075ff8786',  // Voila
 '6824162f534f437c70ba13a487aec6fd',  // Exabot
 'cdcb44c8464c40d53a6f5635ee66d642',  // Feedburner
+'84e14e474b5972e7b11fae97d08fff4c',  // Feedburner
 'c2bff0ebec4c3dab9da8035e5219a0fd',  // Entireweb
 '9ea719f12db582a62aac760bb7225865',  // Ahrefs
 '7be77a95f238abe91d1891bbe787fdb3',  // Ezooms
+'7e1e804fbdf4cf74160734ce0d2d6adb',  // Heritrix
+'36ca11c7a64002a34f7db2db67761abd',  // Disco
+'e3a7b53bb13161f3706426d28cf06eff',  // Soso
 // Majestic (1.4.0 & 1.4.1 & 1.4.2)
 '4c977cbcc56b76f9f4602595219a7d60', // 1.4.1
 '070c89e54103b715e0e7a3d40189fa95', // 1.4.1
