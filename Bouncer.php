@@ -284,19 +284,6 @@ class Bouncer
         return $request;
     }
 
-    protected static function anonymise($array)
-    {
-        $result = array();
-        foreach ($array as $key => $value) {
-            if (empty($value)) {
-                $result[$key] = '';
-            } else {
-                $result[$key] = sprintf("%u", crc32($value)) . '-' . strlen($value);
-            }
-        }
-        return $result;
-    }
-
     public static function bounce()
     {
         if (isset($_GET['bouncer-challenge'])) {
@@ -521,11 +508,6 @@ class Bouncer
     public static function hash($string)
     {
         return md5($string);
-    }
-
-    public static function ismd5($string)
-    {
-        return !empty($string) && preg_match('/^[a-f0-9]{32}$/', $string);
     }
 
     // Challenge
