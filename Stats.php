@@ -414,7 +414,7 @@ class Bouncer_Stats
                          '<td>', '<a href="?filter=system%3A' . $system . '">', $system, '</a></td>', '</tr>';
         }
 
-        echo '<tr>', '<td>', 'IP', '</td>',
+        echo '<tr>', '<td>', 'Addr', '</td>',
                      '<td>', '<a href="?filter=addr%3A' . $identity['addr'] . '">', $identity['addr'], '</a></td>', '</tr>';
 
         echo '<tr>', '<td>', 'Host', '</td>',
