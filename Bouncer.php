@@ -19,6 +19,8 @@ class Bouncer
 
     protected static $_challenged = false;
 
+    protected static $_ended = false;
+
     public static $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
 
     public static $identity_headers = array('User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From');
@@ -342,6 +344,9 @@ class Bouncer
             default:
                 break;
         }
+
+        // End
+        register_shutdown_function(array('Bouncer', 'end'));
     }
 
     protected static function analyse($identity, $request)
@@ -491,10 +496,14 @@ class Bouncer
 
     public static function end()
     {
+        if (self::$_ended === true) {
+            return;
+        }
         self::$_connection['end'] = microtime(true);
         self::$_connection['exec_time'] = round(self::$_connection['end'] - self::$_connection['start'], 3);
         self::$_connection['memory'] = memory_get_peak_usage();
         self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
+        self::$_ended == true;
     }
 
     // Utils
