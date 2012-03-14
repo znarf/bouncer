@@ -271,9 +271,11 @@ class Bouncer
         if (!empty($_GET)) {
             $request['GET'] = $_GET;
         }
+        /*
         if (!empty($_POST)) {
             $request['POST'] = $_POST;
         }
+        */
         if (!empty($_COOKIE)) {
             $request['COOKIE'] = $_COOKIE;
         }
