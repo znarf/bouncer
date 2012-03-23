@@ -16,6 +16,8 @@ $browsers_fingerprints = array(
 'd15c6520b93b322cf72cb925c6459747', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; BOIE9;FRFR)
 '6592e13ae4b7200f5e631a1b586e7b96', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
 
+'7dc35fedf56e97fe0f5ea51a0fbf4900', // Windows 7 - fr-BE - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
+
 '2e97f5beccbacd09f8e0714386e85641', // Windows 7 - en-US - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
 '000a96fc69db98793f4162c222529cfe', // Windows 7 - en-US - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
 

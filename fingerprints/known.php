@@ -31,6 +31,7 @@ $known_fingerprints = array(
 '7e1e804fbdf4cf74160734ce0d2d6adb',  // Heritrix
 '36ca11c7a64002a34f7db2db67761abd',  // Disco
 'e3a7b53bb13161f3706426d28cf06eff',  // Soso
+'46cd5cdfd3fd3f4c8d35bded997e9c16',  // Picsearch
 // Majestic (1.4.0 & 1.4.1 & 1.4.2)
 '4c977cbcc56b76f9f4602595219a7d60', // 1.4.1
 '070c89e54103b715e0e7a3d40189fa95', // 1.4.1
