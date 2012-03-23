@@ -90,16 +90,26 @@ class Bouncer
     {
         $addr = $_SERVER['REMOTE_ADDR'];
 
+        if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $forwarded_for = array_map('trim', explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']));
+        }
+
         // Local Proxy
         if ($addr === '127.0.0.1' ||
             $addr == '::1' ||
             strpos($addr, '172.') === 0 ||
             strpos($addr, '192.') === 0 ||
             strpos($addr, '10.')  === 0) {
-                $headers = self::getHeaders();
-                if (isset($headers['X-Forwarded-For'])) {
-                    return $headers['X-Forwarded-For'];
+                if (!empty($forwarded_for)) {
+                    $addr = array_pop($forwarded_for);
                 }
+        }
+
+        // Trusted Proxies (example)
+        if ($addr == '78.109.84.222') {
+            if (!empty($forwarded_for)) {
+                $addr = array_pop($forwarded_for);
+            }
         }
 
         // Opera Mini
@@ -110,16 +120,9 @@ class Bouncer
             strpos($addr, '141.0')  === 0  ||
             strpos($addr, '195.189') === 0 ||
             strpos($addr, '217.212') === 0) {
-                 $headers = self::getHeaders();
-                 // TODO: case insensitive, split multiple value
-                 if (isset($headers['x-forwarded-for'])) {
-                     return $headers['x-forwarded-for'];
-                 }
-         }
-
-         if ($addr == '78.109.84.222') {
-             $headers = self::getHeaders();
-             return $headers['X-Forwarded-For'];
+                if (!empty($forwarded_for)) {
+                    $addr = array_pop($forwarded_for);
+                }
          }
 
          return $addr;
