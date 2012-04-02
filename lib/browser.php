@@ -259,14 +259,14 @@ $browser = array(
     "icon" => "chrome",
     "title" => "Chromium",
     "rule" => array(
-      "Chromium[ /]([0-9.]{1,12})" => "\\1"
+      "Chromium[ /]([0-9.]{1,16})" => "\\1"
     )
   ),
   "chrome" => array(
     "icon" => "chrome",
     "title" => "Chrome",
     "rule" => array(
-      "Chrome[ /]([0-9.]{1,12})" => "\\1"
+      "Chrome[ /]([0-9.]{1,16})" => "\\1"
     ),
     "uri" => "http://www.google.com/chrome/"
   ),
@@ -274,7 +274,7 @@ $browser = array(
     "icon" => "chrome",
     "title" => "Chrome Frame",
     "rule" => array(
-      "chromeframe[ /]([0-9.]{1,12})" => "\\1"
+      "chromeframe[ /]([0-9.]{1,16})" => "\\1"
     ),
   ),
   "compuserve" => array(
