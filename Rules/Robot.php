@@ -153,7 +153,9 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'yandex') === false ? -5 : 2.5;
                 break;
             case 'friendfeed':
-                $score += (strpos($host, 'facebook.com') === false && strpos($addr, '69.63.180.') === false) ? -5 : 2.5;
+                $score += strpos($host, 'facebook.com') === false &&
+                          strpos($addr, '69.63.180.') === false &&
+                          strpos($addr, '69.171.233.') === false ? -5 : 2.5;
                 break;
             case 'spbot':
                 $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
