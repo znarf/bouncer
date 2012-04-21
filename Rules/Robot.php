@@ -262,8 +262,9 @@ class Bouncer_Rules_Robot
                 $score += $identity['fingerprint'] != '7be77a95f238abe91d1891bbe787fdb3' ? -5 : 2.5;
                 break;
             case 'ahrefs':
-                $score += (strpos($addr, '213.186.127.') !== 0 && strpos($addr, '213.186.119.') !== 0) ? -5 : 2.5;
-                $score += $identity['fingerprint'] != '9ea719f12db582a62aac760bb7225865' ? -5 : 2.5;
+                $score += (strpos($addr, '213.186.') !== 0 && strpos($addr, '212.113.') !== 0) ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '9ea719f12db582a62aac760bb7225865' ||
+                          $identity['fingerprint'] != '6f5f852fb824447f679c2a05e3221b28' ? -5 : 2.5;
                 break;
         }
 
