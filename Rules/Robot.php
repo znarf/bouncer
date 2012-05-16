@@ -53,7 +53,7 @@ class Bouncer_Rules_Robot
                 break;
             case 'scoutjet':
                 $score += strpos($host, 'scoutjet.com') === false ? -5 : 2.5;
-                $score += $identity['fingerprint'] != 'd970c6ffb8d5547d9f6052207200b0dd' ? -5 : 2.5;
+                $score += $identity['fingerprint'] != 'b281d7c2562693921262c77d04c22499' ? -5 : 2.5;
                 break;
             case 'baidu':
                 $score += (strpos($host, 'baidu.')   === false
@@ -95,6 +95,7 @@ class Bouncer_Rules_Robot
                 break;
             case 'daum':
                 $score += $identity['fingerprint'] != 'c566ee1e58e2bfc09389b1d4f5790574' &&
+                          $identity['fingerprint'] != 'c9150632a9b3f6ffd4f88c1732492a05' &&
                           $identity['fingerprint'] != '536cb87617e5a9ffdfae53365f116d89' ? -5 : 2.5;
                 $score += $identity['extension'] != 'kr' ? -5 : 1;
                 break;
