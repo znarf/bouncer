@@ -27,7 +27,7 @@ $banned_fingerprints = array(
 // WP Login attack
 'f1975792f3eb763bd430ea063e0ed3b4',
 // WP Login attack (brute force)
-'d3f31f60884687f480c6fd6319a99f5e'
+'d3f31f60884687f480c6fd6319a99f5e',
 // Bots
 '6135b0ff46c9c6168ef13c221f3528b5', // SN - DTS Agent
 'dcf57bea9a755eea1f8de282f4c3279a', // CN - Indy Library
