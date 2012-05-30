@@ -46,6 +46,7 @@ $suspicious_fingerprints = array(
 '7a03e06dc5f0f49c087bca0fb4d3a567', // itim
 '0a79ab3e72ba0d7223959a96115eb52c', // "Mozilla/5.0
 'b3225319463a6d5d137f60d01e9df9a3', // GSLFbot
+'d9940be19ffe2181b8de8a78067f1632', // Windows XP - Firefox/10.0.2
 // Security / Brand / Media bots
 '1db826142acf332a4aadefe24c1c1bf4', // MacOS X 10.6.4 - Safari 5.0.1 (MediaDefender)
 '448c515c192c8292a77b980803bec31d', // Windows 7 - Explorer 8.0 (brandprotect)
