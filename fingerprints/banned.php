@@ -106,6 +106,7 @@ $banned_fingerprints = array(
 'b50457ec8e01d50f1d6c9aa1f358ab32',
 '6d2852f8657dcd9be02c7c44ea9c111e',
 'b759248a64fa46e9a45c55523e7ab3ff',
+'31bab508c47f1728a5e675b06ec05808',
 // Advanced Email Extractor
 'a71a3073b82c5f249cacdae80c0e154e', // 2.61
 'f739bf1bfb67daadf0cc3462dfc5dc59', // 2.76
