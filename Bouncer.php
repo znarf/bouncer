@@ -307,9 +307,6 @@ class Bouncer
         // Log Connection
         self::log($identity, $request, $result);
 
-        // Release Backend Connection
-        self::backend()->clean();
-
         // Set Bouncer Cookie
         if (empty($_COOKIE['bouncer-identity']) || $_COOKIE['bouncer-identity'] != $identity['id']) {
             setcookie('bouncer-identity', $identity['id'], time()+60*60*24*365 , '/');
@@ -494,6 +491,9 @@ class Bouncer
         self::$_connection['memory'] = memory_get_peak_usage();
         self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
         self::$_ended == true;
+
+        // Release Backend Connection
+        self::backend()->clean();
     }
 
     // Utils
@@ -609,7 +609,7 @@ class Bouncer
                     self::$_backendInstance = new Bouncer_Backend_Memcache($options);
                     break;
                 case 'redis':
-                    require_once dirname(__FILE__) . '/Backend/Redis.php';
+                case 'phpredis':
                     $options = array('namespace' => self::$_prefix);
                     if (!empty(self::$_servers)) {
                         $options['servers'] = array();
@@ -620,6 +620,7 @@ class Bouncer
                                     list($username, $password) = explode(':', $password);
                                 }
                             }
+                            $port = 6379;
                             if (strpos($host, ':')) {
                                 list($host, $port) = explode(':', $host);
                             }
@@ -628,7 +629,13 @@ class Bouncer
                             $options['servers'][] = compact('host', 'port', 'username', 'password', 'timeout', 'readTimeout');
                         }
                     }
-                    self::$_backendInstance = new Bouncer_Backend_Redis($options);
+                    if (self::$_backend == 'phpredis') {
+                      require_once dirname(__FILE__) . '/Backend/PhpRedis.php';
+                      self::$_backendInstance = new Bouncer_Backend_PhpRedis($options);
+                    } else {
+                      require_once dirname(__FILE__) . '/Backend/Redis.php';
+                      self::$_backendInstance = new Bouncer_Backend_Redis($options);
+                    }
                     break;
             }
         }
