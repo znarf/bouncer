@@ -135,6 +135,8 @@ $suspicious_fingerprints = array(
 '7bd7ccc4b5f36dc99a15e53fb1914bf0',    // LD  - Windows XP    - Explorer 6.0     (CN)
 'ae1d576c5c68a6fb8580c37e0e2af7ee',    // BM  - Windows XP    - Explorer 6.0     (CN)
 'a09b8a9d4adcd428c1f7abace41b2b02',    // BM  - Windows Vista - Explorer 7.0
+'424e7e0ac38ab2e3c5cb2909fff812cc',    // LD  - Windows XP    - Explorer 6.0     (CN)
+'ceef10c9eb1d998d504461336f476489',    // LD  - Windows XP    - Explorer 6.0     (CN)
 // Firefox
 '8310c5852ee8d17f39094a923bf537b8',    //  LD - MacOS X 10.5  - Firefox 3.6.3    (US - NatCoWeb Corp)
 '4679192bb2f9d7a8a77c564a80f7dbd8',    //  LD - Windows Vista - Firefox 3.0.11   (US - comcastbusiness.net)
@@ -187,6 +189,9 @@ $suspicious_fingerprints = array(
 '7fb5d67a5d4563587f3b470f3dfc69e5',    //  BM - Windows Vista - Firefox 3.5.5
 '218b4fdd01f20c386e3585db8ee092eb',    //  BM - Windows XP    - Firefox 1.0.5
 '13d6a6915f91413a3874853c229a8d7d',    //  BM - Windows 2003  - Firefox 3.0.6
+'4bb23660c88c71c1a89447b88f06117c',    //  LD - Windows XP    - Firefox 6.0.2 (CN)
+'7e40b52fd50a66c7bd4e33beeb119120',    //  LD - Windows XP    - Firefox 6.0.2 (CN)
+'d46f859da040cac54a4d520bef8645f0',    //  LD - Windows XP    - Firefox 1.5.0.11 (CN)
 // Chrome
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28

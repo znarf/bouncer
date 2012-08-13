@@ -11,6 +11,7 @@ $known_fingerprints = array(
 '88f5936db6554981ceae9e360aeb59bf',  // Baidu (jp)
 '35d55b760b985cf233ad9466fd38dee8',  // Baidu (jp - mobile)
 '48ccff437f6e7f403f79b7500eb253d6',  // Baidu (tr)
+'22a2daa6ff7091d6c22336f1efd55d52',  // Baidu (en-US)
 '72604be2402cd5d1cfc84a413516a0da',  // Bingbot
 '6dcd83439ea1c096a43b0f06811e64d2',  // Bingbot
 '375716bc42342febd3f74e7270b466eb',  // Bingbot
@@ -26,12 +27,13 @@ $known_fingerprints = array(
 'cdcb44c8464c40d53a6f5635ee66d642',  // Feedburner
 '84e14e474b5972e7b11fae97d08fff4c',  // Feedburner
 'c2bff0ebec4c3dab9da8035e5219a0fd',  // Entireweb
-'9ea719f12db582a62aac760bb7225865',  // Ahrefs
+'6dfe44b751fb6b4ebde0400cb073bac1',  // Ahrefs
 '7be77a95f238abe91d1891bbe787fdb3',  // Ezooms
 '7e1e804fbdf4cf74160734ce0d2d6adb',  // Heritrix
 '36ca11c7a64002a34f7db2db67761abd',  // Disco
 'e3a7b53bb13161f3706426d28cf06eff',  // Soso
 '46cd5cdfd3fd3f4c8d35bded997e9c16',  // Picsearch
+'7ca9f4a38ca04ec6b107f11b0e732535',  // Youdao
 // Majestic (1.4.0 & 1.4.1 & 1.4.2)
 '4c977cbcc56b76f9f4602595219a7d60', // 1.4.1
 '070c89e54103b715e0e7a3d40189fa95', // 1.4.1
