@@ -321,7 +321,7 @@ class Bouncer
                 $throttle = rand(1000*1000, 2000*1000);
                 self::$_throttle = $throttle;
                 usleep($throttle);
-                self::ban();
+                self::unavailable();
             case self::SUSPICIOUS:
                 $throttle = rand(500*1000, 2000*1000);
                 self::$_throttle = $throttle;
@@ -477,14 +477,24 @@ class Bouncer
 
     protected static function ban()
     {
-        header("HTTP/1.0 403 Forbidden");
-        die('Forbidden');
+        $code = '403';
+        $msg = 'Forbidden';
+        header("HTTP/1.0 $code $msg");
+        header("Status: $code $msg");
+        echo $msg;
+        self::end();
+        exit;
     }
 
     protected static function unavailable()
     {
-        header("HTTP/1.0 503 Service Unavailable");
-        die('Service Unavailable');
+        $code = '503';
+        $msg = 'Service Unavailable';
+        header("HTTP/1.0 $code $msg");
+        header("Status: $code $msg");
+        echo $msg;
+        self::end();
+        exit;
     }
 
     public static function end()
