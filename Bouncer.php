@@ -440,6 +440,7 @@ class Bouncer
         $fingerprint = $identity['fingerprint'];
 
         $connection = array();
+        $connection['pid'] = getmypid();
         $connection['identity'] = $identity['id'];
         $connection['request'] = $request;
         $connection['time'] = $time;

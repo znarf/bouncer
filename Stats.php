@@ -508,6 +508,7 @@ class Bouncer_Stats
             echo '<th>', 'Score', '</th>';
             echo '<th>', 'Exec Time', '</th>';
             echo '<th>', 'Memory', '</th>';
+            echo '<th>', 'Pid', '</th>';
         }
         echo '</tr>';
         foreach ($connections as $id => $connection) {
@@ -545,6 +546,11 @@ class Bouncer_Stats
                 }
                 if (isset($connection['memory'])) {
                     echo '<td>' , round($connection['memory']/1024/1024) . 'M', '</td>';
+                } else {
+                    echo '<td>', '</td>';
+                }
+                if (isset($connection['pid'])) {
+                    echo '<td>' , $connection['pid'], '</td>';
                 } else {
                     echo '<td>', '</td>';
                 }
