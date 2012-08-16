@@ -21,6 +21,8 @@ class Bouncer
 
     protected static $_ended = false;
 
+    protected static $_throttle = 0;
+
     public static $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
 
     public static $identity_headers = array('User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From');
@@ -317,14 +319,17 @@ class Bouncer
         switch ($status) {
             case self::BAD:
                 $throttle = rand(1000*1000, 2000*1000);
+                self::$_throttle = $throttle;
                 usleep($throttle);
                 self::ban();
             case self::SUSPICIOUS:
                 $throttle = rand(500*1000, 2000*1000);
+                self::$_throttle = $throttle;
                 usleep($throttle);
             case self::NEUTRAL:
                 if ($identity['type'] == Bouncer::ROBOT) {
                     $throttle = rand(250*1000, 1000*1000);
+                    self::$_throttle = $throttle;
                     usleep($throttle);
                 }
             case self::NICE:
@@ -488,7 +493,7 @@ class Bouncer
             return;
         }
         self::$_connection['end'] = microtime(true);
-        self::$_connection['exec_time'] = round(self::$_connection['end'] - self::$_connection['start'], 3);
+        self::$_connection['exec_time'] = round(self::$_connection['end'] - self::$_connection['start'] - self::$_throttle, 3);
         self::$_connection['memory'] = memory_get_peak_usage();
         self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
         self::$_ended == true;
