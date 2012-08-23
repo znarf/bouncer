@@ -88,23 +88,27 @@ class Bouncer
         }
     }
 
+    protected static function isPublic($addr)
+    {
+      if ($addr === '127.0.0.1' || $addr == '::1') return false;
+      if (strpos($addr, '172.') === 0 || strpos($addr, '192.') === 0 || strpos($addr, '10.') === 0) return false;
+      return true;
+    }
+
     protected static function getAddr()
     {
         $addr = $_SERVER['REMOTE_ADDR'];
 
         if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
             $forwarded_for = array_map('trim', explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']));
+            $forwarded_for = array_filter($forwarded_for, array('self', 'isPublic'));
         }
 
-        // Local Proxy
-        if ($addr === '127.0.0.1' ||
-            $addr == '::1' ||
-            strpos($addr, '172.') === 0 ||
-            strpos($addr, '192.') === 0 ||
-            strpos($addr, '10.')  === 0) {
-                if (!empty($forwarded_for)) {
-                    $addr = array_pop($forwarded_for);
-                }
+        // Non-Public Address
+        if (!self::isPublic($addr)) {
+            if (!empty($forwarded_for)) {
+                $addr = array_pop($forwarded_for);
+            }
         }
 
         // Trusted Proxies (example)
