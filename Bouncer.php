@@ -506,7 +506,7 @@ class Bouncer
         self::$_connection['exec_time'] = round(self::$_connection['end'] - self::$_connection['start'] - (self::$_throttle / 1000000), 3);
         self::$_connection['memory'] = memory_get_peak_usage();
         self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
-        self::$_ended == true;
+        self::$_ended = true;
 
         // Release Backend Connection
         self::backend()->clean();
