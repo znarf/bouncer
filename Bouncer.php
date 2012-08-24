@@ -501,6 +501,17 @@ class Bouncer
         exit;
     }
 
+    public static function setConnectionData($key, $value = null)
+    {
+      if (is_array($key)) {
+        foreach ($key as $k => $v) {
+          self::$_connection[$k] = $v;
+        }
+      } else {
+        self::$_connection[$key] = $value;
+      }
+    }
+
     public static function end()
     {
         if (self::$_ended === true) {
