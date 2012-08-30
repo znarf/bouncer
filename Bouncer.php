@@ -88,23 +88,27 @@ class Bouncer
         }
     }
 
+    protected static function isPublic($addr)
+    {
+      if ($addr === '127.0.0.1' || $addr == '::1') return false;
+      if (strpos($addr, '172.') === 0 || strpos($addr, '192.') === 0 || strpos($addr, '10.') === 0) return false;
+      return true;
+    }
+
     protected static function getAddr()
     {
         $addr = $_SERVER['REMOTE_ADDR'];
 
         if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
             $forwarded_for = array_map('trim', explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']));
+            $forwarded_for = array_filter($forwarded_for, array('self', 'isPublic'));
         }
 
-        // Local Proxy
-        if ($addr === '127.0.0.1' ||
-            $addr == '::1' ||
-            strpos($addr, '172.') === 0 ||
-            strpos($addr, '192.') === 0 ||
-            strpos($addr, '10.')  === 0) {
-                if (!empty($forwarded_for)) {
-                    $addr = array_pop($forwarded_for);
-                }
+        // Non-Public Address
+        if (!self::isPublic($addr)) {
+            if (!empty($forwarded_for)) {
+                $addr = array_pop($forwarded_for);
+            }
         }
 
         // Trusted Proxies (example)
@@ -497,19 +501,40 @@ class Bouncer
         exit;
     }
 
+    public static function setConnectionData($key, $value = null)
+    {
+      if (is_array($key)) {
+        foreach ($key as $k => $v) {
+          self::$_connection[$k] = $v;
+        }
+      } else {
+        self::$_connection[$key] = $value;
+      }
+    }
+
     public static function end()
     {
+        // Already ended (skip it)
         if (self::$_ended === true) {
             return;
         }
+
+        // Connection not available (run failed)
+        if (empty(self::$_connection)) {
+          return;
+        }
+
         self::$_connection['end'] = microtime(true);
         self::$_connection['exec_time'] = round(self::$_connection['end'] - self::$_connection['start'] - (self::$_throttle / 1000000), 3);
         self::$_connection['memory'] = memory_get_peak_usage();
-        self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
-        self::$_ended == true;
 
-        // Release Backend Connection
-        self::backend()->clean();
+        try {
+          self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
+          self::backend()->clean();
+        } catch (Exception $e) {
+        }
+
+        self::$_ended = true;
     }
 
     // Utils
