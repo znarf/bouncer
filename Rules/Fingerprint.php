@@ -55,14 +55,14 @@ class Bouncer_Rules_Fingerprint
 
         if (in_array($fingerprint, self::get('known'))) {
             return 'known';
-        } else if (in_array($fingerprint, self::get('banned'))) {
+        } elseif (in_array($fingerprint, self::get('banned'))) {
             return 'banned';
-        } else if (in_array($fingerprint, self::get('suspicious'))) {
+        } elseif (in_array($fingerprint, self::get('suspicious'))) {
             return 'suspicious';
-        } else if (in_array($fingerprint, self::get('botnet'))) {
+        } elseif (in_array($fingerprint, self::get('botnet'))) {
             return 'botnet';
 
-        } else if (in_array($fingerprint, self::get('browser.safari'))) {
+        } elseif (in_array($fingerprint, self::get('browser.safari'))) {
             return 'known';
         }
 

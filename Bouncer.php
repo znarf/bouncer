@@ -430,9 +430,9 @@ class Bouncer
 
         if ($score >= 10) {
             $result = array(self::NICE, $score, $details);
-        } else if ($score <= -10) {
+        } elseif ($score <= -10) {
             $result = array(self::BAD, $score, $details);
-        } else if ($score <= -5) {
+        } elseif ($score <= -5) {
             $result = array(self::SUSPICIOUS, $score, $details);
         } else {
             $result = array(self::NEUTRAL, $score, $details);
