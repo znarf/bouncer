@@ -22,38 +22,23 @@ class Bouncer_Rules_Basic
         $name = $identity['name'];
         $version = $identity['version'];
 
+        $version = (int)$version;
+
         // plus
-             if ($name == 'safari'   && strpos($version, '5.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'chrome'   && strpos($version, '14.') === 0)   $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'chrome'   && strpos($version, '15.') === 0)   $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'chrome'   && strpos($version, '16.') === 0)   $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'chrome'   && strpos($version, '17.') === 0)   $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '7.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '8.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '9.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'firefox'  && strpos($version, '10.') === 0)   $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'explorer' && strpos($version, '8.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'explorer' && strpos($version, '9.') === 0)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'opera'    && strpos($version, '11.') === 0)   $scores[] = array(1, 'Recent Browser');
+             if ($name == 'safari'   && $version >= 5)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'chrome'   && $version >= 16)   $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'firefox'  && $version >= 9)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'explorer' && $version >= 8)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'opera'    && $version >= 11)   $scores[] = array(1, 'Recent Browser');
 
         // minus
-        else if ($name == 'explorer'  && strpos($version, '5.') === 0)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'explorer'  && strpos($version, '6.') === 0)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'konqueror' && strpos($version, '3.') === 0)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'netscape'  && strpos($version, '4.') === 0)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'netscape'  && strpos($version, '3.') === 0)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'firefox'   && strpos($version, '1.') === 0)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'firefox'   && strpos($version, '2.') === 0)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'opera' && strpos($version, '8.') === 0)       $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'opera' && strpos($version, '7.') === 0)       $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'opera' && strpos($version, '6.') === 0)       $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'chrome' && strpos($version, '9.') === 0)      $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'chrome' && strpos($version, '8.') === 0)      $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'chrome' && strpos($version, '7.') === 0)      $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'chrome' && strpos($version, '6.') === 0)      $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'chrome' && strpos($version, '5.') === 0)      $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'chrome' && strpos($version, '4.') === 0)      $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'mozilla')                                     $scores[] = array(-2.5, 'Old Browser');
+             if ($name == 'chrome'    && $version <= 11)  $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'firefox'   && $version <= 2)   $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'explorer'  && $version <= 6)   $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'opera'     && $version <= 9)   $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'konqueror' && $version <= 3)   $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'netscape')                     $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'mozilla')                      $scores[] = array(-2.5, 'Old Browser');
 
         return $scores;
     }
