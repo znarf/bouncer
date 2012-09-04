@@ -47,9 +47,9 @@ class Bouncer
 
     public static function run(array $options = array())
     {
-        self::setOptions($options);
-        self::load();
-        self::bounce();
+        static::setOptions($options);
+        static::load();
+        static::bounce();
     }
 
     public static function load()
@@ -325,7 +325,7 @@ class Bouncer
                 $throttle = rand(1000*1000, 2000*1000);
                 self::$_throttle = $throttle;
                 usleep($throttle);
-                self::unavailable();
+                static::unavailable();
             case self::SUSPICIOUS:
                 $throttle = rand(500*1000, 2000*1000);
                 self::$_throttle = $throttle;
@@ -430,9 +430,9 @@ class Bouncer
 
         if ($score >= 10) {
             $result = array(self::NICE, $score, $details);
-        } else if ($score <= -10) {
+        } elseif ($score <= -10) {
             $result = array(self::BAD, $score, $details);
-        } else if ($score <= -5) {
+        } elseif ($score <= -5) {
             $result = array(self::SUSPICIOUS, $score, $details);
         } else {
             $result = array(self::NEUTRAL, $score, $details);
@@ -700,8 +700,8 @@ class Bouncer
 
     public static function stats(array $options = array())
     {
-        self::setOptions($options);
-        self::load();
+        static::setOptions($options);
+        static::load();
         require_once dirname(__FILE__) . '/Stats.php';
         Bouncer_Stats::css();
         if (empty($_GET['agent']) && empty($_GET['connection']) && empty($_GET['stats'])) {
