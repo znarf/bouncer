@@ -5,6 +5,8 @@ class Bouncer_Stats
 
     protected static $_keys = array('id', 'fingerprint', 'time', 'hits', 'host', 'system', 'agent', 'referer', 'score');
 
+    protected static $_connection_keys = array('time', 'id', 'hits', 'host', 'system', 'agent', 'method', 'uri', 'code', 'size', 'memory', 'sql', 'nosql', 'exec_time');
+
     protected static $_namespace = '';
 
     protected static $_ignore_ips = array();
@@ -21,8 +23,47 @@ class Bouncer_Stats
 
     protected static $_base_static_url = 'http://h6e.net/bouncer';
 
+    protected static $_browser = array();
+
+    protected static $_robot = array();
+
+    protected static $_os = array();
+
     public static function stats(array $options = array())
     {
+        require dirname(__FILE__) . '/lib/browser.php';
+        require dirname(__FILE__) . '/lib/os.php';
+        require dirname(__FILE__) . '/lib/robot.php';
+
+        $browser["eyeem"] = array(
+          "icon" => "question",
+          "title" => "Eyeem",
+          "rule" => array(
+            "Eyeem[ /]([0-9.]{1,10})" => "\\1",
+            "EYEEM[ /]([0-9.]{1,10})" => "\\1",
+            "EYEEM" => "",
+          )
+        );
+
+        $robot["eyeemphpclient"] = array(
+          "icon" => "question",
+          "title" => "Eyeem PHP Client",
+          "rule" => array(
+            "Eyeem PHP Client" => "",
+          )
+        );
+
+        self::$_browser = $browser;
+        self::$_robot = $robot;
+        self::$_os = $os;
+
+        require_once dirname(__FILE__) . '/Rules/Basic.php';
+        require_once dirname(__FILE__) . '/Rules/Browser.php';
+        require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
+        require_once dirname(__FILE__) . '/Rules/Httpbl.php';
+        require_once dirname(__FILE__) . '/Rules/Network.php';
+        require_once dirname(__FILE__) . '/Rules/Geoip.php';
+
         self::setOptions($options);
 
         if (isset($_GET['extract'])) {
@@ -33,10 +74,12 @@ class Bouncer_Stats
             self::connections();
         } else if (isset($_GET['connection'])) {
             self::connection();
+        } else if (isset($_GET['agents'])) {
+            self::agents();
         } else if (isset($_GET['agent'])) {
             self::agent();
         } else {
-            self::index();
+            self::connections();
         }
     }
 
@@ -71,22 +114,273 @@ class Bouncer_Stats
         }
     }
 
-    public static function index()
+    public static function getAgentValues($id)
     {
-         require( dirname(__FILE__) . "/lib/browser.php" );
-         require( dirname(__FILE__) . "/lib/os.php" );
-         require( dirname(__FILE__) . "/lib/robot.php" );
+        if (!$identity = Bouncer::getIdentity($id)) {
+            return null;
+        }
 
-         require_once dirname(__FILE__) . '/Rules/Basic.php';
-         require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
-         require_once dirname(__FILE__) . '/Rules/Httpbl.php';
+        // Hits
+        $hits = Bouncer::countAgentConnections($id, self::$_namespace);
 
-         $filters = array();
-         if (!empty($_GET['filter'])) {
-             foreach (explode(' ', $_GET['filter']) as $f) {
-                 if (strpos($f, ':')) $filters[] = explode(':', trim($f));
-             }
-         }
+        // Addr
+        $addr = $identity['addr'];
+        $host = $identity['host'];
+        $extension = isset($identity['country']) ? $identity['country'] : (isset($identity['extension']) ? $identity['extension'] : 'numeric');
+
+        // Agent
+        $type = $identity['type'];
+        $signature = $identity['signature'];
+        $fingerprint = $identity['fingerprint'];
+        $useragent = isset($identity['headers']['User-Agent']) ? $identity['headers']['User-Agent'] : 'none';
+        $agent = $name = $identity['name'];
+        $version = isset($identity['version']) ? $identity['version'] : null;
+        $system = $system_name = isset($identity['os']) ? $identity['os'][0] : 'unknown';
+        $system_version = isset($identity['os']) ? $identity['os'][1] : 'unknown';
+        $fgtype = Bouncer_Rules_Fingerprint::getType($identity);
+        $fgtype = empty($fgtype) ? 'none' : $fgtype;
+
+        // Families
+        $ie = $name == 'explorer' || in_array($name, Bouncer_Rules_Browser::$explorer_browsers) ? 1 : 0;
+        $gecko = $name == 'firefox' || in_array($name, Bouncer_Rules_Browser::$gecko_browsers) ? 1 : 0;
+        $webkit = in_array($name, Bouncer_Rules_Browser::$webkit_browsers) ? 1 : 0;
+        $rss = in_array($name, Bouncer_Rules_Browser::$rss_browsers) || (isset($xmoz) && $xmoz == 'livebookmarks') ? 1 : 0;
+
+        // Features
+        $features = isset($identity['features']) ? $identity['features'] : array();
+        $js = isset($features['javascript']) && $features['javascript'] != 0 ? (int)($features['javascript'] > 0) : '';
+        $img = isset($features['image']) && $features['image'] != 0 ? (int)($features['image'] > 0) : '';
+        $iframe = isset($features['iframe']) && $features['iframe'] != 0 ? (int)($features['iframe'] > 0) : '';
+
+        // Referer
+        $first = Bouncer::getFirstAgentConnection($id, self::$_namespace);
+        $ref = 0;
+        $referer = '';
+        if (!empty($first['request']['headers']['Referer'])) {
+            $preferer = @parse_url($first['request']['headers']['Referer']);
+            if (isset($preferer['host']) && $first['request']['server'] != $preferer['host']) {
+                $referer = $first['request']['headers']['Referer'];
+                $ref = 1;
+            }
+        }
+
+        return get_defined_vars();
+    }
+
+    public function getConnectionValues($conn)
+    {
+        if (is_string($conn)) {
+          $id = $conn;
+          if (!$conn = Bouncer::getLastAgentConnection($id, self::$_namespace)) {
+              return null;
+          }
+          $conn['id'] = $id;
+        }
+
+        $connection_id = $conn['id'];
+
+        $time = date("d/m/Y.H:i:s", $conn['time']);
+        $server = isset($conn['request']['server']) ? $conn['request']['server'] : '';
+        $method = isset($conn['request']['method']) ? $conn['request']['method'] : 'GET';
+        $uri = isset($conn['request']['uri']) ? $conn['request']['uri'] : '';
+
+        $code = isset($conn['code']) ? $conn['code'] : '';
+        $size = isset($conn['size']) ? $conn['size']/1024 : '';
+        $exec_time = isset($conn['exec_time']) ? $conn['exec_time'] : '';
+        $memory = isset($conn['memory']) ? $conn['memory']/1024/1024 : '';
+        $pid = isset($conn['pid']) ? $conn['pid'] : '';
+
+        $cookie = isset($conn['request']['headers']['Cookie']) ? 1 : 0;
+        $status = isset($conn['result']) ? $conn['result'][0] : 'neutral';
+        $score = isset($conn['result']) ? $conn['result'][1] : 0;
+
+        $sql = isset($conn['sql']) ? count($conn['sql']) : 0;
+        $nosql = isset($conn['nosql']) ? count($conn['nosql']) : 0;
+
+        return get_defined_vars();
+    }
+
+    public static function getBetterValues($values)
+    {
+        global $cssRules;
+
+        $linkify = true;
+
+        extract($values);
+
+        if ($linkify) {
+            $hits = '<a href="?agent=' . $id . '">' . $hits . '</a>';
+            $id = '<a href="?agent=' . $id . '">' . (strlen($id) == 32 ? substr($id, 0, 6) : $id) . '</a>';
+        } else {
+            $id = substr($id, 0, 16);
+        }
+
+        $fingerprint = substr($identity['fingerprint'], 0, 6);
+        if ($linkify) {
+            $fingerprint = '<a href="?filter=fingerprint%3A' . $identity['fingerprint'] . '">' . $fingerprint . '</a>';
+        }
+
+        if ($type == 'browser' && isset(self::$_os[$system])) {
+            if (empty($cssRules[$system])) {
+                $cssRules[$system] = 'background-image:url(' . self::$_base_static_url . '/images/os/' . self::$_os[$system]['icon'] . '.png)';
+            }
+            $system = self::$_os[$system]['title'] . ' ' . $system_version;
+        } else {
+            $system = '';
+            $system_name = '';
+        }
+
+        if (empty($cssRules[$extension])) {
+             $cssRules[$extension] = 'background-image:url(' . self::$_base_static_url . '/images/ext/' . $extension . '.png)';
+        }
+        if ($linkify) {
+            $host = '<a href="?filter=addr%3A' .  $addr . '">' .  $host . '</a>';
+        }
+
+        if ($type == 'browser') {
+            if (empty($cssRules[$name])) {
+                $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/browser/' . self::$_browser[$name]['icon'] . '.png)';
+            }
+            $agent = self::$_browser[$name]['title'] . ' ' . $version;
+        } elseif ($type == 'robot') {
+            if (empty($cssRules[$name])) {
+                $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/robot/' . self::$_robot[$name]['icon'] . '.png)';
+            }
+            $agent = self::$_robot[$name]['title'] . ' ' . $version;
+        }
+
+        if (!empty($referer) && !empty($preferer)) {
+            if ($linkify) {
+                $referer = '<a href="' . htmlspecialchars($referer) . '">' . $preferer['host'] . '</a>';
+            } else {
+                $referer = $preferer['host'];
+            }
+        }
+        
+        if (!empty($uri)) {
+          $uri = '<a href="?connection=' . $connection_id . '">' . $uri . '</a>';
+        }
+
+        if (!empty($exec_time)) {
+          $exec_time = $exec_time . 's';
+        }
+        if (!empty($memory)) {
+          $memory = round($memory) . 'M';
+        }
+        if (!empty($size)) {
+          $size =  round($size, 2) . 'K';
+        }
+
+        return get_defined_vars();
+    }
+
+    public static function filterMatch($filters = array(), $values = array())
+    {
+        $numericKeys = array('memory', 'size', 'exec_time', 'sql', 'nosql');
+        $partialKeys = array('addr', 'host', 'referer', 'useragent', 'uri');
+        foreach ($filters as $filter) {
+            list($filterKey, $filterValue) = $filter;
+            $filterValue = str_replace('_', ' ', $filterValue);
+            if (strpos($filterKey, '-') === 0) {
+                $filterKey = substr($filterKey, 1);
+                if (!isset($values[$filterKey] )) {
+                    continue;
+                }
+                if (in_array($filterKey, $numericKeys)) {
+                    if ($values[$filterKey] > (float)$filterValue) return true;
+                } elseif (in_array($filterKey, $partialKeys)) {
+                    if (strpos($values[$filterKey], $filterValue) !== false) return true;
+                } else {
+                    if ($values[$filterKey] == $filterValue) return true;
+                }
+            } else {
+                if (!isset($values[$filterKey] )) {
+                    continue;
+                }
+                if (in_array($filterKey, $numericKeys)) {
+                    if ($values[$filterKey] < (float)$filterValue) return true;
+                } elseif (in_array($filterKey, $partialKeys)) {
+                    if (strpos($values[$filterKey], $filterValue) === false) return true;
+                } else {
+                    if ($values[$filterKey] != $filterValue) return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static function display($values, $keys = array())
+    {
+        $keys = empty($keys) ? self::$_keys : $keys;
+
+        $values = self::getBetterValues($values);
+        extract($values);
+
+        // echo '<tr class="', $status, '">';
+        echo '<tr class="status', substr($code, 0, 1), 'x ', $status, '">';
+        foreach ($keys as $key) {
+            if ($key == 'id') {
+                echo '<td style="background:#' . substr($identity['id'], 0, 6) . '">&nbsp;</td>';
+                echo '<td>' . $id . '</td>';
+            } elseif ($key == 'fingerprint') {
+                echo '<td style="background:#' . substr($identity['fingerprint'], 0, 6) . '">&nbsp;</td>';
+                echo '<td>' . $fingerprint . '</td>';
+                echo '<td>' . ( isset($fgtype) && $fgtype != 'none' ? $fgtype : '' ) . '</td>';
+                if (method_exists('Bouncer', 'countAgentsFingerprint')) {
+                    echo '<td>' . Bouncer::countAgentsFingerprint($identity['fingerprint'], self::$_namespace) . '</td>';
+                } else {
+                    echo '<td>', '&nbsp;', '</td>';
+                }
+            } elseif ($key == 'features') {
+                 if (isset($identity['features'])) {
+                     echo '<td>' . $identity['features']['image'] . '</td>';
+                     echo '<td>' . $identity['features']['iframe'] . '</td>';
+                     echo '<td>' . $identity['features']['javascript'] . '</td>';
+                 } else {
+                     echo '<td colspan="3">', '&nbsp;', '</td>';
+                 }
+            } else if ($key == 'host') {
+                echo '<td class="ic ' . $extension . '">', $host, '</td>';
+                if (self::$_detailed_host) {
+                    echo '<td>', Bouncer_Rules_Httpbl::getType($identity), '</td>';
+                    if (method_exists('Bouncer', 'countAgentsHost')) {
+                        $hcount = Bouncer::countAgentsHost(md5($identity['addr']), self::$_namespace);
+                        echo '<td>' . ($hcount ? $hcount : 1) . '</td>';
+                    } else {
+                        echo '<td>', '&nbsp;', '</td>';
+                    }
+                }
+            } elseif ($key == 'agent') {
+                echo '<td class="ic ' . $name . '">', $agent ,'</td>';
+            } elseif ($key == 'system') {
+                echo '<td class="ic ' . $system_name . '">', $system ,'</td>';
+            } else {
+                if (isset($$key) && $$key != 'none') {
+                     echo '<td>', $$key ,'</td>';
+                } else {
+                    echo '<td>', '&nbsp;' ,'</td>';
+                }
+            }
+        }
+        echo '</tr>' . "\n";
+    }
+
+    public static function getFilters()
+    {
+      $filters = array();
+      if (!empty($_GET['filter'])) {
+          foreach (explode(' ', $_GET['filter']) as $f) {
+              if (strpos($f, ':')) $filters[] = explode(':', trim($f));
+          }
+      }
+      return $filters;
+    }
+
+    public static function agents()
+    {
+         global $cssRules;
+
+         $filters = self::getFilters();
 
          foreach ($filters as $filter) {
              list($filterKey, $filterValue) = $filter;
@@ -99,7 +393,6 @@ class Bouncer_Stats
                  break;
              }
          }
-
          if (empty($agents)) {
              $agents = Bouncer::getAgentsIndex(self::$_namespace);
          }
@@ -107,12 +400,9 @@ class Bouncer_Stats
          $cssRules = array();
          $cssRules['unknown'] = 'background-image:url(' . self::$_base_static_url . '/images/os/question.png)';
 
-         $count = 0;
-
          echo '<table class="bouncer-table">' . "\n";
 
-         $linkify = true;
-
+         // Headers
          echo '<tr>';
          foreach (self::$_keys as $key) {
              if ($key == 'fingerprint') {
@@ -132,234 +422,37 @@ class Bouncer_Stats
          }
          echo '</tr>' . "\n";
 
+         // Agents
+         $count = 0;
          foreach ($agents as $time => $id) {
-
-             $identity = Bouncer::getIdentity($id);
-             if (empty($identity)) {
+             // Get values
+             if (!$agentValues = self::getAgentValues($id)) {
+                continue;
+             }
+             // Ignored IPs
+             if (in_array($agentValues['addr'], self::$_ignore_ips)) {
+                continue;
+             }
+             // Get Last Connection
+             if (!$last = Bouncer::getLastAgentConnection($id, self::$_namespace)) {
                  continue;
              }
-
-             if (in_array($identity['addr'], self::$_ignore_ips)) {
+             if (!$connectionValues = self::getConnectionValues($last)) {
                  continue;
              }
-
-             $last = Bouncer::getLastAgentConnection($id, self::$_namespace);
-             if (empty($last)) {
-                 continue;
+             // Merge
+             $values = array_merge($agentValues, $connectionValues);
+             // Filters
+             if (self::filterMatch($filters, $values)) {
+                continue;
              }
-
-             $first = Bouncer::getFirstAgentConnection($id, self::$_namespace);
-
-             $status = isset($last['result']) ? $last['result'][0] : 'neutral';
-             $user = isset($last['request']['COOKIE']['user']) ? $last['request']['COOKIE']['user'] : 'none';
-             $fingerprint = $identity['fingerprint'];
-             $fgtype = Bouncer_Rules_Fingerprint::getType($identity);
-             $fgtype = empty($fgtype) ? 'none' : $fgtype;
-             $time = $last['time'];
-             $hits = Bouncer::countAgentConnections($id, self::$_namespace);
-             $addr = $identity['addr'];
-             $host = $identity['host'];
-             $useragent = isset($identity['headers']['User-Agent']) ? $identity['headers']['User-Agent'] : 'none';
-             $extension = isset($identity['country']) ? $identity['country'] : (isset($identity['extension']) ? $identity['extension'] : 'numeric');
-             $type = $identity['type'];
-             $signature = $identity['signature'];
-             $agent = $name = $identity['name'];
-             $version = isset($identity['version']) ? $identity['version'] : null;
-             $system = $system_name = isset($identity['os']) ? $identity['os'][0] : 'unknown';
-             $system_version = isset($identity['os']) ? $identity['os'][1] : '';
-             $referer = isset($first['request']['headers']['Referer']) ? $first['request']['headers']['Referer'] : 'none';
-             $cookie = isset($last['request']['headers']['Cookie']) ? $last['request']['headers']['Cookie'] : '';
-             $hascookie = isset($last['request']['headers']['Cookie']) ? 1 : 0;
-             $score = isset($last['result']) ? round($last['result'][1]) : 0;
-             $server = isset($last['request']['server']) ? $last['request']['server'] : '';
-             $method = isset($last['request']['method']) ? $last['request']['method'] : 'GET';
-
-             $kb = in_array($name, Bouncer::$known_browsers) ? 1 : 0;
-             $te = isset($last['request']['headers']['TE']) ? 1 : 0;
-             $via = isset($last['request']['headers']['Via']) ? $last['request']['headers']['Via'] : 'none';
-             $cc = isset($last['request']['headers']['Cache-Control']) ? $last['request']['headers']['Cache-Control'] : 'none';
-             $pragma = isset($last['request']['headers']['Pragma']) ? $last['request']['headers']['Pragma'] : 'none';
-             $range = isset($last['request']['headers']['Range']) ? 1 : 0;
-             $wap = isset($last['request']['headers']['x-wap-profile']) ? 1 : 0;
-
-             $bluecoat = isset($last['request']['headers']['X-BlueCoat-Via']) ? 1 : 0;
-             $squid = isset($last['request']['headers']['Via']) && isset($last['request']['headers']['Cache-Control'])
-                 && $last['request']['headers']['Cache-Control'] == 'max-age=259200' ? 1 : 0;
-             $proxy1 = isset($last['request']['headers']['FORWARDED_FOR']) && isset($last['request']['headers']['Client-ip']) ? 1 : 0;
-
-             $proxy = ($bluecoat || $squid || $proxy1) ? 1 : 0;
-
-             $xmoz = isset($last['request']['headers']['X-Moz']) ? $last['request']['headers']['X-Moz'] : 'none';
-             $xpurpose = isset($last['request']['headers']['X-Purpose']) ? $last['request']['headers']['X-Purpose'] : 'none';
-             $ka = isset($last['request']['headers']['Keep-Alive']) ? $last['request']['headers']['Keep-Alive'] : 'none';
-             $conn = isset($last['request']['headers']['Connection']) ? $last['request']['headers']['Connection'] : 'none';
-             $pc = isset($last['request']['headers']['Proxy-Connection']) ? $last['request']['headers']['Proxy-Connection'] : 'none';
-             $pa = isset($last['request']['headers']['Proxy-Authentication']) ? $last['request']['headers']['Proxy-Authentication'] : 'none';
-
-             $prefetch = ( (isset($xmoz) && $xmoz == 'prefetch') || (isset($xpurpose) && $xpurpose == 'prefetch') ) ? 1 : 0;
-
-             $accept = isset($identity['headers']['Accept']) ? $identity['headers']['Accept'] : 'none';
-             $ae = isset($identity['headers']['Accept-Encoding']) ? $identity['headers']['Accept-Encoding'] : 'none';
-             $al = isset($identity['headers']['Accept-Language']) ? $identity['headers']['Accept-Language'] : 'none';
-             $ac = isset($identity['headers']['Accept-Charset']) ? $identity['headers']['Accept-Charset'] : 'none';
-
-             $java = isset($identity['headers']['Accept']) && $identity['headers']['Accept'] == 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' ? 1 : 0;
-             $libwww = isset($last['request']['headers']['TE']) && $last['request']['headers']['TE'] == 'deflate,gzip;q=0.3' ? 1 : 0;
-             $lwp = isset($last['request']['headers']['Cookie2']) && $last['request']['headers']['Cookie2'] == '$Version="1"' ? 1 : 0;
-
-             $ie = $name == 'explorer' || in_array($name, Bouncer_Rules_Browser::$explorer_browsers) ? 1 : 0;
-             $gecko = $name == 'firefox' || in_array($name, Bouncer_Rules_Browser::$gecko_browsers) ? 1 : 0;
-             $webkit = in_array($name, Bouncer_Rules_Browser::$webkit_browsers) ? 1 : 0;
-
-             $rss = ( in_array($name, Bouncer_Rules_Browser::$rss_browsers) || (isset($xmoz) && $xmoz == 'livebookmarks') ) ? 1 : 0;
-
-             $js = isset($identity['features']['javascript']) && $identity['features']['javascript'] != 0 ? (int)($identity['features']['javascript'] > 0) : '';
-             $img = isset($identity['features']['image']) && $identity['features']['image'] != 0 ? (int)($identity['features']['image'] > 0) : '';
-             $iframe = isset($identity['features']['iframe']) && $identity['features']['iframe'] != 0 ? (int)($identity['features']['iframe'] > 0) : '';
-
-             $ref = 0;
-             if (!empty($first['request']['headers']['Referer'])) {
-                 $preferer = @parse_url($first['request']['headers']['Referer']);
-                 if (isset($preferer['host']) && $first['request']['server'] != $preferer['host']) {
-                     $referer = $first['request']['headers']['Referer'];
-                     $ref = 1;
-                 }
-             }
-
-             $partialKeys = array('addr', 'host', 'referer', 'useragent', 'cookie', 'via');
-
-             foreach ($filters as $filter) {
-                 list($filterKey, $filterValue) = $filter;
-                 $filterValue = str_replace('_', ' ', $filterValue);
-                 if (strpos($filterKey, '-') === 0) {
-                    $filterKey = substr($filterKey, 1);
-                    if (isset($$filterKey)) {
-                     if (in_array($filterKey, $partialKeys)) {
-                         if (strpos($$filterKey, $filterValue) !== false) continue 2;
-                     } else {
-                         if ($$filterKey == $filterValue) continue 2;
-                     }
-                    }
-                 } else {
-                     if (isset($$filterKey)) {
-                         if (in_array($filterKey, $partialKeys)) {
-                             if (strpos($$filterKey, $filterValue) === false) continue 2;
-                         } else {
-                             if ($$filterKey != $filterValue) continue 2;
-                         }
-                     }
-                 }
-             }
-
-             if ($linkify) {
-                 $id = '<a href="?agent=' . $id . '">' . (strlen($id) == 32 ? substr($id, 0, 8) : $id) . '</a>';
-             } else {
-                 $id = substr($id, 0, 16);
-             }
-
-             if (isset($user) && $user != 'none' && $linkify) {
-                 $user = '<a href="http://blogmarks.net/user/' . $user . '">' . $user . '</a>';
-             }
-
-             $fingerprint = substr($identity['fingerprint'], 0, 6);
-             if ($linkify) {
-                 $fingerprint = '<a href="?filter=fingerprint%3A' . $identity['fingerprint'] . '">' . $fingerprint . '</a>';
-             }
-
-             $time = date("d/m/Y.H:i:s", $last['time']);
-
-             if ($type == 'browser' && isset($os[$system])) {
-                 if (empty($cssRules[$system])) {
-                     $cssRules[$system] = 'background-image:url(' . self::$_base_static_url . '/images/os/' . $os[$system]['icon'] . '.png)';
-                 }
-                 $system = $os[$system]['title'] . ' ' . $system_version;
-             } else {
-                 $system = '';
-                 $system_name = '';
-             }
-
-             if (empty($cssRules[$extension])) {
-                  $cssRules[$extension] = 'background-image:url(' . self::$_base_static_url . '/images/ext/' . $extension . '.png)';
-             }
-             if ($linkify) {
-                 $host = '<a href="?filter=addr%3A' .  $addr . '">' .  $host . '</a>';
-             }
-
-             if ($type == 'browser') {
-                 if (empty($cssRules[$name])) {
-                     $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/browser/' . $browser[$name]['icon'] . '.png)';
-                 }
-                 $agent = $browser[$name]['title'] . ' ' . $version;
-             } else if ($type == 'robot') {
-                 if (empty($cssRules[$name])) {
-                     $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/robot/' . $robot[$name]['icon'] . '.png)';
-                 }
-                 $agent = $robot[$name]['title'] . ' ' . $version;
-             }
-
-             if (!empty($referer)) {
-                 $preferer = parse_url($referer);
-             }
-             if (!empty($referer) && isset($preferer['host']) && $first['request']['server'] != $preferer['host']) {
-                 if ($linkify) {
-                     $referer = '<a href="' . htmlspecialchars($referer) . '">' . $preferer['host'] . '</a>';
-                 } else {
-                     $referer = $preferer['host'];
-                 }
-             } else {
-                 $referer = '';
-             }
-
-             echo '<tr class="', $status, '">';
-             foreach (self::$_keys as $key) {
-                 if ($key == 'fingerprint') {
-                     echo '<td style="background:#' . substr($identity['fingerprint'], 0, 6) . '">&nbsp;</td>';
-                     echo '<td>' . $fingerprint . '</td>';
-                     echo '<td>' . ( isset($fgtype) && $fgtype != 'none' ? $fgtype : '' ) . '</td>';
-                     if (method_exists('Bouncer', 'countAgentsFingerprint')) {
-                         echo '<td>' . Bouncer::countAgentsFingerprint($identity['fingerprint'], self::$_namespace) . '</td>';
-                     } else {
-                         echo '<td>', '&nbsp;', '</td>';
-                     }
-                 } elseif ($key == 'features') {
-                      if (isset($identity['features'])) {
-                          echo '<td>' . $identity['features']['image'] . '</td>';
-                          echo '<td>' . $identity['features']['iframe'] . '</td>';
-                          echo '<td>' . $identity['features']['javascript'] . '</td>';
-                          // echo '<td>' . $identity['features']['link'] . '</td>';
-                      } else {
-                          echo '<td colspan="3">', '&nbsp;', '</td>';
-                      }
-                 } else if ($key == 'host') {
-                     echo '<td class="ic ' . $extension . '">', $host, '</td>';
-                     if (self::$_detailed_host) {
-                         echo '<td>', Bouncer_Rules_Httpbl::getType($identity), '</td>';
-                         if (method_exists('Bouncer', 'countAgentsHost')) {
-                             $hcount = Bouncer::countAgentsHost(md5($identity['addr']), self::$_namespace);
-                             echo '<td>' . ($hcount ? $hcount : 1) . '</td>';
-                         } else {
-                             echo '<td>', '&nbsp;', '</td>';
-                         }
-                     }
-                 } else if ($key == 'agent') {
-                     echo '<td class="ic ' . $name . '">', $agent ,'</td>';
-                 } else if ($key == 'system') {
-                     echo '<td class="ic ' . $system_name . '">', $system ,'</td>';
-                 } else {
-                     if (isset($$key) && $$key != 'none') {
-                          echo '<td>', $$key ,'</td>';
-                     } else {
-                         echo '<td>', '&nbsp;' ,'</td>';
-                     }
-                 }
-             }
-             echo '</tr>' . "\n";
-
+             // Display
+             self::display($values, self::$_keys);
+             // Limit
              $count ++;
              if ($count >= self::$_max_items) {
                  break;
              }
-
          }
 
          echo '</table>';
@@ -373,10 +466,6 @@ class Bouncer_Stats
 
     public static function agent()
     {
-
-        require_once dirname(__FILE__) . '/Rules/Network.php';
-        require_once dirname(__FILE__) . '/Rules/Geoip.php';
-
         $id = $_GET['agent'];
         $identity = Bouncer::getIdentity($id);
         if (empty($identity)) {
@@ -484,12 +573,49 @@ class Bouncer_Stats
 
     public static function connections()
     {
+        global $cssRules;
+
+        $filters = self::getFilters();
+
         $connections = Bouncer::backend()->getConnections(self::$_namespace);
         if (empty($connections)) {
             $connections = array();
         }
 
-        self::_displayConnections($connections);
+        echo '<table class="bouncer-table">' . "\n";
+
+        $count = 0;
+        foreach ($connections as $id => $connection) {
+          $connection['id'] = $id;
+          if (!$connectionValues = self::getConnectionValues($connection)) {
+              continue;
+          }
+          if (!$identity = Bouncer::getIdentity($connection['identity'])) {
+              continue;
+          }
+          if (!$agentValues = self::getAgentValues($identity['id'])) {
+              continue;
+          }
+          $values = array_merge($connectionValues, $agentValues);
+          // Filters
+          if (self::filterMatch($filters, $values)) {
+             continue;
+          }
+          self::display($values, self::$_connection_keys);
+          // Limit
+          $count ++;
+          if ($count >= self::$_max_items) {
+              break;
+          }
+        }
+
+        echo '</table>';
+
+        echo '<style type="text/css">' . "\n";
+        foreach ($cssRules as $class => $content) {
+            echo ".$class { $content; }\n";
+        }
+        echo '</style>';
     }
 
     protected static function _displayConnections($connections)
@@ -506,8 +632,10 @@ class Bouncer_Stats
         echo '<th>', 'Referer', '</th>';
         if (self::$_detailed_connections) {
             echo '<th>', 'Score', '</th>';
+            echo '<th>', 'Code', '</th>';
             echo '<th>', 'Exec Time', '</th>';
             echo '<th>', 'Memory', '</th>';
+            echo '<th>', 'Size', '</th>';
             echo '<th>', 'Pid', '</th>';
         }
         echo '</tr>';
@@ -539,6 +667,11 @@ class Bouncer_Stats
                 } else {
                     echo '<td>', '</td>';
                 }
+                if (isset($connection['code'])) {
+                    echo '<td>' , $connection['code'], '</td>';
+                } else {
+                    echo '<td>', '</td>';
+                }
                 if (isset($connection['exec_time'])) {
                     echo '<td>' , $connection['exec_time'] . 's', '</td>';
                 } else {
@@ -546,6 +679,11 @@ class Bouncer_Stats
                 }
                 if (isset($connection['memory'])) {
                     echo '<td>' , round($connection['memory']/1024/1024) . 'M', '</td>';
+                } else {
+                    echo '<td>', '</td>';
+                }
+                if (isset($connection['size'])) {
+                    echo '<td>' , round($connection['size']/1024, 2) . ' K', '</td>';
                 } else {
                     echo '<td>', '</td>';
                 }
@@ -593,12 +731,32 @@ class Bouncer_Stats
                 }
             }
         }
+        if (!empty($request['FILES'])) {
+            foreach ($request['FILES'] as $value) {
+                echo '<tr>', '<td>', $time, '</td>', '<td>';
+                print_r($value);
+                echo '</td>', '</tr>';
+            }
+        }
         echo '<tr>', '<th>', 'Score', '</th>', '</tr>';
         foreach ($details as $detail) {
             list($value, $message) = $detail;
             echo '<tr>', '<td>', $message, '</td>', '<td>', $value, '</td>', '</tr>';
         }
         echo '<tr>', '<td>', 'Total', '</td>', '<td><b>', $score, '</b></td>', '</tr>';
+        if (!empty($connection['sql'])) {
+            echo '<tr>', '<th>', 'SQL Queries', '</th>' , '</tr>';
+            foreach ($connection['sql'] as $value) {
+                list($query, $time) = $value;
+                echo '<tr>', '<td>', $time, '</td>', '<td>', $query, '</td>', '</tr>';
+            }
+        }
+        if (!empty($connection['nosql'])) {
+            echo '<tr>', '<th>', 'NoSQL Queries', '</th>' , '</tr>';
+            foreach ($connection['nosql'] as $value) {
+                echo '<tr>', '<td>', '', '</td>', '<td>', $value, '</td>', '</tr>';
+            }
+        }
         echo '</table>';
     }
 
@@ -787,6 +945,10 @@ class Bouncer_Stats
         .macosx   { background-image:url(<?php echo self::$_base_static_url ?>/images/os/macosx.png) }
         .windowsxp, .windowsmc { background-image:url(<?php echo self::$_base_static_url ?>/images/os/windowsxp.png) }
         .windowsvista, .windows7 { background-image:url(<?php echo self::$_base_static_url ?>/images/os/windowsvista.png) }
+/*        .bouncer-table tr.status5x { background-color:#F0C1D9; }*/
+        .bouncer-table tr.status5x { background-color:#EFE2EC; }
+        .bouncer-table tr.status4x { background-color:#f2e8e0; }
+        .bouncer-table tr.status2x { background-color:#e2f2e0; }
         </style>
         <?php
     }
