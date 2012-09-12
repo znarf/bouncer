@@ -102,6 +102,7 @@ class Bouncer
         if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
             $forwarded_for = array_map('trim', explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']));
             $forwarded_for = array_filter($forwarded_for, array('self', 'isPublic'));
+            $forwarded_for = array_diff($forwarded_for, array($addr));
         }
 
         // Non-Public Address
