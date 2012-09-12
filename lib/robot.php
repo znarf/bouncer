@@ -1836,6 +1836,13 @@ $robot = array(
       "FlickBot[ /]([0-9.]{1,10})" => "\\1"
     )
   ),
+  "flipboard" => array(
+    "icon" => "robot",
+    "title" => "Flipboard",
+    "rule" => array(
+      "FlipboardProxy" => ""
+    )
+  ),
   "forex" => array(
     "icon" => "robot",
     "title" => "Forex",
