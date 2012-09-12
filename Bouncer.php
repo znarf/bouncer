@@ -266,7 +266,7 @@ class Bouncer
     protected static function request()
     {
         $method = strtoupper($_SERVER['REQUEST_METHOD']);
-        $server = $_SERVER['SERVER_NAME'];
+        $server = !empty($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : $_SERVER['SERVER_NAME'];
         $uri = $_SERVER['REQUEST_URI'];
         if (strpos($uri, '?')) {
             $split = explode('?', $uri);
