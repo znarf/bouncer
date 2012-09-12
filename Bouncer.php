@@ -282,11 +282,9 @@ class Bouncer
         if (!empty($_GET)) {
             $request['GET'] = $_GET;
         }
-        /*
         if (!empty($_POST)) {
             $request['POST'] = $_POST;
         }
-        */
         if (!empty($_COOKIE)) {
             $request['COOKIE'] = $_COOKIE;
         }
@@ -467,7 +465,8 @@ class Bouncer
         foreach (self::$_namespaces as $ns) {
             $backend = self::backend();
             // Add agent to agents index
-            $backend->indexAgent($agent, $ns);
+            if (method_exists($backend, 'indexAgent'))
+                $backend->indexAgent($agent, $ns);
             // Add agent to fingerprint agent index
             if (method_exists($backend, 'indexAgentFingerprint'))
                 $backend->indexAgentFingerprint($agent, $fingerprint, $ns);
@@ -475,7 +474,28 @@ class Bouncer
             if (method_exists($backend, 'indexAgentHost'))
                 $backend->indexAgentHost($agent, $haddr, $ns);
             // Add connection to index
-            self::backend()->indexConnection(self::$_connectionKey, $agent, $ns);
+            if (method_exists($backend, 'indexConnection'))
+                $backend->indexConnection(self::$_connectionKey, $agent, $ns);
+            if (method_exists($backend, 'indexConnectionHost'))
+                $backend->indexConnectionHost(self::$_connectionKey, $haddr, $ns);
+        }
+    }
+
+    protected static function indexConnectionExtra($connectionKey, $connection, $ns = '')
+    {
+        // Index connections which are not 2x
+        if (isset($connection['code'])) {
+          $code = $connection['code'];
+          if (substr($code, 0, 1) != '2') {
+            $not2xIndexKey = empty($ns) ? "connections-not2x" : "connections-not2x-$ns";
+            self::backend()->indexConnectionWithIndexKey($not2xIndexKey, $connectionKey);
+          }
+        }
+        // TODO: index slow queries
+        if (isset($connection['time']) && $connection['time'] > '0.25') {
+        }
+        // TODO: index very slow queries
+        if (isset($connection['time']) && $connection['time'] > '2.5') {
         }
     }
 
@@ -528,8 +548,14 @@ class Bouncer
         self::$_connection['exec_time'] = round(self::$_connection['end'] - self::$_connection['start'] - (self::$_throttle / 1000000), 3);
         self::$_connection['memory'] = memory_get_peak_usage();
 
+
         try {
           self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
+          if (method_exists('Bouncer', 'indexConnectionExtra')) {
+            foreach (self::$_namespaces as $ns) {
+              self::indexConnectionExtra(self::$_connectionKey, self::$_connection, $ns);
+            }
+          }
           self::backend()->clean();
         } catch (Exception $e) {
         }

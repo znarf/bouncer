@@ -3,9 +3,13 @@
 class Bouncer_Stats
 {
 
-    protected static $_keys = array('id', 'fingerprint', 'time', 'hits', 'host', 'system', 'agent', 'referer', 'score');
+    protected static $_keys = array(
+      'id', 'fingerprint', 'time', 'hits', 'host', 'system', 'agent', 'referer', 'score'
+    );
 
-    protected static $_connection_keys = array('time', 'id', 'hits', 'host', 'system', 'agent', 'method', 'uri', 'code', 'size', 'memory', 'sql', 'nosql', 'exec_time');
+    protected static $_connection_keys = array(
+      'time', 'id', 'hits', 'host', 'system', 'agent', 'method', 'uri', 'code', 'size', 'memory', 'sql', 'nosql', 'exec_time'
+    );
 
     protected static $_namespace = '';
 
@@ -116,12 +120,12 @@ class Bouncer_Stats
 
     public static function getAgentValues($id)
     {
-        if (!$identity = Bouncer::getIdentity($id)) {
+        if (!$identity = Bouncer::backend()->getIdentity($id)) {
             return null;
         }
 
         // Hits
-        $hits = Bouncer::countAgentConnections($id, self::$_namespace);
+        $hits = Bouncer::backend()->countAgentConnections($id, self::$_namespace);
 
         // Addr
         $addr = $identity['addr'];
@@ -153,7 +157,7 @@ class Bouncer_Stats
         $iframe = isset($features['iframe']) && $features['iframe'] != 0 ? (int)($features['iframe'] > 0) : '';
 
         // Referer
-        $first = Bouncer::getFirstAgentConnection($id, self::$_namespace);
+        $first = Bouncer::backend()->getFirstAgentConnection($id, self::$_namespace);
         $ref = 0;
         $referer = '';
         if (!empty($first['request']['headers']['Referer'])) {
@@ -167,7 +171,7 @@ class Bouncer_Stats
         return get_defined_vars();
     }
 
-    public function getConnectionValues($conn)
+    public static function getConnectionValues($conn)
     {
         if (is_string($conn)) {
           $id = $conn;
@@ -209,8 +213,8 @@ class Bouncer_Stats
         extract($values);
 
         if ($linkify) {
-            $hits = '<a href="?agent=' . $id . '">' . $hits . '</a>';
-            $id = '<a href="?agent=' . $id . '">' . (strlen($id) == 32 ? substr($id, 0, 6) : $id) . '</a>';
+            $hits = '<a href="?filter=id%3A' . $id . '">' . $hits . '</a>';
+            $id = '<a href="?filter=id%3A' . $id . '">' . (strlen($id) == 32 ? substr($id, 0, 6) : $id) . '</a>';
         } else {
             $id = substr($id, 0, 16);
         }
@@ -256,7 +260,7 @@ class Bouncer_Stats
                 $referer = $preferer['host'];
             }
         }
-        
+
         if (!empty($uri)) {
           $uri = '<a href="?connection=' . $connection_id . '">' . $uri . '</a>';
         }
@@ -389,7 +393,7 @@ class Bouncer_Stats
                  break;
              }
              if ($filterKey == 'addr') {
-                 $agents = Bouncer::getAgentsIndexHost(md5($filterValue), self::$_namespace);
+                 $agents = Bouncer::getAgentsIndexHost(Bouncer::hash($filterValue), self::$_namespace);
                  break;
              }
          }
@@ -577,7 +581,32 @@ class Bouncer_Stats
 
         $filters = self::getFilters();
 
-        $connections = Bouncer::backend()->getConnections(self::$_namespace);
+        foreach ($filters as $filter) {
+            list($filterKey, $filterValue) = $filter;
+            if ($filterKey == 'id') {
+                $connections = Bouncer::backend()->getAgentConnections($filterValue, self::$_namespace);
+                if (!empty($connections)) {
+                  break;
+                }
+            }
+            if ($filterKey == 'addr') {
+                $connections = Bouncer::backend()->getHostConnections(Bouncer::hash($filterValue), self::$_namespace);
+                if (!empty($connections)) {
+                  break;
+                }
+            }
+            if ($filterKey == 'code'  && substr($filterValue, 0, 1) != 2 || $filterKey == '-code' && substr($filterValue, 0, 1) == 2) {
+              $ns = self::$_namespace;
+              $not2xIndexKey = empty($ns) ? "connections-not2x" : "connections-not2x-$ns";
+              $connections = Bouncer::backend()->getConnectionsWithIndexKey($not2xIndexKey);
+              if (!empty($connections)) {
+                break;
+              }
+            }
+        }
+        if (empty($connections)) {
+            $connections = Bouncer::backend()->getConnections(self::$_namespace);
+        }
         if (empty($connections)) {
             $connections = array();
         }
@@ -586,11 +615,15 @@ class Bouncer_Stats
 
         $count = 0;
         foreach ($connections as $id => $connection) {
+          if (is_string($connection)) {
+            $id = $connection;
+            $connection = Bouncer::get("connection-" . $id);
+          }
           $connection['id'] = $id;
           if (!$connectionValues = self::getConnectionValues($connection)) {
               continue;
           }
-          if (!$identity = Bouncer::getIdentity($connection['identity'])) {
+          if (!$identity = Bouncer::backend()->getIdentity($connection['identity'])) {
               continue;
           }
           if (!$agentValues = self::getAgentValues($identity['id'])) {
@@ -712,7 +745,7 @@ class Bouncer_Stats
 
         $request = $connection['request'];
 
-        $identity = Bouncer::getIdentity($connection['identity']);
+        $identity = Bouncer::backend()->getIdentity($connection['identity']);
         $result = Bouncer::analyseRequest($identity, $request);
         list($status, $score, $details) = $result;
 

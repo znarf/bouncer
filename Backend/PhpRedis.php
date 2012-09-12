@@ -21,29 +21,30 @@ class Bouncer_Backend_PhpRedis
         self::$_redis->setOption(Redis::OPT_SERIALIZER, Redis::SERIALIZER_PHP);
     }
 
-    public function clean()
+    public static function clean()
     {
         self::$_redis->close();
         self::$_redis = null;
     }
 
+    public static function redis()
+    {
+        return self::$_redis;
+    }
+
     public static function get($keyname)
     {
-        if (empty(self::$_keys[$keyname])) {
-            self::$_keys[$keyname] = self::$_redis->get($keyname);
-        }
-        return self::$_keys[$keyname];
+        return self::redis()->get($keyname);
     }
 
     public static function set($keyname, $value = null)
     {
-        self::$_keys[$keyname] = $value;
-        return self::$_redis->set($keyname, $value);
+        return self::redis()->set($keyname, $value);
     }
 
     public static function index($indexKey, $value)
     {
-        return self::$_redis->zAdd($indexKey, time(), $value);
+        return self::redis()->zAdd($indexKey, time(), $value);
     }
 
     public static function indexAgent($agent, $namespace = '')
@@ -67,31 +68,31 @@ class Bouncer_Backend_PhpRedis
     public static function getAgentsIndex($namespace = '')
     {
         $indexKey = empty($namespace) ? 'agents' : "agents-$namespace";
-        return self::$_redis->zRevRange($indexKey, 0, 10000);
+        return self::redis()->zRevRange($indexKey, 0, 10000);
     }
 
     public static function getAgentsIndexFingerprint($fingerprint, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
-        return self::$_redis->zRevRange($indexKey, 0, 10000);
+        return self::redis()->zRevRange($indexKey, 0, 10000);
     }
 
     public static function getAgentsIndexHost($haddr, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
-        return self::$_redis->zRevRange($indexKey, 0, 10000);
+        return self::redis()->zRevRange($indexKey, 0, 10000);
     }
 
     public static function countAgentsFingerprint($fingerprint, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
-        return self::$_redis->zCard($indexKey);
+        return self::redis()->zCard($indexKey);
     }
 
     public static function countAgentsHost($haddr, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
-        return self::$_redis->zCard($indexKey);
+        return self::redis()->zCard($indexKey);
     }
 
     public static function storeConnection($connection)
@@ -101,61 +102,68 @@ class Bouncer_Backend_PhpRedis
         return $key;
     }
 
+    public static function indexConnectionWithIndexKey($indexKey, $connectionKey)
+    {
+        self::redis()->lPush($indexKey, $connectionKey);
+    }
+
+    public static function getConnectionsWithIndexKey($indexKey)
+    {
+        $keys = self::redis()->lRange($indexKey, 0, 10000);
+        return $keys ? $keys : array();
+    }
+
     public static function indexConnection($key, $agent, $namespace = '')
     {
         $connectionsKey = empty($namespace) ? "connections" : "connections-$namespace";
-        self::$_redis->lPush($connectionsKey, $key);
+        self::indexConnectionWithIndexKey($connectionsKey, $key);
 
         $agentConnectionsKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
-        self::$_redis->lPush($agentConnectionsKey, $key);
+        self::indexConnectionWithIndexKey($agentConnectionsKey, $key);
+    }
+
+    public static function indexConnectionHost($key, $haddr, $namespace = '')
+    {
+        $connectionsKey = empty($namespace) ? "connections-$haddr" : "connections-$haddr-$namespace";
+        self::$_redis->lPush($connectionsKey, $key);
     }
 
     public static function getConnections($namespace = '')
     {
-        $connectionsKey = empty($namespace) ? "connections" : "connections-$namespace";
-        $keys = self::$_redis->lRange($connectionsKey, 0, 250);
-        $result = array();
-        if (empty($keys)) {
-            return null;
-        }
-        foreach ($keys as $key) {
-            $result[$key] = self::get("connection-" . $key);
-        }
-        return $result;
+        $indexKey = empty($namespace) ? "connections" : "connections-$namespace";
+        return self::getConnectionsWithIndexKey($indexKey);
+    }
+
+    public static function getHostConnections($haddr, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "connections-$haddr" : "connections-$namespace-$haddr";
+        return self::getConnectionsWithIndexKey($indexKey);
     }
 
     public static function getAgentConnections($agent, $namespace = '')
     {
-        $agentConnectionsKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
-        $keys = self::$_redis->lRange($agentConnectionsKey, 0, 250);
-        $result = array();
-        if (empty($keys)) {
-            return null;
-        }
-        foreach ($keys as $key) {
-            $result[$key] = self::get("connection-" . $key);
-        }
-        return $result;
+        $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
+        return self::getConnectionsWithIndexKey($indexKey);
     }
 
     public static function getLastAgentConnection($agent, $namespace = '')
     {
-        $agentConnectionsKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
-        $key  = self::$_redis->lGet($agentConnectionsKey, 0);
+        $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
+        $key  = self::redis()->lGet($indexKey, 0);
         return self::get("connection-" . $key);
     }
 
     public static function getFirstAgentConnection($agent, $namespace = '')
     {
-        $agentConnectionsKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
-        $key  = self::$_redis->lGet($agentConnectionsKey, -1);
+        $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
+        $key  = self::redis()->lGet($indexKey, -1);
         return self::get("connection-" . $key);
     }
 
     public static function countAgentConnections($agent, $namespace = '')
     {
-        $agentConnectionsKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
-        return self::$_redis->lSize($agentConnectionsKey);
+        $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
+        return self::redis()->lSize($indexKey);
     }
 
     public static function setIdentity($id, $identity)
