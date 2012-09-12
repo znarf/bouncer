@@ -57,6 +57,13 @@ $robot = array(
       "2dehands\.nl" => ""
     )
   ),
+  "360spider" => array(
+    "icon" => "robot",
+    "title" => "360Spider",
+    "rule" => array(
+      "360Spider" => ""
+    )
+  ),
   "80legs" => array(
     "icon" => "80legs",
     "title" => "80legs",
