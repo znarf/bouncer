@@ -554,6 +554,20 @@ $os = array(
     ),
     "uri" => "http://www.microsoft.com/windows/windows-7/"
   ),
+  "windows8" => array(
+    "icon" => "windows7",
+    "title" => "Windows 8",
+    "rule" => array(
+      "wi(n|ndows)[ \-]?nt[ /]?6\.2" => ""
+    )
+  ),
+  "winphone" => array(
+    "icon" => "windows7",
+    "title" => "Windows Phone",
+    "rule" => array(
+      "Windows Phone OS ([0-9.]{1,10})" => "\\1"
+    )
+  ),
   /*
   "windowsmc" => array(
     "icon" => "windowsxp",

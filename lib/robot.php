@@ -57,6 +57,13 @@ $robot = array(
       "2dehands\.nl" => ""
     )
   ),
+  "360spider" => array(
+    "icon" => "robot",
+    "title" => "360Spider",
+    "rule" => array(
+      "360Spider" => ""
+    )
+  ),
   "80legs" => array(
     "icon" => "80legs",
     "title" => "80legs",
@@ -1827,6 +1834,13 @@ $robot = array(
     "title" => "FlickBot",
     "rule" => array(
       "FlickBot[ /]([0-9.]{1,10})" => "\\1"
+    )
+  ),
+  "flipboard" => array(
+    "icon" => "robot",
+    "title" => "Flipboard",
+    "rule" => array(
+      "FlipboardProxy" => ""
     )
   ),
   "forex" => array(
@@ -4374,6 +4388,7 @@ $robot = array(
     "icon" => "soso",
     "title" => "Soso",
     "rule" => array(
+      "Sosospider" => "",
       "^Soso(image)?spider" => ""
     ),
     "uri" => "http://help.soso.com/soso-image-spider.htm"
