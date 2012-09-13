@@ -4388,6 +4388,7 @@ $robot = array(
     "icon" => "soso",
     "title" => "Soso",
     "rule" => array(
+      "Sosospider" => "",
       "^Soso(image)?spider" => ""
     ),
     "uri" => "http://help.soso.com/soso-image-spider.htm"
