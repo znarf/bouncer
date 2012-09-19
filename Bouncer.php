@@ -487,16 +487,19 @@ class Bouncer
         // Index connections which are not 2x
         if (isset($connection['code'])) {
           $code = $connection['code'];
-          if (substr($code, 0, 1) != '2') {
-            $not2xIndexKey = empty($ns) ? "connections-not2x" : "connections-not2x-$ns";
-            self::backend()->indexConnectionWithIndexKey($not2xIndexKey, $connectionKey);
+          if ($code != 200) {
+            $not200IndexKey = empty($ns) ? "connections-not200" : "connections-not200-$ns";
+            self::backend()->indexConnectionWithIndexKey($not200IndexKey, $connectionKey);
           }
         }
-        // TODO: index slow queries
-        if (isset($connection['time']) && $connection['time'] > '0.25') {
-        }
-        // TODO: index very slow queries
-        if (isset($connection['time']) && $connection['time'] > '2.5') {
+        // Index very slow queries
+        if (isset($connection['time']) && $connection['time'] >= 0.25) {
+          if ($connection['time'] >= 2.5) {
+            $slowIndexKey = empty($ns) ? "connections-veryslow" : "connections-veryslow-$ns";
+          } else {
+            $slowIndexKey = empty($ns) ? "connections-slow" : "connections-slow-$ns";
+          }
+          self::backend()->indexConnectionWithIndexKey($slowIndexKey, $connectionKey);
         }
     }
 

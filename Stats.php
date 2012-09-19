@@ -595,10 +595,22 @@ class Bouncer_Stats
                   break;
                 }
             }
-            if ($filterKey == 'code'  && substr($filterValue, 0, 1) != 2 || $filterKey == '-code' && substr($filterValue, 0, 1) == 2) {
+            if (($filterKey == 'code' && $filterValue != 200) || ($filterKey == '-code' && $filterValue == 200)) {
               $ns = self::$_namespace;
-              $not2xIndexKey = empty($ns) ? "connections-not2x" : "connections-not2x-$ns";
+              $not2xIndexKey = empty($ns) ? "connections-not200" : "connections-not200-$ns";
               $connections = Bouncer::backend()->getConnectionsWithIndexKey($not2xIndexKey);
+              if (!empty($connections)) {
+                break;
+              }
+            }
+            if ($filterKey == 'exec_time' && $filterValue >= 0.25) {
+              $ns = self::$_namespace;
+              if ($filterValue >= 2.5) {
+                $slowIndexKey = empty($ns) ? "connections-veryslow" : "connections-veryslow-$ns";
+              } else {
+                $slowIndexKey = empty($ns) ? "connections-slow" : "connections-slow-$ns";
+              }
+              $connections = Bouncer::backend()->getConnectionsWithIndexKey($slowIndexKey);
               if (!empty($connections)) {
                 break;
               }
