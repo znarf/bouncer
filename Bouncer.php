@@ -494,12 +494,12 @@ class Bouncer
         }
         // Index very slow queries
         if (isset($connection['time']) && $connection['time'] >= 0.25) {
-          if ($connection['time'] >= 2.5) {
-            $slowIndexKey = empty($ns) ? "connections-veryslow" : "connections-veryslow-$ns";
-          } else {
-            $slowIndexKey = empty($ns) ? "connections-slow" : "connections-slow-$ns";
-          }
+          $slowIndexKey = empty($ns) ? "connections-slow" : "connections-slow-$ns";
           self::backend()->indexConnectionWithIndexKey($slowIndexKey, $connectionKey);
+          if ($connection['time'] >= 2.5) {
+            $verySlowIndexKey = empty($ns) ? "connections-veryslow" : "connections-veryslow-$ns";
+            self::backend()->indexConnectionWithIndexKey($verySlowIndexKey, $connectionKey);
+          }
         }
     }
 
