@@ -484,13 +484,15 @@ class Bouncer
 
     protected static function indexConnectionExtra($connectionKey, $connection, $ns = '')
     {
-        // Index connections which are not 2x
-        if (isset($connection['code'])) {
-          $code = $connection['code'];
-          if ($code != 200) {
-            $not200IndexKey = empty($ns) ? "connections-not200" : "connections-not200-$ns";
-            self::backend()->indexConnectionWithIndexKey($not200IndexKey, $connectionKey);
-          }
+        // Index non 200 queries
+        if (isset($connection['code']) && $connection['code'] != 200) {
+          $not200IndexKey = empty($ns) ? "connections-not200" : "connections-not200-$ns";
+          self::backend()->indexConnectionWithIndexKey($not200IndexKey, $connectionKey);
+        }
+        // Index non GET queries
+        if (isset($connection['request']['method']) && $connection['request']['method'] != 'GET') {
+          $notGetIndexKey = empty($ns) ? "connections-notGET" : "connections-notGET-$ns";
+          self::backend()->indexConnectionWithIndexKey($notGetIndexKey, $connectionKey);
         }
         // Index slow & very slow queries
         if (isset($connection['exec_time']) && $connection['exec_time'] >= 0.25) {

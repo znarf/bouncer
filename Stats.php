@@ -603,6 +603,14 @@ class Bouncer_Stats
                 break;
               }
             }
+            if (($filterKey == 'method' && $filterValue != 'GET') || ($filterKey == '-method' && $filterValue == 'GET')) {
+              $ns = self::$_namespace;
+              $notGetIndexKey = empty($ns) ? "connections-notGET" : "connections-notGET-$ns";
+              $connections = Bouncer::backend()->getConnectionsWithIndexKey($notGetIndexKey);
+              if (!empty($connections)) {
+                break;
+              }
+            }
             if ($filterKey == 'exec_time' && $filterValue >= 0.25) {
               $ns = self::$_namespace;
               if ($filterValue >= 2.5) {
