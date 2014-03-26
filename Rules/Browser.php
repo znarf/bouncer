@@ -114,10 +114,7 @@ class Bouncer_Rules_Browser
         }
 
         if ($name == 'chrome') {
-            if (empty($headers['Accept-Charset'])) {
-                $scores[] = array(-2.5, 'Accept-Charset header missing');
-            }
-            if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Charset'], $headers['Accept-Encoding'])) {
+            if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
                 $scores[] = array(2.5, 'All Accept-* headers detected');
             }
         }
