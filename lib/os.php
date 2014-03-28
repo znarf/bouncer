@@ -558,7 +558,8 @@ $os = array(
     "icon" => "windows7",
     "title" => "Windows 8",
     "rule" => array(
-      "wi(n|ndows)[ \-]?nt[ /]?6\.2" => ""
+      "wi(n|ndows)[ \-]?nt[ /]?6\.2" => "",
+      "wi(n|ndows)[ \-]?nt[ /]?6\.3" => ""
     )
   ),
   "winphone" => array(
