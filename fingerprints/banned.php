@@ -180,10 +180,15 @@ $banned_fingerprints = array(
 '615f3cb1f1a256d34e0c99cd389bb784', // Java/1.7.0-ea
 // Various
 '69c914f8638b73983cc50aaad91257f1', // Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-// Others
+// Others - 2014
 'f9c61cb194257b177a925d8aab6ada63', //  LD - Windows XP    - Chrome 28.0.1500.72
 '3ac5bba2e2cf6d310d25a19479280dbb', //  LD - Windows XP    - Firefox 21.0
 '2c8196fa8d645a5e99ba1444d84f0a34', //  LD - Windows 7     - Chrome 30.0.1599.101
+'4ea4e26e6fcf88e199474473ff352939', //  LD - Windows 7     - Chrome 27.0.1453.116
+'3947d1e38b8fbd1ae8cdfc3bb625ec00', //  LD - Windows XP    - Firefox 13.0.1
+'f7d86435af5ea2dd384614b7b76dfcae', //  LD - MacOS X 10.8  - Firefox 22.0
+'14b7995ea54da44f7b7501dcdb4c8bf3', //  LD - MacOS X 10.6  - Safari 5.1.9
+'719c6acf37ecf6590261f7bc03291792', //  LD - MacOS X 10.8  - Firefox 21.0
 );
 return $banned_fingerprints;
 ?>
