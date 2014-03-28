@@ -180,6 +180,10 @@ $banned_fingerprints = array(
 '615f3cb1f1a256d34e0c99cd389bb784', // Java/1.7.0-ea
 // Various
 '69c914f8638b73983cc50aaad91257f1', // Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+// Others
+'f9c61cb194257b177a925d8aab6ada63', //  LD - Windows XP    - Chrome 28.0.1500.72
+'3ac5bba2e2cf6d310d25a19479280dbb', //  LD - Windows XP    - Firefox 21.0
+'2c8196fa8d645a5e99ba1444d84f0a34', //  LD - Windows 7     - Chrome 30.0.1599.101
 );
 return $banned_fingerprints;
 ?>

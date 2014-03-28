@@ -196,7 +196,6 @@ $suspicious_fingerprints = array(
 '41a9eef3b03840b0010e98edeba739d2',    //  BM - Windows XP    - Chrome 0.2.149.27
 'e9d4fade18f51767545e142eb4b6de5e',    //  BM - Windows XP    - Chrome 2.0.172.28
 'f6f9ffca44cc504c999a537c7483ea70',    //  BM - Linux         - Chrome 5.0.307.7
-'f9c61cb194257b177a925d8aab6ada63',    //  LD - Windows XP    - Chrome 28.0.1500.72
 // Various
 '0b7496c8208ce55d66d79cbabdca71ff',    //  BM - Opera Mini 2.0.4719
 'b59e6ad8917389de9fc4ac545affa31c',    //  BM - MacOS PPC     - Netscape 4.7     (RU)
