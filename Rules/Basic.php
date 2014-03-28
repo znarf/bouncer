@@ -25,7 +25,7 @@ class Bouncer_Rules_Basic
         $version = (int)$version;
 
         // plus
-             if ($name == 'safari'   && $version >= 5)    $scores[] = array(1, 'Recent Browser');
+             if ($name == 'safari'   && $version >= 7)    $scores[] = array(1, 'Recent Browser');
         else if ($name == 'chrome'   && $version >= 21)   $scores[] = array(1, 'Recent Browser');
         else if ($name == 'firefox'  && $version >= 28)   $scores[] = array(1, 'Recent Browser');
         else if ($name == 'explorer' && $version >= 9)    $scores[] = array(1, 'Recent Browser');
