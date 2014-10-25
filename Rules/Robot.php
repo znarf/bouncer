@@ -109,12 +109,11 @@ class Bouncer_Rules_Robot
                 $score += $identity['extension'] != 'jp' ? -5 : 1;
                 break;
             case 'dotbot':
-                $score += strpos($host, 'dotnetdotcom.org') === false ? -4 : 1;
-                $score += $identity['extension'] != 'us' ? -3 : 1;
-                $score += $identity['fingerprint'] != '1ba3e09e05c3a64578777e53d4f20a3c' ? -3 : 1;
+                $score += strpos($addr, '208.115.') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '0802c2602de1cda9a0afd2ec067177a6' ? -3 : 1;
                 break;
             case 'sogou':
-                $score += $identity['fingerprint'] != 'a86f74048055ff8ea8a8570615c478f4' && // Sogou web spider/4.0
+                $score += $identity['fingerprint'] != 'f5275c07637802a7c156e09bdcabc945' && // Sogou web spider/4.0
                           $identity['fingerprint'] != '2f1bb46f656b56cf3ecfeb470e2edf9f' && // Sogou Pic Spider/3.0
                           $identity['fingerprint'] != 'a6c9efa47da38d7946b4bb40d81f66ee' ? -5 : 2.5;
                 $score += $identity['extension'] != 'cn' ? -5 : 2.5;

@@ -2,6 +2,7 @@
 $known_fingerprints = array(
 // Top Bots
 '793f840d86e2554135283d9aef58c7ff',  // Googlebot
+'2bb3199e1010da4eab7a03e86cd05063',  // Googlebot
 'edd490c87038defcd73e2497d3c969c0',  // Googlebot-Image
 'c81a634f3f75e335030284bf4c72bd2f',  // Yahoo! Slurp
 'cabf78b12c02f825861abeeacc4882fa',  // Yahoo! Slurp
@@ -18,11 +19,11 @@ $known_fingerprints = array(
 'ab12474fbc997f8655ca93952784393b',  // Yandex
 '6ee91224ab03618101de00774069ba56',  // YandexBot 3
 '1ba3e09e05c3a64578777e53d4f20a3c',  // DotBot
-'a86f74048055ff8ea8a8570615c478f4',  // Sogou
+'f5275c07637802a7c156e09bdcabc945',  // Sogou
 'd970c6ffb8d5547d9f6052207200b0dd',  // ScoutJet
 '62f42b9e966080ce33cdaef257458dd7',  // Spinn3r
 'bb7668eafa60dba90c42c489251b6d19',  // mail.ru
-'6c0b28de5758f39928fa7a0075ff8786',  // Voila
+'55f9389291d8227989a305506ccf0db4',  // Voila
 '6824162f534f437c70ba13a487aec6fd',  // Exabot
 'cdcb44c8464c40d53a6f5635ee66d642',  // Feedburner
 '84e14e474b5972e7b11fae97d08fff4c',  // Feedburner
