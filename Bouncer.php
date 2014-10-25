@@ -124,7 +124,7 @@ class Bouncer
             strpos($addr, '80.239')  === 0 ||
             strpos($addr, '82.145')  === 0 ||
             strpos($addr, '94.246')  === 0 ||
-            strpos($addr, '141.0')  === 0  ||
+            strpos($addr, '141.0')   === 0 ||
             strpos($addr, '195.189') === 0 ||
             strpos($addr, '217.212') === 0) {
                 if (!empty($forwarded_for)) {
