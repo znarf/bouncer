@@ -4,6 +4,7 @@ $suspicious_fingerprints = array(
 'd41d8cd98f00b204e9800998ecf8427e',
 // Near empty fingerprints
 '34cc6f29ce8920ec9cc8b983ff7b482d',
+'0fb368b69179d1bb85da7a50ab15252e',
 // Explorer
 'e19019f4f99f7f4de8f55e54fddda375',
 'c965bdaf8c411f84a5b621377fb5c82f',
@@ -35,12 +36,16 @@ $suspicious_fingerprints = array(
 'd562b2814056c453b8da719f10f92745',
 '4cc1f4ad9d3da7b947b78e1fb13d38c9',
 'b6a4a4da2fb1ada02b390ad18b50dca3',
+'48a36cb3e3a6d878470a3ffbbe8c9562',
+'e179e1cb47058af3aff8658d7b96d266',
 // Firefox
 '3e74c4879197ddaa484dd8b3aaf97b3b',
 '8de1c8a8a364eb9551f07c7f783a91b3',
 '67717d831468670942056158cb827271',
 '7bf2156a8bd25b8a745eb477a64f44db',
 '9e2b952669c4482072835499c826bbc3',
+'3f73a63686d857e2dac0579a782e503e',
+'a1caacb7313f4654cd4cbcc649a3b684',
 // Opera
 '803f6c0521df5c574e497de5e19b8718',
 // Bots
