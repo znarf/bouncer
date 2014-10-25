@@ -236,6 +236,9 @@ class Bouncer_Rules_Browser
                 if (isset($headers['X-Moz']) && in_array($headers['X-Moz'], array('livebookmarks', 'prefetch'))) {
                     $scores[] = array(2.5, 'X-Moz header with expected value');
                 }
+                if (isset($headers['DNT']) && $headers['DNT'] == 1) {
+                    $scores[] = array(2.5, 'DNT header with expected value');
+                }
                 break;
             case 'opera':
                 // Real Opera send this header (but sometimes not)
