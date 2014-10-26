@@ -261,7 +261,9 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'amazonaws.com') === false && strpos($host, 'linode.com') === false ? -5 : 2.5;
                 break;
             case 'ezooms':
-                $score += (strpos($addr, '208.115.111.') !== 0 && strpos($addr, '208.115.113.') !== 0) ? -5 : 2.5;
+                $score += (strpos($addr, '208.115.111.') !== 0
+                        && strpos($addr, '208.115.113.') !== 0
+                        && strpos($host, 'ahrefs.com') === false) ? -5 : 2.5;
                 $score += $identity['fingerprint'] != '7be77a95f238abe91d1891bbe787fdb3' ? -5 : 2.5;
                 break;
             case 'ahrefs':
@@ -271,8 +273,11 @@ class Bouncer_Rules_Robot
                           $identity['fingerprint'] != '6f5f852fb824447f679c2a05e3221b28' ? -5 : 2.5;
                 break;
             case '360spider':
-                $score += (strpos($addr, '180.153.') !== 0) ? -5 : 2.5;
-                $score += $identity['fingerprint'] != '00ff5c73057a02b4ed80ab70e3a5cabd' ? -5 : 2.5;
+                $score += (strpos($addr, '180.153.') !== 0
+                        && strpos($addr, '101.226.') !== 0
+                        && strpos($addr, '182.118.') !== 0) ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '00ff5c73057a02b4ed80ab70e3a5cabd' &&
+                          $identity['fingerprint'] != 'af4fdd739b9a32a2cf2f838f2d655708' ? -5 : 2.5;
                 break;
             case 'pingdom':
                 $score += strpos($host, 'pingdom.com') === false ? -5 : 2.5;
