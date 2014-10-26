@@ -83,28 +83,6 @@ class Bouncer_Rules_Browser
                     $scores[] = array(-2.5, 'Accept-Encoding:gzip');
                 }
             }
-            // Only Gecko/Firefox send this headers
-            if ($name != 'firefox') {
-                if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
-                    if ($name != 'safari' && $name != 'chrome') { // chrome 12 send this header, maybe safari soon
-                        $scores[] = array(-5, 'current Firefox Accept header');
-                    }
-                }
-                if (isset($headers['Accept']) && $headers['Accept'] == 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
-                    if ($name != 'safari' && $name != 'chrome') { // safari 3.0.x can send this header, also chrome 1.0
-                        $scores[] = array(-5, 'old Firefox Accept header'); // firefox < 3.0
-                    }
-                }
-                if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] == 'ISO-8859-1,utf-8;q=0.7,*;q=0.7') {
-                    $scores[] = array(-2.5, 'Firefox Accept-Charset header');
-                }
-                if (isset($headers['Accept-Language']) && $headers['Accept-Language'] == 'en-us,en;q=0.5') {
-                    $scores[] = array(-2.5, 'Firefox Accept-Language header');
-                }
-                if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip,deflate') {
-                    $scores[] = array(-2.5, 'Firefox Accept-Encoding header');
-                }
-            }
             // Only Explorer send this headers
             if ($name != 'explorer') {
                 if (isset($headers['Accept']) && strpos($headers['Accept'], 'image/pjpeg') !== false) {
@@ -114,8 +92,24 @@ class Bouncer_Rules_Browser
         }
 
         if ($name == 'chrome') {
+            if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8') {
+                $scores[] = array(2.5, 'Expected Accept header (chrome)');
+            }
+            if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
+                $scores[] = array(-2.5, 'Unexpected Accept header (chrome)');
+            }
+            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip,deflate,sdch') {
+                $scores[] = array(2.5, 'Expected Accept-Encoding header (chrome)');
+            }
+            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, deflate') {
+                $scores[] = array(-2.5, 'Unxpected Accept-Encoding header (chrome)');
+            }
             if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
-                $scores[] = array(2.5, 'All Accept-* headers detected');
+                $scores[] = array(2.5, 'All Accept-* headers detected (chrome)');
+            }
+        } else {
+            if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8') {
+                $scores[] = array(-2.5, 'chrome Accept header');
             }
         }
 
@@ -123,24 +117,35 @@ class Bouncer_Rules_Browser
             if (isset($headers['Accept']) && $headers['Accept'] == '*/*') {
                 $scores[] = array(-7.5, '*/* Accept header (firefox)');
             }
+            if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
+                $scores[] = array(2.5, 'Expected Accept header (firefox)');
+            }
             if (strpos($identity['user_agent'], 'rv:') === false) {
                 $scores[] = array(-5, 'No Mozilla platform token (firefox)');
             }
+            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, deflate') {
+                $scores[] = array(2.5, 'Expected Accept-Encoding header (firefox)');
+            }
             if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
-                $scores[] = array(2.5, 'All Accept-* headers detected');
+                $scores[] = array(2.5, 'All Accept-* headers detected (firefox)');
             }
         }
 
         if ($name == 'opera') {
             if (isset($headers['Accept']) && $headers['Accept'] ==
-                'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1') {
+                'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1') {
                 $scores[] = array(2.5, 'Expected Accept header (opera)');
             }
-            if (isset($headers['Accept-Charset']) && $headers['Accept-Charset'] == 'iso-8859-1, utf-8, utf-16, *;q=0.1') {
-                $scores[] = array(2.5, 'Expected Accept-Charset header (opera)');
-            }
-            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'deflate, gzip, x-gzip, identity, *;q=0') {
+            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, deflate') {
                 $scores[] = array(2.5, 'Expected Accept-Encoding header (opera)');
+            }
+            if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
+                $scores[] = array(2.5, 'All Accept-* headers detected (opera)');
+            }
+        } else {
+            if (isset($headers['Accept']) && $headers['Accept'] ==
+                'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1') {
+                $scores[] = array(-5, 'opera Accept header');
             }
         }
 
@@ -166,14 +171,11 @@ class Bouncer_Rules_Browser
 
         if ($name == 'safari') {
             if (isset($headers['Accept']) &&
-                $headers['Accept'] == 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5') {
+                $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
                 $scores[] = array(2.5, 'Expected Accept header (safari)');
             }
-            if (isset($headers['Accept-Charset'])) {
-                if (isset($identity['os'][0]) && $identity['os'][0] != 'android' &&
-                    $identity['os'][0] != 'symbian' && $identity['os'][0] != 'mobile') { // temp webkit exception
-                    $scores[] = array(-2.5, 'Unexpected Accept-Charset header (safari)');
-                }
+            if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
+                $scores[] = array(2.5, 'All Accept-* headers detected (opera)');
             }
         }
 
@@ -214,24 +216,17 @@ class Bouncer_Rules_Browser
             // And never a Connection:Close header
             } elseif ($headers['Connection'] == 'Close') {
                 $scores[] = array(-5, 'Connection header with value Close');
-            // And rarely a Connection:close header
-            } elseif ($headers['Connection'] == 'close') {
-                $scores[] = array(-2.5, 'Connection header with value close');
-            }
-            // Only Firefox is sending this header
-            if (isset($headers['Keep-Alive']) && $name != 'firefox') {
-                $scores[] = array(-5, 'Unexpected Keep-Alive header');
             }
         }
 
         switch ($name) {
             case 'firefox':
                 // Real Firefox send this header
-                if (isset($headers['Keep-Alive']) && in_array($headers['Keep-Alive'], array(115, 300))) {
-                    $scores[] = array(2.5, 'Keep-Alive header with expected value');
-                }
-                if (isset($headers['Connection']) && $headers['Connection'] == 'keep-alive') {
+                if (isset($headers['Connection']) && $headers['Connection'] === 'keep-alive') {
                     $scores[] = array(2.5, 'Connection header with expected value');
+                }
+                if (isset($headers['Connection']) && $headers['Connection'] === 'Keep-Alive') {
+                    $scores[] = array(-2.5, 'Connection header with unexpected value');
                 }
                 if (isset($headers['X-Moz']) && in_array($headers['X-Moz'], array('livebookmarks', 'prefetch'))) {
                     $scores[] = array(2.5, 'X-Moz header with expected value');
@@ -240,6 +235,13 @@ class Bouncer_Rules_Browser
                     $scores[] = array(2.5, 'DNT header with expected value');
                 }
                 break;
+            case 'chrome':
+                if (isset($headers['Connection']) && $headers['Connection'] === 'keep-alive') {
+                    $scores[] = array(2.5, 'Connection header with expected value');
+                }
+                if (isset($headers['Connection']) && $headers['Connection'] === 'Keep-Alive') {
+                    $scores[] = array(-2.5, 'Connection header with unexpected value');
+                }
             case 'opera':
                 // Real Opera send this header (but sometimes not)
                 if (isset($headers['Cookie2']) && $headers['Cookie2'] == '$Version=1') {
