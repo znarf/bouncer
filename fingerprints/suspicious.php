@@ -54,6 +54,9 @@ $suspicious_fingerprints = array(
 '18079f3cc7e80a9227783d69e77d85a4',
 'fec6861d1ef0b8a38e80720cb427c0d4',
 '34441b94b94ae87318803f19c63bcee3',
+'89dbc59bfd2ab279cf09ef976c9b4b61',
+'9eb627c0e8fadf681e9dfb4a8c80152e',
+'a8cbf658169cb4fe456311c1226f7c29',
 // Opera
 '803f6c0521df5c574e497de5e19b8718',
 // Bots

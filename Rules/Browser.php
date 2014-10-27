@@ -123,9 +123,6 @@ class Bouncer_Rules_Browser
             if (strpos($identity['user_agent'], 'rv:') === false) {
                 $scores[] = array(-5, 'No Mozilla platform token (firefox)');
             }
-            if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, deflate') {
-                $scores[] = array(2.5, 'Expected Accept-Encoding header (firefox)');
-            }
             if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
                 $scores[] = array(2.5, 'All Accept-* headers detected (firefox)');
             }
@@ -175,7 +172,7 @@ class Bouncer_Rules_Browser
                 $scores[] = array(2.5, 'Expected Accept header (safari)');
             }
             if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
-                $scores[] = array(2.5, 'All Accept-* headers detected (opera)');
+                $scores[] = array(2.5, 'All Accept-* headers detected (safari)');
             }
         }
 
