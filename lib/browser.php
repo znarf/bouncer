@@ -1,18 +1,26 @@
 <?php
-/* This file is part of BBClone (The PHP web counter on steroids)
+/* This file is part of BBClone (A PHP based Web Counter on Steroids)
  *
- * $Header: /srv/cvs/bbclone/bbclone/lib/browser.php,v 1.132 2009/10/25 10:20:19 prad Exp $
+ * SVN FILE $Id: browser.php 244 2014-02-07 22:22:06Z joku $
  *
- * Copyright (C) 2001-2009, the BBClone Team (see file doc/authors.txt
- * distributed with this library)
+ * Copyright (C) 2001-2014, the BBClone Team (see doc/authors.txt for details)
  *
- * This program is free software; you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
  *
  * See doc/copying.txt for details
  */
+
+///////////////////////
+// Browser Detection //
+///////////////////////
 
 $browser = array(
   "1X" => array(
@@ -27,9 +35,9 @@ $browser = array(
     "icon" => "question",
     "title" => "Abolimba",
     "rule" => array(
-      "www.Abolimba.de" => ""
+      "www.abolimba.de" => ""
     ),
-    "uri" => "http://www.Abolimba.de"
+    "uri" => "http://www.abolimba.de"
   ),
   "abrowse" => array(
     "icon" => "abrowse",
@@ -64,16 +72,6 @@ $browser = array(
     ),
     "uri" => "http://www.acoobrowser.com/"
   ),
-/* FIXME: unusable user agent
-  "act10" => array(
-    "icon" => "question",
-    "title" => "Act 10",
-    "rule" => array(
-      "Mozilla/3.0 (compatible)" => ""
-    ),
-    "uri" => "http://jansfreeware.com/jfinternet.htm",
-    Mozilla/3.0 (compatible)" => "Act 10 on Windows"
-  ),*/
   "activeworlds" => array(
     "icon" => "question",
     "title" => "ActiveWorlds",
@@ -81,7 +79,7 @@ $browser = array(
       "Activeworlds[ /]([0-9.]{1,10})" => "\\1",
       "Activeworlds" => ""
     ),
-    "uri" => "/"
+    "uri" => ""
   ),
   "akregator" => array(
     "icon" => "akregator",
@@ -97,13 +95,13 @@ $browser = array(
     "rule" => array(
       "amaya/([0-9.]{1,10})" => "\\1"
     ),
-    "uri" => "http://www.w3c.org/Amaya/"
+    "uri" => "http://www.w3c.org/amaya/"
   ),
   "annotate_google" => array(
     "icon" => "question",
     "title" => "annotate_google",
     "rule" => array(
-      "^annotate_google" => "\\1",
+      "^annotate_google" => "\\1"
     ),
     "uri" => "http://ponderer.org/download/annotate_google.user.js"
   ),
@@ -111,7 +109,7 @@ $browser = array(
     "icon" => "ant",
     "title" => "ANTFresco",
     "rule" => array(
-      "ANTFresco[ /]([0-9.]{1,10})" => "\\1",
+      "ANTFresco[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => ""
   ),
@@ -122,9 +120,10 @@ $browser = array(
       "aol[ /\-]([0-9.]{1,10})" => "\\1",
       "America Online Browser[ /]([0-9.]{1,10}).*rev([0-9.]{1,10})" => "\\1",
       "aol[ /\-]?browser" => "",
-      "AOL-IWENG ([0-9.]{1,10})" => "\\1"
+      "AOL-IWENG ([0-9.]{1,10})" => "\\1",
+      "ADM[ /]([0-9.]{1,10})" => "\\1"
     ),
-    "uri" => "http://www.aol.com/"
+    "uri" => "http://www.aol.com"
   ),
   "aplix" => array(
     "icon" => "question",
@@ -132,13 +131,14 @@ $browser = array(
     "rule" => array(
       "^Aplix HTTP[ /]([0-9.]{1,10})" => "\\1",
       "^Aplix_(SANYO|SEGASATURN)_browser[ /]([0-9.]{1,10})" => "\\2"
-    )
+    ),
+    "uri" => ""
   ),
   "arora" => array(
     "icon" => "arora",
     "title" => "Arora",
     "rule" => array(
-      "Arora[ /]([0-9.]{1,10})" => "\\1",
+      "Arora[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.arora-browser.org/"
   ),
@@ -150,7 +150,6 @@ $browser = array(
     ),
     "uri" => "http://www.avantbrowser.com/"
   ),
-  // mobile one
   "avantgo" => array(
     "icon" => "avantgo",
     "title" => "AvantGo",
@@ -164,6 +163,7 @@ $browser = array(
     "title" => "Aweb",
     "rule" => array(
       "Amiga-Aweb[/ ]([0-9.]{1,10})" => "\\1",
+      "Aweb[/ ]([0-9.]{1,10})" => "\\1",
       "^AWeb" => ""
     ),
     "uri" => "http://aweb.sunsite.dk/"
@@ -189,7 +189,8 @@ $browser = array(
     "title" => "Beonex",
     "rule" => array(
       "beonex/([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "bezillabrowser" => array(
     "icon" => "bezillabrowser",
@@ -197,24 +198,32 @@ $browser = array(
     "rule" => array(
       "BeZillaBrowser/([0-9.+]{1,10})" => "\\1"
     ),
-    "uri" => "hhtp://www.bezilla.org/"
+    "uri" => "http://www.bezilla.org/"
   ),
   "biyubi" => array(
     "icon" => "question",
     "title" => "Biyubi",
     "rule" => array(
       "^Biyubi/([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
-  /*
+  "blackberry" => array(
+    "icon" => "blackberry",
+    "title" => "BlackBerry",
+    "rule" => array(
+      "^BlackBerry.*?/([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.blackberry.com/"
+  ),
   "blazer" => array(
     "icon" => "blazer",
     "title" => "Blazer",
     "rule" => array(
       "Blazer[/ ]([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
-  */
   "bluefish" => array(
     "icon" => "bluefish",
     "title" => "BlueFish",
@@ -255,27 +264,13 @@ $browser = array(
     ),
     "uri" => "http://www.chimera.org/"
   ),
-  "chromium" => array(
-    "icon" => "chrome",
-    "title" => "Chromium",
+  "cometbird" => array(
+    "icon" => "cometbird",
+    "title" => "CometBird",
     "rule" => array(
-      "Chromium[ /]([0-9.]{1,16})" => "\\1"
-    )
-  ),
-  "chrome" => array(
-    "icon" => "chrome",
-    "title" => "Chrome",
-    "rule" => array(
-      "Chrome[ /]([0-9.]{1,16})" => "\\1"
+      "CometBird[ /]([0-9.]{1,10})" => "\\1"
     ),
-    "uri" => "http://www.google.com/chrome/"
-  ),
-  "chromeframe" => array(
-    "icon" => "chrome",
-    "title" => "Chrome Frame",
-    "rule" => array(
-      "chromeframe[ /]([0-9.]{1,16})" => "\\1"
-    ),
+    "uri" => "http://www.cometbird.com/"
   ),
   "compuserve" => array(
     "icon" => "question",
@@ -298,7 +293,8 @@ $browser = array(
     "title" => "Columbus",
     "rule" => array(
       "columbus[ /]([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "crazybrowser" => array(
     "icon" => "crazybrowser",
@@ -306,7 +302,15 @@ $browser = array(
     "rule" => array(
       "Crazy Browser[ /]([0-9.]{1,10})" => "\\1"
     ),
-    "uri" => ""
+    "uri" => "http://www.crazybrowser.com/"
+  ),
+  "cruz" => array(
+    "icon" => "cruz",
+    "title" => "Cruz",
+    "rule" => array(
+      "Cruz[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.cruzapp.com"
   ),
   "curl" => array(
     "icon" => "curl",
@@ -338,7 +342,8 @@ $browser = array(
     "rule" => array(
       "Deepnet Explorer[/ ]([0-9.]{1,10})" => "\\1",
       " Deepnet Explorer[\);]" => ""
-    )
+    ),
+    "uri" => "http://www.deepnetexplorer.com/"
   ),
   "demeter" => array(
     "icon" => "demeter",
@@ -347,7 +352,7 @@ $browser = array(
       "Demeter[ /]([0-9.]{1,10})" => "\\1",
       "Demeter" => ""
     ),
-    "uri" => "http://www.hurrikenux.com/Demeter/"
+    "uri" => "http://www.hurrikenux.com/demeter/"
   ),
   "democracy" => array(
     "icon" => "question",
@@ -373,6 +378,14 @@ $browser = array(
     ),
     "uri" => ""
   ),
+  "dolfin" => array(
+    "icon" => "dolfin",
+    "title" => "Dolfin",
+    "rule" => array(
+      "Dolfin[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.bada.com/"
+  ),
   "doczilla" => array(
     "icon" => "doczilla",
     "title" => "DocZilla",
@@ -386,7 +399,8 @@ $browser = array(
     "title" => "Donut RAPT",
     "rule" => array(
       "Donut RAPT[/ ]#?([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "donutp" => array(
     "icon" => "question",
@@ -396,12 +410,21 @@ $browser = array(
     ),
     "uri" => ""
   ),
+  "dooble" => array(
+    "icon" => "dooble",
+    "title" => "Dooble",
+    "rule" => array(
+      "Dooble/([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://dooble.sourceforge.net/"
+  ),
   "doris" => array(
     "icon" => "doris",
     "title" => "Doris",
     "rule" => array(
       "Doris/([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "dreampassport" => array(
     "icon" => "dreamcast",
@@ -410,7 +433,7 @@ $browser = array(
       "\(SonicPassport\)" => "",
       "\(Dream(Passport|Key)[ /]([0-9.]{1,10})\)" => "\\1",
       "\(Dream(Passport|Key)[ /]([0-9.]{1,10}); ([A-Z.a-z/]{1,50})\)" => "\\1",
-      "\(Planetweb[ /]([0-9.a-z]{1,10})" => "\\1",
+      "\(Planetweb[ /]([0-9.a-z]{1,10})" => "\\1"
     ),
     "uri" => "http://css.vis.ne.jp/dp-agent.shtml"
   ),
@@ -418,7 +441,7 @@ $browser = array(
     "icon" => "question",
     "title" => "DX-Browser",
     "rule" => array(
-      "DX-Browser ([0-9.]{1,10})" => "\\1",
+      "DX-Browser ([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.wankoo.org/index.php?page=Software.DXBrowser"
   ),
@@ -444,7 +467,7 @@ $browser = array(
     "rule" => array(
       "Emacs-W3/([0-9.]{1,10}(pre)?)" => "\\1"
     ),
-    "uri" => "http://www.gnu.org/software/w3/",
+    "uri" => "http://www.gnu.org/software/w3/"
   ),
   "endo" => array(
     "icon"  => "endo",
@@ -463,7 +486,6 @@ $browser = array(
     ),
     "uri" => "http://www.gnome.org/projects/epiphany/"
   ),
-  // mobile one
   "eudoraweb" => array(
     "icon" => "mobile",
     "title" => "EudoraWeb",
@@ -480,27 +502,21 @@ $browser = array(
     ),
     "uri" => "http://www.mozilla.org/projects/fennec/1.0a2/releasenotes/"
   ),
-  "frontpage"  => array(
-    "icon"  => "frontpage",
-    "title" => "Frontpage",
-    "rule"  => array(
-      "FrontPage[ /]([0-9.+]{1,10})" => "\\1"
-    ),
-    "uri" => "http://www.microsoft.com/frontpage/"
-  ),
   "firebird"  => array(
     "icon"  => "firebird",
     "title" => "Firebird",
     "rule"  => array(
       "Firebird( Browser)?/([0-9.+]{1,10})" => "\\2"
-    )
+    ),
+    "uri" => "http://www.mozilla.org/"
   ),
   "firescape"  => array(
     "icon"  => "firescape",
     "title" => "Firescape",
     "rule"  => array(
       "Firescape/([0-9.+]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "flock" => array(
     "icon" => "flock",
@@ -511,6 +527,14 @@ $browser = array(
     ),
     "uri" => "http://www.flock.com/"
   ),
+  "fluid" => array(
+    "icon" => "fluid",
+    "title" => "Fluid",
+    "rule" => array(
+      "Fluid[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.fluidapp.com"
+  ),
   "freshdownload" => array(
     "icon" => "freshdownload",
     "title" => "FreshDownload",
@@ -519,19 +543,14 @@ $browser = array(
     ),
     "uri" => "http://www.freshdevices.com/"
   ),
-  // mobile one
-/*  "fxtbrowser" => array(
-    "icon" => "mobile",
-    "title" => "ftxBrowser",
-    "rule" => array(
-      "" => ""
+  "frontpage"  => array(
+    "icon"  => "frontpage",
+    "title" => "Frontpage",
+    "rule"  => array(
+      "FrontPage[ /]([0-9.+]{1,10})" => "\\1"
     ),
-    "uri" => "http://www.access-us-inc.com/",
-    "known" => array(
-      "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)" => "ftxBrowser under Windows CE 2003 on Pocket PC",
-      "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320)" => "ftxBrowser under Windows CE 2002 on Pocket PC"
-    )
-  ),*/
+    "uri" => "http://www.microsoft.com/"
+  ),
   "galeon" => array(
     "icon" => "galeon",
     "title" => "Galeon",
@@ -539,14 +558,6 @@ $browser = array(
       "galeon/([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://galeon.sourceforge.net/"
-  ),
-  "googleearth" => array(
-    "icon" => "google",
-    "title" => "GoogleEarth",
-    "rule" => array(
-      "GoogleEarth[ /]([0-9.]{1,6})?" => "\\1"
-    ),
-    "uri" => "http://earth.google.com/"
   ),
   "hgrepurl" => array(
     "icon" => "oreilly",
@@ -604,7 +615,6 @@ $browser = array(
     ),
     "uri" => "http://www.borland.com/jbuilder/"
   ),
-  // Unbranded Seamonkey, GNU compatible
   "iceape" => array(
     "icon" => "iceape",
     "title" => "Iceape",
@@ -621,7 +631,6 @@ $browser = array(
     ),
     "uri" => "http://www.gnu.org/software/gnuzilla/"
   ),
-  // Unbranded Firefox 2.0, GNU compatible
   "iceweasel"  => array(
     "icon"  => "iceweasel",
     "title" => "Iceweasel",
@@ -630,7 +639,6 @@ $browser = array(
     ),
     "uri" => "http://www.geticeweasel.org/"
   ),
-  // mobile one
   "iexplorepocket" => array(
     "icon" => "mobile",
     "title" => "Internet Explorer Pocket",
@@ -640,12 +648,29 @@ $browser = array(
     ),
     "uri" => ""
   ),
+  "ipeng" => array(
+    "icon" => "ipeng",
+    "title" => "iPeng",
+    "rule" => array(
+      "^iPeng.*(iPhone|iPad)[ /]([0-9.]{1,10})" => "\\2"
+    ),
+    "uri" => "http://penguinlovesmusic.de/"
+  ),
+  "ipoto" => array(
+    "icon" => "iphoto",
+    "title" => "iPhoto",
+    "rule" => array(
+      "iPhoto/([0-9.+]{1,10})" => "\\1"
+    ),
+    "uri" => "http://penguinlovesmusic.de/"
+  ),
   "irider" => array(
     "icon" => "irider",
     "title" => "iRider",
     "rule" => array(
       "iRider[/ ]([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "iron" => array(
     "icon" => "iron",
@@ -662,13 +687,6 @@ $browser = array(
       "iSilox/([0-9.]{1,10})" => "\\1"
     ),
     "uri" => ""
-  ),
-  "lotus" => array(
-    "icon" => "lotus",
-    "title" => "Lotus Notes",
-    "rule" => array(
-      "Lotus[ \-]?Notes[ /]([0-9.]{1,10})" => "\\1"
-    )
   ),
   "kazehakase" => array(
     "icon" => "kazehakase",
@@ -719,6 +737,14 @@ $browser = array(
     ),
     "uri" => "http://www.konqueror.org/"
   ),
+  "kylo" => array(
+    "icon" => "kylo",
+    "title" => "Kylo",
+    "rule" => array(
+      "Kylo/([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://kylo.tv/"
+  ),
   "liferea" => array(
     "icon" => "liferea",
     "title" => "Liferea",
@@ -743,12 +769,21 @@ $browser = array(
     ),
     "uri" => "http://lobobrowser.org/"
   ),
+  "lotus" => array(
+    "icon" => "lotus",
+    "title" => "Lotus Notes",
+    "rule" => array(
+      "Lotus[ \-]?Notes[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => ""
+  ),
   "lunascape" => array(
     "icon" => "lunascape",
     "title" => "Lunascape",
     "rule" => array(
       "Lunascape[ /]([0-9a-z.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "lynx" => array(
     "icon" => "lynx",
@@ -762,31 +797,19 @@ $browser = array(
     "icon" => "maxthon",
     "title" => "Maxthon",
     "rule" => array(
-      "Maxthon[ /]([0-9.]{1,10})" => "\\1",//fpradignac pour Maxthon 2.0 à mettre en premier
-
+      "Maxthon[ /]([0-9.]{1,10})" => "\\1",
       "Maxthon[\);]" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "mbrowser" => array(
     "icon" => "mbrowser",
     "title" => "mBrowser",
     "rule" => array(
       "mBrowser[ /]([0-9.]{1,10})" => "\\1"
-    )
-  ),
-  /*
-  "mediaplayer" => array(
-    "icon" => "wmp10",
-    "title" => "Media Player",
-    "rule" => array(
-      "NSPlayer[ /]([0-9.]{1,10})" => "\\1",
-      "WMFSDK[ /]([0-9.]{1,10})" => "\\1",
-      "Windows-Media-Player[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => ""
   ),
-  */
-  // mobile one
   "mib" => array(
     "icon" => "mobile",
     "title" => "Mobile Internet Browser",
@@ -802,16 +825,23 @@ $browser = array(
       "midori[ /]([0-9.]{1,10})" => "\\1",
       "midori" => ""
     ),
-    "uri" => "http://software.twotoasts.de/"//fpradignac new
+    "uri" => "http://software.twotoasts.de/"
   ),
-  // mobile one
   "minimo" => array(
-    "icon" => "mobile",
+    "icon" => "mozilla",
     "title" => "Minimo",
     "rule" => array(
       "Minimo[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.mozilla.org/projects/minimo/"
+  ),
+  "miro" => array(
+    "icon" => "miro",
+    "title" => "Miro",
+    "rule" => array(
+      "Miro[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.getmiro.com/"
   ),
   "mnenhy" => array(
     "icon" => "mnenhy",
@@ -826,7 +856,8 @@ $browser = array(
     "title" => "Mosaic",
     "rule" => array(
       "mosaic[ /]([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "mpc" => array(
     "icon" => "mpc",
@@ -865,7 +896,16 @@ $browser = array(
     "title" => "MyIE2",
     "rule" => array(
       " MyIE2[\);]" => ""
-    )
+    ),
+    "uri" => ""
+  ),
+  "nautilus" => array(
+    "icon" => "nautilus",
+    "title" => "Nautilus",
+    "rule" => array(
+      "(gnome[ \-]?vfs|nautilus)/([0-9.]{1,10})" => "\\2"
+    ),
+    "uri" => ""
   ),
   "netnewswire" => array(
     "icon" => "netnewswire",
@@ -883,29 +923,21 @@ $browser = array(
     ),
     "uri" => ""
   ),
-  "nautilus" => array(
-    "icon" => "nautilus",
-    "title" => "Nautilus",
-    "rule" => array(
-      "(gnome[ \-]?vfs|nautilus)/([0-9.]{1,10})" => "\\2"
-    ),
-    "uri" => ""
-  ),
   "netcaptor" => array(
     "icon" => "netcaptor",
     "title" => "Netcaptor",
     "rule" => array(
       "netcaptor[ /]([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
-  // mobile one
   "netfront" => array(
     "icon" => "netfront",
     "title" => "Netfront",
     "rule" => array(
       "NetFront[ /]([0-9.]{1,10})" => "\\1"
     ),
-    "uri" => "http://www.access-us-inc.com/"
+    "uri" => "http://www.access-company.com/"
   ),
   "netpositive" => array(
     "icon" => "netpositive",
@@ -944,10 +976,10 @@ $browser = array(
     "title" => "OmniWeb",
     "rule" => array(
       "omniweb/[ a-z]?([0-9.]{1,10})$" => "\\1",
-      "OmniWeb/[ a-z]?([0-9.]{1,10})" => "\\1"//to match OmniWeb/v613.0.93354
-    )
+      "OmniWeb/[ a-z]?([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => ""
   ),
-  // mobile one
   "openwave" => array(
     "icon" => "mobile",
     "title" => "OpenWave",
@@ -969,7 +1001,7 @@ $browser = array(
     "title" => "Opera",
     "rule" => array(
       "opera.+Version[ /]([x0-9.]{1,10})" => "\\1",
-      "opera[ /]([x0-9.]{1,10})" => "\\1"
+      "opera[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.opera.com/"
   ),
@@ -989,55 +1021,38 @@ $browser = array(
     ),
     "uri" => "http://www.castle.org.uk/oregano/"
   ),
-/*  "oxygen" => array(
-    "icon" => "oxygen",
-    "title" => "Oxygen",
-    "rule" => array(
-      "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.6) Gecko/20011128" => ""
-    ),
-    "uri" => "http://www.netdive.com/oxygen/"
-  ),*/
-  // mobile one
-  /*
-  "palmsource" => array(
-    "icon" => "palmsource",
-    "title" => "PalmSource Web Browser",
-    "rule" => array(
-      "PalmSource" => "",
-      "Palm-Arz1" => ""
-    ),
-    "uri" => "http://www.palmos.com/dev/tech/palmos5/webbrowser.html"
-  ),
-  */
   "paparazzi" => array(
     "icon" => "question",
     "title" => "Paparazzi",
     "rule" => array(
       "Paparazzi!/([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "phaseout" => array(
     "icon" => "phaseout",
     "title" => "PhaseOut",
     "rule" => array(
       "www\.phaseout\.net" => ""
-    )
+    ),
+    "uri" => "http://www.phaseout.net/"
   ),
-  "playstation" => array(
-    "icon" => "question",
-    "title" => "Playstation",
+  "plainview" => array(
+    "icon" => "plainview",
+    "title" => "Plainview",
     "rule" => array(
-      "PLAYSTATION 3" => ""
-    )
+      "Plainview[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.barbariangroup.com/software/plainview"
   ),
   "plink" => array(
     "icon" => "plink",
     "title" => "PLink",
     "rule" => array(
       "PLink[ /]([0-9a-z.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
-  // mobile one
   "plucker" => array(
     "icon" => "mobile",
     "title" => "Plucker",
@@ -1051,7 +1066,8 @@ $browser = array(
     "title" => "Phoenix",
     "rule" => array(
       "Phoenix/([0-9.+]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "phped" => array(
     "icon" => "question",
@@ -1066,7 +1082,8 @@ $browser = array(
     "title" => "HP Web PrintSmart",
     "rule" => array(
       "HP Web PrintSmart ([0-9.a-z]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "prism" => array(
     "icon" => "prism",
@@ -1074,7 +1091,7 @@ $browser = array(
     "rule" => array(
       "prism/([0-9.+]{1,10})" => "\\1"
     ),
-    "uri" => "http://labs.mozilla.com/2007/10/prism/"
+    "uri" => "http://prism.mozillalabs.com/"
   ),
   "proxomitron" => array(
     "icon" => "proxomitron",
@@ -1109,23 +1126,13 @@ $browser = array(
     ),
     "uri" => "http://www.apple.com/quicktime/"
   ),
-  /*
-  "realplayer" => array(
-    "icon" => "realplayer",
-    "title" => "Real Player",
-    "rule" => array(
-      "RealPlayer/([0-9.+]{1,10})" => "\\1",
-      "^Mozilla/([0-9.+]{1,10}).*\(R1 1.5\)\)" => "",
-      "RMA/([0-9.+]{1,10})" => ""
-    )
-  ),
-  */
   "reeder" => array(
-    "icon" => "question",
+    "icon" => "reeder",
     "title" => "Reeder",
     "rule" => array(
-      "Reeder[ /]([0-9.]{1,10})" => "\\1"
-    )
+      "Reeder/([0-9.+]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.reederapp.com/"
   ),
   "retawq" => array(
     "icon" => "question",
@@ -1155,9 +1162,9 @@ $browser = array(
     "icon" => "seamonkey",
     "title" => "Seamonkey",
     "rule" => array(
-      "Seamonkey/([0-9a-z.]{1,10})" => "\\1"//delete iceape
+      "Seamonkey[ \-/]([0-9a-z.]{1,10})" => "\\1"
     ),
-    "uri" => "http://www.mozilla.org/projects/seamonkey/"
+    "uri" => "http://www.seamonkey-project.org/"
   ),
   "securewebbrowser" => array(
     "icon" => "question",
@@ -1197,14 +1204,16 @@ $browser = array(
     "title" => "Sleipnir",
     "rule" => array(
       "Sleipnir( Version)?[ /]([0-9a-z.]{1,10})" => "\\2"
-    )
+    ),
+    "uri" => ""
   ),
   "slimbrowser" => array(
     "icon" => "slimbrowser",
     "title" => "SlimBrowser",
     "rule" => array(
       "Slimbrowser" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "smartbro" => array(
     "icon" => "smartbro",
@@ -1230,23 +1239,6 @@ $browser = array(
     ),
     "uri" => "http://sis.gwlink.net/"
   ),
-  /*
-  "sputnik" => array(
-    "icon" => "sputnik",
-    "title" => "Sputnik",
-    "rule" => array(
-      "Sputnik[ /]([0-9.]{1,10})" => "\\1"
-    ),
-  ),
-  */
-  "squeezecenter" => array(
-    "icon" => "squeezecenter",
-    "title" => "SqueezeCenter",
-    "rule" => array(
-      "SqueezeCenter[ /]([0-9.]{1,10})?" => "\\1"
-    ),
-    "uri" => "http://www.slimdevices.com/pi_features.html"
-  ),
   "squid" => array(
     "icon" => "squid",
     "title" => "Squid Proxy",
@@ -1256,6 +1248,22 @@ $browser = array(
     ),
     "uri" => ""
   ),
+  "staroffice" => array(
+    "icon" => "staroffice",
+    "title" => "StarOffice",
+    "rule" => array(
+      "staroffice[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => ""
+  ),
+  "stainless" => array(
+    "icon" => "stainless",
+    "title" => "Stainless",
+    "rule" => array(
+      "Stainless[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.stainlessapp.com"
+  ),
   "strata" => array(
     "icon" => "strata",
     "title" => "Strata",
@@ -1264,29 +1272,23 @@ $browser = array(
     ),
     "uri" => "https://www.kirix.com/"
   ),
-  "staroffice" => array(
-    "icon" => "staroffice",
-    "title" => "StarOffice",
-    "rule" => array(
-      "staroffice[ /]([0-9.]{1,10})" => "\\1"
-    )
-  ),
   "sunrise" => array(
     "icon" => "sunrise",
     "title" => "Sunrise",
     "rule" => array(
       "SunriseBrowser[ /]([0-9.]{1,10})" => "\\1",
-      "Sunrise[ /]([0-9.]{1,10})" => "\\1",//no space
+      "Sunrise[ /]([0-9.]{1,10})" => "\\1",
       "Sunrise2[ /]([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => "http://www.sunrisebrowser.com/"
   ),
-  // This one is not sunrise!
   "sunrisefeeds" => array(
     "icon" => "question",
     "title" => "Sunrise Feeds",
     "rule" => array(
       "^Sunrise[ /]([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "swift" => array(
     "icon" => "swift",
@@ -1325,23 +1327,33 @@ $browser = array(
     "title" => "Thunderbird",
     "rule" => array(
       "Thunderbird[ /]([0-9a-z.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "tonline" => array(
     "icon" => "tonline",
     "title" => "T-Online",
     "rule" => array(
       "^T-Online Browser" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
-  // This one is mobile browser
   "upbrowser" => array(
     "icon" => "upbrowser",
     "title" => "UP.Browser",
     "rule" => array(
       "UP\.Browser[ /]([0-9.]{1,10})" => "\\1",
-      "UP\.Link[ /]([0-9.]{1,10})" => "\\1",
-    )
+      "UP\.Link[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => ""
+  ),
+  "uzbl" => array(
+    "icon" => "uzbl",
+    "title" => "Uzbl",
+    "rule" => array(
+      "Uzbl" => ""
+    ),
+    "uri" => "http://www.uzbl.org/"
   ),
   "vienna" => array(
     "icon" => "vienna",
@@ -1382,13 +1394,14 @@ $browser = array(
     "title" => "w3m",
     "rule" => array(
       "w3m/([0-9.]{1,10})" => "\\1"
-    )
+    ),
+    "uri" => ""
   ),
   "wannabe" => array(
     "icon" => "question",
     "title" => "WannaBe",
     "rule" => array(
-      "^WannaBe" => "",
+      "^WannaBe" => ""
     ),
     "uri" => "http://mindstory.com/wb2/"
   ),
@@ -1396,22 +1409,17 @@ $browser = array(
     "icon" => "warrior",
     "title" => "Warrior",
     "rule" => array(
-      "^Warrior" => "",
-    )
+      "^Warrior" => ""
+    ),
+    "uri" => ""
   ),
   "webcapture" => array(
     "icon" => "question",
     "title" => "WebCapture (Adobe)",
     "rule" => array(
       "WebCapture[ /]([0-9.]{1,10})" => "\\1"
-    )
-  ),
-  "webkit" => array(
-    "icon" => "webkit",
-    "title" => "Webkit",
-    "rule" => array(
-      "AppleWebKit/([0-9.]{1,10}).*Gecko\)$" => "\\1"//add the webkit detection : 6 browsers on OSX
     ),
+    "uri" => ""
   ),
   "webtv" => array(
     "icon" => "webtv",
@@ -1419,18 +1427,27 @@ $browser = array(
     "rule" => array(
       "webtv[ /]([0-9.]{1,10})" => "\\1",
       "webtv" => ""
-    )
+    ),
+    "uri" => ""
   ),
   "winamp" => array(
     "icon" => "winamp",
     "title" => "Winamp",
     "rule" => array(
       "^WinampMPEG[ /]([0-9.]{1,10})" => "\\1",
-      "^Nullsoft Winamp3 version[ /]([0-9.a-z]{1,10})" => "\\1"
+      "^Nullsoft Winamp3 version[ /]([0-9.a-z]{1,10})" => "\\1",
+      "NSV Player"  => ""
     ),
-    "uri" => ""
+    "uri" => "http://www.winamp.com/"
   ),
-  // mobile one
+  "wyzo" => array(
+    "icon" => "wyzo",
+    "title" => "Wyzo",
+    "rule" => array(
+      "Wyzo[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.wyzo.com/"
+  ),
   "xiino" => array(
     "icon" => "xiino",
     "title" => "Xiino",
@@ -1471,11 +1488,12 @@ $browser = array(
     ),
     "uri" => "http://www.zootycoon.com/"
   ),
-// Catch up for the originals. they got to stay in that order.
+  // Catch up for the originals, they got to stay in that order.
   "explorer" => array(
     "icon" => "explorer",
     "title" => "Explorer",
     "rule" => array(
+      "Trident/7.0.*rv:([0-9.+]{1,10})" => "\\1",
       "\(compatible; MSIE[ /]([0-9a-z.]{1,10})" => "\\1",
       "MSIE[ /]([0-9a-z.]{1,3})" => "\\1",
       "Internet Explorer[ /]([0-9.]{1,10})" => "\\1",
@@ -1483,13 +1501,36 @@ $browser = array(
     ),
     "uri" => "http://www.microsoft.com/windows/ie/"
   ),
+  "chromium" => array(
+    "icon" => "chrome",
+    "title" => "Chromium",
+    "rule" => array(
+      "Chromium[ /]([0-9.]{1,16})" => "\\1"
+    )
+  ),
+  "chrome" => array(
+    "icon" => "chrome",
+    "title" => "Chrome",
+    "rule" => array(
+      "Chrome[ /]([0-9.]{1,16})" => "\\1"
+    ),
+    "uri" => "http://www.google.com/chrome/"
+  ),
+  "chromeframe" => array(
+    "icon" => "chrome",
+    "title" => "Chrome Frame",
+    "rule" => array(
+      "chromeframe[ /]([0-9.]{1,16})" => "\\1"
+    ),
+  ),
   "safari" => array(
     "icon" => "safari",
     "title" => "Safari",
     "rule" => array(
       "version/([0-9.]{1,10})(.*)safari" => "\\1",
-      "safari/([0-9.]{1,10})" => "\\1"//Safari need to be here
-    )
+      "Safari[ /]?([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => ""
   ),
   "netscape" => array(
     "icon" => "netscape",
@@ -1505,12 +1546,11 @@ $browser = array(
     "title" => "Firefox",
     "rule"  => array(
       "Firefox/([0-9.+]{1,10})" => "\\1",
-      "BonEcho/([0-9.+]{1,10})" => "\\1", // Firefox 2.0 beta
-      "GranParadiso/([0-9.+]{1,10})" => "\\1", // Firefox 3.0 alpha
-      "Minefield/([0-9.+]{1,10})" => "\\1", // Firefox 3.0 beta
-      "Shiretoko/([0-9a-z.+]{1,10})" => "\\1", // Firefox 3.1 alpha
-      "Namoroka/([0-9a-z.+]{1,10})" => "\\1", // Firefox 3.6 beta
-      "MozillaDeveloperPreview/([0-9a-z.+]{1,10})" => "\\1", // Firefox 3.7 alpha
+      "BonEcho/([0-9.+]{1,10})" => "\\1",		// Firefox 2.0 beta
+      "GranParadiso/([0-9.+]{1,10})" => "\\1",	// Firefox 3.0 alpha
+      "Minefield/([0-9.+]{1,10})" => "\\1",		// Firefox 3.0 beta
+      "Shiretoko/([0-9a-z.+]{1,10})" => "\\1",	// Firefox 3.1 alpha
+      "Namoroka/([0-9a-z.+]{1,10})" => "\\1",	// Firefox 3.6 beta
       "Firefox" => ""
     ),
     "uri" => "http://www.mozilla.org/projects/firefox/",
@@ -1536,25 +1576,38 @@ $browser = array(
       "Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1) Gecko/20060918 Firefox/2.0" => "2.0 on Windows XP"
     )
   ),
+  "webkit" => array(
+    "icon" => "webkit",
+    "title" => "Webkit",
+    "rule" => array(
+      "AppleWebKit/([0-9.]{1,10}).*Gecko" => "\\1"
+    ),
+    "uri" => "http://webkit.org"
+  ),
   "mozilla" => array(
     "icon" => "mozilla",
     "title" => "Mozilla",
     "rule" => array(
-      "^Mozilla/[5-9]\.[0-9.]{1,10}.+rv:([0-9a-z.+]{1,10})" => "\\1"
+      "^mozilla/[5-9]\.[0-9.]{1,10}.+rv:([0-9a-z.+]{1,10})" => "\\1"
+    ),
+    "uri" => "",
+    "known" => array(
+      "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050511" => "Mozilla 1.7.9 on Linux (american english)",
+      "Mozilla/5.0 (X11; U; Linux i686; cs-CZ; rv:1.7.12) Gecko/20050929" => "Mozilla 1.7.12 on Gentoo Linux"
     )
   ),
-// WAP catchup
   "wap" => array(
     "icon" => "question",
     "title" => "WAP",
     "rule" => array(
       "Profile[ /]MIDP-([0-9.+]{1,10})" => "",
       "Configuration[ /]CLDC-([0-9.+]{1,10})" => "",
-      "WAP" => "",
-      "SonyEricsson([0-9A-Z]{1,10})" => "", // Sony Ericsson mobiles
-    )
+      "WAP" => "\\1",
+      "SonyEricsson([0-9A-Z]{1,10})" => ""
+    ),
+    "uri" => ""
   ),
-// Things we don't know by now
+  // Things we don't know by now
   "other" => array(
     "icon" => "question",
     "title" => "other",
@@ -1563,3 +1616,4 @@ $browser = array(
     )
   )
 );
+?>
