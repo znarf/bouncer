@@ -1213,7 +1213,7 @@ $browser = array(
       "Smart Bro[ /]?([0-9.]{1,10})?" => "\\1"
     ),
     "uri" => "http://www.smartbro.com/"
-  ),  
+  ),
   "songbird" => array(
     "icon" => "songbird",
     "title" => "Songbird",
@@ -1496,8 +1496,7 @@ $browser = array(
     "title" => "Netscape",
     "rule" => array(
       "netscape[0-9]?/([0-9.]{1,10})" => "\\1",
-      "navigator[0-9]?/([0-9.]{1,10})" => "\\1",
-      "^mozilla/([0-4]\.[0-9.]{1,10})" => "\\1"
+      "navigator[0-9]?/([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.netscape.com/"
   ),

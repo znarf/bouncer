@@ -24,7 +24,7 @@ class Bouncer_Rules_Robot
         switch ($identity['name']) {
             // top crawlers
             case 'google':
-                $score += (strpos($addr, '66.249.') !== 0 && strpos($host, 'googlebot.com')) === false ? -5 : 1;
+                $score += (strpos($addr, '66.249.') !== 0 && strpos($host, 'googlebot.com') === false) ? -5 : 1;
                 $score += empty($headers['From']) ? -5 : 1;
                 break;
             case 'mediapartners':
@@ -249,7 +249,7 @@ class Bouncer_Rules_Robot
                         && strpos($addr, '69.171.')  !== 0) ? -5 : 1;
                 break;
             case 'bloglovin':
-                $score += strpos($addr, '83.140.155.') !== 0 ? -5 : 2.5;
+                $score += strpos($addr, '194.0.59.') !== 0 ? -5 : 2.5;
                 break;
             case 'yahoo-china':
                 $score += strpos($host, 'aliyun.com') === false && strpos($host, 'yahoo.net') === false ? -5 : 2.5;

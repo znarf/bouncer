@@ -17,6 +17,7 @@ $suspicious_fingerprints = array(
 '519e876fa6e446447a2a58181fb0b17c',
 '64e2a0f114edf4bc442076ffab66dd0e',
 '935aae45218ca5f6468675517ea5b4f8',
+'9416ad8320c16cbb63095c976a4e5bba',
 // Chrome
 'ac591ebe21a1ae3d2078a0909980b965',
 '5774cc2a45428b1ccf06a70e42960f61',
@@ -42,6 +43,8 @@ $suspicious_fingerprints = array(
 'b6a4a4da2fb1ada02b390ad18b50dca3',
 '48a36cb3e3a6d878470a3ffbbe8c9562',
 'e179e1cb47058af3aff8658d7b96d266',
+// Chromium
+'58a85d9429f20c43a2ebc13cb18b3011',
 // Firefox
 '3e74c4879197ddaa484dd8b3aaf97b3b',
 '8de1c8a8a364eb9551f07c7f783a91b3',
@@ -57,6 +60,9 @@ $suspicious_fingerprints = array(
 '89dbc59bfd2ab279cf09ef976c9b4b61',
 '9eb627c0e8fadf681e9dfb4a8c80152e',
 'a8cbf658169cb4fe456311c1226f7c29',
+'abc62dbc4e15d85718e190c6a4a7acc8',
+'01f3e790eabb8797f1367711bc3392d3',
+'b6b7a4ca179ebe1158504cc6187c2fab',
 // Opera
 '803f6c0521df5c574e497de5e19b8718',
 // Bots

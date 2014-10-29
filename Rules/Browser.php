@@ -96,13 +96,13 @@ class Bouncer_Rules_Browser
                 $scores[] = array(2.5, 'Expected Accept header (chrome)');
             }
             if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
-                $scores[] = array(-2.5, 'Unexpected Accept header (chrome)');
+                $scores[] = array(-5, 'Unexpected Accept header (chrome)');
             }
             if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip,deflate,sdch') {
                 $scores[] = array(2.5, 'Expected Accept-Encoding header (chrome)');
             }
             if (isset($headers['Accept-Encoding']) && $headers['Accept-Encoding'] == 'gzip, deflate') {
-                $scores[] = array(-2.5, 'Unxpected Accept-Encoding header (chrome)');
+                $scores[] = array(-5, 'Unxpected Accept-Encoding header (chrome)');
             }
             if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {
                 $scores[] = array(2.5, 'All Accept-* headers detected (chrome)');
