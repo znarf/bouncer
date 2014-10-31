@@ -43,8 +43,11 @@ $suspicious_fingerprints = array(
 'b6a4a4da2fb1ada02b390ad18b50dca3',
 '48a36cb3e3a6d878470a3ffbbe8c9562',
 'e179e1cb47058af3aff8658d7b96d266',
+'b803f19fdf9ca0940d6af9e2427fd3dc',
+'61d7aba6c36a79187f5456fedb99a604',
 // Chromium
 '58a85d9429f20c43a2ebc13cb18b3011',
+'dfc39c7bfb9af8eee96f54bb2e7a2a3b',
 // Firefox
 '3e74c4879197ddaa484dd8b3aaf97b3b',
 '8de1c8a8a364eb9551f07c7f783a91b3',
@@ -63,6 +66,7 @@ $suspicious_fingerprints = array(
 'abc62dbc4e15d85718e190c6a4a7acc8',
 '01f3e790eabb8797f1367711bc3392d3',
 'b6b7a4ca179ebe1158504cc6187c2fab',
+'616a2f9902f2bddc4b0302133673b83f',
 // Opera
 '803f6c0521df5c574e497de5e19b8718',
 // Bots
