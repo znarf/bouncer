@@ -1,195 +1,176 @@
 <?php
 $known_fingerprints = array(
-// Top Bots
-'793f840d86e2554135283d9aef58c7ff',  // Googlebot
-'2bb3199e1010da4eab7a03e86cd05063',  // Googlebot
-'edd490c87038defcd73e2497d3c969c0',  // Googlebot-Image
-'c81a634f3f75e335030284bf4c72bd2f',  // Yahoo! Slurp
-'cabf78b12c02f825861abeeacc4882fa',  // Yahoo! Slurp
-'af57c97e1b1b387a93e1614f93145866',  // Yahoo! Slurp (China)
-'273cf731218cee6bbea75c880c6de3c3',  // Baidu (cn)
-'9c2d33baf886e1b1841e5f77c1db3c77',  // Baidu (cn)
-'88f5936db6554981ceae9e360aeb59bf',  // Baidu (jp)
-'35d55b760b985cf233ad9466fd38dee8',  // Baidu (jp - mobile)
-'48ccff437f6e7f403f79b7500eb253d6',  // Baidu (tr)
-'22a2daa6ff7091d6c22336f1efd55d52',  // Baidu (en-US)
-'72604be2402cd5d1cfc84a413516a0da',  // Bingbot
-'6dcd83439ea1c096a43b0f06811e64d2',  // Bingbot
-'375716bc42342febd3f74e7270b466eb',  // Bingbot
-'ab12474fbc997f8655ca93952784393b',  // Yandex
-'6ee91224ab03618101de00774069ba56',  // YandexBot 3
-'1ba3e09e05c3a64578777e53d4f20a3c',  // DotBot
-'f5275c07637802a7c156e09bdcabc945',  // Sogou
-'d970c6ffb8d5547d9f6052207200b0dd',  // ScoutJet
-'62f42b9e966080ce33cdaef257458dd7',  // Spinn3r
-'bb7668eafa60dba90c42c489251b6d19',  // mail.ru
-'55f9389291d8227989a305506ccf0db4',  // Voila
-'6824162f534f437c70ba13a487aec6fd',  // Exabot
-'cdcb44c8464c40d53a6f5635ee66d642',  // Feedburner
-'84e14e474b5972e7b11fae97d08fff4c',  // Feedburner
-'c2bff0ebec4c3dab9da8035e5219a0fd',  // Entireweb
-'6dfe44b751fb6b4ebde0400cb073bac1',  // Ahrefs
-'7be77a95f238abe91d1891bbe787fdb3',  // Ezooms
-'7e1e804fbdf4cf74160734ce0d2d6adb',  // Heritrix
-'36ca11c7a64002a34f7db2db67761abd',  // Disco
-'e3a7b53bb13161f3706426d28cf06eff',  // Soso
-'46cd5cdfd3fd3f4c8d35bded997e9c16',  // Picsearch
-'7ca9f4a38ca04ec6b107f11b0e732535',  // Youdao
-// Majestic (1.4.0 & 1.4.1 & 1.4.2)
-'4c977cbcc56b76f9f4602595219a7d60', // 1.4.1
-'070c89e54103b715e0e7a3d40189fa95', // 1.4.1
-'bdad0d7e441c26e66023a03d1b83368b', // 1.4.2
-'f6bee05f0f974a698fbe072fc94d7fe4', // 1.4.2
-'655879b48a97e62e4c24f976ed70692e', // 1.4.2
-// Facebook
-'22a5eee46083360de8bc4beca9c8fe2d',  // http://www.facebook.com/externalhit_uatext.php
-'ddb1e86b32cf145e05a6e0a52e92f174',  // FacebookFeedParser
-'6d7c13b80393caf44744488e477e7e55',  // facebook share (http://facebook.com/sharer.php)
-'afa4788739136af0b8de6d47868ee2f7',  // http://friendfeed.com/about/bot
-'9e717c7cb2cddb32396c2cd53c06080d',  // facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)
-'09f23681d71f4a667432fa11c8465f5c',  // facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
-'3052960d06b87f641a542a51eca19536',  // facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
-'656fbf00aebce50ee22eb07b115c6395',  // Facebook share follower
-// Google
-'3ede60576b2077bd6d2819e604fcc7e6',  //  * - Google Translate
-'e06615d3118241037d7314f5b9411105',  //  * - Google Desktop
-'d8f03304c1f0a07e3a62b549e5aadb52',  //  * - Google Web Preview
-'11f6da515b0304a457a4e449c6053127',  // urlresolver
-// MSN / Bing
-'34f895d7de2f45b4ee2a57a6ece95518',
-'f546324447d3ea14f88b35dc4083454f',
-'84c29cf970522cd3727c8627bd01a949',
-'788ac1a26b08052bc106a19dc505e3c9',
-'55a3ca444259a2b25c0072a7454ab99c',
-'fb110bdfa8428eddce25cc1af28d31a9',
-'0acd3fc69e859054a39fefff8df82b08',
-'afb4bcd1a8bf846b4fda636d55b6d87f', // Windows XP - Explorer 8.0 (msnbot-*.search.msn.com)
-// App Engine Apps
-'ab44e9e98d2763d6dd77a88fad021077',  // networkedhub
-'e625657d8c7bbdd6e9fa2c5502086ef7',  // linksalpha
-'380c7335752386c015df396e2616bf2d',  // networkedblogs
-'7392c65f7872a8be46b2c68c9bc46fb4',  // lookingglass-server
-'962a8dc6b0c4f1f0d67568c50b31da66',  // mapthislink
-'06ca030f40974c9f8a30718e261bdfe5',  // rtweetme
-'86da1e9551b784725ced8434be16755d',  // getfavicon
-'337fb2b23192d6dbdfa9031e1468fb92',  // rtweetme
-'5577bdd018c3f246007dd1bb07f0d81f',  // pubsubhubbub
-'377ded6a5ede231bc66e65c80a4437ac',  // unblock4myspace
-'55971403dc3cbdd67d3dcf3ad872d5ca',  // twitter-trending-topics
-'8c1bfd4e130c5ae33d180bea4d96b5a6',  // botanyfree
-'2254fbea58cd0557c6ac4e08fdc7aad1',  // kiwi78
-'f6f862dec6c2c9fdc14f7cdf4f29d547',  // buyitnw
-'cb9190df67e4213f8064e62287228bf6',  // networkedhub
-'cedb49f360645df3b40903a9b406ec93',  // s~shanthuyeinmongnai
-// Crawlers
-'2e3e78982b709fcee9558e17726c7638',  // BNF
-'0a524df12ce230d76cf2abc04d94e7ad',  // DotSpotsBot/0.2 (crawler; support at dotspots.com)
-'eea168b7c9d0d958c6e9b29e1212414b',  // Search17 Web Crawler
-'65a6a88c94f8a9f6dbd11f129271843b',  // SheenBot
-'4244fa19396ed9f656d60a0f424abcd5',  // Twenga
-'b553cdef9205ddab1b33c9f4777ebd4f',  // Brandwatch
-'db01ac7d8b3807323e1e1db2069fd679',  // http://www.chainn.com/mxbot.html
-'98e414a4caa45ad58ce03028adee6cdb',  // bitlybot
-'37a95c66ec11cc628a1aeadf2dfbb84f',  // WebVac
-'934b30bd6857304ebb8cdbc0e2be3953',  // TweetmemeBot
-'4244fa19396ed9f656d60a0f424abcd5',  // TwengaBot-Discover (http://www.twenga.fr/bot-discover.html)
-'c6ee697b0d3ed706ac974e45fa16221a',  // http://www.ellerdale.com/crawler.html
-'eb69ec8038e09c15dc6c7bf544814076',  // http://www.hpi.uni-potsdam.de/meinel/bross/feedcrawler
-'00bb892963ac734a8eeb681e23d01395',  // Twitterbot/0.1
-'a42e96a3dc3f855d3d60264307ad28aa',  // http://support.embed.ly/home
-'ba1b1f5bd2fff182d02bebcae1238b62',  // Twitturly / v0.6
-'b02ebc3b48874c4b0a101a709dbdd379',  // acquia-crawler
-'be659eb627ef3c2fd42705e4e5d39044',  // ThingFetcher; (+http://thinglabs.com)
-'8ccb889b7d69bb8e0453258c55db3c07',  // SurveyBot/2.3 (DomainTools)
-'2708e9c06a83250e6bcab443f73c71e3',  // http://page-store.com/
-'6afae750923289d89eb638a6a7ae8947',  // librabot/2.0 (+http://academic.research.microsoft.com/)
-'9c1bb51b327c07997fe1971925a5149e',  // librabot/2.0 (+http://academic.research.microsoft.com/)
-'87d77eade01d9fcc73680ed520ea5e81',  // Netvibes - BM
-'6df8bda832ecbb4ad20ec624d6c86fdb',  // Netvibes - Mozilla/5.0 (compatible)
-'776e9d435c5a3b3fd4024863e771a7f2',  // Netvibes - Mozilla/5.0 (compatible)
-'68c1cbc196603b22c85c48b32a6bbd51',  // Clearbricks Feed Reader/0.2
-'1084f8680db0ef2d421e257cc9739867',  // sfFeedReader/0.9
-'3e2a346099d1c651e4df4bb47f158532',  // suchmaschinenoptimierung.de
-'4de3da80257ab637e8612f9469fe968f',  // cloud4search.com ?
-'81042c2f26c945a805781c10f675d23c',  // 80legs
-'bfd0336b65cddb768fb25b2e994eb4d6',  // 80legs
-// Flash (eg: WP image uploader)
-'d22d47791a32b40fc841754dde0784e4',  // Adobe Flash Player 9
-'4f4c2a419649c56cad7d3cca8dc9eeb6',  // Adobe Flash Player 10
-'11ef0d39f0f9d3fb96063c9b867198aa',  // Shockwave Flash
-// Nagios
-'f13c1c8a68a515732ff72cc498f66dc4',
-'5bffca1b20894579bd276a36a6f5ca86',
-// RSS
-'5b2361fdf1c6e31b99a55def5adfea6e',  // SimplePie/1.1.1 (Moonmoon)
-'09e5ec4c2fb7c5fcdced58de35f6e289',  // FR - Windows-RSS-Platform/2.0 (MSIE 8.0; Windows NT 5.1)
-'6a744e4970bcbee3ea74d602fec329cd',  // US - Apple-PubSub 65.28
-'aaa4fad0218564475f60e26b34b309fd',  // FR - Apple-PubSub 65.28
-'0ba66e754671a39fa506b096a71c37c5',  // DE - Apple-PubSub 65.28
-'225ba9dc02d58c2859a8a8f853eec1cc',  // IT - Apple-PubSub 65.28
-'9e4feb495cd9e5887406fd7005311ec3',  // ES - Apple-PubSub 65.28
-'9c8f70686dd900abb23dca1d4f5d8df7',  // PL - Apple-PubSub 65.28
-'59b1deab8d1a5222ef1319c8e9033e0d',  // US - Apple-PubSub 65.23
-'899be7abd2ee5c4245fa0165d8e24b0c',  // FR - Apple-PubSub 65.23
-'eff845fce6f3420f696230f0d2d130b7',  // IT - Apple-PubSub 65.23
-'672d83bd134d933f94213e574809e979',  // US - Apple-PubSub 65.21
-'38e1732d732fe5a8713ef5777d7cd1e9',  // FR - Apple-PubSub 65.21
-'7b472e49a23538d70cf75623e6de1bd5',  // ES - Apple-PubSub 65.21
-'9f7f585c45cfdc3dad31fad8e504b68e',  // DE - Apple-PubSub 65.21
-'38f90373f8230038ba302dbfb4366540',  // IT - Apple-PubSub 65.21
-'568e4f198f840ab6a3b346ec14edd866',  // JP - Apple-PubSub 65.21
-'48f48b60e48af65e9fc20bc99971e76d',  // US - Apple-PubSub 65.20
-'7322bf08f0f24445f48613e0c3488610',  // FR - Apple-PubSub 65.20
-'1d50ef3c11cbeb999a8aa3ab5dfbe966',  // EN - Apple-PubSub 65.20
-'29573c121c6b60491cfbf82e021b2f43',  // ES - Apple-PubSub 65.20
-'0ef25273f985d74a4d5268e921fece79',  // JP - Apple-PubSub 65.20
-'49150c78f0d39898e3ddba9cbcac2d4e',  // DE - Apple-PubSub 65.20
-'c57228f2504118b78c338cf6c62299e7',  // IT - Apple-PubSub 65.20
-'47702517895b09e7e3e3d383de0bc613',  // BR - Apple-PubSub 65.20
-'dd707631423f5bc61abdb61af6c58295',  // DK - Apple-PubSub 65.20
-'b74efe030453e0bf7094bd03d136adde',  // NL - Apple-PubSub 65.20
-'8e756bbd8fd1b053856ce00735d9fe6f',  // US - Apple-PubSub 65.19
-'7ac14d372759acefcf867c15ffeffec0',  // GB - Apple-PubSub 65.19
-'9acfacf72fee443f8ee3c437ed847fac',  // FR - Apple-PubSub 65.19
-'fdc2442a41e8d683b8583643489f59e4',  // DE - Apple-PubSub 65.19
-'4749f1c7f7346a7f1f5b7f0d0e543467',  // JP - Apple-PubSub 65.19
-'1ab88260c3c9d004408d693c7cd770fb',  // IT - Apple-PubSub 65.19
-'2569e538829f558ef9eafa94ba67718e',  // PT - Apple-PubSub 65.19
-'d25f04999693ba3952141a7ef4c10dc2',  // TH - Apple-PubSub 65.19
-'74d290fabe4e2612bff76aeff9228dcd',  // ES - Apple-PubSub 65.19
-'208d89f614e603099fedc836d297c16e',  // DK - Apple-PubSub 65.19
-'21f0cb2cdf1f6f93f5a3b10e577df842',  // US - Apple-PubSub 65.12.1
-'34ce75b388f7d016655d3e8f4e9b4dc3',  // FR - Apple-PubSub 65.12.1
-'60248970d4202b916d13bc9634f1c9cf',  // IT - Apple-PubSub 65.12.1
-'9056d759336e5c04a43e8fc53d4d83f5',  // DK - Apple-PubSub 65.12.1
-'54cc3a0885c3de1d510251a77b893a8d',  // DE - Apple-PubSub 65.12.1
-'5b9716640f9bda92f449edb1ab65ad75',  // BR - Apple-PubSub 65.12.1
-'d69a16e600d8bcf2e62247e50b939bf6',  // TW - Apple-PubSub 65.12.1
-'ae956247ba90b100d8a6f84f56694f2f',  // KR - Apple-PubSub 65.12.1
-'f9a94ccbf9a5c4a1d89a325ec48b4a82',  // JP - Apple-PubSub 65.12.1
-'08d540eadd7470c7cff1270c0e34c7ea',  // ES - Apple-PubSub 65.12.1
-'4651e1f2972c049bcd63cdc7fdaa5e47',  // US - Apple-PubSub 65.11
-'d364febb3fb6afee911877589738e6e4',  // FR - Apple-PubSub 65.11
-'52790b3c1e9e7707e420725a0e6fd161',  // DE - Apple-PubSub 65.11
-'4d908f72752d2a627f8d057ef18b86a0',  // ES - Apple-PubSub 65.11
-'b29c7c4d8fa9ebf7847cccc913f2a3f9',  // NL - Apple-PubSub 65.11
-'38f04bbd00765a16fac050023827723c',  // BR - Apple-PubSub 65.11
-'8b8a6e95efd7e75a32dee57182c77d53',  // IT - Apple-PubSub 65.11
-'8808c9db1008304e0e77cdb45cd852c9',  // FR - Apple-PubSub 65.1.4
-'2a24a50989d3d498054a46cb252e2f93',  // US - Apple-PubSub 65
-'4426ccebdb8efd4884ad3c8b187bbbd0',  // FR - Apple-PubSub 65
-'2aab3c9ff6725a0ee0e39691604f2a70',  // BR - Apple-PubSub 65
-'b906752d12c59f44cc54f26e090a0c6d',  // FR - AppleSyndication
-'456b14879e2280c76c1c949b805f821d',  // FR - AppleSyndication/56.1
-'f25748fc2c3c617fba53199f337f7131',  // IT - AppleSyndication/56.1
-'741a1e269a2ce4f51bf8f1520c9b288d',  // DE - AppleSyndication/56.1
-'66c3e3add8b34e15cc1d48aea1b7919b',  // US - AppleSyndication/56.1
-'6687a5f945ec7dcd34bb8cf5ec050baa',  // PT - AppleSyndication/56.1
-'b214c600f9febae38b24a81608f1428a',  // ES - AppleSyndication/56.1
-// Reeder
-'2794356c8fa75873666f9eb796a252b7',  // Reeder/1.4 CFNetwork/485.12.7 Darwin/10.4.0
-'26ad4ec68025a437bd6a160e64e96b62',  // Reeder/1.5.4 CFNetwork/548.0.4 Darwin/11.0.0
-'c731f9328e05afdd157996f032288166',  // Reeder/2.3 CFNetwork/485.12.7 Darwin/10.4.0
+'4a5f38614830632626c983328284bbe2',
+'57a983a52d9c7ca42fe2eacea9a3b1ec',
+'0bb997beacd44765efe1cb8db8b04ffe',
+'d6e417b6dbfe73d33f952f6ed76f8066',
+'7f01f08fb50131e8de57ea75a389e7fd',
+'d7fc5d82d4657ddc3b0d480c30f61abe',
+'29a496fda51371997d2fda866a064dc3',
+'828e9d28c787a4eaafd76f6b778a4031',
+'7e3b36e5aeec077a7a5a00835dea0f3d',
+'99a488440b6a3d24426d62bb1a8eb008',
+'babf21280b72636975dfed05967db92b',
+'9154acbc8e1f5d0c3e168638a47b938d',
+'aaa4fad0218564475f60e26b34b309fd',
+'e1538ebb31be38a8037b609a65ba4c3c',
+'4ede7f13d6892c900175f5887619c714',
+'32f3390800cacd04e1bcc5af50a2c265',
+'133b0a1273fa7cb870d606445375677d',
+'286569853ca05fb5b01e8045d05c061c',
+'febe365a4759da9e398bd8faf5c308f5',
+'75022f6361b396e4969e122dc521785d',
+'1ccf73df3eb1d03d2933230bb558387e',
+'178975f0cbc0b337057a9c057f662419',
+'b281d7c2562693921262c77d04c22499',
+'4fcb1aa3e4fd0c01964d5a1d2e702dc6',
+'0218f23bd5be2b117096219e6cf7b822',
+'641c584e7307f3f87c45cb4d0f26300e',
+'1dd8e31f8a4020234e3065f1fee5ed6c',
+'c5494f5594868b669cc2e25679cd07a4',
+'a0c5a745172bf9e68f32e649d3b041e3',
+'75ab85388647cd87f6d30658b23d3a43',
+'2639206bf07860c8d3205e1ccc168cc1',
+'6a744e4970bcbee3ea74d602fec329cd',
+'ea1ff41843f57ebcedbfbfba161fc2cd',
+'4ef867479ea4fdfb4341e4b0e16610e5',
+'097384ddd7796378532f0ce45cce7d16',
+'db394ae6054285112baa0614554bd15a',
+'2cb713072cad738cd7e3fedcf55332fd',
+'b6e4a9fff3adf29fbde21e4b66bca803',
+'d786d94a7281334082d178e94460b875',
+'b807eb9ad82f35d4709638f2f4e73258',
+'45ee56057d34c0d453c12ce62a78e317',
+'723aa396f774a24ac65e79ff24ee1fff',
+'d035dc300ca4315f7da1d464ce9dfc69',
+'78164893785122039b31c8bcad7e8aa0',
+'3ea45f3663062ce34007e1d7a94998d2',
+'1a3036841c0650cb139ad3cb1dd5d40d',
+'7bcae10818779a1ac701d2a93d9c7eaa',
+'38e1732d732fe5a8713ef5777d7cd1e9',
+'c872df465b9fea9c4fe0112947b90e53',
+'b553cdef9205ddab1b33c9f4777ebd4f',
+'876f267903fc7664eded442ea27a3a8d',
+'8bbd006fef70cf7b41c58586092012ff',
+'09e5ec4c2fb7c5fcdced58de35f6e289',
+'cee880664dde212e215958f35ad97179',
+'a42b92d5626eff289a7589c4640c047a',
+'3d4d25affc6242e2e3ce3f3d3f7de22b',
+'3b1231d6d5fde301c51da189cec8c01e',
+'5b4a40cc94c4d87767b83c9e875482f9',
+'e2a55a904182041cece2ea8f9f18a884',
+'56842c52551a0f83beac720e15e6cc3f',
+'261b05f8f307e382d8acce6f304f481e',
+'2ea3acc277f9105ef678404bf67a6dc1',
+'6e3c7463140059bb22ad5a9cd45284cf',
+'28d7c03a61ad82a8ece0c5debf59a048',
+'5fa532ff62f76a8590b4be7ed74ba4ab',
+'f4cff07690585a68421636bb3ab4abb6',
+'06570670d16d74bd611ed8c29077a234',
+'cba9b2a0685b62df71b100cca2eb6a04',
+'838c80ff8c6aa4fc5b2dccaaf2e2893c',
+'74809aa9fe07b6bd63059f6dc4360a1d',
+'c68367dc6810e8cdf5cb85af245a6c2b',
+'bab87ea33f9524d642dd8c4677e66d90',
+'7caf7e303b3a1b4978a376eb811ea70e',
+'2e958e65c15ca628d01047fbb1664cf2',
+'ed7de3052560896ea60ece713e3056a2',
+'e844bd7621b0f61b6f86295905aa2362',
+'ef743dde99fa8822b2af33a7c7e1e63d',
+'899be7abd2ee5c4245fa0165d8e24b0c',
+'0f7c2f273adc472a629c9fd8f87477b5',
+'607de2e34462af49a8a4aaa2baccf368',
+'64ab50b7f82b395509d407ad3ab65181',
+'1c45c3e394f0aa80bb96ad14fdfb51e8',
+'7f27c17a75a8ab4ce486c1182bec10b5',
+'a7acc9a35a0a0d95affc66726e8f9901',
+'22cdb33c3e742db0d5a51f6e7b82fd9c',
+'47ee8c409939c825d2dd97ae45ff6d8e',
+'4fbeefc9ed79671bced813c8366bb2fd',
+'cb591cf236947657abc6e83fa0070bc2',
+'39a04c0e1e759c0cff85b451e05884bb',
+'fe79428abae02ce28738fc6925abe78e',
+'f644a4b4dae3b1ee387193a4e23e5619',
+'5f1f965341a6435681d15efe8b4166e1',
+'3f334b1942534bc4c970f26dd245e559',
+'f98dfd09dcd1074a971094e08fc597ff',
+'9f7f585c45cfdc3dad31fad8e504b68e',
+'bfd3587496802582e1acdc8018470aae',
+'e0eea2bd804c6344a7b16ad6a311f15a',
+'aa8772e89c9a8f9cd6ce4208bbecbb11',
+'d481d99393fdd716a45223d1bb03e5f8',
+'caa0231eb4e4c4d0271550acc03ce9b9',
+'9e4feb495cd9e5887406fd7005311ec3',
+'7817360a65a435c82f75fadae2722f40',
+'34ff7ca5af048a223b0d96aff5227f98',
+'5faf676c461aca03a48447fa4e428881',
+'bf84597fc875a55943eac81b7272b9aa',
+'dcf46f603117174dcb85a29d9b3193d5',
+'5e690bffdc5c620cbe5577d10e55c8f7',
+'3a280d6c99011dd6d5c877d25f58897f',
+'d302a05ef5be3c036ed11bf0351c9494',
+'15369a762ebc7a0c8ec8ab15a908102b',
+'664c3387f30518776f26c56d47856383',
+'6bd521417f293ba212ed196a04845254',
+'6ecd22aef2f6cfbe020162cee2928777',
+'71da8feb40ae5710b384834f41394e65',
+'c7f0b330b1d8843ca0ec3421af186108',
+'746c85cc03b72f90d7ad6f26a5e81cb3',
+'dd4e0cb19411533cf054036d1a0b069b',
+'520809c1c520a918e7f6b2d6e0ac5749',
+'434abe06f51d21a56fcc25a9e4dfa5a0',
+'fbab5a8800acf6f6b6e089d7beb4fe1c',
+'448885a0c5edeee20a44b3ac73c15ff9',
+'44f0982081bfc240d31620362b9b36ff',
+'3fa5029647782e5a31d5fb38210cc8da',
+'f357c5832acadfbac21276138c763bf5',
+'4cf652dde8141bb541a3f190414d2e3d',
+'ed603aef70b9eaa8ae069759d35c36ca',
+'eadfc0fb31eefcd07e721781dc5f1867',
+'05cfbf1a0dddb258e7280a2c847349e6',
+'e7d35df046cc931f792feecdd1ca7c20',
+'e7919b2f9e771264a128456a5bcbbc71',
+'4054e5f39256aecd203dee4530a68f3c',
+'3ce6073c7bf4813d94bce7684362a9e9',
+'c65dfae25ec42717733c2dca5bff9da4',
+'1928e0f475fa12cbd656a7de3e96e422',
+'c40282f12f48a3936752c03cfb334786',
+'95a233c76f95a1a6140131c41222be8a',
+'aca8746dd8fa9854bff15aec0ef89b6a',
+'ac4c35bf27c8957d2dbc83da02017676',
+'3063b8417fd646b10b3da4eb4733fb48',
+'802019162cea455b008eb078d40a6894',
+'2d2155f7ce9b6b4f866fffa067a76a14',
+'9051019e2d7954dfaee0ff2f202c4233',
+'a1bc0b7eb4b4914450802d9d4159c382',
+'acb6634bf48ad8f90566f2084f1de5c8',
+'9f5e0505418f71f0ddb75bd0ba0c2a85',
+'93934d02d0d9d2d4ef6d24fa8983f648',
+'9d29b407e00b9a83f1b7f2f661b31ab2',
+'273e0219469ee40d5e180d2b9c514508',
+'96515ba4ff326b6bb26074d681fa1dd4',
+'b4cffd72b5f2602e1b21dde59838bc62',
+'33fd1de420d83f0dc622af622df48f5d',
+'c225de0c2a9db6a0a1dcfa4eeed2d08f',
+'c212625fb57c02f95f85e0bd44d47df4',
+'376dfa7ca52a211c2e977bce94d44b7e',
+'be384760c6813a839fc159d11b378568',
+'bd434c638e83d088baccc77da3f0db56',
+'1b45765e03cf7bab1bba01037f021408',
+'76f3ec5271504e079cbaa0d249d3f42c',
+'0089dd4a168f9af5b6621d71f004632e',
+'b3cb2268f56dbde1344dbd021cb4b29f',
+'96bc49cad48bc9bdbf4cbe6f4cf9c358',
+'d7e6a9b8b20d052d1f1b9e777b89472c',
+'6043cf505b0580143c3166b3dbb85c41',
+'11ef0d39f0f9d3fb96063c9b867198aa',
+'6d6550386c025cb5459c64e0f6febbfd',
+'461b4f01e7406f292473a92608f0c244',
+'937663301d79cb61b1c4971edc5e2ae3',
+'1f012a27e7e74ee6d40b4aed2ffc3ab5',
+'872c1a68f8ad7e284024fb654f7af1de',
+'d27bd99c7c6a13579bcaed4177faad15',
+'26b6ddf8dc51a7ffeec589d791c0110c',
 );
 return $known_fingerprints;
 ?>

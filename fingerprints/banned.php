@@ -1,195 +1,163 @@
 <?php
 $banned_fingerprints = array(
-// Most Popular
+'4ea4e26e6fcf88e199474473ff352939',
+'f1874764c70200b8e25f0a9deb0c7aee',
+'b6b7a4ca179ebe1158504cc6187c2fab',
+'616a2f9902f2bddc4b0302133673b83f',
+'2006a8b2a49439d71fc2e6b9b878eb18',
+'70a5765b1ac2f58136c9a691f7af4804',
+'96eb8266963b0c526dbc3b790c4dc21a',
+'c51d17c0bb86bfe5b03266378fa3d3c2',
+'27209f7a7f88b5509b2ddcd2528ee9c6',
+'e68ee07d3aea0c26f99686fddc8ad14d',
+'2892b991687517d2e2dbb8514c64a507',
+'62acd9c5f300f2f3ce4efb11159ed62d',
+'22f44f3777c45f6028c9107a520bb33b',
+'d562b2814056c453b8da719f10f92745',
+'d6d66014f2c71d6812c25b1d4fe263d9',
+'49cb5fb4d516f09a4caababb1a82d30f',
+'a718bb2d9423a8c69a2cf028b875118d',
+'afcc1333e958ca0c3e22cb24e6314d5f',
+'4dd365575ecb1880883effa5aba3b789',
+'95016c2bf2db219f34a8c19324b7952e',
+'35ca0d2d61cbeb4e82f28ac2ce06ab2f',
+'9e2b952669c4482072835499c826bbc3',
+'7bf2156a8bd25b8a745eb477a64f44db',
+'331032a7bce7227834f0e684fd2288de',
+'503ea0bf9b8f41fabd7e53109d163a1d',
+'b6a4a4da2fb1ada02b390ad18b50dca3',
+'67717d831468670942056158cb827271',
+'3f73a63686d857e2dac0579a782e503e',
+'4cc1f4ad9d3da7b947b78e1fb13d38c9',
+'803f6c0521df5c574e497de5e19b8718',
+'2c8196fa8d645a5e99ba1444d84f0a34',
+'8ae569a21227b0a841c55b7358dec202',
+'c965bdaf8c411f84a5b621377fb5c82f',
+'864c6fc7d84b96d058403e04ea0a13c5',
+'e7801e44444dc7cb374ad3f48f0848a1',
+'e19019f4f99f7f4de8f55e54fddda375',
+'33c34375fada4f4d7f2faae05b509b20',
+'16bc1107c02bf6e8a28f3a606b57a4f9',
+'cb0e68ddab49f392b83fb3ddac0e7436',
+'e0879731c64a0fd9814b66c6f6f26d49',
+'3b3c317ec6b7bf95cff5165d21c804d4',
+'46e46ba03c22947f4d8bf059a2ccbe60',
 'cd3ea020baf312a8dc8e12e8ecd524ab',
-// Browsers
-'800debb6bf463b5c72336a2ab6c76176', // JP - Windows XP   - Explorer 6.0   (.asianetcom.net),
-'d4a3108acff0dd17752192df5d175333', // KR - MacOS X 10.5 - Firefox 3.0.6
-// Forum Spam
-// Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US)
-'d7a9c865d751ab1f54216b99c3233f4e', // Accept-Encoding:none
-'26266e23a1e673220591d891f2aa2b5f', // Accept-Encoding:gzip
-'a7f6ebb46b5f7a3d6618ac0caed7eb83', // Accept-Encoding:gzip,deflate
-'b4bc915a34ea449382e1d1d849864cf4', // Accept-Encoding:identity,gzip,deflate
-// Comment Spam
-'d72e329d83dbc23e65b7d8412dbe31b8', //  *  - Windows XP    - Explorer 6.0
-'00e9cd8e4ffc0d2d5ab8236bc062773b', //  *  - Windows XP    - Explorer 6.0
-'14ae981d20516d71505ed67a4564c7d5', //  CN - Windows XP    - Explorer 6.0
-'863791545df8ec86ddda02d961fb332c', //  US - Windows XP    - Explorer 6.0
-'476f7382c6de03533d1d84302a3c16d6', //  PL - Windows 7     - Explorer 7.0
-'36b92335e826e9c7a6e615fa34073a86', //  US - Windows XP    - Firefox 2.0.0.6
-'5246b6ff2d368042bd44d5b99419d014', //  CN - Linux x86_64  - Opera 10.63
-'7b3fa1faada4feb8d0615d7565db58a0', //  US - Windows Vista - Firefox 3.6.13 (ubiquity.io, ipvnow.com)
-'74eac35b1b467e7293f6a95301ec26b2', //  US - Windows 7     - Firefox 3.6.16 (ubiquity.io, ipvnow.com)
-'3b26ae8b430f3157b5a0efa80a589b66', //  CN - Windows 7     - Firefox 7.0.1
-// BM Spam
-'2d427eaca8980ae196a9c003780057c8', //  *  - Windows 2000  - Explorer 6.0
-// WP Login attack
-'f1975792f3eb763bd430ea063e0ed3b4',
-// WP Login attack (brute force)
-'d3f31f60884687f480c6fd6319a99f5e',
-// Bots
-'6135b0ff46c9c6168ef13c221f3528b5', // SN - DTS Agent
-'dcf57bea9a755eea1f8de282f4c3279a', // CN - Indy Library
-'61dc815933fe47026e1cdf0f5dc7ffbc', // CN - Indy Library
-'ea61161ef904102c26654f77fbc1af27', //  * - larbin 2.6.3
-'e001df5efb3b7e2392430eea763ef765', //  * - binlar 2.6.3
-'c3519edceadd1945fdeb626ad9c2a5fe', //  * - larbin 2.6.3
-'1eee5009bfa152ad21b863af9cb134c6', //  * - page_test - larbin 2.6.3
-'ed6a32ee2c78863ad5a1f007a95ae420', //  * - larbin 2.6.3
-'ab37081000071ae3ced2a659889930c3', //  * - larbin 2.6.3
-'27ed65dcbd6bad42936ac2b52e97cc63', //  * - larbin 2.6.3
-'993c22663746e77e424fd6c895ff0bdb', //  * - mozilla/5.0 larbin2.6.3@unspecified.mail
-'41690152a7d0c8c259a8854cc72b65f5', //  * - AutoHotkey
-// ICS
-'4c67cac030adba659c1ad691368db27e',
-// Security Exploits
-'1145d630273e73472fb728301b95b362', //  * - dex Bot Search
-'bd3ddc784afb3d4c98278e86cd2e38a8', // RU - Casper Bot Search
-'f6c56d66353ed1d75d9d6510e665afef', //  * - plaNETWORK Bot Search
-'b0f23770497882623698007998676f4c', //  * - MaMa CaSpEr
-'5d5185a11ffe776821edd761a57f87ad', //  * - SunOS 5.7 - Netscape 4.76
-'84b22310b79b5acf19637583f88e56a5', //  * - kmccrew Bot Search
-'56cb5aa3bc50560382d31c887cde3696', //  * - MaMa CyBer
-'6db03cedbceb960fe9e1f56201637b38', //  * - Gootkit auto-rooter scanner
-// Suspicious activity
-'1f0e4f862cf58552f6baac73dd4ba8c5', //  * - Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.8pre) Gecko/20070928 Firefox/2.0.0.7 Navigator/9.0RC1
-'24de86d2b5724dc78f54e0b32090ea36', //  * - Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.9.0.16) Gecko/2009122206 Firefox/3.0.16 Flock/2.5.6
-'15ce7cf8c7cce857ea7cd660986f1f42', //  * - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12
-'b8ddf76402a2a11761ce8309f18cf510', //  * - Mozilla/5.0 (Windows; U; Windows NT 5.1; pl-PL; rv:1.8.1.24pre) Gecko/20100228 K-Meleon/1.5.4
-'d87616417f6659d290c46a9e246d54f8', //  * - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6
-'1b7abe56a5ceabaea486b0ed609eb17f', //  * - Mozilla/4.0 (compatible; MSIE 6.0; America Online Browser 1.1; rev1.1; Windows NT 5.1;)
-// Security scanning
-'3b8cad698673d7c3815ebce2c26477d6', //  Made by ZmEu @ WhiteHat Team - www.whitehat.ro
-// wp-login
-'e921c7d1289c87235c4aeeba2a3ca8b6',
-// Massive Attack
-'d56853b3188c81b077f48b8338d43442',
-'e03c20f8830c412f45c7e5c9598685ff',
-'3ec968272276ef9b68d8028364df5059',
-'e0c1bd557bf19199e7aa63ede1e7732f',
-'74a983d6cd66bf4a10feaf59843fc492',
-'b352425429fbf27cf6db2b43ab147b78',
-'d4d37754639443ae2f119552f0bc5ea2',
-'61c5d92e3e2a1d73affc579564efba0e',
-'520193d275ba464ae2c075e337f6f29a',
-'bdbd92672124906be55f2d170f5b2906',
-'26dd54d0e72232dbdba2c26bb5a84b64',
-'10220a4454fcbf0250570ead9fceda2b',
-'a5756e8f93011b6bdc06dc43687e40d6',
-'088647909964cf1807609370a2481dbc',
-'1045b2a689f4d5ef17638cf052e64215',
-'0cbf7fb29c13797c85d7835fe286a8d9',
-'58fa5acef3394f445ee05269c0fbff98',
-'b16b27be25eae2ff8d849ec53f55dc21',
-'17b448a9f5ca1eba9b5c43b707822122',
-'8c36ff6d4eff905a1a79089740d0307d',
-'2ed0a2e6a9b03c795c450be28989cd8a',
-'cbdc9500dc541b4db3729f215c40e280',
-'f71b64d6f9766c0f9d490816eafcd34f',
-'19d4bcb51e68aea754d752f823e2635b',
-'7c52251b8e6c55dfd2c8937afdb63138',
-'bb97ef0f05ec613c675fe24e5f28d2b6',
-'1718a40711559c6c91a82b3bac8b8d05',
-// Fake Google
-'a8c59cca16eb7d753659ae07aa6745bb',
-'834f20c97f18fc1fa04ddd63f11ec2e8',
-'b1c0361564c267d2786dd731a346af77',
-'b56beeee346852e3f2928964b2eb97c7',
-'704e985ee38d27eb605fe94507f854a1',
-'f94e6a904f7d6a185755e6bf7d144129',
-'bd071fdfb2a7ad087cca666b86a23b9c',
-'f94e6a904f7d6a185755e6bf7d144129',
-'f82fb91416713cbf302217d272f18c6f',
-'8ea3fb6a8c5cc988ceb18877e9d0f698',
-'cf7496791c144f929120f056fc42d834',
-'b50457ec8e01d50f1d6c9aa1f358ab32',
-'6d2852f8657dcd9be02c7c44ea9c111e',
-'b759248a64fa46e9a45c55523e7ab3ff',
-'31bab508c47f1728a5e675b06ec05808',
-// Advanced Email Extractor
-'a71a3073b82c5f249cacdae80c0e154e', // 2.61
-'f739bf1bfb67daadf0cc3462dfc5dc59', // 2.76
-// Lib WWW
-'4380852845d037820bfd4e0b9ea4e555', // libWWW 5.64
-'fb01926b55f6a61d0d619dca6a6e905b', // libWWW 5.65
-'dd2cce743b64f2b797fa3bba306f387a', // libWWW 5.76
-'c67c0196c4ad44c35b1f2f3160a96fcd', // libWWW 5.79
-'f706d25efc54ba36bbc61a288612071e', // libWWW 5.800
-'020801d2d515f2fa3a50d70dd8f846be', // libWWW 5.808
-'2a50b1f21abfc30c5b6494d19e672866', // libWWW 5.803
-'6ca73eacc292a19896f58dd5b17b6652', // libWWW 5.805
-'1d38e98da2e7509bb37d14989560800f', // libWWW 5.810
-'a029b4d65c51fcd4d67551c0ae97f529', // libWWW 5.811
-'95dde41a36a4c266b9bc520a9d4a8f1f', // libWWW 5.812
-'bfe5caacf3af775ccc94e927a5737372', // libWWW 5.813
-'e917d52c6b22468b1db1b27bfa4062b4', // libWWW 5.814
-'9405658d078823e6df4c8429ea72be46', // libWWW 5.816
-'5654842294d6f200197b6f4d73f39743', // libWWW 5.819
-'7bd5d06c1c4905e13a94c5dffcb3d55f', // libWWW 5.820
-'46b9d16c1ebc9cb234f8d47929ff9390', // libWWW 5.822
-'da24c0264d4d16452c89d130d981eaed', // libWWW 5.823
-'49a2baabfc2a9ed50086f75b4dda5a0b', // libWWW 5.825
-'07c84c7364627aa6477de824d6faf06d', // libWWW 5.826
-'f93f7902bf8d9dfee536e5c8c29e8fc0', // libWWW 5.827
-'c5e51aa28d70b9c5ed76d2c48f3a2e6e', // libWWW 5.829
-'6df364481412ce3c51b624f39d68dae5', // libWWW 5.830
-'63fe534afc8cfc5afb0c90c40619dafa', // libWWW 5.831
-'0b4741579b71d0108e950fbd0aee0cf4', // libWWW 5.832
-'ca6b56b9244a2201fedad435c76333c2', // libWWW 5.833
-'953a6b376f8c3cf19d6a99cd52f933bc', // libWWW 5.834
-'10cabc19da6511f5655f29c4aa871d85', // libWWW 5.836
-'4c075896ef53d0ed43f0a73606e4bb99', // libWWW 5.837
-// Java (text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2)
-'513b66a05ab4f042df726ddf252287ad', // Java/1.4.1_01
-'013c9e2e72d01a71528ea3e5828287f0', // Java/1.4.1_04
-'e89cb5d761fd739e0ce7a50e78c7fe48', // Java/1.4.2_07
-'9bb1516b745d69e208c52aeb1eb86550', // Java/1.5.0
-'b9d80793083ab72eecb293c49a4e97be', // Java/1.5.0_04
-'78d335088097bc4a390e84f287230480', // Java/1.5.0_05
-'0d360766d1b65022c2fad9a8e1017a3b', // Java/1.5.0_08
-'c7619398ca9cc62676bc22470b30e292', // Java/1.5.0_09
-'935ddbfef63f064602c28059b71e4f48', // Java/1.5.0_11
-'5303f135ebdd3e4a13e2c018681db268', // Java/1.5.0_12
-'c06ed801086df06f47d2e59a72475b50', // Java/1.5.0_15
-'589908d6348c10b42e0ec53f35a6b7e0', // Java/1.5.0_17
-'fa1d0fa9804e415239b734d215563a0d', // Java/1.6.0-rc
-'07bebae5fabaf4fe78686e0333bda69b', // Java/1.6.0
-'ecc03938cc08478c23e6fe702ae7b715', // Java/1.6.0_0
-'84b593f1747616af0c09232b7f7435e8', // Java/1.6.0_02
-'dcf79fc274f3da000292130426613878', // Java/1.6.0_04
-'c100a6673ba6f6bc15df8ac130939659', // Java/1.6.0_05
-'917375f84c04b9515fee277caa61a1c9', // Java/1.6.0_06
-'5aa8fd37461acc8b03fd6c1c59f45671', // Java/1.6.0_07
-'9832958bd7e3208b73dda84c05055e1f', // Java/1.6.0_10
-'7611f5198af4e6cb85ea0edaa1144c31', // Java/1.6.0_11
-'f53bff6acc2e26e7b78da6831eb467f0', // Java/1.6.0_12
-'2a528f5db7431cd4e2904a3a16ad6806', // Java/1.6.0_13
-'aa8ba6fd98fd9085ec08ede5cd67b941', // Java/1.6.0_14
-'29c425f154b362acd18fdd54d58cd82c', // Java/1.6.0_15
-'28a71f390ac85707e2f71fda43de578a', // Java/1.6.0_16
-'5416d4958dd6569e17f2269de5f64f46', // Java/1.6.0_17
-'b1844cc5196d7f0642a7f390e2d028f7', // Java/1.6.0_18
-'4616e11d99bdf4cdf877be2b67cb61c2', // Java/1.6.0_19
-'cd0e52f56c70ca6b149c9d41af4f698b', // Java/1.6.0_20
-'7b8a8409e605ab281c8efc7c4366fd02', // Java/1.6.0_21
-'19bce80c4af0e5cae656fff133f7902a', // Java/1.6.0_22
-'eb7dd1e8517441fef20e59bdf8931d98', // Java/1.6.0_23
-'8846d49eacd2c04e97ff0f4731688905', // Java/1.6.0_24
-'519111e4f94b56911278c4c92871af6e', // Java/1.6.0_26
-'3d7fc952c670073d35fea939c55ba358', // Java/1.6.0_31
-'615f3cb1f1a256d34e0c99cd389bb784', // Java/1.7.0-ea
-// Various
-'69c914f8638b73983cc50aaad91257f1', // Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-// Others - 2014
-'f9c61cb194257b177a925d8aab6ada63', //  LD - Windows XP    - Chrome 28.0.1500.72
-'3ac5bba2e2cf6d310d25a19479280dbb', //  LD - Windows XP    - Firefox 21.0
-'2c8196fa8d645a5e99ba1444d84f0a34', //  LD - Windows 7     - Chrome 30.0.1599.101
-'4ea4e26e6fcf88e199474473ff352939', //  LD - Windows 7     - Chrome 27.0.1453.116
-'3947d1e38b8fbd1ae8cdfc3bb625ec00', //  LD - Windows XP    - Firefox 13.0.1
-'f7d86435af5ea2dd384614b7b76dfcae', //  LD - MacOS X 10.8  - Firefox 22.0
-'14b7995ea54da44f7b7501dcdb4c8bf3', //  LD - MacOS X 10.6  - Safari 5.1.9
-'719c6acf37ecf6590261f7bc03291792', //  LD - MacOS X 10.8  - Firefox 21.0
+'ad016033139201d6146bd0097940d3d6',
+'466508a668ea2e3bba9c26a80c7b0c0f',
+'9c9b783c4f1d6a7ec658a50865877ff8',
+'a09b8a9d4adcd428c1f7abace41b2b02',
+'220e38bf67ff30f191ad2d0518fc6781',
+'0ccf1863dfbeca4f483cc44539b0de54',
+'d1d067615719d3073d8c15ecb0fc5c50',
+'a48037dbc35a86f887fbad0e9792e294',
+'329d659670df41f1b8dacfa1f66bb95f',
+'43ba32751f1631cd99dff0c0af01204c',
+'5534521824886c43d0b930c7995c25d9',
+'645e68af6ae0263c2c3d5722d2e6aba0',
+'6f5aa9d9c079116699b3c96118906830',
+'abf4a3969289075f54d9d5d1d13300fe',
+'f0edf53304d0933dc313dcbf02cbf591',
+'61b49157b324af3b496c40334ce6e440',
+'f4d5eb31556e438592046962e8ca794b',
+'db34e43874a9b4e17816bc3413382a70',
+'c8a118e18608cf1acb7a868ac174ff1f',
+'2047110cf8fa3ac9830c1d73566408ec',
+'2a1ecf6e572b1957c23d07440f05b27f',
+'e0f07bc6782c19feaf5fb81d2896d1e4',
+'31f8373f211d3573ea8201b65025a11e',
+'46fdde05214d71ff30ad4fa1eee21cf9',
+'3ac5bba2e2cf6d310d25a19479280dbb',
+'462cfac37996d433a7d612dfc99f8d02',
+'a3f1e2211e71a917ddaebadc89187ca8',
+'f5ac43818fe68a130670c42e2d8fedbd',
+'3947d1e38b8fbd1ae8cdfc3bb625ec00',
+'0f0499e4cc11ebc1cf3575f9a81ffddb',
+'da7310fad912a22b9e622ea97f5036aa',
+'abc62dbc4e15d85718e190c6a4a7acc8',
+'9eb627c0e8fadf681e9dfb4a8c80152e',
+'31b4bfb60026fcdc1804960026b4c12b',
+'fcf33778d2ad229eb204fc8c18cc46be',
+'80e736b15a7c403f0c633e59a6314720',
+'d9fa4bd5e22e793b653e6e53cbe69530',
+'e7cbaa6f06b73a0fc4ca704909922670',
+'a69a68217bd79e86e7ab5df12e7355b8',
+'137b0aef71660cfe8e905ee84407e33e',
+'c7e8b7815e989dd9563fd1088d23951f',
+'aa7493eaad9d628dee3301ed14a079f9',
+'e41356f1933516c47de7cedd4c053996',
+'5fd9319a3b16317172587b7474093bfd',
+'4a0164b7d4e67eadb11d46cd47e7f122',
+'c4781ff4ec680a527474e1388b175916',
+'2c4c87ef265fe04140dad11bbe949b85',
+'e5131cb6c6f263e2a3ce8620f3d38a29',
+'23aeab4f17c24a30120d0991b7f22d8f',
+'e780737f703bf306bc0a4dfaa5b07abc',
+'f34777092c40cecfc01ae5f89a315158',
+'736bc6192dabbc851a62fdf05baa39d1',
+'2de7680266211c9e9e92f355daae2c49',
+'b21644385835a7d3abdc4cf364ebcc47',
+'6039874f17b5b443db725f0a84884ecb',
+'a5f4962cca5ab013f7eae176bf65e914',
+'8c95161149ddc4b60ffbc7a1ab562587',
+'f3063200dc8e9f23df6a6f7a254fc671',
+'94ca318d0ec0fafd08836ff8ef6d901e',
+'ae517d8746c886d5cd09e25ee9c99112',
+'bfe07d42f4c5605104ea7e3a09557570',
+'08ba5e280e402c82f2e1e8a29c5f1560',
+'8f48954acd7687fdad568f440fed7f78',
+'966a955680c481ccbe26ed8a43ee2b82',
+'438c0b38398d3b5f27c49d234c6bdc32',
+'353ca28ee918567d9162c6ff81cd4083',
+'56cc6dad0a1610ab5685441b7b538709',
+'f8efac3da1b4cfa33ee53b33ddf554a2',
+'9b79a7bfe8addc6d6449868d06198dae',
+'24f7c9985ce29e7862ec6974b6d721fa',
+'a5387533276cc409af7944441b2b1eb9',
+'7fd8bccfde99ea8a552ccf4a26d8c791',
+'09ffc45ea2867780e73169012813cc26',
+'f19d17e25ebadd19a02a5f1e3feed763',
+'d1caf3c96696b38474b29e266a3244c7',
+'2f05ea07cca1e662c4d8e7f1b6b5f9c8',
+'7c84842cb478e6006fa610908a1cdb00',
+'c2834132bda25cf58f6f0a29bb90aea2',
+'6439d6edf6288077e395dcec759462e8',
+'99ceed9116ad1a6c35172c5aa0ed67f2',
+'67a0d837f39e79e9ea3c049e877b0730',
+'50a7d1dbc43d9b31137efe3a007763c3',
+'79bb0fc6f0d89eaa9f9e7ea645b040ef',
+'ffc4a5b3b9d8cd1fcc5aba9dbbea2403',
+'e38fa6df9701f8fa6e4cd782daf5499a',
+'1e48544bbdbcba61b6a1dde44e5adfb5',
+'f06130b4b2d313a57131c873f14f15e3',
+'0ea5c4656be40c1b209522ae17538597',
+'cb05cbf1f090755239cfc48c61f22cd0',
+'84fa2f34935e40f6aadc05ed4dc7c895',
+'f90aecd2110c8287656ae8e57b3a023b',
+'989ee823709332b09fa5726d1f49bb5b',
+'256f1ddc6d263f4f81498aff04748d30',
+'269ea7a24f30d55248fc832e0bf40530',
+'43f5ee2da42447e5c61cff4a8503b2ee',
+'bb9a1a98c470a35f421da5b0244e41b8',
+'d2dd2bef0f4433bef639df6035113cdf',
+'32e3dc2d8b0576fd64647943c0a3b05b',
+'082cc1ff3cbc5a53015177bf6f3bffbd',
+'581ecbba3a09e0a825fbe7c42f263aa8',
+'fbf1b8ad12432d2324764c1508ee3bcb',
+'46f4ee5912b18c0baaba72b83946e149',
+'9cac0c1ed59549e9ed7f0ecb7e23dc05',
+'a7db17dd8584fd0b2a34f240812fd60b',
+'db420fa821c1dc4717cd93f3dbcec7e7',
+'18079f3cc7e80a9227783d69e77d85a4',
+'7582048d879bc5881b5404fa761abd23',
+'a2cd57e0c9b0a68ec853760bb3edb567',
+'643d7beb422a8f5fc70d9494e66e844e',
+'26fb9d78388ec77bbe2ca0e7e7e94f3e',
+'cc4d219436146bae9c50987d664defb3',
+'0e0dc92e181d429d94f67e2dcc5e51d8',
+'8c288aeacdf8247a79cbf548d1d49ad5',
+'f1167a377368905ea58d2e184cf1649e',
+'872588a365dd20e864f04676ef3e5d4d',
 );
 return $banned_fingerprints;
 ?>
