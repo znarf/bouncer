@@ -2382,8 +2382,7 @@ $robot = array(
     "rule" => array (
       "Googl(e|ebot)(-Image)?/([0-9.]{1,10})" => "\\3",
       "Googl(e|ebot)(-Image)?/" => "",
-      "^gsa-crawler" => "",
-      "Google Web Preview" => ""
+      "^gsa-crawler" => ""
     ),
     "uri" => "http://www.google.com/"
   ),
@@ -2920,15 +2919,6 @@ $robot = array(
       "^IP\*Works\! V([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.nsoftware.com/ipworks/"
-  ),
-  "irca" => array(
-    "icon" => "robot",
-    "title" => "Novell iChain Cool Solutions caching",
-    "rule" => array(
-      "^ICRA_(label_generator|Semantic_spider)[ /]([0-9.]{1,10})" => "\\2",
-      "^Mozilla[/ ]([0-9.]{1,10})[/ ]\(compatible[ ;]*ICS" => "\\1"
-    ),
-    "uri" => "http://www.icra.org"
   ),
   "irvine" => array(
     "icon" => "robot",
