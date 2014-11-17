@@ -1,42 +1,73 @@
 <?php
 $browsers_fingerprints = array(
-
-/* Explorer 9.0 - Vista */
-'1564cc2d7fa2cf04721c633ba7ba3a42', // Windows Vista - fr - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0)
-
-'a6c10274d79fb493f3e9dfdb8970743b', // Windows Vista - Explorer 9.0 - US
-'509d1ccd064f99c2245b0b50815a5dc8', // Windows Vista - Explorer 9.0 - DE
-
-/* Explorer 9.0 - Windows 7 */
-'5bef47aff11ea6110fec2c354ca410d5', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
-'dbd9a631a1e2f2d844443227525cc16d', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-'f93edb840ce696173400b6c000a42d73', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; NP06)
-'6a2b3b35c7f374f1b74714228059b0c3', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MAAU)
-'6ce4a3912e8c27ad7c30cb9c720eced2', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MATM)
-'d15c6520b93b322cf72cb925c6459747', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; BOIE9;FRFR)
-'6592e13ae4b7200f5e631a1b586e7b96', // Windows 7 - fr-FR - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
-
-'7dc35fedf56e97fe0f5ea51a0fbf4900', // Windows 7 - fr-BE - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-
-'2e97f5beccbacd09f8e0714386e85641', // Windows 7 - en-US - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-'000a96fc69db98793f4162c222529cfe', // Windows 7 - en-US - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
-
-'21bf08d28f4e903441509773248c2088', // Windows 7 - en-GB - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-
-'89a70967bf2b2f1236183bdcaf7b3fd9', // Windows 7 - nl-BE - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-
-'a7a949687446980c49edcd2ef52d1806', // Windows 7 - it-IT - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-
-'83a988ca1558bbba4347c225825027d9', // Windows 7 - en-AU - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-
-'6a02d02d3496d9037b23783a010672d1', // Windows 7 - de-DE - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-
-'4634ec6ca71536a91466b47cdbb897b5', // Windows 7 - Explorer 9.0 - US
-'43c2f75d73e3bdf7ccd720bb21586b01', // Windows 7 64 - Explorer 9.0 - CH
-'3ff41e09884b8fa54f00bb3f59c74f90', // Windows 7 64 - Explorer 9.0 - KR
-'c1adacb6bb9d7dff2dc194078655d7f0', // Windows 7 64 - Explorer 9.0 - US
-'b8614b858feb2449013e17f52613f249', // Windows 7 64 - Explorer 9.0 - CA
-
+'76b0e172dbb19e03fcd828bbe98ac086',
+'7f9c502be888f29d5f8092607985294f',
+'2b0f764ededa964185b03c519b400293',
+'dbd9a631a1e2f2d844443227525cc16d',
+'df34b3d5753865bae7dc73bf57c4c57d',
+'481c77782eef7df411c1f854c80f77a1',
+'1564cc2d7fa2cf04721c633ba7ba3a42',
+'8b005a39ce7b1cef729f555bf653f86c',
+'91ffdc90fa992ec1363b098653236d75',
+'da5ae734ecc525af1f65128dea888c61',
+'e1008cb048baaac8722b05d3ac83d78c',
+'2e97f5beccbacd09f8e0714386e85641',
+'5bef47aff11ea6110fec2c354ca410d5',
+'f4473ce05c83b01c9096d361239fbf03',
+'3536991b098d7f34c36a871d557c6fcc',
+'3bf1707cf65784823a7ec4033a3761e2',
+'874e22c0af0c2c7def47bda69cefdd4c',
+'f9208794c24a553e44a104dfd0859d42',
+'b8f8e579950306d4a56a16a6747f5293',
+'55312df5f1e5f7b5cf73a55435444d4b',
+'1b1b329dfd76ae501744af438b362a43',
+'b286b5ce2dff8a92e458c0b710279692',
+'afb97a0ae9fbc0aacaa6f7646cfa1506',
+'4634ec6ca71536a91466b47cdbb897b5',
+'e4003bee4bb7290505b4e8a2c7ef3f44',
+'21bf08d28f4e903441509773248c2088',
+'88e40d89d25be40a1ac8f2814ca4473d',
+'0d45d504cd3e5040c5a2f134ff99e76c',
+'c76ba382d5daa73a8c31c71acd073c75',
+'387e671bba897203f894d7cfe57eed28',
+'cde405180acd58fc66534bc8638e2247',
+'cf9de2f3869c34286d1df859fdaf72f0',
+'553473b8a2ae49c0d31932c337cd8548',
+'6cb2d05fbb190fff38e195249680cbe9',
+'e141077d28a229c8b1d4ee5f94aee427',
+'303d565a34ceeec6a98b492c691378ad',
+'d2f96cf7be687b9868aa5e75f5229c0b',
+'14ac00f4117cf6b683642fe471ffa256',
+'c221bdfa63fe51e899f8ab855104b930',
+'7dc35fedf56e97fe0f5ea51a0fbf4900',
+'da1b51a1bc42285cb61c5ea849473d74',
+'2e19ba6d5ab887ac7cccdec59c937fce',
+'6a02d02d3496d9037b23783a010672d1',
+'4e891f551facd5bb7ffec81b4e9e2ea9',
+'ddb16b9007d25a5944c41f802d7642b6',
+'e47b926b39412379c18b07e168a26150',
+'aa024656d0b4d4605f4871fedcbe1869',
+'e2da8d8c406072986878cdd4508e4377',
+'4cf5c836f7574664b248f6634962f6b2',
+'f178302c33ff1feca045e0aaa704c93b',
+'545d0711f4d59381cce25a6e896ba8fe',
+'2d50b7d4c1a69ab6314a0d3a58cdf1e6',
+'57fae59fc1fba2b5b1e19ed895bd610a',
+'7ea65407cda00259b621b55c39224ec8',
+'f50430f23ca159c42673b11ed66a7bed',
+'4c95d2b91807b4befc470917e7e79857',
+'bb02acfcd964d55ea968013e831e7806',
+'dde4c7f0dd5bce4ba9b1c7d20d49392a',
+'09ed79773bd20f0ff5078a3c739238ab',
+'37868d7398631472b461ce6570ff5cc8',
+'308b5f99fc4b48553fcdbb94b6f05f02',
+'c3b82b50fb0e47a90ba5df555de8f168',
+'a8dce979f529de892c6e90c997b008d5',
+'be1d9675128573456f71e2caa2b97287',
+'03a9a102f106c8d435509e0635b2c622',
+'f394505a0d1cca474c38305b03fcfa8b',
+'1f2ebd6a675f9666367b2ef517534070',
+'884c40444041334f75487c6d569c6461',
 );
 return $browsers_fingerprints;
 ?>

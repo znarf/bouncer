@@ -25,18 +25,15 @@ class Bouncer_Rules_Basic
         $version = (int)$version;
 
         // plus
-             if ($name == 'safari'   && $version >= 5)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'chrome'   && $version >= 16)   $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'firefox'  && $version >= 9)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'explorer' && $version >= 8)    $scores[] = array(1, 'Recent Browser');
-        else if ($name == 'opera'    && $version >= 11)   $scores[] = array(1, 'Recent Browser');
+             if ($name == 'safari'   && $version >= 7)    $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'chrome'   && $version >= 37)   $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'firefox'  && $version >= 31)   $scores[] = array(1, 'Recent Browser');
+        else if ($name == 'explorer' && $version >= 9)    $scores[] = array(1, 'Recent Browser');
 
         // minus
-             if ($name == 'chrome'    && $version <= 11)  $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'firefox'   && $version <= 2)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'explorer'  && $version <= 6)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'opera'     && $version <= 9)   $scores[] = array(-2.5, 'Old Browser');
-        else if ($name == 'konqueror' && $version <= 3)   $scores[] = array(-2.5, 'Old Browser');
+             if ($name == 'chrome'    && $version <= 28)  $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'firefox'   && $version <= 21)  $scores[] = array(-2.5, 'Old Browser');
+        else if ($name == 'explorer'  && $version <= 7)   $scores[] = array(-2.5, 'Old Browser');
         else if ($name == 'netscape')                     $scores[] = array(-2.5, 'Old Browser');
         else if ($name == 'mozilla')                      $scores[] = array(-2.5, 'Old Browser');
 
@@ -56,9 +53,10 @@ class Bouncer_Rules_Basic
         $os_version = $identity['os'][1];
 
         // plus
-        if ($os_name == 'macosx' && strpos($os_version, '10.6') === 0)     $scores[] = array(1, 'Recent OS');
-        elseif ($os_name == 'macosx' && strpos($os_version, '10.7') === 0) $scores[] = array(1, 'Recent OS');
-        else if ($os_name == 'windows7')                                   $scores[] = array(1, 'Recent OS');
+             if ($os_name == 'macosx' && strpos($os_version, '10.10') === 0) $scores[] = array(1, 'Recent OS');
+        else if ($os_name == 'macosx' && strpos($os_version, '10.9')  === 0) $scores[] = array(1, 'Recent OS');
+        else if ($os_name == 'windows7')                                     $scores[] = array(1, 'Recent OS');
+        else if ($os_name == 'windows8')                                     $scores[] = array(1, 'Recent OS');
 
         // minus
         else if ($os_name == 'windows95') $scores[] = array(-2.5, 'Old OS');

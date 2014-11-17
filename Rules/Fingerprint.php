@@ -31,12 +31,6 @@ class Bouncer_Rules_Fingerprint
             $scores[] = array(-10, 'Banned Fingerprint');
         } else if (in_array($fingerprint, self::get('suspicious'))) {
             $scores[] = array(-5, 'Suspicious Fingerprint');
-        } else if (in_array($fingerprint, self::get('botnet'))) {
-            if (in_array($name, Bouncer::$known_browsers)) {
-                $scores[] = array(-7.5, 'Botnet Fingerprint');
-            } else {
-                $scores[] = array(-10, 'Botnet Fingerprint');
-            }
         }
 
         return $scores;
@@ -59,11 +53,6 @@ class Bouncer_Rules_Fingerprint
             return 'banned';
         } elseif (in_array($fingerprint, self::get('suspicious'))) {
             return 'suspicious';
-        } elseif (in_array($fingerprint, self::get('botnet'))) {
-            return 'botnet';
-
-        } elseif (in_array($fingerprint, self::get('browser.safari'))) {
-            return 'known';
         }
 
         return '';

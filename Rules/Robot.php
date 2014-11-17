@@ -24,7 +24,7 @@ class Bouncer_Rules_Robot
         switch ($identity['name']) {
             // top crawlers
             case 'google':
-                $score += strpos($host, 'googlebot.com') === false ? -5 : 1;
+                $score += (strpos($addr, '66.249.') !== 0 && strpos($host, 'googlebot.com') === false) ? -5 : 1;
                 $score += empty($headers['From']) ? -5 : 1;
                 break;
             case 'mediapartners':
@@ -42,8 +42,7 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'msn.com') === false && empty($headers['From']) ? -5 : 1;
                 break;
             case 'voila':
-                $score += strpos($host, 'fti.net') === false && strpos($host, 'voilabot.orange.fr') === false ? -5 : 2.5;
-                $score += $identity['fingerprint'] != '6c0b28de5758f39928fa7a0075ff8786' ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '55f9389291d8227989a305506ccf0db4' ? -5 : 2.5;
                 break;
             case 'orange':
                 $score += strpos($host, 'fti.net') === false ? -5 : 2.5;
@@ -110,12 +109,11 @@ class Bouncer_Rules_Robot
                 $score += $identity['extension'] != 'jp' ? -5 : 1;
                 break;
             case 'dotbot':
-                $score += strpos($host, 'dotnetdotcom.org') === false ? -4 : 1;
-                $score += $identity['extension'] != 'us' ? -3 : 1;
-                $score += $identity['fingerprint'] != '1ba3e09e05c3a64578777e53d4f20a3c' ? -3 : 1;
+                $score += strpos($addr, '208.115.') === false ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '0802c2602de1cda9a0afd2ec067177a6' ? -3 : 1;
                 break;
             case 'sogou':
-                $score += $identity['fingerprint'] != 'a86f74048055ff8ea8a8570615c478f4' && // Sogou web spider/4.0
+                $score += $identity['fingerprint'] != 'f5275c07637802a7c156e09bdcabc945' && // Sogou web spider/4.0
                           $identity['fingerprint'] != '2f1bb46f656b56cf3ecfeb470e2edf9f' && // Sogou Pic Spider/3.0
                           $identity['fingerprint'] != 'a6c9efa47da38d7946b4bb40d81f66ee' ? -5 : 2.5;
                 $score += $identity['extension'] != 'cn' ? -5 : 2.5;
@@ -153,6 +151,7 @@ class Bouncer_Rules_Robot
                 break;
             case 'yandex':
                 $score += strpos($host, 'yandex') === false ? -5 : 2.5;
+                $score += empty($headers['From']) ? -5 : 2.5;
                 break;
             case 'friendfeed':
                 $score += strpos($host, 'facebook.com') === false &&
@@ -188,7 +187,7 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'archive.org') === false ? -5 : 2.5;
                 break;
             case 'ccbot':
-                $score += (strpos($addr, '38.107.191.') !== 0 && strpos($addr, '38.107.179.') !== 0) ? -5 : 2.5;
+                $score += (strpos($addr, '54.') !== 0 && strpos($host, 'amazonaws.com') === false) ? -5 : 2.5;
                 break;
             case 'postrank':
                 $score += strpos($host, 'amazonaws.com') === false ? -5 : 2.5;
@@ -244,12 +243,13 @@ class Bouncer_Rules_Robot
             case 'facebook':
                 $score += (strpos($host, 'tfbnw.net') === false
                         && strpos($addr, '173.252.') !== 0
-                        && strpos($addr, '66.220.') !== 0
-                        && strpos($addr, '69.63.')  !== 0
-                        && strpos($addr, '69.171.') !== 0) ? -5 : 1;
+                        && strpos($addr, '31.13.')   !== 0
+                        && strpos($addr, '66.220.')  !== 0
+                        && strpos($addr, '69.63.')   !== 0
+                        && strpos($addr, '69.171.')  !== 0) ? -5 : 1;
                 break;
             case 'bloglovin':
-                $score += strpos($addr, '83.140.155.') !== 0 ? -5 : 2.5;
+                $score += strpos($addr, '194.0.59.') !== 0 ? -5 : 2.5;
                 break;
             case 'yahoo-china':
                 $score += strpos($host, 'aliyun.com') === false && strpos($host, 'yahoo.net') === false ? -5 : 2.5;
@@ -261,18 +261,27 @@ class Bouncer_Rules_Robot
                 $score += strpos($host, 'amazonaws.com') === false && strpos($host, 'linode.com') === false ? -5 : 2.5;
                 break;
             case 'ezooms':
-                $score += (strpos($addr, '208.115.111.') !== 0 && strpos($addr, '208.115.113.') !== 0) ? -5 : 2.5;
+                $score += (strpos($addr, '208.115.111.') !== 0
+                        && strpos($addr, '208.115.113.') !== 0) ? -5 : 2.5;
                 $score += $identity['fingerprint'] != '7be77a95f238abe91d1891bbe787fdb3' ? -5 : 2.5;
                 break;
             case 'ahrefs':
-                $score += (strpos($addr, '213.186.') !== 0 && strpos($addr, '212.113.') !== 0) ? -5 : 2.5;
-                $score += $identity['fingerprint'] != '6dfe44b751fb6b4ebde0400cb073bac1' &&
+                $score += (strpos($addr, '213.186.') !== 0
+                        && strpos($addr, '212.113.') !== 0
+                        && strpos($host, 'ahrefs.com') === false) ? -5 : 2.5;
+                $score += $identity['fingerprint'] != 'aab753925158b950fff4399f3455feec' &&
                           $identity['fingerprint'] != '9ea719f12db582a62aac760bb7225865' &&
                           $identity['fingerprint'] != '6f5f852fb824447f679c2a05e3221b28' ? -5 : 2.5;
                 break;
             case '360spider':
-                $score += (strpos($addr, '182.118.') !== 0) ? -5 : 2.5;
-                $score += $identity['fingerprint'] != '8d0aa0ff2cac069f6eb6167071760a95' ? -5 : 2.5;
+                $score += (strpos($addr, '180.153.') !== 0
+                        && strpos($addr, '101.226.') !== 0
+                        && strpos($addr, '182.118.') !== 0) ? -5 : 2.5;
+                $score += $identity['fingerprint'] != '00ff5c73057a02b4ed80ab70e3a5cabd' &&
+                          $identity['fingerprint'] != 'af4fdd739b9a32a2cf2f838f2d655708' ? -5 : 2.5;
+                break;
+            case 'pingdom':
+                $score += strpos($host, 'pingdom.com') === false ? -5 : 2.5;
                 break;
         }
 

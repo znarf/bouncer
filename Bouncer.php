@@ -95,7 +95,7 @@ class Bouncer
       return true;
     }
 
-    protected static function getAddr()
+    public static function getAddr()
     {
         $addr = $_SERVER['REMOTE_ADDR'];
 
@@ -124,7 +124,7 @@ class Bouncer
             strpos($addr, '80.239')  === 0 ||
             strpos($addr, '82.145')  === 0 ||
             strpos($addr, '94.246')  === 0 ||
-            strpos($addr, '141.0')  === 0  ||
+            strpos($addr, '141.0')   === 0 ||
             strpos($addr, '195.189') === 0 ||
             strpos($addr, '217.212') === 0) {
                 if (!empty($forwarded_for)) {
@@ -237,7 +237,7 @@ class Bouncer
         return $ipInfos;
     }
 
-    protected static function getHeaders($keys = array())
+    public static function getHeaders($keys = array())
     {
         if (!is_callable('getallheaders')) {
             // from http://www.php.net/manual/en/function.getallheaders.php
@@ -325,16 +325,19 @@ class Bouncer
                 self::$_throttle = $throttle;
                 usleep($throttle);
                 static::unavailable();
+                break;
             case self::SUSPICIOUS:
                 $throttle = rand(500*1000, 2000*1000);
                 self::$_throttle = $throttle;
                 usleep($throttle);
+                break;
             case self::NEUTRAL:
                 if ($identity['type'] == Bouncer::ROBOT) {
                     $throttle = rand(250*1000, 1000*1000);
                     self::$_throttle = $throttle;
                     usleep($throttle);
                 }
+                break;
             case self::NICE:
             default:
                 break;

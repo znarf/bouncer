@@ -3,7 +3,7 @@
 class Bouncer_Rules_Httpbl
 {
 
-    protected static $max_age = 7;
+    protected static $max_age = 90;
 
     protected static $api_key = '';
 

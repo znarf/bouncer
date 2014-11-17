@@ -1,9 +1,9 @@
 <?php
 /* This file is part of BBClone (A PHP based Web Counter on Steroids)
  *
- * CVS FILE $Id: os.php,v 1.110 2010/12/31 23:00:28 joku Exp $
+ * SVN FILE $Id: os.php 63 2013-12-05 15:19:31Z joku $
  *
- * Copyright (C) 2001-2011, the BBClone Team (see doc/authors.txt for details)
+ * Copyright (C) 2001-2014, the BBClone Team (see doc/authors.txt for details)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -49,6 +49,14 @@ $os = array(
       "Android" => ""
     ),
     "uri" => "http://www.android.com/"
+  ),
+  "aptosid" => array(
+	"icon" => "aptosid",
+	"title" => "aptosid Linux",
+	"rule" => array(
+	  "aptosid" => ""
+	),
+	"uri" => "http://aptosid.com/"
   ),
   "arch" => array(
     "icon" => "arch",
@@ -97,6 +105,14 @@ $os = array(
       "bluecoat drtr" => "\\1"
     ),
     "uri" => ""
+  ),
+  "brew" => array(
+    "icon" => "brewmp",
+    "title" => "Brew MP",
+    "rule" => array(
+      "BREW[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.brewmp.com/"
   ),
   "centos" => array(
     "icon" => "centos",
@@ -264,6 +280,15 @@ $os = array(
       "Linux[ /\-]([0-9.-]{1,10}).mdv" => "\\1"
     ),
     "uri" => "http://www.mandriva.com/"
+  ),
+
+  "minix" => array(
+	"icon" => "minix",
+	"title" => "Minix",
+	"rule" => array(
+	  "Minix[/ ]?([0-9.]{1,10})?" => "\\1"
+	),
+	"uri" => "http://www.minix3.org/"
   ),
   "mint" => array(
     "icon" => "mint",
@@ -476,6 +501,14 @@ $os = array(
     ),
     "uri" => "http://www.wii.com/"
   ),
+  "webos" => array(
+    "icon" => "palm",
+    "title" => "web OS",
+    "rule" => array(
+      "webOS[ /]?([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.palm.com/"
+  ),
   "windowsxp64" => array(
     "icon" => "windowsxp",
     "title" => "Windows XP (64-bit)",
@@ -554,12 +587,23 @@ $os = array(
     ),
     "uri" => "http://www.microsoft.com/windows/windows-7/"
   ),
+  "windowsrt" => array(
+	"icon" => "windows8",
+	"title" => "Windows RT",
+	"rule" => array(
+	  "wi(n|ndows)[ \-]?nt[ /]?6\.2; ARM" => "",
+	  "wi(n|ndows)[ \-]?nt[ /]?6\.3; ARM" => ""
+	),
+	"uri" => "http://www.microsoft.com/windows/"
+  ),
   "windows8" => array(
-    "icon" => "windows7",
-    "title" => "Windows 8",
-    "rule" => array(
-      "wi(n|ndows)[ \-]?nt[ /]?6\.2" => ""
-    )
+	"icon" => "windows8",
+	"title" => "Windows 8",
+	"rule" => array(
+	  "wi(n|ndows)[ \-]?nt[ /]?6\.2" => "",
+	  "wi(n|ndows)[ \-]?nt[ /]?6\.3" => ""
+	),
+	"uri" => "http://www.microsoft.com/windows/"
   ),
   "winphone" => array(
     "icon" => "windows7",
@@ -568,16 +612,6 @@ $os = array(
       "Windows Phone OS ([0-9.]{1,10})" => "\\1"
     )
   ),
-  /*
-  "windowsmc" => array(
-    "icon" => "windowsxp",
-    "title" => "Windows Media Center",
-    "rule" => array(
-      "Media Center PC[ /]([0-9.]{1,10})" => "\\1"
-    ),
-    "uri" => "http://www.microsoft.com/windowsxp/mediacenter/"
-  ),
-  */
   "windowsxp" => array(
     "icon" => "windowsxp",
     "title" => "Windows XP",

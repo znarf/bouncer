@@ -62,7 +62,10 @@ class Bouncer_Rules_Request
         // Content Type is surely not for GET ... moron!
         // Well, but some legitimate agents doesn't know that ...
         if (isset($headers['Content-Type']) && $request['method'] == 'GET') {
-            $scores[] = array(-2.5, 'Content-Type Header with a GET Request');
+            $scores[] = array(-5, 'Content-Type Header with a GET Request');
+        }
+        if (isset($headers['content-length']) && $request['method'] == 'GET') {
+            $scores[] = array(-5, 'content-length Header with a GET Request');
         }
 
         if ($identity['user_agent'] == 'Mozilla/5.0' && isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
