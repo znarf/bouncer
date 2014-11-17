@@ -53,11 +53,6 @@ class Bouncer_Rules_Fingerprint
             return 'banned';
         } elseif (in_array($fingerprint, self::get('suspicious'))) {
             return 'suspicious';
-        } elseif (in_array($fingerprint, self::get('botnet'))) {
-            return 'botnet';
-
-        } elseif (in_array($fingerprint, self::get('browser.safari'))) {
-            return 'known';
         }
 
         return '';
