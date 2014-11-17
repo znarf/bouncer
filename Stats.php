@@ -4,11 +4,11 @@ class Bouncer_Stats
 {
 
     protected static $_keys = array(
-      'id', 'fingerprint', 'time', 'hits', 'host', 'system', 'agent', 'referer', 'score'
+       'time', 'id', 'hits', 'host', 'fingerprint', 'system', 'agent', 'score'
     );
 
     protected static $_connection_keys = array(
-      'time', 'id', 'hits', 'host', 'system', 'agent', 'method', 'uri', 'code', 'size', 'memory', 'sql', 'nosql', 'exec_time'
+      'time', 'id', 'hits', 'host', 'system', 'agent', 'method', 'uri', 'code', 'memory', 'exec_time'
     );
 
     protected static $_namespace = '';
@@ -39,24 +39,6 @@ class Bouncer_Stats
         require dirname(__FILE__) . '/lib/os.php';
         require dirname(__FILE__) . '/lib/robot.php';
 
-        $browser["eyeem"] = array(
-          "icon" => "question",
-          "title" => "Eyeem",
-          "rule" => array(
-            "Eyeem[ /]([0-9.]{1,10})" => "\\1",
-            "EYEEM[ /]([0-9.]{1,10})" => "\\1",
-            "EYEEM" => "",
-          )
-        );
-
-        $robot["eyeemphpclient"] = array(
-          "icon" => "question",
-          "title" => "Eyeem PHP Client",
-          "rule" => array(
-            "Eyeem PHP Client" => "",
-          )
-        );
-
         self::$_browser = $browser;
         self::$_robot = $robot;
         self::$_os = $os;
@@ -83,7 +65,7 @@ class Bouncer_Stats
         } else if (isset($_GET['agent'])) {
             self::agent();
         } else {
-            self::connections();
+            self::agents();
         }
     }
 
@@ -173,14 +155,6 @@ class Bouncer_Stats
 
     public static function getConnectionValues($conn)
     {
-        if (is_string($conn)) {
-          $id = $conn;
-          if (!$conn = Bouncer::getLastAgentConnection($id, self::$_namespace)) {
-              return null;
-          }
-          $conn['id'] = $id;
-        }
-
         $connection_id = $conn['id'];
 
         $time = date("d/m/Y.H:i:s", $conn['time']);
@@ -197,9 +171,6 @@ class Bouncer_Stats
         $cookie = isset($conn['request']['headers']['Cookie']) ? 1 : 0;
         $status = isset($conn['result']) ? $conn['result'][0] : 'neutral';
         $score = isset($conn['result']) ? $conn['result'][1] : 0;
-
-        $sql = isset($conn['sql']) ? count($conn['sql']) : 0;
-        $nosql = isset($conn['nosql']) ? count($conn['nosql']) : 0;
 
         return get_defined_vars();
     }
@@ -280,7 +251,7 @@ class Bouncer_Stats
 
     public static function filterMatch($filters = array(), $values = array())
     {
-        $numericKeys = array('memory', 'size', 'exec_time', 'sql', 'nosql');
+        $numericKeys = array('memory', 'size', 'exec_time');
         $partialKeys = array('addr', 'host', 'referer', 'useragent', 'uri');
         foreach ($filters as $filter) {
             list($filterKey, $filterValue) = $filter;
@@ -320,7 +291,6 @@ class Bouncer_Stats
         $values = self::getBetterValues($values);
         extract($values);
 
-        // echo '<tr class="', $status, '">';
         echo '<tr class="status', substr($code, 0, 1), 'x ', $status, '">';
         foreach ($keys as $key) {
             if ($key == 'id') {
@@ -409,7 +379,10 @@ class Bouncer_Stats
          // Headers
          echo '<tr>';
          foreach (self::$_keys as $key) {
-             if ($key == 'fingerprint') {
+             if ($key == 'id') {
+                 echo '<th style="width:14px">', '', '</th>';
+                 echo '<th colspan="1">', 'Identity', '</th>';
+             } elseif ($key == 'fingerprint') {
                  echo '<th style="width:14px">', '', '</th>';
                  echo '<th colspan="3">', ucfirst($key), '</th>';
              } elseif ($key == 'host') {
@@ -650,6 +623,10 @@ class Bouncer_Stats
               continue;
           }
           $values = array_merge($connectionValues, $agentValues);
+          // Ignored IPs
+          if (in_array($values['addr'], self::$_ignore_ips)) {
+            continue;
+          }
           // Filters
           if (self::filterMatch($filters, $values)) {
              continue;
@@ -688,8 +665,6 @@ class Bouncer_Stats
             echo '<th>', 'Code', '</th>';
             echo '<th>', 'Exec Time', '</th>';
             echo '<th>', 'Memory', '</th>';
-            echo '<th>', 'Size', '</th>';
-            echo '<th>', 'Pid', '</th>';
         }
         echo '</tr>';
         foreach ($connections as $id => $connection) {
@@ -735,16 +710,6 @@ class Bouncer_Stats
                 } else {
                     echo '<td>', '</td>';
                 }
-                if (isset($connection['size'])) {
-                    echo '<td>' , round($connection['size']/1024, 2) . ' K', '</td>';
-                } else {
-                    echo '<td>', '</td>';
-                }
-                if (isset($connection['pid'])) {
-                    echo '<td>' , $connection['pid'], '</td>';
-                } else {
-                    echo '<td>', '</td>';
-                }
             }
             echo '</tr>';
         }
@@ -782,13 +747,6 @@ class Bouncer_Stats
                 foreach ($request[$G] as $key => $value) {
                     echo '<tr>', '<td>', $key, '</td>', '<td>', $value, '</td>', '</tr>';
                 }
-            }
-        }
-        if (!empty($request['FILES'])) {
-            foreach ($request['FILES'] as $value) {
-                echo '<tr>', '<td>', $time, '</td>', '<td>';
-                print_r($value);
-                echo '</td>', '</tr>';
             }
         }
         echo '<tr>', '<th>', 'Score', '</th>', '</tr>';
@@ -885,89 +843,6 @@ class Bouncer_Stats
             echo '</tr>';
         }
         echo '</table>';
-    }
-
-    public static function extract()
-    {
-        require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
-
-        $botnets = Bouncer_Rules_Fingerprint::get('botnet');
-
-        $agents = Bouncer::getAgentsIndex(self::$_namespace);
-
-        $fingerprints = array();
-
-        // Collect level 1 fingerprints
-        foreach ($agents as $id) {
-            $key = $_GET['extract'];
-            $identity = Bouncer::getIdentity($id);
-            $fg = $identity['fingerprint'];
-            if (strpos($identity['host'], $key) !== false) {
-                $fingerprints[] = $fg;
-            }
-        }
-        $fingerprints = array_unique($fingerprints);
-
-        $hosts = array();
-
-        // Collect level 1 hosts
-        foreach ($agents as $id) {
-            $identity = Bouncer::getIdentity($id);
-            $fg = $identity['fingerprint'];
-            $host = $identity['host'];
-            if (in_array($fg, $fingerprints)) {
-                if (empty($hosts[$host])) {
-                    $hosts[$host] = 1;
-                } else {
-                    $hosts[$host] ++;
-                }
-            }
-        }
-
-        $fingerprints2 = array();
-
-        // Collect level 2 fingerprints
-        foreach ($agents as $id) {
-            $identity = Bouncer::getIdentity($id);
-            $fg = $identity['fingerprint'];
-            $host = $identity['host'];
-            if (isset($hosts[$host])) {
-                 if (empty($fingerprints2[$fg])) {
-                     $fingerprints2[$fg] = 1;
-                 } else {
-                     $fingerprints2[$fg] ++;
-                 }
-             }
-        }
-
-        $fingerprints3 = array();
-
-        // Check Ambigous agents
-        foreach ($agents as $id) {
-            $identity = Bouncer::getIdentity($id);
-            $fg = $identity['fingerprint'];
-            $host = $identity['host'];
-            if (isset($fingerprints2[$fg]) && empty($hosts[$host]) ) {
-               if (empty($fingerprints3[$fg])) {
-                     $fingerprints3[$fg] = 1;
-                 } else {
-                     $fingerprints3[$fg] ++;
-                 }
-            }
-        }
-
-        ksort($fingerprints2);
-        arsort($fingerprints2);
-
-        foreach ($fingerprints2 as $value => $count) {
-            if (isset($fingerprints3[$value])) {
-                continue;
-            }
-            if (in_array($value, $botnets)) {
-                continue;
-            }
-            echo "\n'$value', // $count";
-        }
     }
 
     public static function css()

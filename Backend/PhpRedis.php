@@ -110,7 +110,14 @@ class Bouncer_Backend_PhpRedis
     public static function getConnectionsWithIndexKey($indexKey)
     {
         $keys = self::redis()->lRange($indexKey, 0, 10000);
-        return $keys ? $keys : array();
+        if (empty($keys)) {
+            return array();
+        }
+        $connections = array();
+        foreach ($keys as $key) {
+            $connections[$key] = self::get("connection-" . $key);
+        }
+        return $connections;
     }
 
     public static function indexConnection($key, $agent, $namespace = '')
@@ -150,14 +157,18 @@ class Bouncer_Backend_PhpRedis
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $key  = self::redis()->lGet($indexKey, 0);
-        return self::get("connection-" . $key);
+        $connection = self::get("connection-" . $key);
+        $connection['id'] = $key;
+        return $connection;
     }
 
     public static function getFirstAgentConnection($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $key  = self::redis()->lGet($indexKey, -1);
-        return self::get("connection-" . $key);
+        $connection = self::get("connection-" . $key);
+        $connection['id'] = $key;
+        return $connection;
     }
 
     public static function countAgentConnections($agent, $namespace = '')

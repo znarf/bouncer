@@ -553,7 +553,7 @@ class Bouncer
         self::$_connection['end'] = microtime(true);
         self::$_connection['exec_time'] = round(self::$_connection['end'] - self::$_connection['start'] - (self::$_throttle / 1000000), 3);
         self::$_connection['memory'] = memory_get_peak_usage();
-
+        self::$_connection['code'] = http_response_code();
 
         try {
           self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
