@@ -3,14 +3,14 @@
 class Bouncer
 {
 
-    const NICE = 'nice';
-    const NEUTRAL = 'neutral';
+    const NICE       = 'nice';
+    const NEUTRAL    = 'neutral';
     const SUSPICIOUS = 'suspicious';
-    const BAD = 'bad';
+    const BAD        = 'bad';
 
-    const ROBOT = 'robot';
-    const BROWSER = 'browser';
-    const UNKNOWN = 'unknown';
+    const ROBOT      = 'robot';
+    const BROWSER    = 'browser';
+    const UNKNOWN    = 'unknown';
 
     protected static $_prefix = '';
 
@@ -23,16 +23,30 @@ class Bouncer
 
     protected static $_throttle = 0;
 
-    public static $known_browsers = array('explorer', 'firefox', 'safari', 'chrome', 'opera');
+    public static $known_browsers = array(
+        'explorer',
+        'firefox',
+        'safari',
+        'chrome',
+        'opera',
+    );
 
-    public static $identity_headers = array('User-Agent', 'Accept', 'Accept-Charset', 'Accept-Language', 'Accept-Encoding', 'From');
+    public static $identity_headers = array(
+        'User-Agent',
+        'Accept',
+        'Accept-Charset',
+        'Accept-Language',
+        'Accept-Encoding',
+        'From',
+    );
 
     protected static $_rules = array(
-        'agent_infos' => array(),
-        'ip_infos' => array(),
+        'identity_infos'   => array(),
+        'agent_infos'      => array(),
+        'ip_infos'         => array(),
         'browser_identity' => array(),
-        'robot_identity' => array(),
-        'request' => array()
+        'robot_identity'   => array(),
+        'request'          => array(),
     );
 
     protected static $_namespaces = array(
@@ -88,11 +102,15 @@ class Bouncer
         }
     }
 
-    protected static function isPublic($addr)
+    public static function isAddrPublic($addr)
     {
-      if ($addr === '127.0.0.1' || $addr == '::1') return false;
-      if (strpos($addr, '172.') === 0 || strpos($addr, '192.') === 0 || strpos($addr, '10.') === 0) return false;
-      return true;
+        if ($addr === '127.0.0.1' || $addr == '::1') {
+            return false;
+        } elseif (strpos($addr, '172.') === 0 || strpos($addr, '192.') === 0 || strpos($addr, '10.') === 0) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     public static function getAddr()
@@ -101,12 +119,12 @@ class Bouncer
 
         if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
             $forwarded_for = array_map('trim', explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']));
-            $forwarded_for = array_filter($forwarded_for, array('self', 'isPublic'));
+            $forwarded_for = array_filter($forwarded_for, array('self', 'isAddrPublic'));
             $forwarded_for = array_diff($forwarded_for, array($addr));
         }
 
         // Non-Public Address
-        if (!self::isPublic($addr)) {
+        if (!self::isAddrPublic($addr)) {
             if (!empty($forwarded_for)) {
                 $addr = array_pop($forwarded_for);
             }
@@ -119,28 +137,7 @@ class Bouncer
             }
         }
 
-        // Opera Mini
-        if (strpos($addr, '64.255')  === 0 ||
-            strpos($addr, '80.239')  === 0 ||
-            strpos($addr, '82.145')  === 0 ||
-            strpos($addr, '94.246')  === 0 ||
-            strpos($addr, '141.0')   === 0 ||
-            strpos($addr, '195.189') === 0 ||
-            strpos($addr, '217.212') === 0) {
-                if (!empty($forwarded_for)) {
-                    $addr = array_pop($forwarded_for);
-                }
-         }
-
-         return $addr;
-    }
-
-    protected static function getUserAgent()
-    {
-        if (array_key_exists('HTTP_USER_AGENT', $_SERVER)) {
-            return $_SERVER['HTTP_USER_AGENT'];
-        }
-        return '';
+        return $addr;
     }
 
     protected static function identity()
@@ -150,10 +147,12 @@ class Bouncer
 
         $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($addr . ':' . $user_agent);
 
+        // Get identity from Backend
         $identity = self::backend()->getIdentity($id);
 
+        // Identity already registered in the backend
         if (isset($identity)) {
-            // keep identity if agent change or ip change, but not if both change
+            // Keep identity if agent change or ip change, but not if both change
             if ($identity['addr'] == $addr || $identity['user_agent'] == $user_agent) {
                 if ($identity['addr'] != $addr) {
                     $ip = self::getIpInfos($addr);
@@ -170,98 +169,83 @@ class Bouncer
             }
         }
 
-        $id = isset($_COOKIE['bouncer-identity']) ? self::hash($addr . ':' . $user_agent) : $id;
+        // Recompute id (we don't rely on the Cookie)
+        $id = self::hash($addr . ':' . $user_agent);
 
+        // Hostname
+        $host = gethostbyaddr($addr);
+
+        // Signature (hash of the user_agent)
+        $signature = self::hash($user_agent);
+
+        // Get identity headers and compute fingerprint
         $headers = self::getHeaders(self::$identity_headers);
         $fingerprint = self::fingerprint($headers);
 
-        $agent = self::getAgentInfos($user_agent);
+        // Default Agent Name
+        $name = 'unknown';
 
-        $ip = self::getIpInfos($addr);
+        // Default Type (robot/browser/unknown)
+        $type = self::UNKNOWN;
 
-        $identity = array_merge(compact('id', 'headers', 'fingerprint'), $agent, $ip);
+        $identity = compact('id', 'addr', 'host', 'user_agent', 'signature', 'headers', 'fingerprint', 'name', 'type');
 
+        $identity = self::getIdentityInfos($identity);
+        $identity = self::getAgentInfos($identity);
+        $identity = self::getIpInfos($identity);
+
+        // Store Identity in the Backend
         self::backend()->setIdentity($id, $identity);
 
         return $identity;
     }
 
-    protected static function getAgentInfos($user_agent)
+    protected static function getIdentityInfos($identity)
     {
-        $signature = self::hash($user_agent);
-
-        // Get From Backend
-        $key = 'agent-infos-' . $signature;
-        if ($agentInfos = self::get($key)) {
-            return $agentInfos;
+        $rules = self::$_rules['identity_infos'];
+        foreach ($rules as $func) {
+            $identity = call_user_func_array($func, array($identity));
         }
+        return $identity;
+    }
 
-        $agentInfos = array(
-            'signature'  => $signature,
-            'user_agent' => $user_agent,
-            'name'       => 'unknown',
-            'type'       => self::UNKNOWN
-        );
-
+    protected static function getAgentInfos($identity)
+    {
         $rules = self::$_rules['agent_infos'];
         foreach ($rules as $func) {
-            $agentInfos = call_user_func_array($func, array($agentInfos));
+            $identity = call_user_func_array($func, array($identity));
         }
-
-        self::set($key, $agentInfos, (60 * 60 * 24));
-
-        return $agentInfos;
+        return $identity;
     }
 
-
-    protected static function getIpInfos($addr)
+    protected static function getIpInfos($identity)
     {
-        // Get From Backend
-        $key = 'ip-infos-' . self::hash($addr);
-        if ($ipInfos = self::get($key)) {
-            return $ipInfos;
-        }
-
-        $ipInfos = array(
-            'addr' => $addr,
-            'host' => gethostbyaddr($addr),
-        );
-
         $rules = self::$_rules['ip_infos'];
         foreach ($rules as $func) {
-            $ipInfos = call_user_func_array($func, array($ipInfos));
+            $identity = call_user_func_array($func, array($identity));
         }
-
-        self::set($key, $ipInfos, (60 * 60 * 24));
-
-        return $ipInfos;
+        return $identity;
     }
 
-    public static function getHeaders($keys = array())
+    public static function getHeader($name)
     {
-        if (!is_callable('getallheaders')) {
-            // from http://www.php.net/manual/en/function.getallheaders.php
-            $headers = array();
-            foreach ($_SERVER as $key => $value) {
-                if (substr($key,0,5)=="HTTP_") {
-                    $key = str_replace(" ","-",ucwords(strtolower(str_replace("_"," ",substr($key,5)))));
-                    $headers[$key] = $value;
-                }
-            }
-        } else {
-            $headers = getallheaders();
+        $key = 'HTTP_' . str_replace('-', '_', strtoupper($name));
+        return isset($_SERVER[$key]) ? $_SERVER[$key] : null;
+    }
+
+    public static function getHeaders($names = array())
+    {
+        $headers = [];
+        foreach ($names as $name) {
+            $headers[$name] = self::getHeader($name);
         }
-        // Filter
-        if (!empty($keys)) {
-            $keys = array_map('strtolower', $keys);
-            foreach ($headers as $key => $value) {
-                $ikey = strtolower($key);
-                if (!in_array($ikey, $keys)) {
-                    unset($headers[$key]);
-                }
-            }
-        }
-        return $headers;
+        return array_filter($headers);
+    }
+
+    public static function getUserAgent()
+    {
+        $userAgent = self::getHeader('User-Agent');
+        return $userAgent ? $userAgent : '';
     }
 
     protected static function request()
@@ -738,11 +722,12 @@ class Bouncer
         static::setOptions($options);
         static::load();
         require_once dirname(__FILE__) . '/Stats.php';
+        Bouncer_Stats::setOptions($options);
         Bouncer_Stats::css();
         if (empty($_GET['agent']) && empty($_GET['connection']) && empty($_GET['stats'])) {
             Bouncer_Stats::search();
         }
-        Bouncer_Stats::stats($options);
+        Bouncer_Stats::stats();
     }
 
 }

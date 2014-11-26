@@ -4,11 +4,15 @@ class Bouncer_Stats
 {
 
     protected static $_keys = array(
-       'time', 'id', 'hits', 'host', 'fingerprint', 'system', 'agent', 'score'
+       'time', 'id', 'fingerprint', 'host', 'system', 'agent', 'features', 'score'
     );
 
     protected static $_connection_keys = array(
-      'time', 'id', 'hits', 'host', 'system', 'agent', 'method', 'uri', 'code', 'memory', 'exec_time'
+      'time', 'id', 'fingerprint', 'host', 'system', 'agent', 'method', 'uri', 'code', 'memory', 'exec_time', 'score'
+    );
+
+    protected static $_all_keys = array(
+      'time', 'id', 'fingerprint', 'host', 'system', 'agent', 'method', 'uri', 'code', 'memory', 'exec_time', 'score'
     );
 
     protected static $_namespace = '';
@@ -52,17 +56,18 @@ class Bouncer_Stats
 
         self::setOptions($options);
 
-        if (isset($_GET['extract'])) {
-            self::extract();
-        } else if (isset($_GET['stats'])) {
-            self::charts();
-        } else if (isset($_GET['connections'])) {
+        $flags = self::getFlags();
+        $filters = self::getFilters();
+
+        if (in_array('connections', $flags) || isset($filters['id']) ) {
             self::connections();
-        } else if (isset($_GET['connection'])) {
-            self::connection();
-        } else if (isset($_GET['agents'])) {
+        } elseif (in_array('agents', $flags)) {
             self::agents();
-        } else if (isset($_GET['agent'])) {
+        } elseif (isset($_GET['stats'])) {
+            self::charts();
+        } elseif (isset($_GET['connection'])) {
+            self::connection();
+        } elseif (isset($_GET['agent'])) {
             self::agent();
         } else {
             self::agents();
@@ -121,8 +126,8 @@ class Bouncer_Stats
         $useragent = isset($identity['headers']['User-Agent']) ? $identity['headers']['User-Agent'] : 'none';
         $agent = $name = $identity['name'];
         $version = isset($identity['version']) ? $identity['version'] : null;
-        $system = $system_name = isset($identity['os']) ? $identity['os'][0] : 'unknown';
-        $system_version = isset($identity['os']) ? $identity['os'][1] : 'unknown';
+        $system = $system_name = isset($identity['os_name']) ? $identity['os_name'] : 'unknown';
+        $system_version = isset($identity['os_version']) ? $identity['os_version'] : 'unknown';
         $fgtype = Bouncer_Rules_Fingerprint::getType($identity);
         $fgtype = empty($fgtype) ? 'none' : $fgtype;
 
@@ -177,8 +182,6 @@ class Bouncer_Stats
 
     public static function getBetterValues($values)
     {
-        global $cssRules;
-
         $linkify = true;
 
         extract($values);
@@ -196,31 +199,19 @@ class Bouncer_Stats
         }
 
         if ($type == 'browser' && isset(self::$_os[$system])) {
-            if (empty($cssRules[$system])) {
-                $cssRules[$system] = 'background-image:url(' . self::$_base_static_url . '/images/os/' . self::$_os[$system]['icon'] . '.png)';
-            }
             $system = self::$_os[$system]['title'] . ' ' . $system_version;
         } else {
             $system = '';
             $system_name = '';
         }
 
-        if (empty($cssRules[$extension])) {
-             $cssRules[$extension] = 'background-image:url(' . self::$_base_static_url . '/images/ext/' . $extension . '.png)';
-        }
         if ($linkify) {
             $host = '<a href="?filter=addr%3A' .  $addr . '">' .  $host . '</a>';
         }
 
         if ($type == 'browser') {
-            if (empty($cssRules[$name])) {
-                $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/browser/' . self::$_browser[$name]['icon'] . '.png)';
-            }
             $agent = self::$_browser[$name]['title'] . ' ' . $version;
         } elseif ($type == 'robot') {
-            if (empty($cssRules[$name])) {
-                $cssRules[$name] = 'background-image:url(' . self::$_base_static_url . '/images/robot/' . self::$_robot[$name]['icon'] . '.png)';
-            }
             $agent = self::$_robot[$name]['title'] . ' ' . $version;
         }
 
@@ -233,6 +224,7 @@ class Bouncer_Stats
         }
 
         if (!empty($uri)) {
+          $uri = substr($uri, 0, 50);
           $uri = '<a href="?connection=' . $connection_id . '">' . $uri . '</a>';
         }
 
@@ -253,9 +245,8 @@ class Bouncer_Stats
     {
         $numericKeys = array('memory', 'size', 'exec_time');
         $partialKeys = array('addr', 'host', 'referer', 'useragent', 'uri');
-        foreach ($filters as $filter) {
-            list($filterKey, $filterValue) = $filter;
-            $filterValue = str_replace('_', ' ', $filterValue);
+        foreach ($filters as $filterKey => $filterValue) {
+            // $filterValue = str_replace('_', ' ', $filterValue);
             if (strpos($filterKey, '-') === 0) {
                 $filterKey = substr($filterKey, 1);
                 if (!isset($values[$filterKey] )) {
@@ -286,7 +277,7 @@ class Bouncer_Stats
 
     public static function display($values, $keys = array())
     {
-        $keys = empty($keys) ? self::$_keys : $keys;
+        $keys = empty($keys) ? self::$_all_keys : $keys;
 
         $values = self::getBetterValues($values);
         extract($values);
@@ -294,7 +285,6 @@ class Bouncer_Stats
         echo '<tr class="status', substr($code, 0, 1), 'x ', $status, '">';
         foreach ($keys as $key) {
             if ($key == 'id') {
-                echo '<td style="background:#' . substr($identity['id'], 0, 6) . '">&nbsp;</td>';
                 echo '<td>' . $id . '</td>';
             } elseif ($key == 'fingerprint') {
                 echo '<td style="background:#' . substr($identity['fingerprint'], 0, 6) . '">&nbsp;</td>';
@@ -314,7 +304,7 @@ class Bouncer_Stats
                      echo '<td colspan="3">', '&nbsp;', '</td>';
                  }
             } else if ($key == 'host') {
-                echo '<td class="ic ' . $extension . '">', $host, '</td>';
+                echo '<td class="ic extension-' . $extension . '">', $host, '</td>';
                 if (self::$_detailed_host) {
                     echo '<td>', Bouncer_Rules_Httpbl::getType($identity), '</td>';
                     if (method_exists('Bouncer', 'countAgentsHost')) {
@@ -325,9 +315,9 @@ class Bouncer_Stats
                     }
                 }
             } elseif ($key == 'agent') {
-                echo '<td class="ic ' . $name . '">', $agent ,'</td>';
+                echo '<td class="ic agent-' . $name . '">', $agent ,'</td>';
             } elseif ($key == 'system') {
-                echo '<td class="ic ' . $system_name . '">', $system ,'</td>';
+                echo '<td class="ic system-' . $system_name . '">', $system ,'</td>';
             } else {
                 if (isset($$key) && $$key != 'none') {
                      echo '<td>', $$key ,'</td>';
@@ -339,25 +329,61 @@ class Bouncer_Stats
         echo '</tr>' . "\n";
     }
 
+    public static function getFlags()
+    {
+      $flags = array();
+      if (!empty($_GET['filter'])) {
+          foreach (explode(' ', $_GET['filter']) as $value) {
+              if (strpos($value, ':') === false) {
+                $flags[] = $value;
+              }
+          }
+      }
+      return $flags;
+    }
+
     public static function getFilters()
     {
       $filters = array();
       if (!empty($_GET['filter'])) {
           foreach (explode(' ', $_GET['filter']) as $f) {
-              if (strpos($f, ':')) $filters[] = explode(':', trim($f));
+              if (strpos($f, ':')) {
+                list($key, $value) = explode(':', trim($f));
+                $filters[$key] = $value;
+              }
           }
       }
       return $filters;
     }
 
+    public static function tableHeader($keys)
+    {
+         echo '<tr>';
+         foreach ($keys as $key) {
+             if ($key == 'id') {
+                 echo '<th>', 'Identity', '</th>';
+             } elseif ($key == 'fingerprint') {
+                 echo '<th style="width:14px">', '', '</th>';
+                 echo '<th colspan="3">', 'Fingerprint', '</th>';
+             } elseif ($key == 'host') {
+                 if (self::$_detailed_host) {
+                     echo '<th colspan="3">', 'Hostname', '</th>';
+                 } else {
+                     echo '<th>', 'Hostname', '</th>';
+                 }
+             } elseif ($key == 'features') {
+                 echo '<th colspan="3">', ucfirst($key), '</th>';
+             } else {
+                 echo '<th>', ucfirst($key), '</th>';
+             }
+         }
+         echo '</tr>' . "\n";
+    }
+
     public static function agents()
     {
-         global $cssRules;
-
          $filters = self::getFilters();
-
-         foreach ($filters as $filter) {
-             list($filterKey, $filterValue) = $filter;
+         foreach ($filters as $filterKey => $filterValue) {
              if ($filterKey == 'fingerprint') {
                  $agents = Bouncer::getAgentsIndexFingerprint($filterValue, self::$_namespace);
                  break;
@@ -371,33 +397,11 @@ class Bouncer_Stats
              $agents = Bouncer::getAgentsIndex(self::$_namespace);
          }
 
-         $cssRules = array();
-         $cssRules['unknown'] = 'background-image:url(' . self::$_base_static_url . '/images/os/question.png)';
+         $keys = self::$_keys;
 
          echo '<table class="bouncer-table">' . "\n";
 
-         // Headers
-         echo '<tr>';
-         foreach (self::$_keys as $key) {
-             if ($key == 'id') {
-                 echo '<th style="width:14px">', '', '</th>';
-                 echo '<th colspan="1">', 'Identity', '</th>';
-             } elseif ($key == 'fingerprint') {
-                 echo '<th style="width:14px">', '', '</th>';
-                 echo '<th colspan="3">', ucfirst($key), '</th>';
-             } elseif ($key == 'host') {
-                 if (self::$_detailed_host) {
-                     echo '<th colspan="3">', ucfirst($key), '</th>';
-                 } else {
-                     echo '<th>', ucfirst($key), '</th>';
-                 }
-             } elseif ($key == 'features') {
-                 echo '<th colspan="3">', ucfirst($key), '</th>';
-             } else {
-                 echo '<th>', ucfirst($key), '</th>';
-             }
-         }
-         echo '</tr>' . "\n";
+         self::tableHeader($keys);
 
          // Agents
          $count = 0;
@@ -424,7 +428,7 @@ class Bouncer_Stats
                 continue;
              }
              // Display
-             self::display($values, self::$_keys);
+             self::display($values, $keys);
              // Limit
              $count ++;
              if ($count >= self::$_max_items) {
@@ -433,12 +437,6 @@ class Bouncer_Stats
          }
 
          echo '</table>';
-
-         echo '<style type="text/css">' . "\n";
-         foreach ($cssRules as $class => $content) {
-             echo ".$class { $content; }\n";
-         }
-         echo '</style>';
     }
 
     public static function agent()
@@ -550,12 +548,8 @@ class Bouncer_Stats
 
     public static function connections()
     {
-        global $cssRules;
-
         $filters = self::getFilters();
-
-        foreach ($filters as $filter) {
-            list($filterKey, $filterValue) = $filter;
+        foreach ($filters as $filterKey => $filterValue) {
             if ($filterKey == 'id') {
                 $connections = Bouncer::backend()->getAgentConnections($filterValue, self::$_namespace);
                 if (!empty($connections)) {
@@ -606,6 +600,15 @@ class Bouncer_Stats
 
         echo '<table class="bouncer-table">' . "\n";
 
+        // Filter Keys
+        $keys = self::$_connection_keys;
+        foreach ($filters as $key => $value) {
+            if ($key == 'addr') $key = 'host';
+            if ($index = array_search($key, $keys)) unset($keys[$index]);
+        }
+
+        // self::tableHeader($keys);
+
         $count = 0;
         foreach ($connections as $id => $connection) {
           if (is_string($connection)) {
@@ -631,7 +634,7 @@ class Bouncer_Stats
           if (self::filterMatch($filters, $values)) {
              continue;
           }
-          self::display($values, self::$_connection_keys);
+          self::display($values, $keys);
           // Limit
           $count ++;
           if ($count >= self::$_max_items) {
@@ -640,12 +643,6 @@ class Bouncer_Stats
         }
 
         echo '</table>';
-
-        echo '<style type="text/css">' . "\n";
-        foreach ($cssRules as $class => $content) {
-            echo ".$class { $content; }\n";
-        }
-        echo '</style>';
     }
 
     protected static function _displayConnections($connections)
@@ -755,19 +752,7 @@ class Bouncer_Stats
             echo '<tr>', '<td>', $message, '</td>', '<td>', $value, '</td>', '</tr>';
         }
         echo '<tr>', '<td>', 'Total', '</td>', '<td><b>', $score, '</b></td>', '</tr>';
-        if (!empty($connection['sql'])) {
-            echo '<tr>', '<th>', 'SQL Queries', '</th>' , '</tr>';
-            foreach ($connection['sql'] as $value) {
-                list($query, $time) = $value;
-                echo '<tr>', '<td>', $time, '</td>', '<td>', $query, '</td>', '</tr>';
-            }
-        }
-        if (!empty($connection['nosql'])) {
-            echo '<tr>', '<th>', 'NoSQL Queries', '</th>' , '</tr>';
-            foreach ($connection['nosql'] as $value) {
-                echo '<tr>', '<td>', '', '</td>', '<td>', $value, '</td>', '</tr>';
-            }
-        }
+
         echo '</table>';
     }
 
@@ -847,38 +832,10 @@ class Bouncer_Stats
 
     public static function css()
     {
-        ?>
-        <style type="text/css">
-        .bouncer-table { font-size:11px; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; }
-        .bouncer-table th { color: #4A4A4A; }
-        .bouncer-table td, .bouncer-table td a { color: #333333; }
-        .bouncer-filter, .bouncer-table { width:100%; margin:auto; }
-        .bouncer-filter { display:block; margin-bottom:10px; border:1px solid #DEDEDE; }
-        .bouncer-table { border-collapse:collapse; }
-        .bouncer-table td, .bouncer-table th { border:1px solid #DEDEDE; }
-        .bouncer-table td { height:20px; padding:2px 4px; }
-        .bouncer-table td.ic { padding-left:24px; }
-        .bouncer-table tr.neutral { background-color:#E0E5F2; }
-        .bouncer-table tr.bad { background-color:#EFE2EC; }
-        .bouncer-table tr.suspicious { background-color:#f2e8e0; }
-        .bouncer-table tr.nice { background-color:#e2f2e0; }
-        .ic { padding-left:24px; background:4px 2px no-repeat }
-        .fr { background-image:url(<?php echo self::$_base_static_url ?>/images/ext/fr.png) }
-        .unknown  { background-image:url(<?php echo self::$_base_static_url ?>/images/os/question.png) }
-        .explorer { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/explorer.png) }
-        .firefox  { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/firefox.png) }
-        .safari   { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/safari.png) }
-        .opera    { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/opera.png) }
-        .chrome   { background-image:url(<?php echo self::$_base_static_url ?>/images/browser/chrome.png) }
-        .macosx   { background-image:url(<?php echo self::$_base_static_url ?>/images/os/macosx.png) }
-        .windowsxp, .windowsmc { background-image:url(<?php echo self::$_base_static_url ?>/images/os/windowsxp.png) }
-        .windowsvista, .windows7 { background-image:url(<?php echo self::$_base_static_url ?>/images/os/windowsvista.png) }
-/*        .bouncer-table tr.status5x { background-color:#F0C1D9; }*/
-        .bouncer-table tr.status5x { background-color:#EFE2EC; }
-        .bouncer-table tr.status4x { background-color:#f2e8e0; }
-        .bouncer-table tr.status2x { background-color:#e2f2e0; }
-        </style>
-        <?php
+        echo '<style type="text/css">';
+        echo '@import url("' . self::$_base_static_url . '/style/bouncer.css");' . "\n";
+        echo '@import url("' . self::$_base_static_url . '/style/icons.css");' . "\n";
+        echo '</style>';
     }
 
     public static function search()
@@ -886,7 +843,6 @@ class Bouncer_Stats
         echo '<form method="get" action="" style="margin:0">';
         $value = isset($_GET['filter']) ? htmlspecialchars($_GET['filter']) : '';
         echo '<input type="search" name="filter" id="bouncer-filter" class="bouncer-filter" value="' . $value . '"/>';
-        // echo '<script type="text/javascript">document.getElementById("bouncer-filter").focus();</script>';
         echo '</form>';
     }
 
