@@ -48,6 +48,7 @@ class Bouncer_Stats
             echo '<table class="bouncer-table">';
             self::agent($filterKeys['id']);
             echo '</table>';
+            echo '<br>';
         }
 
         if (in_array('connections', $flags)) {
@@ -155,11 +156,7 @@ class Bouncer_Stats
                 echo '<td style="background:#' . substr($value, 0, 6) . '">&nbsp;</td>';
                 echo '<td>' . '<a href="?filter=fingerprint%3A' . $value . '">' . substr($value, 0, 6) . '</a>' . '</td>';
                 echo '<td>' . ( empty($identity['fingerprint_type']) ? '&nbsp;' : $identity['fingerprint_type'] ) . '</td>';
-                if (method_exists('Bouncer', 'countAgentsFingerprint')) {
-                    echo '<td>' . Bouncer::countAgentsFingerprint($identity['fingerprint'], self::$_namespace) . '</td>';
-                } else {
-                    echo '<td>', '&nbsp;', '</td>';
-                }
+                echo '<td>' . Bouncer::backend()->countAgentsFingerprint($identity['fingerprint'], self::$_namespace) . '</td>';
             } elseif ($key == 'ua') {
                 echo '<td style="background:#' . substr($identity['hua'], 0, 6) . '">&nbsp;</td>';
                 echo '<td>' . '<a href="?filter=hua%3A' . $identity['hua'] . '">' . substr($identity['hua'], 0, 6) . '</a>' . '</td>';
@@ -177,12 +174,8 @@ class Bouncer_Stats
                      '</td>';
                 if (self::$_detailed_host) {
                     echo '<td>', Bouncer_Rules_Httpbl::getType($identity), '</td>';
-                    if (method_exists('Bouncer', 'countAgentsHost')) {
-                        $hcount = Bouncer::countAgentsHost(md5($identity['addr']), self::$_namespace);
-                        echo '<td>' . ($hcount ? $hcount : 1) . '</td>';
-                    } else {
-                        echo '<td>', '&nbsp;', '</td>';
-                    }
+                    $hcount = Bouncer::backend()->countAgentsHost($identity['haddr'], self::$_namespace);
+                    echo '<td>' . ($hcount ? $hcount : 1) . '</td>';
                 }
             } elseif ($key == 'agent') {
                 echo '<td class="ic agent-' . $identity['agent_name'] . '">', $identity['agent_label'] ,'</td>';
@@ -254,7 +247,7 @@ class Bouncer_Stats
                  echo '<th colspan="3">', 'Fingerprint', '</th>';
              } elseif ($key == 'ua') {
                  echo '<th style="width:14px">', '', '</th>';
-                 echo '<th colspan="1">', 'UA', '</th>';
+                 echo '<th colspan="1">', 'Agent', '</th>';
              } elseif ($key == 'addr') {
                  if (self::$_detailed_host) {
                      echo '<th colspan="3">', 'Hostname', '</th>';
