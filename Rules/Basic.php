@@ -13,14 +13,14 @@ class Bouncer_Rules_Basic
 
     public static function browser_version($identity)
     {
-        if ($identity['type'] != Bouncer::BROWSER) {
+        if ($identity['agent_type'] != Bouncer::BROWSER) {
             return null;
         }
 
         $scores = array();
 
-        $name = $identity['name'];
-        $version = $identity['version'];
+        $name = $identity['agent_name'];
+        $version = $identity['agent_version'];
 
         $version = (int)$version;
 
@@ -42,15 +42,15 @@ class Bouncer_Rules_Basic
 
     public static function os_version($identity)
     {
-        if (empty($identity['os'])) {
-            if ($identity['type'] == Bouncer::BROWSER) return -5;
+        if (empty($identity['os_name'])) {
+            if ($identity['agent_type'] == Bouncer::BROWSER) return -5;
             else return 0;
         }
 
         $scores = array();
 
-        $os_name = $identity['os'][0];
-        $os_version = $identity['os'][1];
+        $os_name = $identity['os_name'];
+        $os_version = $identity['os_version'];
 
         // plus
              if ($os_name == 'macosx' && strpos($os_version, '10.10') === 0) $scores[] = array(1, 'Recent OS');

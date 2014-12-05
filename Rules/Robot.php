@@ -13,7 +13,7 @@ class Bouncer_Rules_Robot
         $scores = array();
         $score = 0;
 
-        if ($identity['type'] != Bouncer::ROBOT || empty($identity['name'])) {
+        if ($identity['agent_type'] != Bouncer::ROBOT || empty($identity['agent_name'])) {
             return null;
         }
 
@@ -21,7 +21,7 @@ class Bouncer_Rules_Robot
         $host = $identity['host'];
         $headers = $identity['headers'];
 
-        switch ($identity['name']) {
+        switch ($identity['agent_name']) {
             // top crawlers
             case 'google':
                 $score += (strpos($addr, '66.249.') !== 0 && strpos($host, 'googlebot.com') === false) ? -5 : 1;

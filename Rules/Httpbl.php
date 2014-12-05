@@ -27,7 +27,11 @@ class Bouncer_Rules_Httpbl
 
     public static function ipInfos($infos)
     {
-        $infos['httpbl'] = self::get($infos['addr']);
+        $result = self::get($infos['addr']);
+        if ($result) {
+            $infos['httpbl'] = true;
+            $infos['addr_type'] = $result['type'];
+        }
         return $infos;
     }
 

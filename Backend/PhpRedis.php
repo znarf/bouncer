@@ -59,6 +59,12 @@ class Bouncer_Backend_PhpRedis
         self::index($indexKey, $agent);
     }
 
+    public static function indexAgentUa($agent, $hua, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$hua" : "agents-$hua-$namespace";
+        self::index($indexKey, $agent);
+    }
+
     public static function indexAgentHost($agent, $haddr, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
@@ -74,6 +80,12 @@ class Bouncer_Backend_PhpRedis
     public static function getAgentsIndexFingerprint($fingerprint, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
+        return self::redis()->zRevRange($indexKey, 0, 10000);
+    }
+
+    public static function getAgentsIndexUa($hua, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$hua" : "agents-$hua-$namespace";
         return self::redis()->zRevRange($indexKey, 0, 10000);
     }
 
@@ -153,22 +165,25 @@ class Bouncer_Backend_PhpRedis
         return self::getConnectionsWithIndexKey($indexKey);
     }
 
+    public static function getConnection($id)
+    {
+        $connection = self::get("connection-" . $id);
+        $connection['id'] = $id;
+        return $connection;
+    }
+
     public static function getLastAgentConnection($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $key  = self::redis()->lGet($indexKey, 0);
-        $connection = self::get("connection-" . $key);
-        $connection['id'] = $key;
-        return $connection;
+        return self::getConnection($key);
     }
 
     public static function getFirstAgentConnection($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $key  = self::redis()->lGet($indexKey, -1);
-        $connection = self::get("connection-" . $key);
-        $connection['id'] = $key;
-        return $connection;
+        return self::getConnection($key);
     }
 
     public static function countAgentConnections($agent, $namespace = '')

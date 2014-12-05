@@ -45,7 +45,7 @@ class Bouncer_Challenge
         }
 
         $identity = Bouncer::identity();
-        if (empty($identity) || empty($identity['id'])) {
+        if (empty($identity)) {
             return;
         }
 

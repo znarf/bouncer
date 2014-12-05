@@ -15,7 +15,7 @@ class Bouncer_Rules_Fingerprint
     {
         $scores = array();
 
-        $name = $identity['name'];
+        $name = $identity['agent_name'];
         $fingerprint = $identity['fingerprint'];
 
         if (in_array($name, Bouncer::$known_browsers)) {
@@ -38,7 +38,7 @@ class Bouncer_Rules_Fingerprint
 
     public static function getType($identity)
     {
-        $name = $identity['name'];
+        $name = $identity['agent_name'];
         $fingerprint = $identity['fingerprint'];
 
         if (in_array($name, Bouncer::$known_browsers)) {

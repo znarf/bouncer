@@ -68,7 +68,7 @@ class Bouncer_Rules_Request
             $scores[] = array(-5, 'content-length Header with a GET Request');
         }
 
-        if ($identity['user_agent'] == 'Mozilla/5.0' && isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
+        if ($identity['ua'] == 'Mozilla/5.0' && isset($headers['TE']) && $headers['TE'] == 'deflate,gzip;q=0.3') {
             $scores[] = array(-10, 'libWWW signature detected (unknown)');
         }
 

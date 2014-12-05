@@ -21,12 +21,12 @@ class Bouncer_Rules_Browser
     {
         $scores = array();
 
-        if ($identity['type'] != Bouncer::BROWSER) {
+        if ($identity['agent_type'] != Bouncer::BROWSER) {
             return $scores;
         }
 
-        $name = $identity['name'];
-        $version = $identity['version'];
+        $name = $identity['agent_name'];
+        $version = $identity['agent_version'];
         $headers = $identity['headers'];
 
         // Identify Explorer derivatives
@@ -183,11 +183,11 @@ class Bouncer_Rules_Browser
     {
         $scores = array();
 
-        if ($identity['type'] != Bouncer::BROWSER) {
+        if ($identity['agent_type'] != Bouncer::BROWSER) {
             return $scores;
         }
 
-        $name = $identity['name'];
+        $name = $identity['agent_name'];
         $headers = $request['headers'];
 
         // Identify Explorer derivatives

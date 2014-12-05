@@ -57,19 +57,28 @@ class Bouncer
 
     protected static $_connectionKey = null;
 
-    public static function run(array $options = array())
+    public static function run(array $options = array(), $type = 'default')
     {
         static::setOptions($options);
-        static::load();
+        if ($type == 'cloud') {
+            require_once dirname(__FILE__) . '/Rules/Cloud.php';
+            Bouncer_Rules_Cloud::load();
+            require_once dirname(__FILE__) . '/Rules/Default.php';
+            Bouncer_Rules_Default::load();
+        } else {
+            static::load();
+        }
         static::bounce();
     }
 
     public static function load()
     {
+        require_once dirname(__FILE__) . '/Rules/Default.php';
+        Bouncer_Rules_Default::load();
         require_once dirname(__FILE__) . '/Rules/Bbclone.php';
         Bouncer_Rules_Bbclone::load();
-        require_once dirname(__FILE__) . '/Rules/Basic.php';
-        Bouncer_Rules_Basic::load();
+        require_once dirname(__FILE__) . '/Rules/Geoip.php';
+        Bouncer_Rules_Geoip::load();
         require_once dirname(__FILE__) . '/Rules/Browser.php';
         Bouncer_Rules_Browser::load();
         require_once dirname(__FILE__) . '/Rules/Robot.php';
@@ -78,10 +87,6 @@ class Bouncer
         Bouncer_Rules_Request::load();
         require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
         Bouncer_Rules_Fingerprint::load();
-        require_once dirname(__FILE__) . '/Rules/Network.php';
-        Bouncer_Rules_Network::load();
-        require_once dirname(__FILE__) . '/Rules/Geoip.php';
-        Bouncer_Rules_Geoip::load();
     }
 
     public static function setOptions(array $options = array())
@@ -138,55 +143,50 @@ class Bouncer
         return $addr;
     }
 
-    protected static function identity()
+    public static function identity()
     {
-        $addr = self::getAddr();
-        $user_agent = self::getUserAgent();
+        $addr  = self::getAddr();
+        $haddr = self::hash($addr);
 
-        $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($addr . ':' . $user_agent);
+        $ua    = self::getUserAgent();
+        $hua   = self::hash($ua);
+
+        $headers = self::getHeaders(self::$identity_headers);
+
+        $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($haddr . $hua);
 
         // Get identity from Backend
         $identity = self::backend()->getIdentity($id);
 
         // Identity already registered in the backend
         if (isset($identity)) {
-            // Keep identity if agent change or ip change, but not if both change
-            if ($identity['addr'] == $addr || $identity['user_agent'] == $user_agent) {
+            // Keep identity if 'ua' or 'addr' change, but not if both change
+            if ($identity['addr'] == $addr || $identity['ua'] == $ua) {
                 if ($identity['addr'] != $addr) {
-                    $ip = self::getIpInfos($addr);
-                    $identity = array_merge($identity, $ip);
+                    $identity['addr'] = $addr;
+                    $identity = self::getIdentityInfos($identity);
+                    $identity = self::getAgentInfos($identity);
                     self::backend()->setIdentity($id, $identity);
-                } else if ($identity['user_agent'] != $user_agent) {
-                    $agent = self::getAgentInfos($user_agent);
-                    $headers = self::getHeaders(self::$identity_headers);
-                    $fingerprint = self::fingerprint($headers);
-                    $identity = array_merge($identity, $agent, compact('headers', 'fingerprint'));
+                } elseif ($identity['ua'] != $ua) {
+                    $identity['ua'] = $ua;
+                    $identity['headers'] = $headers;
+                    $identity = self::getIdentityInfos($identity);
+                    $identity = self::getAgentInfos($identity);
                     self::backend()->setIdentity($id, $identity);
                 }
                 return $identity;
             }
         }
 
-        // Recompute id (we don't rely on the Cookie)
-        $id = self::hash($addr . ':' . $user_agent);
-
-        // Hostname
-        $host = gethostbyaddr($addr);
-
-        // Signature (hash of the user_agent)
-        $signature = self::hash($user_agent);
-
-        // Get identity headers and compute fingerprint
-        $headers = self::getHeaders(self::$identity_headers);
-        $fingerprint = self::fingerprint($headers);
-
-        // Default Agent Name
-        $name = 'unknown';
-
-        // Default Type (robot/browser/unknown)
-        $type = self::UNKNOWN;
-
-        $identity = compact('id', 'addr', 'host', 'user_agent', 'signature', 'headers', 'fingerprint', 'name', 'type');
+        // Build Identity
+        $identity = array(
+            'id'      => self::hash($haddr . $hua),
+            'ua'      => $ua,
+            'hua'     => $hua,
+            'addr'    => $addr,
+            'haddr'   => $haddr,
+            'headers' => $headers,
+        );
 
         $identity = self::getIdentityInfos($identity);
         $identity = self::getAgentInfos($identity);
@@ -231,6 +231,20 @@ class Bouncer
         return isset($_SERVER[$key]) ? $_SERVER[$key] : null;
     }
 
+    public static function getAllHeaders($ignore = array())
+    {
+        $headers = array();
+        foreach ($_SERVER as $name => $value) {
+            if (substr($name, 0, 5) == 'HTTP_') {
+                $key = str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))));
+                if (!in_array($key, $ignore)) {
+                    $headers[$key] = $value;
+                }
+            }
+        }
+        return $headers;
+    }
+
     public static function getHeaders($names = array())
     {
         $headers = [];
@@ -248,28 +262,29 @@ class Bouncer
 
     protected static function request()
     {
-        $method = strtoupper($_SERVER['REQUEST_METHOD']);
-        $server = !empty($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : $_SERVER['SERVER_NAME'];
+        $request = array();
+        $request['method'] = strtoupper($_SERVER['REQUEST_METHOD']);
+        $request['server'] = !empty($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : $_SERVER['SERVER_NAME'];
+        // Uri
         $uri = $_SERVER['REQUEST_URI'];
         if (strpos($uri, '?')) {
             $split = explode('?', $uri);
-            $uri = $split[0];
+            $request['uri'] = $split[0];
+        } else {
+            $request['uri'] = $uri;
         }
-        $headers = self::getHeaders();
-        // Ignore Host + Agent headers
-        $ignore = array_merge(array('Host'), self::$identity_headers);
-        foreach ($ignore as $key) {
-            unset($headers[$key]);
-        }
-        $request = compact('method', 'server', 'uri', 'headers');
+        // Headers
+        $ignore = array_merge(array('Host', 'Cookie'), self::$identity_headers);
+        $request['headers'] = self::getAllHeaders($ignore);
+        // Parameters
         if (!empty($_GET)) {
-            $request['GET'] = $_GET;
+            $request['get'] = array_keys($_GET);
         }
         if (!empty($_POST)) {
-            $request['POST'] = $_POST;
+            $request['post'] = array_keys($_POST);
         }
         if (!empty($_COOKIE)) {
-            $request['COOKIE'] = $_COOKIE;
+            $request['cookie'] = array_keys($_COOKIE);
         }
         return $request;
     }
@@ -314,7 +329,7 @@ class Bouncer
                 usleep($throttle);
                 break;
             case self::NEUTRAL:
-                if ($identity['type'] == Bouncer::ROBOT) {
+                if ($identity['agent_type'] == self::ROBOT) {
                     $throttle = rand(250*1000, 1000*1000);
                     self::$_throttle = $throttle;
                     usleep($throttle);
@@ -342,7 +357,7 @@ class Bouncer
         }
 
         // Consolidate bots IDs
-        if ($identity['type'] == self::ROBOT && $result[1] >= 1) {
+        if ($identity['agent_type'] == self::ROBOT && $result[1] >= 1) {
             // don't consolidate rss-atom entries
             if ($identity['id'] != 'rss-atom') {
                 $identity['id'] = $identity['name'];
@@ -357,10 +372,10 @@ class Bouncer
             }
         }
 
-        // Additionaly parse request if result is ambigus
-        if ($identity['type'] != self::ROBOT && $result[1] < 15 && $result[1] >= -15) {
+        // Additionaly parse request if result is ambigous
+        if ($identity['agent_type'] != self::ROBOT && $result[1] < 15 && $result[1] >= -15) {
             $result = self::analyseRequest($identity, $request, $result);
-        } elseif ($identity['type'] == self::ROBOT && $result[1] < 1) {
+        } elseif ($identity['agent_type'] == self::ROBOT && $result[1] < 1) {
             $result = self::analyseRequest($identity, $request, $result);
         }
 
@@ -369,7 +384,7 @@ class Bouncer
 
     public static function analyseIdentity($identity, $request = array())
     {
-        if ($identity['type'] == self::BROWSER) {
+        if ($identity['agent_type'] == self::BROWSER) {
             $rules = self::$_rules['browser_identity'];
         } else {
             $rules = self::$_rules['robot_identity'];
@@ -427,43 +442,51 @@ class Bouncer
 
     protected static function log($identity, $request, $result)
     {
-        $time = time();
-        $agent = $identity['id'];
-        $haddr = self::hash($identity['addr']);
-        $fingerprint = $identity['fingerprint'];
-
-        $connection = array();
-        $connection['pid'] = getmypid();
+        $connection = $request;
         $connection['identity'] = $identity['id'];
-        $connection['request'] = $request;
-        $connection['time'] = $time;
-        $connection['result'] = $result;
-
-        $connection['start'] = microtime(true);
-
-        // don't store connection details
-        unset($connection['result'][2]);
+        $connection['time']     = time();
+        $connection['start']    = microtime(true);
+        $connection['status']   = $result[0];
+        $connection['score']    = $result[1];
 
         // Log connection
         self::$_connection = $connection;
         self::$_connectionKey = self::backend()->storeConnection($connection);
 
+        // For Indexing
+        $agent       = $identity['id'];
+        $hua         = $identity['hua'];
+        $haddr       = $identity['haddr'];
+        $fingerprint = $identity['fingerprint'];
+
+        // Index
         foreach (self::$_namespaces as $ns) {
             $backend = self::backend();
-            // Add agent to agents index
-            if (method_exists($backend, 'indexAgent'))
+            // Add agent to global index
+            if (method_exists($backend, 'indexAgent')) {
                 $backend->indexAgent($agent, $ns);
-            // Add agent to fingerprint agent index
-            if (method_exists($backend, 'indexAgentFingerprint'))
+            }
+            // Add agent to fingerprint index
+            if (method_exists($backend, 'indexAgentFingerprint')) {
                 $backend->indexAgentFingerprint($agent, $fingerprint, $ns);
-            // Add agent to host agent index
-            if (method_exists($backend, 'indexAgentHost'))
+            }
+            // Add agent to ua index
+            if (method_exists($backend, 'indexAgentUa')) {
+                $backend->indexAgentUa($agent, $hua, $ns);
+            }
+            // Add agent to addr/host index
+            if (method_exists($backend, 'indexAgentHost')) {
                 $backend->indexAgentHost($agent, $haddr, $ns);
-            // Add connection to index
-            if (method_exists($backend, 'indexConnection'))
+            }
+            // Add connection to global index
+            // AND add connection to agent index
+            if (method_exists($backend, 'indexConnection')) {
                 $backend->indexConnection(self::$_connectionKey, $agent, $ns);
-            if (method_exists($backend, 'indexConnectionHost'))
+            }
+            // Add connection to addr/host index
+            if (method_exists($backend, 'indexConnectionHost')) {
                 $backend->indexConnectionHost(self::$_connectionKey, $haddr, $ns);
+            }
         }
     }
 
@@ -510,17 +533,6 @@ class Bouncer
         echo $msg;
         self::end();
         exit;
-    }
-
-    public static function setConnectionData($key, $value = null)
-    {
-      if (is_array($key)) {
-        foreach ($key as $k => $v) {
-          self::$_connection[$k] = $v;
-        }
-      } else {
-        self::$_connection[$key] = $value;
-      }
     }
 
     public static function end()
@@ -627,20 +639,27 @@ class Bouncer
         return self::$_backendInstance;
     }
 
-    public static function get($key) { return self::backend()->get($key); }
-    public static function set($key, $value) { return self::backend()->set($key, $value); }
-    public static function getIdentity($id) { return self::backend()->getIdentity($id); }
-    public static function setIdentity($id, $value) { return self::backend()->setIdentity($id, $value); }
-    public static function getAgentsIndex($ns = '') { return self::backend()->getAgentsIndex($ns); }
-    public static function getAgentsIndexFingerprint($fg, $ns = '') { return self::backend()->getAgentsIndexFingerprint($fg, $ns); }
-    public static function getAgentsIndexHost($host, $ns = '') { return self::backend()->getAgentsIndexHost($host, $ns); }
-    public static function countAgentsFingerprint($fg, $ns = '') { return self::backend()->countAgentsFingerprint($fg, $ns); }
-    public static function countAgentsHost($host, $ns = '') { return self::backend()->countAgentsHost($host, $ns); }
-    public static function getConnections($agent, $ns = '') { return self::backend()->getConnections($agent, $ns); }
-    public static function getAgentConnections($agent, $ns = '') { return self::backend()->getAgentConnections($agent, $ns); }
-    public static function getLastAgentConnection($agent, $ns = '') { return self::backend()->getLastAgentConnection($agent, $ns); }
-    public static function getFirstAgentConnection($agent, $ns = '') { return self::backend()->getFirstAgentConnection($agent, $ns); }
-    public static function countAgentConnections($agent, $ns = '') { return self::backend()->countAgentConnections($agent, $ns); }
+    public static function get($key)
+    {
+        return self::backend()->get($key);
+    }
+
+    public static function set($key, $value)
+    {
+        return self::backend()->set($key, $value);
+    }
+
+    public static function getIdentity($id)
+    {
+        return self::backend()->getIdentity($id);
+    }
+
+    public static function setIdentity($id, $value)
+    {
+        return self::backend()->setIdentity($id, $value);
+    }
+
+    // Stats
 
     public static function stats(array $options = array())
     {
