@@ -498,7 +498,7 @@ class Bouncer
           self::backend()->indexConnectionWithIndexKey($not200IndexKey, $connectionKey);
         }
         // Index non GET queries
-        if (isset($connection['request']['method']) && $connection['request']['method'] != 'GET') {
+        if (isset($connection['method']) && $connection['method'] != 'GET') {
           $notGetIndexKey = empty($ns) ? "connections-notGET" : "connections-notGET-$ns";
           self::backend()->indexConnectionWithIndexKey($notGetIndexKey, $connectionKey);
         }
@@ -554,10 +554,8 @@ class Bouncer
 
         try {
           self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
-          if (method_exists('Bouncer', 'indexConnectionExtra')) {
-            foreach (self::$_namespaces as $ns) {
-              self::indexConnectionExtra(self::$_connectionKey, self::$_connection, $ns);
-            }
+          foreach (self::$_namespaces as $ns) {
+            self::indexConnectionExtra(self::$_connectionKey, self::$_connection, $ns);
           }
           self::backend()->clean();
         } catch (Exception $e) {

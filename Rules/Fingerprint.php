@@ -7,8 +7,15 @@ class Bouncer_Rules_Fingerprint
 
     public static function load()
     {
+        Bouncer::addRule('agent_infos', array('Bouncer_Rules_Fingerprint', 'agentInfos'));
         Bouncer::addRule('browser_identity', array('Bouncer_Rules_Fingerprint', 'analyseIdentity'));
         Bouncer::addRule('robot_identity', array('Bouncer_Rules_Fingerprint', 'analyseIdentity'));
+    }
+
+    public static function agentInfos($identity)
+    {
+        $identity['fingerprint_type'] = self::getType($identity);
+        return $identity;
     }
 
     public static function analyseIdentity($identity)

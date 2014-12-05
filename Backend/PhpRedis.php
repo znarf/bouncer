@@ -101,6 +101,12 @@ class Bouncer_Backend_PhpRedis
         return self::redis()->zCard($indexKey);
     }
 
+    public static function countAgentsUa($hua, $namespace = '')
+    {
+        $indexKey = empty($namespace) ? "agents-$hua" : "agents-$hua-$namespace";
+        return self::redis()->zCard($indexKey);
+    }
+
     public static function countAgentsHost($haddr, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
@@ -127,7 +133,7 @@ class Bouncer_Backend_PhpRedis
         }
         $connections = array();
         foreach ($keys as $key) {
-            $connections[$key] = self::get("connection-" . $key);
+            $connections[$key] = self::getConnection($key);
         }
         return $connections;
     }

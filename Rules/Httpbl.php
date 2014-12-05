@@ -31,10 +31,12 @@ class Bouncer_Rules_Httpbl
         if ($result) {
             $infos['httpbl'] = true;
             $infos['addr_type'] = $result['type'];
+            $infos['addr_comment'] = self::getComment($result['type']);
         }
         return $infos;
     }
 
+    /*
     public static function test($identity)
     {
         $scores = array();
@@ -59,11 +61,12 @@ class Bouncer_Rules_Httpbl
 
         return $scores;
     }
+    */
 
     public static function get($ip)
     {
         if (self::is_ipv6($ip)) {
-            return null;
+            return;
         }
         $find = implode('.', array_reverse(explode('.', $ip)));
         $query = self::$api_key . ".${find}.dnsbl.httpbl.org";
@@ -76,23 +79,21 @@ class Bouncer_Rules_Httpbl
                 );
             }
         }
-        return null;
     }
 
-    public static function getType($identity)
+    public static function getComment($type)
     {
-        if (empty($identity['addr_type'])) {
-            return '';
-        }
-        switch ($identity['addr_type']) {
-            case 0: return 'search';
-            case 1: return 'susp';
-            case 2: return 'harv';
-            case 3: return 'susp + harv';
-            case 4: return 'spam';
-            case 5: return 'susp + spam';
-            case 6: return 'harv + spam';
-            case 7: return 'susp + harv + spam';
+        if (isset($type)) {
+            switch ($type) {
+                case 0: return 'search';
+                case 1: return 'susp';
+                case 2: return 'harv';
+                case 3: return 'susp + harv';
+                case 4: return 'spam';
+                case 5: return 'susp + spam';
+                case 6: return 'harv + spam';
+                case 7: return 'susp + harv + spam';
+            }
         }
         return '';
     }

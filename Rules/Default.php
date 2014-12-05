@@ -47,7 +47,7 @@ class Bouncer_Rules_Default
     public static function ipInfos($infos)
     {
         if (empty($infos['host'])) {
-            $infos['host'] = gethostbyaddr($infos['addr']);
+            $infos['host'] = strtolower(gethostbyaddr($infos['addr']));
         }
         if (empty($infos['extension'])) {
             $infos['extension'] = 'numeric';

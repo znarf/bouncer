@@ -5,7 +5,7 @@
 .bouncer-filter { display:block; margin-bottom:10px; border:1px solid #DEDEDE; }
 .bouncer-table { border-collapse:collapse; }
 .bouncer-table td, .bouncer-table th { border:1px solid #DEDEDE; }
-.bouncer-table td { height:20px; padding:2px 4px; }
+.bouncer-table td { height:20px; padding:2px 4px; white-space: nowrap; }
 .bouncer-table td.ic { padding-left:24px; }
 .bouncer-table tr.neutral { background-color:#E0E5F2; }
 .bouncer-table tr.bad { background-color:#EFE2EC; }
@@ -15,3 +15,4 @@
 .bouncer-table tr.status4x { background-color:#f2e8e0; }
 .bouncer-table tr.status2x { background-color:#e2f2e0; }
 .ic { padding-left:24px; background:4px 2px no-repeat }
+.bouncer-table td.ic.compact { padding:0 0 0 0; width: 22px; }
