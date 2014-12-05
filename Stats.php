@@ -33,7 +33,6 @@ class Bouncer_Stats
 
     public static function stats(array $options = array())
     {
-        require_once dirname(__FILE__) . '/Rules/Basic.php';
         require_once dirname(__FILE__) . '/Rules/Browser.php';
         require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
         require_once dirname(__FILE__) . '/Rules/Httpbl.php';
