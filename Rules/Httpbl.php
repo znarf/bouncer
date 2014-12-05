@@ -11,8 +11,8 @@ class Bouncer_Rules_Httpbl
     {
         self::setOptions($options);
         Bouncer::addRule('ip_infos', array('Bouncer_Rules_Httpbl', 'ipInfos'));
-        Bouncer::addRule('browser_identity', array('Bouncer_Rules_Httpbl', 'test'));
-        Bouncer::addRule('robot_identity', array('Bouncer_Rules_Httpbl', 'test'));
+        // Bouncer::addRule('browser_identity', array('Bouncer_Rules_Httpbl', 'test'));
+        // Bouncer::addRule('robot_identity', array('Bouncer_Rules_Httpbl', 'test'));
     }
 
     public static function setOptions(array $options = array())

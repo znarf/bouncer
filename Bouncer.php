@@ -247,7 +247,7 @@ class Bouncer
 
     public static function getHeaders($names = array())
     {
-        $headers = [];
+        $headers = array();
         foreach ($names as $name) {
             $headers[$name] = self::getHeader($name);
         }

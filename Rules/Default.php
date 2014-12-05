@@ -35,6 +35,12 @@ class Bouncer_Rules_Default
         if (empty($infos['system_version'])) {
             $infos['system_version'] = null;
         }
+        if (empty($infos['agent_label'])) {
+            $infos['agent_label'] = 'Unknown';
+        }
+        if (empty($infos['system_label'])) {
+            $infos['system_label'] = '';
+        }
         return $infos;
     }
 
