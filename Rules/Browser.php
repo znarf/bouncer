@@ -120,7 +120,7 @@ class Bouncer_Rules_Browser
             if (isset($headers['Accept']) && $headers['Accept'] == 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8') {
                 $scores[] = array(2.5, 'Expected Accept header (firefox)');
             }
-            if (strpos($identity['user_agent'], 'rv:') === false) {
+            if (strpos($identity['ua'], 'rv:') === false) {
                 $scores[] = array(-5, 'No Mozilla platform token (firefox)');
             }
             if (isset($headers['Accept'], $headers['Accept-Language'], $headers['Accept-Encoding'])) {

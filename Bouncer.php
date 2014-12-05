@@ -360,7 +360,7 @@ class Bouncer
         if ($identity['agent_type'] == self::ROBOT && $result[1] >= 1) {
             // don't consolidate rss-atom entries
             if ($identity['id'] != 'rss-atom') {
-                $identity['id'] = $identity['name'];
+                $identity['id'] = $identity['agent_name'];
             }
         }
 
