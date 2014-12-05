@@ -81,11 +81,10 @@ class Bouncer_Rules_Httpbl
 
     public static function getType($identity)
     {
-        if (empty($identity['httpbl'])) {
+        if (empty($identity['addr_type'])) {
             return '';
         }
-        $result = $identity['httpbl'];
-        switch ($result['type']) {
+        switch ($identity['addr_type']) {
             case 0: return 'search';
             case 1: return 'susp';
             case 2: return 'harv';
