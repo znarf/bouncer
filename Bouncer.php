@@ -159,7 +159,7 @@ class Bouncer
         $identity = self::backend()->getIdentity($id);
 
         // Identity already registered in the backend
-        if (isset($identity)) {
+        if (!empty($identity)) {
             // Keep identity if 'ua' or 'addr' change, but not if both change
             if ($identity['addr'] == $addr || $identity['ua'] == $ua) {
                 if ($identity['addr'] != $addr) {
