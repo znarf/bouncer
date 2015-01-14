@@ -4,11 +4,11 @@ class Bouncer_Stats
 {
 
     protected static $_keys = array(
-       'time', 'id', 'addr', 'fingerprint', 'agent', 'features', 'score'
+       'time', 'id', 'addr', 'ua', 'fingerprint', 'features', 'score'
     );
 
     protected static $_connection_keys = array(
-      'time', 'id', 'addr', 'ua', 'agent', 'method', 'server', 'uri', 'code', 'memory', 'exec_time', 'score'
+      'time', 'id', 'addr', 'ua', 'method', 'server', 'uri', 'code', 'memory', 'exec_time', 'score'
     );
 
     protected static $_all_keys = array(
@@ -27,7 +27,7 @@ class Bouncer_Stats
 
     protected static $_detailed_host = false;
 
-    protected static $_detailed_agent = true;
+    protected static $_detailed_agent = false;
 
     protected static $_detailed_fingerprint = true;
 
@@ -159,15 +159,19 @@ class Bouncer_Stats
             // Special Keys
             if ($key == 'id') {
                 $hex = strlen($value) == 32 ? substr($value, 0, 6) : substr(md5($value), 0, 6);
-                echo '<td style="background:#' . $hex . '">&nbsp;</td>';
-                echo '<td>' .
-                       '<a href="?filter=id%3A' . $value . '">' . (strlen($value) == 32 ? substr($value, 0, 6) : $value) . '</a>' .
-                     '</td>';
+                $count = Bouncer::backend()->countAgentConnections($identity['id'], self::$_namespace);
+                echo
+                '<td class="cb" style="border-left-color:#' . $hex . '">' .
+                    '<a href="?filter=id%3A' . $value . '">' . (strlen($value) == 32 ? substr($value, 0, 6) : $value) . '</a>' .
+                '</td>';
+                echo '<td>' . $count . '</td>';
             } elseif ($key == 'connection_id') {
                 echo '<td>' . '<a href="?filter=connection%3A' . $value . '">' . substr($value, -6) . '</a>' . '</td>';
             } elseif ($key == 'fingerprint') {
-                echo '<td style="background:#' . substr($value, 0, 6) . '">&nbsp;</td>';
-                echo '<td>' . '<a href="?filter=fingerprint%3A' . $value . '">' . substr($value, 0, 6) . '</a>' . '</td>';
+                echo
+                '<td class="cb" style="border-left-color:#' . substr($value, 0, 6) . '">' .
+                    '<a href="?filter=fingerprint%3A' . $value . '">' . substr($value, 0, 6) . '</a>' .
+                '</td>';
                 if (self::$_detailed_fingerprint) {
                     $type = isset($identity['fingerprint_type']) ? $identity['fingerprint_type'] : '';
                     echo '<td>' . $type . '</td>';
@@ -175,9 +179,35 @@ class Bouncer_Stats
                     echo '<td>' . $count . '</td>';
                 }
             } elseif ($key == 'ua') {
-                echo '<td style="background:#' . substr($identity['hua'], 0, 6) . '">&nbsp;</td>';
-                echo '<td>' . '<a href="?filter=hua%3A' . $identity['hua'] . '">' . substr($identity['hua'], 0, 6) . '</a>' . '</td>';
+               if (empty($identity['system_label'])) {
+                    echo
+                    '<td colspan="2" class="cb ic agent-' . $identity['agent_name'] . '" style="border-left-color:#' . substr($identity['hua'], 0, 6) . '">' .
+                        '<a href="?filter=hua%3A' . $identity['hua'] . '">' .
+                            $identity['agent_label'] .
+                        '</a>' .
+                    '</td>';
+                } else {
+                    if (self::$_detailed_agent) {
+                        echo
+                        '<td class="cb ic system-' . $identity['system_name'] . '" style="border-right:0; border-left-color:#' . substr($identity['hua'], 0, 6) . '">' .
+                            $identity['system_label'] .
+                        '</td>';
+                    } else {
+                         echo
+                        '<td class="cb compact ic system-' . $identity['system_name'] . ' agent-' . $identity['agent_name'] . '" style="border-right:0; border-left-color:#' . substr($identity['hua'], 0, 6) . '">' .
+                            '&nbsp;' .
+                        '</td>';
+                    }
+                    echo
+                    '<td class="ic agent-' . $identity['agent_name'] . '" style="border-left:0">' .
+                        '<a href="?filter=hua%3A' . $identity['hua'] . '">' .
+                            $identity['agent_label'] .
+                        '</a>' .
+                    '</td>';
+                }
                 if (self::$_detailed_ua) {
+                    $type = isset($identity['fingerprint_type']) ? $identity['fingerprint_type'] : '';
+                    echo '<td>' . $type . '</td>';
                     $count = Bouncer::backend()->countAgentsUa($identity['hua'], self::$_namespace);
                     echo '<td>' . $count . '</td>';
                 }
@@ -195,13 +225,13 @@ class Bouncer_Stats
                 } else {
                     $value = self::compactHost($identity['host'], $identity['addr']);
                 }
-                echo '<td class="ic extension-' . $identity['extension'] . '">',
-                       '<a href="?filter=haddr%3A' . $identity['haddr'] . '">' . $value . '</a>',
-                     '</td>';
+                echo
+                '<td class="cb ic extension-' . $identity['extension'] . '" style="border-left-color:#' . substr($identity['haddr'], 0, 6) . '">',
+                    '<a href="?filter=haddr%3A' . $identity['haddr'] . '">' . $value . '</a>',
+                '</td>';
                 if (self::$_detailed_host) {
                     $comment = isset($identity['addr_comment']) ? $identity['addr_comment'] : '';
                     echo '<td>', $comment, '</td>';
-
                 }
                 $count = Bouncer::backend()->countAgentsHost($identity['haddr'], self::$_namespace);
                 echo '<td>' . $count . '</td>';
@@ -294,27 +324,24 @@ class Bouncer_Stats
          echo '<tr>';
          foreach ($keys as $key) {
              if ($key == 'id') {
-                 echo '<th style="width:14px">', '', '</th>';
-                 echo '<th>', 'Identity', '</th>';
+                 echo '<th class="cb" colspan="2">', 'Identity', '</th>';
              } elseif ($key == 'fingerprint') {
-                 echo '<th style="width:14px">', '', '</th>';
                  if (self::$_detailed_fingerprint) {
-                    echo '<th colspan="3">', 'Fingerprint', '</th>';
+                    echo '<th class="cb" colspan="3">', 'Fingerprint', '</th>';
                  } else {
-                    echo '<th colspan="1">', 'Fingerprint', '</th>';
+                    echo '<th class="cb" colspan="2">', 'Fingerprint', '</th>';
                  }
              } elseif ($key == 'ua') {
-                 echo '<th style="width:14px">', '', '</th>';
                  if (self::$_detailed_ua) {
-                    echo '<th colspan="2">', 'Ua', '</th>';
+                    echo '<th class="cb" colspan="4">', 'User Agent', '</th>';
                  } else {
-                    echo '<th colspan="1">', 'Ua', '</th>';
+                    echo '<th class="cb" colspan="2">', 'User Agent', '</th>';
                  }
              } elseif ($key == 'addr') {
                  if (self::$_detailed_host) {
-                     echo '<th colspan="3">', 'Addr', '</th>';
+                     echo '<th class="cb" colspan="3">', 'Addr', '</th>';
                  } else {
-                     echo '<th colspan="2">', 'Addr', '</th>';
+                     echo '<th class="cb" colspan="2">', 'Addr', '</th>';
                  }
             } elseif ($key == 'agent') {
                  // echo '<th style="width:14px">', '', '</th>';

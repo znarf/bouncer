@@ -5,6 +5,7 @@
 .bouncer-filter { display:block; margin-bottom:10px; border:1px solid #DEDEDE; }
 .bouncer-table { border-collapse:collapse; }
 .bouncer-table td, .bouncer-table th { border:1px solid #DEDEDE; }
+.bouncer-table td.cb, .bouncer-table th.cb { border-left:10px solid #DEDEDE; }
 .bouncer-table td { height:20px; padding:2px 4px; white-space: nowrap; }
 .bouncer-table td.ic { padding-left:24px; }
 .bouncer-table tr.neutral { background-color:#E0E5F2; }
