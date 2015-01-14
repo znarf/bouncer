@@ -36,6 +36,7 @@ class Bouncer
         'Accept-Language',
         'Accept-Encoding',
         'From',
+        'Dnt',
     );
 
     protected static $_rules = array(
