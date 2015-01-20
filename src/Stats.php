@@ -1,6 +1,8 @@
 <?php
 
-class Bouncer_Stats
+namespace Bouncer;
+
+class Stats
 {
 
     protected static $_keys = array(

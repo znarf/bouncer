@@ -1,6 +1,10 @@
 <?php
 
-class Bouncer_Rules_Bbclone
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Bbclone
 {
 
     public static $browser;
@@ -11,7 +15,7 @@ class Bouncer_Rules_Bbclone
 
     public static function load()
     {
-        Bouncer::addRule('agent_infos', array('Bouncer_Rules_Bbclone', 'agentInfos'));
+        Bouncer::addRule('agent_infos', array('\Bouncer\Rules\Bbclone', 'agentInfos'));
     }
 
     public static function agentInfos($infos)
@@ -46,7 +50,7 @@ class Bouncer_Rules_Bbclone
             if (isset(self::$$type)) {
                 return self::$$type;
             }
-            require dirname(__FILE__) . "/../lib/{$type}.php";
+            require dirname(__FILE__) . "/../../lib/{$type}.php";
             return self::$$type = $$type;
         }
     }

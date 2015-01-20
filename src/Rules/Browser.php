@@ -1,6 +1,10 @@
 <?php
 
-class Bouncer_Rules_Browser
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Browser
 {
 
     public static $explorer_browsers = array('msn', 'maxthon', 'deepnet', 'avantbrowser', 'aol', 'myie2', 'crazybrowser', 'kkman', 'acoo', 'netcaptor', 'sleipnir');
@@ -13,8 +17,8 @@ class Bouncer_Rules_Browser
 
     public static function load()
     {
-        Bouncer::addRule('browser_identity', array('Bouncer_Rules_Browser', 'browser_identity'));
-        Bouncer::addRule('request', array('Bouncer_Rules_Browser', 'browser_request'));
+        Bouncer::addRule('browser_identity', array('\Bouncer\Rules\Browser', 'browser_identity'));
+        Bouncer::addRule('request', array('\Bouncer\Rules\Browser', 'browser_request'));
     }
 
     public static function browser_identity($identity)

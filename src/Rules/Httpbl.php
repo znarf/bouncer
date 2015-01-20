@@ -1,6 +1,10 @@
 <?php
 
-class Bouncer_Rules_Httpbl
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Httpbl
 {
 
     protected static $max_age = 90;
@@ -10,7 +14,7 @@ class Bouncer_Rules_Httpbl
     public static function load(array $options = array())
     {
         self::setOptions($options);
-        Bouncer::addRule('ip_infos', array('Bouncer_Rules_Httpbl', 'ipInfos'));
+        Bouncer::addRule('ip_infos', array('\Bouncer\Rules\Httpbl', 'ipInfos'));
         // Bouncer::addRule('browser_identity', array('Bouncer_Rules_Httpbl', 'test'));
         // Bouncer::addRule('robot_identity', array('Bouncer_Rules_Httpbl', 'test'));
     }

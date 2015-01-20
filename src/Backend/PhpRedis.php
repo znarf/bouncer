@@ -1,6 +1,10 @@
 <?php
 
-class Bouncer_Backend_PhpRedis
+namespace Bouncer\Backend;
+
+use Redis;
+
+class PhpRedis
 {
 
     protected static $_redis = null;

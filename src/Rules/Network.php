@@ -1,6 +1,10 @@
 <?php
 
-class Bouncer_Rules_Network
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Network
 {
 
     public static $wrongHosts = array(
@@ -27,7 +31,7 @@ class Bouncer_Rules_Network
 
     public static function load(array $options = array())
     {
-        Bouncer::addRule('ip_infos', array('Bouncer_Rules_Network', 'ipInfos'));
+        Bouncer::addRule('ip_infos', array('\Bouncer\Rules\Network', 'ipInfos'));
     }
 
     public static function ipInfos($infos)
@@ -141,13 +145,13 @@ class Bouncer_Rules_Network
         // Optimize query array and renumber
         $queryarray = array_unique($queryarray);
         $i = 0;
-        foreach ($queryarray as $a) { 
+        foreach ($queryarray as $a) {
             $qarray[$i] = $a;
             $i++;
         }
 
         // Create a new socket
-        $sock = stream_socket_client("tcp://".$pwserver.":".$pwport, 
+        $sock = stream_socket_client("tcp://".$pwserver.":".$pwport,
         $errno, $errstr, $socket_timeout);
         if (!$sock) {
             // echo "$errstr ($errno)<br />\n";
@@ -208,7 +212,7 @@ class Bouncer_Rules_Network
                     $matcher = explode(":",$r);
                     $response[$qarray[$entity_id]][strtolower($matcher[0])] = ltrim($matcher[1]);
 
-                } 
+                }
 
                 if ($entity_id >= array_count_values($qarray)) break;
 

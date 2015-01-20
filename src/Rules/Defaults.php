@@ -1,13 +1,17 @@
 <?php
 
-class Bouncer_Rules_Default
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Defaults
 {
 
     public static function load()
     {
-        Bouncer::addRule('identity_infos', array('Bouncer_Rules_Default', 'identityInfos'));
-        Bouncer::addRule('agent_infos', array('Bouncer_Rules_Default', 'agentInfos'));
-        Bouncer::addRule('ip_infos', array('Bouncer_Rules_Default', 'ipInfos'));
+        Bouncer::addRule('identity_infos', array('\Bouncer\Rules\Defaults', 'identityInfos'));
+        Bouncer::addRule('agent_infos', array('\Bouncer\Rules\Defaults', 'agentInfos'));
+        Bouncer::addRule('ip_infos', array('\Bouncer\Rules\Defaults', 'ipInfos'));
     }
 
     public static function identityInfos($infos)

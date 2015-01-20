@@ -1,11 +1,15 @@
 <?php
 
-class Bouncer_Rules_Request
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Request
 {
 
     public static function load()
     {
-        Bouncer::addRule('request', array('Bouncer_Rules_Request', 'request_headers'));
+        Bouncer::addRule('request', array('\Bouncer\Rules\Request', 'request_headers'));
     }
 
     public static function request_headers($identity, $request)

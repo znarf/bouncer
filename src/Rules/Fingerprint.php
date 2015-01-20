@@ -1,15 +1,19 @@
 <?php
 
-class Bouncer_Rules_Fingerprint
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Fingerprint
 {
 
     protected static $_cache = array();
 
     public static function load()
     {
-        Bouncer::addRule('agent_infos', array('Bouncer_Rules_Fingerprint', 'agentInfos'));
-        Bouncer::addRule('browser_identity', array('Bouncer_Rules_Fingerprint', 'analyseIdentity'));
-        Bouncer::addRule('robot_identity', array('Bouncer_Rules_Fingerprint', 'analyseIdentity'));
+        Bouncer::addRule('agent_infos', array('\Bouncer\Rules\Fingerprint', 'agentInfos'));
+        Bouncer::addRule('browser_identity', array('\Bouncer\Rules\Fingerprint', 'analyseIdentity'));
+        Bouncer::addRule('robot_identity', array('\Bouncer\Rules\Fingerprint', 'analyseIdentity'));
     }
 
     public static function agentInfos($identity)
@@ -70,7 +74,7 @@ class Bouncer_Rules_Fingerprint
         if (isset(self::$_cache[$type])) {
             return self::$_cache[$type];
         }
-        return self::$_cache[$type] = include dirname(__FILE__) . '/../fingerprints/' . $type . '.php';
+        return self::$_cache[$type] = include dirname(__FILE__) . '/../../fingerprints/' . $type . '.php';
     }
 
 }

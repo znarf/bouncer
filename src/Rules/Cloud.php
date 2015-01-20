@@ -1,11 +1,15 @@
 <?php
 
-class Bouncer_Rules_Cloud
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Cloud
 {
 
     public static function load()
     {
-        Bouncer::addRule('identity_infos', array('Bouncer_Rules_Cloud', 'identityInfos'));
+        Bouncer::addRule('identity_infos', array('\Bouncer\Rules\Cloud', 'identityInfos'));
     }
 
     public static function identityInfos($identity)

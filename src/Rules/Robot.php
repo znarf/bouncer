@@ -1,11 +1,15 @@
 <?php
 
-class Bouncer_Rules_Robot
+namespace Bouncer\Rules;
+
+use Bouncer\Bouncer;
+
+class Robot
 {
 
     public static function load()
     {
-        Bouncer::addRule('robot_identity', array('Bouncer_Rules_Robot', 'robot_identity'));
+        Bouncer::addRule('robot_identity', array('\Bouncer\Rules\Robot', 'robot_identity'));
     }
 
     public static function robot_identity($identity)

@@ -1,6 +1,8 @@
 <?php
 
-class Bouncer_Backend_Memcache
+namespace Bouncer\Backend;
+
+class Memcache
 {
 
     protected static $_prefix = null;

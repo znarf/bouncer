@@ -1,6 +1,8 @@
 <?php
 
-class Bouncer_Challenge
+namespace Bouncer;
+
+class Challenge
 {
 
     protected static $challenged;

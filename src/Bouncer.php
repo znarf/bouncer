@@ -1,5 +1,7 @@
 <?php
 
+namespace Bouncer;
+
 class Bouncer
 {
 
@@ -63,9 +65,9 @@ class Bouncer
         static::setOptions($options);
         if ($type == 'cloud') {
             require_once dirname(__FILE__) . '/Rules/Cloud.php';
-            Bouncer_Rules_Cloud::load();
-            require_once dirname(__FILE__) . '/Rules/Default.php';
-            Bouncer_Rules_Default::load();
+            \Bouncer\Rules\Cloud::load();
+            require_once dirname(__FILE__) . '/Rules/Defaults.php';
+            \Bouncer\Rules\Defaults::load();
         } else {
             static::load();
         }
@@ -74,20 +76,20 @@ class Bouncer
 
     public static function load()
     {
-        require_once dirname(__FILE__) . '/Rules/Default.php';
-        Bouncer_Rules_Default::load();
+        require_once dirname(__FILE__) . '/Rules/Defaults.php';
+        \Bouncer\Rules\Defaults::load();
         require_once dirname(__FILE__) . '/Rules/Bbclone.php';
-        Bouncer_Rules_Bbclone::load();
+        \Bouncer\Rules\Bbclone::load();
         require_once dirname(__FILE__) . '/Rules/Geoip.php';
-        Bouncer_Rules_Geoip::load();
+        \Bouncer\Rules\Geoip::load();
         require_once dirname(__FILE__) . '/Rules/Browser.php';
-        Bouncer_Rules_Browser::load();
+        \Bouncer\Rules\Browser::load();
         require_once dirname(__FILE__) . '/Rules/Robot.php';
-        Bouncer_Rules_Robot::load();
+        \Bouncer\Rules\Robot::load();
         require_once dirname(__FILE__) . '/Rules/Request.php';
-        Bouncer_Rules_Request::load();
+        \Bouncer\Rules\Request::load();
         require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
-        Bouncer_Rules_Fingerprint::load();
+        \Bouncer\Rules\Fingerprint::load();
     }
 
     public static function setOptions(array $options = array())
@@ -342,7 +344,7 @@ class Bouncer
         }
 
         // End
-        register_shutdown_function(array('Bouncer', 'end'));
+        register_shutdown_function(array('\Bouncer\Bouncer', 'end'));
     }
 
     protected static function analyse($identity, $request)
@@ -587,7 +589,7 @@ class Bouncer
     public static function challenge()
     {
         require_once dirname(__FILE__) . '/Challenge.php';
-        Bouncer_Challenge::challenge();
+        Challenge::challenge();
     }
 
     // Backend
@@ -602,7 +604,7 @@ class Bouncer
                     if (!empty(self::$_servers)) {
                         $options['servers'] = self::$_servers;
                     }
-                    self::$_backendInstance = new Bouncer_Backend_Memcache($options);
+                    self::$_backendInstance = new \Bouncer\Backend\Memcache($options);
                     break;
                 case 'redis':
                 case 'phpredis':
@@ -625,13 +627,8 @@ class Bouncer
                             $options['servers'][] = compact('host', 'port', 'username', 'password', 'timeout', 'readTimeout');
                         }
                     }
-                    if (self::$_backend == 'phpredis') {
-                      require_once dirname(__FILE__) . '/Backend/PhpRedis.php';
-                      self::$_backendInstance = new Bouncer_Backend_PhpRedis($options);
-                    } else {
-                      require_once dirname(__FILE__) . '/Backend/Redis.php';
-                      self::$_backendInstance = new Bouncer_Backend_Redis($options);
-                    }
+                    require_once dirname(__FILE__) . '/Backend/PhpRedis.php';
+                    self::$_backendInstance = new \Bouncer\Backend\PhpRedis($options);
                     break;
             }
         }
@@ -665,12 +662,12 @@ class Bouncer
         static::setOptions($options);
         static::load();
         require_once dirname(__FILE__) . '/Stats.php';
-        Bouncer_Stats::setOptions($options);
-        Bouncer_Stats::css();
+        Stats::setOptions($options);
+        Stats::css();
         if (empty($_GET['agent']) && empty($_GET['connection']) && empty($_GET['stats'])) {
-            Bouncer_Stats::search();
+            Stats::search();
         }
-        Bouncer_Stats::stats();
+        Stats::stats();
     }
 
 }
