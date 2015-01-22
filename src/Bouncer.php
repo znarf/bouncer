@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the Bouncer package.
+ *
+ * (c) François Hodierne <francois@hodierne.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Bouncer;
 
 class Bouncer
@@ -14,10 +23,10 @@ class Bouncer
     const BROWSER    = 'browser';
     const UNKNOWN    = 'unknown';
 
+    protected static $backend;
+
     protected static $_prefix = '';
 
-    protected static $_backend = 'memcache';
-    protected static $_backendInstance = null;
 
     protected static $_ended = false;
 
@@ -54,11 +63,24 @@ class Bouncer
         ''
     );
 
-    protected static $_servers = array();
-
     protected static $_connection = null;
 
     protected static $_connectionKey = null;
+
+    public function __construct($backend = null)
+    {
+        if ($backend) {
+            self::$backend = $backend;
+        }
+    }
+
+    public static function getBackend()
+    {
+        if (empty(self::$backend)) {
+            throw new Exception('No backend available.');
+        }
+        return self::$backend;
+    }
 
     public static function run(array $options = array(), $type = 'default')
     {
@@ -158,8 +180,8 @@ class Bouncer
 
         $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($haddr . $hua);
 
-        // Get identity from Backend
-        $identity = self::backend()->getIdentity($id);
+        // Get identity from the backend
+        $identity = self::getBackend()->getIdentity($id);
 
         // Identity already registered in the backend
         if (!empty($identity)) {
@@ -169,13 +191,13 @@ class Bouncer
                     $identity['addr'] = $addr;
                     $identity = self::getIdentityInfos($identity);
                     $identity = self::getAgentInfos($identity);
-                    self::backend()->setIdentity($id, $identity);
                 } elseif ($identity['ua'] != $ua) {
+                    self::getBackend()->setIdentity($id, $identity);
                     $identity['ua'] = $ua;
                     $identity['headers'] = $headers;
                     $identity = self::getIdentityInfos($identity);
                     $identity = self::getAgentInfos($identity);
-                    self::backend()->setIdentity($id, $identity);
+                    self::getBackend()->setIdentity($id, $identity);
                 }
                 return $identity;
             }
@@ -196,7 +218,7 @@ class Bouncer
         $identity = self::getIpInfos($identity);
 
         // Store Identity in the Backend
-        self::backend()->setIdentity($id, $identity);
+        self::getBackend()->setIdentity($id, $identity);
 
         return $identity;
     }
@@ -370,8 +392,8 @@ class Bouncer
         // Analysis resulted in a new identity id, we store it
         if ($identity['id'] != $id) {
             $id = $identity['id'];
-            if (!self::getIdentity($id)) {
-                self::setIdentity($id, $identity);
+            if (!self::getBackend()->getIdentity($id)) {
+                self::getBackend()->setIdentity($id, $identity);
             }
         }
 
@@ -454,7 +476,7 @@ class Bouncer
 
         // Log connection
         self::$_connection = $connection;
-        self::$_connectionKey = self::backend()->storeConnection($connection);
+        self::$_connectionKey = self::getBackend()->storeConnection($connection);
 
         // For Indexing
         $agent       = $identity['id'];
@@ -462,9 +484,10 @@ class Bouncer
         $haddr       = $identity['haddr'];
         $fingerprint = $identity['fingerprint'];
 
+        $backend = self::getBackend();
+
         // Index
         foreach (self::$_namespaces as $ns) {
-            $backend = self::backend();
             // Add agent to global index
             if (method_exists($backend, 'indexAgent')) {
                 $backend->indexAgent($agent, $ns);
@@ -498,20 +521,20 @@ class Bouncer
         // Index non 200 queries
         if (isset($connection['code']) && $connection['code'] != 200) {
           $not200IndexKey = empty($ns) ? "connections-not200" : "connections-not200-$ns";
-          self::backend()->indexConnectionWithIndexKey($not200IndexKey, $connectionKey);
+          self::getBackend()->indexConnectionWithIndexKey($not200IndexKey, $connectionKey);
         }
         // Index non GET queries
         if (isset($connection['method']) && $connection['method'] != 'GET') {
           $notGetIndexKey = empty($ns) ? "connections-notGET" : "connections-notGET-$ns";
-          self::backend()->indexConnectionWithIndexKey($notGetIndexKey, $connectionKey);
+          self::getBackend()->indexConnectionWithIndexKey($notGetIndexKey, $connectionKey);
         }
         // Index slow & very slow queries
         if (isset($connection['exec_time']) && $connection['exec_time'] >= 0.25) {
           $slowIndexKey = empty($ns) ? "connections-slow" : "connections-slow-$ns";
-          self::backend()->indexConnectionWithIndexKey($slowIndexKey, $connectionKey);
+          self::getBackend()->indexConnectionWithIndexKey($slowIndexKey, $connectionKey);
           if ($connection['exec_time'] >= 2.5) {
             $verySlowIndexKey = empty($ns) ? "connections-veryslow" : "connections-veryslow-$ns";
-            self::backend()->indexConnectionWithIndexKey($verySlowIndexKey, $connectionKey);
+            self::getBackend()->indexConnectionWithIndexKey($verySlowIndexKey, $connectionKey);
           }
         }
     }
@@ -556,11 +579,11 @@ class Bouncer
         self::$_connection['code'] = http_response_code();
 
         try {
-          self::backend()->set("connection-" . self::$_connectionKey, self::$_connection);
-          foreach (self::$_namespaces as $ns) {
+          self::getBackend()->set("connection-" . self::$_connectionKey, self::$_connection);
+          foreach (self::$namespaces as $ns) {
             self::indexConnectionExtra(self::$_connectionKey, self::$_connection, $ns);
           }
-          self::backend()->clean();
+          self::getBackend()->close();
         } catch (Exception $e) {
         }
 
@@ -592,67 +615,16 @@ class Bouncer
         Challenge::challenge();
     }
 
-    // Backend
-
-    public static function backend()
-    {
-        if (empty(self::$_backendInstance)) {
-            switch (self::$_backend) {
-                case 'memcache':
-                    require_once dirname(__FILE__) . '/Backend/Memcache.php';
-                    $options = array('prefix' => self::$_prefix);
-                    if (!empty(self::$_servers)) {
-                        $options['servers'] = self::$_servers;
-                    }
-                    self::$_backendInstance = new \Bouncer\Backend\Memcache($options);
-                    break;
-                case 'redis':
-                case 'phpredis':
-                    $options = array('namespace' => self::$_prefix);
-                    if (!empty(self::$_servers)) {
-                        $options['servers'] = array();
-                        foreach (self::$_servers as $host) {
-                            if (strpos($host, '@')) {
-                                list($password, $host) = explode('@', $host);
-                                if (strpos($password, ':')) {
-                                    list($username, $password) = explode(':', $password);
-                                }
-                            }
-                            $port = 6379;
-                            if (strpos($host, ':')) {
-                                list($host, $port) = explode(':', $host);
-                            }
-                            $timeout = 1;
-                            $readTimeout = 1;
-                            $options['servers'][] = compact('host', 'port', 'username', 'password', 'timeout', 'readTimeout');
-                        }
-                    }
-                    require_once dirname(__FILE__) . '/Backend/PhpRedis.php';
-                    self::$_backendInstance = new \Bouncer\Backend\PhpRedis($options);
-                    break;
-            }
-        }
-        return self::$_backendInstance;
-    }
+    // Backend Shortcuts
 
     public static function get($key)
     {
-        return self::backend()->get($key);
+        return self::getBackend()->get($key);
     }
 
     public static function set($key, $value)
     {
-        return self::backend()->set($key, $value);
-    }
-
-    public static function getIdentity($id)
-    {
-        return self::backend()->getIdentity($id);
-    }
-
-    public static function setIdentity($id, $value)
-    {
-        return self::backend()->setIdentity($id, $value);
+        return self::getBackend()->set($key, $value);
     }
 
     // Stats

@@ -1,107 +1,132 @@
 <?php
 
+/*
+ * This file is part of the Bouncer package.
+ *
+ * (c) François Hodierne <francois@hodierne.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Bouncer\Backend;
 
-class Memcache
+use Memcache as PhpMemcache;
+use Memcached as PhpMemcached;
+
+use Bouncer\Exception;
+
+class Memcache extends AbstractBackend
 {
 
-    protected static $_prefix = null;
+    protected $client = null;
 
-    protected static $_servers = array('127.0.0.1');
+    protected $_prefix = null;
 
-    public static $memcache = null;
+    protected $_servers = array('127.0.0.1');
 
-    private static $cache = array();
+    protected $cache = [];
 
-    public function __construct(array $options = array())
+    public function __construct($options  = null)
     {
+        // Client Injection
+        if (is_object($options)) {
+            $this->client = $options;
+            return;
+        }
+
         if (isset($options['prefix'])) {
-            self::$_prefix = $options['prefix'];
+            $this->_prefix = $options['prefix'];
         }
         if (isset($options['servers'])) {
-            self::$_servers = $options['servers'];
+            $this->_servers = $options['servers'];
         }
     }
 
-    public static function memcache()
+    /**
+     * @return PhpMemcache|PhpMemcached
+     */
+    public function getClient()
     {
-        if (empty(self::$memcache)) {
-            if (class_exists('Memcache')) {
-                $memcache = new Memcache();
-            } elseif (class_exists('Memcached')) {
-                $memcache = new Memcached();
+        if (empty($this->client)) {
+            if (class_exists('PhpMemcache')) {
+                $client = new PhpMemcache();
+            } elseif (class_exists('PhpMemcached')) {
+                $client = new PhpMemcached();
             }
-            if (isset($memcache)) {
-                foreach (self::$_servers as $server) {
+            if (isset($client)) {
+                foreach ($this->_servers as $server) {
                     $server = trim($server);
                     if (strpos($server, ':')) {
                         list($server, $port) = explode(':', $server);
                     }
                     $port = empty($port) ? 11211 : intval($port);
-                    $memcache->addServer($server, $port);
+                    $client->addServer($server, $port);
                 }
-                self::$memcache = $memcache;
+                $this->client = $client;
             }
         }
-        return self::$memcache;
+        return $this->client;
     }
 
-    public static function api()
+    public function getApi()
     {
-        $memcache = self::memcache();
-        if ($memcache instanceof Memcached) {
+        $client = $this->getClient();
+        if ($client instanceof PhpMemcached) {
             return 'memcached';
+        } else {
+            return 'memcache';
         }
-        return 'memcache';
     }
 
-    public static function clean()
+    public function close()
     {
-        if (isset(self::$memcache)) {
-            if (self::api() == 'memcache') {
-                self::$memcache->close();
+        if (isset($this->client)) {
+            if ($this->getApi() == 'memcache') {
+                $this->client->close();
             }
-            self::$memcache = null;
+            $this->client = null;
         }
     }
 
-    public static function get($key)
+    public function get($key)
     {
-        $memcache = self::memcache();
-        if (empty($memcache)) {
-            return false;
+        $client = $this->getClient();
+        if (empty($client)) {
+            return;
         }
-        if (!empty(self::$_prefix)) {
-            $key = self::$_prefix . '-' . $key;
+        if (!empty($this->_prefix)) {
+            $key = $this->_prefix . '-' . $key;
         }
-        if (empty(self::$cache[$key])) {
-            self::$cache[$key] = $memcache->get($key);
+        if (empty($this->cache[$key])) {
+            $this->cache[$key] = $client->get($key);
         }
-        return self::$cache[$key];
+        return $this->cache[$key];
     }
 
-    public static function set($key, $value, $expire = 0)
+    public function set($key, $value, $expire = 0)
     {
-        $memcache = self::memcache();
-        if (empty($memcache)) {
-            return false;
+        $client = $this->getClient();
+        if (empty($client)) {
+            return;
         }
-        if (!empty(self::$_prefix)) {
-            $key = self::$_prefix . '-' . $key;
+        if (!empty($this->_prefix)) {
+            $key = $this->_prefix . '-' . $key;
         }
-        self::$cache[$key] = $value;
-        if (self::api() == 'memcache') {
-            return $memcache->set($key, $value, null, $expire);
+        $this->cache[$key] = $value;
+        if ($this->getApi() == 'memcache') {
+            return $client->set($key, $value, null, $expire);
+        } else {
+            return $client->set($key, $value, $expire);
         }
-        return $memcache->set($key, $value, $expire);
     }
 
-    public static function indexAgent($agent, $namespace = '')
+    public function indexAgent($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? 'agents' : "agents-$namespace";
 
         // Index agent
-        $agents = self::get($indexKey);
+        $agents = $this->get($indexKey);
         if (empty($agents)) {
             $agents = array();
         }
@@ -114,54 +139,47 @@ class Memcache
             $agents = $chunks[0];
         }
         array_unshift($agents, $agent);
-        self::set($indexKey, $agents);
+        $this->set($indexKey, $agents);
     }
 
-    public static function getAgentsIndex($namespace = '')
+    public function getAgentsIndex($namespace = '')
     {
         $indexKey = empty($namespace) ? 'agents' : "agents-$namespace";
-        $agents = self::get($indexKey);
+        $agents = $this->get($indexKey);
         return $agents;
     }
 
-    public static function getAgentsIndexFingerprint($fingerprint, $namespace = '')
+    public function getAgentsIndexFingerprint($fingerprint, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
-        $agentsIndex = self::get($indexKey);
+        $agentsIndex = $this->get($indexKey);
         return $agentsIndex;
     }
 
-    public static function getAgentsIndexHost($haddr, $namespace = '')
+    public function getAgentsIndexHost($haddr, $namespace = '')
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
-        $agentsIndex = self::get($indexKey);
+        $agentsIndex = $this->get($indexKey);
         return $agentsIndex;
     }
 
-    public static function countAgentsFingerprint($fingerprint, $namespace = '')
+    public function countAgentsFingerprint($fingerprint, $namespace = '')
     {
         return 0;
     }
 
-    public static function countAgentsHost($haddr, $namespace = '')
+    public function countAgentsHost($haddr, $namespace = '')
     {
         return 0;
     }
 
-    public static function storeConnection($connection)
-    {
-        $key = uniqid();
-        self::set("connection-" . $key, $connection);
-        return $key;
-    }
-
-    public static function indexConnection($key, $agent, $namespace = '')
+    public function indexConnection($key, $agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $countKey = empty($namespace) ? "count" : "count-$namespace";
 
         // Add connection to agent connection index
-        $connections = self::get($indexKey);
+        $connections = $this->get($indexKey);
         if (empty($connections)) {
             $connections = array();
         }
@@ -169,80 +187,70 @@ class Memcache
             $chunks = array_chunk($connections, 200);
             $connections = $chunks[0];
             // update count
-            $identity = self::getIdentity($agent);
+            $identity = $this->getIdentity($agent);
             $identity[$countKey] = empty($identity[$countKey]) ? count($chunks[1]) : $identity[$countKey] + count($chunks[1]);
-            self::setIdentity($agent, $identity);
+            $this->setIdentity($agent, $identity);
         }
         array_unshift($connections, $key);
-        self::set($indexKey, $connections);
+        $this->set($indexKey, $connections);
     }
 
-    public static function getAgentConnections($agent, $namespace = '')
+    public function getAgentConnections($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $result = array();
-        $connections = self::get($indexKey);
+        $connections = $this->get($indexKey);
         if (empty($connections)) {
             return null;
         }
         foreach ($connections as $key) {
-            $result[$key] = self::get("connection-" . $key);
+            $result[$key] = $this->get("connection-" . $key);
         }
         return $result;
     }
 
-    public static function getLastAgentConnection($agent, $namespace = '')
+    public function getLastAgentConnection($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
-        $connections = self::get($indexKey);
+        $connections = $this->get($indexKey);
         if (empty($connections)) {
             return null;
         }
         foreach ($connections as $key) {
-            $connection = self::get("connection-" . $key);
+            $connection = $this->get("connection-" . $key);
             if ($connection) {
                 return $connection;
             }
         }
     }
 
-    public static function getFirstAgentConnection($agent, $namespace = '')
+    public function getFirstAgentConnection($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
-        $connections = self::get($indexKey);
+        $connections = $this->get($indexKey);
         $connections = array_reverse($connections);
         if (empty($connections)) {
             return null;
         }
         foreach ($connections as $key) {
-            $connection = self::get("connection-" . $key);
+            $connection = $this->get("connection-" . $key);
             if ($connection) {
                 return $connection;
             }
         }
     }
 
-    public static function countAgentConnections($agent, $namespace = '')
+    public function countAgentConnections($agent, $namespace = '')
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $countKey = empty($namespace) ? "count" : "count-$namespace";
-        $identity = self::getIdentity($agent);
-        $connections = self::get($indexKey);
+        $identity = $this->getIdentity($agent);
+        $connections = $this->get($indexKey);
         $count = count($connections);
         if (!empty($identity[$countKey])) {
             $count += (int)$identity[$countKey];
         }
         return $count;
-    }
-
-    public static function setIdentity($id, $identity)
-    {
-        return self::set("identity-$id", $identity);
-    }
-
-    public static function getIdentity($id)
-    {
-        return self::get("identity-$id");
     }
 
 }
