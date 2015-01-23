@@ -88,9 +88,7 @@ class Bouncer
     {
         static::setOptions($options);
         if ($type == 'cloud') {
-            require_once dirname(__FILE__) . '/Rules/Cloud.php';
             \Bouncer\Rules\Cloud::load();
-            require_once dirname(__FILE__) . '/Rules/Defaults.php';
             \Bouncer\Rules\Defaults::load();
         } else {
             static::load();
@@ -100,19 +98,12 @@ class Bouncer
 
     public static function load()
     {
-        require_once dirname(__FILE__) . '/Rules/Defaults.php';
         \Bouncer\Rules\Defaults::load();
-        require_once dirname(__FILE__) . '/Rules/Bbclone.php';
         \Bouncer\Rules\Bbclone::load();
-        require_once dirname(__FILE__) . '/Rules/Geoip.php';
         \Bouncer\Rules\Geoip::load();
-        require_once dirname(__FILE__) . '/Rules/Browser.php';
         \Bouncer\Rules\Browser::load();
-        require_once dirname(__FILE__) . '/Rules/Robot.php';
         \Bouncer\Rules\Robot::load();
-        require_once dirname(__FILE__) . '/Rules/Request.php';
         \Bouncer\Rules\Request::load();
-        require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
         \Bouncer\Rules\Fingerprint::load();
     }
 
@@ -511,7 +502,6 @@ class Bouncer
 
     public static function challenge()
     {
-        require_once dirname(__FILE__) . '/Challenge.php';
         Challenge::challenge();
     }
 
@@ -533,7 +523,6 @@ class Bouncer
     {
         static::setOptions($options);
         static::load();
-        require_once dirname(__FILE__) . '/Stats.php';
         Stats::setOptions($options);
         Stats::css();
         if (empty($_GET['agent']) && empty($_GET['connection']) && empty($_GET['stats'])) {

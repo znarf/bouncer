@@ -41,12 +41,6 @@ class Stats
 
     public static function stats(array $options = array())
     {
-        require_once dirname(__FILE__) . '/Rules/Browser.php';
-        require_once dirname(__FILE__) . '/Rules/Fingerprint.php';
-        require_once dirname(__FILE__) . '/Rules/Httpbl.php';
-        require_once dirname(__FILE__) . '/Rules/Network.php';
-        require_once dirname(__FILE__) . '/Rules/Geoip.php';
-
         self::setOptions($options);
 
         $flags = self::getFlags();
