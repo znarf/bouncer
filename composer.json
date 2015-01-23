@@ -1,0 +1,30 @@
+{
+    "name": "bouncer/bouncer",
+    "description": "An access analysing+throttling+logging toolkit.",
+    "keywords": [
+        "bouncer"
+    ],
+    "homepage": "https://github.com/znarf/Bouncer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":François Hodierne",
+            "email": "francois@hodierne.net",
+            "homepage": "http://francois.hodierne.net/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0",
+        "monolog/monolog": "*",
+        "symfony/http-foundation": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bouncer\\": "src"
+        }
+    }
+}

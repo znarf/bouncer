@@ -32,6 +32,8 @@ class Bouncer
 
     protected static $_throttle = 0;
 
+    protected static $request;
+
     public static $known_browsers = array(
         'explorer',
         'firefox',
@@ -59,7 +61,7 @@ class Bouncer
         'request'          => array(),
     );
 
-    protected static $_namespaces = array(
+    protected static $namespaces = array(
         ''
     );
 
@@ -119,64 +121,20 @@ class Bouncer
         if (isset($options['prefix'])) {
             self::$_prefix = $options['prefix'];
         }
-        if (isset($options['backend'])) {
-            self::$_backend = $options['backend'];
-        }
         if (isset($options['namespaces'])) {
-            self::$_namespaces = $options['namespaces'];
-        }
-        if (isset($options['servers'])) {
-            self::$_servers = $options['servers'];
+            self::$namespaces = $options['namespaces'];
         }
     }
 
-    public static function isAddrPublic($addr)
+    public static function getIdentity()
     {
-        if ($addr === '127.0.0.1' || $addr == '::1') {
-            return false;
-        } elseif (strpos($addr, '172.') === 0 || strpos($addr, '192.') === 0 || strpos($addr, '10.') === 0) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-
-    public static function getAddr()
-    {
-        $addr = $_SERVER['REMOTE_ADDR'];
-
-        if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-            $forwarded_for = array_map('trim', explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']));
-            $forwarded_for = array_filter($forwarded_for, array('self', 'isAddrPublic'));
-            $forwarded_for = array_diff($forwarded_for, array($addr));
-        }
-
-        // Non-Public Address
-        if (!self::isAddrPublic($addr)) {
-            if (!empty($forwarded_for)) {
-                $addr = array_pop($forwarded_for);
-            }
-        }
-
-        // Trusted Proxies (example)
-        if ($addr == '78.109.84.222') {
-            if (!empty($forwarded_for)) {
-                $addr = array_pop($forwarded_for);
-            }
-        }
-
-        return $addr;
-    }
-
-    public static function identity()
-    {
-        $addr  = self::getAddr();
+        $addr  = self::getRequest()->getAddr();
         $haddr = self::hash($addr);
 
-        $ua    = self::getUserAgent();
+        $ua    = self::getRequest()->getUserAgent();
         $hua   = self::hash($ua);
 
-        $headers = self::getHeaders(self::$identity_headers);
+        $headers = self::getRequest()->getHeaders(self::$identity_headers);
 
         $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($haddr . $hua);
 
@@ -186,14 +144,16 @@ class Bouncer
         // Identity already registered in the backend
         if (!empty($identity)) {
             // Keep identity if 'ua' or 'addr' change, but not if both change
-            if ($identity['addr'] == $addr || $identity['ua'] == $ua) {
-                if ($identity['addr'] != $addr) {
+            if ($identity['haddr'] == $haddr || $identity['hua'] == $hua) {
+                if ($identity['haddr'] != $haddr) {
                     $identity['addr'] = $addr;
+                    $identity['haddr'] = $haddr;
                     $identity = self::getIdentityInfos($identity);
                     $identity = self::getAgentInfos($identity);
-                } elseif ($identity['ua'] != $ua) {
                     self::getBackend()->setIdentity($id, $identity);
+                } elseif ($identity['hua'] != $hua) {
                     $identity['ua'] = $ua;
+                    $identity['hua'] = $hua;
                     $identity['headers'] = $headers;
                     $identity = self::getIdentityInfos($identity);
                     $identity = self::getAgentInfos($identity);
@@ -203,7 +163,7 @@ class Bouncer
             }
         }
 
-        // Build Identity
+        // Build Identity array
         $identity = array(
             'id'      => self::hash($haddr . $hua),
             'ua'      => $ua,
@@ -213,6 +173,7 @@ class Bouncer
             'headers' => $headers,
         );
 
+        // Process Rules
         $identity = self::getIdentityInfos($identity);
         $identity = self::getAgentInfos($identity);
         $identity = self::getIpInfos($identity);
@@ -223,110 +184,49 @@ class Bouncer
         return $identity;
     }
 
-    protected static function getIdentityInfos($identity)
+    protected static function getInfos($ruleset, $identity)
     {
-        $rules = self::$_rules['identity_infos'];
+        $rules = self::$_rules[$ruleset];
         foreach ($rules as $func) {
             $identity = call_user_func_array($func, array($identity));
         }
         return $identity;
+    }
+
+    protected static function getIdentityInfos($identity)
+    {
+        return self::getInfos('identity_infos', $identity);
     }
 
     protected static function getAgentInfos($identity)
     {
-        $rules = self::$_rules['agent_infos'];
-        foreach ($rules as $func) {
-            $identity = call_user_func_array($func, array($identity));
-        }
-        return $identity;
+        return self::getInfos('agent_infos', $identity);
     }
 
     protected static function getIpInfos($identity)
     {
-        $rules = self::$_rules['ip_infos'];
-        foreach ($rules as $func) {
-            $identity = call_user_func_array($func, array($identity));
-        }
-        return $identity;
+        return self::getInfos('ip_infos', $identity);
     }
 
-    public static function getHeader($name)
+    public static function getRequest()
     {
-        $key = 'HTTP_' . str_replace('-', '_', strtoupper($name));
-        return isset($_SERVER[$key]) ? $_SERVER[$key] : null;
-    }
+        if (isset(self::$request)) {
+            return self::$request;
+        }
 
-    public static function getAllHeaders($ignore = array())
-    {
-        $headers = array();
-        foreach ($_SERVER as $name => $value) {
-            if (substr($name, 0, 5) == 'HTTP_') {
-                $key = str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))));
-                if (!in_array($key, $ignore)) {
-                    $headers[$key] = $value;
-                }
-            }
-        }
-        return $headers;
-    }
+        $request = Request::createFromGlobals();
 
-    public static function getHeaders($names = array())
-    {
-        $headers = array();
-        foreach ($names as $name) {
-            $headers[$name] = self::getHeader($name);
-        }
-        return array_filter($headers);
-    }
-
-    public static function getUserAgent()
-    {
-        $userAgent = self::getHeader('User-Agent');
-        return $userAgent ? $userAgent : '';
-    }
-
-    protected static function request()
-    {
-        $request = array();
-        $request['method'] = strtoupper($_SERVER['REQUEST_METHOD']);
-        $request['server'] = !empty($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : $_SERVER['SERVER_NAME'];
-        // Uri
-        $uri = $_SERVER['REQUEST_URI'];
-        if (strpos($uri, '?')) {
-            $split = explode('?', $uri);
-            $request['uri'] = $split[0];
-        } else {
-            $request['uri'] = $uri;
-        }
-        // Headers
-        $ignore = array_merge(array('Host', 'Cookie'), self::$identity_headers);
-        $request['headers'] = self::getAllHeaders($ignore);
-        // Parameters
-        if (!empty($_GET)) {
-            $request['get'] = array_keys($_GET);
-        }
-        if (!empty($_POST)) {
-            $request['post'] = array_keys($_POST);
-        }
-        if (!empty($_COOKIE)) {
-            $request['cookie'] = array_keys($_COOKIE);
-        }
-        return $request;
+        return self::$request = $request;
     }
 
     public static function bounce()
     {
-        if (isset($_GET['bouncer-challenge'])) {
-            self::challenge();
-            return;
-        }
-
-        $identity = self::identity();
+        $identity = self::getIdentity();
         if (empty($identity) || empty($identity['id'])) {
             return;
         }
 
-        $request = self::request();
+        $request = self::getRequest()->toArray();
 
         // Analyse Identity
         list($identity, $result) = self::analyse($identity, $request);
@@ -487,7 +387,7 @@ class Bouncer
         $backend = self::getBackend();
 
         // Index
-        foreach (self::$_namespaces as $ns) {
+        foreach (self::$namespaces as $ns) {
             // Add agent to global index
             if (method_exists($backend, 'indexAgent')) {
                 $backend->indexAgent($agent, $ns);
