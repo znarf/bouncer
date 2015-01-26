@@ -105,67 +105,67 @@ class Redis extends AbstractBackend
         return $this->getClient()->zAdd($indexKey, time(), $value);
     }
 
-    public function indexAgent($agent, $namespace = '')
+    public function indexAgent($agent, $namespace = null)
     {
         $indexKey = empty($namespace) ? 'agents' : "agents-$namespace";
         $this->index($indexKey, $agent);
     }
 
-    public function indexAgentFingerprint($agent, $fingerprint, $namespace = '')
+    public function indexAgentFingerprint($agent, $fingerprint, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
         $this->index($indexKey, $agent);
     }
 
-    public function indexAgentUa($agent, $hua, $namespace = '')
+    public function indexAgentUa($agent, $hua, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$hua" : "agents-$hua-$namespace";
         $this->index($indexKey, $agent);
     }
 
-    public function indexAgentHost($agent, $haddr, $namespace = '')
+    public function indexAgentHost($agent, $haddr, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
         $this->index($indexKey, $agent);
     }
 
-    public function getAgentsIndex($namespace = '')
+    public function getAgentsIndex($namespace = null)
     {
         $indexKey = empty($namespace) ? 'agents' : "agents-$namespace";
         return $this->getClient()->zRevRange($indexKey, 0, 10000);
     }
 
-    public function getAgentsIndexFingerprint($fingerprint, $namespace = '')
+    public function getAgentsIndexFingerprint($fingerprint, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
         return $this->getClient()->zRevRange($indexKey, 0, 10000);
     }
 
-    public function getAgentsIndexUa($hua, $namespace = '')
+    public function getAgentsIndexUa($hua, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$hua" : "agents-$hua-$namespace";
         return $this->getClient()->zRevRange($indexKey, 0, 10000);
     }
 
-    public function getAgentsIndexHost($haddr, $namespace = '')
+    public function getAgentsIndexHost($haddr, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
         return $this->getClient()->zRevRange($indexKey, 0, 10000);
     }
 
-    public function countAgentsFingerprint($fingerprint, $namespace = '')
+    public function countAgentsFingerprint($fingerprint, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$fingerprint" : "agents-$fingerprint-$namespace";
         return $this->getClient()->zCard($indexKey);
     }
 
-    public function countAgentsUa($hua, $namespace = '')
+    public function countAgentsUa($hua, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$hua" : "agents-$hua-$namespace";
         return $this->getClient()->zCard($indexKey);
     }
 
-    public function countAgentsHost($haddr, $namespace = '')
+    public function countAgentsHost($haddr, $namespace = null)
     {
         $indexKey = empty($namespace) ? "agents-$haddr" : "agents-$haddr-$namespace";
         return $this->getClient()->zCard($indexKey);
@@ -189,54 +189,57 @@ class Redis extends AbstractBackend
         return $connections;
     }
 
-    public function indexConnection($key, $agent, $namespace = '')
+    public function indexConnection($key, $namespace = null)
     {
         $connectionsKey = empty($namespace) ? "connections" : "connections-$namespace";
         $this->indexConnectionWithIndexKey($connectionsKey, $key);
+    }
 
+    public function indexConnectionAgent($key, $agent, $namespace = null)
+    {
         $agentConnectionsKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $this->indexConnectionWithIndexKey($agentConnectionsKey, $key);
     }
 
-    public function indexConnectionHost($key, $haddr, $namespace = '')
+    public function indexConnectionHost($key, $haddr, $namespace = null)
     {
         $connectionsKey = empty($namespace) ? "connections-$haddr" : "connections-$haddr-$namespace";
         $this->client->lPush($connectionsKey, $key);
     }
 
-    public function getConnections($namespace = '')
+    public function getConnections($namespace = null)
     {
         $indexKey = empty($namespace) ? "connections" : "connections-$namespace";
         return $this->getConnectionsWithIndexKey($indexKey);
     }
 
-    public function getHostConnections($haddr, $namespace = '')
+    public function getHostConnections($haddr, $namespace = null)
     {
         $indexKey = empty($namespace) ? "connections-$haddr" : "connections-$namespace-$haddr";
         return $this->getConnectionsWithIndexKey($indexKey);
     }
 
-    public function getAgentConnections($agent, $namespace = '')
+    public function getAgentConnections($agent, $namespace = null)
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         return $this->getConnectionsWithIndexKey($indexKey);
     }
 
-    public function getLastAgentConnection($agent, $namespace = '')
+    public function getLastAgentConnection($agent, $namespace = null)
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $key = $this->getClient()->lGet($indexKey, 0);
         return $this->getConnection($key);
     }
 
-    public function getFirstAgentConnection($agent, $namespace = '')
+    public function getFirstAgentConnection($agent, $namespace = null)
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         $key = $this->getClient()->lGet($indexKey, -1);
         return $this->getConnection($key);
     }
 
-    public function countAgentConnections($agent, $namespace = '')
+    public function countAgentConnections($agent, $namespace = null)
     {
         $indexKey = empty($namespace) ? "connections-$agent" : "connections-$namespace-$agent";
         return $this->getClient()->lSize($indexKey);

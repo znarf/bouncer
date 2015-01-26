@@ -25,10 +25,9 @@ class Bouncer
 
     protected static $backend;
 
-    protected static $_prefix = '';
+    protected static $started = false;
 
-
-    protected static $_ended = false;
+    protected static $ended = false;
 
     protected static $_throttle = 0;
 
@@ -62,7 +61,7 @@ class Bouncer
     );
 
     protected static $namespaces = array(
-        ''
+        'default'
     );
 
     protected static $_connection = null;
@@ -76,6 +75,13 @@ class Bouncer
         }
     }
 
+    public static function setOptions(array $options = array())
+    {
+        if (isset($options['namespaces'])) {
+            self::$namespaces = $options['namespaces'];
+        }
+    }
+
     public static function getBackend()
     {
         if (empty(self::$backend)) {
@@ -86,39 +92,29 @@ class Bouncer
 
     public static function run(array $options = array(), $type = 'default')
     {
+        static::start();
         static::setOptions($options);
         if ($type == 'cloud') {
             \Bouncer\Rules\Cloud::load();
             \Bouncer\Rules\Defaults::load();
         } else {
-            static::load();
+            \Bouncer\Rules\Defaults::load();
+            \Bouncer\Rules\Bbclone::load();
+            \Bouncer\Rules\Geoip::load();
+            \Bouncer\Rules\Browser::load();
+            \Bouncer\Rules\Robot::load();
+            \Bouncer\Rules\Request::load();
+            \Bouncer\Rules\Fingerprint::load();
         }
         static::bounce();
     }
 
-    public static function load()
-    {
-        \Bouncer\Rules\Defaults::load();
-        \Bouncer\Rules\Bbclone::load();
-        \Bouncer\Rules\Geoip::load();
-        \Bouncer\Rules\Browser::load();
-        \Bouncer\Rules\Robot::load();
-        \Bouncer\Rules\Request::load();
-        \Bouncer\Rules\Fingerprint::load();
-    }
-
-    public static function setOptions(array $options = array())
-    {
-        if (isset($options['prefix'])) {
-            self::$_prefix = $options['prefix'];
-        }
-        if (isset($options['namespaces'])) {
-            self::$namespaces = $options['namespaces'];
-        }
-    }
+     /* Identity Management */
 
     public static function getIdentity()
     {
+        $backend = self::getBackend();
+
         $addr  = self::getRequest()->getAddr();
         $haddr = self::hash($addr);
 
@@ -129,32 +125,32 @@ class Bouncer
 
         $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($haddr . $hua);
 
-        // Get identity from the backend
-        $identity = self::getBackend()->getIdentity($id);
+        // Try to get identity from the backend
+        $identity = $backend->getIdentity($id);
 
         // Identity already registered in the backend
         if (!empty($identity)) {
             // Keep identity if 'ua' or 'addr' change, but not if both change
             if ($identity['haddr'] == $haddr || $identity['hua'] == $hua) {
                 if ($identity['haddr'] != $haddr) {
-                    $identity['addr'] = $addr;
+                    $identity['addr']  = $addr;
                     $identity['haddr'] = $haddr;
                     $identity = self::getIdentityInfos($identity);
-                    $identity = self::getAgentInfos($identity);
-                    self::getBackend()->setIdentity($id, $identity);
+                    $identity = self::getIpInfos($identity);
+                    $backend->setIdentity($id, $identity);
                 } elseif ($identity['hua'] != $hua) {
-                    $identity['ua'] = $ua;
+                    $identity['ua']  = $ua;
                     $identity['hua'] = $hua;
                     $identity['headers'] = $headers;
                     $identity = self::getIdentityInfos($identity);
                     $identity = self::getAgentInfos($identity);
-                    self::getBackend()->setIdentity($id, $identity);
+                    $backend->setIdentity($id, $identity);
                 }
                 return $identity;
             }
         }
 
-        // Build Identity array
+        // Build Basic Identity array
         $identity = array(
             'id'      => self::hash($haddr . $hua),
             'ua'      => $ua,
@@ -170,7 +166,7 @@ class Bouncer
         $identity = self::getIpInfos($identity);
 
         // Store Identity in the Backend
-        self::getBackend()->setIdentity($id, $identity);
+        $backend->setIdentity($id, $identity);
 
         return $identity;
     }
@@ -213,6 +209,7 @@ class Bouncer
     public static function bounce()
     {
         $identity = self::getIdentity();
+
         if (empty($identity) || empty($identity['id'])) {
             return;
         }
@@ -223,6 +220,7 @@ class Bouncer
         list($identity, $result) = self::analyse($identity, $request);
 
         // Log Connection
+        // (should only be done at the end, right ?)
         self::log($identity, $request, $result);
 
         // Set Bouncer Cookie
@@ -367,65 +365,78 @@ class Bouncer
 
         // Log connection
         self::$_connection = $connection;
-        self::$_connectionKey = self::getBackend()->storeConnection($connection);
+        self::$_connectionKey = $connection['id'] = self::getBackend()->storeConnection($connection);
 
-        // For Indexing
-        $agent       = $identity['id'];
-        $hua         = $identity['hua'];
-        $haddr       = $identity['haddr'];
-        $fingerprint = $identity['fingerprint'];
-
-        $backend = self::getBackend();
-
-        // Index
-        foreach (self::$namespaces as $ns) {
-            // Add agent to global index
-            if (method_exists($backend, 'indexAgent')) {
-                $backend->indexAgent($agent, $ns);
-            }
-            // Add agent to fingerprint index
-            if (method_exists($backend, 'indexAgentFingerprint')) {
-                $backend->indexAgentFingerprint($agent, $fingerprint, $ns);
-            }
-            // Add agent to ua index
-            if (method_exists($backend, 'indexAgentUa')) {
-                $backend->indexAgentUa($agent, $hua, $ns);
-            }
-            // Add agent to addr/host index
-            if (method_exists($backend, 'indexAgentHost')) {
-                $backend->indexAgentHost($agent, $haddr, $ns);
-            }
-            // Add connection to global index
-            // AND add connection to agent index
-            if (method_exists($backend, 'indexConnection')) {
-                $backend->indexConnection(self::$_connectionKey, $agent, $ns);
-            }
-            // Add connection to addr/host index
-            if (method_exists($backend, 'indexConnectionHost')) {
-                $backend->indexConnectionHost(self::$_connectionKey, $haddr, $ns);
-            }
+        // Index Identity + Connection
+        foreach (self::$namespaces as $namespace) {
+            // Identity
+            $this->indexIdentity($identity, $namespace);
+            // Connection
+            $this->indexConnection($connection, $identity, $namespace);
         }
     }
 
-    protected static function indexConnectionExtra($connectionKey, $connection, $ns = '')
+    protected static function indexIdentity($identity, $namespace = null)
     {
+        $backend = self::getBackend();
+
+        // Add agent/identity to global index
+        if (method_exists($backend, 'indexAgent')) {
+            $backend->indexAgent($identity['id'], $namespace);
+        }
+        // Add agent/identity to fingerprint index
+        if (method_exists($backend, 'indexAgentFingerprint')) {
+            $backend->indexAgentFingerprint($identity['id'], $identity['fingerprint'], $namespace);
+        }
+        // Add agent/identity to ua index
+        if (method_exists($backend, 'indexAgentUa')) {
+            $backend->indexAgentUa($identity['id'], $identity['hua'], $namespace);
+        }
+        // Add agent/identity to addr/host index
+        if (method_exists($backend, 'indexAgentHost')) {
+            $backend->indexAgentHost($identity['id'], $identity['haddr'], $namespace);
+        }
+    }
+
+    protected static function indexConnection($connection, $identity, $namespace = null)
+    {
+        $backend = self::getBackend();
+
+        // Add connection to global index
+        if (method_exists($backend, 'indexConnection')) {
+            $backend->indexConnection($connection['id'], $namespace);
+        }
+        // Add connection to agent/identity index
+        if (method_exists($backend, 'indexConnectionAgent')) {
+            $backend->indexConnectionAgent($connection['id'], $identity['id'], $namespace);
+        }
+        // Add connection to addr/host index
+        if (method_exists($backend, 'indexConnectionHost')) {
+            $backend->indexConnectionHost($connection['id'], $identity['haddr'], $namespace);
+        }
+    }
+
+    protected static function indexConnectionExtra($connectionKey, $connection, $namespace = null)
+    {
+        $backend = self::getBackend();
+
         // Index non 200 queries
         if (isset($connection['code']) && $connection['code'] != 200) {
-          $not200IndexKey = empty($ns) ? "connections-not200" : "connections-not200-$ns";
-          self::getBackend()->indexConnectionWithIndexKey($not200IndexKey, $connectionKey);
+          $not200IndexKey = empty($namespace) ? "connections-not200" : "connections-not200-$namespace";
+          $backend->indexConnectionWithIndexKey($not200IndexKey, $connectionKey);
         }
         // Index non GET queries
         if (isset($connection['method']) && $connection['method'] != 'GET') {
-          $notGetIndexKey = empty($ns) ? "connections-notGET" : "connections-notGET-$ns";
-          self::getBackend()->indexConnectionWithIndexKey($notGetIndexKey, $connectionKey);
+          $notGetIndexKey = empty($namespace) ? "connections-notGET" : "connections-notGET-$namespace";
+          $backend->indexConnectionWithIndexKey($notGetIndexKey, $connectionKey);
         }
         // Index slow & very slow queries
         if (isset($connection['exec_time']) && $connection['exec_time'] >= 0.25) {
-          $slowIndexKey = empty($ns) ? "connections-slow" : "connections-slow-$ns";
-          self::getBackend()->indexConnectionWithIndexKey($slowIndexKey, $connectionKey);
+          $slowIndexKey = empty($namespace) ? "connections-slow" : "connections-slow-$namespace";
+          $backend->indexConnectionWithIndexKey($slowIndexKey, $connectionKey);
           if ($connection['exec_time'] >= 2.5) {
-            $verySlowIndexKey = empty($ns) ? "connections-veryslow" : "connections-veryslow-$ns";
-            self::getBackend()->indexConnectionWithIndexKey($verySlowIndexKey, $connectionKey);
+            $verySlowIndexKey = empty($namespace) ? "connections-veryslow" : "connections-veryslow-$namespace";
+            $backend->indexConnectionWithIndexKey($verySlowIndexKey, $connectionKey);
           }
         }
     }
@@ -452,10 +463,21 @@ class Bouncer
         exit;
     }
 
+    public static function start()
+    {
+        // Already started (skip it)
+        if (self::$started === true) {
+            return;
+        }
+
+        self::$started = true;
+        self::$_connection['start'] = microtime(true);
+    }
+
     public static function end()
     {
         // Already ended (skip it)
-        if (self::$_ended === true) {
+        if (self::$ended === true) {
             return;
         }
 
@@ -478,7 +500,7 @@ class Bouncer
         } catch (Exception $e) {
         }
 
-        self::$_ended = true;
+        self::$ended = true;
     }
 
     // Utils
