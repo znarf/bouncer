@@ -67,12 +67,11 @@ class Request extends SfRequest
         $request = [];
 
         $request['addr']     = $this->getAddr();
-
         $request['scheme']   = $this->getScheme();
         $request['method']   = $this->getMethod();
         $request['host']     = $this->getHost();
         $request['port']     = $this->getPort();
-        $request['url']      = $this->getBaseUrl();
+        $request['url']      = strtok($this->getRequestUri(), '?');
         $request['protocol'] = $this->getProtocol();
 
         // Headers

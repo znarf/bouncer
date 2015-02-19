@@ -13,9 +13,9 @@ class Bbclone
 
     public static $os;
 
-    public static function load()
+    public static function load($bouncer)
     {
-        Bouncer::addRule('agent_infos', array('\Bouncer\Rules\Bbclone', 'agentInfos'));
+        $bouncer->addRule('agent_infos', array('\Bouncer\Rules\Bbclone', 'agentInfos'));
     }
 
     public static function agentInfos($infos)

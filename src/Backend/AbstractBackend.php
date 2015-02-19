@@ -32,13 +32,15 @@ abstract class AbstractBackend implements BackendInterface
     public function getConnection($id)
     {
         $connection = $this->get("connection-" . $id);
-        $connection['id'] = $id;
+        if (empty($connection['id'])) {
+            $connection['id'] = $id;
+        }
         return $connection;
     }
 
     public function storeConnection($connection)
     {
-        $key = uniqid();
+        $key = isset($connection['id']) ? $connection['id'] : uniqid();
         $this->set("connection-" . $key, $connection);
         return $key;
     }

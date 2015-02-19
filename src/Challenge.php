@@ -7,25 +7,25 @@ class Challenge
 
     protected static $challenged;
 
-    public static function challenge()
+    public static function challenge($bouncer)
     {
         if (isset($_GET['bouncer-identity']) && isset($_GET['bouncer-feature'])) {
             $id = $_GET['bouncer-identity'];
-            $identity = Bouncer::backend()->getIdentity($id);
+            $identity = $bouncer->getBackend()->getIdentity($id);
             if (isset($identity)) {
                 if ($_GET['bouncer-feature'] == 'image') {
                     $identity['features']['image'] = $identity['features']['image'] + 2;
-                    Bouncer::setIdentity($identity['id'], $identity);
+                    $bouncer->getBackend()->setIdentity($identity['id'], $identity);
                     header('Content-Type:image/gif');
                     echo base64_decode("R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
                 } elseif ($_GET['bouncer-feature'] == 'javascript') {
                     $identity['features']['javascript'] = $identity['features']['javascript'] + 2;
-                    Bouncer::setIdentity($identity['id'], $identity);
+                    $bouncer->getBackend()->setIdentity($identity['id'], $identity);
                     header('Content-Type:text/javascript');
                     echo base64_decode("R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
                 } elseif ($_GET['bouncer-feature'] == 'iframe') {
                     $identity['features']['iframe'] = $identity['features']['iframe'] + 2;
-                    Bouncer::setIdentity($identity['id'], $identity);
+                    $bouncer->getBackend()->setIdentity($identity['id'], $identity);
                     header("Content-Type:text/html");
                     echo '<html><head><meta name="robots" content="noindex,nofollow"></head><body>&nbsp;</body></html>';
                 }
@@ -46,7 +46,7 @@ class Challenge
             return;
         }
 
-        $identity = Bouncer::identity();
+        $identity = $bouncer->getIdentity();
         if (empty($identity)) {
             return;
         }
@@ -80,7 +80,7 @@ class Challenge
                 $store = true;
             }
             if ($store) {
-                Bouncer::setIdentity($identity['id'], $identity);
+                $bouncer->getBackend()->setIdentity($identity['id'], $identity);
             }
             self::$challenged = true;
         }

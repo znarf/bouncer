@@ -1,9 +1,9 @@
 <?php
 /* This file is part of BBClone (A PHP based Web Counter on Steroids)
- *
- * SVN FILE $Id: os.php 63 2013-12-05 15:19:31Z joku $
- *
- * Copyright (C) 2001-2014, the BBClone Team (see doc/authors.txt for details)
+ * 
+ * SVN FILE $Id: os.php 312 2014-11-22 10:26:50Z joku $
+ *  
+ * Copyright (C) 2001-2015, the BBClone Team (see doc/authors.txt for details)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -176,7 +176,7 @@ $os = array(
     ),
     "uri" => ""
   ),
-  "fedora" => array(
+  "Fedora Linux" => array(
     "icon" => "fedora",
     "title" => "Fedora Linux",
     "rule" => array(
@@ -509,6 +509,15 @@ $os = array(
     ),
     "uri" => "http://www.palm.com/"
   ),
+  "windowsphone" => array(
+    "icon" => "windowsphone",
+    "title" => "Windows Phone",
+    "rule" => array(
+      "Windows Phone ([0-9.]{1,10})" => "\\1",
+      "Windows Phone OS ([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.windowsphone.com"
+  ),	
   "windowsxp64" => array(
     "icon" => "windowsxp",
     "title" => "Windows XP (64-bit)",
@@ -605,12 +614,21 @@ $os = array(
 	),
 	"uri" => "http://www.microsoft.com/windows/"
   ),
-  "winphone" => array(
-    "icon" => "windows7",
-    "title" => "Windows Phone",
+  "windows10" => array(
+    "icon" => "windows8",
+    "title" => "Windows 10",
     "rule" => array(
-      "Windows Phone OS ([0-9.]{1,10})" => "\\1"
-    )
+     "wi(n|ndows)[ \-]?nt[ /]?6\.4" => ""
+    ),
+	"uri" => "http://www.microsoft.com/windows/"
+  ),
+  "windowsmc" => array(
+    "icon" => "windowsxp",
+    "title" => "Windows Media Center",
+    "rule" => array(
+      "Media Center PC[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => "http://www.microsoft.com/windowsxp/mediacenter/"
   ),
   "windowsxp" => array(
     "icon" => "windowsxp",
@@ -709,7 +727,7 @@ $os = array(
   ),
   "java" => array(
     "icon" => "java",
-    "title" => "Java ME",
+    "title" => "Java Platform Micro Edition",
     "rule" => array(
       "J2ME/MIDP" => ""
     ),
@@ -729,7 +747,8 @@ $os = array(
       "Configuration[ /]CLDC([0-9.]{1,10})" => "\\1",
       "MIDP" => "",
       "UP\.(Browser|Link)" => "",
-      "ibisBrowser" => ""
+      "ibisBrowser" => "",
+      "Mobile" => ""
    ),
    "uri" => ""
   ),

@@ -155,7 +155,7 @@ class Stats
             // Special Keys
             if ($key == 'id') {
                 $hex = strlen($value) == 32 ? substr($value, 0, 6) : substr(md5($value), 0, 6);
-                $count = Bouncer::backend()->countAgentConnections($identity['id'], self::$_namespace);
+                $count = Bouncer::getBackend()->countAgentConnections($identity['id'], self::$_namespace);
                 echo
                 '<td class="cb" style="border-left-color:#' . $hex . '">' .
                     '<a href="?filter=id%3A' . $value . '">' . (strlen($value) == 32 ? substr($value, 0, 6) : $value) . '</a>' .
@@ -171,7 +171,7 @@ class Stats
                 if (self::$_detailed_fingerprint) {
                     $type = isset($identity['fingerprint_type']) ? $identity['fingerprint_type'] : '';
                     echo '<td>' . $type . '</td>';
-                    $count = Bouncer::backend()->countAgentsFingerprint($identity['fingerprint'], self::$_namespace);
+                    $count = Bouncer::getBackend()->countAgentsFingerprint($identity['fingerprint'], self::$_namespace);
                     echo '<td>' . $count . '</td>';
                 }
             } elseif ($key == 'ua') {
@@ -204,7 +204,7 @@ class Stats
                 if (self::$_detailed_ua) {
                     $type = isset($identity['fingerprint_type']) ? $identity['fingerprint_type'] : '';
                     echo '<td>' . $type . '</td>';
-                    $count = Bouncer::backend()->countAgentsUa($identity['hua'], self::$_namespace);
+                    $count = Bouncer::getBackend()->countAgentsUa($identity['hua'], self::$_namespace);
                     echo '<td>' . $count . '</td>';
                 }
             } elseif ($key == 'features') {
@@ -229,7 +229,7 @@ class Stats
                     $comment = isset($identity['addr_comment']) ? $identity['addr_comment'] : '';
                     echo '<td>', $comment, '</td>';
                 }
-                $count = Bouncer::backend()->countAgentsHost($identity['haddr'], self::$_namespace);
+                $count = Bouncer::getBackend()->countAgentsHost($identity['haddr'], self::$_namespace);
                 echo '<td>' . $count . '</td>';
             } elseif ($key == 'agent') {
                 if (self::$_detailed_agent) {
@@ -365,25 +365,25 @@ class Stats
          foreach ($filters as $filter) {
              list($filterKey, $filterValue) = $filter;
              if ($filterKey == 'fingerprint') {
-                 $agents = Bouncer::backend()->getAgentsIndexFingerprint($filterValue, self::$_namespace);
+                 $agents = Bouncer::getBackend()->getAgentsIndexFingerprint($filterValue, self::$_namespace);
                  break;
              }
              if ($filterKey == 'hua') {
-                 $agents = Bouncer::backend()->getAgentsIndexUa($filterValue, self::$_namespace);
+                 $agents = Bouncer::getBackend()->getAgentsIndexUa($filterValue, self::$_namespace);
                  break;
              }
              if ($filterKey == 'haddr') {
-                 $agents = Bouncer::backend()->getAgentsIndexHost($filterValue, self::$_namespace);
+                 $agents = Bouncer::getBackend()->getAgentsIndexHost($filterValue, self::$_namespace);
                  break;
              }
          }
          if (!isset($agents)) {
-             $agents = Bouncer::backend()->getAgentsIndex(self::$_namespace);
+             $agents = Bouncer::getBackend()->getAgentsIndex(self::$_namespace);
          }
 
          $keys = self::$_keys;
 
-         echo '<table class="bouncer-table">' . "\n";
+         echo '<table class="bouncer-table bouncer-agents">' . "\n";
 
          self::tableHeader($keys);
 
@@ -391,7 +391,7 @@ class Stats
          $count = 0;
          foreach ($agents as $time => $id) {
              // Get Identity
-             if (!$identity = Bouncer::backend()->getIdentity($id)) {
+             if (!$identity = Bouncer::getBackend()->getIdentity($id)) {
                  continue;
              }
              // Ignored IPs
@@ -399,7 +399,7 @@ class Stats
                 continue;
              }
              // Get Last Connection
-             if (!$connection = Bouncer::backend()->getLastAgentConnection($id, self::$_namespace)) {
+             if (!$connection = Bouncer::getBackend()->getLastAgentConnection($id, self::$_namespace)) {
                  continue;
              }
              // Add Connection Id
@@ -494,20 +494,20 @@ class Stats
         foreach ($filters as $filter) {
             list($filterKey, $filterValue) = $filter;
             if ($filterKey == 'connection') {
-                $connection = Bouncer::backend()->getConnection($filterValue);
+                $connection = Bouncer::getBackend()->getConnection($filterValue);
                 if ($connection) {
                   $connections = array($filterValue => $connection);
                   break;
                 }
             }
             if ($filterKey == 'id') {
-                $connections = Bouncer::backend()->getAgentConnections($filterValue, self::$_namespace);
+                $connections = Bouncer::getBackend()->getAgentConnections($filterValue, self::$_namespace);
                 if (!empty($connections)) {
                   break;
                 }
             }
             if ($filterKey == 'addr') {
-                $connections = Bouncer::backend()->getHostConnections(Bouncer::hash($filterValue), self::$_namespace);
+                $connections = Bouncer::getBackend()->getHostConnections(Bouncer::hash($filterValue), self::$_namespace);
                 if (!empty($connections)) {
                   break;
                 }
@@ -515,7 +515,7 @@ class Stats
             if (($filterKey == 'code' && $filterValue != 200) || ($filterKey == '-code' && $filterValue == 200)) {
               $ns = self::$_namespace;
               $not2xIndexKey = empty($ns) ? "connections-not200" : "connections-not200-$ns";
-              $connections = Bouncer::backend()->getConnectionsWithIndexKey($not2xIndexKey);
+              $connections = Bouncer::getBackend()->getConnectionsWithIndexKey($not2xIndexKey);
               if (!empty($connections)) {
                 break;
               }
@@ -523,7 +523,7 @@ class Stats
             if (($filterKey == 'method' && $filterValue != 'GET') || ($filterKey == '-method' && $filterValue == 'GET')) {
               $ns = self::$_namespace;
               $notGetIndexKey = empty($ns) ? "connections-notGET" : "connections-notGET-$ns";
-              $connections = Bouncer::backend()->getConnectionsWithIndexKey($notGetIndexKey);
+              $connections = Bouncer::getBackend()->getConnectionsWithIndexKey($notGetIndexKey);
               if (!empty($connections)) {
                 break;
               }
@@ -535,14 +535,14 @@ class Stats
               } else {
                 $slowIndexKey = empty($ns) ? "connections-slow" : "connections-slow-$ns";
               }
-              $connections = Bouncer::backend()->getConnectionsWithIndexKey($slowIndexKey);
+              $connections = Bouncer::getBackend()->getConnectionsWithIndexKey($slowIndexKey);
               if (!empty($connections)) {
                 break;
               }
             }
         }
         if (empty($connections)) {
-            $connections = Bouncer::backend()->getConnections(self::$_namespace);
+            $connections = Bouncer::getBackend()->getConnections(self::$_namespace);
         }
 
         echo '<table class="bouncer-table">' . "\n";
@@ -556,7 +556,7 @@ class Stats
           // Add Connection Id
           $connection['connection_id'] = $id;
           // Get Identity
-          if (!$identity = Bouncer::backend()->getIdentity($connection['identity'])) {
+          if (!$identity = Bouncer::getBackend()->getIdentity($connection['identity'])) {
               continue;
           }
           // Ignored IPs
@@ -588,7 +588,7 @@ class Stats
             return;
         }
 
-        $identity = Bouncer::backend()->getIdentity($connection['identity']);
+        $identity = Bouncer::getBackend()->getIdentity($connection['identity']);
 
         // echo '<br>';
 

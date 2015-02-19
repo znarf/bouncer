@@ -1,9 +1,9 @@
 <?php
 /* This file is part of BBClone (A PHP based Web Counter on Steroids)
- *
- * SVN FILE $Id: browser.php 244 2014-02-07 22:22:06Z joku $
- *
- * Copyright (C) 2001-2014, the BBClone Team (see doc/authors.txt for details)
+ * 
+ * SVN FILE $Id: browser.php 312 2014-11-22 10:26:50Z joku $
+ *  
+ * Copyright (C) 2001-2015, the BBClone Team (see doc/authors.txt for details)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -190,7 +190,7 @@ $browser = array(
     "rule" => array(
       "beonex/([0-9.]{1,10})" => "\\1"
     ),
-    "uri" => ""
+    "uri" => ""    
   ),
   "bezillabrowser" => array(
     "icon" => "bezillabrowser",
@@ -639,6 +639,14 @@ $browser = array(
     ),
     "uri" => "http://www.geticeweasel.org/"
   ),
+  "iemobile"  => array(
+    "icon"  => "iemobile",
+    "title" => "IE Mobile",
+    "rule"  => array(
+      "IEMobile/([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => ""
+  ),
   "iexplorepocket" => array(
     "icon" => "mobile",
     "title" => "Internet Explorer Pocket",
@@ -789,7 +797,7 @@ $browser = array(
     "icon" => "lynx",
     "title" => "Lynx",
     "rule" => array(
-      "lynx/([0-9a-z.]{1,10})" => "\\1"
+      "lynx[ /]([0-9a-z.]{1,10})" => "\\1"
     ),
     "uri" => "http://lynx.browser.org/"
   ),
@@ -807,6 +815,16 @@ $browser = array(
     "title" => "mBrowser",
     "rule" => array(
       "mBrowser[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => ""
+  ),
+  "mediaplayer" => array(
+    "icon" => "wmp10",
+    "title" => "Media Player",
+    "rule" => array(
+      "NSPlayer[ /]([0-9.]{1,10})" => "\\1",
+      "WMFSDK[ /]([0-9.]{1,10})" => "\\1",
+      "Windows-Media-Player[ /]([0-9.]{1,10})" => "\\1"
     ),
     "uri" => ""
   ),
@@ -1021,6 +1039,15 @@ $browser = array(
     ),
     "uri" => "http://www.castle.org.uk/oregano/"
   ),
+  "palmsource" => array(
+    "icon" => "palmsource",
+    "title" => "PalmSource Web Browser",
+    "rule" => array(
+      "PalmSource" => "",
+      "Palm-Arz1" => ""
+    ),
+    "uri" => "http://www.palmos.com/dev/tech/palmos5/webbrowser.html"
+  ),
   "paparazzi" => array(
     "icon" => "question",
     "title" => "Paparazzi",
@@ -1103,7 +1130,7 @@ $browser = array(
   ),
   "psp" => array(
     "icon" => "question",
-    "title" => "PSP",
+    "title" => "PlayStation Portable",
     "rule" => array(
       "PSP \(PlayStation Portable\); ([0-9.]{1,10})" => "\\1"
     ),
@@ -1125,6 +1152,16 @@ $browser = array(
       "qtver.([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.apple.com/quicktime/"
+  ),
+  "realplayer" => array(
+    "icon" => "realplayer",
+    "title" => "Real Player",
+    "rule" => array(
+      "RealPlayer/([0-9.+]{1,10})" => "\\1",
+      "^Mozilla/([0-9.+]{1,10}).*\(R1 1.5\)\)" => "",
+      "RMA/([0-9.+]{1,10})" => ""
+    ),
+    "uri" => "http://www.realplayer.com"
   ),
   "reeder" => array(
     "icon" => "reeder",
@@ -1222,7 +1259,7 @@ $browser = array(
       "Smart Bro[ /]?([0-9.]{1,10})?" => "\\1"
     ),
     "uri" => "http://www.smartbro.com/"
-  ),
+  ),  
   "songbird" => array(
     "icon" => "songbird",
     "title" => "Songbird",
@@ -1238,6 +1275,14 @@ $browser = array(
       " SIS ([0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://sis.gwlink.net/"
+  ),
+  "sputnik" => array(
+    "icon" => "sputnik",
+    "title" => "Sputnik",
+    "rule" => array(
+      "Sputnik[ /]([0-9.]{1,10})" => "\\1"
+    ),
+    "uri" => ""
   ),
   "squid" => array(
     "icon" => "squid",
@@ -1493,6 +1538,7 @@ $browser = array(
     "icon" => "explorer",
     "title" => "Explorer",
     "rule" => array(
+      ".*MSIE 7.0.*Trident.*" => "text:8.0 (MSIE 7.0)", //special feature, to detect IE8 Compatibility mode
       "Trident/7.0.*rv:([0-9.+]{1,10})" => "\\1",
       "\(compatible; MSIE[ /]([0-9a-z.]{1,10})" => "\\1",
       "MSIE[ /]([0-9a-z.]{1,3})" => "\\1",
@@ -1501,27 +1547,13 @@ $browser = array(
     ),
     "uri" => "http://www.microsoft.com/windows/ie/"
   ),
-  "chromium" => array(
-    "icon" => "chrome",
-    "title" => "Chromium",
-    "rule" => array(
-      "Chromium[ /]([0-9.]{1,16})" => "\\1"
-    )
-  ),
   "chrome" => array(
-    "icon" => "chrome",
-    "title" => "Chrome",
-    "rule" => array(
-      "Chrome[ /]([0-9.]{1,16})" => "\\1"
-    ),
-    "uri" => "http://www.google.com/chrome/"
-  ),
-  "chromeframe" => array(
-    "icon" => "chrome",
-    "title" => "Chrome Frame",
-    "rule" => array(
-      "chromeframe[ /]([0-9.]{1,16})" => "\\1"
-    ),
+	"icon" => "chrome",
+	"title" => "Chrome",
+	"rule" => array(
+	  "Chrome/([0-9.]{1,15})" => "\\1"
+	),
+	"uri" => "http://www.google.com/chrome/"
   ),
   "safari" => array(
     "icon" => "safari",
@@ -1537,7 +1569,8 @@ $browser = array(
     "title" => "Netscape",
     "rule" => array(
       "netscape[0-9]?/([0-9.]{1,10})" => "\\1",
-      "navigator[0-9]?/([0-9.]{1,10})" => "\\1"
+      "navigator[0-9]?/([0-9.]{1,10})" => "\\1",
+      "^mozilla/([0-4]\.[0-9.]{1,10})" => "\\1"
     ),
     "uri" => "http://www.netscape.com/"
   ),
@@ -1588,7 +1621,9 @@ $browser = array(
     "icon" => "mozilla",
     "title" => "Mozilla",
     "rule" => array(
-      "^mozilla/[5-9]\.[0-9.]{1,10}.+rv:([0-9a-z.+]{1,10})" => "\\1"
+      "^mozilla/[5-9]\.[0-9.]{1,10}.+rv:([0-9a-z.+]{1,10})" => "\\1",
+      "^mozilla/([5-9]\.[0-9a-z.]{1,10})" => "\\1",
+      "GNUzilla/([0-9.+]{1,10})" => "\\1"
     ),
     "uri" => "",
     "known" => array(
@@ -1605,7 +1640,7 @@ $browser = array(
       "WAP" => "\\1",
       "SonyEricsson([0-9A-Z]{1,10})" => ""
     ),
-    "uri" => ""
+    "uri" => ""    
   ),
   // Things we don't know by now
   "other" => array(

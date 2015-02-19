@@ -2,46 +2,47 @@
 
 namespace Bouncer\Rules;
 
+use Exception;
 use Bouncer\Bouncer;
+use GeoIp2\Database\Reader;
 
 class Geoip
 {
 
-    protected static $_gi = null;
+    protected static $reader;
 
-    public static function load()
+    public static function getReader()
     {
-        Bouncer::addRule('ip_infos', array('\Bouncer\Rules\Geoip', 'ipInfos'));
+        if (empty(self::$reader)) {
+            self::$reader = new Reader(__DIR__ . '/../../lib/GeoLite2-Country.mmdb');
+        }
+        return self::$reader;
+    }
+
+    public static function load($bouncer)
+    {
+        $bouncer->addRule('ip_infos', array('\Bouncer\Rules\Geoip', 'ipInfos'));
     }
 
     public static function ipInfos($infos)
     {
-        $infos['extension'] = self::country_code_by_addr($infos['addr'], $infos['host']);
+        $extension = self::countryCodeByAddr($infos['addr'], $infos['host']);
+        if ($extension) {
+            $infos['extension'] = self::countryCodeByAddr($infos['addr'], $infos['host']);
+        }
         return $infos;
     }
 
-    public static function country_code_by_addr($addr, $host)
+    public static function countryCodeByAddr($addr, $host)
     {
-        // first run without geoip extension
-        if (empty(self::$_gi) && !function_exists('geoip_country_code_by_name')) {
-            require_once dirname(__FILE__) . "/../../lib/geoip.inc";
-            self::$_gi = geoip_open(dirname(__FILE__) . "/../../lib/geoip.dat", GEOIP_STANDARD);
+        $reader = self::getReader();
+        try {
+            $record = $reader->country($addr);
+            $extension = strtolower($record->country->isoCode);
+        } catch (Exception $e) {
+            $extension = null;
         }
-
-        // without geoip extension
-        if (isset(self::$_gi) && function_exists('geoip_country_code_by_addr')) {
-            $code = geoip_country_code_by_addr(self::$_gi, $addr);
-
-        // with geoip extension
-        } elseif (function_exists('geoip_country_code_by_name')) {
-            $code = geoip_country_code_by_name($host);
-        }
-
-        if (empty($code) || $code == 'AP' || $code == 'A1' || $code == 'A2') {
-            $code = 'numeric';
-        }
-        $code = strtolower($code);
-        return $code;
+        return $extension;
     }
 
 }

@@ -7,16 +7,16 @@ use Bouncer\Bouncer;
 class Cloud
 {
 
-    public static function load()
+    public static function load($bouncer)
     {
-        Bouncer::addRule('identity_infos', array('\Bouncer\Rules\Cloud', 'identityInfos'));
+        $bouncer->addRule('identity_infos', array('\Bouncer\Rules\Cloud', 'identityInfos'));
     }
 
     public static function identityInfos($identity)
     {
         $result = self::query(
             'POST',
-            'http://localhost:3002/identity',
+            'http://bouncer.h6e.net/identity',
             array(
                 'addr'        => $identity['addr'],
                 'headers'     => $identity['headers']
