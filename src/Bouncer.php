@@ -487,6 +487,30 @@ class Bouncer
         return $this->getBackend()->set($key, $value);
     }
 
+    // Response Helpers
+
+    public function ban()
+    {
+        $code = '403';
+        $msg = 'Forbidden';
+        header("HTTP/1.0 $code $msg");
+        header("Status: $code $msg");
+        echo $msg;
+        $this->end();
+        exit;
+    }
+
+    public function unavailable()
+    {
+        $code = '503';
+        $msg = 'Service Unavailable';
+        header("HTTP/1.0 $code $msg");
+        header("Status: $code $msg");
+        echo $msg;
+        $this->end();
+        exit;
+    }
+
     // Static
 
     public static function fingerprint($array)
@@ -502,28 +526,6 @@ class Bouncer
     public static function hash($string)
     {
         return md5($string);
-    }
-
-    public static function ban()
-    {
-        $code = '403';
-        $msg = 'Forbidden';
-        header("HTTP/1.0 $code $msg");
-        header("Status: $code $msg");
-        echo $msg;
-        self::end();
-        exit;
-    }
-
-    public static function unavailable()
-    {
-        $code = '503';
-        $msg = 'Service Unavailable';
-        header("HTTP/1.0 $code $msg");
-        header("Status: $code $msg");
-        echo $msg;
-        self::end();
-        exit;
     }
 
 }
