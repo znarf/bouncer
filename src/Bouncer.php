@@ -284,7 +284,7 @@ class Bouncer
         $this->throttle();
 
         // Register End
-        register_shutdown_function([$this, 'end']);
+        register_shutdown_function([$this, 'end'], true);
     }
 
     public function start()
@@ -341,7 +341,7 @@ class Bouncer
         }
     }
 
-    public function end()
+    public function end($close = false)
     {
         // Already ended, skip
         if ($this->ended === true) {
@@ -363,7 +363,9 @@ class Bouncer
             // Store the Connection
             $this->log();
             // Release Backend Connection
-            $this->getBackend()->close();
+            if ($close) {
+                $this->getBackend()->close();
+            }
         } catch (Exception $e) {
             // Log Message
         }
