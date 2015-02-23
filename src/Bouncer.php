@@ -392,8 +392,11 @@ class Bouncer
         $values['request']    = $request->toArray();
         $values['identity']   = $identity;
 
-        // $connection['identity'] = $this->getIdentity();
-        // $connection['request'] = $this->getRequest()->toArray();
+        unset($values['identity']['addr']);
+        unset($values['identity']['ua']);
+        unset($values['identity']['headers']);
+        unset($values['identity']['score']);
+        unset($values['identity']['status']);
 
         // Log request
         $this->getLogger()->log($message, $values);

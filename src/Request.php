@@ -16,6 +16,10 @@ use Symfony\Component\HttpFoundation\Request as SfRequest;
 class Request extends SfRequest
 {
 
+    const HEADER_SERVER_PROTOCOL = 'server_protocol';
+
+    const HEADER_CLIENT_CONNECTION = 'client_connection';
+
     public function getAddr()
     {
         return $this->getClientIp();
@@ -54,7 +58,22 @@ class Request extends SfRequest
 
     public function getProtocol()
     {
+        if (self::$trustedProxies) {
+            if (self::$trustedHeaders[self::HEADER_SERVER_PROTOCOL]) {
+                $protocol = $this->headers->get(self::$trustedHeaders[self::HEADER_SERVER_PROTOCOL]);
+            }
+        }
+
         return $this->server->get('SERVER_PROTOCOL');
+    }
+
+    public function getConnection()
+    {
+        if (self::$trustedProxies) {
+            if (self::$trustedHeaders[self::HEADER_CLIENT_CONNECTION]) {
+                return $this->headers->get(self::$trustedHeaders[self::HEADER_CLIENT_CONNECTION]);
+            }
+        }
     }
 
     public function __toString()
@@ -66,13 +85,14 @@ class Request extends SfRequest
     {
         $request = [];
 
-        $request['addr']     = $this->getAddr();
-        $request['scheme']   = $this->getScheme();
-        $request['method']   = $this->getMethod();
-        $request['host']     = $this->getHost();
-        $request['port']     = $this->getPort();
-        $request['url']      = strtok($this->getRequestUri(), '?');
-        $request['protocol'] = $this->getProtocol();
+        $request['addr']       = $this->getAddr();
+        $request['scheme']     = $this->getScheme();
+        $request['method']     = $this->getMethod();
+        $request['host']       = $this->getHost();
+        $request['port']       = $this->getPort();
+        $request['url']        = strtok($this->getRequestUri(), '?');
+        $request['protocol']   = $this->getProtocol();
+        $request['connection'] = $this->getConnection();
 
         // Headers
         $ignore = array_merge(array('host', 'cookie'));
