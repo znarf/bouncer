@@ -20,6 +20,11 @@ class Request extends SfRequest
 
     const HEADER_CLIENT_CONNECTION = 'client_connection';
 
+    protected static $extraTrustedHeaders = array(
+        self::HEADER_SERVER_PROTOCOL   => 'X-Server-Protocol',
+        self::HEADER_CLIENT_CONNECTION => 'X-Connection',
+    );
+
     public function getAddr()
     {
         return $this->getClientIp();
@@ -59,8 +64,8 @@ class Request extends SfRequest
     public function getProtocol()
     {
         if (self::$trustedProxies) {
-            if (self::$trustedHeaders[self::HEADER_SERVER_PROTOCOL]) {
-                $protocol = $this->headers->get(self::$trustedHeaders[self::HEADER_SERVER_PROTOCOL]);
+            if (self::$extraTrustedHeaders[self::HEADER_SERVER_PROTOCOL]) {
+                $protocol = $this->headers->get(self::$extraTrustedHeaders[self::HEADER_SERVER_PROTOCOL]);
             }
         }
 
@@ -70,8 +75,8 @@ class Request extends SfRequest
     public function getConnection()
     {
         if (self::$trustedProxies) {
-            if (self::$trustedHeaders[self::HEADER_CLIENT_CONNECTION]) {
-                return $this->headers->get(self::$trustedHeaders[self::HEADER_CLIENT_CONNECTION]);
+            if (self::$extraTrustedHeaders[self::HEADER_CLIENT_CONNECTION]) {
+                return $this->headers->get(self::$extraTrustedHeaders[self::HEADER_CLIENT_CONNECTION]);
             }
         }
     }
