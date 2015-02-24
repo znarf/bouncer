@@ -21,8 +21,8 @@ class Request extends SfRequest
     const HEADER_CLIENT_CONNECTION = 'client_connection';
 
     protected static $extraTrustedHeaders = array(
-        self::HEADER_SERVER_PROTOCOL   => 'X-Server-Protocol',
-        self::HEADER_CLIENT_CONNECTION => 'X-Connection',
+        self::HEADER_SERVER_PROTOCOL   => 'x-server-protocol',
+        self::HEADER_CLIENT_CONNECTION => 'x-connection',
     );
 
     public function getAddr()
@@ -65,7 +65,7 @@ class Request extends SfRequest
     {
         if (self::$trustedProxies) {
             if (self::$extraTrustedHeaders[self::HEADER_SERVER_PROTOCOL]) {
-                $protocol = $this->headers->get(self::$extraTrustedHeaders[self::HEADER_SERVER_PROTOCOL]);
+                return $this->headers->get(self::$extraTrustedHeaders[self::HEADER_SERVER_PROTOCOL]);
             }
         }
 
@@ -83,7 +83,7 @@ class Request extends SfRequest
 
     public function __toString()
     {
-        return $this->getMethod() . ' ' . $this->getHost() . ' ' . $this->getPort() . ' ' . $this->getBaseUrl();
+        return $this->getMethod() . ' ' . $this->getHost() . ' ' . $this->getPort() . ' ' . $this->getRequestUri();
     }
 
     public function toArray()
@@ -97,11 +97,18 @@ class Request extends SfRequest
         $request['port']       = $this->getPort();
         $request['url']        = strtok($this->getRequestUri(), '?');
         $request['protocol']   = $this->getProtocol();
-        $request['connection'] = $this->getConnection();
 
         // Headers
         $ignore = array_merge(array('host', 'cookie'));
         $request['headers'] = $this->getAllHeaders($ignore);
+
+        // Connection
+        $connection = $this->getConnection();
+        if ($connection) {
+            $request['headers']['connection'] = $connection;
+        } else {
+            unset($request['headers']['connection']);
+        }
 
         // Parameters
         $queryAll = $this->query->all();
