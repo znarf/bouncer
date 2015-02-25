@@ -137,7 +137,8 @@ class Bouncer
         $ua    = $request->getUserAgent();
         $hua   = self::hash($ua);
 
-        $headers = $request->getHeaders(self::$identity_headers);
+        $headers = $request->getHeaders();
+        $headers['protocol'] = $request->getProtocol();
 
         $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($haddr . $hua);
 
@@ -518,11 +519,38 @@ class Bouncer
 
     // Static
 
+    public static function normalizeFingerprintKey($key)
+    {
+        if (strpos($key, '-')) {
+            $parts = explode('-', $key);
+            $parts = array_map('strtolower', $parts);
+            $parts = array_map('ucfirst', $parts);
+            $key = implode('-', $parts);
+        } else {
+            $key = ucfirst(strtolower($key));
+        }
+        return $key;
+    }
+
+    public static function filterArrayKeys($array = array(), $keys = array())
+    {
+        $ikeys = array_map('strtolower', $keys);
+        foreach ($array as $key => $value) {
+            $ikey = strtolower($key);
+            if (!in_array($ikey, $ikeys)) {
+                unset($array[$key]);
+            }
+        }
+        return $array;
+    }
+
     public static function fingerprint($array)
     {
+        $array = self::filterArrayKeys($array, self::$identity_headers);
         ksort($array);
         $string = '';
         foreach ($array as $key => $value) {
+            $key = self::normalizeFingerprintKey($key);
             $string .= "$key:$value;";
         }
         return self::hash($string);
