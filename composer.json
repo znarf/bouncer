@@ -1,6 +1,6 @@
 {
     "name": "bouncer/bouncer",
-    "description": "An access analysing+throttling+logging toolkit.",
+    "description": "An HTTP traffic analysis, throttling and logging library.",
     "keywords": [
         "bouncer"
     ],
@@ -8,14 +8,14 @@
     "license": "MIT",
     "authors": [
         {
-            "name": ":François Hodierne",
+            "name": "François Hodierne",
             "email": "francois@hodierne.net",
             "homepage": "http://francois.hodierne.net/",
             "role": "Developer"
         }
     ],
     "require": {
-        "php" : ">=5.4.0",
+        "php" : ">=5.3.0",
         "monolog/monolog": "*",
         "symfony/http-foundation": "*",
         "geoip2/geoip2": "~2.1"

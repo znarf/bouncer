@@ -1,12 +1,24 @@
 <?php
 
+/*
+ * This file is part of the Bouncer package.
+ *
+ * (c) François Hodierne <francois@hodierne.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Bouncer\Logger;
 
 use Monolog\Formatter\LogstashFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 
-class LogstashLogger
+use Bouncer\Identity;
+use Bouncer\Request;
+
+class LogstashLogger implements LoggerInterface
 {
 
     protected $host;
@@ -30,11 +42,22 @@ class LogstashLogger
         $this->type     = $type;
     }
 
-    public function log($message, $values = [])
+    public function log($connection, Identity $identity, Request $request)
     {
+        $message = $request->__toString();
+
+        $context = $connection;
+        $context['request']    = $request->toArray();
+        $context['identity']   = $identity->toArray();
+
+        // This values are already available in other fields, so we remove them.
+        unset($context['identity']['addr']);
+        unset($context['identity']['ua']);
+        unset($context['identity']['headers']);
+
         $logger = $this->getLogger();
         if ($logger) {
-            $logger->info($message, $values);
+            $logger->info($message, $context);
         }
     }
 
@@ -58,11 +81,6 @@ class LogstashLogger
         $streamHandler = new StreamHandler($stream);
         $streamHandler->setFormatter($formatter);
         $logger->pushHandler($streamHandler);
-
-        // Debug
-        $errorHandler = new \Monolog\Handler\ErrorLogHandler;
-        $errorHandler->setFormatter($formatter);
-        $logger->pushHandler($errorHandler);
 
         return $this->logger = $logger;
     }

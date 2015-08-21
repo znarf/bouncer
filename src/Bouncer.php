@@ -23,52 +23,50 @@ class Bouncer
     const BROWSER    = 'browser';
     const UNKNOWN    = 'unknown';
 
-    public static $known_browsers = array(
-        'explorer',
-        'firefox',
-        'safari',
-        'chrome',
-        'opera',
-    );
-
-    public static $identity_headers = array(
-        'User-Agent',
-        'Accept',
-        'Accept-Charset',
-        'Accept-Language',
-        'Accept-Encoding',
-        'From',
-        'Dnt',
-    );
-
-    protected $rules = array(
-        'identity_infos'   => array(),
-        'agent_infos'      => array(),
-        'ip_infos'         => array(),
-        'browser_identity' => array(),
-        'robot_identity'   => array(),
-        'request'          => array(),
-    );
-
     /**
-     * @var \Bouncer\Backend\BackendInterface
+     * @var string|object
      */
-    protected $backend;
+    protected $profile = '\Bouncer\Profile\Standard';
 
     /**
-     * @var \Bouncer\Request
+     * @var boolean
+     */
+    protected $throwExceptions = false;
+
+    /**
+     * @var boolean
+     */
+    protected $logErrors = true;
+
+    /**
+     * @var \Bouncer\Cache\CacheInterface
+     */
+    protected $cache;
+
+    /**
+     * @var \Bouncer\Logger\LoggerInterface
+     */
+    protected $logger;
+
+    /**
+     * @var Request
      */
     protected $request;
 
     /**
      * @var array
      */
+    protected $analyzers = array();
+
+    /**
+     * @var Identity
+     */
     protected $identity;
 
     /**
      * @var array
      */
-    protected $connection;
+    protected $connection = array();
 
     /**
      * @var boolean
@@ -78,132 +76,87 @@ class Bouncer
     /**
      * @var boolean
      */
-    protected $ended   = false;
+    protected $ended = false;
 
-    protected $namespaces = array(
-        'default'
-    );
-
-    public function __construct($options = [])
+    public function __construct(array $options = array())
     {
-        $this->setOptions($options);
+        if ($options) {
+            $this->setOptions($options);
+        }
+
+        // Load Profile
+        $profile = $this->getProfile();
+        if ($profile) {
+            $profile::load($this);
+        }
     }
 
-    public function setOptions($options = [])
+    /*
+     * Set the supported options
+     */
+    public function setOptions(array $options = array())
     {
-        if (isset($options['backend'])) {
-            $this->backend = $options['backend'];
+        if (isset($options['cache'])) {
+            $this->cache = $options['cache'];
+        }
+        if (isset($options['request'])) {
+            $this->request = $options['request'];
         }
         if (isset($options['logger'])) {
             $this->logger = $options['logger'];
         }
-        if (isset($options['namespaces'])) {
-            $this->namespaces = $options['namespaces'];
+        if (isset($options['profile'])) {
+            $this->profile = $options['profile'];
         }
     }
 
-    public function loadRules($type = null)
+    public function error($message)
     {
-        if ($type == 'cloud') {
-            \Bouncer\Rules\Cloud::load($this);
-            \Bouncer\Rules\Defaults::load($this);
-        } else {
-            \Bouncer\Rules\Defaults::load($this);
-            \Bouncer\Rules\Bbclone::load($this);
-            \Bouncer\Rules\Geoip::load($this);
+        if ($this->throwExceptions) {
+            throw new Exception($message);
+        }
+        if ($this->logErrors) {
+            error_log("Bouncer: {$message}");
         }
     }
 
-    public function addRule($type, $function)
+    /**
+     * @return \Bouncer\Cache\CacheInterface
+     */
+    public function getCache()
     {
-        if (empty($this->rules[$type])) {
-            $this->rules[$type] = array();
+        if (empty($this->cache)) {
+            $this->error('No cache available.');
+            return;
         }
-        $this->rules[$type][] = $function;
+
+        return $this->cache;
     }
 
-    public function getIdentity()
+    /**
+     * @return \Bouncer\Logger\LoggerInterface
+     */
+    public function getLogger()
     {
-        if (isset($this->identity)) {
-            return $this->identity;
+        if (empty($this->logger)) {
+            $this->error('No logger available.');
+            return;
         }
 
-        $backend = $this->getBackend();
-        $request = $this->getRequest();
-
-        $addr  = $request->getAddr();
-        $haddr = self::hash($addr);
-
-        $ua    = $request->getUserAgent();
-        $hua   = self::hash($ua);
-
-        $headers = $request->getHeaders();
-        $headers['protocol'] = $request->getProtocol();
-
-        $id = isset($_COOKIE['bouncer-identity']) ? $_COOKIE['bouncer-identity'] : self::hash($haddr . $hua);
-
-        // Try to get identity from the backend
-        $identity = $backend->getIdentity($id);
-
-        // Identity already registered in the backend
-        if (!empty($identity)) {
-            // Keep identity if 'ua' or 'addr' change, but not if both change
-            if ($identity['haddr'] == $haddr || $identity['hua'] == $hua) {
-                if ($identity['haddr'] != $haddr) {
-                    $identity['addr']  = $addr;
-                    $identity['haddr'] = $haddr;
-                    $identity = $this->getIdentityInfos($identity);
-                    $identity = $this->getIpInfos($identity);
-                    $backend->setIdentity($id, $identity);
-                } elseif ($identity['hua'] != $hua) {
-                    $identity['ua']  = $ua;
-                    $identity['hua'] = $hua;
-                    $identity['headers'] = $headers;
-                    $identity = $this->getIdentityInfos($identity);
-                    $identity = $this->getAgentInfos($identity);
-                    $backend->setIdentity($id, $identity);
-                }
-                return $identity;
-            }
-        }
-
-        // Build Basic Identity array
-        $identity = [
-            'id'      => self::hash($haddr . $hua),
-            'ua'      => $ua,
-            'hua'     => $hua,
-            'addr'    => $addr,
-            'haddr'   => $haddr,
-            'headers' => $headers,
-            'score'   => 0,
-            'status'  => self::NEUTRAL
-        ];
-
-        // Process Rules
-        $identity = $this->getIdentityInfos($identity);
-        $identity = $this->getAgentInfos($identity);
-        $identity = $this->getIpInfos($identity);
-
-        // Store Identity in the Backend
-        $backend->setIdentity($id, $identity);
-
-        // Set Bouncer Cookie
-        if (empty($_COOKIE['bouncer-identity']) || $_COOKIE['bouncer-identity'] != $identity['id']) {
-            setcookie('bouncer-identity', $identity['id'], time()+60*60*24*365 , '/');
-        }
-
-        return $identity;
+        return $this->logger;
     }
 
-    public function getBackend()
+    /**
+     * @return string|object
+     */
+    public function getProfile()
     {
-        if (empty($this->backend)) {
-            throw new Exception('No backend available.');
-        }
-
-        return $this->backend;
+        return $this->profile;
     }
 
+    /**
+     * @return Request
+     */
     public function getRequest()
     {
         if (isset($this->request)) {
@@ -215,79 +168,164 @@ class Bouncer
         return $this->request = $request;
     }
 
-    public function getLogger()
+    /**
+     * @return string
+     */
+    public function getUserAgent()
     {
-        if (empty($this->logger)) {
-            // Use Backend as alternative?
-            throw new Exception('No logger available.');
+        return $this->getRequest()->getUserAgent();
+    }
+
+    /**
+     * @return string
+     */
+    public function getAddr()
+    {
+        return $this->getRequest()->getAddr();
+    }
+
+    /**
+     * @return array
+     */
+    public function getHeaders()
+    {
+        $request = $this->getRequest();
+
+        $headers = $request->getHeaders();
+
+        $protocol = $request->getProtocol();
+        if ($protocol) {
+            $headers['protocol'] = $request->getProtocol();
         }
 
-        return $this->logger;
+        return $headers;
+    }
+
+    /**
+     * @return Identity
+     */
+    public function getIdentity()
+    {
+        if (isset($this->identity)) {
+            return $this->identity;
+        }
+
+        $cache = $this->getCache();
+        $request = $this->getRequest();
+
+        $addr  = $this->getAddr();
+        $haddr = self::hash($addr);
+
+        $ua    = $this->getUserAgent();
+        $hua   = self::hash($ua);
+
+        $id = self::hash($haddr . $hua);
+
+        // Try to get identity from cache
+        if ($cache) {
+            $identity = $cache->getIdentity($id);
+            if ($identity) {
+                return $this->identity = new Identity($identity);
+            }
+        }
+
+        $headers = $this->getHeaders();
+        $fingerprint = Fingerprint::generateFingerprint($headers);
+
+        // Build base identity
+        $identity = array(
+            'id'          => $id,
+            'ua'          => $ua,
+            'hua'         => $hua,
+            'addr'        => $addr,
+            'haddr'       => $haddr,
+            'headers'     => $headers,
+            'fingerprint' => $fingerprint
+        );
+
+        // Process Analyzers
+        $identity = $this->processAnalyzers('identity', $identity);
+
+        // Store Identity in cache
+        if ($cache) {
+            $cache->setIdentity($id, $identity);
+        }
+
+        return $this->identity = new Identity($identity);
     }
 
     public function getConnection()
     {
-        if (!$this->started) {
-            // This will init connection
-            $this->start();
+        if (!$this->connection) {
+            $this->initConnection();
         }
 
         return $this->connection;
     }
 
-    protected function getInfos($ruleset, $identity)
+    /*
+     * Init the connection with id, time and start.
+     */
+    public function initConnection()
     {
-        $rules = $this->rules[$ruleset];
-        foreach ($rules as $func) {
-            $identity = call_user_func_array($func, array($identity));
+        $this->connection = array();
+        $this->connection['id']    = uniqid();
+        $this->connection['pid']   = getmypid();
+        $this->connection['time']  = time();
+        $this->connection['start'] = microtime(true);
+    }
+
+    /*
+     * Complete the connection with end, exec_time, memory_usage and response_status.
+     */
+    public function completeConnection()
+    {
+        // Measure execution time
+        $this->connection['end'] = microtime(true);
+        $this->connection['exec_time'] = round($this->connection['end'] - $this->connection['start'], 4);
+        if (!empty($this->connection['throttle_time'])) {
+             $this->connection['exec_time'] -= $this->connection['throttle_time'];
         }
-        return $identity;
-    }
+        unset($this->connection['end'], $this->connection['start']);
 
-    protected function getIdentityInfos($identity)
-    {
-        return $this->getInfos('identity_infos', $identity);
-    }
+        // Report Memory Usage
+        $this->connection['memory_usage'] = memory_get_peak_usage();
 
-    protected function getIpInfos($identity)
-    {
-        return $this->getInfos('ip_infos', $identity);
-    }
-
-    protected function getAgentInfos($identity)
-    {
-        return $this->getInfos('agent_infos', $identity);
-    }
-
-    public function run(array $options = array(), $type = 'default')
-    {
-        $this->start();
-
-        $this->setOptions($options);
-
-        $this->loadRules($type);
-
-        // Get Identity (likely from Cache, if not Process the rules)
-        $identity = $this->getIdentity();
-
-        // TODO: should now perform a scoring of the Request with Rules
-        if ($identity['score'] >= 10) {
-            $identity['status'] = self::NICE;
-        } elseif ($identity['score'] <= -10) {
-            $identity['status'] = self::BAD;
-        } elseif ($identity['score'] <= -5) {
-            $identity['status'] = self::SUSPICIOUS;
-        } else {
-            $identity['status'] = self::NEUTRAL;
+        // Add response
+        $responseStatus = http_response_code();
+        if ($responseStatus) {
+            $this->connection['response']['status'] = $responseStatus;
         }
-
-        // Exit with a 503, or slow down by sleeping
-        $this->throttle();
-
-        // Register End
-        register_shutdown_function([$this, 'end'], true);
     }
 
+    public function registerAnalyzer($type, $callable, $priority = 100)
+    {
+        $this->analyzers[$type][] = array($callable, $priority);
+    }
+
+    /*
+     * Process Analyzers for a given type. Return the modified array or object.
+     *
+     * @param string
+     * @param array|object
+     *
+     * @return array|object
+     */
+    protected function processAnalyzers($type, $value)
+    {
+        if (isset($this->analyzers[$type])) {
+            // TODO: order analyzers by priority
+            foreach ($this->analyzers[$type] as $array) {
+                list($callable, $priority) = $array;
+                $value = call_user_func_array($callable, array($value));
+            }
+        }
+        return $value;
+    }
+
+    /*
+     * Start a Bouncer session
+     */
     public function start()
     {
         // Already started, skip
@@ -295,30 +333,26 @@ class Bouncer
             return;
         }
 
-        if (empty($this->connection)) {
-            $this->connection = [];
-        }
-        if (empty($this->connection['id'])) {
-            $this->connection['id'] = uniqid();
-        }
-        if (empty($this->connection['time'])) {
-            $this->connection['time'] = time();
-        }
-        if (empty($this->connection['start'])) {
-            $this->connection['start'] = microtime(true);
-        }
+        $this->initConnection();
+
+        register_shutdown_function([$this, 'end']);
 
         $this->started = true;
     }
 
+    /*
+     * Throttle if Identity status is suspicious throttle, if it is bad throttle and block.
+     */
     public function throttle()
     {
         $identity = $this->getIdentity();
 
-        switch ($identity['status']) {
+        $status = $identity->getStatus();
+
+        switch ($status) {
             case self::BAD:
-                // sleep 1 to 2 seconds then exit
-                $throttle = rand(1000*1000, 2000*1000);
+                // sleep 1 to 5 seconds then exit
+                $throttle = rand(1000*1000, 5000*1000);
                 usleep($throttle);
                 $this->connection['throttle_time'] = round($throttle / 1000000, 3);
                 $this->unavailable();
@@ -330,230 +364,56 @@ class Bouncer
                 $this->connection['throttle_time'] = round($throttle / 1000000, 3);
                 break;
             case self::NEUTRAL:
-                if ($identity['agent_type'] == self::ROBOT) {
-                    $throttle = rand(250*1000, 1000*1000);
-                    usleep($throttle);
-                    $this->connection['throttle_time'] = round($throttle / 1000000, 3);
-                }
-                break;
             case self::NICE:
             default:
                 break;
         }
     }
 
-    public function end($close = false)
+    /*
+     * Complete the connection then attempt to log.
+     */
+    public function end()
     {
         // Already ended, skip
         if ($this->ended === true) {
             return;
         }
 
-        // $connection = $this->getConnection();
+        $this->completeConnection();
 
-        // Add Performance data to the Connection
-        $this->connection['end'] = microtime(true);
-        $this->connection['memory_usage'] = memory_get_peak_usage();
-        $this->connection['response_status'] = http_response_code();
-        $this->connection['exec_time'] = round($this->connection['end'] - $this->connection['start'], 4);
-        if (!empty($this->connection['throttle_time'])) {
-             $this->connection['exec_time'] -= $this->connection['throttle_time'];
-        }
-
+        // We really want to avoid throwing exceptions there
         try {
-            // Store the Connection
             $this->log();
-            // Release Backend Connection
-            if ($close) {
-                $this->getBackend()->close();
-            }
         } catch (Exception $e) {
-            // Log Message
+            error_log($e->getMessage());
         }
 
         $this->ended = true;
     }
 
-    protected function log($connection = null, $identity = null, $request = null)
+    public function log()
     {
-        if (empty($connection)) {
-            $connection = $this->getConnection();
-        }
-        if (empty($identity)) {
-            $identity = $this->getIdentity();
-        }
-        if (empty($request)) {
-            $request = $this->getRequest();
-        }
+        $connection = $this->getConnection();
+        $identity = $this->getIdentity();
+        $request = $this->getRequest();
 
-        $message = $request->__toString();
-
-        $values = [];
-        $values['connection'] = $connection;
-        $values['request']    = $request->toArray();
-        $values['identity']   = $identity;
-
-        unset($values['identity']['addr']);
-        unset($values['identity']['ua']);
-        unset($values['identity']['headers']);
-        unset($values['identity']['score']);
-        unset($values['identity']['status']);
-
-        // Log request
-        $this->getLogger()->log($message, $values);
-        // $this->getBackend()->storeConnection($connection);
-
-        // Index Identity + Connection
-        foreach ($this->namespaces as $namespace) {
-            // Identity
-            $this->indexIdentity($identity, $namespace);
-            // Connection
-            // $this->indexConnection($connection, $identity, $namespace);
-            // Connection Extra
-            // $this->indexConnectionExtra($connection, $namespace);
+        $logger = $this->getLogger();
+        if ($logger) {
+            $logger->log($connection, $identity, $request);
         }
     }
 
-    // Index
+    // Static
 
-    protected function indexIdentity($identity, $namespace = null)
-    {
-        $backend = $this->getBackend();
-
-        // Add agent/identity to global index
-        if (method_exists($backend, 'indexAgent')) {
-            $backend->indexAgent($identity['id'], $namespace);
-        }
-        // Add agent/identity to fingerprint index
-        if (method_exists($backend, 'indexAgentFingerprint')) {
-            $backend->indexAgentFingerprint($identity['id'], $identity['fingerprint'], $namespace);
-        }
-        // Add agent/identity to ua index
-        if (method_exists($backend, 'indexAgentUa')) {
-            $backend->indexAgentUa($identity['id'], $identity['hua'], $namespace);
-        }
-        // Add agent/identity to addr/host index
-        if (method_exists($backend, 'indexAgentHost')) {
-            $backend->indexAgentHost($identity['id'], $identity['haddr'], $namespace);
-        }
-    }
-
-    protected function indexConnection($connection, $identity, $namespace = null)
-    {
-        $backend = $this->getBackend();
-
-        // Add connection to global index
-        if (method_exists($backend, 'indexConnection')) {
-            $backend->indexConnection($connection['id'], $namespace);
-        }
-        // Add connection to agent/identity index
-        if (method_exists($backend, 'indexConnectionAgent')) {
-            $backend->indexConnectionAgent($connection['id'], $identity['id'], $namespace);
-        }
-        // Add connection to addr/host index
-        if (method_exists($backend, 'indexConnectionHost')) {
-            $backend->indexConnectionHost($connection['id'], $identity['haddr'], $namespace);
-        }
-    }
-
-    protected function indexConnectionExtra($connection, $namespace = null)
-    {
-        $backend = self::getBackend();
-
-        // Index non 200 queries
-        if (isset($connection['code']) && $connection['code'] != 200) {
-          $not200IndexKey = empty($namespace) ? "connections-not200" : "connections-not200-$namespace";
-          $backend->indexConnectionWithIndexKey($not200IndexKey, $connection['id']);
-        }
-        // Index non GET queries
-        if (isset($connection['method']) && $connection['method'] != 'GET') {
-          $notGetIndexKey = empty($namespace) ? "connections-notGET" : "connections-notGET-$namespace";
-          $backend->indexConnectionWithIndexKey($notGetIndexKey, $connection['id']);
-        }
-        // Index slow & very slow queries
-        if (isset($connection['exec_time']) && $connection['exec_time'] >= 0.25) {
-          $slowIndexKey = empty($namespace) ? "connections-slow" : "connections-slow-$namespace";
-          $backend->indexConnectionWithIndexKey($slowIndexKey, $connection['id']);
-          if ($connection['exec_time'] >= 2.5) {
-            $verySlowIndexKey = empty($namespace) ? "connections-veryslow" : "connections-veryslow-$namespace";
-            $backend->indexConnectionWithIndexKey($verySlowIndexKey, $connection['id']);
-          }
-        }
-    }
-
-    // Backend Shortcuts
-
-    protected function get($key)
-    {
-        return $this->getBackend()->get($key);
-    }
-
-    protected function set($key, $value)
-    {
-        return $this->getBackend()->set($key, $value);
-    }
-
-    // Response Helpers
-
-    public function ban()
-    {
-        $code = '403';
-        $msg = 'Forbidden';
-        header("HTTP/1.0 $code $msg");
-        header("Status: $code $msg");
-        echo $msg;
-        $this->end();
-        exit;
-    }
-
-    public function unavailable()
+    public static function unavailable()
     {
         $code = '503';
         $msg = 'Service Unavailable';
         header("HTTP/1.0 $code $msg");
         header("Status: $code $msg");
         echo $msg;
-        $this->end();
         exit;
-    }
-
-    // Static
-
-    public static function normalizeFingerprintKey($key)
-    {
-        if (strpos($key, '-')) {
-            $parts = explode('-', $key);
-            $parts = array_map('strtolower', $parts);
-            $parts = array_map('ucfirst', $parts);
-            $key = implode('-', $parts);
-        } else {
-            $key = ucfirst(strtolower($key));
-        }
-        return $key;
-    }
-
-    public static function filterArrayKeys($array = array(), $keys = array())
-    {
-        $ikeys = array_map('strtolower', $keys);
-        foreach ($array as $key => $value) {
-            $ikey = strtolower($key);
-            if (!in_array($ikey, $ikeys)) {
-                unset($array[$key]);
-            }
-        }
-        return $array;
-    }
-
-    public static function fingerprint($array)
-    {
-        $array = self::filterArrayKeys($array, self::$identity_headers);
-        ksort($array);
-        $string = '';
-        foreach ($array as $key => $value) {
-            $key = self::normalizeFingerprintKey($key);
-            $string .= "$key:$value;";
-        }
-        return self::hash($string);
     }
 
     public static function hash($string)

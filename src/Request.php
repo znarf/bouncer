@@ -20,7 +20,7 @@ class Request extends SfRequest
 
     const HEADER_CLIENT_CONNECTION = 'client_connection';
 
-    protected static $extraTrustedHeaders = [];
+    protected static $extraTrustedHeaders = array();
 
     public static function setExtraTrustedHeaderName($key, $value)
     {
@@ -45,7 +45,7 @@ class Request extends SfRequest
 
     public function getAllHeaders($ignore = array())
     {
-        $headers = [];
+        $headers = array();
         foreach ($this->headers->all() as $name => $value) {
             if (!$ignore || !in_array($name, $ignore)) {
                 $headers[$name] = $this->headers->get($name);
@@ -56,7 +56,7 @@ class Request extends SfRequest
 
     public function getHeaders()
     {
-        $ignore = ['host', 'cookie'];
+        $ignore = array('host', 'cookie');
 
         $headers = $this->getAllHeaders($ignore);
 
@@ -99,14 +99,14 @@ class Request extends SfRequest
 
     public function toArray()
     {
-        $request = [];
+        $request = array();
 
         $request['addr']       = $this->getAddr();
         $request['scheme']     = $this->getScheme();
         $request['method']     = $this->getMethod();
         $request['host']       = $this->getHost();
         $request['port']       = $this->getPort();
-        $request['url']        = strtok($this->getRequestUri(), '?');
+        $request['url']        = $this->getRequestUri();
         $request['protocol']   = $this->getProtocol();
         $request['headers']    = $this->getHeaders();
 
