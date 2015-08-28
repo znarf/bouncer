@@ -123,10 +123,12 @@ class Bouncer
     /**
      * @return \Bouncer\Cache\CacheInterface
      */
-    public function getCache()
+    public function getCache($reportError = false)
     {
         if (empty($this->cache)) {
-            $this->error('No cache available.');
+            if ($reportError) {
+                $this->error('No cache available.');
+            }
             return;
         }
 
@@ -136,10 +138,12 @@ class Bouncer
     /**
      * @return \Bouncer\Logger\LoggerInterface
      */
-    public function getLogger()
+    public function getLogger($reportError = false)
     {
         if (empty($this->logger)) {
-            $this->error('No logger available.');
+            if ($reportError) {
+                $this->error('No logger available.');
+            }
             return;
         }
 
