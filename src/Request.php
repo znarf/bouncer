@@ -16,21 +16,15 @@ use Symfony\Component\HttpFoundation\Request as SfRequest;
 class Request extends SfRequest
 {
 
-    const HEADER_SERVER_PROTOCOL = 'server_protocol';
+    protected $addr;
 
-    const HEADER_CLIENT_CONNECTION = 'client_connection';
+    protected $protocol;
 
-    protected static $extraTrustedHeaders = array();
+    protected $connection;
 
-    public static function setExtraTrustedHeaderName($key, $value)
-    {
-        self::$extraTrustedHeaders[$key] = $value;
-    }
+    protected $trustProtocol = false;
 
-    public function getAddr()
-    {
-        return $this->getClientIp();
-    }
+    protected $trustConnection = false;
 
     public function getUserAgent()
     {
@@ -70,26 +64,50 @@ class Request extends SfRequest
         return $headers;
     }
 
-    public function getProtocol()
+    public function getAddr()
     {
-        if (self::$trustedProxies) {
-            if (isset(self::$extraTrustedHeaders[self::HEADER_SERVER_PROTOCOL])) {
-                return $this->headers->get(self::$extraTrustedHeaders[self::HEADER_SERVER_PROTOCOL]);
-            }
+        if ($this->addr) {
+            return $this->addr;
         }
 
-        return $this->server->get('SERVER_PROTOCOL');
+        return $this->getClientIp();
+    }
+
+    public function setAddr($addr)
+    {
+        $this->addr = $addr;
+    }
+
+    public function getProtocol()
+    {
+        if ($this->protocol) {
+            return $this->protocol;
+        }
+
+        if ($this->trustProtocol) {
+            return $this->server->get('SERVER_PROTOCOL');
+        }
+    }
+
+    public function setProtocol($protocol)
+    {
+        $this->protocol = $protocol;
     }
 
     public function getConnection()
     {
-        if (self::$trustedProxies) {
-            if (isset(self::$extraTrustedHeaders[self::HEADER_CLIENT_CONNECTION])) {
-                return $this->headers->get(self::$extraTrustedHeaders[self::HEADER_CLIENT_CONNECTION]);
-            }
+        if ($this->connection) {
+            return $this->connection;
         }
 
-        return $this->headers->get('connection');
+        if ($this->trustConnection) {
+            return $this->headers->get('connection');
+        }
+    }
+
+    public function setConnection($connection)
+    {
+        $this->connection = $connection;
     }
 
     public function __toString()
