@@ -18,6 +18,8 @@ use Bouncer\Request;
 class HttpLogger implements LoggerInterface
 {
 
+    protected $endpoint;
+
     public function __construct($endpoint)
     {
         $this->endpoint = $endpoint;
@@ -29,10 +31,10 @@ class HttpLogger implements LoggerInterface
         $context['request']  = $request->toArray();
         $context['identity'] = $identity->toArray();
 
-        $result = Http::query('POST', $this->endpoint, $context);
+        $result = Http::query('POST', $this->endpoint, $context, 5);
 
         if (!$result) {
-            error_log("Error while logging to Bouncer API.");
+            error_log("Error while logging to Http endpoint: $this->endpoint");
         }
     }
 

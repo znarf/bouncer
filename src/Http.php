@@ -14,12 +14,12 @@ namespace Bouncer;
 class Http
 {
 
-    public static function query($method, $url, $data = null)
+    public static function query($method, $url, $data = null, $timeout = 1)
     {
         // error_log("{$method} {$url}");
         $options = array(
             'http' => array(
-                'timeout' => 1,
+                'timeout' => $timeout,
                 'method'  => $method,
                 'header'  => "User-Agent: Bouncer Http\r\n"
             )
