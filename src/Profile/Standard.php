@@ -18,22 +18,34 @@ class Standard
     {
         // Register analyzers
         \Bouncer\Analyzer\Cloud::load($bouncer);
+        \Bouncer\Analyzer\Geoip::load($bouncer);
+        \Bouncer\Analyzer\Hostname::load($bouncer);
         \Bouncer\Analyzer\Defaults::load($bouncer);
 
+        // If no cache available, try to set up APC
         $cache = $bouncer->getCache();
         if (empty($cache)) {
-          // Setup APC cache if APC is available
           if (function_exists('apc_fetch')) {
             $cache = new \Bouncer\Cache\Apc();
             $bouncer->setOptions(['cache' => $cache]);
           }
         }
 
-        // If no logger available, log on Bouncer API with HTTP
+        // If no logger available, try to setup Cloud Logger
         $logger = $bouncer->getLogger();
         if (empty($logger)) {
-          $logger = new \Bouncer\Logger\LogstashLogger('bouncer.h6e.net', 5145);
-          // $logger = new \Bouncer\Logger\HttpLogger('http://bouncer.h6e.net/api/activity/log');
+          // Get a key from cache
+          if ($cache) {
+            $key = $cache->get('bouncer_key');
+          }
+          // Generate a key
+          if (empty($key)) {
+            $key = md5(rand(0, 1000000000) . time() . uniqid() . 'bouncer_key');
+            if ($cache) {
+              $cache->set('bouncer_key', $key);
+            }
+          }
+          $logger = new \Bouncer\Logger\CloudLogger($key);
           $bouncer->setOptions(['logger' => $logger]);
         }
     }
