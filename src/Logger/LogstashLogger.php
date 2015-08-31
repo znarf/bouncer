@@ -42,6 +42,9 @@ class LogstashLogger implements LoggerInterface
         $this->type     = $type;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function log($connection, Identity $identity, Request $request)
     {
         $message = $request->__toString();

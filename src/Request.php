@@ -76,6 +76,8 @@ class Request extends SfRequest
     public function setAddr($addr)
     {
         $this->addr = $addr;
+
+        return $this;
     }
 
     public function getProtocol()
@@ -92,6 +94,8 @@ class Request extends SfRequest
     public function setProtocol($protocol)
     {
         $this->protocol = $protocol;
+
+        return $this;
     }
 
     public function getConnection()
@@ -108,6 +112,8 @@ class Request extends SfRequest
     public function setConnection($connection)
     {
         $this->connection = $connection;
+
+        return $this;
     }
 
     public function __toString()

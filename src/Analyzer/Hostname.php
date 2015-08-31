@@ -12,7 +12,7 @@ class Hostname
 
     public static function hostnameAnalyzer($identity)
     {
-        if (empty($identity['host'])) {
+        if (empty($identity['host']) || ($identity['host'] == $identity['addr'])) {
             $hostname = strtolower(gethostbyaddr($identity['addr']));
             if ($hostname && $hostname != $identity['addr']) {
               $reverse = gethostbyname($hostname);

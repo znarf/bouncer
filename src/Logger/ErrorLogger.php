@@ -18,6 +18,9 @@ use Bouncer\Request;
 class ErrorLogger implements LoggerInterface
 {
 
+    /**
+     * {@inheritDoc}
+     */
     public function log($connection, Identity $identity, Request $request)
     {
         $context = $connection;

@@ -80,7 +80,7 @@ class Bouncer
 
     public function __construct(array $options = array())
     {
-        if ($options) {
+        if (!empty($options)) {
             $this->setOptions($options);
         }
 
@@ -110,6 +110,9 @@ class Bouncer
         }
     }
 
+    /**
+     * @throw Exception
+     */
     public function error($message)
     {
         if ($this->throwExceptions) {
@@ -215,7 +218,6 @@ class Bouncer
         }
 
         $cache = $this->getCache();
-        $request = $this->getRequest();
 
         $addr  = $this->getAddr();
         $haddr = self::hash($addr);
@@ -345,7 +347,7 @@ class Bouncer
     }
 
     /*
-     * Throttle if Identity status is suspicious throttle, if it is bad throttle and block.
+     * Throttle if Identity status is suspicious.
      */
     public function throttle()
     {
@@ -359,7 +361,6 @@ class Bouncer
                 $throttle = rand(1000*1000, 5000*1000);
                 usleep($throttle);
                 $this->connection['throttle_time'] = round($throttle / 1000000, 3);
-                $this->unavailable();
                 break;
             case self::SUSPICIOUS:
                 // sleep 0.5 to 2 seconds then continue
@@ -367,10 +368,18 @@ class Bouncer
                 usleep($throttle);
                 $this->connection['throttle_time'] = round($throttle / 1000000, 3);
                 break;
-            case self::NEUTRAL:
-            case self::NICE:
-            default:
-                break;
+        }
+    }
+
+    /*
+     * Ban if Identity status is bad.
+     */
+    public function ban()
+    {
+        $identity = $this->getIdentity();
+
+        if ($identity->getStatus() == self::BAD) {
+            $this->unavailable();
         }
     }
 
@@ -396,6 +405,9 @@ class Bouncer
         $this->ended = true;
     }
 
+    /*
+     * Log the connection to the logging backend.
+     */
     public function log()
     {
         $connection = $this->getConnection();

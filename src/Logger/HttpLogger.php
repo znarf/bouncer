@@ -25,6 +25,9 @@ class HttpLogger implements LoggerInterface
         $this->endpoint = $endpoint;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function log($connection, Identity $identity, Request $request)
     {
         $context = $connection;

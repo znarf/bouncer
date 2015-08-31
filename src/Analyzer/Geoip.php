@@ -26,13 +26,18 @@ class Geoip
 
     public static function identityAnalyzer(array $identity)
     {
-        $extension = self::countryCodeByAddr($identity['addr'], $identity['host']);
-        if ($extension) {
-            $identity['extension'] = $extension;
+        if (empty($identity['extension']) || $identity['extension'] == 'numeric') {
+            $extension = self::countryCodeByAddr($identity['addr']);
+            if (isset($extension)) {
+                $identity['extension'] = $extension;
+            }
         }
         return $identity;
     }
 
+    /**
+     * @return string|null
+     */
     public static function countryCodeByAddr($addr, $host)
     {
         $reader = self::getReader();
