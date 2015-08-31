@@ -38,7 +38,7 @@ class Geoip
     /**
      * @return string|null
      */
-    public static function countryCodeByAddr($addr, $host)
+    public static function countryCodeByAddr($addr)
     {
         $reader = self::getReader();
         try {
