@@ -225,7 +225,10 @@ class Bouncer
         $ua    = $this->getUserAgent();
         $hua   = self::hash($ua);
 
-        $id = self::hash($haddr . $hua);
+        $headers = $this->getHeaders();
+        $fingerprint = Fingerprint::generateFingerprint($headers);
+
+        $id = self::hash($fingerprint . $haddr);
 
         // Try to get identity from cache
         if ($cache) {
@@ -234,9 +237,6 @@ class Bouncer
                 return $this->identity = new Identity($identity);
             }
         }
-
-        $headers = $this->getHeaders();
-        $fingerprint = Fingerprint::generateFingerprint($headers);
 
         // Build base identity
         $identity = array(
