@@ -24,13 +24,13 @@ class Fingerprint
         'Dnt',
     );
 
-    public static function generateFingerprint($array)
+    public static function generate($array)
     {
         $array = self::filterArrayKeys($array, self::$identityHeaders);
         ksort($array);
         $string = '';
         foreach ($array as $key => $value) {
-            $key = self::normalizeFingerprintKey($key);
+            $key = self::normalizeKey($key);
             $string .= "$key:$value;";
         }
         return Bouncer::hash($string);
@@ -48,7 +48,7 @@ class Fingerprint
         return $array;
     }
 
-    public static function normalizeFingerprintKey($key)
+    public static function normalizeKey($key)
     {
         if (strpos($key, '-')) {
             $parts = explode('-', $key);

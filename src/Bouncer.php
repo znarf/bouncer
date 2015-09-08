@@ -226,7 +226,7 @@ class Bouncer
         $hua   = self::hash($ua);
 
         $headers = $this->getHeaders();
-        $fingerprint = Fingerprint::generateFingerprint($headers);
+        $fingerprint = Fingerprint::generate($headers);
 
         $id = self::hash($fingerprint . $haddr);
 

@@ -18,7 +18,7 @@ class Defaults
     public static function identityAnalyzer(array $identity)
     {
         if (empty($identity['fingerprint'])) {
-            $identity['fingerprint'] = Fingerprint::generateFingerprint($identity['headers']);
+            $identity['fingerprint'] = Fingerprint::generate($identity['headers']);
         }
         return $identity;
     }
