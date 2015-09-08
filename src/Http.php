@@ -16,7 +16,6 @@ class Http
 
     public static function query($method, $url, $data = null, $timeout = 1)
     {
-        // error_log("{$method} {$url}");
         $options = array(
             'http' => array(
                 'timeout' => $timeout,
@@ -32,10 +31,9 @@ class Http
             $options['http']['content'] = $content;
         }
         $context = stream_context_create($options);
-        $result = file_get_contents($url, false, $context);
+        $result = @file_get_contents($url, false, $context);
         if ($result) {
             $response = json_decode($result, true);
-            // error_log(json_encode($result, JSON_PRETTY_PRINT));
             return $response;
         }
     }
