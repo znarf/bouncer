@@ -134,18 +134,23 @@ class Request extends SfRequest
         $request['protocol']   = $this->getProtocol();
         $request['headers']    = $this->getHeaders();
 
-        // Parameters
         $queryAll = $this->query->all();
         if (!empty($queryAll)) {
             $request['query_parameters'] = $queryAll;
         }
+
         $requestAll = $this->request->all();
         if (!empty($requestAll)) {
-            $request['post_parameters'] = $requestAll;
+            // Sensitive data in there, disabled, should be opt in
+            // $request['post_parameters'] = $requestAll;
+            $request['post_keys'] = array_keys($requestAll);
         }
+
         $cookiesAll = $this->cookies->all();
-        if (!empty($cookieAll)) {
-            $request['cookies'] = $cookiesAll;
+        if (!empty($cookiesAll)) {
+            // Sensitive data in there, disabled, should be opt in
+            // $request['cookies'] = $cookiesAll;
+            $request['cookie_keys'] = array_keys($cookiesAll);
         }
 
         return $request;
