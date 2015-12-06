@@ -14,7 +14,7 @@ namespace Bouncer;
 class Http
 {
 
-    public static function query($method, $url, $data = null, $timeout = 1)
+    public static function request($method, $url, $data = null, $timeout = 1)
     {
         $options = array(
             'http' => array(

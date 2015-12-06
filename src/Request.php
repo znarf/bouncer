@@ -64,6 +64,22 @@ class Request extends SfRequest
         return $headers;
     }
 
+    public function getCookie($name)
+    {
+        return $this->cookies->get($name);
+    }
+
+    public function getCookies($names = [])
+    {
+        $cookies = array();
+        foreach ($this->cookies->all() as $name => $value) {
+            if (in_array($name, $names)) {
+                $cookies[$name] = $this->cookies->get($name);
+            }
+        }
+        return $cookies;
+    }
+
     public function getAddr()
     {
         if ($this->addr) {

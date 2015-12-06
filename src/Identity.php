@@ -14,18 +14,19 @@ namespace Bouncer;
 class Identity
 {
 
-    protected $attributes = [
+    protected $attributes = array(
         'id',
-        'ua',
-        'hua',
         'addr',
         'haddr',
         'headers',
         'fingerprint',
-        'score',
-        'host',
+        'session',
+        'hostname',
+        'reverse',
         'extension',
-    ];
+        'type',
+        'status',
+    );
 
     /**
      * The unique id
@@ -33,20 +34,6 @@ class Identity
      * @var string
      */
     protected $id;
-
-    /**
-     * The user agent
-     *
-     * @var string
-     */
-    protected $ua;
-
-    /**
-     * Hash of the user agent
-     *
-     * @var string
-     */
-    protected $hua;
 
     /**
      * The IP address
@@ -70,11 +57,39 @@ class Identity
     protected $headers;
 
     /**
+     * Bouncer Fingerprint for the identity
+     *
+     * @var string
+     */
+    protected $fingerprint;
+
+    /**
+     * Session Id
+     *
+     * @var string
+     */
+    protected $session;
+
+    /**
+     * Protocol
+     *
+     * @var string
+     */
+    protected $protocol;
+
+    /**
      * Host matching the IP address
      *
      * @var string
      */
-    protected $host;
+    protected $hostname;
+
+    /**
+     * If the dns match the hostname
+     *
+     * @var string
+     */
+    protected $reverse;
 
     /**
      * Country Code of the IP address
@@ -84,24 +99,29 @@ class Identity
     protected $extension;
 
     /**
-     * Bouncer Fingerprint for the identity
+     * Type: Browser, Robot or Unknown
      *
      * @var string
      */
-    protected $fingerprint;
+    protected $type;
 
     /**
-     * Score, usually between -10 and 10, up to -100 and 100.
+     * Status: Nice, Ok, Suspicous, Bad
      *
-     * @var integer
+     * @var string
      */
-    protected $score = 0;
+    protected $status;
 
     public function __construct($attributes = array())
     {
         if ($attributes) {
             $this->setAttributes($attributes);
         }
+    }
+
+    public function hasAttribute($key)
+    {
+        return isset($this->$key);
     }
 
     public function getAttribute($key)
@@ -126,20 +146,6 @@ class Identity
         }
     }
 
-    public function getStatus()
-    {
-        // TODO: behavior should ideally be configurable in a Bouncer profile
-        if ($this->score >= 10) {
-            return Bouncer::NICE;
-        } elseif ($this->score <= -10) {
-            return Bouncer::BAD;
-        } elseif ($this->score <= -5) {
-            return Bouncer::SUSPICIOUS;
-        } else {
-            return Bouncer::NEUTRAL;
-        }
-    }
-
     public function toArray()
     {
         $identity = array();
@@ -149,6 +155,18 @@ class Identity
         }
 
         return $identity;
+    }
+
+    public function __call($name, $arguments)
+    {
+        foreach (array('get', 'set') as $action) {
+            if (strpos($name, $action) === 0) {
+                $key = substr($name, strlen($action));
+                $key = lcfirst($key);
+                return call_user_func_array(array($this, "{$action}Attribute"), array($key));
+            }
+        }
+        throw new \Exception("Unknown method ($name).");
     }
 
 }

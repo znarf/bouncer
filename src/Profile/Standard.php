@@ -14,39 +14,31 @@ namespace Bouncer\Profile;
 class Standard
 {
 
-    public static function load($bouncer)
+    public function load($bouncer)
     {
-        // Register analyzers
-        \Bouncer\Analyzer\Cloud::load($bouncer);
+        $this->loadAnalyzers($bouncer);
+
+        $this->initCache($bouncer);
+    }
+
+    public function loadAnalyzers($bouncer)
+    {
+        // Load Default analyzers
         \Bouncer\Analyzer\Geoip::load($bouncer);
         \Bouncer\Analyzer\Hostname::load($bouncer);
-        \Bouncer\Analyzer\Defaults::load($bouncer);
+    }
 
+    public function initCache($bouncer)
+    {
         // If no cache available, try to set up APC
         $cache = $bouncer->getCache();
         if (empty($cache)) {
           if (function_exists('apc_fetch')) {
             $cache = new \Bouncer\Cache\Apc();
             $bouncer->setOptions(['cache' => $cache]);
+          } else {
+            $bouncer->error('No cache available. A cache is needed to keep performances acceptable.');
           }
-        }
-
-        // If no logger available, try to setup Cloud Logger
-        $logger = $bouncer->getLogger();
-        if (empty($logger)) {
-          // Get a key from cache
-          if ($cache) {
-            $key = $cache->get('bouncer_key');
-          }
-          // Generate a key
-          if (empty($key)) {
-            $key = md5(rand(0, 1000000000) . time() . uniqid() . 'bouncer_key');
-            if ($cache) {
-              $cache->set('bouncer_key', $key);
-            }
-          }
-          $logger = new \Bouncer\Logger\CloudLogger($key);
-          $bouncer->setOptions(['logger' => $logger]);
         }
     }
 

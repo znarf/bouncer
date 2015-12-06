@@ -15,7 +15,7 @@ class Bouncer
 {
 
     const NICE       = 'nice';
-    const NEUTRAL    = 'neutral';
+    const OK         = 'ok';
     const SUSPICIOUS = 'suspicious';
     const BAD        = 'bad';
 
@@ -37,6 +37,11 @@ class Bouncer
      * @var boolean
      */
     protected $logErrors = true;
+
+    /**
+     * @var boolean
+     */
+    protected $cookieName = 'bsid';
 
     /**
      * @var \Bouncer\Cache\CacheInterface
@@ -64,6 +69,8 @@ class Bouncer
     protected $identity;
 
     /**
+     * Store metadata about the handling of the request
+     *
      * @var array
      */
     protected $connection = array();
@@ -87,7 +94,7 @@ class Bouncer
         // Load Profile
         $profile = $this->getProfile();
         if ($profile) {
-            $profile::load($this);
+            call_user_func_array(array($profile, 'load'), array($this));
         }
     }
 
@@ -200,12 +207,49 @@ class Bouncer
 
         $headers = $request->getHeaders();
 
-        $protocol = $request->getProtocol();
+        // TODO: this should be deprecated
+        $protocol = $this->getProtocol();
         if ($protocol) {
-            $headers['protocol'] = $request->getProtocol();
+            $headers['protocol'] = $protocol;
         }
 
         return $headers;
+    }
+
+    /**
+     * @return array
+     */
+    public function getCookies()
+    {
+        $names = [$this->cookieName, '__utmz', '__utma'];
+
+        $request = $this->getRequest();
+
+        return $request->getCookies($names);
+    }
+
+    /**
+     * Return the current session id
+     *
+     * @return string|null
+     */
+    public function getSession()
+    {
+        $request = $this->getRequest();
+
+        return $request->getCookie($this->cookieName);
+    }
+
+    /**
+     * Return the protocol of the request: HTTP/1.0 or HTTP/1.1
+     *
+     * @return string|null
+     */
+    public function getProtocol()
+    {
+        $request = $this->getRequest();
+
+        return $request->getProtocol();
     }
 
     /**
@@ -221,9 +265,6 @@ class Bouncer
 
         $addr  = $this->getAddr();
         $haddr = self::hash($addr);
-
-        $ua    = $this->getUserAgent();
-        $hua   = self::hash($ua);
 
         $headers = $this->getHeaders();
         $fingerprint = Fingerprint::generate($headers);
@@ -241,13 +282,25 @@ class Bouncer
         // Build base identity
         $identity = array(
             'id'          => $id,
-            'ua'          => $ua,
-            'hua'         => $hua,
             'addr'        => $addr,
             'haddr'       => $haddr,
             'headers'     => $headers,
             'fingerprint' => $fingerprint
         );
+
+        // Extra identity (optional)
+        $protocol = $this->getProtocol();
+        if ($protocol) {
+            $identity['protocol'] = $protocol;
+        }
+        $cookies = $this->getCookies();
+        if ($cookies) {
+            $identity['cookies'] = $cookies;
+        }
+        $session = $this->getSession();
+        if ($session) {
+            $identity['session'] = $session;
+        }
 
         // Process Analyzers
         $identity = $this->processAnalyzers('identity', $identity);
@@ -275,7 +328,6 @@ class Bouncer
     public function initConnection()
     {
         $this->connection = array();
-        $this->connection['id']    = uniqid();
         $this->connection['pid']   = getmypid();
         $this->connection['time']  = time();
         $this->connection['start'] = microtime(true);
@@ -304,7 +356,14 @@ class Bouncer
         }
     }
 
-    public function registerAnalyzer($type, $callable, $priority = 100)
+    /*
+     * Register an analyzer for a given type.
+     *
+     * @param string
+     * @param callable
+     * @param int
+     */
+    public function registerAnalyzer($type, callable $callable, $priority = 100)
     {
         $this->analyzers[$type][] = array($callable, $priority);
     }
@@ -341,9 +400,29 @@ class Bouncer
 
         $this->initConnection();
 
+        $this->initSession();
+
         register_shutdown_function([$this, 'end']);
 
         $this->started = true;
+    }
+
+    /*
+     * Set a cookie containing the session id
+     */
+    public function initSession()
+    {
+        $identity = $this->getIdentity();
+
+        var_dump( $identity->toArray() );
+
+        if ($identity->hasAttribute('session')) {
+            $curentSession = $this->getSession();
+            $identitySession = $identity->getAttribute('session');
+            if (empty($curentSession) || $curentSession !== $identitySession) {
+                setcookie($this->cookieName, $identitySession, time() + (60 * 60 * 365 * 2), '/');
+            }
+        }
     }
 
     /*
@@ -363,8 +442,8 @@ class Bouncer
                 $this->connection['throttle_time'] = round($throttle / 1000000, 3);
                 break;
             case self::SUSPICIOUS:
-                // sleep 0.5 to 2 seconds then continue
-                $throttle = rand(500*1000, 2000*1000);
+                // sleep 0.5 to 2.5 seconds then continue
+                $throttle = rand(500*1000, 2500*1000);
                 usleep($throttle);
                 $this->connection['throttle_time'] = round($throttle / 1000000, 3);
                 break;
