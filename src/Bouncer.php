@@ -338,6 +338,12 @@ class Bouncer
      */
     public function completeConnection()
     {
+        // Session (from Cookie)
+        $session = $this->getSession();
+        if ($session) {
+            $this->connection['session'] = $session;
+        }
+
         // Measure execution time
         $this->connection['end'] = microtime(true);
         $this->connection['exec_time'] = round($this->connection['end'] - $this->connection['start'], 4);
