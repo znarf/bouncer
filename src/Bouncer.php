@@ -414,8 +414,6 @@ class Bouncer
     {
         $identity = $this->getIdentity();
 
-        var_dump( $identity->toArray() );
-
         if ($identity->hasAttribute('session')) {
             $curentSession = $this->getSession();
             $identitySession = $identity->getAttribute('session');
