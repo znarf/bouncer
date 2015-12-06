@@ -41,17 +41,14 @@ class AccessWatchLogger extends LogstashLogger
         }
     }
 
-    public function getKey()
-    {
-        return $this->key;
-    }
-
     /**
      * {@inheritDoc}
      */
     public function log($connection, Identity $identity, Request $request)
     {
-        $connection['key'] = $this->getKey();
+        if ($this->key) {
+            $connection['key'] = $this->key;
+        }
 
         parent::log($connection, $identity, $request);
     }
