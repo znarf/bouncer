@@ -26,7 +26,7 @@ class Bouncer
     /**
      * @var string|object
      */
-    protected $profile = '\Bouncer\Profile\Standard';
+    protected $profile;
 
     /**
      * @var boolean
@@ -92,10 +92,10 @@ class Bouncer
         }
 
         // Load Profile
-        $profile = $this->getProfile();
-        if ($profile) {
-            call_user_func_array(array($profile, 'load'), array($this));
+        if (!$this->profile) {
+            $this->profile = new \Bouncer\Profile\Standard;
         }
+        call_user_func_array(array($this->profile, 'load'), array($this));
     }
 
     /*
@@ -158,14 +158,6 @@ class Bouncer
         }
 
         return $this->logger;
-    }
-
-    /**
-     * @return string|object
-     */
-    public function getProfile()
-    {
-        return $this->profile;
     }
 
     /**

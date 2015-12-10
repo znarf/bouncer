@@ -16,9 +16,9 @@ class Standard
 
     public function load($bouncer)
     {
-        $this->loadAnalyzers($bouncer);
+        self::loadAnalyzers($bouncer);
 
-        $this->initCache($bouncer);
+        self::initCache($bouncer);
     }
 
     public function loadAnalyzers($bouncer)
