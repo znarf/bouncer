@@ -21,15 +21,14 @@ class Memcache extends AbstractCache
 
     protected $client = null;
 
-    protected $_prefix = null;
+    protected $prefix = null;
 
     protected $cache = array();
 
-    public function __construct($options  = null)
+    public function __construct(array $options = array())
     {
-        // Client Injection
-        if (is_object($options)) {
-            $this->client = $options;
+        if (!empty($options['client'])) {
+            $this->setClient($options['client']);
         }
     }
 
@@ -45,28 +44,13 @@ class Memcache extends AbstractCache
     }
 
     /**
-     * @return string memcached|memcache
+     * @param PhpMemcache|PhpMemcached
+     *
+     * @return PhpMemcache|PhpMemcached
      */
-    public function getApi()
+    public function setClient($client)
     {
-        $client = $this->getClient();
-        if ($client instanceof PhpMemcached) {
-            return 'memcached';
-        } elseif ($client instanceof PhpMemcache) {
-            return 'memcache';
-        } else {
-            throw new Exception('Unsupported client.');
-        }
-    }
-
-    public function close()
-    {
-        if (isset($this->client)) {
-            if ($this->getApi() == 'memcache') {
-                $this->client->close();
-            }
-            $this->client = null;
-        }
+        return $this->client = $client;
     }
 
     /**
@@ -78,8 +62,8 @@ class Memcache extends AbstractCache
         if (empty($client)) {
             return;
         }
-        if (!empty($this->_prefix)) {
-            $key = $this->_prefix . '-' . $key;
+        if (!empty($this->prefix)) {
+            $key = $this->prefix . '-' . $key;
         }
         if (empty($this->cache[$key])) {
             $this->cache[$key] = $client->get($key);
@@ -96,11 +80,11 @@ class Memcache extends AbstractCache
         if (empty($client)) {
             return;
         }
-        if (!empty($this->_prefix)) {
-            $key = $this->_prefix . '-' . $key;
+        if (!empty($this->prefix)) {
+            $key = $this->prefix . '-' . $key;
         }
         $this->cache[$key] = $value;
-        if ($this->getApi() == 'memcache') {
+        if ($client instanceof PhpMemcache) {
             return $client->set($key, $value, null, $expire);
         } else {
             return $client->set($key, $value, $expire);
