@@ -416,7 +416,7 @@ class Bouncer
             $curentSession = $this->getSession();
             $identitySession = $identity->getAttribute('session');
             if (empty($curentSession) || $curentSession !== $identitySession) {
-                setcookie($this->cookieName, $identitySession, time() + (60 * 60 * 365 * 2), '/');
+                setcookie($this->cookieName, $identitySession, time() + (60 * 60 * 24 * 365 * 2), '/');
             }
         }
     }
