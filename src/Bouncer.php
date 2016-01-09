@@ -432,13 +432,15 @@ class Bouncer
 
         switch ($status) {
             case self::BAD:
-                // sleep 1 to 5 seconds then exit
+                // sleep 1 to 5 seconds then continue
+                // this technically throttle to 20 req/minute
                 $throttle = rand(1000*1000, 5000*1000);
                 usleep($throttle);
                 $this->connection['throttle_time'] = round($throttle / 1000000, 3);
                 break;
             case self::SUSPICIOUS:
                 // sleep 0.5 to 2.5 seconds then continue
+                // this technically throttle to 40 req/minute
                 $throttle = rand(500*1000, 2500*1000);
                 usleep($throttle);
                 $this->connection['throttle_time'] = round($throttle / 1000000, 3);
