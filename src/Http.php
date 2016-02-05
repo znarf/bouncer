@@ -14,7 +14,7 @@ namespace Bouncer;
 class Http
 {
 
-    public static function request($method, $url, $data = null, $timeout = 1)
+    public static function request($method, $url, $data = null, $timeout = 2)
     {
         $options = array(
             'http' => array(
@@ -36,6 +36,11 @@ class Http
             $response = json_decode($result, true);
             return $response;
         }
+    }
+
+    public static function get($url, $data = null, $timeout = 2)
+    {
+        return self::request('GET', $url, $data, $timeout);
     }
 
 }
