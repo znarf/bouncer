@@ -77,7 +77,7 @@ class LogstashLogger implements LoggerInterface
 
         $stream = stream_socket_client("{$this->protocol}://{$this->host}:{$this->port}", $errno, $errstr);
         if (!$stream) {
-            error_log("Unable to connect to '{$protocol}://{$host}': {$errstr} ({$errno})");
+            error_log("Unable to connect to '{$this->protocol}://{$this->host}': {$errstr} ({$errno})");
             return $this->logger = false;
         }
 
