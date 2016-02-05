@@ -1,87 +1,31 @@
-Introduction
-------------
+# Bouncer
 
-Bouncer is a real time statistics and security engine written in PHP.
+A PHP library to log and analyse HTTP traffic, throttle and block suspicious agents.
 
-It's designed to be called when your PHP request starts. Everything that can be cached is cached, so there should not be any performance issue. Actually your server is supposed to run faster with it, because it doesn't have to serve junk traffic anymore.
+## Installation
 
-How does it operate? It first analyse what the agent claim to be, if it's a browser, a bot, which browser, which version. At the same time, it also compute an unique fingerprint based on the User-Agent and several common HTTP headers.
+Install the latest version with
 
-After that, it scores the agent, comparing what it claim to be, with how it's supposed to act. For example, Firefox is supposed to send several HTTP headers, Googlebot is supposed to operate from given IP adresses. It also compare the agent fingerprint with a local database, filled with thousand fingerprints of known, good, bad and suspicious agents.
+```bash
+$ composer require bouncer/bouncer
+```
 
-Bouncer ship with an addictive visual dashboard to easily screen the traffic currently happening on your server.
+## Basic Usage
 
-Bouncer is currently running in production on several websites and we're very happy with how it performs.
+```php
+<?php
 
-Bouncer is proudly inspirated/derivated from the Bad Behavior and BBClone projects.
+use \Bouncer\Bouncer;
 
-http://www.bbclone.de/
-http://www.bad-behavior.ioerror.us/
+$bouncer = new Bouncer;
 
-Requirements
-------------
+$bouncer->start();
+```
 
-There is no dependency, the Bouncer code use basic PHP.
+### Author
 
-EXCEPT, the default backend, which need the Memcache PHP extension and a memcache server running on localhost.
+François Hodierne - <francois@hodierne.net> - <http://francois.hodierne.net/>
 
-Bouncer is not supposed to be PHP4 compatible.
+### License
 
-Licence
--------
-
-Bouncer original code is licensed under the GPL and MIT licenses.
-
-Installation
-------------
-
-Add the bouncer code as soon as you can in your PHP script:
-
-    require_once 'Bouncer/Bouncer.php';
-    Bounce::run(array('namespaces' => array('siteid')));
-
-To output statistics, use the following code in a PHP file:
-
-    require_once 'Bouncer/Bouncer.php';
-    Bouncer::stats(array('namespace' => 'siteid'));
-
-To use additional Rules, load Rules before you run:
-
-    require_once 'Bouncer/Bouncer.php';
-    require_once 'Bouncer/Rules/Httpbl.php';
-    Bouncer_Rules_Httpbl::load(array('api_key' => 'myapikey'));
-    Bounce::run(array('namespaces' => array('siteid')));
-
-Dashboard
----------
-
-You can type queries in the dashboard search field.
-
-Filter by type:
-
-  type:browser
-  type:robot
-
-Filter by status:
-
-  status:nice
-  status:neutral
-  status:suspicious
-  status:bad
-
-Filter by name:
-
-  name:firefox
-  name:google
-
-Negative filters:
-
-  -name:explorer
-  -status:bad
-
-Advanced queries:
-
-  type:browser -status:bad
-  extension:fr system:macosx name:chrome
-
-You may also try these keys: fingerprint, host, extension, signature, name, version, system, system_version
+Bouncer is licensed under the MIT License - see the `LICENSE` file for details

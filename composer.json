@@ -1,10 +1,10 @@
 {
-    "name": "bouncer/bouncer",
-    "description": "An HTTP traffic analysis, throttling and logging library.",
+    "name": "znarf/bouncer",
+    "description": "A PHP library to log and analyse HTTP traffic, throttle and block suspicious agents.",
     "keywords": [
         "bouncer"
     ],
-    "homepage": "https://github.com/znarf/Bouncer",
+    "homepage": "https://github.com/znarf/bouncer",
     "license": "MIT",
     "authors": [
         {
