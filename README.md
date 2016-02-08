@@ -24,7 +24,7 @@ $bouncer = new Bouncer;
 $bouncer->start();
 ```
 
-## Caching
+## Cache
 
 To properly operate, a cache backend needs to be used. If no cache is defined, Bouncer will try to use APC/APCu.
 
@@ -63,9 +63,9 @@ $bouncer->start();
 
 ## Analyzer
 
-Bouncer run best with the Access Watch "cloud" analyzer.
-This is a separate service and you will need an API key for it.
-See http://access.watch/
+Bouncer currently run best with the Access Watch "cloud" analyzer.
+
+This is a separate service and you will need an API key for it. See http://access.watch/
 
 ```php
 <?php
@@ -73,7 +73,7 @@ See http://access.watch/
 use \Bouncer\Bouncer;
 
 $accessWatchAnalyzer = new \Bouncer\Analyzer\AccessWatch([
-  'apiKey' => '9b89020149ff37e69fbec4634ae57b46'
+  'apiKey' => '829f72288349093712ba9b4e5c26b50e'
 ]);
 
 $bouncer = new Bouncer;

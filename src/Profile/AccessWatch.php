@@ -21,7 +21,7 @@ class AccessWatch extends Standard
     public function __construct($params)
     {
         $this->analyzer = new \Bouncer\Analyzer\AccessWatch($params);
-        $this->logger = new \Bouncer\Logger\AccessWatchLogger($params);
+        $this->logger = new \Bouncer\Logger\AccessWatchHttpLogger($params);
     }
 
     public function load($bouncer)

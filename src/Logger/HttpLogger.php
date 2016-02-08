@@ -34,7 +34,7 @@ class HttpLogger implements LoggerInterface
         $context['request']  = $request->toArray();
         $context['identity'] = $identity->toArray();
 
-        $result = Http::request('POST', $this->endpoint, $context, 5);
+        $result = Http::request('POST', $this->endpoint, $context);
 
         if (!$result) {
             error_log("Error while logging to Http endpoint: $this->endpoint");

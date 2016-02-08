@@ -221,7 +221,7 @@ class Bouncer
     }
 
     /**
-     * Return the current session id
+     * Return the current session id (from Cookie)
      *
      * @return string|null
      */
