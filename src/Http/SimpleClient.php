@@ -40,7 +40,7 @@ class SimpleClient
         }
     }
 
-    public function get($url, $data = null)
+    public function get($url)
     {
         return self::request('GET', $url);
     }
