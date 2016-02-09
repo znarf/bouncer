@@ -9,16 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Bouncer;
+namespace Bouncer\Http;
 
-class Http
+class SimpleClient
 {
 
-    public static function request($method, $url, $data = null, $timeout = 2)
+    protected $timeout = 2;
+
+    public function request($method, $url, $data = null)
     {
         $options = array(
             'http' => array(
-                'timeout' => $timeout,
+                'timeout' => $this->timeout,
                 'method'  => $method,
                 'header'  => "User-Agent: Bouncer Http\r\n"
             )
@@ -38,9 +40,14 @@ class Http
         }
     }
 
-    public static function get($url, $data = null, $timeout = 2)
+    public function get($url, $data = null)
     {
-        return self::request('GET', $url, $data, $timeout);
+        return self::request('GET', $url);
+    }
+
+    public function post($url, $data = null)
+    {
+        return self::request('POST', $url, $data);
     }
 
 }

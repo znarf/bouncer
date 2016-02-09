@@ -2,14 +2,14 @@
 
 namespace Bouncer\Analyzer;
 
-use Bouncer\Http;
-
 class AccessWatch
 {
 
     protected $baseUrl = 'http://access.watch/api/v1';
 
     protected $apiKey;
+
+    protected $httpClient;
 
     public function __construct($params)
     {
@@ -19,12 +19,22 @@ class AccessWatch
         if (isset($params['apiKey'])) {
             $this->apiKey = $params['apiKey'];
         }
+        if (isset($params['httpClient'])) {
+            $this->httpClient = $params['httpClient'];
+        }
+    }
+
+    public function getHttpClient()
+    {
+        if (empty($this->httpClient)) {
+            $this->httpClient = new \Bouncer\Http\SimpleClient;
+        }
+        return $this->httpClient;
     }
 
     public function identityAnalyzer($identity)
     {
-        $result = Http::request(
-            'POST',
+        $result = $this->getHttpClient()->post(
             "{$this->baseUrl}/identity",
             array(
                 'key'      => $this->apiKey,

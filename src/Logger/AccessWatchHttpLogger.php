@@ -31,6 +31,9 @@ class AccessWatchHttpLogger extends HttpLogger
         if (isset($params['apiKey'])) {
             $this->key = $params['apiKey'];
         }
+        if (isset($params['httpClient'])) {
+            $this->httpClient = $params['httpClient'];
+        }
     }
 
     /**

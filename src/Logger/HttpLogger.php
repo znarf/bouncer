@@ -12,7 +12,6 @@
 namespace Bouncer\Logger;
 
 use Bouncer\Identity;
-use Bouncer\Http;
 use Bouncer\Request;
 
 class HttpLogger implements LoggerInterface
@@ -20,9 +19,19 @@ class HttpLogger implements LoggerInterface
 
     protected $endpoint;
 
+    protected $httpClient;
+
     public function __construct($endpoint)
     {
         $this->endpoint = $endpoint;
+    }
+
+    public function getHttpClient()
+    {
+        if (empty($this->httpClient)) {
+            $this->httpClient = new \Bouncer\Http\SimpleClient;
+        }
+        return $this->httpClient;
     }
 
     /**
@@ -34,7 +43,7 @@ class HttpLogger implements LoggerInterface
         $context['request']  = $request->toArray();
         $context['identity'] = $identity->toArray();
 
-        $result = Http::request('POST', $this->endpoint, $context);
+        $result = $this->getHttpClient()->post($this->endpoint, $context);
 
         if (!$result) {
             error_log("Error while logging to Http endpoint: $this->endpoint");
