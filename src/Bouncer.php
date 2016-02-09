@@ -115,6 +115,9 @@ class Bouncer
         if (isset($options['profile'])) {
             $this->profile = $options['profile'];
         }
+        if (isset($options['cookieName'])) {
+            $this->cookieName = $options['cookieName'];
+        }
     }
 
     /**
