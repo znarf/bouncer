@@ -27,7 +27,7 @@ class AccessWatch
     public function getHttpClient()
     {
         if (empty($this->httpClient)) {
-            $this->httpClient = new \Bouncer\Http\SimpleClient;
+            $this->httpClient = new \Bouncer\Http\SimpleClient();
         }
         return $this->httpClient;
     }
