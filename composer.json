@@ -15,7 +15,7 @@
     "require": {
         "php" : ">=5.3.9",
         "monolog/monolog": "^1.17",
-        "symfony/http-foundation": "^2.8",
+        "symfony/http-foundation": "^2.7",
         "geoip2/geoip2": "^2.3"
     },
     "autoload": {
