@@ -216,7 +216,7 @@ class Bouncer
      */
     public function getCookies()
     {
-        $names = [$this->cookieName, '__utmz', '__utma'];
+        $names = array($this->cookieName, '__utmz', '__utma');
 
         $request = $this->getRequest();
 
@@ -351,9 +351,11 @@ class Bouncer
         $this->connection['memory_usage'] = memory_get_peak_usage();
 
         // Add response
-        $responseStatus = http_response_code();
-        if ($responseStatus) {
-            $this->connection['response']['status'] = $responseStatus;
+        if (function_exists('http_response_code')) {
+            $responseStatus = http_response_code();
+            if ($responseStatus) {
+                $this->connection['response']['status'] = $responseStatus;
+            }
         }
     }
 
@@ -364,7 +366,7 @@ class Bouncer
      * @param callable
      * @param int
      */
-    public function registerAnalyzer($type, callable $callable, $priority = 100)
+    public function registerAnalyzer($type, $callable, $priority = 100)
     {
         $this->analyzers[$type][] = array($callable, $priority);
     }
@@ -403,7 +405,7 @@ class Bouncer
 
         $this->initSession();
 
-        register_shutdown_function([$this, 'end']);
+        register_shutdown_function(array($this, 'end'));
 
         $this->started = true;
     }
