@@ -69,7 +69,7 @@ class Request extends SfRequest
         return $this->cookies->get($name);
     }
 
-    public function getCookies($names = [])
+    public function getCookies($names = array())
     {
         $cookies = array();
         foreach ($this->cookies->all() as $name => $value) {

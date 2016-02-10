@@ -26,7 +26,7 @@ class AccessWatchHttpLogger extends HttpLogger
 
     protected $key;
 
-    public function __construct($params = [])
+    public function __construct($params = array())
     {
         if (isset($params['apiKey'])) {
             $this->key = $params['apiKey'];
