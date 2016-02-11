@@ -19,14 +19,35 @@ Start Bouncer as soon as possible in your codebase.
 
 use \Bouncer\Bouncer;
 
-$bouncer = new Bouncer;
+$bouncer = new Bouncer();
 
 $bouncer->start();
 ```
 
+## Access Watch
+
+Bouncer currently run best with the Access Watch "cloud" service.
+
+You will need an API key for it. See http://access.watch/
+
+The Access Watch profile will setup the Analyzer and Logger automatically for you.
+
+```php
+<?php
+
+use \Bouncer\Bouncer;
+
+```php
+$bouncer = new Bouncer(array(
+  'profile' => new \Bouncer\Profile\AccessWatch(array(
+    'apiKey' => 'ACCESS_WATCH_API_KEY_HERE',
+  ))
+));
+```
+
 ## Cache
 
-To properly operate, a cache backend needs to be used. If no cache is defined, Bouncer will try to use APC/APCu.
+To properly operate, a cache backend needs to be defined. If no cache is set, Bouncer will try to use APC/APCu.
 
 ```php
 <?php
@@ -36,49 +57,9 @@ use \Bouncer\Bouncer;
 $memcache = new Memcache();
 $memcache->addServer('localhost');
 
-$bouncer = new Bouncer([
+$bouncer = new Bouncer(array(
   'cache' => \Bouncer\Cache\Memcache($memcache)
-]);
-
-$bouncer->start();
-```
-
-## Logger
-
-By default, Bouncer doesn't log anywhere. Define a logging backend where to send the requests.
-
-Example to logstash:
-
-```php
-<?php
-
-use \Bouncer\Bouncer;
-
-$bouncer = new Bouncer([
-  'logger' => \Bouncer\Logger\LogstashLogger('localhost', 5145)
-]);
-
-$bouncer->start();
-```
-
-## Analyzer
-
-Bouncer currently run best with the Access Watch "cloud" analyzer.
-
-This is a separate service and you will need an API key for it. See http://access.watch/
-
-```php
-<?php
-
-use \Bouncer\Bouncer;
-
-$accessWatchAnalyzer = new \Bouncer\Analyzer\AccessWatch([
-  'apiKey' => '829f72288349093712ba9b4e5c26b50e'
-]);
-
-$bouncer = new Bouncer;
-
-$bouncer->registerAnalyzer('identity', array($accessWatchAnalyzer, 'identityAnalyzer'));
+));
 
 $bouncer->start();
 ```
