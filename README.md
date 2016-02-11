@@ -37,7 +37,6 @@ The Access Watch profile will setup the Analyzer and Logger automatically for yo
 
 use \Bouncer\Bouncer;
 
-```php
 $bouncer = new Bouncer(array(
   'profile' => new \Bouncer\Profile\AccessWatch(array(
     'apiKey' => 'ACCESS_WATCH_API_KEY_HERE',
