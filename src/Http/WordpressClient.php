@@ -20,7 +20,7 @@ class WordpressClient
     {
         $response = wp_remote_get($url, array(
             'headers' => array(
-                'Accept: application/json',
+                'Accept' => 'application/json',
             ),
             'timeout' => $this->timeout,
         ));
@@ -34,8 +34,8 @@ class WordpressClient
     {
         $response = wp_remote_post($url, array(
             'headers' => array(
-                'Accept: application/json',
-                'Content-Type: application/json'
+                'Accept' => 'application/json',
+                'Content-Type' => 'application/json',
             ),
             'body' => json_encode($data),
             'timeout' => $this->timeout,
