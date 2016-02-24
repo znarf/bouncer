@@ -427,41 +427,34 @@ class Bouncer
     }
 
     /*
-     * Throttle if Identity status is suspicious.
+     * Sleep if Identity status is of a certain value.
+     *
+     * @param array
+     * @param int
+     * @param int
+     *
      */
-    public function throttle()
+    public function sleep($statuses = array(), $minimum = 1000, $maximum = 2500)
     {
         $identity = $this->getIdentity();
 
-        $status = $identity->getStatus();
-
-        switch ($status) {
-            case self::BAD:
-                // sleep 1 to 5 seconds then continue
-                // this technically throttle to 20 req/minute
-                $throttle = rand(1000*1000, 5000*1000);
-                usleep($throttle);
-                $this->connection['throttle_time'] = round($throttle / 1000000, 3);
-                break;
-            case self::SUSPICIOUS:
-                // sleep 0.5 to 2.5 seconds then continue
-                // this technically throttle to 40 req/minute
-                $throttle = rand(500*1000, 2500*1000);
-                usleep($throttle);
-                $this->connection['throttle_time'] = round($throttle / 1000000, 3);
-                break;
+        if (in_array($identity->getStatus(), $statuses)) {
+            $throttle_time = rand($minimum * 1000, $maximum * 1000);
+            usleep($throttle_time);
+            $this->connection['throttle_time'] = round($throttle_time / 1000 / 1000, 3);
         }
     }
 
     /*
-     * Ban if Identity status is bad.
+     * Ban if Identity status is of a certain value.
      */
-    public function ban()
+    public function ban($statuses = array())
     {
         $identity = $this->getIdentity();
 
-        if ($identity->getStatus() == self::BAD) {
-            $this->unavailable();
+        if (in_array($identity->getStatus(), $statuses)) {
+            $this->connection['banned'] = true;
+            $this->forbidden();
         }
     }
 
@@ -504,14 +497,32 @@ class Bouncer
 
     // Static
 
+    public static function forbidden()
+    {
+        $code = '403';
+        $message = 'Forbidden';
+        self::response_status($code, $message);
+        echo $message;
+        exit;
+    }
+
     public static function unavailable()
     {
         $code = '503';
-        $msg = 'Service Unavailable';
-        header("HTTP/1.0 $code $msg");
-        header("Status: $code $msg");
-        echo $msg;
+        $message = 'Service Unavailable';
+        self::response_status($code, $message);
+        echo $message;
         exit;
+    }
+
+    public static function response_status($code, $message)
+    {
+        if (function_exists('http_response_code')) {
+            http_response_code($code);
+        } else {
+            header("HTTP/1.0 $code $message");
+            header("Status: $code $message");
+        }
     }
 
     public static function hash($string)
