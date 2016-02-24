@@ -501,7 +501,7 @@ class Bouncer
     {
         $code = '403';
         $message = 'Forbidden';
-        self::response_status($code, $message);
+        self::responseStatus($code, $message);
         echo $message;
         exit;
     }
@@ -510,12 +510,12 @@ class Bouncer
     {
         $code = '503';
         $message = 'Service Unavailable';
-        self::response_status($code, $message);
+        self::responseStatus($code, $message);
         echo $message;
         exit;
     }
 
-    public static function response_status($code, $message)
+    public static function responseStatus($code, $message)
     {
         if (function_exists('http_response_code')) {
             http_response_code($code);
