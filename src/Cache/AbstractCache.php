@@ -21,12 +21,12 @@ abstract class AbstractCache implements CacheInterface
 
     public function getIdentity($id)
     {
-        return $this->get("bouncer-identity-$id");
+        return $this->get("access_watch_identity_{$id}");
     }
 
     public function setIdentity($id, $identity)
     {
-        return $this->set("bouncer-identity-$id", $identity, 86400);
+        return $this->set("access_watch_identity_{$id}", $identity, 86400);
     }
 
 }
