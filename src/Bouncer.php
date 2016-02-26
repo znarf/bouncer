@@ -39,9 +39,14 @@ class Bouncer
     protected $logErrors = true;
 
     /**
-     * @var boolean
+     * @var string
      */
     protected $cookieName = 'bsid';
+
+    /**
+     * @var string
+     */
+    protected $cookiePath = '/';
 
     /**
      * @var \Bouncer\Cache\CacheInterface
@@ -117,6 +122,9 @@ class Bouncer
         }
         if (isset($options['cookieName'])) {
             $this->cookieName = $options['cookieName'];
+        }
+        if (isset($options['cookiePath'])) {
+            $this->cookiePath = $options['cookiePath'];
         }
     }
 
@@ -421,7 +429,7 @@ class Bouncer
             $curentSession = $this->getSession();
             $identitySession = $identity->getAttribute('session');
             if (empty($curentSession) || $curentSession !== $identitySession) {
-                setcookie($this->cookieName, $identitySession, time() + (60 * 60 * 24 * 365 * 2), '/');
+                setcookie($this->cookieName, $identitySession, time() + (60 * 60 * 24 * 365 * 2), $this->cookiePath);
             }
         }
     }
