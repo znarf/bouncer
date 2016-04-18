@@ -41,7 +41,7 @@ class Request extends HttpFoundationRequest
     {
         $headers = array();
         foreach ($this->headers->all() as $name => $value) {
-            if (!$ignore || !in_array($name, $ignore)) {
+            if (empty($ignore) || !in_array($name, $ignore)) {
                 $headers[$name] = $this->headers->get($name);
             }
         }

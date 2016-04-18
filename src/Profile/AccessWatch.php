@@ -30,10 +30,10 @@ class AccessWatch extends Standard
         $bouncer->registerAnalyzer('identity', array($this->analyzer, 'identityAnalyzer'));
 
         // Load Default analyzers
-        parent::loadAnalyzers($bouncer);
+        $this->loadAnalyzers($bouncer);
 
         // If no cache available, try to set up APC
-        parent::initCache($bouncer);
+        $this->initCache($bouncer);
 
         // If no logger available, try to setup Access Watch Logger
         $logger = $bouncer->getLogger();

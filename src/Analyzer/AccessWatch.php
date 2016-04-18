@@ -5,7 +5,7 @@ namespace Bouncer\Analyzer;
 class AccessWatch
 {
 
-    protected $endpoint = 'https://access.watch/api/1.0/identity';
+    protected $baseUrl = 'https://access.watch/api/1.0';
 
     protected $apiKey;
 
@@ -38,7 +38,7 @@ class AccessWatch
     public function identityAnalyzer($identity)
     {
         $result = $this->getHttpClient($this->apiKey)->post(
-            $this->endpoint,
+            "{$this->baseUrl}/identity",
             array(
                 'address' => $identity->getAddress()->getValue(),
                 'headers' => $identity->getHeaders(),

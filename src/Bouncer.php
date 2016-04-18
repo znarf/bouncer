@@ -308,10 +308,8 @@ class Bouncer
         // Try to get identity from cache
         if ($cache) {
             $cacheIdentity = $cache->getIdentity($id);
-            if ($cacheIdentity) {
-                if (is_object($cacheIdentity)) {
-                    return $this->identity = $cacheIdentity;
-                }
+            if ($cacheIdentity instanceof Identity) {
+                return $this->identity = $cacheIdentity;
             }
         }
 
