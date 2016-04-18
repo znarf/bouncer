@@ -66,6 +66,11 @@ class Bouncer
     /**
      * @var array
      */
+    protected $response;
+
+    /**
+     * @var array
+     */
     protected $analyzers = array();
 
     /**
@@ -74,11 +79,11 @@ class Bouncer
     protected $identity;
 
     /**
-     * Store metadata about the handling of the request
+     * Store internal metadata
      *
      * @var array
      */
-    protected $connection = array();
+    protected $context = array();
 
     /**
      * @var boolean
@@ -186,6 +191,14 @@ class Bouncer
     }
 
     /**
+     * @return array
+     */
+    public function getResponse()
+    {
+        return $this->response;
+    }
+
+    /**
      * @return string
      */
     public function getUserAgent()
@@ -202,6 +215,18 @@ class Bouncer
     }
 
     /**
+     * @return Address
+     */
+    public function getAddress()
+    {
+        $addr = $this->getRequest()->getAddr();
+
+        $address = new Address($addr);
+
+        return $address;
+    }
+
+    /**
      * @return array
      */
     public function getHeaders()
@@ -210,13 +235,19 @@ class Bouncer
 
         $headers = $request->getHeaders();
 
-        // TODO: this should be deprecated
-        $protocol = $this->getProtocol();
-        if ($protocol) {
-            $headers['protocol'] = $protocol;
-        }
-
         return $headers;
+    }
+
+    /**
+     * @return Signature
+     */
+    public function getSignature()
+    {
+        $headers = $this->getHeaders();
+
+        $signature = new Signature(array('headers' => $headers));
+
+        return $signature;
     }
 
     /**
@@ -266,43 +297,21 @@ class Bouncer
 
         $cache = $this->getCache();
 
-        $addr  = $this->getAddr();
-        $haddr = self::hash($addr);
+        $identity = new Identity(array(
+            'address' => $this->getAddress(),
+            'headers' => $this->getHeaders(),
+        ));
 
-        $headers = $this->getHeaders();
-        $fingerprint = Fingerprint::generate($headers);
 
-        $id = self::hash($fingerprint . $haddr);
+        $id = $identity->getId();
 
         // Try to get identity from cache
         if ($cache) {
-            $identity = $cache->getIdentity($id);
-            if ($identity) {
-                return $this->identity = new Identity($identity);
+            $cacheIdentity = $cache->getIdentity($id);
+            if ($cacheIdentity) {
+                return $this->identity = $cacheIdentity;
+                // return $this->identity = new Identity($cacheIdentity);
             }
-        }
-
-        // Build base identity
-        $identity = array(
-            'id'          => $id,
-            'addr'        => $addr,
-            'haddr'       => $haddr,
-            'headers'     => $headers,
-            'fingerprint' => $fingerprint
-        );
-
-        // Extra identity (optional)
-        $protocol = $this->getProtocol();
-        if ($protocol) {
-            $identity['protocol'] = $protocol;
-        }
-        $cookies = $this->getCookies();
-        if ($cookies) {
-            $identity['cookies'] = $cookies;
-        }
-        $session = $this->getSession();
-        if ($session) {
-            $identity['session'] = $session;
         }
 
         // Process Analyzers
@@ -313,60 +322,68 @@ class Bouncer
             $cache->setIdentity($id, $identity);
         }
 
-        return $this->identity = new Identity($identity);
+        return $this->identity = $identity;
     }
 
-    public function getConnection()
+    public function getContext()
     {
-        if (!$this->connection) {
-            $this->initConnection();
+        if (!$this->context) {
+            $this->initContext();
         }
 
-        return $this->connection;
+        return $this->context;
     }
 
     /*
-     * Init the connection with id, time and start.
+     * Init the context with id, time and start.
      */
-    public function initConnection()
+    public function initContext()
     {
-        $this->connection = array();
-        $this->connection['pid']   = getmypid();
-        $this->connection['time']  = time();
-        $this->connection['start'] = microtime(true);
+        $this->context = array();
+        $this->context['pid']   = getmypid();
+        $this->context['time']  = time();
+        $this->context['start'] = microtime(true);
     }
 
     /*
-     * Complete the connection with end, exec_time, memory_usage and response_status.
+     * Complete the context with end, exec_time and memory_usage.
      */
-    public function completeConnection()
+    public function completeContext()
     {
         // Session (from Cookie)
         $session = $this->getSession();
         if ($session) {
-            $this->connection['session'] = $session;
+            $this->context['session'] = $session;
         }
 
         // Measure execution time
-        $this->connection['end'] = microtime(true);
-        $this->connection['exec_time'] = round($this->connection['end'] - $this->connection['start'], 4);
-        if (!empty($this->connection['throttle_time'])) {
-             $this->connection['exec_time'] -= $this->connection['throttle_time'];
+        $this->context['end'] = microtime(true);
+        $this->context['exec_time'] = round($this->context['end'] - $this->context['start'], 4);
+        if (!empty($this->context['throttle_time'])) {
+             $this->context['exec_time'] -= $this->ccontext['throttle_time'];
         }
-        unset($this->connection['end'], $this->connection['start']);
+        unset($this->context['end'], $this->context['start']);
 
         // Report Memory Usage
-        $this->connection['memory_usage'] = memory_get_peak_usage();
+        $this->context['memory_usage'] = memory_get_peak_usage();
+    }
 
-        // Add response
+    /*
+     * Complete the response with status
+     */
+    public function completeResponse()
+    {
+        if (!isset($this->response)) {
+            $this->response = array();
+        }
+
         if (function_exists('http_response_code')) {
             $responseStatus = http_response_code();
             if ($responseStatus) {
-                $this->connection['response']['status'] = $responseStatus;
+                $this->response['status'] = $responseStatus;
             }
         }
     }
-
     /*
      * Register an analyzer for a given type.
      *
@@ -409,7 +426,7 @@ class Bouncer
             return;
         }
 
-        $this->initConnection();
+        $this->initContext();
 
         $this->initSession();
 
@@ -476,7 +493,8 @@ class Bouncer
             return;
         }
 
-        $this->completeConnection();
+        $this->completeContext();
+        $this->completeResponse();
 
         // We really want to avoid throwing exceptions there
         try {
@@ -493,13 +511,17 @@ class Bouncer
      */
     public function log()
     {
-        $connection = $this->getConnection();
-        $identity = $this->getIdentity();
-        $request = $this->getRequest();
+        $logEntry = array(
+            'address'  => $this->getAddress(),
+            'request'  => $this->getRequest(),
+            'response' => $this->getResponse(),
+            'identity' => $this->getIdentity(),
+            'context'  => $this->getContext(),
+        );
 
         $logger = $this->getLogger();
         if ($logger) {
-            $logger->log($connection, $identity, $request);
+            $logger->log($logEntry);
         }
     }
 

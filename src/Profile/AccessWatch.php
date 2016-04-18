@@ -38,7 +38,7 @@ class AccessWatch extends Standard
         // If no logger available, try to setup Access Watch Logger
         $logger = $bouncer->getLogger();
         if (empty($logger)) {
-          $bouncer->setOptions(array('logger' => $this->logger));
+            $bouncer->setOptions(array('logger' => $this->logger));
         }
     }
 

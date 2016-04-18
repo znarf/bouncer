@@ -5,7 +5,7 @@ namespace Bouncer\Analyzer;
 class AccessWatch
 {
 
-    protected $baseUrl = 'http://access.watch/api/v1';
+    protected $endpoint = 'https://access.watch/api/1.0/identity';
 
     protected $apiKey;
 
@@ -24,24 +24,27 @@ class AccessWatch
         }
     }
 
-    public function getHttpClient()
+    public function getHttpClient($apiKey = null)
     {
         if (empty($this->httpClient)) {
-            $this->httpClient = new \Bouncer\Http\SimpleClient();
+            $this->httpClient = new \Bouncer\Http\SimpleClient($apiKey);
         }
         return $this->httpClient;
     }
 
     public function identityAnalyzer($identity)
     {
-        $result = $this->getHttpClient()->post(
-            "{$this->baseUrl}/identity",
+        $result = $this->getHttpClient($this->apiKey)->post(
+            $this->endpoint,
             array(
-                'key'      => $this->apiKey,
-                'identity' => $identity,
+                'address' => $identity->getAddress()->getValue(),
+                'headers' => $identity->getHeaders(),
             )
         );
-        return $result ? $result['identity'] + $identity : $identity;
+        if ($result) {
+            $identity->setAttributes($result);
+        }
+        return $identity;
     }
 
 }

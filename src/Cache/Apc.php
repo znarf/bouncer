@@ -30,9 +30,9 @@ class Apc extends AbstractCache
     /**
      * {@inheritDoc}
      */
-    public function set($key, $value, $expire = 0)
+    public function set($key, $value, $ttl = 0)
     {
-        return apc_store($key, $value, $expire);
+        return apc_store($key, $value, $ttl);
     }
 
 }

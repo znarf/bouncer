@@ -14,14 +14,25 @@ namespace Bouncer\Http;
 class WordpressClient
 {
 
+    protected $apiKey;
+
     protected $timeout = 2;
+
+    public function __construct($apiKey = null)
+    {
+        $this->apiKey = $apiKey;
+    }
 
     public function get($url)
     {
+        $headers = array(
+            'Accept' => 'application/json',
+        );
+        if ($this->apiKey) {
+            $headers['Api-Key'] = $this->apiKey;
+        }
         $response = wp_remote_get($url, array(
-            'headers' => array(
-                'Accept' => 'application/json',
-            ),
+            'headers' => $headers,
             'timeout' => $this->timeout,
         ));
         if (is_array($response)) {
@@ -32,12 +43,16 @@ class WordpressClient
 
     public function post($url, $data = null)
     {
+        $headers = array(
+            'Accept'       => 'application/json',
+            'Content-Type' => 'application/json',
+        );
+        if ($this->apiKey) {
+            $headers['Api-Key'] = $this->apiKey;
+        }
         $response = wp_remote_post($url, array(
-            'headers' => array(
-                'Accept' => 'application/json',
-                'Content-Type' => 'application/json',
-            ),
-            'body' => json_encode($data),
+            'headers' => $headers,
+            'body'    => json_encode($data),
             'timeout' => $this->timeout,
         ));
         if (is_array($response)) {

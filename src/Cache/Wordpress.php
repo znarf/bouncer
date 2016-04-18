@@ -19,9 +19,9 @@ class Wordpress extends AbstractCache
         return get_transient($key);
     }
 
-    public function set($key, $value, $expire = 0)
+    public function set($key, $value, $ttl = 0)
     {
-        set_transient($key, $value, $expire);
+        set_transient($key, $value, $ttl);
     }
 
 }

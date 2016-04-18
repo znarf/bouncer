@@ -21,6 +21,6 @@ interface CacheInterface
 
   public function get($key);
 
-  public function set($key, $value, $expire = 0);
+  public function set($key, $value, $ttl = 0);
 
 }

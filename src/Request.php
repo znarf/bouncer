@@ -11,9 +11,9 @@
 
 namespace Bouncer;
 
-use Symfony\Component\HttpFoundation\Request as SfRequest;
+use Symfony\Component\HttpFoundation\Request as HttpFoundationRequest;
 
-class Request extends SfRequest
+class Request extends HttpFoundationRequest
 {
 
     protected $addr;
@@ -141,32 +141,16 @@ class Request extends SfRequest
     {
         $request = array();
 
-        $request['addr']       = $this->getAddr();
         $request['scheme']     = $this->getScheme();
         $request['method']     = $this->getMethod();
         $request['host']       = $this->getHost();
         $request['port']       = $this->getPort();
         $request['url']        = $this->getRequestUri();
-        $request['protocol']   = $this->getProtocol();
         $request['headers']    = $this->getHeaders();
 
-        $queryAll = $this->query->all();
-        if (!empty($queryAll)) {
-            $request['query_parameters'] = $queryAll;
-        }
-
-        $requestAll = $this->request->all();
-        if (!empty($requestAll)) {
-            // Sensitive data in there, disabled, should be opt in
-            // $request['post_parameters'] = $requestAll;
-            $request['post_keys'] = array_keys($requestAll);
-        }
-
-        $cookiesAll = $this->cookies->all();
-        if (!empty($cookiesAll)) {
-            // Sensitive data in there, disabled, should be opt in
-            // $request['cookies'] = $cookiesAll;
-            $request['cookie_keys'] = array_keys($cookiesAll);
+        $protocol = $this->getProtocol();
+        if ($protocol) {
+            $request['protocol'] = $protocol;
         }
 
         return $request;

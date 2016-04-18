@@ -12,15 +12,16 @@ class Hostname
 
     public static function hostnameAnalyzer($identity)
     {
-        if (empty($identity['hostname']) || ($identity['hostname'] == $identity['addr'])) {
-            $hostname = strtolower(gethostbyaddr($identity['addr']));
-            if ($hostname && $hostname != $identity['addr']) {
-                $identity['hostname'] = $hostname;
-                $reverse = gethostbyname($hostname);
-                if ($reverse && $reverse == $identity['addr']) {
-                    $identity['reverse'] = true;
+        $address = $identity->getAddress();
+        if (!$address->getHostname()) {
+            $hostname = strtolower(gethostbyaddr($address->getValue()));
+            if ($hostname && $hostname != $address->getValue()) {
+                $address->setHostname($hostname);
+                $reverseAddress = gethostbyname($hostname);
+                if ($reverseAddress && $reverseAddress == $address->getValue()) {
+                    $address->setAttribute('reverse', true);
                 } else {
-                    $identity['reverse'] = false;
+                    $address->setAttribute('reverse', false);
                 }
             }
         }

@@ -9,13 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Bouncer\Cache;
+namespace Bouncer\Logger;
 
-class Volatile extends AbstractCache
+class BlackholeLogger implements LoggerInterface
 {
 
-    public function get($key) {}
-
-    public function set($key, $value, $expire = 0) {}
+    /**
+     * {@inheritDoc}
+     */
+    public function log(array $logEntry)
+    {
+    }
 
 }

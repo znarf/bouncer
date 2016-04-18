@@ -11,23 +11,17 @@
 
 namespace Bouncer\Logger;
 
-use Bouncer\Connection;
-use Bouncer\Identity;
-use Bouncer\Request;
-
-class ErrorLogger implements LoggerInterface
+class ErrorLogger extends BaseLogger
 {
 
     /**
      * {@inheritDoc}
      */
-    public function log($connection, Identity $identity, Request $request)
+    public function log(array $logEntry)
     {
-        $context = $connection;
-        $context['request']   = $request->toArray();
-        $context['identity']  = $identity->toArray();
+        $entry = $this->format($logEntry);
 
-        error_log(json_encode($context, JSON_PRETTY_PRINT));
+        error_log(json_encode($entry, JSON_PRETTY_PRINT));
     }
 
 }

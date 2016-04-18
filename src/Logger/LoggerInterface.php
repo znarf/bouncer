@@ -11,10 +11,6 @@
 
 namespace Bouncer\Logger;
 
-use Bouncer\Connection;
-use Bouncer\Identity;
-use Bouncer\Request;
-
 /**
  * Interface that all Bouncer Logger must implement
  *
@@ -23,6 +19,6 @@ use Bouncer\Request;
 interface LoggerInterface
 {
 
-    public function log($connection, Identity $identity, Request $request);
+    public function log(array $logEntry);
 
 }

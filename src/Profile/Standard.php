@@ -24,7 +24,6 @@ class Standard
     public function loadAnalyzers($bouncer)
     {
         // Load Default analyzers
-        \Bouncer\Analyzer\Geoip::load($bouncer);
         \Bouncer\Analyzer\Hostname::load($bouncer);
     }
 
@@ -33,12 +32,12 @@ class Standard
         // If no cache available, try to set up APC
         $cache = $bouncer->getCache();
         if (empty($cache)) {
-          if (function_exists('apc_fetch')) {
-            $cache = new \Bouncer\Cache\Apc();
-            $bouncer->setOptions(array('cache' => $cache));
-          } else {
-            $bouncer->error('No cache available. A cache is needed to keep performances acceptable.');
-          }
+            if (function_exists('apc_fetch')) {
+              $cache = new \Bouncer\Cache\Apc();
+              $bouncer->setOptions(array('cache' => $cache));
+            } else {
+                $bouncer->error('No cache available. A cache is needed to keep performances acceptable.');
+            }
         }
     }
 

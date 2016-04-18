@@ -11,9 +11,6 @@
 
 namespace Bouncer\Logger;
 
-use Bouncer\Identity;
-use Bouncer\Request;
-
 /**
  * Log Connections on the Bouncer Cloud Service
  *
@@ -44,13 +41,13 @@ class AccessWatchLogger extends LogstashLogger
     /**
      * {@inheritDoc}
      */
-    public function log($connection, Identity $identity, Request $request)
+    public function log(array $logEntry)
     {
         if ($this->key) {
-            $connection['key'] = $this->key;
+            $logEntry['key'] = $this->key;
         }
 
-        parent::log($connection, $identity, $request);
+        parent::log($logEntry);
     }
 
 }

@@ -74,7 +74,7 @@ class Memcache extends AbstractCache
     /**
      * {@inheritDoc}
      */
-    public function set($key, $value, $expire = 0)
+    public function set($key, $value, $ttl = 0)
     {
         $client = $this->getClient();
         if (empty($client)) {
@@ -85,9 +85,9 @@ class Memcache extends AbstractCache
         }
         $this->cache[$key] = $value;
         if ($client instanceof PhpMemcache) {
-            return $client->set($key, $value, null, $expire);
+            return $client->set($key, $value, null, $ttl);
         } else {
-            return $client->set($key, $value, $expire);
+            return $client->set($key, $value, $ttl);
         }
     }
 

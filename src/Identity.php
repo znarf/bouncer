@@ -11,22 +11,8 @@
 
 namespace Bouncer;
 
-class Identity
+class Identity extends Resource
 {
-
-    protected $attributes = array(
-        'id',
-        'addr',
-        'haddr',
-        'headers',
-        'fingerprint',
-        'session',
-        'hostname',
-        'reverse',
-        'extension',
-        'type',
-        'status',
-    );
 
     /**
      * The unique id
@@ -36,113 +22,134 @@ class Identity
     protected $id;
 
     /**
-     * The IP address
-     *
-     * @var string
-     */
-    protected $addr;
-
-    /**
-     * Hash of the IP address
-     *
-     * @var string
-     */
-    protected $haddr;
-
-    /**
-     * The HTTP Headers
-     *
-     * @var string
-     */
-    protected $headers;
-
-    /**
-     * Bouncer Fingerprint for the identity
-     *
-     * @var string
-     */
-    protected $fingerprint;
-
-    /**
-     * Session Id
-     *
-     * @var string
-     */
-    protected $session;
-
-    /**
-     * Protocol
-     *
-     * @var string
-     */
-    protected $protocol;
-
-    /**
-     * Host matching the IP address
-     *
-     * @var string
-     */
-    protected $hostname;
-
-    /**
-     * If the dns match the hostname
-     *
-     * @var string
-     */
-    protected $reverse;
-
-    /**
-     * Country Code of the IP address
-     *
-     * @var string
-     */
-    protected $extension;
-
-    /**
-     * Type: Browser, Robot or Unknown
+     * Type: browser or robot
      *
      * @var string
      */
     protected $type;
 
     /**
-     * Status: Nice, Ok, Suspicous, Bad
+     * The Address
      *
-     * @var string
+     * @var Address
      */
-    protected $status;
+    protected $address;
 
-    public function __construct($attributes = array())
+    /**
+     * The HTTP Headers
+     *
+     * @var array
+     */
+    protected $headers;
+
+    /**
+     * The User Agent
+     *
+     * @var UserAgent
+     */
+    protected $userAgent;
+
+    /**
+     * Reputation
+     *
+     * @var array
+     */
+    protected $reputation;
+
+    public function __construct($attributes = null)
     {
-        if ($attributes) {
-            $this->setAttributes($attributes);
+        parent::__construct($attributes);
+        $address = $this->getAddress();
+        $signature = $this->getSignature();
+        if ($address && $signature) {
+            $this->id = Bouncer::hash($signature->getId() . $address->getId());
         }
     }
 
-    public function hasAttribute($key)
+    public function getId()
     {
-        return isset($this->$key);
+        return $this->id;
     }
 
-    public function getAttribute($key)
+    public function setId($id)
     {
-        return isset($this->$key) ? $this->$key : null;
+        $this->id = $id;
     }
 
-    public function getAttributes()
+    public function getType()
     {
-        return $this->toArray();
+        return $this->type;
     }
 
-    public function setAttribute($key, $value)
+    public function setType($type)
     {
-        $this->$key = $value;
+        $this->type = $type;
     }
 
-    public function setAttributes($attributes = array())
+    public function getAddress()
     {
-        foreach ($attributes as $key => $value) {
-            $this->setAttribute($key, $value);
+        return $this->address;
+    }
+
+    public function setAddress($address)
+    {
+        if (is_object($address)) {
+            $this->address = $address;
+        } elseif (is_string($address) || is_array($address)) {
+            $this->address = new Address($address);
+        }
+    }
+
+    public function getHeaders()
+    {
+        return $this->headers;
+    }
+
+    public function setHeaders($headers)
+    {
+        $this->headers = $headers;
+        $signature = new Signature(array('headers' => $headers));
+        $this->setSignature($signature);
+    }
+
+    public function getSignature()
+    {
+        return $this->signature;
+    }
+
+    public function setSignature($signature)
+    {
+        if (is_object($signature)) {
+            $this->signature = $signature;
+        } elseif (is_array($signature)) {
+            $this->signature = new Signature($signature);
+        }
+    }
+
+    public function getUserAgent()
+    {
+        return $this->userAgent;
+    }
+
+    public function setUserAgent($userAgent)
+    {
+        if (is_object($userAgent)) {
+            $this->userAgent = $userAgent;
+        } elseif (is_array($userAgent)) {
+            $this->userAgent = new UserAgent($userAgent);
+        }
+    }
+
+    public function getReputation()
+    {
+        return $this->reputation;
+    }
+
+    public function getStatus()
+    {
+        $reputation = $this->getReputation();
+        if (is_array($reputation) && array_key_exists('status', $reputation)) {
+            return $reputation['status'];
         }
     }
 
@@ -150,23 +157,11 @@ class Identity
     {
         $identity = array();
 
-        foreach ($this->attributes as $key) {
-            $identity[$key] = isset($this->$key) ? $this->$key : null;
+        if ($this->id) {
+            $identity['id'] = $this->id;
         }
 
         return $identity;
-    }
-
-    public function __call($name, $arguments)
-    {
-        foreach (array('get', 'set') as $action) {
-            if (strpos($name, $action) === 0) {
-                $key = substr($name, strlen($action));
-                $key = lcfirst($key);
-                return call_user_func_array(array($this, "{$action}Attribute"), array($key));
-            }
-        }
-        throw new \Exception("Unknown method ($name).");
     }
 
 }

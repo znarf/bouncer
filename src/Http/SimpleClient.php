@@ -14,7 +14,14 @@ namespace Bouncer\Http;
 class SimpleClient
 {
 
+    protected $apiKey;
+
     protected $timeout = 2;
+
+    public function __construct($apiKey = null)
+    {
+        $this->apiKey = $apiKey;
+    }
 
     public function request($method, $url, $data = null)
     {
@@ -25,6 +32,9 @@ class SimpleClient
                 'header'  => "User-Agent: Bouncer Http\r\n"
             )
         );
+        if ($this->apiKey) {
+            $options['http']['header'] .= "Api-Key: {$this->apiKey}\r\n";
+        }
         if ($data) {
             $content = json_encode($data);
             $length = strlen($content);

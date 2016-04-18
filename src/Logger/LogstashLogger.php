@@ -15,10 +15,7 @@ use Monolog\Formatter\LogstashFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 
-use Bouncer\Identity;
-use Bouncer\Request;
-
-class LogstashLogger implements LoggerInterface
+class LogstashLogger extends BaseLogger
 {
 
     protected $host;
@@ -45,22 +42,15 @@ class LogstashLogger implements LoggerInterface
     /**
      * {@inheritDoc}
      */
-    public function log($connection, Identity $identity, Request $request)
+    public function log(array $logEntry)
     {
-        $message = $request->__toString();
+        $message = (string)$logEntry['request'];
 
-        $context = $connection;
-        $context['request']    = $request->toArray();
-        $context['identity']   = $identity->toArray();
-
-        // This values are already available in other fields, so we remove them.
-        unset($context['identity']['addr']);
-        unset($context['identity']['ua']);
-        unset($context['identity']['headers']);
+        $entry = $this->format($logEntry);
 
         $logger = $this->getLogger();
         if ($logger) {
-            $logger->info($message, $context);
+            $logger->info($message, $entry);
         }
     }
 
