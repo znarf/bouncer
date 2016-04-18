@@ -29,6 +29,9 @@ class AccessWatch
         if (empty($this->httpClient)) {
             $this->httpClient = new \Bouncer\Http\SimpleClient($apiKey);
         }
+        if ($apiKey) {
+            $this->httpClient->setApiKey($apiKey);
+        }
         return $this->httpClient;
     }
 

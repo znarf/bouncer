@@ -20,6 +20,13 @@ class SimpleClient
 
     public function __construct($apiKey = null)
     {
+        if ($apiKey) {
+            $this->setApiKey($apiKey);
+        }
+    }
+
+    public function setApiKey($apiKey)
+    {
         $this->apiKey = $apiKey;
     }
 

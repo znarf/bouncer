@@ -309,8 +309,9 @@ class Bouncer
         if ($cache) {
             $cacheIdentity = $cache->getIdentity($id);
             if ($cacheIdentity) {
-                return $this->identity = $cacheIdentity;
-                // return $this->identity = new Identity($cacheIdentity);
+                if (is_object($cacheIdentity)) {
+                    return $this->identity = $cacheIdentity;
+                }
             }
         }
 
@@ -327,7 +328,7 @@ class Bouncer
 
     public function getContext()
     {
-        if (!$this->context) {
+        if (!isset($this->context)) {
             $this->initContext();
         }
 
@@ -360,7 +361,7 @@ class Bouncer
         $this->context['end'] = microtime(true);
         $this->context['exec_time'] = round($this->context['end'] - $this->context['start'], 4);
         if (!empty($this->context['throttle_time'])) {
-             $this->context['exec_time'] -= $this->ccontext['throttle_time'];
+             $this->context['exec_time'] -= $this->context['throttle_time'];
         }
         unset($this->context['end'], $this->context['start']);
 
@@ -466,7 +467,7 @@ class Bouncer
         if (in_array($identity->getStatus(), $statuses)) {
             $throttle_time = rand($minimum * 1000, $maximum * 1000);
             usleep($throttle_time);
-            $this->connection['throttle_time'] = round($throttle_time / 1000 / 1000, 3);
+            $this->context['throttle_time'] = round($throttle_time / 1000 / 1000, 3);
         }
     }
 
@@ -478,7 +479,7 @@ class Bouncer
         $identity = $this->getIdentity();
 
         if (in_array($identity->getStatus(), $statuses)) {
-            $this->connection['banned'] = true;
+            $this->context['banned'] = true;
             $this->forbidden();
         }
     }

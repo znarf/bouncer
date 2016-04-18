@@ -36,6 +36,13 @@ class Identity extends Resource
     protected $address;
 
     /**
+     * The Signature
+     *
+     * @var Signature
+     */
+    protected $signature;
+
+    /**
      * The HTTP Headers
      *
      * @var array

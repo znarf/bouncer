@@ -19,11 +19,22 @@ namespace Bouncer\Cache;
 abstract class AbstractCache implements CacheInterface
 {
 
+    /**
+     * Return an Identity object from cache
+     *
+     * @return object|null
+     */
     public function getIdentity($id)
     {
         return $this->get("access_watch_identity_{$id}");
     }
 
+    /**
+     * Store an Identity object in cache
+     *
+     * @param string $id        identifier for the identity
+     * @param object $identity  identity object
+     */
     public function setIdentity($id, $identity)
     {
         return $this->set("access_watch_identity_{$id}", $identity, 86400);

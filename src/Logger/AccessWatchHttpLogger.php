@@ -35,10 +35,13 @@ class AccessWatchHttpLogger extends BaseLogger
         }
     }
 
-    public function getHttpClient()
+    public function getHttpClient($apiKey)
     {
         if (empty($this->httpClient)) {
-            $this->httpClient = new \Bouncer\Http\SimpleClient($this->key);
+            $this->httpClient = new \Bouncer\Http\SimpleClient();
+        }
+        if ($apiKey) {
+            $this->httpClient->setApiKey($apiKey);
         }
         return $this->httpClient;
     }
@@ -50,7 +53,7 @@ class AccessWatchHttpLogger extends BaseLogger
     {
         $entry = $this->format($logEntry);
 
-        $result = $this->getHttpClient()->post($this->endpoint, $entry);
+        $result = $this->getHttpClient($this->key)->post($this->endpoint, $entry);
 
         if (!$result) {
             error_log("Error while logging to Http endpoint: $this->endpoint");

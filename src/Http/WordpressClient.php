@@ -23,6 +23,11 @@ class WordpressClient
         $this->apiKey = $apiKey;
     }
 
+    public function setApiKey($apiKey)
+    {
+        $this->apiKey = $apiKey;
+    }
+
     public function get($url)
     {
         $headers = array(
