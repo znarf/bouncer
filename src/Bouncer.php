@@ -353,7 +353,7 @@ class Bouncer
     {
         // Session Id (from Cookie)
         $sessionId = $this->getSessionId();
-        if ($sessionId) {
+        if (isset($sessionId)) {
             $this->context['session'] = $sessionId;
         }
 
