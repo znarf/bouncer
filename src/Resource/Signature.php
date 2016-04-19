@@ -9,7 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Bouncer;
+namespace Bouncer\Resource;
+
+use Bouncer\Fingerprint;
+use Bouncer\Resource;
 
 class Signature extends Resource
 {
@@ -28,20 +31,6 @@ class Signature extends Resource
      */
     protected $headers;
 
-    // /**
-    //  * The Language Code (extract from Accept-Language)
-    //  *
-    //  * @var string
-    //  */
-    // protected $language;
-
-    // /**
-    //  * The Country Code (extract from Accept-Language)
-    //  *
-    //  * @var string
-    //  */
-    // protected $countryCode;
-
     public function getId()
     {
         return $this->id;
@@ -57,26 +46,6 @@ class Signature extends Resource
         $this->headers = $headers;
         $this->id = Fingerprint::generate($this->headers);
     }
-
-    // public function getLanguage()
-    // {
-    //     return $this->language;
-    // }
-
-    // public function setLanguage($language)
-    // {
-    //     return $this->language = $language;
-    // }
-
-    // public function getCountryCode()
-    // {
-    //     return $this->countryCode;
-    // }
-
-    // public function setCountryCode($countryCode)
-    // {
-    //     return $this->countryCode = $countryCode;
-    // }
 
     public function getLanguage()
     {

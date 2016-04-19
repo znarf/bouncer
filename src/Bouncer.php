@@ -11,6 +11,9 @@
 
 namespace Bouncer;
 
+use Bouncer\Resource\Address;
+use Bouncer\Resource\Identity;
+
 class Bouncer
 {
 
@@ -302,7 +305,6 @@ class Bouncer
             'headers' => $this->getHeaders(),
         ));
 
-
         $id = $identity->getId();
 
         // Try to get identity from cache
@@ -368,7 +370,7 @@ class Bouncer
     }
 
     /*
-     * Complete the response with status
+     * Complete the response with status code
      */
     public function completeResponse()
     {
@@ -453,9 +455,9 @@ class Bouncer
     /*
      * Sleep if Identity status is of a certain value.
      *
-     * @param array
-     * @param int
-     * @param int
+     * @param array $statuses
+     * @param int   $minimum
+     * @param int   $maximum
      *
      */
     public function sleep($statuses = array(), $minimum = 1000, $maximum = 2500)

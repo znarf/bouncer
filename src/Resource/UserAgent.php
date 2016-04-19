@@ -9,7 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Bouncer;
+namespace Bouncer\Resource;
+
+use Bouncer\Resource;
 
 class UserAgent extends Resource
 {

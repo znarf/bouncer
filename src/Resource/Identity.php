@@ -9,7 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Bouncer;
+namespace Bouncer\Resource;
+
+use Bouncer\Bouncer;
+use Bouncer\Resource;
 
 class Identity extends Resource
 {
