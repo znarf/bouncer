@@ -11,7 +11,7 @@
 
 namespace Bouncer;
 
-class Fingerprint
+class Hash
 {
 
     public static $identityHeaders = array(
@@ -24,7 +24,7 @@ class Fingerprint
         'Dnt',
     );
 
-    public static function generate($array)
+    public static function headers($array)
     {
         $array = self::filterArrayKeys($array, self::$identityHeaders);
         ksort($array);
@@ -33,7 +33,7 @@ class Fingerprint
             $key = self::normalizeKey($key);
             $string .= "$key:$value;";
         }
-        return Bouncer::hash($string);
+        return self::hash($string);
     }
 
     public static function filterArrayKeys($array = array(), $keys = array())
@@ -59,6 +59,11 @@ class Fingerprint
             $key = ucfirst(strtolower($key));
         }
         return $key;
+    }
+
+    public static function hash($value)
+    {
+        return md5($value);
     }
 
 }

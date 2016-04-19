@@ -12,6 +12,7 @@
 namespace Bouncer\Resource;
 
 use Bouncer\Bouncer;
+use Bouncer\Hash;
 use Bouncer\Resource;
 
 class Identity extends Resource
@@ -60,6 +61,13 @@ class Identity extends Resource
     protected $userAgent;
 
     /**
+     * Session
+     *
+     * @var Session
+     */
+    protected $session;
+
+    /**
      * Reputation
      *
      * @var array
@@ -72,7 +80,7 @@ class Identity extends Resource
         $address = $this->getAddress();
         $signature = $this->getSignature();
         if ($address && $signature) {
-            $this->id = Bouncer::hash($signature->getId() . $address->getId());
+            $this->id = Hash::hash($signature->getId() . $address->getId());
         }
     }
 
@@ -147,6 +155,20 @@ class Identity extends Resource
             $this->userAgent = $userAgent;
         } elseif (is_array($userAgent)) {
             $this->userAgent = new UserAgent($userAgent);
+        }
+    }
+
+    public function getSession()
+    {
+        return $this->session;
+    }
+
+    public function setSession($session)
+    {
+        if (is_object($session)) {
+            $this->session = $session;
+        } elseif (is_array($session)) {
+            $this->session = new Session($session);
         }
     }
 

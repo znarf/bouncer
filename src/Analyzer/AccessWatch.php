@@ -38,15 +38,21 @@ class AccessWatch
     public function identityAnalyzer($identity)
     {
         $result = $this->getHttpClient($this->apiKey)->post(
-            "{$this->baseUrl}/identity",
+            "{$this->baseUrl}/session",
             array(
                 'address' => $identity->getAddress()->getValue(),
                 'headers' => $identity->getHeaders(),
             )
         );
-        if ($result) {
-            $identity->setAttributes($result);
+
+        if (isset($result['identity']) && is_array($result['identity'])) {
+            $identity->setAttributes($result['identity']);
         }
+
+        if (isset($result['session']) && is_array($result['session'])) {
+            $identity->setAttribute('session', $result['session']);
+        }
+
         return $identity;
     }
 

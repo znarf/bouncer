@@ -11,7 +11,7 @@
 
 namespace Bouncer\Resource;
 
-use Bouncer\Fingerprint;
+use Bouncer\Hash;
 use Bouncer\Resource;
 
 class Signature extends Resource
@@ -44,7 +44,7 @@ class Signature extends Resource
     public function setHeaders($headers)
     {
         $this->headers = $headers;
-        $this->id = Fingerprint::generate($this->headers);
+        $this->id = Hash::headers($this->headers);
     }
 
     public function getLanguage()

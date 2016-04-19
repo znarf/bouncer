@@ -270,7 +270,7 @@ class Bouncer
      *
      * @return string|null
      */
-    public function getSession()
+    public function getSessionId()
     {
         $request = $this->getRequest();
 
@@ -307,7 +307,7 @@ class Bouncer
 
         $id = $identity->getId();
 
-        // Try to get identity from cache
+        // Try to get Identity from cache
         if ($cache) {
             $cacheIdentity = $cache->getIdentity($id);
             if ($cacheIdentity instanceof Identity) {
@@ -351,10 +351,10 @@ class Bouncer
      */
     public function completeContext()
     {
-        // Session (from Cookie)
-        $session = $this->getSession();
-        if ($session) {
-            $this->context['session'] = $session;
+        // Session Id (from Cookie)
+        $sessionId = $this->getSessionId();
+        if ($sessionId) {
+            $this->context['session'] = $sessionId;
         }
 
         // Measure execution time
@@ -443,11 +443,12 @@ class Bouncer
     {
         $identity = $this->getIdentity();
 
-        if ($identity->hasAttribute('session')) {
-            $curentSession = $this->getSession();
-            $identitySession = $identity->getAttribute('session');
-            if (empty($curentSession) || $curentSession !== $identitySession) {
-                setcookie($this->cookieName, $identitySession, time() + (60 * 60 * 24 * 365 * 2), $this->cookiePath);
+        $identitySession = $identity->getSession();
+        if ($identitySession) {
+            $curentSessionId = $this->getSessionId();
+            $identitySessionId = $identitySession->getId();
+            if (empty($curentSessionId) || $curentSessionId !== $identitySessionId) {
+                setcookie($this->cookieName, $identitySessionId, time() + (60 * 60 * 24 * 365 * 2), $this->cookiePath);
             }
         }
     }
@@ -554,11 +555,6 @@ class Bouncer
             header("HTTP/1.0 $code $message");
             header("Status: $code $message");
         }
-    }
-
-    public static function hash($string)
-    {
-        return md5($string);
     }
 
 }
