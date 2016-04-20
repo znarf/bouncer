@@ -19,7 +19,7 @@ namespace Bouncer\Logger;
 class AccessWatchHttpLogger extends BaseLogger
 {
 
-    protected $endpoint = 'https://access.watch/api/1.0/log';
+    protected $baseUrl = 'https://access.watch/api/1.0';
 
     protected $key;
 
@@ -27,6 +27,9 @@ class AccessWatchHttpLogger extends BaseLogger
 
     public function __construct($params = array())
     {
+        if (isset($params['baseUrl'])) {
+            $this->baseUrl = $params['baseUrl'];
+        }
         if (isset($params['apiKey'])) {
             $this->key = $params['apiKey'];
         }
@@ -53,7 +56,7 @@ class AccessWatchHttpLogger extends BaseLogger
     {
         $entry = $this->format($logEntry);
 
-        $result = $this->getHttpClient($this->key)->post($this->endpoint, $entry);
+        $result = $this->getHttpClient($this->key)->post("{$this->baseUrl}/log", $entry);
 
         if (!$result) {
             error_log("Error while logging to Http endpoint: $this->endpoint");
