@@ -70,7 +70,7 @@ class LoggerTest extends \PHPUnit_Framework_TestCase
 
         $bouncer = $this->getBouncer($request);
         $logger = new \Bouncer\Logger\AccessWatchLogger(array(
-            'apiKey' => '9b89020149ff37e69fbec4634ae57b46'
+            'apiKey' => 'b3bb90d61e80e96259bf354fd7cb03d7'
         ));
         $bouncer->setOptions(array('logger' => $logger));
 
@@ -83,7 +83,7 @@ class LoggerTest extends \PHPUnit_Framework_TestCase
 
         $bouncer = $this->getBouncer($request);
         $logger = new \Bouncer\Logger\AccessWatchHttpLogger(array(
-            'apiKey' => '9b89020149ff37e69fbec4634ae57b46'
+            'apiKey' => 'b3bb90d61e80e96259bf354fd7cb03d7'
         ));
         $bouncer->setOptions(array('logger' => $logger));
 

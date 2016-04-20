@@ -40,7 +40,7 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
         $bouncer = new Bouncer(array(
             'request' => $request,
             'profile' => new \Bouncer\Profile\AccessWatch(array(
-                'apiKey' => '9b89020149ff37e69fbec4634ae57b46'
+                'apiKey' => 'b3bb90d61e80e96259bf354fd7cb03d7'
             ))
         ));
 
