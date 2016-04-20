@@ -108,6 +108,7 @@ class Bouncer
         if (!$this->profile) {
             $this->profile = new \Bouncer\Profile\Standard;
         }
+
         call_user_func_array(array($this->profile, 'load'), array($this));
     }
 
@@ -401,9 +402,9 @@ class Bouncer
      * Process Analyzers for a given type. Return the modified array or object.
      *
      * @param string
-     * @param array|object
+     * @param object
      *
-     * @return array|object
+     * @return object
      */
     protected function processAnalyzers($type, $value)
     {

@@ -35,6 +35,12 @@ class AccessWatch
         return $this->httpClient;
     }
 
+    /*
+     *
+     * @param object
+     *
+     * @return object
+     */
     public function identityAnalyzer($identity)
     {
         $result = $this->getHttpClient($this->apiKey)->post(

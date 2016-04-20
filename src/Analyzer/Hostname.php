@@ -10,6 +10,12 @@ class Hostname
         $bouncer->registerAnalyzer('identity', array(__CLASS__, 'hostnameAnalyzer'));
     }
 
+    /*
+     *
+     * @param object
+     *
+     * @return object
+     */
     public static function hostnameAnalyzer($identity)
     {
         $address = $identity->getAddress();

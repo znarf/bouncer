@@ -22,6 +22,8 @@ abstract class AbstractCache implements CacheInterface
     /**
      * Return an Identity object from cache
      *
+     * @param string $id identifier for the identity
+
      * @return object|null
      */
     public function getIdentity($id)
