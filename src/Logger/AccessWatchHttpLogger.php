@@ -59,7 +59,7 @@ class AccessWatchHttpLogger extends BaseLogger
         $result = $this->getHttpClient($this->key)->post("{$this->baseUrl}/log", $entry);
 
         if (!$result) {
-            error_log("Error while logging to Http endpoint: $this->endpoint");
+            error_log("Error while logging to Http endpoint: {$this->baseUrl}/log");
         }
     }
 }
