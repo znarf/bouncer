@@ -21,7 +21,11 @@ class ErrorLogger extends BaseLogger
     {
         $entry = $this->format($logEntry);
 
-        error_log(json_encode($entry, JSON_PRETTY_PRINT));
+        if (defined('JSON_PRETTY_PRINT')) {
+          error_log(json_encode($entry, JSON_PRETTY_PRINT));
+        } else {
+          error_log(json_encode($entry));
+        }
     }
 
 }
