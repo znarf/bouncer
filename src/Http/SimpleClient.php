@@ -28,6 +28,8 @@ class SimpleClient
     public function setApiKey($apiKey)
     {
         $this->apiKey = $apiKey;
+
+        return $this;
     }
 
     public function request($method, $url, $data = null)

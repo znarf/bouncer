@@ -26,6 +26,8 @@ class WordpressClient
     public function setApiKey($apiKey)
     {
         $this->apiKey = $apiKey;
+
+        return $this;
     }
 
     public function get($url)
