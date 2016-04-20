@@ -37,14 +37,8 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
 
     public function getBouncer($request)
     {
-        $memcache = new \Memcache();
-        $memcache->addServer('localhost');
-
         $bouncer = new Bouncer(array(
             'request' => $request,
-            'cache' => new \Bouncer\Cache\Memcache(array(
-                'client' => $memcache
-            )),
             'profile' => new \Bouncer\Profile\AccessWatch(array(
                 'apiKey' => '9b89020149ff37e69fbec4634ae57b46'
             ))
@@ -62,9 +56,7 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
         $identity = $bouncer->getIdentity();
 
         $this->assertEquals('688926c9994666d5d5d4cf7e2429aabd', $identity->getId());
-        // $this->assertEquals('e90d9f20cce9c203f439129b0943a8bb', $identity->getAddress()->getId());
         $this->assertEquals('5a8433a81c1290cc5399eb60f26172d4', $identity->getSignature()->getId());
-        // $this->assertEquals('b516786e573a426eb842ec2132ed35e2', $identity->getUserAgent()->getId());
     }
 
     public function testGetIdentityAddress()
