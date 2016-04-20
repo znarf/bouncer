@@ -86,7 +86,7 @@ class Bouncer
      *
      * @var array
      */
-    protected $context = array();
+    protected $context;
 
     /**
      * @var boolean
