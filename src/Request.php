@@ -20,6 +20,8 @@ class Request extends HttpFoundationRequest
 
     protected $protocol;
 
+    protected $body;
+
     protected $connection;
 
     protected $trustProtocol = false;
@@ -132,6 +134,20 @@ class Request extends HttpFoundationRequest
         return $this;
     }
 
+    public function getBody()
+    {
+        if ($this->body) {
+            return $this->body;
+        }
+    }
+
+    public function setBody($body)
+    {
+        $this->body = $body;
+
+        return $this;
+    }
+
     public function __toString()
     {
         return $this->getMethod() . ' ' . $this->getHost() . ' ' . $this->getPort() . ' ' . $this->getRequestUri();
@@ -141,16 +157,21 @@ class Request extends HttpFoundationRequest
     {
         $request = array();
 
-        $request['scheme']     = $this->getScheme();
-        $request['method']     = $this->getMethod();
-        $request['host']       = $this->getHost();
-        $request['port']       = $this->getPort();
-        $request['url']        = $this->getRequestUri();
-        $request['headers']    = $this->getHeaders();
+        $request['scheme']  = $this->getScheme();
+        $request['method']  = $this->getMethod();
+        $request['host']    = $this->getHost();
+        $request['port']    = $this->getPort();
+        $request['url']     = $this->getRequestUri();
+        $request['headers'] = $this->getHeaders();
 
         $protocol = $this->getProtocol();
         if ($protocol) {
             $request['protocol'] = $protocol;
+        }
+
+        $body = $this->getBody();
+        if ($body) {
+            $request['body'] = $body;
         }
 
         return $request;
