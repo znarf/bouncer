@@ -33,7 +33,7 @@ class Resource
     public function setAttribute($key , $value)
     {
         $this->attributes[$key] = $value;
-        $setMethod = 'set' . str_replace('_', '', ucwords($key, '_'));
+        $setMethod = 'set' . str_replace(' ', '', ucwords(str_replace('_', ' ', $key)));
         if (method_exists($this, $setMethod)) {
             $this->$setMethod($value);
         }
