@@ -1,5 +1,7 @@
 # Bouncer
 
+[![Build Status](https://travis-ci.org/znarf/bouncer.svg?branch=master)](https://travis-ci.org/znarf/bouncer)
+
 A PHP library to log and analyse HTTP traffic, throttle and block suspicious agents.
 
 ## Installation
