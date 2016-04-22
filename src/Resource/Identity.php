@@ -12,7 +12,6 @@
 namespace Bouncer\Resource;
 
 use Bouncer\Bouncer;
-use Bouncer\Hash;
 use Bouncer\Resource;
 
 class Identity extends Resource
@@ -80,7 +79,7 @@ class Identity extends Resource
         $address = $this->getAddress();
         $signature = $this->getSignature();
         if ($address && $signature) {
-            $this->id = Hash::hash($signature->getId() . $address->getId());
+            $this->id = Bouncer::hash($signature->getId() . $address->getId());
         }
     }
 

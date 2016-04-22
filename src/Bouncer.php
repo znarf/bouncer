@@ -558,4 +558,9 @@ class Bouncer
         }
     }
 
+    public static function hash($value)
+    {
+        return md5($value);
+    }
+
 }

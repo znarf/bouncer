@@ -12,7 +12,6 @@
 namespace Bouncer\Resource;
 
 use Bouncer\Bouncer;
-use Bouncer\Hash;
 use Bouncer\Resource;
 
 class Address extends Resource
@@ -51,7 +50,7 @@ class Address extends Resource
     public function setValue($value)
     {
         $this->value = $value;
-        $this->id = Hash::hash($this->value);
+        $this->id = Bouncer::hash($this->value);
     }
 
     public function getHostname()

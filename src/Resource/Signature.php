@@ -11,11 +11,26 @@
 
 namespace Bouncer\Resource;
 
-use Bouncer\Hash;
+use Bouncer\Bouncer;
 use Bouncer\Resource;
 
 class Signature extends Resource
 {
+
+    /**
+     * HTTP Headers used to compute the signature
+     *
+     * @var array
+     */
+    public static $signatureHeaders = array(
+        'User-Agent',
+        'Accept',
+        'Accept-Charset',
+        'Accept-Language',
+        'Accept-Encoding',
+        'From',
+        'Dnt',
+    );
 
     /**
      * The unique id
@@ -44,7 +59,7 @@ class Signature extends Resource
     public function setHeaders($headers)
     {
         $this->headers = $headers;
-        $this->id = Hash::headers($this->headers);
+        $this->id = self::hash($this->headers);
     }
 
     public function getLanguage()
@@ -55,6 +70,45 @@ class Signature extends Resource
     public function getCountryCode()
     {
         return $this->getAttribute('country_code');
+    }
+
+    // Static
+
+    public static function hash($array)
+    {
+        $array = self::filterArrayKeys($array, self::$signatureHeaders);
+        ksort($array);
+        $string = '';
+        foreach ($array as $key => $value) {
+            $key = self::normalizeKey($key);
+            $string .= "$key:$value;";
+        }
+        return Bouncer::hash($string);
+    }
+
+    public static function filterArrayKeys($array = array(), $keys = array())
+    {
+        $ikeys = array_map('strtolower', $keys);
+        foreach ($array as $key => $value) {
+            $ikey = strtolower($key);
+            if (!in_array($ikey, $ikeys)) {
+                unset($array[$key]);
+            }
+        }
+        return $array;
+    }
+
+    public static function normalizeKey($key)
+    {
+        if (strpos($key, '-')) {
+            $parts = explode('-', $key);
+            $parts = array_map('strtolower', $parts);
+            $parts = array_map('ucfirst', $parts);
+            $key = implode('-', $parts);
+        } else {
+            $key = ucfirst(strtolower($key));
+        }
+        return $key;
     }
 
 }
