@@ -11,7 +11,7 @@
 
 namespace Bouncer\Profile;
 
-class AccessWatch extends Standard
+class AccessWatch extends DefaultProfile
 {
 
     protected $analyzer;
