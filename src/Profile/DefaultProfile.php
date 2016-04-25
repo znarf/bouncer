@@ -11,32 +11,34 @@
 
 namespace Bouncer\Profile;
 
-class Standard
+use Bouncer\Bouncer;
+
+class DefaultProfile
 {
 
-    public function load($bouncer)
+    public function load(Bouncer $instance)
     {
-        self::loadAnalyzers($bouncer);
+        self::loadAnalyzers($instance);
 
-        self::initCache($bouncer);
+        self::initCache($instance);
     }
 
-    public function loadAnalyzers($bouncer)
+    public function loadAnalyzers(Bouncer $instance)
     {
         // Load Default analyzers
-        \Bouncer\Analyzer\Hostname::load($bouncer);
+        \Bouncer\Analyzer\Hostname::load($instance);
     }
 
-    public function initCache($bouncer)
+    public function initCache(Bouncer $instance)
     {
         // If no cache available, try to set up APC
-        $cache = $bouncer->getCache();
+        $cache = $instance->getCache();
         if (empty($cache)) {
             if (function_exists('apc_fetch')) {
                 $cache = new \Bouncer\Cache\Apc();
-                $bouncer->setOptions(array('cache' => $cache));
+                $instance->setOptions(array('cache' => $cache));
             } else {
-                $bouncer->error('No cache available. A cache is needed to keep performances acceptable.');
+                $instance->error('No cache available. A cache is needed to keep performances acceptable.');
             }
         }
     }
