@@ -106,7 +106,7 @@ class Bouncer
 
         // Load Profile
         if (!$this->profile) {
-            $this->profile = new \Bouncer\Profile\Standard;
+            $this->profile = new \Bouncer\Profile\DefaultProfile;
         }
 
         call_user_func_array(array($this->profile, 'load'), array($this));

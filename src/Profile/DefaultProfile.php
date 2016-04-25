@@ -33,8 +33,8 @@ class Standard
         $cache = $bouncer->getCache();
         if (empty($cache)) {
             if (function_exists('apc_fetch')) {
-              $cache = new \Bouncer\Cache\Apc();
-              $bouncer->setOptions(array('cache' => $cache));
+                $cache = new \Bouncer\Cache\Apc();
+                $bouncer->setOptions(array('cache' => $cache));
             } else {
                 $bouncer->error('No cache available. A cache is needed to keep performances acceptable.');
             }
