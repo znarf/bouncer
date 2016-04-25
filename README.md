@@ -27,26 +27,6 @@ $bouncer = new Bouncer();
 $bouncer->start();
 ```
 
-## Access Watch
-
-Bouncer currently run best with the Access Watch "cloud" service.
-
-You will need an API key for it. See http://access.watch/
-
-The Access Watch profile will setup the Analyzer and Logger automatically for you.
-
-```php
-<?php
-
-use \Bouncer\Bouncer;
-
-$bouncer = new Bouncer(array(
-  'profile' => new \Bouncer\Profile\AccessWatch(array(
-    'apiKey' => 'ACCESS_WATCH_API_KEY_HERE',
-  ))
-));
-```
-
 ## Cache
 
 To properly operate, a cache backend needs to be defined. If no cache is set, Bouncer will try to use APC/APCu.
