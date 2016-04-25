@@ -39,9 +39,6 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
     {
         $bouncer = new Bouncer(array(
             'request' => $request,
-            'profile' => new \Bouncer\Profile\AccessWatch(array(
-                'apiKey' => 'b3bb90d61e80e96259bf354fd7cb03d7'
-            ))
         ));
 
         return $bouncer;
@@ -56,7 +53,6 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
         $identity = $bouncer->getIdentity();
 
         $this->assertEquals('688926c9994666d5d5d4cf7e2429aabd', $identity->getId());
-        $this->assertEquals('5a8433a81c1290cc5399eb60f26172d4', $identity->getSignature()->getId());
     }
 
     public function testGetIdentityAddress()
@@ -70,10 +66,10 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
         $address = $identity->getAddress();
 
         $this->assertEquals('e90d9f20cce9c203f439129b0943a8bb', $address->getId());
-        $this->assertEquals('DE', $address->getCountryCode());
     }
 
-    public function testGetIdentityUserAgent()
+
+    public function testGetIdentitySignature()
     {
         $request = $this->getRequest();
 
@@ -81,11 +77,9 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
 
         $identity = $bouncer->getIdentity();
 
-        $userAgent = $identity->getUserAgent();
+        $signature = $identity->getSignature();
 
-        $this->assertEquals('b516786e573a426eb842ec2132ed35e2', $userAgent->getId());
-        $this->assertEquals('browser', $userAgent->getType());
-        $this->assertEquals('chrome', $userAgent->getAgent()->getName());
+        $this->assertEquals('5a8433a81c1290cc5399eb60f26172d4', $signature->getId());
     }
 
 }

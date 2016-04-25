@@ -64,29 +64,4 @@ class LoggerTest extends \PHPUnit_Framework_TestCase
         $bouncer->log();
     }
 
-    public function testLogAccessWatchLogger()
-    {
-        $request = $this->getRequest();
-
-        $bouncer = $this->getBouncer($request);
-        $logger = new \Bouncer\Logger\AccessWatchLogger(array(
-            'apiKey' => 'b3bb90d61e80e96259bf354fd7cb03d7'
-        ));
-        $bouncer->setOptions(array('logger' => $logger));
-
-        $bouncer->log();
-    }
-
-    public function testLogAccessWatchHttpLogger()
-    {
-        $request = $this->getRequest();
-
-        $bouncer = $this->getBouncer($request);
-        $logger = new \Bouncer\Logger\AccessWatchHttpLogger(array(
-            'apiKey' => 'b3bb90d61e80e96259bf354fd7cb03d7'
-        ));
-        $bouncer->setOptions(array('logger' => $logger));
-
-        $bouncer->log();
-    }
 }
