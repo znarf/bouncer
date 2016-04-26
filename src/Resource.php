@@ -30,7 +30,7 @@ class Resource
         }
     }
 
-    public function setAttribute($key , $value)
+    public function setAttribute($key, $value)
     {
         $this->attributes[$key] = $value;
         $setMethod = 'set' . str_replace(' ', '', ucwords(str_replace('_', ' ', $key)));
