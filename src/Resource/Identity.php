@@ -171,11 +171,25 @@ class Identity extends Resource
         }
     }
 
+    /*
+     * @return array|null
+     */
     public function getReputation()
     {
         return $this->reputation;
     }
 
+    /*
+     * @param array $reputation
+     */
+    public function setReputation($reputation)
+    {
+        $this->reputation = $reputation;
+    }
+
+    /*
+     * @return string|null
+     */
     public function getStatus()
     {
         $reputation = $this->getReputation();

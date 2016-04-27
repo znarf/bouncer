@@ -41,7 +41,7 @@ class Resource
 
     public function hasAttribute($key)
     {
-        return isset($this->$key);
+        return array_key_exists($key, $this->attributes);
     }
 
     public function getAttribute($name)

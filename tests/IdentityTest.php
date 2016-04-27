@@ -11,6 +11,8 @@
 
 namespace Bouncer;
 
+use Bouncer\Resource\Identity;
+
 class IdentityTest extends \PHPUnit_Framework_TestCase
 {
 
@@ -80,6 +82,18 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
         $signature = $identity->getSignature();
 
         $this->assertEquals('5a8433a81c1290cc5399eb60f26172d4', $signature->getId());
+    }
+
+    public function testIdentityStatus()
+    {
+        $identity = new Identity(array(
+            'reputation' => array(
+                'threats' => array(),
+                'status'  => 'bad',
+            )
+        ));
+
+        $this->assertEquals('bad', $identity->getStatus());
     }
 
 }
