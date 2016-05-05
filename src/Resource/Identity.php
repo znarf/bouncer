@@ -198,6 +198,22 @@ class Identity extends Resource
         }
     }
 
+    /*
+     * @return bool
+     */
+    public function isSuspicious()
+    {
+        return $this->getStatus() === Bouncer::SUSPICIOUS;
+    }
+
+    /*
+     * @return bool
+     */
+    public function isBad()
+    {
+        return $this->getStatus() === Bouncer::BAD;
+    }
+
     public function toArray()
     {
         $identity = array();

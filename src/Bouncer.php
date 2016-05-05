@@ -455,26 +455,50 @@ class Bouncer
     }
 
     /*
-     * Sleep if Identity status is of a certain value.
+     * Throttle
      *
      * @param array $statuses
      * @param int   $minimum
      * @param int   $maximum
      *
      */
+    public function throttle($minimum = 1000, $maximum = 2500)
+    {
+        $throttleTime = rand($minimum * 1000, $maximum * 1000);
+        usleep($throttleTime);
+        $this->context['throttle_time'] = round($throttleTime / 1000 / 1000, 3);
+    }
+
+    /*
+     * @deprecated deprecated since version 2.1.0
+     */
     public function sleep($statuses = array(), $minimum = 1000, $maximum = 2500)
     {
         $identity = $this->getIdentity();
 
         if (in_array($identity->getStatus(), $statuses)) {
-            $throttle_time = rand($minimum * 1000, $maximum * 1000);
-            usleep($throttle_time);
-            $this->context['throttle_time'] = round($throttle_time / 1000 / 1000, 3);
+            return $this->throttle($minimum, $maximum);
         }
     }
 
     /*
-     * Ban if Identity status is of a certain value.
+     * Block
+     *
+     * @param string $type
+     * @param array  $extra
+     *
+     */
+    public function block($type = null, $extra = null)
+    {
+        $this->context['blocked'] = true;
+        if ($eventType) {
+            $this->registerEvent($type, $extra);
+        }
+        $this->forbidden();
+    }
+
+    /*
+     * @deprecated deprecated since version 2.1.0
      */
     public function ban($statuses = array())
     {
@@ -482,7 +506,20 @@ class Bouncer
 
         if (in_array($identity->getStatus(), $statuses)) {
             $this->context['banned'] = true;
-            $this->forbidden();
+            return $this->block();
+        }
+
+    }
+
+    /*
+     * @param string $type
+     * @param array  $extra
+     */
+    public function registerEvent($type, $extra = null)
+    {
+        $this->context['event']['type'] = $type;
+        if (!empty($extra)) {
+            $this->context['event']['extra'] = $extra;
         }
     }
 
