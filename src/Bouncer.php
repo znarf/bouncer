@@ -29,7 +29,7 @@ class Bouncer
     /**
      * @var array
      */
-    static $supportedOptions = array(
+    public static $supportedOptions = array(
         'cache',
         'request',
         'logger',
