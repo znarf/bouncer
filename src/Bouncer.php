@@ -52,6 +52,13 @@ class Bouncer
     protected $cookiePath = '/';
 
     /**
+     * The exit callable to use when blocking a request
+     *
+     * @var callable
+     */
+    protected $exit;
+
+    /**
      * @var \Bouncer\Cache\CacheInterface
      */
     protected $cache;
@@ -134,6 +141,9 @@ class Bouncer
         }
         if (isset($options['cookiePath'])) {
             $this->cookiePath = $options['cookiePath'];
+        }
+        if (isset($options['exit'])) {
+            $this->exit = $options['exit'];
         }
     }
 
@@ -491,10 +501,21 @@ class Bouncer
     public function block($type = null, $extra = null)
     {
         $this->context['blocked'] = true;
-        if ($eventType) {
+
+        if ($type) {
             $this->registerEvent($type, $extra);
         }
+
         $this->forbidden();
+
+        if (is_callable($this->exit)) {
+            $callable = $this->exit;
+            $callable();
+        }
+        else {
+            // $this->error('No exit callable set. PHP exit construct will be used.');
+            exit;
+        }
     }
 
     /*
@@ -573,7 +594,6 @@ class Bouncer
         $message = 'Forbidden';
         self::responseStatus($code, $message);
         echo $message;
-        exit;
     }
 
     public static function unavailable()
@@ -582,7 +602,6 @@ class Bouncer
         $message = 'Service Unavailable';
         self::responseStatus($code, $message);
         echo $message;
-        exit;
     }
 
     public static function responseStatus($code, $message)
