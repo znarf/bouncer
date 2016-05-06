@@ -21,6 +21,8 @@ class DefaultProfile
         self::loadAnalyzers($instance);
 
         self::initCache($instance);
+
+        self::initResponseCodeSetter($instance);
     }
 
     public function loadAnalyzers(Bouncer $instance)
@@ -43,4 +45,16 @@ class DefaultProfile
         }
     }
 
+    public function initResponseCodeSetter(Bouncer $instance)
+    {
+        // If http_response_code not available (PHP 5.3), set a custom response code setter
+        if (!function_exists('http_response_code')) {
+            $responseCodeSetter = function($code, $message) {
+                header("HTTP/1.0 $code $message");
+                header("Status: $code $message");
+            };
+
+            $instance->setOptions(array('responseCodeSetter' => $responseCodeSetter));
+        }
+    }
 }

@@ -27,6 +27,20 @@ class Bouncer
     const UNKNOWN    = 'unknown';
 
     /**
+     * @var array
+     */
+    static $supportedOptions = array(
+        'cache',
+        'request',
+        'logger',
+        'profile',
+        'cookieName',
+        'cookiePath',
+        'exit',
+        'responseCodeSetter'
+    );
+
+    /**
      * @var string|object
      */
     protected $profile;
@@ -57,6 +71,13 @@ class Bouncer
      * @var callable
      */
     protected $exit;
+
+    /**
+     * The callable to use to set the HTTP Response Code
+     *
+     * @var callable
+     */
+    protected $responseCodeSetter = 'http_response_code';
 
     /**
      * @var \Bouncer\Cache\CacheInterface
@@ -124,26 +145,10 @@ class Bouncer
      */
     public function setOptions(array $options = array())
     {
-        if (isset($options['cache'])) {
-            $this->cache = $options['cache'];
-        }
-        if (isset($options['request'])) {
-            $this->request = $options['request'];
-        }
-        if (isset($options['logger'])) {
-            $this->logger = $options['logger'];
-        }
-        if (isset($options['profile'])) {
-            $this->profile = $options['profile'];
-        }
-        if (isset($options['cookieName'])) {
-            $this->cookieName = $options['cookieName'];
-        }
-        if (isset($options['cookiePath'])) {
-            $this->cookiePath = $options['cookiePath'];
-        }
-        if (isset($options['exit'])) {
-            $this->exit = $options['exit'];
+        foreach (static::$supportedOptions as $key) {
+            if (isset($options[$key])) {
+                $this->$key = $options[$key];
+            }
         }
     }
 
@@ -506,7 +511,13 @@ class Bouncer
             $this->registerEvent($type, $extra);
         }
 
-        $this->forbidden();
+        if (is_callable($this->responseCodeSetter)) {
+            $responseCodeSetter = $this->responseCodeSetter;
+            $responseCodeSetter('503', 'Service Unavailable');
+        }
+        else {
+            $this->error('No response code setter available.');
+        }
 
         if (is_callable($this->exit)) {
             $callable = $this->exit;
@@ -587,32 +598,6 @@ class Bouncer
     }
 
     // Static
-
-    public static function forbidden()
-    {
-        $code = '403';
-        $message = 'Forbidden';
-        self::responseStatus($code, $message);
-        echo $message;
-    }
-
-    public static function unavailable()
-    {
-        $code = '503';
-        $message = 'Service Unavailable';
-        self::responseStatus($code, $message);
-        echo $message;
-    }
-
-    public static function responseStatus($code, $message)
-    {
-        if (function_exists('http_response_code')) {
-            http_response_code($code);
-        } else {
-            header("HTTP/1.0 $code $message");
-            header("Status: $code $message");
-        }
-    }
 
     public static function hash($value)
     {

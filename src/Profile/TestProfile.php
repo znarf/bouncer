@@ -18,11 +18,35 @@ class TestProfile extends DefaultProfile
 
     public function load(Bouncer $instance)
     {
+        self::initCache($instance);
+
         parent::load($instance);
 
-        $exit = function() { error_log('Test profile. Not exiting.'); };
+        $exit = function() {
+            // error_log('Test profile. Not exiting.');
+        };
 
         $instance->setOptions(array('exit' => $exit));
+
+        $responseCodeSetter = function($code, $message) {
+            static $codeSet;
+            if ($code) {
+                $codeSet = $code;
+            }
+            return $codeSet;
+        };
+
+        $instance->setOptions(array('responseCodeSetter' => $responseCodeSetter));
+    }
+
+    public function initCache(Bouncer $instance)
+    {
+        // If no cache available, try to set up Void cache
+        $cache = $instance->getCache();
+        if (empty($cache)) {
+            $cache = new \Bouncer\Cache\Void();
+            $instance->setOptions(array('cache' => $cache));
+        }
     }
 
 }

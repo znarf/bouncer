@@ -41,6 +41,7 @@ class IdentityTest extends \PHPUnit_Framework_TestCase
     {
         $bouncer = new Bouncer(array(
             'request' => $request,
+            'profile' => new \Bouncer\Profile\TestProfile,
         ));
 
         return $bouncer;
