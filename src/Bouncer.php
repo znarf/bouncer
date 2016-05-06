@@ -426,7 +426,7 @@ class Bouncer
         if (isset($this->analyzers[$type])) {
             // TODO: order analyzers by priority
             foreach ($this->analyzers[$type] as $array) {
-                list($callable, $priority) = $array;
+                list($callable) = $array;
                 $value = call_user_func_array($callable, array($value));
             }
         }
@@ -472,7 +472,6 @@ class Bouncer
     /*
      * Throttle
      *
-     * @param array $statuses
      * @param int   $minimum
      * @param int   $maximum
      *
@@ -507,7 +506,7 @@ class Bouncer
     {
         $this->context['blocked'] = true;
 
-        if ($type) {
+        if (isset($type)) {
             $this->registerEvent($type, $extra);
         }
 

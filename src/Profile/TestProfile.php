@@ -28,7 +28,7 @@ class TestProfile extends DefaultProfile
 
         $instance->setOptions(array('exit' => $exit));
 
-        $responseCodeSetter = function($code, $message) {
+        $responseCodeSetter = function($code) {
             static $codeSet;
             if ($code) {
                 $codeSet = $code;
