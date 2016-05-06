@@ -41,10 +41,10 @@ class TestProfile extends DefaultProfile
 
     public function initCache(Bouncer $instance)
     {
-        // If no cache available, try to set up Void cache
+        // If no cache available, set up Void cache
         $cache = $instance->getCache();
         if (empty($cache)) {
-            $cache = new \Bouncer\Cache\Void();
+            $cache = new \Bouncer\Cache\VoidCache();
             $instance->setOptions(array('cache' => $cache));
         }
     }

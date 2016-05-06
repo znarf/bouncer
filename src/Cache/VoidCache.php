@@ -16,7 +16,7 @@ namespace Bouncer\Cache;
  *
  * @author François Hodierne <francois@hodierne.net>
  */
-class Void extends AbstractCache
+class VoidCache extends AbstractCache
 {
 
     /**
