@@ -44,7 +44,7 @@ class LogstashLogger extends BaseLogger
     protected $type;
 
     /**
-     * @var object
+     * @var object|bool
      */
     protected $logger;
 
