@@ -512,7 +512,7 @@ class Bouncer
 
         if (is_callable($this->responseCodeSetter)) {
             $responseCodeSetter = $this->responseCodeSetter;
-            $responseCodeSetter('503', 'Service Unavailable');
+            $responseCodeSetter(403, 'Forbidden');
         }
         else {
             $this->error('No response code setter available.');
