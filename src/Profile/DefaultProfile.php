@@ -22,7 +22,7 @@ class DefaultProfile
 
         self::initCache($instance);
 
-        self::initResponseCodeSetter($instance);
+        self::initResponseCodeHandler($instance);
     }
 
     public function loadAnalyzers(Bouncer $instance)
@@ -45,16 +45,26 @@ class DefaultProfile
         }
     }
 
-    public function initResponseCodeSetter(Bouncer $instance)
+    public function initResponseCodeHandler(Bouncer $instance)
     {
-        // If http_response_code not available (PHP 5.3), set a custom response code setter
-        if (!function_exists('http_response_code')) {
-            $responseCodeSetter = function($code, $message) {
-                header("HTTP/1.0 $code $message");
-                header("Status: $code $message");
+        if (function_exists('http_response_code')) {
+            $responseCodeHandler = function($code = null) {
+                return http_response_code($code);
             };
-
-            $instance->setOptions(array('responseCodeSetter' => $responseCodeSetter));
         }
+        else {
+            // If http_response_code not available (PHP 5.3), set a custom response code setter
+            $responseCodeHandler = function($code = null, $message = null) {
+                static $currentCode = 200;
+                if ($code && $message) {
+                    header("HTTP/1.0 $code $message");
+                    header("Status: $code $message");
+                    $currentCode = $code;
+                }
+                return $currentCode;
+            };
+        }
+
+        $instance->setOptions(array('responseCodeHandler' => $responseCodeHandler));
     }
 }

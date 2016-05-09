@@ -45,7 +45,7 @@ class BouncerTest extends \PHPUnit_Framework_TestCase
         return $bouncer;
     }
 
-    public function testBlock()
+    public function testBlockContext()
     {
         $request = $this->getRequest();
 
@@ -58,6 +58,23 @@ class BouncerTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(true, $context['blocked']);
 
         $this->assertEquals('login_blocked', $context['event']['type']);
+    }
+
+    public function testBlockResponse()
+    {
+        $request = $this->getRequest();
+
+        $bouncer = $this->getBouncer($request);
+
+        $bouncer->start();
+
+        $bouncer->block('login_blocked');
+
+        $bouncer->end();
+
+        $response = $bouncer->getResponse();
+
+        $this->assertEquals(403, $response['status']);
     }
 
 }

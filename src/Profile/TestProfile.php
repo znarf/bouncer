@@ -28,15 +28,15 @@ class TestProfile extends DefaultProfile
 
         $instance->setOptions(array('exit' => $exit));
 
-        $responseCodeSetter = function($code) {
-            static $codeSet;
+        $responseCodeHandler = function($code = null) {
+            static $currentCode = 200;
             if ($code) {
-                $codeSet = $code;
+                $currentCode = $code;
             }
-            return $codeSet;
+            return $currentCode;
         };
 
-        $instance->setOptions(array('responseCodeSetter' => $responseCodeSetter));
+        $instance->setOptions(array('responseCodeHandler' => $responseCodeHandler));
     }
 
     public function initCache(Bouncer $instance)

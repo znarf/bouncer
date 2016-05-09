@@ -37,7 +37,7 @@ class Bouncer
         'cookieName',
         'cookiePath',
         'exit',
-        'responseCodeSetter'
+        'responseCodeHandler'
     );
 
     /**
@@ -77,7 +77,7 @@ class Bouncer
      *
      * @var callable
      */
-    protected $responseCodeSetter = 'http_response_code';
+    protected $responseCodeHandler;
 
     /**
      * @var \Bouncer\Cache\CacheInterface
@@ -394,8 +394,9 @@ class Bouncer
             $this->response = array();
         }
 
-        if (function_exists('http_response_code')) {
-            $responseStatus = http_response_code();
+        if (is_callable($this->responseCodeHandler)) {
+            $responseCodeHandler = $this->responseCodeHandler;
+            $responseStatus = $responseCodeHandler();
             if ($responseStatus) {
                 $this->response['status'] = $responseStatus;
             }
@@ -510,12 +511,12 @@ class Bouncer
             $this->registerEvent($type, $extra);
         }
 
-        if (is_callable($this->responseCodeSetter)) {
-            $responseCodeSetter = $this->responseCodeSetter;
-            $responseCodeSetter(403, 'Forbidden');
+        if (is_callable($this->responseCodeHandler)) {
+            $responseCodeHandler = $this->responseCodeHandler;
+            $responseCodeHandler(403, 'Forbidden');
         }
         else {
-            $this->error('No response code setter available.');
+            $this->error('No response code handler available.');
         }
 
         if (is_callable($this->exit)) {
