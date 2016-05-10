@@ -18,11 +18,13 @@ class DefaultProfile
 
     public function load(Bouncer $instance)
     {
-        self::loadAnalyzers($instance);
+        $this->loadAnalyzers($instance);
 
-        self::initCache($instance);
+        $this->initCache($instance);
 
-        self::initResponseCodeHandler($instance);
+        $this->initLogger($instance);
+
+        $this->initResponseCodeHandler($instance);
     }
 
     public function loadAnalyzers(Bouncer $instance)
@@ -45,11 +47,20 @@ class DefaultProfile
         }
     }
 
+    public function initLogger(Bouncer $instance)
+    {
+        // No default logger for now
+    }
+
     public function initResponseCodeHandler(Bouncer $instance)
     {
         if (function_exists('http_response_code')) {
             $responseCodeHandler = function($code = null) {
-                return http_response_code($code);
+                if ($code) {
+                    return http_response_code($code);
+                } else {
+                    return http_response_code();
+                }
             };
         }
         else {
