@@ -36,7 +36,7 @@ class Bouncer
         'profile',
         'cookieName',
         'cookiePath',
-        'exit',
+        'exitHandler',
         'responseCodeHandler'
     );
 
@@ -70,7 +70,7 @@ class Bouncer
      *
      * @var callable
      */
-    protected $exit;
+    protected $exitHandler;
 
     /**
      * The callable to use to set the HTTP Response Code
@@ -519,9 +519,9 @@ class Bouncer
             $this->error('No response code handler available.');
         }
 
-        if (is_callable($this->exit)) {
-            $callable = $this->exit;
-            $callable();
+        if (is_callable($this->exitHandler)) {
+            $exitHandler = $this->exitHandler;
+            $exitHandler();
         }
         else {
             // $this->error('No exit callable set. PHP exit construct will be used.');

@@ -22,11 +22,11 @@ class TestProfile extends DefaultProfile
 
         parent::load($instance);
 
-        $exit = function() {
+        $exitHandler = function() {
             // error_log('Test profile. Not exiting.');
         };
 
-        $instance->setOptions(array('exit' => $exit));
+        $instance->setOptions(array('exitHandler' => $exitHandler));
 
         $responseCodeHandler = function($code = null) {
             static $currentCode = 200;
