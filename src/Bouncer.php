@@ -588,6 +588,7 @@ class Bouncer
             'request'  => $this->getRequest(),
             'response' => $this->getResponse(),
             'identity' => $this->getIdentity(),
+            'session'  => $this->getSessionId(),
             'context'  => $this->getContext(),
         );
 

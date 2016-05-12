@@ -43,6 +43,10 @@ abstract class BaseLogger
             $formattedEntry['key'] = $logEntry['key'];
         }
 
+        if (isset($logEntry['session'])) {
+            $formattedEntry['session'] = $logEntry['session'];
+        }
+
         return $formattedEntry;
     }
 
