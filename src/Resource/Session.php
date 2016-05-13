@@ -24,7 +24,7 @@ class Session extends Resource
     protected $id;
 
     /**
-     * @param array $attributes
+     * @param array|string $attributes
      */
     public function __construct($attributes = null)
     {
