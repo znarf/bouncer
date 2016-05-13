@@ -18,8 +18,6 @@ class TestProfile extends DefaultProfile
 
     public function load(Bouncer $instance)
     {
-        self::initCache($instance);
-
         parent::load($instance);
 
         $exitHandler = function() {

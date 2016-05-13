@@ -157,16 +157,22 @@ class Identity extends Resource
         }
     }
 
+    /*
+     * @return Session|null
+     */
     public function getSession()
     {
         return $this->session;
     }
 
+    /*
+     * @param string|array|object $session
+     */
     public function setSession($session)
     {
         if (is_object($session)) {
             $this->session = $session;
-        } elseif (is_array($session)) {
+        } elseif (is_string($session) || is_array($session)) {
             $this->session = new Session($session);
         }
     }

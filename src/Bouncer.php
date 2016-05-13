@@ -319,6 +319,7 @@ class Bouncer
         $identity = new Identity(array(
             'address' => $this->getAddress(),
             'headers' => $this->getHeaders(),
+            'session' => $this->getSessionId(),
         ));
 
         $id = $identity->getId();

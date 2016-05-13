@@ -16,13 +16,36 @@ use Bouncer\Resource;
 class Session extends Resource
 {
 
+    /**
+     * The unique id
+     *
+     * @var string
+     */
     protected $id;
 
+    /**
+     * @param array $attributes
+     */
+    public function __construct($attributes = null)
+    {
+        if (is_string($attributes)) {
+            $this->setId($attributes);
+        } elseif (is_array($attributes)) {
+            parent::__construct($attributes);
+        }
+    }
+
+    /*
+     * @return string|null
+     */
     public function getId()
     {
         return $this->id;
     }
 
+    /*
+     * @param string
+     */
     public function setId($id)
     {
         $this->id = $id;
