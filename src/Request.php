@@ -48,15 +48,13 @@ class Request extends HttpFoundationRequest
 
     public function getHeaders()
     {
-        $ignore = array('host', 'cookie');
+        $ignore = array('host', 'cookie', 'connection');
 
         $headers = $this->getAllHeaders($ignore);
 
         $connection = $this->getConnection();
-        if ($connection) {
+        if (isset($connection)) {
             $headers['connection'] = $connection;
-        } else {
-            unset($headers['connection']);
         }
 
         return $headers;
@@ -138,6 +136,9 @@ class Request extends HttpFoundationRequest
         return $this;
     }
 
+    /*
+     * @return string|null
+     */
     public function getBody()
     {
         if ($this->body) {
@@ -145,6 +146,9 @@ class Request extends HttpFoundationRequest
         }
     }
 
+    /*
+     * @param string
+     */
     public function setBody($body)
     {
         $this->body = $body;
@@ -169,12 +173,12 @@ class Request extends HttpFoundationRequest
         $request['headers'] = $this->getHeaders();
 
         $protocol = $this->getProtocol();
-        if ($protocol) {
+        if (isset($protocol)) {
             $request['protocol'] = $protocol;
         }
 
         $body = $this->getBody();
-        if ($body) {
+        if (isset($body)) {
             $request['body'] = $body;
         }
 
