@@ -24,10 +24,6 @@ class Request extends HttpFoundationRequest
 
     protected $connection;
 
-    protected $trustProtocol = false;
-
-    protected $trustConnection = false;
-
     public function getUserAgent()
     {
         $userAgent = $this->getHeader('User-Agent');
@@ -98,17 +94,21 @@ class Request extends HttpFoundationRequest
         return $this;
     }
 
+    /*
+     * @return string|null
+     */
     public function getProtocol()
     {
         if ($this->protocol) {
             return $this->protocol;
         }
 
-        if ($this->trustProtocol) {
-            return $this->server->get('SERVER_PROTOCOL');
-        }
+        return $this->server->get('SERVER_PROTOCOL');
     }
 
+    /*
+     * @param string
+     */
     public function setProtocol($protocol)
     {
         $this->protocol = $protocol;
@@ -116,17 +116,21 @@ class Request extends HttpFoundationRequest
         return $this;
     }
 
+    /*
+     * @return string|null
+     */
     public function getConnection()
     {
         if ($this->connection) {
             return $this->connection;
         }
 
-        if ($this->trustConnection) {
-            return $this->headers->get('connection');
-        }
+        return $this->headers->get('connection');
     }
 
+    /*
+     * @param string
+     */
     public function setConnection($connection)
     {
         $this->connection = $connection;
