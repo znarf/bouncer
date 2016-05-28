@@ -22,7 +22,7 @@ interface CacheInterface
   /**
    * Retrieve an item from a cache backend
    *
-   * @param string $id The key to fetch
+   * @param string $key The key to fetch.
    *
    * @return string|object|null
    */
@@ -31,9 +31,9 @@ interface CacheInterface
   /**
    * Store an item in a cache backend
    *
-   * @param string $id The key that will be associated with the item.
-   * @param string $value The variable to store.
-   * @param int $value Expiration time of the item.
+   * @param string $key The key that will be associated with the item.
+   * @param string|object $value The variable to store.
+   * @param int $ttl Expiration time of the item.
    */
   public function set($key, $value, $ttl = 0);
 
