@@ -19,16 +19,31 @@ use Bouncer\Exception;
 class Memcache extends AbstractCache
 {
 
+    /**
+     * @var PhpMemcache|PhpMemcached
+     */
     protected $client = null;
 
+    /**
+     * @var string
+     */
     protected $prefix = null;
 
+    /**
+     * @var array
+     */
     protected $cache = array();
 
+    /**
+     * @param array $options
+     */
     public function __construct(array $options = array())
     {
-        if (!empty($options['client'])) {
-            $this->setClient($options['client']);
+        if (isset($options['client']) && is_object($options['prefix'])) {
+            $this->client = $options['client'];
+        }
+        if (isset($options['prefix']) && is_string($options['prefix'])) {
+            $this->prefix = $options['prefix'];
         }
     }
 
@@ -40,6 +55,7 @@ class Memcache extends AbstractCache
         if (empty($this->client)) {
            throw new Exception('No client available.');
         }
+
         return $this->client;
     }
 
@@ -63,7 +79,7 @@ class Memcache extends AbstractCache
             return;
         }
         if (!empty($this->prefix)) {
-            $key = $this->prefix . '-' . $key;
+            $key = $this->prefix . '_' . $key;
         }
         if (empty($this->cache[$key])) {
             $this->cache[$key] = $client->get($key);
@@ -81,7 +97,7 @@ class Memcache extends AbstractCache
             return;
         }
         if (!empty($this->prefix)) {
-            $key = $this->prefix . '-' . $key;
+            $key = $this->prefix . '_' . $key;
         }
         $this->cache[$key] = $value;
         if ($client instanceof PhpMemcache) {

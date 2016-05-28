@@ -19,8 +19,22 @@ namespace Bouncer\Cache;
 interface CacheInterface
 {
 
+  /**
+   * Retrieve an item from a cache backend
+   *
+   * @param string $id The key to fetch
+   *
+   * @return string|object|null
+   */
   public function get($key);
 
+  /**
+   * Store an item in a cache backend
+   *
+   * @param string $id The key that will be associated with the item.
+   * @param string $value The variable to store.
+   * @param int $value Expiration time of the item.
+   */
   public function set($key, $value, $ttl = 0);
 
 }
