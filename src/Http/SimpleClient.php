@@ -14,17 +14,49 @@ namespace Bouncer\Http;
 class SimpleClient
 {
 
+    /**
+     * @var string
+     */
     protected $apiKey;
 
+    /**
+     * @var string
+     */
+    protected $siteUrl;
+
+    /**
+     * @var int
+     */
     protected $timeout = 2;
 
-    public function __construct($apiKey = null)
+    /**
+     * @var string
+     */
+    protected $baseUserAgent = 'Bouncer Http';
+
+    /**
+     * Constructor.
+     *
+     * @param array|string $options
+     */
+    public function __construct($options = array())
     {
-        if ($apiKey) {
-            $this->setApiKey($apiKey);
+        // Compatibility with previous API
+        if (is_string($options)) {
+            $options = array('apiKey' => $options);
+        }
+
+        if (isset($options['apiKey']) && is_string($options['apiKey'])) {
+            $this->setApiKey($options['apiKey']);
+        }
+        if (isset($options['siteUrl']) && is_string($options['siteUrl'])) {
+            $this->setSiteUrl($options['siteUrl']);
         }
     }
 
+    /**
+     * @return SimpleClient
+     */
     public function setApiKey($apiKey)
     {
         $this->apiKey = $apiKey;
@@ -32,13 +64,37 @@ class SimpleClient
         return $this;
     }
 
+    /**
+     * @return SimpleClient
+     */
+    public function setSiteUrl($siteUrl)
+    {
+        $this->siteUrl = $siteUrl;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserAgent()
+    {
+        if ($this->siteUrl) {
+            return "{$this->baseUserAgent}; {$this->siteUrl}";
+        }
+        else {
+            return $this->baseUserAgent;
+        }
+    }
+
     public function request($method, $url, $data = null)
     {
+        $userAgent = $this->getUserAgent();
         $options = array(
             'http' => array(
                 'timeout' => $this->timeout,
                 'method'  => $method,
-                'header'  => "User-Agent: Bouncer Http\r\n"
+                'header'  => "User-Agent: {$userAgent}\r\n"
             )
         );
         if ($this->apiKey) {
