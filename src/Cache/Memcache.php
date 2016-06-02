@@ -39,7 +39,7 @@ class Memcache extends AbstractCache
      */
     public function __construct(array $options = array())
     {
-        if (isset($options['client']) && is_object($options['prefix'])) {
+        if (isset($options['client']) && is_object($options['client'])) {
             $this->client = $options['client'];
         }
         if (isset($options['prefix']) && is_string($options['prefix'])) {
