@@ -343,6 +343,9 @@ class Bouncer
         return $this->identity = $identity;
     }
 
+    /**
+     * @return array
+     */
     public function getContext()
     {
         if (!isset($this->context)) {
@@ -361,6 +364,19 @@ class Bouncer
         $this->context['pid']   = getmypid();
         $this->context['time']  = time();
         $this->context['start'] = microtime(true);
+    }
+
+    /*
+     * @param string $key
+     * @param array  $properties
+     */
+    public function addContext($key, $properties)
+    {
+        if (isset($this->context[$key]) && is_array($this->context[$key])) {
+            $this->context[$key] = array_merge($this->context[$key], $properties);
+        } else {
+            $this->context[$key] = $properties;
+        }
     }
 
     /*
