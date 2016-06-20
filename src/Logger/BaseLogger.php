@@ -36,7 +36,7 @@ abstract class BaseLogger
         }
 
         if (isset($logEntry['context'])) {
-            $formattedEntry['context']['bouncer'] = $logEntry['context'];
+            $formattedEntry['context'] = $logEntry['context'];
         }
 
         if (isset($logEntry['key'])) {

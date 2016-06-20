@@ -356,14 +356,15 @@ class Bouncer
     }
 
     /*
-     * Init the context with id, time and start.
+     * Init the context with time and pid.
      */
     public function initContext()
     {
         $this->context = array();
-        $this->context['pid']   = getmypid();
-        $this->context['time']  = time();
-        $this->context['start'] = microtime(true);
+
+        $this->addContext('time', microtime(true));
+
+        $this->addContext('bouncer', array('pid' => getmypid()));
     }
 
     /*
@@ -380,26 +381,28 @@ class Bouncer
     }
 
     /*
-     * Complete the context with end, exec_time and memory_usage.
+     * Complete the context with session, exec_time and memory_usage.
      */
     public function completeContext()
     {
+        $context = $this->getContext();
+
         // Session Id (from Cookie)
         $sessionId = $this->getSessionId();
         if (isset($sessionId)) {
-            $this->context['session'] = $sessionId;
+            $this->addContext('session', $sessionId);
         }
 
         // Measure execution time
-        $this->context['end'] = microtime(true);
-        $this->context['exec_time'] = round($this->context['end'] - $this->context['start'], 4);
-        if (!empty($this->context['throttle_time'])) {
-             $this->context['exec_time'] -= $this->context['throttle_time'];
+        $execution_time = round(microtime(true) - $context['time'], 4);
+        if (!empty($context['bouncer']['throttle_time'])) {
+            $execution_time -= $context['bouncer']['throttle_time'];
         }
-        unset($this->context['end'], $this->context['start']);
 
-        // Report Memory Usage
-        $this->context['memory_usage'] = memory_get_peak_usage();
+        $this->addContext('bouncer', array(
+            'execution_time' => $execution_time,
+            'memory_usage'   => memory_get_peak_usage(),
+        ));
     }
 
     /*
@@ -490,15 +493,18 @@ class Bouncer
     /*
      * Throttle
      *
-     * @param int   $minimum
-     * @param int   $maximum
+     * @param int   $minimum in milliseconds
+     * @param int   $maximum in milliseconds
      *
      */
     public function throttle($minimum = 1000, $maximum = 2500)
     {
+        // In microseconds
         $throttleTime = rand($minimum * 1000, $maximum * 1000);
         usleep($throttleTime);
-        $this->context['throttle_time'] = round($throttleTime / 1000 / 1000, 3);
+
+        // In seconds
+        $this->addContext('bouncer', array('throttle_time' => $throttleTime));
     }
 
     /*
@@ -522,7 +528,7 @@ class Bouncer
      */
     public function block($type = null, $extra = null)
     {
-        $this->context['blocked'] = true;
+        $this->addContext('blocked', true);
 
         if (isset($type)) {
             $this->registerEvent($type, $extra);
@@ -554,7 +560,6 @@ class Bouncer
         $identity = $this->getIdentity();
 
         if (in_array($identity->getStatus(), $statuses)) {
-            $this->context['banned'] = true;
             return $this->block();
         }
 
