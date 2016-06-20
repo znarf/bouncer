@@ -368,8 +368,8 @@ class Bouncer
     }
 
     /*
-     * @param string       $key
-     * @param string|array $properties
+     * @param string               $key
+     * @param boolean|string|array $properties
      */
     public function addContext($key, $properties)
     {
