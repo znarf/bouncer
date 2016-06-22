@@ -205,6 +205,7 @@ class Bouncer
         }
 
         $request = Request::createFromGlobals();
+        $request->setTrustedProxies(array('127.0.0.1'));
 
         return $this->request = $request;
     }
