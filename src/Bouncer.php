@@ -206,6 +206,7 @@ class Bouncer
 
         $request = Request::createFromGlobals();
         $request->setTrustedProxies(array('127.0.0.1'));
+        $request->setTrustedHeaderName(Request::HEADER_FORWARDED, null);
 
         return $this->request = $request;
     }
