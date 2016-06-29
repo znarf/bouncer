@@ -42,4 +42,14 @@ abstract class AbstractCache implements CacheInterface
         return $this->set("access_watch_identity_{$id}", $identity, 86400);
     }
 
+    /**
+     * Remove an Identity object from cache
+     *
+     * @param string $id        identifier for the identity
+     */
+    public function deleteIdentity($id)
+    {
+        return $this->delete("access_watch_identity_{$id}");
+    }
+
 }

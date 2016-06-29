@@ -35,4 +35,12 @@ class Apc extends AbstractCache
         return apc_store($key, $value, $ttl);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function delete($key)
+    {
+        return apc_delete($key);
+    }
+
 }

@@ -65,17 +65,24 @@ class Redis extends AbstractCache
     /**
      * {@inheritDoc}
      */
-    public function get($keyname)
+    public function get($key)
     {
-        return $this->getClient()->get($keyname);
+        return $this->getClient()->get($key);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function set($keyname, $value, $ttl = 0)
+    public function set($key, $value, $ttl = 0)
     {
-        return $this->getClient()->set($keyname, $value, $ttl);
+        return $this->getClient()->set($key, $value, $ttl);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function delete($key)
+    {
+        return $this->getClient()->delete($key);
+    }
 }

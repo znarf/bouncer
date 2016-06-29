@@ -37,4 +37,11 @@ interface CacheInterface
    */
   public function set($key, $value, $ttl = 0);
 
+  /**
+   * Remove an item from a cache backend
+   *
+   * @param string $key The key to remove.
+   */
+  public function delete($key);
+
 }

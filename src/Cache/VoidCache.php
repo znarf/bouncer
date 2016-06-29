@@ -33,4 +33,11 @@ class VoidCache extends AbstractCache
     {
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function delete($key)
+    {
+    }
+
 }

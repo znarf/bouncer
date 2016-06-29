@@ -107,4 +107,22 @@ class Memcache extends AbstractCache
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function delete($key)
+    {
+        $client = $this->getClient();
+        if (empty($client)) {
+            return;
+        }
+        if (!empty($this->prefix)) {
+            $key = $this->prefix . '_' . $key;
+        }
+        if (isset($this->cache[$key])) {
+            unset($this->cache[$key]);
+        }
+        return $client->delete($key);
+    }
+
 }
