@@ -23,6 +23,9 @@ class Address extends Resource
 
     protected $hostname;
 
+    /**
+     * @param array|string $attributes
+     */
     public function __construct($attributes = null)
     {
         if (is_string($attributes)) {

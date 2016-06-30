@@ -16,7 +16,7 @@ class Resource
 
     protected $attributes = array();
 
-    public function __construct($attributes = array())
+    public function __construct($attributes = null)
     {
         if (!empty($attributes)) {
             $this->setAttributes($attributes);
