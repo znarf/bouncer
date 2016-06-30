@@ -24,6 +24,13 @@ class Session extends Resource
     protected $id;
 
     /**
+     * Blocked status
+     *
+     * @var bool
+     */
+    protected $blocked;
+
+    /**
      * @param array|string $attributes
      */
     public function __construct($attributes = null)
@@ -49,6 +56,22 @@ class Session extends Resource
     public function setId($id)
     {
         $this->id = $id;
+    }
+
+    /*
+     * @return bool
+     */
+    public function isBlocked()
+    {
+        return $this->blocked === true;
+    }
+
+    /*
+     * @param bool
+     */
+    public function setBlocked($blocked)
+    {
+        return $this->blocked = $blocked;
     }
 
 }
