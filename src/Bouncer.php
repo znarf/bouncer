@@ -126,6 +126,11 @@ class Bouncer
      */
     protected $ended = false;
 
+    /**
+     * Constructor.
+     *
+     * @param array $options
+     */
     public function __construct(array $options = array())
     {
         if (!empty($options)) {
@@ -591,6 +596,10 @@ class Bouncer
 
         $this->completeContext();
         $this->completeResponse();
+
+        if (function_exists('fastcgi_finish_request')) {
+            fastcgi_finish_request();
+        }
 
         // We really want to avoid throwing exceptions there
         try {
