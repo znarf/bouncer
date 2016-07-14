@@ -19,6 +19,8 @@ namespace Bouncer\Cache;
 abstract class AbstractCache implements CacheInterface
 {
 
+    protected $prefix = 'bouncer';
+
     /**
      * Return an Identity object from cache
      *
@@ -28,7 +30,7 @@ abstract class AbstractCache implements CacheInterface
      */
     public function getIdentity($id)
     {
-        return $this->get("access_watch_identity_{$id}");
+        return $this->get("{$this->prefix}_identity_{$id}");
     }
 
     /**
@@ -39,7 +41,7 @@ abstract class AbstractCache implements CacheInterface
      */
     public function setIdentity($id, $identity)
     {
-        return $this->set("access_watch_identity_{$id}", $identity, 86400);
+        return $this->set("{$this->prefix}_identity_{$id}", $identity, 86400);
     }
 
     /**
@@ -49,7 +51,7 @@ abstract class AbstractCache implements CacheInterface
      */
     public function deleteIdentity($id)
     {
-        return $this->delete("access_watch_identity_{$id}");
+        return $this->delete("{$this->prefix}_identity_{$id}");
     }
 
 }
