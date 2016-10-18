@@ -55,7 +55,7 @@ abstract class AbstractCache implements CacheInterface
      */
     public function setIdentity($id, $identity)
     {
-        return $this->set("{$this->prefix}_identity_{$id}", $identity, 86400);
+        return $this->set("{$this->prefix}_identity_{$id}", $identity, 60 * 60 * 6);
     }
 
     /**
