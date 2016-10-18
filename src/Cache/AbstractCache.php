@@ -22,6 +22,20 @@ abstract class AbstractCache implements CacheInterface
     protected $prefix = 'bouncer';
 
     /**
+     * {@inheritDoc}
+     */
+    public function clean()
+    {
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function flush()
+    {
+    }
+
+    /**
      * Return an Identity object from cache
      *
      * @param string $id identifier for the identity
