@@ -46,15 +46,11 @@ interface CacheInterface
 
     /**
      * Delete expired cache items from cache backend
-     *
-     * @param string $key The key to remove.
      */
     public function clean();
 
     /**
      * Delete all cache items from cache backend
-     *
-     * @param string $key The key to remove.
      */
     public function flush();
 
