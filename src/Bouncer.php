@@ -401,13 +401,13 @@ class Bouncer
         }
 
         // Measure execution time
-        $execution_time = round(microtime(true) - $context['time'], 4);
+        $execution_time = microtime(true) - $context['time'];
         if (!empty($context['bouncer']['throttle_time'])) {
             $execution_time -= $context['bouncer']['throttle_time'];
         }
 
         $this->addContext('bouncer', array(
-            'execution_time' => $execution_time,
+            'execution_time' => round($execution_time, 4),
             'memory_usage'   => memory_get_peak_usage(),
         ));
     }
@@ -511,7 +511,9 @@ class Bouncer
         usleep($throttleTime);
 
         // In seconds
-        $this->addContext('bouncer', array('throttle_time' => $throttleTime));
+        $this->addContext('bouncer', array(
+            'throttle_time' => ($throttleTime / 1000 / 1000)
+        ));
     }
 
     /*
