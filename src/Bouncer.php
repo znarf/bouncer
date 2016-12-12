@@ -462,7 +462,7 @@ class Bouncer
     }
 
     /*
-     * Start a Bouncer session
+     * Start Bouncer, init context and register end function
      */
     public function start()
     {
@@ -472,8 +472,6 @@ class Bouncer
         }
 
         $this->initContext();
-
-        $this->initSession();
 
         register_shutdown_function(array($this, 'end'));
 
