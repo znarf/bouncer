@@ -596,14 +596,14 @@ class Bouncer
             return;
         }
 
-        $this->completeContext();
-        $this->completeResponse();
-
         if (function_exists('fastcgi_finish_request')) {
             fastcgi_finish_request();
         }
 
         $this->ended = true;
+
+        $this->completeContext();
+        $this->completeResponse();
 
         // We really want to avoid throwing exceptions there
         try {
