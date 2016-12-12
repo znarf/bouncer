@@ -340,7 +340,9 @@ class Bouncer
         }
 
         // Process Analyzers
-        $identity = $this->processAnalyzers('identity', $identity);
+        if (!$this->ended) {
+            $identity = $this->processAnalyzers('identity', $identity);
+        }
 
         // Store Identity in cache
         if ($cache) {
@@ -601,14 +603,14 @@ class Bouncer
             fastcgi_finish_request();
         }
 
+        $this->ended = true;
+
         // We really want to avoid throwing exceptions there
         try {
             $this->log();
         } catch (Exception $e) {
             error_log($e->getMessage());
         }
-
-        $this->ended = true;
     }
 
     /*
