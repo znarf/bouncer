@@ -342,11 +342,13 @@ class Bouncer
         // Process Analyzers
         if (!$this->ended) {
             $identity = $this->processAnalyzers('identity', $identity);
-        }
-
-        // Store Identity in cache
-        if ($cache) {
-            $cache->setIdentity($id, $identity);
+            // Store Identity in cache
+            if ($cache) {
+                $cache->setIdentity($id, $identity);
+            }
+            else {
+                $this->error('No cache available. Caching identity is needed to keep performances acceptable.');
+            }
         }
 
         return $this->identity = $identity;

@@ -41,8 +41,6 @@ class DefaultProfile
             if (function_exists('apc_fetch')) {
                 $cache = new \Bouncer\Cache\Apc();
                 $instance->setOptions(array('cache' => $cache));
-            } else {
-                $instance->error('No cache available. A cache is needed to keep performances acceptable.');
             }
         }
     }
