@@ -14,8 +14,8 @@
     ],
     "require": {
         "php" : ">=5.3.9",
-        "monolog/monolog": "~1.19.0",
-        "symfony/http-foundation": "~2.7.10"
+        "monolog/monolog": "~1.23.0",
+        "symfony/http-foundation": "~2.7.35"
     },
     "autoload": {
         "psr-4": {
